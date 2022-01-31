@@ -1,0 +1,91 @@
+---
+permalink: protect-sce/reference_storage_types_supported_by_snapcenter_plug_in_for_microsoft_windows_and_for_microsoft_exchange_server.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. 호스트에 대한 패키지를 설치하기 전에 스토리지 유형에 대한 지원이 가능한지 확인해야 합니다. 
+---
+= Microsoft Windows용 SnapCenter 플러그인 및 Microsoft Exchange Server에서 지원하는 스토리지 유형입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. 호스트에 대한 패키지를 설치하기 전에 스토리지 유형에 대한 지원이 가능한지 확인해야 합니다.
+
+SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+
+|===
+| 기계 | 스토리지 유형입니다 | 를 사용하여 프로비저닝 | 지원 노트 
+
+
+ a| 
+물리적 서버
+ a| 
+FC 연결 LUN
+ a| 
+SnapCenter 그래픽 사용자 인터페이스(GUI) 또는 PowerShell cmdlet
+ a| 
+
+
+
+ a| 
+물리적 서버
+ a| 
+iSCSI로 연결된 LUN
+ a| 
+SnapCenter GUI 또는 PowerShell cmdlet
+ a| 
+
+
+
+ a| 
+VMware VM
+ a| 
+FC 또는 iSCSI HBA를 통해 연결된 RDM LUN
+ a| 
+PowerShell cmdlet
+ a| 
+물리적 호환성 전용
+
+
+NOTE: VMDK는 지원되지 않습니다.
+
+
+
+ a| 
+VMware VM
+ a| 
+iSCSI 이니시에이터가 게스트 시스템에 직접 접속된 iSCSI LUN
+ a| 
+SnapCenter GUI 또는 PowerShell cmdlet
+ a| 
+
+NOTE: VMDK는 지원되지 않습니다.
+
+
+
+ a| 
+Hyper-V VM
+ a| 
+가상 Fibre Channel 스위치를 통해 연결된 VFC(가상 FC) LUN입니다
+ a| 
+SnapCenter GUI 또는 PowerShell cmdlet
+ a| 
+Hyper-V Manager를 사용하여 가상 Fibre Channel 스위치로 연결된 VFC(가상 FC) LUN을 프로비저닝해야 합니다.
+
+
+NOTE: NetApp 스토리지에 프로비저닝된 Hyper-V는 디스크를 통과하고 VHD(x)에서 데이터베이스를 백업하는 것은 지원되지 않습니다.
+
+
+
+ a| 
+Hyper-V VM
+ a| 
+iSCSI 이니시에이터가 게스트 시스템에 직접 접속된 iSCSI LUN
+ a| 
+SnapCenter GUI 또는 PowerShell cmdlet
+ a| 
+
+NOTE: NetApp 스토리지에 프로비저닝된 Hyper-V는 디스크를 통과하고 VHD(x)에서 데이터베이스를 백업하는 것은 지원되지 않습니다.
+
+|===

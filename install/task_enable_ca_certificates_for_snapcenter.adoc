@@ -1,0 +1,41 @@
+---
+permalink: install/task_enable_ca_certificates_for_snapcenter.html 
+sidebar: sidebar 
+keywords: SnapCenter, enable CA, certificate 
+summary: CA 인증서를 구성하고 SnapCenter 서버에 대해 CA 인증서 유효성 검사를 활성화해야 합니다. 
+---
+= SnapCenter에 대해 CA 인증서를 활성화합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CA 인증서를 구성하고 SnapCenter 서버에 대해 CA 인증서 유효성 검사를 활성화해야 합니다.
+
+* 필요한 것 *
+
+* Set-SmCertificateSettings cmdlet을 사용하여 CA 인증서를 활성화하거나 비활성화할 수 있습니다.
+* Get-SmCertificateSettings cmdlet을 사용하여 SnapCenter 서버의 인증서 상태를 표시할 수 있습니다.
+
+
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+* 단계 *
+
+. 설정 페이지에서 * 설정 * > * 글로벌 설정 * > * CA 인증서 설정 * 으로 이동합니다.
+. 인증서 유효성 검사 사용 * 을 선택합니다.
+. 적용 * 을 클릭합니다.
+
+
+* 완료 후 *
+
+관리 호스트 탭 호스트에는 자물쇠가 표시되고 자물쇠 색상은 SnapCenter 서버와 플러그인 호스트 간의 연결 상태를 나타냅니다.
+
+* *image:../media/enable_ca_issues_icon.png[""]* 는 활성화된 CA 인증서가 없거나 플러그인 호스트에 할당되어 있지 않음을 나타냅니다.
+* *image:../media/enable_ca_good_icon.png[""]* CA 인증서의 유효성을 확인했음을 나타냅니다.
+* *image:../media/enable_ca_failed_icon.png[""]* CA 인증서의 유효성을 확인할 수 없음을 나타냅니다.
+* *image:../media/enable_ca_undefined_icon.png[""]* 연결 정보를 검색할 수 없음을 나타냅니다.
+
+
+
+NOTE: 상태가 노란색 또는 녹색이면 데이터 보호 작업이 성공적으로 완료된 것입니다.

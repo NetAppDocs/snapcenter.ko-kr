@@ -1,0 +1,154 @@
+---
+permalink: protect-sco/task_configure_snapcenter_plug_in_loader_service.html 
+sidebar: sidebar 
+keywords: SPL, plug-in loader service 
+summary: SnapCenter 플러그인 로더 서비스는 Linux 또는 AIX용 플러그인 패키지를 로드하여 SnapCenter 서버와 상호 작용합니다. SnapCenter 플러그인 로더 서비스는 SnapCenter용 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치할 때 설치됩니다. 
+---
+= SnapCenter 플러그인 로더 서비스를 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 플러그인 로더 서비스는 Linux 또는 AIX용 플러그인 패키지를 로드하여 SnapCenter 서버와 상호 작용합니다. SnapCenter 플러그인 로더 서비스는 SnapCenter용 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치할 때 설치됩니다.
+
+* 이 작업에 대한 정보 *
+
+Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치한 후 SnapCenter 플러그인 로더 서비스가 자동으로 시작됩니다. SnapCenter 플러그인 로더 서비스가 자동으로 시작되지 않는 경우 다음을 수행해야 합니다.
+
+* 플러그인이 작동하는 디렉토리가 삭제되지 않았는지 확인합니다
+* Java Virtual Machine에 할당된 메모리 공간을 늘립니다
+
+
+spl.properties 파일은 _/custom_location/NetApp/snapcenter/SPL/etc/_에 있으며 다음 매개 변수를 포함합니다. 기본값은 이러한 매개 변수에 할당됩니다.
+
+|===
+| 매개 변수 이름입니다 | 설명 
+
+
+ a| 
+log_level 을 선택합니다
+ a| 
+지원되는 로그 수준을 표시합니다.
+
+가능한 값은 Info, debug, trace, error, fatal, 경고.
+
+
+
+ a| 
+SPL_protocol(프로토콜)
+ a| 
+SnapCenter 플러그인 로더에서 지원하는 프로토콜을 표시합니다.
+
+HTTPS 프로토콜만 지원됩니다. 기본값이 없는 경우 값을 추가할 수 있습니다.
+
+
+
+ a| 
+SNAPCENTER_SERVER_PROTOCOL
+ a| 
+SnapCenter 서버에서 지원하는 프로토콜을 표시합니다.
+
+HTTPS 프로토콜만 지원됩니다. 기본값이 없는 경우 값을 추가할 수 있습니다.
+
+
+
+ a| 
+skip_jAVHOME_update 를 선택합니다
+ a| 
+기본적으로 SPL 서비스는 Java 경로를 감지하고 java_home 매개 변수를 업데이트합니다.
+
+따라서 기본값은 false 로 설정됩니다. 기본 동작을 비활성화하고 Java 경로를 수동으로 수정하려면 TRUE로 설정할 수 있습니다.
+
+
+
+ a| 
+SPL_keystore_pass입니다
+ a| 
+키 저장소 파일의 암호를 표시합니다.
+
+암호를 변경하거나 새 키 저장소 파일을 만드는 경우에만 이 값을 변경할 수 있습니다.
+
+
+
+ a| 
+SPL_PORT
+ a| 
+SnapCenter 플러그인 로더 서비스가 실행 중인 포트 번호를 표시합니다.
+
+기본값이 없는 경우 값을 추가할 수 있습니다.
+
+
+NOTE: 플러그인을 설치한 후에는 값을 변경해서는 안 됩니다.
+
+
+
+ a| 
+SNAPCENTER_SERVER_HOST
+ a| 
+SnapCenter 서버의 IP 주소 또는 호스트 이름을 표시합니다.
+
+
+
+ a| 
+SPL_keystore_path를 입력합니다
+ a| 
+키 저장소 파일의 절대 경로를 표시합니다.
+
+
+
+ a| 
+SNAPCENTER_SERVER_PORT
+ a| 
+SnapCenter 서버가 실행 중인 포트 번호를 표시합니다.
+
+
+
+ a| 
+SPL_LOGS_MAX_COUNT
+ a| 
+_/custom_location/snapcenter/SPL/logs_folder에 유지되는 SnapCenter 플러그인 로더 로그 파일의 수를 표시합니다.
+
+기본값은 5000으로 설정됩니다. 카운트가 지정된 값보다 큰 경우 마지막으로 수정된 5000개의 파일이 유지됩니다. SnapCenter 플러그인 로더 서비스가 시작된 후 24시간마다 파일 수 검사가 자동으로 수행됩니다.
+
+
+NOTE: spl.properties 파일을 수동으로 삭제하면 보존할 파일 수가 9999로 설정됩니다.
+
+
+
+ a| 
+java_home입니다
+ a| 
+SPL 서비스를 시작하는 데 사용되는 java_home의 절대 디렉토리 경로를 표시합니다.
+
+이 경로는 설치 중에 그리고 SPL 시작 시 결정됩니다.
+
+|===
+이러한 매개 변수 중 하나라도 기본값에 할당되지 않거나 값을 할당하거나 변경하려는 경우 spl.properties 파일을 수정할 수 있습니다. 또한 spl.properties 파일을 확인하고 파일을 편집하여 매개 변수에 할당된 값과 관련된 문제를 해결할 수도 있습니다. spl.properties 파일을 수정한 후 SnapCenter 플러그인 로더 서비스를 다시 시작해야 합니다.
+
+* 단계 *
+
+. 필요에 따라 다음 작업 중 하나를 수행합니다.
++
+** 루트 사용자로 SnapCenter 플러그인 로더 서비스를 시작합니다.
++
+ `/custom_location/NetApp/snapcenter/spl/bin/spl start`
+** SnapCenter 플러그인 로더 서비스를 중지합니다.
++
+ `/custom_location/NetApp/snapcenter/spl/bin/spl stop`
++
+
+NOTE: stop 명령에 -force 옵션을 사용하면 SnapCenter 플러그인 로더 서비스를 강제로 중지할 수 있습니다. 그러나 기존 작업도 종료되므로 이 작업을 수행하기 전에 주의해야 합니다.
+
+** SnapCenter 플러그인 로더 서비스를 다시 시작합니다.
++
+ `/custom_location/NetApp/snapcenter/spl/bin/spl restart`
+** SnapCenter 플러그인 로더 서비스의 상태를 찾습니다.
++
+ `/custom_location/NetApp/snapcenter/spl/bin/spl status`
+** SnapCenter 플러그인 로더 서비스에서 변경 사항을 찾습니다.
++
+ `/custom_location/NetApp/snapcenter/spl/bin/spl change`
+
+
+

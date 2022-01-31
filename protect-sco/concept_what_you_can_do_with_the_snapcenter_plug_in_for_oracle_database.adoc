@@ -1,0 +1,36 @@
+---
+permalink: protect-sco/concept_what_you_can_do_with_the_snapcenter_plug_in_for_oracle_database.html 
+sidebar: sidebar 
+keywords: backup, restore, clone, oracle database 
+summary: 'Oracle 데이터베이스용 플러그인을 사용하여 백업, 확인, 복원, 복구, 마운트, Oracle 데이터베이스 및 해당 리소스의 마운트 해제 및 클론 생성 Oracle RMAN(Recovery Manager)을 사용하여 데이터베이스 백업의 카탈로그를 작성하거나 카탈로그를 해제할 수도 있습니다.' 
+---
+= Oracle 데이터베이스용 플러그인을 사용하여 수행할 수 있는 작업
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Oracle 데이터베이스용 SnapCenter 플러그인은 Oracle 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트 측 구성 요소입니다.
+
+Oracle Database용 플러그인은 Oracle RMAN(Recovery Manager), 검증, 마운트, 마운트 해제, 복구, SnapCenter 환경에서 Oracle 데이터베이스의 복구 및 클론 복제 Oracle 데이터베이스용 플러그인은 모든 데이터 보호 작업을 수행하기 위해 UNIX용 SnapCenter 플러그인을 설치합니다.
+
+Oracle 데이터베이스용 플러그인을 사용하여 SAP 애플리케이션을 실행하는 Oracle 데이터베이스의 백업을 관리할 수 있습니다. 그러나 SAP BR * Tools 통합은 지원되지 않습니다.
+
+* 데이터 파일, 제어 파일, 아카이브 로그 파일을 백업합니다.
++
+백업은 컨테이너 데이터베이스(CDB) 레벨에서만 지원됩니다.
+
+* 데이터베이스, CDB 및 플러그형 데이터베이스(PDB)의 복원 및 복구
++
+PDB의 불완전한 복구는 지원되지 않습니다.
+
+* 운영 데이터베이스의 클론을 최대 특정 시점까지 생성합니다.
++
+클론 복제는 CDB 레벨에서만 지원됩니다.
+
+* 즉시 백업을 확인합니다.
+* 복구 작업을 위해 데이터 및 로그 백업을 마운트 및 마운트 해제합니다.
+* 백업 및 검증 작업 예약
+* 모든 작업을 모니터링합니다.
+* 백업, 복원 및 클론 작업에 대한 보고서를 봅니다.
+

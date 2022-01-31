@@ -1,0 +1,66 @@
+---
+permalink: install/task_install_the_snapcenter_server_using_the_install_wizard.html 
+sidebar: sidebar 
+keywords: install, snapcenter software, install wizard 
+summary: SnapCenter 서버 설치 관리자 실행 파일을 실행하여 SnapCenter 서버를 설치할 수 있습니다. 
+---
+= SnapCenter 서버를 설치합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 서버 설치 관리자 실행 파일을 실행하여 SnapCenter 서버를 설치할 수 있습니다.
+
+필요에 따라 PowerShell cmdlet을 사용하여 몇 가지 설치 및 구성 절차를 수행할 수 있습니다.
+
+
+NOTE: 명령줄에서 SnapCenter 서버를 자동 설치하는 것은 지원되지 않습니다.
+
+* 필요한 것 *
+
+* SnapCenter 서버 호스트는 시스템 재시작을 보류하지 않고 Windows 업데이트를 최신 상태로 유지해야 합니다.
+* SnapCenter 서버를 설치하려는 호스트에 MySQL Server가 설치되어 있지 않은지 확인해야 합니다.
+* Windows 설치 관리자 디버깅을 사용하도록 설정해야 합니다.
++
+활성화에 대한 자세한 내용은 Microsoft 웹 사이트를 참조하십시오 https://support.microsoft.com/kb/223300["Windows 설치 관리자 로깅"^].
+
++
+
+NOTE: Microsoft Exchange Server, Active Directory 또는 도메인 이름 서버가 있는 호스트에 SnapCenter 서버를 설치하면 안 됩니다.
+
+
+
+* 단계 *
+
+. 에서 SnapCenter 서버 설치 패키지를 다운로드합니다 https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab["NetApp Support 사이트"^].
+. 다운로드한 .exe 파일을 두 번 클릭하여 SnapCenter 서버 설치를 시작합니다.
++
+설치를 시작한 후 모든 사전 점검을 수행하고 최소 요구사항을 충족하지 못할 경우 적절한 오류 또는 경고 메시지가 표시됩니다.
+
++
+경고 메시지를 무시하고 설치를 진행할 수 있지만 오류를 수정해야 합니다.
+
+. SnapCenter 서버 설치에 필요한 미리 채워진 값을 검토하고 필요한 경우 수정합니다.
++
+MySQL Server 리포지토리 데이터베이스의 암호를 지정할 필요가 없습니다. SnapCenter 서버 설치 중에 암호는 자동으로 생성됩니다.
+
++
+
+NOTE: 리포지토리 데이터베이스의 사용자 지정 경로에서 특수 문자 ""%"이(가) 지원되지 않습니다. 경로에 ""%"를 포함하면 설치가 실패합니다.
+
+. 지금 설치 * 를 클릭합니다.
++
+잘못된 값을 지정한 경우 해당 오류 메시지가 표시됩니다. 값을 다시 입력한 다음 설치를 시작해야 합니다.
+
++
+
+NOTE: Cancel * 버튼을 클릭하면 실행 중인 단계가 완료된 후 롤백 작업을 시작합니다. SnapCenter 서버가 호스트에서 완전히 제거됩니다.
+
++
+그러나 "SnapCenter 서버 사이트 재시작" 또는 "SnapCenter 서버 시작 대기 중" 작업이 수행 중일 때 * 취소 * 를 클릭하면 작업을 취소하지 않고 설치가 진행됩니다.
+
++
+로그 파일은 항상 관리자 사용자의 %temp% 폴더에 (가장 오래된 파일 먼저) 나열됩니다. 로그 위치를 리디렉션하려면 명령 프롬프트에서 "'C:\installer_location\installer_name.exe /log "C:\""를 실행하여 SnapCenter 서버 설치를 시작합니다
+
+

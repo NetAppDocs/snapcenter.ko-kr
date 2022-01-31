@@ -1,0 +1,17 @@
+---
+permalink: protect-sce/concept_snapcenter_plug_in_for_exchange_server_overview.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for Exchange Server 
+summary: Microsoft Exchange Server용 SnapCenter 플러그인은 Exchange 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetAppSnapCenter 소프트웨어의 호스트 측 구성 요소입니다. Exchange용 플러그인은 SnapCenter 환경에서 Exchange 데이터베이스의 백업 및 복원을 자동화합니다. 
+---
+= Microsoft Exchange Server용 SnapCenter 플러그인 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Microsoft Exchange Server용 SnapCenter 플러그인은 Exchange 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트 측 구성 요소입니다. Exchange용 플러그인은 SnapCenter 환경에서 Exchange 데이터베이스의 백업 및 복원을 자동화합니다.
+
+Exchange용 플러그인을 설치하면 SnapCenter와 NetApp SnapMirror 기술을 함께 사용하여 다른 볼륨에 백업 세트의 미러링 복사본을 만들고 NetApp SnapVault 기술을 사용하여 표준 준수 또는 아카이브용으로 D2D 백업 복제를 수행할 수 있습니다.
+
+전체 Exchange 데이터베이스 대신 메일 또는 편지함을 복원 및 복구하려면 SMBR(Single Mailbox Recovery) 소프트웨어를 사용하십시오.

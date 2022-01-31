@@ -1,0 +1,15 @@
+---
+permalink: protect-scw/concept_install_snapcenter_plug_in_for_microsoft_windows.html 
+sidebar: sidebar 
+keywords: installing 
+summary: 데이터베이스 파일이 아닌 Windows 파일을 보호하려면 Microsoft Windows용 SnapCenter 플러그인을 설치하고 설정해야 합니다. 
+---
+= Microsoft Windows용 SnapCenter 플러그인을 설치합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터베이스 파일이 아닌 Windows 파일을 보호하려면 Microsoft Windows용 SnapCenter 플러그인을 설치하고 설정해야 합니다.
+
+image::../media/scw_workflow_for_installing.gif[설치를 위한 SCW 워크플로]

@@ -1,0 +1,104 @@
+---
+section: install
+title: SnapCenter 서버 설치
+entries:
+- title: 워크플로 설치
+  url: "/install/install_workflow.html"
+- title: SnapCenter 서버 설치를 준비합니다
+  entries:
+  - title: 도메인 및 작업 그룹 요구 사항
+    url: "/install/reference_domain_and_workgroup_requirements.html"
+  - title: 요구사항을 충족해야 합니다
+    url: "/install/reference_space_and_sizing_requirements.html"
+  - title: SAN 호스트 요구 사항
+    url: "/install/reference_san_host_requirements.html"
+  - title: 지원되는 스토리지 시스템 및 애플리케이션
+    url: "/install/reference_supported_storage_systems_and_applications.html"
+  - title: 지원되는 브라우저
+    url: "/install/reference_supported_browsers.html"
+  - title: 연결 및 포트 요구 사항
+    url: "/install/reference_connection_and_port_requirements.html"
+  - title: SnapCenter 라이센스
+    url: "/install/concept_snapcenter_licenses.html"
+  - title: 자격 증명에 대한 인증 방법입니다
+    url: "/install/concept_authentication_methods_for_your_credentials.html"
+  - title: 스토리지 가상 머신 접속 및 자격 증명
+    url: "/install/concept_svm_connections_and_credentials.html"
+- title: SnapCenter 서버를 설치합니다
+  url: "/install/task_install_the_snapcenter_server_using_the_install_wizard.html"
+- title: SnapCenter에 로그인합니다
+  url: "/install/task_log_in_to_snapcenter.html"
+- title: CA 인증서를 구성합니다
+  entries:
+  - title: CA 인증서 CSR 파일을 생성합니다
+    url: "/install/reference_generate_CA_certificate_CSR_file.html"
+  - title: CA 인증서를 가져옵니다
+    url: "/install/task_import_CA_certificates.html"
+  - title: CA 인증서 지문을 받습니다
+    url: "/install/task_get_the_CA_certificate_thumbprint.html"
+  - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+    url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
+  - title: SnapCenter 사이트를 사용하여 CA 인증서를 구성합니다
+    url: "/install/task_configure_CA_certificate_with_snapcenter_site.html"
+  - title: SnapCenter 서버에 대해 CA 인증서를 활성화합니다
+    url: "/install/task_enable_ca_certificates_for_snapcenter.html"
+- title: Active Directory, LDAP 및 LDAPS를 구성합니다
+  entries:
+  - title: 신뢰할 수 없는 Active Directory 도메인을 등록합니다
+    url: "/install/task_register_untrusted_active_directory_domains.html"
+  - title: LDAPS에 대한 CA 클라이언트 인증서를 구성합니다
+    url: "/install/task_configure_CA_client_certificate_for_LDAPS.html"
+- title: 고가용성을 구성합니다
+  entries:
+  - title: F5를 사용하여 고가용성을 위해 SnapCenter 서버를 구성합니다
+    url: "/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html"
+  - title: Microsoft 네트워크 로드 밸런서를 수동으로 구성합니다
+    url: "/install/concept_network_load_balanacing_and_application_request_routing_requirements.html"
+  - title: 고가용성을 위해 NLB에서 F5로 전환합니다
+    url: "/install/task_switch_from_nlb_to_f5_for_high_availability.html"
+  - title: SnapCenter MySQL 리포지토리의 고가용성
+    url: "/install/concept_high_availability_for_snapcenter_mysql_repository.html"
+  - title: SnapCenter 인증서를 내보냅니다
+    url: "/install/task_export_snapcenter_certificates.html"
+- title: 역할 기반 액세스 제어(RBAC) 구성
+  entries:
+  - title: 사용자 또는 그룹을 추가하고 역할 및 자산을 할당합니다
+    url: "/install/task_add_a_user_or_group_and_assign_role_and_assets.html"
+  - title: 역할을 생성합니다
+    url: "/install/task_create_a_role.html"
+  - title: 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가합니다
+    url: "/install/task_add_an_rbac_role_using_security_login_commands.html"
+  - title: 최소 권한으로 SVM 역할 생성
+    url: "/install/create-svm-roles-minimum-privileges.html"
+  - title: 최소 권한으로 ONTAP 클러스터 역할을 생성합니다
+    url: "/install/task_create_an_ontap_cluster_role_with_minimum_privileges.html"
+  - title: Active Directory 읽기 권한을 사용하도록 IIS 응용 프로그램 풀을 구성합니다
+    url: "/install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html"
+- title: 스토리지 시스템을 추가합니다
+  url: "/install/task_add_storage_systems.html"
+- title: SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다
+  url: "/install/concept_snapcenter_standard_controller_based_licenses.html"
+- title: SnapCenter 표준 용량 기반 라이센스 추가
+  url: "/install/concept_snapcenter_standard_capacity_based_licenses.html"
+- title: 스토리지 시스템을 프로비저닝합니다
+  entries:
+  - title: Windows 호스트에서 스토리지 용량 할당
+    entries:
+    - title: LUN 스토리지를 구성합니다
+      url: "/install/concept_configure_lun_storage.html"
+    - title: Igroup 생성 및 관리
+      url: "/install/concept_create_and_manage_igroups.html"
+    - title: 디스크를 생성하고 관리합니다
+      url: "/install/task_create_and_manage_disks.html"
+    - title: SMB 공유를 생성하고 관리합니다
+      url: "/install/concept_create_and_manage_smb_shares.html"
+    - title: 스토리지 시스템의 공간을 재확보할 수 있습니다
+      url: "/install/task_reclaim_space_on_the_storage_system.html"
+    - title: PowerShell cmdlet을 사용하여 스토리지 용량 할당
+      url: "/install/reference_provision_storage_using_powershell_cmdlets.html"
+  - title: VMware 환경에서 스토리지 프로비저닝
+    url: "/install/concept_provision_storage_in_vmware_environments.html"
+- title: SnapCenter 서버로 보안 MySQL 연결을 구성합니다
+  url: "/install/concept_configure_secured_mysql_connections_with_snapcenter_server.html"
+- title: 설치 중에 Windows 호스트에서 활성화된 기능입니다
+  url: "/install/reference_features_enabled_on_your_windows_host_during_installation.html"

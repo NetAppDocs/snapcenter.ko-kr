@@ -1,0 +1,109 @@
+---
+permalink: protect-scw/task_back_up_a_single_resource_on_demand_for_windows_file_systems.html 
+sidebar: sidebar 
+keywords: backing up 
+summary: 자원이 자원 그룹에 없으면 자원 페이지에서 필요에 따라 자원을 백업할 수 있습니다. 
+---
+= 필요 시 Windows 파일 시스템에 대한 단일 리소스를 백업합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+자원이 자원 그룹에 없으면 자원 페이지에서 필요에 따라 자원을 백업할 수 있습니다.
+
+* 이 작업에 대한 정보 *
+
+2차 스토리지와 SnapMirror 관계가 있는 리소스를 백업하려면 스토리지 사용자에게 할당된 역할에 "'스냅샷 전체' 권한이 있어야 합니다. 그러나 "vsadmin" 역할을 사용하는 경우에는 "napmirror all" 권한이 필요하지 않습니다.
+
+
+NOTE: 파일 시스템을 백업할 때 SnapCenter는 백업되는 파일 시스템의 볼륨 마운트 지점(VMP)에 마운트된 LUN을 백업하지 않습니다.
+
+
+IMPORTANT: Windows 파일 시스템 컨텍스트에서 작업하는 경우 데이터베이스 파일을 백업하지 마십시오. 이렇게 하면 일관되지 않은 백업이 생성되고 복원할 때 데이터가 손실될 수 있습니다. 데이터베이스 파일을 보호하려면 데이터베이스에 적합한 SnapCenter 플러그인(예: Microsoft SQL Server용 SnapCenter 플러그인, Microsoft Exchange Server용 SnapCenter 플러그인 또는 데이터베이스 파일용 사용자 지정 플러그인)을 사용해야 합니다.
+
+* 단계 *
+
+. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 리소스 페이지에서 파일 시스템 리소스 유형을 선택한 다음 백업할 리소스를 선택합니다.
+. 파일 시스템 보호 마법사가 자동으로 시작되지 않으면 * 보호 * 를 클릭하여 마법사를 시작합니다.
++
+리소스 그룹 생성 작업에 설명된 대로 보호 설정을 지정합니다.
+
+. 선택 사항: 마법사의 리소스 페이지에서 스냅샷 복사본에 대한 사용자 지정 이름 형식을 입력합니다.
++
+예를 들어 customtext_resourcegroup_policy_hostname 또는 resourcegroup_hostname을 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.
+
+. 정책 페이지에서 다음 작업을 수행합니다.
++
+.. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
++
+기존 정책을 선택한 다음 * 세부 정보 * 를 클릭하여 해당 정책을 사용할 수 있는지 여부를 확인할 수 있습니다.
+
++
+기존 정책이 요구 사항을 충족하지 않는 경우 기존 정책을 복사하여 수정하거나 를 클릭하여 새 정책을 생성할 수 있습니다 image:../media/add_policy_from_resourcegroup.gif[""] 를 클릭하여 정책 마법사를 시작합니다.
+
++
+선택한 정책이 선택한 정책에 대한 스케줄 구성 섹션의 정책 열에 나열됩니다.
+
+.. 선택한 정책에 대한 스케줄 구성 섹션에서 을 클릭합니다 image:../media/add_policy_from_resourcegroup.gif[""] 스케줄을 구성할 정책에 대한 Configure Schedules 열에서
+.. policy_policy_name_schedules 추가 대화 상자에서 시작 날짜, 만료 날짜 및 빈도를 지정하여 스케줄을 구성한 다음 * 마침 * 을 클릭합니다.
++
+구성된 스케줄은 선택한 정책에 대한 스케줄 구성 섹션의 적용된 스케줄 열에 나열됩니다.
+
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Scheduled_data_protection_operations_fail_if_the_number_of_operations_running_reaches_maximum_limit["예약된 작업이 실패할 수 있습니다"]
+
+
+
+. 알림 페이지에서 다음 작업을 수행합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+이메일 기본 설정
+ a| 
+백업 리소스 그룹을 만들고 정책을 첨부하고 일정을 구성한 후 수신자에게 이메일을 보내려면 * Always *, * On Failure * 또는 * On failure 또는 Warning * 을 선택합니다.
+
+SMTP 서버 정보, 기본 이메일 제목 줄, ""받는 사람"" 및 " 보내는 사람" 이메일 주소를 입력합니다.
+
+
+
+ a| 
+보낸 사람
+ a| 
+이메일 주소입니다
+
+
+
+ a| 
+를 선택합니다
+ a| 
+전자 메일 받는 사람 주소
+
+
+
+ a| 
+제목
+ a| 
+기본 이메일 제목줄
+
+|===
+. 요약을 검토하고 * Finish * 를 클릭합니다.
++
+데이터베이스 토폴로지 페이지가 표시됩니다.
+
+. 지금 백업 * 을 클릭합니다.
+. 백업 페이지에서 다음 단계를 수행하십시오.
++
+.. 리소스에 여러 정책을 적용한 경우 정책 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.
++
+필요 시 백업에 대해 선택한 정책이 백업 스케줄과 연결된 경우 스케줄 유형에 지정된 보존 설정에 따라 필요 시 백업이 유지됩니다.
+
+.. 백업 * 을 클릭합니다.
+
+
+. 모니터 * > * 작업 * 을 클릭하여 작업 진행 상황을 모니터링합니다.
+

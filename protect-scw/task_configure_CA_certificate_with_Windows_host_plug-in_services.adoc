@@ -1,0 +1,46 @@
+---
+permalink: protect-scw/task_configure_CA_certificate_with_Windows_host_plug-in_services.html 
+sidebar: sidebar 
+keywords: SnapCenter 
+summary: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다 
+---
+= Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+설치된 디지털 인증서를 활성화하려면 Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성해야 합니다.
+
+SnapCenter 서버 및 CA 인증서가 이미 배포된 모든 플러그인 호스트에서 다음 단계를 수행합니다.
+
+* 단계 *
+
+. 다음 명령을 실행하여 SMCore 기본 포트 8145를 사용하여 기존 인증서 바인딩을 제거합니다.
++
+">netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>"를 선택합니다
+
++
+예를 들면 다음과 같습니다.
+
++
+ > netsh http delete sslcert ipport=0.0.0.0:8145
+. 다음 명령을 실행하여 새로 설치된 인증서를 Windows 호스트 플러그인 서비스와 바인딩합니다.
++
+">$cert="_<certificate thumbprint>_"
+
++
+'>$GUID=[GUID]::NewGuid().ToString("B")'
+
++
+">netsh http add sslcert ipport=0.0.0.0:_<SMCore Port>_CertHash=$cert AppID="$GUID""
+
++
+예를 들면 다음과 같습니다.
+
++
+....
+> $cert = “a909502dd82ae41433e6f83886b00d4277a32a7b”
+> $guid = [guid]::NewGuid().ToString("B")
+> netsh http add sslcert ipport=0.0.0.0:8145 certhash=$cert appid="$guid"
+....
+

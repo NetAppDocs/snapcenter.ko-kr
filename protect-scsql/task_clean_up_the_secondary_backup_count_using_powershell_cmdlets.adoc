@@ -1,0 +1,38 @@
+---
+permalink: protect-scsql/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_sql.html 
+sidebar: sidebar 
+keywords: backups 
+summary: Remove-SmBackup cmdlet을 사용하여 스냅샷 복사본이 없는 보조 백업의 백업 수를 정리할 수 있습니다. 복사본 관리 토폴로지에 표시된 총 스냅샷 복사본이 보조 스토리지 스냅샷 복사본 보존 설정과 일치하지 않을 때 이 cmdlet을 사용할 수 있습니다. 
+---
+= PowerShell cmdlet을 사용하여 보조 백업 수를 정리합니다
+:icons: font
+:imagesdir: ../media/
+
+
+Remove-SmBackup cmdlet을 사용하여 스냅샷 복사본이 없는 보조 백업의 백업 수를 정리할 수 있습니다. 복사본 관리 토폴로지에 표시된 총 스냅샷 복사본이 보조 스토리지 스냅샷 복사본 보존 설정과 일치하지 않을 때 이 cmdlet을 사용할 수 있습니다.
+
+PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
+
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+* 단계 *
+
+. Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
++
+[listing]
+----
+Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+----
+. CleanupSecondaryBackups 매개 변수를 사용하여 보조 백업 수를 정리합니다.
++
+이 예에서는 스냅샷 복사본 없이 2차 백업의 백업 수를 정리합니다.
+
++
+[listing]
+----
+Remove-SmBackup -CleanupSecondaryBackups
+Remove-SmBackup
+Are you sure want to remove the backup(s).
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
+----
+

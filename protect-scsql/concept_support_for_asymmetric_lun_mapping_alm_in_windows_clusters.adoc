@@ -1,0 +1,29 @@
+---
+permalink: protect-scsql/concept_support_for_asymmetric_lun_mapping_alm_in_windows_clusters.html 
+sidebar: sidebar 
+keywords: ALM 
+summary: 'Microsoft SQL Server용 SnapCenter 플러그인은 SQL Server 2012 이상에서 검색, 고가용성을 위한 Asymmetric LUN Mapping\(ALM\) 구성, 재해 복구를 위한 가용성 그룹을 지원합니다. 리소스를 검색할 때 SnapCenter는 로컬 호스트와 ALM 구성의 원격 호스트에서 데이터베이스를 검색합니다.' 
+---
+= Windows 클러스터에서 비대칭 LUN 매핑 지원
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Microsoft SQL Server용 SnapCenter 플러그인은 SQL Server 2012 이상에서 검색, 고가용성을 위한 Asymmetric LUN Mapping(ALM) 구성, 재해 복구를 위한 가용성 그룹을 지원합니다. 리소스를 검색할 때 SnapCenter는 로컬 호스트와 ALM 구성의 원격 호스트에서 데이터베이스를 검색합니다.
+
+ALM 구성은 운영 데이터 센터에 하나 이상의 노드와 재해 복구 센터에 하나 이상의 노드를 포함하는 단일 Windows 서버 장애 조치 클러스터입니다.
+
+다음은 ALM 구성의 예입니다.
+
+* 다중 사이트 데이터 센터에서 두 개의 FCI(장애 조치 클러스터 인스턴스)
+* 재해 복구 사이트에서 독립 실행형 인스턴스를 사용하여 재해 복구를 위한 로컬 HA(고가용성) 및 AG(가용성 그룹)용 FCI
+
+
+image::../media/asymmetric_lun_mapping_diagram.gif[비대칭 LUN 매핑 다이어그램]
+
+운영 데이터 센터의 스토리지는 운영 데이터 센터에 있는 FCI 노드 간에 공유됩니다. 재해 복구 데이터 센터의 스토리지는 재해 복구 데이터 센터에 있는 FCI 노드 간에 공유됩니다.
+
+운영 데이터 센터의 스토리지는 재해 복구 데이터 센터의 노드에 표시되지 않으며 그 반대의 경우도 마찬가지입니다.
+
+ALM 아키텍처는 FCI에서 사용하는 두 개의 공유 스토리지 솔루션과 SQL AG에서 사용하는 비공유 또는 전용 스토리지 솔루션을 결합합니다. AG 솔루션은 데이터 센터 전체에서 공유 디스크 리소스에 동일한 드라이브 문자를 사용합니다. WSFC 내의 노드 하위 집합 간에 클러스터 디스크를 공유하는 이러한 스토리지 배열을 ALM이라고 합니다.

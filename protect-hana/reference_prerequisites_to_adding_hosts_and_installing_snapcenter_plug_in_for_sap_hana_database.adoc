@@ -1,0 +1,53 @@
+---
+permalink: protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html 
+sidebar: sidebar 
+keywords: credentials 
+summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. SAP HANA 데이터베이스용 SnapCenter 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다. 
+---
+= 호스트를 추가하고 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하기 위한 사전 요구사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. SAP HANA 데이터베이스용 SnapCenter 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다.
+
+* 호스트에 Java 1.8 64비트를 설치해야 합니다.
+* 호스트에 SAP HANA 데이터베이스 대화형 터미널(HDBSQL 클라이언트)을 설치해야 합니다.
+* Windows의 경우 플러그인 생성 서비스는 ""LocalSystem"" Windows 사용자를 사용하여 실행해야 합니다. 이는 SAP HANA 데이터베이스용 플러그인이 도메인 관리자로 설치된 경우 기본 동작입니다.
+* Windows의 경우 사용자 저장소 키를 시스템 사용자로 만들어야 합니다.
+* Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다. Microsoft Windows용 SnapCenter 플러그인은 기본적으로 Windows 호스트에 SAP HANA 플러그인을 사용하여 구축됩니다.
+* Linux 호스트의 경우 HDB Secure User Store 키는 HDBSQL OS 사용자로 액세스됩니다.
+* SnapCenter 서버는 SAP HANA 데이터베이스 호스트용 플러그인의 8145 또는 맞춤형 포트에 액세스할 수 있어야 합니다.
+
+
+
+
+== Windows 호스트
+
+* 원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 도메인 사용자가 있어야 합니다.
+* Windows 호스트에 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 Microsoft Windows용 SnapCenter 플러그인이 자동으로 설치됩니다.
+* 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
+* Windows 호스트에 Java 1.8 64비트를 설치해야 합니다.
++
+http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
+
++
+https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+
+
+
+
+
+== Linux 호스트
+
+* 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
+* Linux 호스트에 Java 1.8 64비트를 설치해야 합니다.
++
+http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
+
++
+https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+
+* Linux 호스트에서 실행되는 SAP HANA 데이터베이스의 경우 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인은 자동으로 설치됩니다.
+

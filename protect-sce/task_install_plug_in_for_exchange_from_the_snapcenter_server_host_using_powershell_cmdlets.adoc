@@ -1,0 +1,38 @@
+---
+permalink: protect-sce/task_install_plug_in_for_exchange_from_the_snapcenter_server_host_using_powershell_cmdlets.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapCenter GUI에서 Exchange용 플러그인을 설치해야 합니다. GUI를 사용하지 않으려는 경우 SnapCenter 서버 호스트 또는 원격 호스트에서 PowerShell cmdlet을 사용할 수 있습니다. 
+---
+= PowerShell cmdlet을 사용하여 SnapCenter Server 호스트에서 Exchange용 플러그인을 설치합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter GUI에서 Exchange용 플러그인을 설치해야 합니다. GUI를 사용하지 않으려는 경우 SnapCenter 서버 호스트 또는 원격 호스트에서 PowerShell cmdlet을 사용할 수 있습니다.
+
+* 필요한 것 *
+
+* SnapCenter 서버가 설치 및 구성되어 있어야 합니다.
+* 호스트 또는 관리 권한이 있는 사용자의 로컬 관리자여야 합니다.
+* 플러그인, 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자)에 할당된 사용자여야 합니다
+* Exchange용 플러그인을 설치하기 전에 설치 요구 사항 및 지원되는 구성 유형을 검토해야 합니다.
+* Exchange용 플러그인을 설치할 호스트는 Windows 호스트여야 합니다.
+
+
+* 단계 *
+
+. SnapCenter 서버 호스트에서 _Open-SmConnection_cmdlet을 사용하여 세션을 설정한 다음 자격 증명을 입력합니다.
+. 필요한 매개 변수와 함께 _Add-SmHost_cmdlet을 사용하여 Exchange용 플러그인을 설치할 호스트를 추가합니다.
++
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
++
+호스트는 독립 실행형 호스트 또는 DAG일 수 있습니다. DAG를 지정하는 경우 _-IsDAG_매개 변수가 필요합니다.
+
+. 필요한 매개 변수와 함께 _Install-SmHostPackage_cmdlet을 사용하여 Exchange용 플러그인을 설치합니다.
++
+이 명령은 지정된 호스트에 Exchange용 플러그인을 설치한 다음 SnapCenter에 플러그인을 등록합니다.
+
+

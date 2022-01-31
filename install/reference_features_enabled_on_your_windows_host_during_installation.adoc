@@ -1,0 +1,130 @@
+---
+permalink: install/reference_features_enabled_on_your_windows_host_during_installation.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapCenter 서버 설치 프로그램을 사용하면 설치 중에 Windows 호스트에서 Windows 기능 및 역할을 사용할 수 있습니다. 이는 문제 해결 및 호스트 시스템 유지 관리 목적으로 활용할 수 있습니다. 
+---
+= 설치 중에 Windows 호스트에서 활성화된 기능입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 서버 설치 프로그램을 사용하면 설치 중에 Windows 호스트에서 Windows 기능 및 역할을 사용할 수 있습니다. 이는 문제 해결 및 호스트 시스템 유지 관리 목적으로 활용할 수 있습니다.
+
+|===
+| 범주 | 피처 
+
+
+ a| 
+웹 서버
+ a| 
+* 인터넷 정보 서비스
+* 월드 와이드 웹 서비스
+* 공통 HTTP 기능
++
+** 기본 문서
+** 디렉터리 검색
+** HTTP 오류
+** HTTP 리디렉션
+** 정적 콘텐츠
+** WebDAV 게시
+
+
+* 상태 및 진단
++
+** 사용자 지정 로깅
+** HTTP 로깅
+** 로깅 도구
+** 모니터 요청
+** 추적
+
+
+* 성능 기능
++
+** 정적 콘텐츠 압축
+
+
+* 보안
++
+** IP 보안
+** 기본 인증
+** 중앙 집중식 SSL 인증서 지원
+** 클라이언트 인증서 매핑 인증
+** IIS 클라이언트 인증서 매핑 인증
+** IP 및 도메인 제한
+** 요청 필터링
+** URL 권한 부여
+** Windows 인증
+
+
+* 응용 프로그램 개발 기능
++
+** NET 확장성 4.5
+** 응용 프로그램 초기화
+** ASP.NET 4.5
+** 서버 측 포함
+** WebSocket 프로토콜
+
+
+* 관리 도구
++
+** IIS 관리 콘솔
+
+
+
+
+
+
+ a| 
+IIS 관리 스크립트 및 도구
+ a| 
+* IIS 관리 서비스
+* 웹 관리 도구
+
+
+
+
+ a| 
+NET Framework 4.5.2 기능+
+ a| 
+* NET Framework 4.5.2
+* ASP.NET 4.5.2
+* WCF(Windows Communication Foundation) HTTP Activation45
++
+** TCP 활성화
+** HTTP 활성화
+** MSMQ(Message Queuing) 활성화
+
+
+
+
+
+
+ a| 
+메시지 큐
+ a| 
+* 메시지 큐 서비스
++
+
+NOTE: SnapCenter가 만들고 관리하는 MSMQ 서비스를 사용하는 다른 응용 프로그램이 없는지 확인합니다.
+
+* MSMQ 서버
+
+
+
+
+ a| 
+Windows 프로세스 활성화 서비스
+ a| 
+* 프로세스 모델
+
+
+
+
+ a| 
+구성 API
+ a| 
+모두
+
+|===

@@ -1,0 +1,50 @@
+---
+permalink: protect-scc/task_install_the_snapcenter_custom_plug_ins_on_linux_hosts_using_the_command_line_interface.html 
+sidebar: sidebar 
+keywords:  
+summary: 'SnapCenter UI(사용자 인터페이스)를 사용하여 SnapCenter 사용자 지정 플러그인을 설치해야 합니다. 사용자 환경에서 SnapCenter UI에서 플러그 인을 원격으로 설치할 수 없는 경우 명령줄 인터페이스 \(CLI\)를 사용하여 콘솔 모드 또는 자동 모드로 사용자 지정 플러그인을 설치할 수 있습니다.' 
+---
+= 명령줄 인터페이스를 사용하여 Linux 호스트에 SnapCenter 사용자 지정 플러그인을 설치합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter UI(사용자 인터페이스)를 사용하여 SnapCenter 사용자 지정 플러그인을 설치해야 합니다. 사용자 환경에서 SnapCenter UI에서 플러그인을 원격으로 설치할 수 없는 경우 CLI(Command-Line Interface)를 사용하여 콘솔 모드 또는 자동 모드로 사용자 지정 플러그인을 설치할 수 있습니다.
+
+* 단계 *
+
+. C:\ProgramData\NetApp\SnapCenter\Package Repository에서 Linux 설치 파일(snapcenter_linux_host_plugin.bin)용 SnapCenter 플러그인 패키지를 사용자 지정 플러그인을 설치할 호스트에 복사합니다.
++
+SnapCenter 서버가 설치된 호스트에서 이 경로에 액세스할 수 있습니다.
+
+. 명령 프롬프트에서 설치 파일을 복사한 디렉토리로 이동합니다.
+. 플러그 인 'path_to_installation_bin_file/snapcenter_linux_host_plugin.bin -i silent -dport=port_number_for_host -DSERVER_IP=server_name_or_ip_address-DSERVER_HTTPS_port=port_number_for_server'를 설치합니다
++
+** -dport는 SMCore HTTPS 통신 포트를 지정합니다.
+** -DSERVER_IP는 SnapCenter 서버 IP 주소를 지정합니다.
+** -DSERVER_HTTPS_PORT는 SnapCenter 서버 HTTPS 포트를 지정합니다.
+** -DUSER_INSTALL_DIR은 Linux용 SnapCenter 플러그인 패키지를 설치할 디렉토리를 지정합니다.
+** DINSTALL_LOG_NAME은 로그 파일의 이름을 지정합니다.
+
+
++
+[listing]
+----
+/tmp/sc-plugin-installer/snapcenter_linux_host_plugin.bin -i silent  -DPORT=8145 -DSERVER_IP=scserver.domain.com -DSERVER_HTTPS_PORT=8146 -DUSER_INSTALL_DIR=/opt -DINSTALL_LOG_NAME=SnapCenter_Linux_Host_Plugin_Install_2.log -DCHOSEN_FEATURE_LIST=CUSTOM
+----
+. Add-Smhost cmdlet 및 필수 매개 변수를 사용하여 SnapCenter 서버에 호스트를 추가합니다.
++
+명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+. SnapCenter에 로그인하고 UI에서 또는 PowerShell cmdlet을 사용하여 사용자 지정 플러그인을 업로드합니다.
++
+을 참조하여 UI에서 사용자 지정 플러그인을 업로드할 수 있습니다 link:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html["호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다"] 섹션을 참조하십시오.
+
++
+SnapCenter cmdlet 도움말 및 cmdlet 참조 정보에 PowerShell cmdlet에 대한 자세한 정보가 포함되어 있습니다.
+
++
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+

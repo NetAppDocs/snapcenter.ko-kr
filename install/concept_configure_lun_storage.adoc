@@ -1,0 +1,108 @@
+---
+permalink: install/concept_configure_lun_storage.html 
+sidebar: sidebar 
+keywords: LUN storage, iSCSI, 
+summary: SnapCenter를 사용하여 FC 연결 또는 iSCSI 연결 LUN을 구성할 수 있습니다. SnapCenter를 사용하여 기존 LUN을 Windows 호스트에 연결할 수도 있습니다. 
+---
+= LUN 스토리지를 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter를 사용하여 FC 연결 또는 iSCSI 연결 LUN을 구성할 수 있습니다. SnapCenter를 사용하여 기존 LUN을 Windows 호스트에 연결할 수도 있습니다.
+
+LUN은 SAN 구성의 기본 스토리지 단위입니다. Windows 호스트는 시스템의 LUN을 가상 디스크로 인식합니다. 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanconf/home.html["ONTAP 9 SAN 구성 가이드"^].
+
+
+
+== iSCSI 세션을 설정합니다
+
+iSCSI를 사용하여 LUN에 연결하는 경우 통신을 설정하기 위해 LUN을 생성하기 전에 iSCSI 세션을 설정해야 합니다.
+
+* 시작하기 전에 *
+
+* 스토리지 시스템 노드를 iSCSI 타겟으로 정의해야 합니다.
+* 스토리지 시스템에서 iSCSI 서비스를 시작해야 합니다. http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["자세한 정보"^]
+
+
+* 이 작업에 대한 정보 *
+
+IPv6에서 IPv6로 또는 IPv4에서 IPv4로 동일한 IP 버전 간에만 iSCSI 세션을 설정할 수 있습니다.
+
+iSCSI 세션 관리 및 호스트와 타겟 간의 통신에는 둘 다 동일한 서브넷에 있는 경우에만 링크 로컬 IPv6 주소를 사용할 수 있습니다.
+
+iSCSI 이니시에이터의 이름을 변경하면 iSCSI 대상에 대한 액세스가 영향을 받습니다. 이름을 변경한 후에는 이니시에이터가 새 이름을 인식할 수 있도록 타겟을 재구성해야 할 수 있습니다. iSCSI 이니시에이터의 이름을 변경한 후 호스트를 다시 시작해야 합니다.
+
+호스트에 둘 이상의 iSCSI 인터페이스가 있는 경우 첫 번째 인터페이스의 IP 주소를 사용하여 SnapCenter에 iSCSI 세션을 설정한 후에는 다른 IP 주소를 가진 다른 인터페이스에서 iSCSI 세션을 설정할 수 없습니다.
+
+* 단계 *
+
+. 왼쪽 탐색 창에서 * 호스트 * 를 클릭합니다.
+. 호스트 페이지에서 * iSCSI 세션 * 을 클릭합니다.
+. Storage Virtual Machine * 드롭다운 목록에서 iSCSI 타겟의 SVM(스토리지 가상 머신)을 선택합니다.
+. Host * (호스트 *) 드롭다운 목록에서 세션의 호스트를 선택합니다.
+. 세션 설정 * 을 클릭합니다.
++
+세션 설정 마법사가 표시됩니다.
+
+. 세션 설정 마법사에서 타겟을 식별합니다.
++
+|===
+| 이 필드에서... | 입력... 
+
+
+ a| 
+타겟 노드 이름입니다
+ a| 
+iSCSI 타겟의 노드 이름입니다
+
+기존 타겟 노드 이름이 있는 경우 해당 이름이 읽기 전용 형식으로 표시됩니다.
+
+
+
+ a| 
+대상 포털 주소입니다
+ a| 
+대상 네트워크 포털의 IP 주소입니다
+
+
+
+ a| 
+대상 포털 포트입니다
+ a| 
+대상 네트워크 포털의 TCP 포트입니다
+
+
+
+ a| 
+이니시에이터 포털 주소입니다
+ a| 
+이니시에이터 네트워크 포털의 IP 주소입니다
+
+|===
+. 입력한 내용에 만족하면 * 연결 * 을 클릭합니다.
++
+SnapCenter가 iSCSI 세션을 설정합니다.
+
+. 이 절차를 반복하여 각 타겟에 대한 세션을 설정합니다.
+
+
+
+
+== iSCSI 세션 연결을 해제합니다
+
+경우에 따라 여러 세션이 있는 대상에서 iSCSI 세션의 연결을 끊어야 할 수 있습니다.
+
+* 단계 *
+
+. 왼쪽 탐색 창에서 * 호스트 * 를 클릭합니다.
+. 호스트 페이지에서 * iSCSI 세션 * 을 클릭합니다.
+. Storage Virtual Machine * 드롭다운 목록에서 iSCSI 타겟의 SVM(스토리지 가상 머신)을 선택합니다.
+. Host * (호스트 *) 드롭다운 목록에서 세션의 호스트를 선택합니다.
+. iSCSI 세션 목록에서 연결을 끊을 세션을 선택하고 * 세션 연결 끊기 * 를 클릭합니다.
+. 세션 연결 끊기 대화 상자에서 * 확인 * 을 클릭합니다.
++
+SnapCenter는 iSCSI 세션의 연결을 끊습니다.
+
+

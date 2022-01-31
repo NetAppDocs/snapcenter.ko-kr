@@ -1,0 +1,15 @@
+---
+permalink: protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html 
+sidebar: sidebar 
+keywords: installing 
+summary: SAP HANA 데이터베이스를 보호하려면 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하고 설정해야 합니다. 
+---
+= SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAP HANA 데이터베이스를 보호하려면 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하고 설정해야 합니다.
+
+image::../media/sap_hana_install_configure_workflow.gif[SAP HANA 설치 구성 워크플로우]

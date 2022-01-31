@@ -1,0 +1,15 @@
+---
+permalink: protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapManager for Microsoft SQL Server에서 SnapCenter로 데이터를 가져오면 이전 버전의 데이터를 계속 사용할 수 있습니다. SnapVault 기술을 사용하여 SnapManager for Microsoft SQL Server에서 SnapCenter로 아카이빙된 백업만 가져올 수 있습니다. 
+---
+= 아카이브된 백업 가져오기 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager for Microsoft SQL Server에서 SnapCenter로 데이터를 가져오면 이전 버전의 데이터를 계속 사용할 수 있습니다. SnapVault 기술을 사용하여 SnapManager for Microsoft SQL Server에서 SnapCenter로 아카이빙된 백업만 가져올 수 있습니다.
+
+SnapCenter는 7-Mode에서 작동하는 Data ONTAP를 지원하지 않습니다. 7-Mode 전환 툴을 사용하면 7-Mode에서 운영되는 Data ONTAP을 실행하는 시스템에 저장된 데이터와 구성을 ONTAP 시스템으로 마이그레이션할 수 있습니다.

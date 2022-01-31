@@ -1,0 +1,27 @@
+---
+permalink: protect-scsql/reference_restore_sql_server_resources.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapCenter를 사용하여 하나 이상의 백업에서 액티브 파일 시스템으로 데이터를 복구한 다음 데이터베이스를 복구하여 SQL Server 데이터베이스를 복원할 수 있습니다. 가용성 그룹에 있는 데이터베이스를 복구한 다음 복원된 데이터베이스를 가용성 그룹에 추가할 수도 있습니다. SQL Server 데이터베이스를 복원하기 전에 몇 가지 준비 작업을 수행해야 합니다. 
+---
+= 워크플로를 복원합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter를 사용하여 하나 이상의 백업에서 액티브 파일 시스템으로 데이터를 복구한 다음 데이터베이스를 복구하여 SQL Server 데이터베이스를 복원할 수 있습니다. 가용성 그룹에 있는 데이터베이스를 복구한 다음 복원된 데이터베이스를 가용성 그룹에 추가할 수도 있습니다. SQL Server 데이터베이스를 복원하기 전에 몇 가지 준비 작업을 수행해야 합니다.
+
+다음 워크플로에서는 데이터베이스 복원 작업을 수행해야 하는 순서를 보여 줍니다.
+
+image::../media/all_plug_ins_restore_workflow.png[all_plug-ins_restore_workflow를 참조하십시오]
+
+PowerShell cmdlet을 수동으로 또는 스크립트에서 사용하여 백업, 복원, 복구, 확인 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2874310["SnapCenter 소프트웨어 4.4 cmdlet 참조 가이드"]
+
+* 자세한 정보 찾기 *
+
+link:task_restore_a_sql_server_database_from_secondary_storage.html["보조 스토리지에서 SQL Server 데이터베이스를 복구합니다"]
+
+link:task_restore_and_recover_resources_using_powershell_cmdlets.html["PowerShell cmdlet을 사용하여 리소스 복원 및 복구"]
+
+link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Restore_operation_might_fail_on_Windows_2008_R2["Windows 2008 R2에서 복원 작업이 실패할 수 있습니다"]

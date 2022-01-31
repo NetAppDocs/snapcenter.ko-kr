@@ -1,0 +1,46 @@
+---
+permalink: protect-scsql/concept_prerequisites_for_using_snapcenter_plug_in_for_microsoft_sql_server.html 
+sidebar: sidebar 
+keywords: credential 
+summary: SQL Server용 플러그인을 사용하기 전에 SnapCenter 관리자가 SnapCenter Server를 설치 및 구성하고 필수 작업을 수행해야 합니다. 
+---
+= Microsoft SQL Server용 SnapCenter 플러그인 사용을 위한 사전 요구 사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SQL Server용 플러그인을 사용하기 전에 SnapCenter 관리자가 SnapCenter Server를 설치 및 구성하고 필수 작업을 수행해야 합니다.
+
+* SnapCenter 서버를 설치하고 구성합니다.
+* SnapCenter에 로그인합니다.
+* 스토리지 시스템 접속을 추가하거나 할당하고 자격 증명을 생성하여 SnapCenter 환경을 구성합니다.
++
+
+NOTE: SnapCenter은 서로 다른 클러스터에서 동일한 이름의 여러 SVM을 지원하지 않습니다. SnapCenter에서 지원하는 각 SVM에는 고유한 이름이 있어야 합니다.
+
+* 호스트 추가, 플러그인 설치, 리소스 검색(새로 고침) 및 플러그인 구성
+* Invoke-SmConfigureResources를 실행하여 로컬 디스크에서 NetApp LUN으로 기존 Microsoft SQL Server 데이터베이스를 이동하거나 그 반대로 이동합니다.
++
+cmdlet 실행에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"]
+
+* SnapCenter 서버를 사용하여 VMware RDM LUN 또는 VMDK에 상주하는 SQL 데이터베이스를 보호하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다. 자세한 내용은 VMware vSphere용 SnapCenter 플러그인 설명서를 참조하십시오.
++
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/["VMware vSphere용 SnapCenter 플러그인 설명서"]
+
+* Microsoft Windows용 SnapCenter 플러그인을 사용하여 호스트 측 스토리지 프로비저닝을 수행합니다.
+* 기존 데이터베이스를 NetApp 스토리지로 이동
++
+자세한 내용은 SnapCenter 가져오기 정보 를 참조하십시오.
+
++
+link:concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html["Microsoft SQL Server용 SnapManager에서 SnapCenter로 아카이빙된 백업을 가져옵니다"]
+
+* 백업 복제를 원하는 경우 SnapMirror 및 SnapVault 관계를 설정합니다.
+
+
+자세한 내용은 SnapCenter 설치 정보를 참조하십시오.
+
+SnapCenter 4.1.1 사용자의 경우 VMware vSphere 4.1.1 용 SnapCenter 플러그인 설명서에 가상화 데이터베이스와 파일 시스템을 보호하는 방법에 대한 정보가 나와 있습니다. SnapCenter 4.2.x 사용자, NetApp Data Broker 1.0 및 1.0.1의 경우, Linux 기반 NetApp Data Broker 가상 어플라이언스(Open Virtual Appliance 형식)에서 제공하는 VMware vSphere용 SnapCenter 플러그인을 사용하여 가상화된 데이터베이스 및 파일 시스템을 보호하는 방법에 대한 정보가 수록되어 있습니다. SnapCenter 4.3.x 사용자의 경우 SnapCenter Plug-in for VMware vSphere 4.3 설명서에는 Linux 기반 SnapCenter Plug-in for VMware vSphere 가상 어플라이언스(오픈 가상 어플라이언스 형식)를 사용하여 가상화된 데이터베이스와 파일 시스템을 보호하는 방법에 대한 정보가 수록되어 있습니다.
+
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/["VMware vSphere용 SnapCenter 플러그인 설명서"]

@@ -1,0 +1,43 @@
+---
+permalink: install/task_reclaim_space_on_the_storage_system.html 
+sidebar: sidebar 
+keywords: space 
+summary: NTFS는 파일이 삭제되거나 수정될 때 LUN에서 사용 가능한 공간을 추적하지만 새 정보를 스토리지 시스템에 보고하지 않습니다. Windows 호스트용 플러그인에서 공간 재확보 PowerShell cmdlet을 실행하여 새로 확보된 블록이 스토리지에서 사용 가능으로 표시되는지 확인할 수 있습니다. 
+---
+= 스토리지 시스템의 공간을 재확보할 수 있습니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NTFS는 파일이 삭제되거나 수정될 때 LUN에서 사용 가능한 공간을 추적하지만 새 정보를 스토리지 시스템에 보고하지 않습니다. Windows 호스트용 플러그인에서 공간 재확보 PowerShell cmdlet을 실행하여 새로 확보된 블록이 스토리지에서 사용 가능으로 표시되는지 확인할 수 있습니다.
+
+원격 플러그인 호스트에서 cmdlet을 실행하는 경우 SnapCenter 서버에 대한 연결을 열려면 SnapCenterOpen - SMConnection cmdlet을 실행해야 합니다.
+
+* 필요한 것 *
+
+* 복구 작업을 수행하기 전에 공간 재확보 프로세스가 완료되었는지 확인해야 합니다.
+* LUN이 Windows Server 페일오버 클러스터의 호스트에서 공유되는 경우 클러스터 그룹을 소유하는 호스트에서 공간 재확보를 수행해야 합니다.
+* 최적의 스토리지 성능을 얻으려면 최대한 자주 공간 재확보를 수행해야 합니다.
++
+전체 NTFS 파일 시스템이 스캔되었는지 확인해야 합니다.
+
+
+
+* 이 작업에 대한 정보 *
+
+* 공간 재확보는 시간이 많이 걸리고 CPU가 많이 필요하므로 스토리지 시스템과 Windows 호스트 사용량이 적은 경우에 작업을 실행하는 것이 좋습니다.
+* 공간 재확보는 거의 모든 가용 공간을 재확보하지만 100%는 재확보하지 않습니다.
+* 공간 재확보를 수행하는 동안 디스크 조각 모음을 동시에 실행해서는 안 됩니다.
++
+이렇게 하면 재확보 프로세스가 느려질 수 있습니다.
+
+
+
+* 단계 *
+
+애플리케이션 서버 PowerShell 명령 프롬프트에서 다음 명령을 입력합니다.
+
+'Invoke-SdHostVolumeSpaceReclaim-Path drive_path'
+
+drive_path 는 LUN에 매핑된 드라이브 경로입니다.

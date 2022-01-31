@@ -1,0 +1,50 @@
+---
+permalink: protect-hana/concept_auto_discovery_of_resources_on_linux_host.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for SAP HANA Database 
+summary: 리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 데이터베이스 및 비 데이터 볼륨입니다. SAP HANA 데이터베이스 플러그인용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 SAP HANA 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다. 
+---
+= Linux 호스트에서 리소스 자동 검색
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 데이터베이스 및 비 데이터 볼륨입니다. SAP HANA 데이터베이스 플러그인용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 SAP HANA 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다.
+
+다음 SAP HANA 리소스에 대해 자동 검색이 지원됩니다.
+
+* 단일 컨테이너
++
+플러그인을 설치 또는 업그레이드한 후 중앙 집중식 호스트 플러그인에 있는 단일 컨테이너 리소스는 수동으로 리소스를 추가해도 계속 유지됩니다.
+
++
+플러그인을 설치 또는 업그레이드한 후에는 SnapCenter에 직접 등록된 SAP HANA Linux 호스트에서만 SAP HANA 데이터베이스가 자동으로 검색됩니다.
+
+* 멀티테넌트 데이터베이스 컨테이너(MDC)
++
+플러그인을 설치 또는 업그레이드한 후에는 수동으로 추가한 리소스로 중앙 집중식 호스트 플러그인에 있는 MDC 리소스가 계속됩니다.
+
++
+SnapCenter 4.3으로 업그레이드한 후 중앙 집중식 호스트 플러그인에서 MDC 리소스를 수동으로 추가해야 합니다.
+
++
+SnapCenter에 직접 등록된 SAP HANA Linux 호스트의 경우 플러그인을 설치 또는 업그레이드하면 호스트의 리소스에 대한 자동 검색이 트리거됩니다. 플러그인을 업그레이드한 후 플러그인 호스트에 있는 모든 MDC 리소스에 대해 다른 GUID 형식으로 다른 MDC 리소스가 자동으로 검색되어 SnapCenter에 등록됩니다. 새 리소스가 잠김 상태가 됩니다.
+
++
+예를 들어 SnapCenter 4.2에서 E90 MDC 리소스가 플러그인 호스트에 있고 수동으로 등록된 경우 SnapCenter 4.3으로 업그레이드한 후 다른 GUID를 가진 다른 E90 MDC 리소스가 SnapCenter에 검색되어 등록됩니다.
+
+
+
+다음 구성에서는 자동 검색이 지원되지 않습니다.
+
+* RDM 및 VMDK 레이아웃
++
+
+NOTE: 위의 리소스가 검색되는 경우 이러한 리소스에서 데이터 보호 작업이 지원되지 않습니다.
+
+* HANA 다중 호스트 구성
+* 동일한 호스트에 여러 인스턴스가 있습니다
+* 다중 계층 스케일아웃 HANA 시스템 복제
+* 시스템 복제 모드의 다중 구간 복제 환경
+

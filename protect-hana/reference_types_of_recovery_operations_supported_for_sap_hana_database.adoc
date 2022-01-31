@@ -1,0 +1,23 @@
+---
+permalink: protect-hana/reference_types_of_recovery_operations_supported_for_sap_hana_database.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapCenter를 사용하면 SAP HANA 데이터베이스에 대해 다양한 유형의 복구 작업을 수행할 수 있습니다. 
+---
+= SAP HANA 데이터베이스에 지원되는 복구 작업의 유형입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter를 사용하면 SAP HANA 데이터베이스에 대해 다양한 유형의 복구 작업을 수행할 수 있습니다.
+
+* 데이터베이스를 최신 상태로 복구합니다
+* 데이터베이스를 특정 시점으로 복구합니다
++
+복구할 날짜와 시간을 지정해야 합니다.
+
+* 데이터베이스를 특정 데이터 백업까지 복구합니다
+
+
+또한 SnapCenter는 SAP HANA 데이터베이스에 대해 복구 안 함 옵션을 제공합니다.

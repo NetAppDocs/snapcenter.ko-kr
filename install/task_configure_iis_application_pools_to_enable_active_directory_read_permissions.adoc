@@ -1,0 +1,26 @@
+---
+permalink: install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html 
+sidebar: sidebar 
+keywords: IIS application pool, active directory, enable 
+summary: 'SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 인터넷 정보 서비스\(IIS\)를 구성할 수 있습니다.' 
+---
+= Active Directory 읽기 권한을 사용하도록 IIS 응용 프로그램 풀을 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 IIS(인터넷 정보 서비스)를 구성할 수 있습니다.
+
+* 단계 *
+
+. SnapCenter가 설치된 Windows 서버에서 IIS 관리자를 엽니다.
+. 왼쪽 탐색 창에서 * 응용 프로그램 풀 * 을 클릭합니다.
+. 응용 프로그램 풀 목록에서 SnapCenter를 선택한 다음 작업 창에서 * 고급 설정 * 을 클릭합니다.
+. ID를 선택한 다음 *... * 를 클릭하여 SnapCenter 응용 프로그램 풀 ID를 편집합니다.
+. 사용자 지정 계정 필드에 Active Directory 읽기 권한이 있는 도메인 사용자 또는 도메인 관리자 계정 이름을 입력합니다.
+. 확인 을 클릭합니다.
++
+사용자 지정 계정은 SnapCenter 응용 프로그램 풀의 기본 제공 ApplicationPoolIdentity 계정을 대체합니다.
+
+

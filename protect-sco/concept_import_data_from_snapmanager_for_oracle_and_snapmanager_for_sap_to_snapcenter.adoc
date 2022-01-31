@@ -1,0 +1,318 @@
+---
+permalink: protect-sco/concept_import_data_from_snapmanager_for_oracle_and_snapmanager_for_sap_to_snapcenter.html 
+sidebar: sidebar 
+keywords: import, SnapManager for Oracle, SnapManager for SAP 
+summary: SnapManager for Oracle 및 SnapManager for SAP에서 SnapCenter로 데이터를 가져오면 이전 버전의 데이터를 계속 사용할 수 있습니다. 
+---
+= SnapManager for Oracle 및 SnapManager for SAP에서 SnapCenter로 데이터를 가져옵니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapManager for Oracle 및 SnapManager for SAP에서 SnapCenter로 데이터를 가져오면 이전 버전의 데이터를 계속 사용할 수 있습니다.
+
+명령줄 인터페이스(Linux 호스트 CLI)에서 가져오기 도구를 실행하여 SnapManager for Oracle 및 SnapManager for SAP에서 SnapCenter로 데이터를 가져올 수 있습니다.
+
+가져오기 도구는 SnapCenter에 정책 및 리소스 그룹을 만듭니다. SnapCenter에서 생성된 정책 및 리소스 그룹은 SnapManager for Oracle 및 SnapManager for SAP에서 이러한 프로파일을 사용하여 수행된 프로필과 작업에 해당합니다. SnapCenter 가져오기 도구는 SnapManager for Oracle 및 SnapManager for SAP 리포지토리 데이터베이스 및 가져올 데이터베이스와 상호 작용합니다.
+
+* 프로파일을 사용하여 수행된 모든 프로파일, 스케줄 및 작업을 검색합니다.
+* 프로필에 연결된 각 고유 작업 및 각 스케줄에 대한 SnapCenter 백업 정책을 생성합니다.
+* 각 타겟 데이터베이스에 대한 리소스 그룹을 생성합니다.
+
+
+가져오기 도구는 _/opt/NetApp/snapcenter/SPL/bin_에 있는 SC-migrate 스크립트를 실행하여 실행할 수 있습니다. 가져올 데이터베이스 호스트에 Linux용 SnapCenter 플러그인 패키지를 설치하면 SC-마이그레이션 스크립트가 _/opt/netapp/snapcenter/SPL/bin_에 복사됩니다.
+
+
+NOTE: SnapCenter 그래픽 사용자 인터페이스(GUI)에서는 데이터 가져오기가 지원되지 않습니다.
+
+SnapCenter는 7-Mode에서 작동하는 Data ONTAP를 지원하지 않습니다. 7-Mode 전환 툴을 사용하면 7-Mode에서 운영되는 Data ONTAP을 실행하는 시스템에 저장된 데이터와 구성을 ONTAP 시스템으로 마이그레이션할 수 있습니다.
+
+
+
+== 데이터 가져오기에 지원되는 구성입니다
+
+Oracle용 SnapManager 3.4.x 및 SAP용 SnapManager 3.4.x에서 SnapCenter로 데이터를 가져오기 전에 Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성을 알고 있어야 합니다.
+
+Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성은 에 나와 있습니다 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+
+
+
+== SnapCenter로 가져온 항목
+
+프로파일을 사용하여 수행한 프로파일, 일정 및 작업을 가져올 수 있습니다.
+
+|===
+| SnapManager for Oracle 및 SnapManager for SAP에서 | SnapCenter로 
+
+
+ a| 
+작업 및 일정이 없는 프로파일
+ a| 
+정책은 기본 백업 유형을 온라인 으로, 백업 범위를 전체 로 하여 생성됩니다.
+
+
+
+ a| 
+하나 이상의 작업이 있는 프로파일
+ a| 
+여러 정책은 해당 프로파일을 사용하여 수행된 프로파일과 작업의 고유한 조합을 기반으로 생성됩니다.
+
+SnapCenter에서 생성된 정책에는 프로파일 및 해당 작업에서 가져온 아카이브 로그 잘라내기 및 보존 세부 정보가 포함됩니다.
+
+
+
+ a| 
+Oracle RMAN(Recovery Manager) 구성을 사용한 프로파일
+ a| 
+정책은 * Oracle Recovery Manager * 옵션을 활성화한 상태에서 * Catalog Backup을 사용하여 생성됩니다.
+
+SnapManager에서 외부 RMAN 카탈로그를 사용한 경우 SnapCenter에서 RMAN 카탈로그 설정을 구성해야 합니다. 기존 자격 증명을 선택하거나 새 자격 증명을 생성할 수 있습니다.
+
+RMAN이 SnapManager의 제어 파일을 통해 구성된 경우 SnapCenter에서 RMAN을 구성할 필요가 없습니다.
+
+
+
+ a| 
+프로필에 연결된 스케줄입니다
+ a| 
+스케줄에 대한 정책이 생성됩니다.
+
+
+
+ a| 
+데이터베이스
+ a| 
+가져온 각 데이터베이스에 대해 리소스 그룹이 만들어집니다.
+
+RAC(Real Application Clusters) 설정에서는 가져오기 도구를 실행하는 노드가 가져오기 후 기본 설정 노드가 되고 해당 노드에 대한 리소스 그룹이 생성됩니다.
+
+|===
+
+NOTE: 프로필을 가져오면 백업 정책과 함께 검증 정책이 생성됩니다.
+
+Oracle용 SnapManager와 SnapManager SAP 프로필, 일정 및 프로필을 사용하여 수행한 작업을 SnapCenter로 가져오는 경우 다른 매개 변수 값도 가져옵니다.
+
+|===
+| SnapManager for Oracle 및 SnapManager for SAP 매개 변수 및 값 | SnapCenter 매개 변수 및 값 | 참고 
+
+
+ a| 
+백업 범위
+
+* 가득 참
+* 데이터
+* 로그
+
+ a| 
+백업 범위
+
+* 가득 참
+* 데이터
+* 로그
+
+ a| 
+
+
+
+ a| 
+백업 모드
+
+* 자동
+* 온라인
+* 오프라인
+
+ a| 
+백업 유형
+
+* 온라인
+* 오프라인 종료
+
+ a| 
+백업 모드가 자동인 경우 가져오기 도구는 작업이 수행될 때 데이터베이스 상태를 확인하고 백업 유형을 온라인 또는 오프라인 종료로 적절하게 설정합니다.
+
+
+
+ a| 
+보존
+
+* 일
+* 카운트
+
+ a| 
+보존
+
+* 일
+* 카운트
+
+ a| 
+Oracle용 SnapManager와 SAP용 SnapManager는 일 및 수 모두를 사용하여 보존을 설정합니다.
+
+SnapCenter에는 days_or_Counts가 있습니다. 따라서 Oracle의 경우 SnapManager, SAP의 경우 SnapManager에서 일 수가 더 우선하기 때문에 일 수에 따라 보존 기간이 설정됩니다.
+
+
+
+ a| 
+일정에 대한 정리
+
+* 모두
+* 시스템 변경 번호(SCN)
+* 날짜
+* 지정된 시간, 일, 주 및 월 이전에 생성된 로그입니다
+
+ a| 
+일정에 대한 정리
+
+* 모두
+* 지정된 시간 및 일 이전에 생성된 로그입니다
+
+ a| 
+SnapCenter는 SCN, 날짜, 주 및 월을 기준으로 한 가지치기를 지원하지 않습니다.
+
+
+
+ a| 
+통지
+
+* 성공적인 작업을 위해 보낸 이메일입니다
+* 실패한 작업에 대해서만 이메일이 전송되었습니다
+* 성공 및 실패한 작업을 위해 전송된 이메일입니다
+
+ a| 
+통지
+
+* 항상
+* 실패 시
+* 경고
+* 오류
+
+ a| 
+이메일 알림을 가져옵니다.
+
+그러나 SnapCenter GUI를 사용하여 SMTP 서버를 수동으로 업데이트해야 합니다. 이메일 제목은 구성할 수 있도록 비어 있습니다.
+
+|===
+
+
+== SnapCenter로 가져올 수 없는 항목
+
+불러오기 도구는 모든 것을 SnapCenter로 불러오지 않습니다.
+
+다음을 SnapCenter로 가져올 수 없습니다.
+
+* 메타데이터 백업
+* 부분 백업
+* RDM(Raw Device Mapping) 및 VSC(Virtual Storage Console) 관련 백업
+* Oracle용 SnapManager 및 SAP용 SnapManager 리포지토리에서 사용할 수 있는 역할 또는 자격 증명
+* 검증, 복원 및 클론 작업과 관련된 데이터
+* 작업을 위한 잘라내기
+* SnapManager for Oracle 및 SnapManager for SAP 프로필에 지정된 복제 세부 정보입니다
++
+가져온 후에는 SnapCenter에서 생성한 해당 정책을 수동으로 편집하여 복제 세부 정보를 포함해야 합니다.
+
+* 카탈로그 작성된 백업 정보
+
+
+
+
+== 데이터 가져오기를 준비합니다
+
+데이터를 SnapCenter로 가져오기 전에 가져오기 작업을 성공적으로 실행하기 위해 특정 작업을 수행해야 합니다.
+
+* 단계 *
+
+. 가져올 데이터베이스를 식별합니다.
+. SnapCenter를 사용하여 데이터베이스 호스트를 추가하고 Linux용 SnapCenter 플러그인 패키지를 설치합니다.
+. SnapCenter를 사용하여 호스트의 데이터베이스에서 사용되는 SVM(스토리지 가상 머신)의 연결을 설정합니다.
+. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 리소스 페이지에서 가져올 데이터베이스가 검색되어 표시되는지 확인합니다.
++
+가져오기 도구를 실행하려면 데이터베이스에 액세스할 수 있어야 하며 그렇지 않으면 리소스 그룹을 만들 수 없습니다.
+
++
+데이터베이스에 자격 증명이 구성되어 있는 경우 SnapCenter에서 해당 자격 증명을 생성하고 데이터베이스에 자격 증명을 할당한 다음 데이터베이스 검색을 다시 실행해야 합니다. 데이터베이스가 ASM(Automatic Storage Management)에 있는 경우 ASM 인스턴스에 대한 자격 증명을 생성하고 자격 증명을 데이터베이스에 할당해야 합니다.
+
+. 가져오기 도구를 실행하는 사용자가 SnapManager SnapManager for Oracle 또는 SnapManager for SAP CLI 명령(예: 예약 일시 중지 명령)을 실행할 수 있는 충분한 권한을 가지고 있는지 확인합니다 SnapManager.
+. Oracle용 SnapManager 또는 SAP용 SnapManager 호스트에서 다음 명령을 실행하여 스케줄을 일시 중지합니다.
++
+.. SnapManager for Oracle 호스트에서 스케줄을 일시 중지하려면 다음을 실행합니다.
++
+*** 'smo credential set-repository-dbname repository_database_name-host host host_name-port_number-login-username user_name_for_repository_database'를 입력합니다
+*** 'smo profile sync-repository-dbname repository_database_name-host host_name-port_number-login-username host_user_name_for_repository_database'를 참조하십시오
+*** 'smo Credential set-profile-name profile_name'입니다
++
+
+NOTE: 호스트의 각 프로필에 대해 SMO 자격 증명 세트 명령을 실행해야 합니다.
+
+
+
+.. SnapManager for SAP 호스트의 스케줄을 일시 중지하려면 다음을 실행합니다.
++
+*** 'msap credential set -repository -dbname repository_database_name -host host_name -port_number -login -username user_name_for_repository_database'
+*** 'smsap profile sync-repository-dbname repository_database_name-host host_name-port_number-login-username host_user_name_for_repository_database'를 참조하십시오
+*** 'msap 자격 증명 set-profile-name profile_name'입니다
+
+
++
+
+NOTE: 호스트의 각 프로필에 대해 smsap 자격 증명 집합 명령을 실행해야 합니다.
+
+
+
+. 호스트 이름 -F를 실행할 때 데이터베이스 호스트의 FQDN(정규화된 도메인 이름)이 표시되는지 확인합니다
++
+FQDN이 표시되지 않으면 /etc/hosts를 수정하여 호스트의 FQDN을 지정해야 합니다.
+
+
+
+
+
+== 데이터를 가져옵니다
+
+데이터베이스 호스트에서 가져오기 도구를 실행하여 데이터를 가져올 수 있습니다.
+
+* 이 작업에 대한 정보 *
+
+가져온 후 생성되는 SnapCenter 백업 정책의 명명 형식은 다음과 같습니다.
+
+* 작업 및 일정 없이 프로파일에 대해 생성된 정책에는 SM_profileName_online_full_default_m마이그레이션된 형식이 있습니다.
++
+프로파일을 사용하여 작업을 수행하지 않으면 해당 정책은 기본 백업 유형을 온라인 및 백업 범위를 전체 로 사용하여 생성됩니다.
+
+* 하나 이상의 작업으로 프로파일에 대해 생성된 정책에는 SM_profileName_BACKUPMODE_BACKUPSCOPE_Migrated 형식이 있습니다.
+* 프로필에 연결된 일정에 대해 생성된 정책에는 SM_profileName_SMOSCHEDULENAME_BACKUPMODE_BACKUPSCOPE_Migrated 형식이 있습니다.
+
+
+* 단계 *
+
+. 가져오려는 데이터베이스 호스트에 로그인합니다.
+. _/opt/NetApp/snapcenter/SPL/bin_에 있는 SC-migrate 스크립트를 실행하여 가져오기 도구를 실행합니다.
+. SnapCenter 서버 사용자 이름 및 암호를 입력합니다.
++
+자격 증명의 유효성을 검사한 후 SnapCenter와 연결이 설정됩니다.
+
+. SnapManager for Oracle 또는 SnapManager for SAP 리포지토리 데이터베이스 세부 정보를 입력합니다.
++
+저장소 데이터베이스에는 호스트에서 사용할 수 있는 데이터베이스가 나열됩니다.
+
+. 대상 데이터베이스 세부 정보를 입력합니다.
++
+호스트의 모든 데이터베이스를 가져오려면 All 을 입력합니다.
+
+. 시스템 로그를 생성하거나 실패한 작업에 대한 ASUP 메시지를 보내려면 _Add-SmStorageConnection_ 또는 _Set-SmStorageConnection_ 명령을 실행하여 해당 로그를 활성화해야 합니다.
++
+
+NOTE: 가져오기 도구를 실행하는 동안 또는 가져온 후에 가져오기 작업을 취소하려면 가져오기 작업의 일부로 만든 SnapCenter 정책, 자격 증명 및 리소스 그룹을 수동으로 삭제해야 합니다.
+
+
+
+* 결과 *
+
+SnapCenter 백업 정책은 프로파일을 사용하여 수행하는 프로파일, 스케줄 및 작업에 대해 생성됩니다. 각 타겟 데이터베이스에 대해 리소스 그룹도 만들어집니다.
+
+데이터를 성공적으로 가져오면 가져온 데이터베이스와 연결된 스케줄이 SnapManager for Oracle 및 SnapManager for SAP에서 일시 중단됩니다.
+
+
+NOTE: 가져온 데이터베이스 또는 파일 시스템을 SnapCenter를 사용하여 관리해야 합니다.
+
+가져오기 도구의 모든 실행에 대한 로그는 SPL_migration_timestamp.log라는 이름의 _/var/opt/snapcenter/SPL/logs_directory에 저장됩니다. 이 로그를 참조하여 가져오기 오류를 검토하고 문제를 해결할 수 있습니다.

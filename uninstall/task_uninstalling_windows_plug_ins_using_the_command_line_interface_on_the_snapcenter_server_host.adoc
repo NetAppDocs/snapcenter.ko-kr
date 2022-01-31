@@ -1,0 +1,25 @@
+---
+permalink: uninstall/task_uninstalling_windows_plug_ins_using_the_command_line_interface_on_the_snapcenter_server_host.html 
+sidebar: sidebar 
+keywords: uninstall, windows plug-ins, powershell cmdlet 
+summary: SnapCenter 서버 호스트 명령줄 인터페이스의 Uninstall-SmHostPackage cmdlet을 사용하여 하나 이상의 호스트에서 개별 플러그인을 제거하거나 플러그인 패키지를 제거할 수 있습니다. 
+---
+= PowerShell cmdlet을 사용하여 Windows 플러그인을 제거합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 서버 호스트 명령줄 인터페이스의 _Uninstall-SmHostPackage_cmdlet을 사용하여 하나 이상의 호스트에서 개별 플러그인을 제거하거나 플러그인 패키지를 제거할 수 있습니다.
+
+플러그인을 제거할 각 호스트에 대한 로컬 관리자 권한이 있는 도메인 사용자로 SnapCenter에 로그인해야 합니다.
+
+* 단계 *
+
+. PowerShell을 실행합니다.
+. SnapCenter 서버 호스트에서:_Open-SMConnection-SMSbaseUrl\https://SNAPCENTER_SERVER_NAME/DOMAIN_NAME_ 명령을 입력한 다음 자격 증명을 입력합니다.
+. _Uninstall-SmHostPackage_cmdlet 및 필수 매개 변수를 사용하여 Windows 플러그인을 제거합니다.
++
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+

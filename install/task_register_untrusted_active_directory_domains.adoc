@@ -1,0 +1,118 @@
+---
+permalink: install/task_register_untrusted_active_directory_domains.html 
+sidebar: sidebar 
+keywords:  
+summary: 신뢰할 수 없는 여러 Active Directory 도메인의 호스트, 사용자 및 그룹을 관리하려면 Active Directory를 SnapCenter 서버에 등록해야 합니다. 
+---
+= 신뢰할 수 없는 Active Directory 도메인을 등록합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+신뢰할 수 없는 여러 Active Directory 도메인의 호스트, 사용자 및 그룹을 관리하려면 Active Directory를 SnapCenter 서버에 등록해야 합니다.
+
+* 필요한 것 *
+
+* LDAP 및 LDAPS 프로토콜 *
+
+* LDAP 또는 LDAPS 프로토콜을 사용하여 신뢰할 수 없는 Active Directory 도메인을 등록할 수 있습니다.
+* 플러그인 호스트와 SnapCenter 서버 간에 양방향 통신을 설정해야 합니다.
+* DNS 확인은 SnapCenter 서버에서 플러그인 호스트로, 또는 그 반대로 설정해야 합니다.
+
+
+* LDAP 프로토콜 *
+
+* FQDN(정규화된 도메인 이름)은 SnapCenter 서버에서 확인할 수 있어야 합니다.
++
+FQDN을 사용하여 신뢰할 수 없는 도메인을 등록할 수 있습니다. SnapCenter 서버에서 FQDN을 확인할 수 없는 경우 도메인 컨트롤러 IP 주소로 등록할 수 있으며 SnapCenter 서버에서 확인할 수 있습니다.
+
+
+
+LDAPS 프로토콜 *
+
+* LDAPS가 Active Directory 통신 중에 종단 간 암호화를 제공하려면 CA 인증서가 필요합니다.
++
+link:task_configure_CA_client_certificate_for_LDAPS.html["LDAPS에 대한 CA 클라이언트 인증서를 구성합니다"]
+
+* SnapCenter 서버에서 도메인 컨트롤러 호스트 이름(DCHostName)에 연결할 수 있어야 합니다.
+
+
+* 이 작업에 대한 정보 *
+
+* SnapCenter 사용자 인터페이스, PowerShell cmdlet 또는 REST API를 사용하여 신뢰할 수 없는 도메인을 등록할 수 있습니다.
+
+
+* 단계 *
+
+. 왼쪽 탐색 창에서 * 설정 * 을 클릭합니다.
+. 설정 페이지에서 * 글로벌 설정 * 을 클릭합니다.
+. 글로벌 설정 페이지에서 * 도메인 설정 * 을 클릭합니다.
+. 을 클릭합니다 image:../media/add_policy_from_resourcegroup.gif[""] 새 도메인을 등록합니다.
+. 새 도메인 등록 페이지에서 * LDAP * 또는 * LDAPS * 를 선택합니다.
++
+.. LDAP * 를 선택한 경우 LDAP에 대해 신뢰할 수 없는 도메인을 등록하는 데 필요한 정보를 지정합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+도메인 이름
+ a| 
+도메인의 NetBIOS 이름을 지정합니다.
+
+
+
+ a| 
+도메인 FQDN
+ a| 
+FQDN을 지정하고 * Resolve * 를 클릭합니다.
+
+
+
+ a| 
+도메인 컨트롤러 IP 주소입니다
+ a| 
+SnapCenter 서버에서 도메인 FQDN을 확인할 수 없는 경우 하나 이상의 도메인 컨트롤러 IP 주소를 지정합니다.
+
+자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_does_not_allow_to_add_Domain_Controller_IP_for_untrusted_domain_from_GUI["GUI에서 신뢰할 수 없는 도메인에 대한 도메인 컨트롤러 IP를 추가합니다"^].
+
+|===
+.. LDAPS * 를 선택한 경우 LDAPS에 대해 신뢰할 수 없는 도메인을 등록하는 데 필요한 정보를 지정합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+도메인 이름
+ a| 
+도메인의 NetBIOS 이름을 지정합니다.
+
+
+
+ a| 
+도메인 FQDN
+ a| 
+FQDN을 지정합니다.
+
+
+
+ a| 
+도메인 컨트롤러 이름입니다
+ a| 
+하나 이상의 도메인 컨트롤러 이름을 지정하고 * Resolve * 를 클릭합니다.
+
+
+
+ a| 
+도메인 컨트롤러 IP 주소입니다
+ a| 
+SnapCenter 서버에서 도메인 컨트롤러 이름을 확인할 수 없는 경우 DNS 해상도를 수정해야 합니다.
+
+|===
+
+
+. 확인 * 을 클릭합니다.
+

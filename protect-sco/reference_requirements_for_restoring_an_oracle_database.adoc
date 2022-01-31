@@ -1,0 +1,33 @@
+---
+permalink: protect-sco/reference_requirements_for_restoring_an_oracle_database.html 
+sidebar: sidebar 
+keywords:  
+summary: Oracle 데이터베이스를 복구하기 전에 사전 요구 사항이 완료되었는지 확인해야 합니다. 
+---
+= Oracle 데이터베이스 복구 요구 사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Oracle 데이터베이스를 복구하기 전에 사전 요구 사항이 완료되었는지 확인해야 합니다.
+
+* 복원 및 복구 전략을 정의해야 합니다.
+* 스냅샷 복사본을 미러 또는 볼트로 복제할 경우 SnapCenter 관리자가 소스 볼륨과 타겟 볼륨 모두에 SVM(스토리지 가상 머신)을 할당해야 합니다.
+* 아카이브 로그가 백업의 일부로 정리된 경우 필요한 아카이브 로그 백업을 수동으로 마운트해야 합니다.
+* VMDK(Virtual Machine Disk)에 상주하는 Oracle 데이터베이스를 복원하려면 게스트 시스템에 복제된 VMDK를 할당하는 데 필요한 가용 슬롯 수가 있는지 확인해야 합니다.
+* 해당 데이터베이스에 대해 보조 보호가 설정된 경우 데이터베이스에 속한 모든 데이터 볼륨과 아카이브 로그 볼륨이 보호되는지 확인해야 합니다.
+* 제어 파일 또는 전체 데이터베이스 복구를 수행하려면 RAC One Node 데이터베이스가 "nomount" 상태여야 합니다.
+* NFS 환경에 ASM 데이터베이스 인스턴스가 있는 경우 ASM 로그 백업을 복구 작업의 일부로 성공적으로 마운트하기 위해 ASM 디스크 경로 _/var/opt/snapcenter/SCU/clones/ */ *_를 ASM_diskstring 매개 변수에 정의된 기존 경로에 추가해야 합니다.
+* ASM_diskstring 매개 변수에서 ASMFD 또는 configure_ORCL: *_을 사용하는 경우 ASMlib를 사용하는 경우 _AFD: *_를 구성해야 합니다.
++
+
+NOTE: ASM_diskstring 매개 변수를 편집하는 방법에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter["ASM_diskstring에 디스크 경로를 추가하는 방법"^]
+
+* 비 ASM 데이터베이스의 경우 _$oracle_home/network/admin_에서 사용할 수 있는 * listener.ora * 파일의 정적 수신기를 구성하고, Oracle 데이터베이스의 경우 OS 인증을 사용하지 않고 Oracle 데이터베이스 인증을 활성화한 경우 ASM 데이터베이스의 경우 _$grid_home/network/admin_에서 해당 데이터베이스의 데이터 파일 및 제어 파일을 복원해야 합니다.
+* 데이터베이스 크기가 테라바이트(TB)인 경우 Set-SmConfigSettings 명령을 실행하여 ScCORestoreTimeout 매개 변수의 값을 늘려야 합니다.
+* vCenter에 필요한 모든 라이센스가 설치되어 있고 최신 상태인지 확인해야 합니다.
++
+라이센스가 설치되지 않았거나 최신 상태인 경우 경고 메시지가 표시됩니다. 경고를 무시하고 계속하면 RDM에서 복구가 실패합니다.
+
+

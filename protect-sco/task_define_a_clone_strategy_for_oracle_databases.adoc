@@ -1,0 +1,73 @@
+---
+permalink: protect-sco/task_define_a_clone_strategy_for_oracle_databases.html 
+sidebar: sidebar 
+keywords: backup types, cloning type, clone name, limitations 
+summary: 데이터베이스를 복제하기 전에 전략을 정의하면 클론 생성 작업이 성공적으로 수행됩니다. 
+---
+= Oracle 데이터베이스에 대한 클론 전략 정의
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터베이스를 복제하기 전에 전략을 정의하면 클론 생성 작업이 성공적으로 수행됩니다.
+
+
+
+== 클론 생성에 지원되는 백업 유형입니다
+
+SnapCenter는 다양한 유형의 Oracle 데이터베이스 백업 복제를 지원합니다.
+
+* 온라인 데이터 백업
+* 온라인 전체 백업
+* 오프라인 마운트 백업
+* 오프라인 종료 백업
+* Data Guard 대기 데이터베이스 및 Active Data Guard 대기 데이터베이스 백업
+* 온라인 데이터 백업, 온라인 전체 백업, 오프라인 마운트 백업 및 RAC(Real Application Clusters) 구성의 오프라인 종료 백업
+* 온라인 데이터 백업, 온라인 전체 백업, 오프라인 마운트 백업 및 ASM(Automatic Storage Management) 구성에서 오프라인 종료 백업
++
+
+IMPORTANT: 다중 경로 구성 파일의 user_friendly_names 옵션이 yes로 설정되어 있고 udev 규칙 파일을 사용하여 Oracle ASM 디스크에 대해 별칭 또는 기호 링크가 정의되어 있는 경우 Oracle ASM 구성이 지원되지 않습니다.
+
+
+
+
+NOTE: 아카이브 로그 백업의 클론 생성은 지원되지 않습니다.
+
+
+
+== Oracle 데이터베이스에 지원되는 클론 생성 유형입니다
+
+Oracle 데이터베이스 환경에서 SnapCenter은 데이터베이스 백업의 복제를 지원합니다. 기본 및 보조 스토리지 시스템에서 백업을 복제할 수 있습니다.
+
+SnapCenter 서버는 NetApp FlexClone 기술을 사용하여 백업을 복제합니다.
+
+"Refresh-SmClone" 명령을 실행하여 클론을 새로 고칠 수 있습니다. 이 명령은 데이터베이스의 백업을 생성하고 기존 클론을 삭제한 다음 같은 이름의 클론을 생성합니다.
+
+
+NOTE: 클론 새로 고침 작업은 UNIX 명령을 통해서만 수행할 수 있습니다.
+
+
+
+== Oracle 데이터베이스에 대한 클론 명명 규칙
+
+SnapCenter 3.0에서는 파일 시스템의 클론에 사용되는 명명 규칙이 ASM 디스크 그룹의 클론과 다릅니다.
+
+* SAN 또는 NFS 파일 시스템의 명명 규칙은 FileSystemNameofsourcedatabase_CLONEID입니다.
+* ASM 디스크 그룹의 명명 규칙은 SC_HASHCODEofDISKGROUP_CLONEID입니다.
++
+HASHCODEofDISKGROUP은 ASM 디스크 그룹마다 고유한 자동 생성 번호(2 ~ 10자리)입니다.
+
+
+
+
+
+== Oracle 데이터베이스 복제의 제한 사항
+
+데이터베이스를 클론 복제하기 전에 클론 작업의 제한 사항을 숙지해야 합니다.
+
+* 11.2.0.4 ~ 12.1.0.1의 Oracle 버전을 사용하는 경우 _renamedg_ 명령을 실행하면 클론 작업이 멈춤 상태가 됩니다. Oracle 패치 19544733을 적용하여 이 문제를 해결할 수 있습니다.
+* 호스트에 직접 연결된 LUN(예: Windows 호스트의 Microsoft iSCSI Initiator 사용)에서 동일한 Windows 호스트의 VMDK 또는 RDM LUN에 또는 다른 Windows 호스트의 RDM LUN에 대한 데이터베이스 클론 생성은 지원되지 않습니다.
+* 볼륨 마운트 지점의 루트 디렉토리는 공유 디렉토리일 수 없습니다.
+* 클론이 포함된 LUN을 새 볼륨으로 이동하면 클론을 삭제할 수 없습니다.
+

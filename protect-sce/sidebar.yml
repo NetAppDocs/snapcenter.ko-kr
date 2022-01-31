@@ -1,0 +1,105 @@
+---
+section: protect-sce
+title: Microsoft Exchange Server 데이터베이스 보호
+entries:
+- title: Microsoft Exchange Server용 SnapCenter 플러그인 개념
+  entries:
+  - title: 개요
+    url: "/protect-sce/concept_snapcenter_plug_in_for_exchange_server_overview.html"
+  - title: Microsoft Exchange Server용 SnapCenter 플러그인으로 수행할 수 있는 작업
+    url: "/protect-sce/concept_what_you_can_do_with_snapcenter_plug_in_for_microsoft_exchange_server.html"
+  - title: Microsoft Windows용 SnapCenter 플러그인 및 Microsoft Exchange Server에서 지원하는 스토리지
+      유형입니다
+    url: "/protect-sce/reference_storage_types_supported_by_snapcenter_plug_in_for_microsoft_windows_and_for_microsoft_exchange_server.html"
+  - title: 최소 ONTAP 권한이 필요합니다
+    url: "/protect-sce/concept_minimum_privileges_required_exchange_plug_in.html"
+  - title: SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템 준비
+    url: "/protect-sce/reference_prepare_storage_system_for_snapmirror_and_snapvault.html"
+  - title: Exchange Server 리소스에 대한 백업 전략 정의
+    url: "/protect-sce/task_define_a_backup_strategy_for_exchange_server_resources.html"
+  - title: Exchange 데이터베이스에 대한 복구 전략 정의
+    url: "/protect-sce/task_define_a_restore_strategy_for_exchange_databases.html"
+- title: Microsoft Exchange Server용 SnapCenter 플러그인을 설치합니다
+  entries:
+  - title: 워크플로를 설치합니다
+    url: "/protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html"
+  - title: 호스트를 추가하고 Microsoft Exchange Server용 SnapCenter 플러그인을 설치하기 위한 사전 요구 사항
+    url: "/protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html"
+  - title: Windows용 SnapCenter 플러그인의 자격 증명을 설정합니다
+    url: "/protect-sce/task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.html"
+  - title: 호스트를 추가하고 Exchange용 플러그인을 설치합니다
+    url: "/protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html"
+  - title: PowerShell cmdlet을 사용하여 SnapCenter Server 호스트에서 Exchange용 플러그인을 설치합니다
+    url: "/protect-sce/task_install_plug_in_for_exchange_from_the_snapcenter_server_host_using_powershell_cmdlets.html"
+  - title: 명령줄에서 Exchange용 SnapCenter 플러그인을 자동으로 설치합니다
+    url: "/protect-sce/task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.html"
+  - title: SnapCenter 플러그인 패키지 설치 상태를 모니터링합니다
+    url: "/protect-sce/task_monitor_snapcenter_plug_in_package_installation_status.html"
+  - title: CA 인증서를 구성합니다
+    entries:
+    - title: CA 인증서 CSR 파일을 생성합니다
+      url: "/protect-sce/reference_generate_CA_certificate_CSR_file.html"
+    - title: CA 인증서를 가져옵니다
+      url: "/protect-sce/task_import_CA_certificates.html"
+    - title: CA 인증서 지문을 받습니다
+      url: "/protect-sce/task_get_the_CA_certificate_thumbprint.html"
+    - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+      url: "/protect-sce/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
+    - title: 플러그인에 대해 CA 인증서를 활성화합니다
+      url: "/protect-sce/task_enable_ca_certificates_for_plug-ins.html"
+  - title: Exchange 및 SnapCenter에 대해 SnapManager 7.x가 공존하도록 구성합니다
+    url: "/protect-sce/task_configure_snapmanager_7_x_for_exchange_and_snapcenter_plug_in_for_exchange_to_coexist.html"
+- title: VMware vSphere용 SnapCenter 플러그인을 설치합니다
+  url: "/protect-sce/task_install_snapcenter_plug_in_for_vmware_vsphere.html"
+- title: 데이터 보호를 준비합니다
+  url: "/protect-sce/concept_prepare_for_data_protection.html"
+- title: Exchange 리소스를 백업합니다
+  entries:
+  - title: 백업 워크플로우
+    url: "/protect-sce/concept_back_up_exchange_resources.html"
+  - title: Exchange 데이터베이스 및 백업 검증
+    url: "/protect-sce/reference_exchange_database_and_backup_verification.html"
+  - title: Exchange 리소스를 백업에 사용할 수 있는지 여부를 확인합니다
+    url: "/protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html"
+  - title: Exchange Server 데이터베이스에 대한 백업 정책을 생성합니다
+    url: "/protect-sce/task_create_backup_policies_for_exchange_server_databases.html"
+  - title: 리소스 그룹을 생성하고 Exchange Server에 대한 정책을 연결합니다
+    url: "/protect-sce/task_create_resource_groups_and_attach_policies_for_exchange_servers.html"
+  - title: Exchange 데이터베이스를 백업합니다
+    url: "/protect-sce/task_back_up_exchange_databases.html"
+  - title: Exchange 리소스 그룹을 백업합니다
+    url: "/protect-sce/task_back_up_exchange_resources_groups.html"
+  - title: Exchange Server용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
+    url: "/protect-sce/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_exchange_database.html"
+  - title: PowerShell cmdlet을 사용하여 Exchange 리소스를 백업합니다
+    url: "/protect-sce/task_back_up_exchange_resources_using_powershell_cmdlets.html"
+  - title: 백업 작업을 모니터링합니다
+    url: "/protect-sce/task_monitor_backup_operations.html"
+  - title: Exchange 데이터베이스에 대한 백업 작업을 취소합니다
+    url: "/protect-sce/task_cancel_backup_operations_for_exchange_database.html"
+  - title: PowerShell cmdlet을 사용하여 Exchange 백업을 제거합니다
+    url: "/protect-sce/task_remove_exchange_backups_using_powershell_cmdlets.html"
+  - title: 토폴로지 페이지에서 Exchange 백업을 봅니다
+    url: "/protect-sce/task_view_exchange_backups_in_the_topology_page.html"
+- title: Exchange 리소스를 복구합니다
+  entries:
+  - title: 워크플로를 복원합니다
+    url: "/protect-sce/reference_restore_exchange_resources.html"
+  - title: Exchange 데이터베이스 복구 요구 사항
+    url: "/protect-sce/concept_requirements_for_restoring_an_exchange_database.html"
+  - title: Exchange 데이터베이스를 복구합니다
+    url: "/protect-sce/task_restore_exchange_databases.html"
+  - title: 메일 및 편지함의 세밀한 복구
+    url: "/protect-sce/reference_granular_recovery_of_mails_and_mailbox.html"
+  - title: 보조 스토리지에서 Exchange Server 데이터베이스를 복구합니다
+    url: "/protect-sce/task_restore_an_exchange_server_database_from_secondary_storage.html"
+  - title: PowerShell cmdlet을 사용하여 Exchange 리소스를 복원합니다
+    url: "/protect-sce/task_restore_exchange_resources_using_powershell_cmdlets.html"
+  - title: 패시브 Exchange 노드 복제본을 다시 시딩했습니다
+    url: "/protect-sce/task_reseed_a_passive_exchange_node_replica.html"
+  - title: Exchange 데이터베이스에 대해 PowerShell cmdlet을 사용하여 복제본을 다시 시딩했습니다
+    url: "/protect-sce/task_reseed_a_replica_using_powershell_cmdlets_for_exchange_database.html"
+  - title: 복구 작업을 모니터링합니다
+    url: "/protect-sce/task_monitor_restore_operations.html"
+  - title: 복원 작업을 취소합니다
+    url: "/protect-sce/task_cancel_restore_operations.html"

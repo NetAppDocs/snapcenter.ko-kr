@@ -1,0 +1,103 @@
+---
+section: protect-scw
+title: Windows 파일 시스템 보호
+entries:
+- title: Microsoft Windows용 SnapCenter 플러그인 개념
+  entries:
+  - title: Microsoft Windows용 SnapCenter 플러그인 개요
+    url: "/protect-scw/concept_snapcenter_plug_in_for_microsoft_windows_overview.html"
+  - title: Microsoft Windows용 SnapCenter 플러그인으로 수행할 수 있는 작업
+    url: "/protect-scw/reference_what_you_can_do_with_the_snapcenter_plug_in_for_microsoft_windows.html"
+  - title: Windows용 SnapCenter 플러그인 기능
+    url: "/protect-scw/concept_snapcenter_plug_in_for_windows_features.html"
+  - title: SnapCenter가 Windows 파일 시스템을 백업하는 방법
+    url: "/protect-scw/concept_how_snapcenter_backs_up_windows_file_systems.html"
+  - title: Microsoft Windows용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다
+    url: "/protect-scw/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows.html"
+  - title: Windows 플러그인에 필요한 최소 ONTAP 권한
+    url: "/protect-scw/reference_minimum_ontap_privileges_required_for_windows_plug_in.html"
+  - title: SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템 준비
+    url: "/protect-scw/reference_prepare_storage_system_for_snapmirror_and_snapvault.html"
+  - title: Windows 파일 시스템에 대한 백업 전략 정의
+    url: "/protect-scw/task_define_a_backup_strategy_for_windows_file_systems.html"
+  - title: Windows 파일 시스템의 클론 소스 및 대상
+    url: "/protect-scw/reference_sources_and_destinations_of_clones_for_windows_file_systems.html"
+- title: Microsoft Windows용 SnapCenter 플러그인을 설치합니다
+  entries:
+  - title: 워크플로를 설치합니다
+    url: "/protect-scw/concept_install_snapcenter_plug_in_for_microsoft_windows.html"
+  - title: Microsoft Windows용 SnapCenter 플러그인 설치 요구 사항
+    url: "/protect-scw/reference_installation_requirements_for_snapcenter_plug_in_for_microsoft_windows.html"
+  - title: 호스트를 추가하고 Microsoft Windows용 SnapCenter 플러그인을 설치합니다
+    url: "/protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html"
+  - title: PowerShell cmdlet을 사용하여 여러 원격 호스트에 Microsoft Windows용 SnapCenter 플러그인을
+      설치합니다
+    url: "/protect-scw/task_install_on_multiple_remote_hosts_using_powershell_cmdlets.html"
+  - title: 명령줄에서 Microsoft Windows용 SnapCenter 플러그인을 자동으로 설치합니다
+    url: "/protect-scw/task_install_the_snapcenter_plug_in_for_windows_silently_from_the_command_line.html"
+  - title: SnapCenter 플러그인 패키지 설치 상태를 모니터링합니다
+    url: "/protect-scw/task_monitor_snapcenter_plug_in_package_installation_status.html"
+  - title: CA 인증서를 구성합니다
+    entries:
+    - title: CA 인증서 CSR 파일을 생성합니다
+      url: "/protect-scw/reference_generate_CA_certificate_CSR_file.html"
+    - title: CA 인증서를 가져옵니다
+      url: "/protect-scw/task_import_CA_certificates.html"
+    - title: CA 인증서 지문을 받습니다
+      url: "/protect-scw/task_get_the_CA_certificate_thumbprint.html"
+    - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+      url: "/protect-scw/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
+    - title: 플러그인에 대해 CA 인증서를 활성화합니다
+      url: "/protect-scw/task_enable_ca_certificates_for_plug-ins.html"
+- title: VMware vSphere용 SnapCenter 플러그인을 설치합니다
+  url: "/protect-scw/task_install_snapcenter_plug_in_for_vmware_vsphere.html"
+- title: Windows 파일 시스템을 백업합니다
+  entries:
+  - title: 백업 워크플로우
+    url: "/protect-scw/reference_back_up_windows_file_systems.html"
+  - title: Windows 파일 시스템에 대한 리소스 가용성을 확인합니다
+    url: "/protect-scw/task_determine_resource_availability_for_windows_file_systems.html"
+  - title: Windows 파일 시스템에 대한 백업 정책을 생성합니다
+    url: "/protect-scw/task_create_backup_policies_for_windows_file_systems.html"
+  - title: Windows 파일 시스템에 대한 리소스 그룹을 생성합니다
+    url: "/protect-scw/task_create_resource_groups_for_windows_file_systems.html"
+  - title: 필요 시 Windows 파일 시스템에 대한 단일 리소스를 백업합니다
+    url: "/protect-scw/task_back_up_a_single_resource_on_demand_for_windows_file_systems.html"
+  - title: Windows 파일 시스템에 대한 리소스 그룹을 백업합니다
+    url: "/protect-scw/task_back_up_resource_groups_for_windows_file_systems.html"
+  - title: PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
+    url: "/protect-scw/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_windows.html"
+  - title: PowerShell cmdlet을 사용하여 리소스를 백업합니다
+    url: "/protect-scw/task_back_up_resources_using_powershell_cmdlets_for_windows.html"
+  - title: 백업 작업을 모니터링합니다
+    url: "/protect-scw/task_monitor_backup_operations.html"
+  - title: 백업 작업을 취소합니다
+    url: "/protect-scw/task_cancel_backup_operations_for_windows_file_system.html"
+  - title: 토폴로지 페이지에서 관련 백업 및 클론 보기
+    url: "/protect-scw/task_view_related_backups_and_clones_in_the_topology_page.html"
+  - title: PowerShell cmdlet을 사용하여 백업을 제거합니다
+    url: "/protect-scw/task_remove_backups_using_powershell_cmdlets_for_windows.html"
+  - title: PowerShell cmdlet을 사용하여 보조 백업 수를 정리합니다
+    url: "/protect-scw/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_windows.html"
+- title: Windows 파일 시스템을 복구합니다
+  entries:
+  - title: Windows 파일 시스템 백업을 복구합니다
+    url: "/protect-scw/task_restore_windows_file_system_backups.html"
+  - title: PowerShell cmdlet을 사용하여 리소스 복원 및 복구
+    url: "/protect-scw/task_restore_and_recover_resources_using_powershell_cmdlets_for_windows.html"
+  - title: 복구 작업을 모니터링합니다
+    url: "/protect-scw/task_monitor_restore_operations.html"
+  - title: 복원 작업을 취소합니다
+    url: "/protect-scw/task_cancel_restore_operations.html"
+- title: Windows 파일 시스템의 클론을 생성합니다
+  entries:
+  - title: Windows 파일 시스템 백업에서 클론을 생성합니다
+    url: "/protect-scw/task_clone_from_a_windows_file_system_backup.html"
+  - title: PowerShell cmdlet을 사용하여 백업 클론 생성
+    url: "/protect-scw/task_clone_backups_using_powershell_cmdlets_for_windows.html"
+  - title: 클론 작업을 모니터링합니다
+    url: "/protect-scw/task_monitor_clone_operations.html"
+  - title: 클론 작업을 취소합니다
+    url: "/protect-scw/task_cancel_clone_operations.html"
+  - title: 클론 분할
+    url: "/protect-scw/task_split_a_clone_for_windows.html"

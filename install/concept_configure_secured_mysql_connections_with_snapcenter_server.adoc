@@ -1,0 +1,314 @@
+---
+permalink: install/concept_configure_secured_mysql_connections_with_snapcenter_server.html 
+sidebar: sidebar 
+keywords: Secure Sockets Layer, secure MYSQL connections, standalone configuration, HA configuration, SSL 
+summary: '독립 실행형 구성 또는 NLB(네트워크 로드 밸런싱) 구성에서 SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려면 SSL(Secure Sockets Layer) 인증서 및 키 파일을 생성할 수 있습니다.' 
+---
+= SnapCenter 서버로 보안 MySQL 연결을 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+독립 실행형 구성 또는 NLB(네트워크 로드 밸런싱) 구성에서 SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려는 경우 SSL(Secure Sockets Layer) 인증서 및 키 파일을 생성할 수 있습니다.
+
+
+
+== 독립 실행형 SnapCenter 서버 구성에 대해 보안 MySQL 연결을 구성합니다
+
+SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려면 SSL(Secure Sockets Layer) 인증서와 키 파일을 생성할 수 있습니다. MySQL Server 및 SnapCenter Server에서 인증서 및 키 파일을 구성해야 합니다.
+
+다음 인증서가 생성됩니다.
+
+* CA 인증서
+* 서버 공용 인증서 및 개인 키 파일
+* 클라이언트 공용 인증서 및 개인 키 파일
+
+
+* 단계 *
+
+. openssl 명령을 사용하여 Windows에서 MySQL 서버 및 클라이언트에 대한 SSL 인증서 및 키 파일을 설정합니다.
++
+자세한 내용은 을 참조하십시오 https://dev.mysql.com/doc/refman/5.7/en/creating-ssl-files-using-openssl.html["MySQL 버전 5.7: openssl을 사용하여 SSL 인증서 및 키 만들기"^]
+
++
+
+NOTE: 서버 인증서, 클라이언트 인증서 및 키 파일에 사용되는 일반 이름 값은 각각 CA 인증서에 사용되는 일반 이름 값과 달라야 합니다. 일반 이름 값이 같으면 OpenSSL을 사용하여 컴파일한 서버의 인증서 및 키 파일이 실패합니다.
+
++
+|===
+
+
+| * 모범 사례: * 서버 인증서의 일반 이름으로 서버 FQDN(정규화된 도메인 이름)을 사용해야 합니다. 
+|===
+. SSL 인증서 및 키 파일을 MySQL Data 폴더에 복사합니다.
++
+기본 MySQL Data 폴더 경로는 'C:\ProgramData\NetApp\SnapCenter\MySQL Data\Data\'입니다.
+
+. MySQL 서버 구성 파일(my.in I)에서 CA 인증서, 서버 공용 인증서, 클라이언트 공용 인증서, 서버 개인 키 및 클라이언트 개인 키 경로를 업데이트합니다.
++
+기본 MySQL Server 구성 파일(my.in I) 경로는 'C:\ProgramData\NetApp\SnapCenter\MySQL Data\my.ini` 입니다.
+
++
+
+NOTE: MySQL 서버 구성 파일(my.in I)의 [mysqld] 섹션에서 CA 인증서, 서버 공용 인증서 및 서버 개인 키 경로를 지정해야 합니다.
+
++
+MySQL 서버 구성 파일(my.in I)의 [client] 섹션에서 CA 인증서, 클라이언트 공용 인증서 및 클라이언트 개인 키 경로를 지정해야 합니다.
+
++
+다음 예에서는 기본 폴더 'C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data'에 있는 my.ini 파일의 [mysqld] 섹션에 복사된 인증서 및 키 파일을 보여 줍니다.
+
++
+[listing]
+----
+ssl-ca="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem"
+----
++
+[listing]
+----
+ssl-cert="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-cert.pem"
+----
++
+[listing]
+----
+ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-key.pem"
+----
++
+다음 예제에서는 my.ini 파일의 [client] 섹션에서 업데이트된 경로를 보여 줍니다.
+
++
+[listing]
+----
+ssl-ca="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem"
+----
++
+[listing]
+----
+ssl-cert="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-cert.pem"
+----
++
+[listing]
+----
+ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-key.pem"
+----
+. 인터넷 정보 서버(IIS)에서 SnapCenter 서버 웹 응용 프로그램을 중지합니다.
+. MySQL 서비스를 다시 시작합니다.
+. web.config 파일에서 MySQLProtocol 키 값을 업데이트합니다.
++
+다음 예제에서는 web.config 파일에서 업데이트된 MySQLProtocol 키의 값을 보여 줍니다.
+
++
+[listing]
+----
+<add key="MySQLProtocol" value="SSL" />
+----
+. my.ini 파일의 [client] 섹션에 제공된 경로로 web.config 파일을 업데이트합니다.
++
+다음 예제에서는 my.ini 파일의 [client] 섹션에서 업데이트된 경로를 보여 줍니다.
+
++
+[listing]
+----
+<add key="ssl-client-cert" value="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-cert.pem" />
+----
++
+[listing]
+----
+<add key="ssl-client-key" value="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-key.pem" />
+----
++
+[listing]
+----
+<add key="ssl-ca" value="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem" />
+----
+. IIS에서 SnapCenter 서버 웹 응용 프로그램을 시작합니다.
+
+
+
+
+== HA 구성을 위한 보안 MySQL 연결을 구성합니다
+
+SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려면 고가용성(HA) 노드 모두에 대해 SSL(Secure Sockets Layer) 인증서와 키 파일을 생성할 수 있습니다. MySQL 서버 및 HA 노드에서 인증서와 키 파일을 구성해야 합니다.
+
+다음 인증서가 생성됩니다.
+
+* CA 인증서
++
+HA 노드 중 하나에서 CA 인증서가 생성되고 이 CA 인증서가 다른 HA 노드에 복사됩니다.
+
+* 두 HA 노드에 대한 서버 공용 인증서 및 서버 개인 키 파일
+* 두 HA 노드에 대한 클라이언트 공용 인증서 및 클라이언트 개인 키 파일
+
+
+* 단계 *
+
+. 첫 번째 HA 노드의 경우 openssl 명령을 사용하여 Windows에서 MySQL 서버 및 클라이언트에 대한 SSL 인증서 및 키 파일을 설정합니다.
++
+자세한 내용은 을 참조하십시오 https://dev.mysql.com/doc/refman/5.7/en/creating-ssl-files-using-openssl.html["MySQL 버전 5.7: openssl을 사용하여 SSL 인증서 및 키 만들기"^]
+
++
+
+NOTE: 서버 인증서, 클라이언트 인증서 및 키 파일에 사용되는 일반 이름 값은 각각 CA 인증서에 사용되는 일반 이름 값과 달라야 합니다. 일반 이름 값이 같으면 OpenSSL을 사용하여 컴파일한 서버의 인증서 및 키 파일이 실패합니다.
+
++
+|===
+
+
+| * 모범 사례: * 서버 인증서의 일반 이름으로 서버 FQDN(정규화된 도메인 이름)을 사용해야 합니다. 
+|===
+. SSL 인증서 및 키 파일을 MySQL Data 폴더에 복사합니다.
++
+기본 MySQL 데이터 폴더 경로는 C:\ProgramData\NetApp\SnapCenter\MySQL Data\Data\입니다.
+
+. MySQL 서버 구성 파일(my.in I)에서 CA 인증서, 서버 공용 인증서, 클라이언트 공용 인증서, 서버 개인 키 및 클라이언트 개인 키 경로를 업데이트합니다.
++
+기본 MySQL 서버 구성 파일(my.in I) 경로는 C:\ProgramData\NetApp\SnapCenter\MySQL Data\my.in 입니다
+
++
+
+NOTE: MySQL 서버 구성 파일(my.in I)의 [mysqld] 섹션에서 CA 인증서, 서버 공용 인증서 및 서버 개인 키 경로를 지정해야 합니다.
+
++
+MySQL 서버 구성 파일(my.in I)의 [client] 섹션에서 CA 인증서, 클라이언트 공용 인증서 및 클라이언트 개인 키 경로를 지정해야 합니다.
+
++
+다음 예에서는 기본 폴더 C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data에 있는 my.ini 파일의 [mysqld] 섹션에 복사된 인증서 및 키 파일을 보여 줍니다.
+
++
+[listing]
+----
+ssl-ca="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem"
+----
++
+[listing]
+----
+ssl-cert="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-cert.pem"
+----
++
+[listing]
+----
+ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-key.pem"
+----
++
+다음 예제에서는 my.ini 파일의 [client] 섹션에서 업데이트된 경로를 보여 줍니다.
+
++
+[listing]
+----
+ssl-ca="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem"
+----
++
+[listing]
+----
+ssl-cert="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-cert.pem"
+----
++
+[listing]
+----
+ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-key.pem"
+----
+. 두 번째 HA 노드의 경우 CA 인증서를 복사하고 서버 공용 인증서, 서버 개인 키 파일, 클라이언트 공용 인증서 및 클라이언트 개인 키 파일을 생성합니다. 다음 단계를 수행하십시오.
++
+.. 첫 번째 HA 노드에서 생성된 CA 인증서를 두 번째 NLB 노드의 MySQL Data 폴더에 복사합니다.
++
+기본 MySQL 데이터 폴더 경로는 C:\ProgramData\NetApp\SnapCenter\MySQL Data\Data\입니다.
+
++
+
+NOTE: CA 인증서를 다시 만들 수 없습니다. 서버 공용 인증서, 클라이언트 공용 인증서, 서버 개인 키 파일 및 클라이언트 개인 키 파일만 만들어야 합니다.
+
+.. 첫 번째 HA 노드의 경우 openssl 명령을 사용하여 Windows에서 MySQL 서버 및 클라이언트에 대한 SSL 인증서 및 키 파일을 설정합니다.
++
+https://dev.mysql.com/doc/refman/5.7/en/creating-ssl-files-using-openssl.html["MySQL 버전 5.7: openssl을 사용하여 SSL 인증서 및 키 만들기"]
+
++
+
+NOTE: 서버 인증서, 클라이언트 인증서 및 키 파일에 사용되는 일반 이름 값은 각각 CA 인증서에 사용되는 일반 이름 값과 달라야 합니다. 일반 이름 값이 같으면 OpenSSL을 사용하여 컴파일한 서버의 인증서 및 키 파일이 실패합니다.
+
++
+서버 인증서의 일반 이름으로 서버 FQDN을 사용하는 것이 좋습니다.
+
+.. SSL 인증서 및 키 파일을 MySQL Data 폴더에 복사합니다.
+.. MySQL 서버 구성 파일(my.in I)에서 CA 인증서, 서버 공용 인증서, 클라이언트 공용 인증서, 서버 개인 키 및 클라이언트 개인 키 경로를 업데이트합니다.
++
+
+NOTE: MySQL 서버 구성 파일(my.in I)의 [mysqld] 섹션에서 CA 인증서, 서버 공용 인증서 및 서버 개인 키 경로를 지정해야 합니다.
+
++
+MySQL 서버 구성 파일(my.in I)의 [client] 섹션에서 CA 인증서, 클라이언트 공용 인증서 및 클라이언트 개인 키 경로를 지정해야 합니다.
+
++
+다음 예에서는 기본 폴더 C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data에 있는 my.ini 파일의 [mysqld] 섹션에 복사된 인증서 및 키 파일을 보여 줍니다.
+
++
+[listing]
+----
+ssl-ca="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem"
+----
++
+[listing]
+----
+ssl-cert="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-cert.pem"
+----
++
+[listing]
+----
+ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-key.pem"
+----
++
+다음 예제에서는 my.ini 파일의 [client] 섹션에서 업데이트된 경로를 보여 줍니다.
+
++
+[listing]
+----
+ssl-ca="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem"
+----
++
+[listing]
+----
+ssl-cert="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-cert.pem"
+----
++
+[listing]
+----
+ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/server-key.pem"
+----
+
+
+. 두 HA 노드의 IIS(인터넷 정보 서버)에서 SnapCenter 서버 웹 응용 프로그램을 중지합니다.
+. 두 HA 노드에서 MySQL 서비스를 다시 시작합니다.
+. 두 HA 노드에 대해 web.config 파일에서 MySQLProtocol 키의 값을 업데이트합니다.
++
+다음 예제에서는 web.config 파일에서 업데이트된 MySQLProtocol 키 값을 보여 줍니다.
+
++
+[listing]
+----
+<add key="MySQLProtocol" value="SSL" />
+----
+. 두 HA 노드에 대해 my.ini 파일의 [client] 섹션에 지정한 경로로 web.config 파일을 업데이트합니다.
++
+다음 예제에서는 my.ini 파일의 [client] 섹션에서 업데이트된 경로를 보여 줍니다.
+
++
+[listing]
+----
+<add key="ssl-client-cert" value="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-cert.pem" />
+----
++
+[listing]
+----
+<add key="ssl-client-key" value="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-key.pem" />
+----
++
+[listing]
+----
+<add key="ssl-ca" value="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/ca.pem" />
+----
+. 두 HA 노드의 IIS에서 SnapCenter 서버 웹 응용 프로그램을 시작합니다.
+. HA 노드 중 하나에서 -Force 옵션과 함께 Set-SmrepositoryConfig-RebuildSlave-Force PowerShell cmdlet을 사용하여 두 HA 노드 모두에 안전한 MySQL 복제를 설정합니다.
++
+복제 상태가 정상인 경우에도 -Force 옵션을 사용하면 슬레이브 리포지토리를 재구축할 수 있습니다.
+
+

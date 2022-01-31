@@ -1,0 +1,50 @@
+---
+permalink: protect-scsql/task_monitor_sql_resources_restore_operations.html 
+sidebar: sidebar 
+keywords: restore 
+summary: 작업 페이지를 사용하여 여러 SnapCenter 복원 작업의 진행률을 모니터링할 수 있습니다. 작업 진행률을 확인하여 작업이 언제 완료되는지 또는 문제가 있는지 확인할 수 있습니다. 
+---
+= SQL 리소스 복구 작업을 모니터링합니다
+:icons: font
+:imagesdir: ../media/
+
+
+작업 페이지를 사용하여 여러 SnapCenter 복원 작업의 진행률을 모니터링할 수 있습니다. 작업 진행률을 확인하여 작업이 언제 완료되는지 또는 문제가 있는지 확인할 수 있습니다.
+
+* 이 작업에 대한 정보 *
+
+복원 후 상태는 복원 작업 후 리소스의 상태와 수행할 수 있는 추가 복원 작업에 대해 설명합니다.
+
+작업 페이지에 다음 아이콘이 나타나고 작업의 상태를 나타냅니다.
+
+* image:../media/progress_icon.gif["진행 중 아이콘"] 진행 중입니다
+* image:../media/success_icon.gif["완료 아이콘"] 성공적으로 완료되었습니다
+* image:../media/failed_icon.gif["실패 아이콘"] 실패했습니다
+* image:../media/warning_icon.gif["경고와 함께 완료됨 아이콘"] 경고와 함께 완료되었거나 경고로 인해 시작할 수 없습니다
+* image:../media/verification_job_in_queue.gif["확인 작업이 대기 중입니다"] 대기열에 있습니다
+* image:../media/cancel_icon.gif[""] 취소됨
+
+
+* 단계 *
+
+. 왼쪽 탐색 창에서 * 모니터 * 를 클릭합니다.
+. 모니터 * 페이지에서 * 작업 * 을 클릭합니다.
+. 작업 * 페이지에서 다음 단계를 수행하십시오.
++
+.. 을 클릭합니다 image:../media/filter_icon.gif[""] 복원 작업만 나열되도록 목록을 필터링하려면
+.. 시작 및 종료 날짜를 지정합니다.
+.. Type * 드롭다운 목록에서 * Restore * 를 선택합니다.
+.. Status * (상태 *) 드롭다운 목록에서 복원 상태를 선택합니다.
+.. 성공적으로 완료된 작업을 보려면 * 적용 * 을 클릭합니다.
+
+
+. 복원 작업을 선택한 다음 * 세부 정보 * 를 클릭하여 작업 세부 정보를 봅니다.
+. 작업 세부 정보 * 페이지에서 * 로그 보기 * 를 클릭합니다.
++
+로그 보기 * 버튼은 선택한 작업에 대한 상세 로그를 표시합니다.
+
++
+
+IMPORTANT: 볼륨 기반 복원 작업 후에는 백업 메타데이터가 SnapCenter 저장소에서 삭제되지만 백업 카탈로그 항목은 SAP HANA 카탈로그에 남아 있습니다. 복원 작업 상태가 표시됩니다 image:../media/success_icon.gif["완료 아이콘"]작업 세부 정보를 클릭하여 일부 하위 작업의 경고 표시를 확인해야 합니다. 경고 표지를 클릭하고 표시된 백업 카탈로그 항목을 삭제합니다.
+
+

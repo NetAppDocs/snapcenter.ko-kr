@@ -1,0 +1,15 @@
+---
+permalink: protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_overview.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for Microsoft SQL Server 
+summary: Microsoft SQL Server용 SnapCenter 플러그인은 Microsoft SQL Server 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트 측 구성 요소입니다. SQL Server용 플러그인은 SnapCenter 환경에서 SQL Server 데이터베이스 백업, 확인, 복원 및 클론 복제 작업을 자동화합니다. 
+---
+= Microsoft SQL Server용 SnapCenter 플러그인 개요
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Microsoft SQL Server용 SnapCenter 플러그인은 Microsoft SQL Server 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트 측 구성 요소입니다. SQL Server용 플러그인은 SnapCenter 환경에서 SQL Server 데이터베이스 백업, 검증, 복원 및 클론 작업을 자동화합니다.
+
+SQL Server용 플러그인을 설치하면 SnapCenter와 NetApp SnapMirror 기술을 함께 사용하여 다른 볼륨에 백업 세트의 미러링 복사본을 만들고 NetApp SnapVault 기술을 사용하여 표준 준수 또는 아카이브용으로 D2D 백업 복제를 수행할 수 있습니다.

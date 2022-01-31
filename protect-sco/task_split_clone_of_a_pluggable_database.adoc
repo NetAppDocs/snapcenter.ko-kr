@@ -1,0 +1,30 @@
+---
+permalink: protect-sco/task_split_clone_of_a_pluggable_database.html 
+sidebar: sidebar 
+keywords: split, PDB, cloned PDB 
+summary: 'SnapCenter를 사용하여 복제된 플러그형 데이터베이스 \(PDB\)를 분할할 수 있습니다.' 
+---
+= 플러그형 데이터베이스의 클론 분할
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter를 사용하여 복제된 PDB(플러그형 데이터베이스)를 분할할 수 있습니다.
+
+* 이 작업에 대한 정보 *
+
+PDB가 복제되는 대상 CDB의 백업을 생성한 경우 PDB 클론을 분할하면 복제된 PDB가 복제된 PDB가 포함된 대상 CDB의 모든 백업에서도 제거됩니다.
+
+
+NOTE: PDB 클론은 인벤토리 또는 리소스 보기에 표시되지 않습니다.
+
+* 단계 *
+
+. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 리소스 또는 리소스 그룹 보기에서 소스 컨테이너 데이터베이스(CDB)를 선택합니다.
+. Manage Copies 뷰에서 운영 또는 2차(미러링 또는 복제) 스토리지 시스템에서 * Clones * 를 선택합니다.
+. PDB 클론(targetCDB:PDBClone)을 선택한 다음 을 클릭합니다 image:../media/split_cone.gif[""].
+. 분할할 클론의 예상 크기와 애그리게이트에서 사용할 수 있는 필수 공간을 검토한 다음 * 시작 * 을 클릭합니다.
+. 모니터 * > * 작업 * 을 클릭하여 작업 진행 상황을 모니터링합니다.
+

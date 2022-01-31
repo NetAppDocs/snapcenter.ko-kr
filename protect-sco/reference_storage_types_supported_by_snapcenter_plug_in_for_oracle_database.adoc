@@ -1,0 +1,77 @@
+---
+permalink: protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html 
+sidebar: sidebar 
+keywords: storage types, iSCSI, NFS, RDM, VMDK, NFS, LVM, ASM, SAN filesystem 
+summary: SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다. 
+---
+= Oracle Database용 플러그인에서 지원하는 스토리지 유형입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.
+
+SnapCenter는 Linux 및 AIX용 스토리지 프로비저닝을 지원하지 않습니다.
+
+
+
+== Linux에서 지원되는 스토리지 유형입니다
+
+다음 표에는 Linux에서 지원되는 스토리지 유형이 나와 있습니다.
+
+|===
+| 기계 | 스토리지 유형입니다 
+
+
+ a| 
+물리적 서버
+ a| 
+* FC 연결 LUN
+* iSCSI로 연결된 LUN
+* NFS 연결 볼륨
+
+
+
+
+ a| 
+VMware ESXi
+ a| 
+* FC 또는 iSCSI ESXi HBA(호스트 버스 어댑터)에 의해 연결된 RDM LUN SnapCenter는 호스트에 있는 모든 호스트 버스 어댑터를 검사하므로 완료하는 데 시간이 오래 걸릴 수 있습니다.
++
+hba_driver_names에 나열된 HBA만 재검색하려면 _/opt/netapp/snapcenter/spL/plugins/SCU/scucore/modules/SCU/Config _ 에 있는 * LinuxConfig.pm * 파일을 편집하여 * scsi_hosts_optimized_rescan * 매개 변수의 값을 1로 설정합니다.
+
+* iSCSI 이니시에이터가 게스트 시스템에 직접 접속된 iSCSI LUN
+* VMFS 또는 NFS 데이터 저장소의 VMDK입니다
+* 게스트 시스템에 직접 연결된 NFS 볼륨입니다
+
+
+|===
+
+
+== AIX에서 지원되는 스토리지 유형입니다
+
+다음 표에는 AIX에서 지원되는 스토리지 유형이 나와 있습니다.
+
+|===
+| 기계 | 스토리지 유형입니다 
+
+
+ a| 
+물리적 서버
+ a| 
+* FC 연결 및 iSCSI 연결 LUN
++
+SAN 환경에서는 ASM, LVM 및 SAN 파일 시스템이 지원됩니다.
+
++
+
+NOTE: AIX 및 파일 시스템의 NFS는 지원되지 않습니다.
+
+* 향상된 저널 파일 시스템(JFS2)
++
+SAN 파일 시스템 및 LVM 레이아웃에 대한 인라인 로깅을 지원합니다.
+
+
+
+|===

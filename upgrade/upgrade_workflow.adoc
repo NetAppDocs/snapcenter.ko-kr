@@ -1,0 +1,17 @@
+---
+permalink: upgrade/upgrade_workflow.html 
+sidebar: sidebar 
+keywords: upgrade, snapcenter server, plug-ins, workflow 
+summary: 에서는 SnapCenter 서버 및 플러그인을 업그레이드하는 방법을 설명합니다 
+---
+= 워크플로우 업그레이드
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter의 각 릴리즈에는 업데이트된 SnapCenter 서버 및 플러그인 패키지가 포함되어 있습니다. 플러그인 패키지 업데이트는 SnapCenter 설치 프로그램과 함께 배포됩니다. SnapCenter에서 사용 가능한 업데이트를 확인하도록 구성할 수 있습니다.
+
+워크플로우는 SnapCenter 서버 및 플러그인 패키지를 업그레이드하는 데 필요한 여러 작업을 보여 줍니다.
+
+image::../media/upgrade_workflow.png[워크플로우 업그레이드]

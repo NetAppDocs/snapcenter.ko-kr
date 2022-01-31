@@ -1,0 +1,198 @@
+---
+permalink: protect-scsql/reference_minimum_ontap_privileges_required_for_sql_plug_in.html 
+sidebar: sidebar 
+keywords:  
+summary: 필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중인 SnapCenter 플러그인에 따라 다릅니다. 
+---
+= SQL 플러그인에 필요한 최소 ONTAP 권한
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중인 SnapCenter 플러그인에 따라 다릅니다.
+
+|===
+| 모든 액세스 명령: ONTAP 8.2._x_ 이상에 필요한 최소 권한 
+
+
+ a| 
+event generate-autosupport-log입니다
+
+
+
+ a| 
+작업 기록이 표시됩니다
+
+작업 중지
+
+
+
+ a| 
+LUN을 클릭합니다
+
+LUN 생성
+
+LUN을 삭제합니다
+
+LUN igroup 추가
+
+LUN igroup 작성
+
+LUN igroup 삭제
+
+LUN igroup의 이름을 바꿉니다
+
+LUN igroup 표시
+
+LUN 매핑 add-reporting-nodes입니다
+
+LUN 매핑 생성
+
+LUN 매핑을 삭제합니다
+
+LUN 매핑으로 remove-reporting-nodes를 사용할 수 있습니다
+
+LUN 매핑이 표시됩니다
+
+LUN 수정
+
+LUN 이동 - 볼륨
+
+LUN이 오프라인 상태입니다
+
+LUN을 온라인 상태로 전환합니다
+
+LUN 크기 조정
+
+LUN 일련 번호입니다
+
+LUN 표시
+
+
+
+ a| 
+SnapMirror 정책 추가 규칙
+
+SnapMirror 정책 modify-rule을 참조하십시오
+
+SnapMirror 정책 remove-rule을 참조하십시오
+
+SnapMirror 정책 쇼
+
+SnapMirror 복원
+
+SnapMirror 쇼
+
+SnapMirror 기록
+
+SnapMirror 업데이트
+
+SnapMirror 업데이트 - ls -set
+
+SnapMirror 목록 - 대상
+
+
+
+ a| 
+버전
+
+
+
+ a| 
+볼륨 클론 생성
+
+볼륨 클론 표시
+
+볼륨 클론 분할 시작이 있습니다
+
+볼륨 클론 분할 중지
+
+볼륨 생성
+
+볼륨 제거
+
+볼륨 파일 클론 생성
+
+볼륨 파일 show-disk-usage 를 참조하십시오
+
+볼륨이 오프라인 상태입니다
+
+볼륨을 온라인으로 설정합니다
+
+볼륨 수정
+
+볼륨 qtree 생성
+
+볼륨 qtree 삭제
+
+볼륨 qtree 수정
+
+볼륨 qtree 표시
+
+볼륨 제한
+
+볼륨 표시
+
+볼륨 스냅샷 생성
+
+볼륨 스냅숏 삭제
+
+볼륨 스냅숏 수정
+
+볼륨 스냅숏 이름 바꾸기
+
+볼륨 스냅샷 복원
+
+볼륨 스냅샷 복원 - 파일
+
+볼륨 스냅샷 표시
+
+볼륨 마운트 해제
+
+
+
+ a| 
+SVM CIFS를 선택합니다
+
+SVM CIFS 공유 생성
+
+SVM CIFS 공유 삭제
+
+SVM CIFS shadowcopy show 를 참조하십시오
+
+SVM CIFS 공유 표시
+
+vserver cifs show 를 참조하십시오
+
+SVM 엑스포트 - 정책
+
+SVM 엑스포트 정책 생성
+
+SVM 엑스포트 정책 삭제
+
+SVM 엑스포트 정책 규칙 생성
+
+vserver export-policy rule show를 참조하십시오
+
+vserver export-policy show를 참조하십시오
+
+SVM iSCSI
+
+SVM iSCSI 연결이 표시됩니다
+
+vserver show 를 참조하십시오
+
+|===
+|===
+| 읽기 전용 명령: ONTAP 8.2._x_ 이상에 필요한 최소 권한 
+
+
+ a| 
+네트워크 인터페이스
+
+네트워크 인터페이스가 표시됩니다
+
+SVM
+
+|===

@@ -1,0 +1,109 @@
+---
+permalink: protect-sce/task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.html 
+sidebar: sidebar 
+keywords:  
+summary: SnapCenter 사용자 인터페이스 내에서 Exchange용 플러그인을 설치해야 합니다. 그러나 어떤 이유로 인해 Windows 명령줄에서 자동 모드로 Exchange용 플러그인 설치 프로그램을 실행할 수 없습니다. 
+---
+= 명령줄에서 Exchange용 SnapCenter 플러그인을 자동으로 설치합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 사용자 인터페이스 내에서 Exchange용 플러그인을 설치해야 합니다. 그러나 어떤 이유로 인해 Windows 명령줄에서 자동 모드로 Exchange용 플러그인 설치 프로그램을 실행할 수 없습니다.
+
+* 필요한 것 *
+
+* Microsoft Exchange Server 리소스를 백업해야 합니다.
+* SnapCenter 플러그인 패키지를 설치해야 합니다.
+* 설치하기 전에 Microsoft SQL Server용 SnapCenter 플러그인의 이전 릴리즈를 삭제해야 합니다.
++
+자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_Install_a_SnapCenter_Plug-In_manually_and_directly_from_thePlug-In_Host["플러그인 호스트에서 직접 SnapCenter 플러그인을 설치하는 방법"^].
+
+
+
+* 단계 *
+
+. 플러그인 호스트에 _C:\temp_folder가 있고 로그인한 사용자가 이 폴더에 대한 모든 액세스 권한을 가지고 있는지 확인합니다.
+. C:\ProgramData\NetApp\SnapCenter\Package_Repository에서 Microsoft Windows용 SnapCenter 플러그인을 다운로드하십시오.
++
+이 경로는 SnapCenter 서버가 설치된 호스트에서 액세스할 수 있습니다.
+
+. 플러그인을 설치할 호스트에 설치 파일을 복사합니다.
+. 로컬 호스트의 Windows 명령 프롬프트에서 플러그인 설치 파일을 저장한 디렉토리로 이동합니다.
+. 다음 명령을 입력하여 변수가 데이터로 교체되도록 설치합니다.
++
+_snapcenter_windows_host_plugin.exe" /silent/debuglog"<Debug_Log_Path>"/log"<Log_Path>"BI_SNAPCENTER_PORT=<Num>Suite_INSTALLDIR="<Install_Directory_Path>"BI_ServiceAccount=<domain\administrator>BI_SERVICEPSCE=<설치 암호>
+
++
+예를 들면 다음과 같습니다.
+
++
+_C:\ProgramData\NetApp\SnapCenter\Package Repository\snapcenter_windows_host_plugin.exe" /silent/debuglog "C:\HPPW_SCSQL_Install.log" /log" C:\temp "BI_SNAPCENTER_port=8145 Suite_INSTALLDIR="C:\Program Files\NetApp\SCVICE_PVICE.PCEWE_PCEBI 관리자, PVICE_PVICE_PCEWESTRW=PCEBI_PCEPCEPCEWE_PSHI=설치
+
++
+
+NOTE: Exchange용 플러그인을 설치하는 동안 전달되는 모든 매개 변수는 대/소문자를 구분합니다.
+
++
+.. _/silent/debuglog "C:\Installdebug.log" /log "C:\temp" BI_SNAPCENTER_PORT=8145 Suite_INSTALLDIR="C:\Program Files" BI_ServiceAccount=demo\administrator BI_SERVICEPWD=Netapp1! ISFeatureInstall = HPPW, SCW _
++
+변수에 대해 다음 값을 입력합니다.
+
++
+|===
+| 변수 | 값 
+
+
+ a| 
+_ /debuglog "<Debug_Log_Path> _
+ a| 
+다음 예제와 같이 제품군 설치 관리자 로그 파일의 이름과 위치를 지정합니다.
+
+_Setup.exe /debuglog "C:\PathToLog\setupexe.log_
+
+
+
+ a| 
+Bi_SNAPCENTER_PORT
+ a| 
+SnapCenter가 SMCore와 통신하는 포트를 지정합니다.
+
+
+
+ a| 
+Suite_INSTALLDIR
+ a| 
+호스트 플러그인 패키지 설치 디렉토리를 지정합니다.
+
+
+
+ a| 
+BI_서비스 계정
+ a| 
+Microsoft Windows 웹 서비스 계정용 SnapCenter 플러그인을 지정합니다.
+
+
+
+ a| 
+BI_세비셀
+ a| 
+Microsoft Windows 웹 서비스 계정용 SnapCenter 플러그인 암호를 지정합니다.
+
+
+
+ a| 
+ISFeatureInstall을 선택합니다
+ a| 
+SnapCenter가 원격 호스트에 구축할 솔루션을 지정합니다.
+
+|===
+
+
+. Windows 작업 스케줄러, 기본 설치 로그 파일 _C:\Installdebug.log_ 및 추가 설치 파일을 _C:\Temp_에서 모니터링합니다.
+. %temp%_ 디렉토리를 모니터링하여 _msiexe.exe_설치 프로그램이 오류 없이 소프트웨어를 설치하고 있는지 확인합니다.
++
+
+NOTE: Exchange용 플러그인을 설치하면 SnapCenter 서버가 아닌 호스트에 플러그인이 등록됩니다. SnapCenter GUI 또는 PowerShell cmdlet을 사용하여 호스트를 추가하여 SnapCenter 서버에 플러그인을 등록할 수 있습니다. 호스트가 추가되면 플러그인이 자동으로 검색됩니다.
+
+

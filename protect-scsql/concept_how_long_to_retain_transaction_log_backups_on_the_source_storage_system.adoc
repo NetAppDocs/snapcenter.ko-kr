@@ -1,0 +1,17 @@
+---
+permalink: protect-scsql/concept_how_long_to_retain_transaction_log_backups_on_the_source_storage_system.html 
+sidebar: sidebar 
+keywords:  
+summary: Microsoft SQL Server용 SnapCenter 플러그인에는 최신 복원 작업을 수행하기 위한 트랜잭션 로그 백업이 필요합니다. 이 작업은 데이터베이스를 두 개의 전체 백업 사이의 시간으로 복원합니다. 
+---
+= 소스 스토리지 시스템에서 트랜잭션 로그 백업을 유지하는 데 걸리는 시간
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Microsoft SQL Server용 SnapCenter 플러그인에는 최신 복원 작업을 수행하기 위한 트랜잭션 로그 백업이 필요합니다. 이 작업은 데이터베이스를 두 개의 전체 백업 사이의 시간으로 복원합니다.
+
+예를 들어 SQL Server용 플러그인이 오전 8시에 전체 백업을 수행하는 경우 또한 오후 5시에 최신 트랜잭션 로그 백업을 사용하여 오전 8시 사이에 언제든지 데이터베이스를 복원할 수 있습니다 오후 5시까지 운영됩니다 트랜잭션 로그를 사용할 수 없는 경우 SQL Server용 플러그인은 시점 복원 작업만 수행할 수 있습니다. 그러면 SQL Server용 플러그인이 전체 백업을 완료한 시점으로 데이터베이스를 복원합니다.
+
+일반적으로 하루 또는 이틀 동안만 최신 복원 작업이 필요합니다. 기본적으로 SnapCenter는 최소 2일을 유지합니다.

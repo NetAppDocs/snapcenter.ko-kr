@@ -1,0 +1,15 @@
+---
+permalink: protect-scsql/task_install_snapcenter_plug_in_for_microsoft_sql_server_database.html 
+sidebar: sidebar 
+keywords: installing 
+summary: SQL Server 데이터베이스를 보호하려면 Microsoft SQL Server용 SnapCenter 플러그인을 설치하고 설정해야 합니다. 
+---
+= Microsoft SQL Server용 SnapCenter 플러그인 워크플로우를 설치합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SQL Server 데이터베이스를 보호하려면 Microsoft SQL Server용 SnapCenter 플러그인을 설치하고 설정해야 합니다.
+
+image::../media/scsql_install_configure_workflow.gif[scsql 설치 워크플로우 구성]

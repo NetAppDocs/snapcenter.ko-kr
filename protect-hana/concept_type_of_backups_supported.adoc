@@ -1,0 +1,25 @@
+---
+permalink: protect-hana/concept_type_of_backups_supported.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for SAP HANA Database 
+summary: 백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 SAP HANA 데이터베이스용 파일 기반 백업 및 스냅샷 복사본 기반 백업 유형을 지원합니다. 
+---
+= 지원되는 백업 유형입니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 SAP HANA 데이터베이스용 파일 기반 백업 및 스냅샷 복사본 기반 백업 유형을 지원합니다.
+
+
+
+== 파일 기반 백업
+
+파일 기반 백업은 데이터베이스의 무결성을 확인합니다. 파일 기반 백업 작업이 특정 간격으로 실행되도록 예약할 수 있습니다. 활성 테넌트만 백업됩니다. SnapCenter에서는 파일 기반 백업을 복원 및 클론 복제할 수 없습니다.
+
+
+
+== 스냅샷 복사본 기반 백업
+
+스냅샷 복사본 기반 백업은 NetApp Snapshot 복사본 기술을 활용하여 SAP HANA 데이터베이스가 상주하는 볼륨의 온라인 읽기 전용 복사본을 생성합니다.

@@ -1,0 +1,27 @@
+---
+permalink: install/reference_supported_storage_systems_and_applications.html 
+sidebar: sidebar 
+keywords: storage system, ONTAP version 
+summary: 지원되는 스토리지 시스템, 애플리케이션 및 데이터베이스를 알고 있어야 합니다. 
+---
+= 지원되는 스토리지 시스템 및 애플리케이션
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+지원되는 스토리지 시스템, 애플리케이션 및 데이터베이스를 알아야 합니다.
+
+* SnapCenter는 데이터를 보호하기 위해 ONTAP 8.3.0 이상을 지원합니다.
+* SnapCenter는 ONTAP 소프트웨어 4.5 P1 패치 릴리즈로부터 데이터를 보호하기 위해 NetApp SnapCenter용 Amazon FSx를 지원합니다.
++
+NetApp ONTAP용 Amazon FSx를 사용하는 경우 데이터 보호 작업을 수행하기 위해 SnapCenter 서버 호스트 플러그인이 4.5 P1 이상으로 업그레이드되었는지 확인합니다.
+
++
+NetApp ONTAP용 Amazon FSx에 대한 자세한 내용은 를 참조하십시오 https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["NetApp ONTAP용 Amazon FSx 문서"^].
+
+* SnapCenter는 다양한 애플리케이션 및 데이터베이스의 보호를 지원합니다.
++
+지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+
+

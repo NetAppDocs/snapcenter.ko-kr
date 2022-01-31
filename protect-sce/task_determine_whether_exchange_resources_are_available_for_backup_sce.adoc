@@ -1,0 +1,70 @@
+---
+permalink: protect-sce/task_determine_whether_exchange_resources_are_available_for_backup_sce.html 
+sidebar: sidebar 
+keywords: credentials 
+summary: 리소스는 사용자가 설치한 플러그인에서 유지 관리하는 데이터베이스, Exchange 데이터베이스 가용성 그룹입니다. 이러한 리소스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있지만 먼저 사용 가능한 리소스를 확인해야 합니다. 사용 가능한 리소스를 확인하면 플러그인 설치가 성공적으로 완료되었는지 확인할 수도 있습니다. 
+---
+= Exchange 리소스를 백업에 사용할 수 있는지 여부를 확인합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+리소스는 사용자가 설치한 플러그인에서 유지 관리하는 데이터베이스, Exchange 데이터베이스 가용성 그룹입니다. 이러한 리소스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있지만 먼저 사용 가능한 리소스를 확인해야 합니다. 사용 가능한 리소스를 확인하면 플러그인 설치가 성공적으로 완료되었는지 확인할 수도 있습니다.
+
+* 필요한 것 *
+
+* SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 생성, 자격 증명 추가 및 Exchange용 플러그인 설치와 같은 작업을 이미 완료해야 합니다.
+* Single Mailbox Recovery 소프트웨어 기능을 사용하려면 Single Mailbox Recovery 소프트웨어가 설치된 Exchange Server에 활성 데이터베이스를 설치해야 합니다.
+* 데이터베이스가 VMware RDM LUN에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다. 를 클릭합니다 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html["VMware vSphere용 SnapCenter 플러그인 설명서"] 자세한 정보가 있습니다.
+
+
+* 이 작업에 대한 정보 *
+
+* Details 페이지의 * Overall Status * 옵션이 Not Available for backup으로 설정되어 있으면 데이터베이스를 백업할 수 없습니다. 다음 중 하나라도 해당하면 * Overall Status *(전체 상태 *) 옵션이 Not Available(백업 불가)로 설정됩니다.
++
+** 데이터베이스가 NetApp LUN에 없습니다.
+** 데이터베이스가 정상 상태가 아닙니다.
++
+데이터베이스가 마운트, 마운트 해제, 다시 시드되거나 복구 보류 상태인 경우 정상 상태가 아닙니다.
+
+
+
+* DAG(Database Availability Group)가 있는 경우 DAG에서 백업 작업을 실행하여 그룹의 모든 데이터베이스를 백업할 수 있습니다.
+
+
+* 단계 *
+
+. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 리소스 페이지의 왼쪽 위 모서리에 있는 플러그인 드롭다운 목록에서 * Microsoft Exchange Server * 를 선택합니다.
+. 리소스 * 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 또는 * 리소스 그룹 * 을 선택합니다.
++
+모든 데이터베이스와 DAG는 DAG 또는 호스트 이름과 함께 FQDN 형식으로 표시되므로 여러 데이터베이스를 구별할 수 있습니다.
+
++
+을 클릭합니다 image:../media/filter_icon.gif[""] 호스트 이름과 Exchange Server를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 image:../media/filter_icon.gif[""] 를 눌러 필터 창을 닫습니다.
+
+. 리소스 새로 고침 * 을 클릭합니다.
++
+새로 추가, 이름 변경 또는 삭제된 리소스가 SnapCenter 서버 인벤토리로 업데이트됩니다.
+
++
+
+IMPORTANT: 데이터베이스가 SnapCenter 외부에서 이름이 변경된 경우 리소스를 새로 고쳐야 합니다.
+
++
+리소스는 리소스 이름, 데이터베이스 가용성 그룹 이름, 데이터베이스가 현재 활성 상태인 서버, 복제본이 있는 서버, 마지막 백업 시간 및 전체 상태 등의 정보와 함께 표시됩니다.
+
++
+** 데이터베이스가 비 NetApp 스토리지에 있는 경우 백업을 사용할 수 없음 이 전체 상태 열에 표시됩니다.
++
+DAG에서 액티브 데이터베이스 복제본이 타사 스토리지에 있고 하나 이상의 패시브 데이터베이스 복제본이 NetApp 스토리지에 있는 경우 보호되지 않음 이 * Overall Status * 열에 표시됩니다.
+
++
+NetApp이 아닌 스토리지 유형에 있는 데이터베이스에는 데이터 보호 작업을 수행할 수 없습니다.
+
+** 데이터베이스가 NetApp 스토리지에 있고 보호되지 않는 경우 * Overall Status * 열에 보호되지 않음 이 표시됩니다.
+** 데이터베이스가 NetApp 스토리지 시스템에 있고 보호되어 있는 경우 사용자 인터페이스에 *Overall Status* 열에 Backup not run 메시지가 표시됩니다.
+** 데이터베이스가 NetApp 스토리지 시스템에 있으며 보호되어 있고 데이터베이스에 대한 백업이 트리거된 경우 사용자 인터페이스에 * Overall Status * 열에 Backup Succeeded 메시지가 표시됩니다.
+
+
+

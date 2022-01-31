@@ -1,0 +1,39 @@
+---
+permalink: install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html 
+sidebar: sidebar 
+keywords: F5,load balancer 
+summary: 'SnapCenter에서 고가용성 \(HA\)을 지원하려면 F5 로드 밸런서를 설치해야 합니다. F5를 사용하면 SnapCenter 서버가 동일한 위치에 있는 최대 2개의 호스트에서 액티브-패시브 구성을 지원할 수 있습니다. SnapCenter에서 F5 로드 밸런서를 사용하려면 SnapCenter 서버를 구성하고 F5 로드 밸런서를 구성해야 합니다.' 
+---
+= F5를 사용하여 고가용성을 위해 SnapCenter 서버를 구성합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter에서 HA(고가용성)를 지원하기 위해 F5 로드 밸런서를 설치할 수 있습니다. F5를 사용하면 SnapCenter 서버가 동일한 위치에 있는 최대 2개의 호스트에서 액티브-패시브 구성을 지원할 수 있습니다. SnapCenter에서 F5 로드 밸런서를 사용하려면 SnapCenter 서버를 구성하고 F5 로드 밸런서를 구성해야 합니다.
+
+
+IMPORTANT: SnapCenter 4.2.x에서 업그레이드한 후 이전에 네트워크 로드 밸런싱(NLB)을 사용한 경우 해당 구성을 계속 사용하거나 F5 로 전환할 수 있습니다.
+
+워크플로 이미지에는 F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 단계가 나와 있습니다. 자세한 지침은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer["F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 방법"^].
+
+image::../media/sc-F5-configure-workflow.png[SC F5 워크플로우 구성]
+
+다음 cmdlet을 사용하여 F5 클러스터를 추가 및 제거하려면 SnapCenter Server의 로컬 관리자 그룹 구성원이어야 합니다(스냅센터 관리자 역할에 할당되는 것 외에).
+
+* Add-SmServerCluster를 선택합니다
+* Add-SmServer 를 클릭합니다
+* 제거 - SmServerCluster
++
+자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+
+
+
+
+=== 추가 F5 구성 정보
+
+* 고가용성을 위해 SnapCenter를 설치하고 구성한 후 F5 클러스터 IP를 가리키도록 SnapCenter 바탕 화면 바로 가기를 편집합니다.
+* SnapCenter 서버 간에 페일오버가 발생하고 기존 SnapCenter 세션도 있는 경우 브라우저를 닫고 SnapCenter에 다시 로그온해야 합니다.
+* NLB 또는 F5(Load Balancer Setup)에서 NLB 또는 F5 노드에 의해 부분적으로 확인된 노드를 추가하고 SnapCenter 노드가 이 노드에 연결할 수 없는 경우 SnapCenter 호스트 페이지는 호스트 다운과 실행 상태 사이를 자주 전환합니다. 이 문제를 해결하려면 두 SnapCenter 노드가 모두 NLB 또는 F5 노드의 호스트를 해결할 수 있는지 확인해야 합니다.
+

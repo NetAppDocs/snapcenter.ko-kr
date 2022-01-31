@@ -1,0 +1,172 @@
+---
+permalink: protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html 
+sidebar: sidebar 
+keywords:  
+summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. 
+---
+= 호스트를 추가하고 Microsoft Exchange Server용 SnapCenter 플러그인을 설치하기 위한 사전 요구 사항
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다.
+
+* iSCSI를 사용하는 경우 iSCSI 서비스가 실행 중이어야 합니다.
+* 원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 도메인 사용자가 있어야 합니다.
+* 독립 실행형 및 데이터베이스 가용성 그룹 구성에 Microsoft Exchange Server 2013, 2016 또는 2019를 사용해야 합니다.
+* Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다.
+* SnapCenter에서 클러스터 노드를 관리하는 경우 클러스터의 모든 노드에 대한 관리 권한이 있는 사용자가 있어야 합니다.
+* Exchange Server에 대한 관리 권한이 있는 사용자가 있어야 합니다.
+* SnapManager for Microsoft Exchange Server 및 SnapDrive for Windows가 이미 설치되어 있는 경우, 동일한 Exchange Server에 Exchange용 플러그인을 설치하기 전에 SnapDrive for Windows에서 사용하는 VSS 하드웨어 공급자를 등록 취소해야 SnapCenter를 사용하여 데이터를 성공적으로 보호할 수 있습니다.
+* Microsoft Exchange Server용 SnapManager와 Exchange용 플러그인이 동일한 서버에 설치되어 있는 경우 Windows 스케줄러에서 Microsoft Exchange Server용 SnapManager가 생성한 모든 스케줄을 일시 중지하거나 삭제해야 합니다.
+* 호스트는 서버에서 FQDN(정규화된 도메인 이름)으로 확인할 수 있어야 합니다. 호스트 파일을 확인할 수 있도록 수정하고 호스트 파일에 짧은 이름과 FQDN이 모두 지정된 경우 _<IP_address><host_FQDN><host_name>_ 형식으로 SnapCenter hosts 파일에 항목을 생성합니다.
+* 방화벽에서 다음 포트가 차단되지 않았는지 확인합니다. 차단되지 않으면 호스트 추가 작업이 실패합니다. 이 문제를 해결하려면 동적 포트 범위를 구성해야 합니다. 자세한 내용은 을 참조하십시오 https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls["Microsoft 설명서"^].
++
+** Windows 2016 및 Exchange 2016의 경우 포트 범위 50000 - 51000
+** Windows 2012 R2 및 Exchange 2013의 경우 포트 범위는 6000-6500입니다
+** Windows 2019의 경우 포트 범위 49152-65536
+
+
+
+
+[NOTE]
+====
+포트 범위를 식별하려면 다음 명령을 실행합니다.
+
+* netsh int ipv4 show dynamicport tcp
+* netsh int ipv4 show dynamicport udp
+* netsh int ipv6 show dynamicport tcp
+* netsh int ipv6 show dynamicport UDP
+
+
+====
+
+
+== Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항
+
+Windows용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 기본적인 호스트 시스템 공간 요구 사항 및 사이징 요구 사항을 숙지해야 합니다.
+
+|===
+| 항목 | 요구 사항 
+
+
+ a| 
+운영 체제
+ a| 
+Microsoft Windows
+
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+
+
+
+ a| 
+호스트의 SnapCenter 플러그인에 대한 최소 RAM입니다
+ a| 
+1GB
+
+
+
+ a| 
+호스트의 SnapCenter 플러그인에 대한 최소 설치 및 로그 공간
+ a| 
+5GB
+
+
+NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 사용량을 모니터링해야 합니다. 필요한 로그 공간은 보호할 엔터티의 수와 데이터 보호 작업의 빈도에 따라 달라집니다. 디스크 공간이 충분하지 않으면 최근 실행 작업에 대한 로그가 생성되지 않습니다.
+
+
+
+ a| 
+필요한 소프트웨어 패키지
+ a| 
+* Microsoft .NET Framework 4.5.2 이상
+* WMF(Windows Management Framework) 4.0 이상
+* PowerShell 4.0 이상
+
+
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+
+|===
+
+
+== Exchange Server 권한이 필요합니다
+
+SnapCenter에서 Exchange Server 또는 DAG를 추가하고 호스트 또는 DAG에 Microsoft Exchange Server용 SnapCenter 플러그인을 설치하려면 최소 권한 및 권한 세트가 있는 사용자에 대한 자격 증명을 사용하여 SnapCenter를 구성해야 합니다.
+
+로컬 관리자 권한이 있는 도메인 사용자와 원격 Exchange 호스트에 대한 로컬 로그인 권한, DAG의 모든 노드에 대한 관리 권한이 있어야 합니다. 도메인 사용자에게는 다음과 같은 최소 권한이 필요합니다.
+
+* Add-MailboxDatabaseCopy 를 선택합니다
+* 마운트 해제 - 데이터베이스
+* 가져오기 - AdServerSettings
+* Get-DatabaseAvailabilityGroup
+* Get-ExchangeServer를 선택합니다
+* Get-MailboxDatabase
+* Get-MailboxDatabaseCopyStatus 를 참조하십시오
+* Get-MailboxServer 를 참조하십시오
+* Get-MailboxStatistics를 참조하십시오
+* Get-PublicFolderDatabase를 참조하십시오
+* Move-ActiveMailboxDatabase(ActiveMailboxDatabase 이동)
+* move-DatabasePath-ConfigurationOnly:$true입니다
+* 마운트 - 데이터베이스
+* New - MailboxDatabase
+* 새 기능 - PublicFolderDatabase
+* remove - MailboxDatabase(메일 사서함 데이터베이스)
+* remove-MailboxDatabaseCopy 를 선택합니다
+* 제거 - PublicFolderDatabase
+* Resume - MailboxDatabaseCopy
+* 설정 - AdServerSettings
+* Set-MailboxDatabase -allowfilerestore:$true입니다
+* Set-MailboxDatabaseCopy 를 선택합니다
+* Set-PublicFolderDatabase
+* Suspend-MailboxDatabaseCopy 를 선택합니다
+* 업데이트 - MailboxDatabaseCopy
+
+
+
+
+== Windows Server 2012 이상에서 GMSA를 구성합니다
+
+Windows용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 기본적인 호스트 시스템 공간 요구 사항 및 사이징 요구 사항을 숙지해야 합니다.
+
+|===
+| 항목 | 요구 사항 
+
+
+ a| 
+운영 체제
+ a| 
+Microsoft Windows
+
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+
+
+
+ a| 
+호스트의 SnapCenter 플러그인에 대한 최소 RAM입니다
+ a| 
+1GB
+
+
+
+ a| 
+호스트의 SnapCenter 플러그인에 대한 최소 설치 및 로그 공간
+ a| 
+5GB
+
+
+NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 사용량을 모니터링해야 합니다. 필요한 로그 공간은 보호할 엔터티의 수와 데이터 보호 작업의 빈도에 따라 달라집니다. 디스크 공간이 충분하지 않으면 최근 실행 작업에 대한 로그가 생성되지 않습니다.
+
+
+
+ a| 
+필요한 소프트웨어 패키지
+ a| 
+* Microsoft .NET Framework 4.5.2 이상
+* WMF(Windows Management Framework) 4.0 이상
+* PowerShell 4.0 이상
+
+
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+
+|===

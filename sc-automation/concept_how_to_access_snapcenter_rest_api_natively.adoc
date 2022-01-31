@@ -1,0 +1,13 @@
+---
+permalink: sc-automation/concept_how_to_access_snapcenter_rest_api_natively.html 
+sidebar: sidebar 
+keywords: REST APIs, swagger 
+summary: REST API에 기본적으로 액세스 REST API는 Swagger 웹 페이지를 통해 표시됩니다. 
+---
+= SnapCenter REST API에 기본적으로 액세스하는 방법
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+REST 클라이언트를 지원하는 모든 프로그래밍 언어를 사용하여 SnapCenter REST API에 직접 액세스할 수 있습니다. Python, PowerShell, Java 등 다양한 언어가 제공됩니다.

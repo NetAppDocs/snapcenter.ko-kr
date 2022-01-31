@@ -1,0 +1,20 @@
+---
+section: uninstall
+title: SnapCenter 서버 및 플러그인을 제거합니다
+entries:
+- title: SnapCenter 플러그인 패키지를 제거합니다
+  entries:
+  - title: 호스트 제거를 위한 사전 요구 사항
+    url: "/uninstall/reference_prerequisites_for_removing_a_host.html"
+  - title: 호스트를 제거합니다
+    url: "/uninstall/task_remove_a_host.html"
+  - title: SnapCenter GUI를 사용하여 플러그인을 제거합니다
+    url: "/uninstall/task_uninstall_plug_ins_from_a_host_using_the_snapcenter_gui.html"
+  - title: PowerShell cmdlet을 사용하여 Windows 플러그인을 제거합니다
+    url: "/uninstall/task_uninstalling_windows_plug_ins_using_the_command_line_interface_on_the_snapcenter_server_host.html"
+  - title: 호스트에서 플러그인을 로컬로 제거합니다
+    url: "/uninstall/task_uninstall_plug_ins_locally_on_a_host.html"
+  - title: CLI를 사용하여 Linux 또는 AIX용 플러그인 패키지를 제거합니다
+    url: "/uninstall/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html"
+- title: SnapCenter 서버를 제거합니다
+  url: "/uninstall/task_uninstalling_the_snapcenter_server.html"

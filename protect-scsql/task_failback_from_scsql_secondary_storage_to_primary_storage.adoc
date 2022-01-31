@@ -1,0 +1,41 @@
+---
+permalink: protect-scsql/task_failback_from_scsql_secondary_storage_to_primary_storage.html 
+sidebar: sidebar 
+keywords:  
+summary: SQL Server 운영 스토리지용 SnapCenter 플러그인이 다시 온라인 상태가 되면 운영 스토리지로 페일백해야 합니다. 
+---
+= SnapCenter Plug-in for SQL Server 보조 스토리지에서 운영 스토리지로 페일백
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SQL Server 운영 스토리지용 SnapCenter 플러그인이 다시 온라인 상태가 되면 운영 스토리지로 페일백해야 합니다.
+
+* 필요한 것 *
+
+* 관리 호스트 * 페이지의 * 유지 관리 * 모드로 SQL Server용 SnapCenter 플러그인을 배치합니다.
+* 호스트에서 보조 스토리지를 분리하고 운영 스토리지에서 접속합니다.
+* 운영 스토리지로 페일백하려면 역방향 재동기화 작업을 수행하여 페일오버 전의 관계 방향이 그대로 유지되는지 확인합니다.
++
+역재동기화 작업 후 운영 스토리지와 보조 스토리지의 역할을 유지하려면 역방향 재동기화 작업을 다시 한 번 수행하십시오.
+
++
+자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/ontap-sm-classic/online-help-96-97/task_reverse_resynchronizing_snapmirror_relationships.html["미러 관계를 역재동기화합니다"]
+
+* MSSQL 서버 서비스를 다시 시작합니다.
+* SQL 리소스가 다시 온라인 상태인지 확인합니다.
+
+
+* 단계 *
+
+. 설정 * 페이지에서 * 설정 * > * 글로벌 설정 * > * 재해 복구 * 로 이동합니다.
+. [재해 복구 사용] * 을 선택 취소합니다.
+. 적용 * 을 클릭합니다.
+. Monitor * > * Jobs * 를 클릭하여 DR 작업이 활성화되었는지 여부를 확인합니다.
+
+
+* 완료 후 *
+
+* UI 또는 다음 cmdlet('제거-SmDRFailoverBackups')을 사용하여 장애 조치 중에 생성된 SQL Server 백업용 SnapCenter 플러그인을 삭제할 수 있습니다
+

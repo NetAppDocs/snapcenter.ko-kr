@@ -1,0 +1,24 @@
+---
+section: concept
+title: 개념
+entries:
+- title: SnapCenter 개요
+  url: "/concept/concept_snapcenter_overview.html"
+- title: 보안 기능
+  url: "/concept/reference_data_security.html"
+- title: SnapCenter 역할 기반 액세스 제어(RBAC)
+  entries:
+  - title: RBAC 유형
+    url: "/concept/concept_types_of_role_based_access_control_in_snapcenter.html"
+  - title: RBAC 권한 및 역할
+    url: "/concept/reference_role_based_access_control_permissions_and_roles.html"
+  - title: 사전 정의된 SnapCenter 역할 및 권한
+    url: "/concept/reference_pre_defined_snapcenter_roles_and_permissions.html"
+- title: 재해 복구
+  url: "/protect-concept/concept_disaster_recovery.html"
+- title: 리소스, 리소스 그룹 및 정책
+  url: "/concept/concept_resources_resource_groups_and_policies.html"
+- title: 사전 스크립트 및 포스트스크립트
+  url: "/concept/concept_prescripts_and_postscripts.html"
+- title: REST API를 사용하여 SnapCenter 자동화
+  url: "/concept/concept_snapcenter_rest_apis.html"

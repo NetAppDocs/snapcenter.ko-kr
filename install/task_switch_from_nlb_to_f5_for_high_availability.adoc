@@ -1,0 +1,24 @@
+---
+permalink: install/task_switch_from_nlb_to_f5_for_high_availability.html 
+sidebar: sidebar 
+keywords: F5, NLB, high availability 
+summary: 'SnapCenter HA 구성을 NLB(네트워크 로드 밸런싱)에서 F5 로드 밸런서를 사용하도록 변경할 수 있습니다.' 
+---
+= 고가용성을 위해 NLB에서 F5로 전환합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter HA 구성을 NLB(네트워크 로드 밸런싱)에서 F5 로드 밸런서를 사용하도록 변경할 수 있습니다.
+
+* 단계 *
+
+. F5를 사용하여 고가용성을 위해 SnapCenter 서버를 구성합니다. https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer["자세한 정보"^].
+. SnapCenter 서버 호스트에서 PowerShell을 실행합니다.
+. Open-SmConnection cmdlet을 사용하여 세션을 시작한 다음 자격 증명을 입력합니다.
+. Update-SmServerCluster cmdlet을 사용하여 F5 클러스터 IP 주소를 가리키도록 SnapCenter 서버를 업데이트합니다.
++
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+

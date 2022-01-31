@@ -1,0 +1,53 @@
+---
+permalink: uninstall/task_uninstall_plug_ins_from_a_host_using_the_snapcenter_gui.html 
+sidebar: sidebar 
+keywords: uninstall, gui 
+summary: 개별 플러그인 또는 플러그인 패키지가 더 이상 필요하지 않다고 결정한 경우 SnapCenter 인터페이스를 사용하여 제거할 수 있습니다. 
+---
+= SnapCenter GUI를 사용하여 플러그인을 제거합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+개별 플러그인 또는 플러그인 패키지가 더 이상 필요하지 않다고 결정한 경우 SnapCenter 인터페이스를 사용하여 제거할 수 있습니다.
+
+* 필요한 것 *
+
+* 제거할 플러그인 패키지의 리소스 그룹을 제거해야 합니다.
+* 제거할 플러그인 패키지의 리소스 그룹과 연결된 정책을 분리해야 합니다.
+
+
+* 이 작업에 대한 정보 *
+
+개별 플러그인을 제거할 수 있습니다. 예를 들어, 호스트에 리소스가 부족하고 해당 플러그인을 보다 강력한 호스트로 이동하려고 하기 때문에 Microsoft SQL Server용 SnapCenter 플러그인을 제거해야 할 수 있습니다. 전체 플러그인 패키지를 제거할 수도 있습니다. 예를 들어, Oracle 데이터베이스용 SnapCenter 플러그인 및 UNIX용 SnapCenter 플러그인이 포함된 Linux용 SnapCenter 플러그인 패키지를 제거해야 할 수 있습니다.
+
+* 호스트 제거에는 모든 플러그인이 제거됩니다.
++
+SnapCenter에서 호스트를 제거하면 SnapCenter는 호스트를 제거하기 전에 호스트에 있는 모든 플러그인 패키지를 제거합니다.
+
+* SnapCenter GUI는 한 번에 하나의 호스트에서 플러그인을 제거합니다.
++
+SnapCenter GUI를 사용하는 경우 한 번에 하나의 호스트에서만 플러그인을 제거할 수 있습니다. 그러나 여러 제거 작업을 동시에 실행할 수 있습니다.
+
++
+또한 _Uninstall-SmHostPackage_cmdlet 및 필수 매개 변수를 사용하여 여러 호스트에서 플러그인을 제거할 수도 있습니다. cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+
+
+
+IMPORTANT: SnapCenter 서버가 설치된 호스트에서 Windows용 SnapCenter 플러그인 패키지를 제거하면 SnapCenter 서버 설치가 손상됩니다. SnapCenter 서버가 더 이상 필요하지 않은 경우가 아니면 Windows용 SnapCenter 플러그인 패키지를 제거하지 마십시오.
+
+* 단계 *
+
+. 왼쪽 탐색 창에서 * 호스트 * 를 클릭합니다.
+. 호스트 페이지에서 * 관리되는 호스트 * 를 클릭합니다.
+. 관리 호스트 페이지에서 플러그인 또는 플러그인 패키지를 제거할 호스트를 선택합니다.
+. 제거하려는 플러그인 옆에 있는 * 제거 * > * 제출 * 을 클릭합니다.
+
+
+* 완료 후 *
+
+해당 호스트에 플러그인을 다시 설치하기 전에 5분 정도 기다려야 합니다. 이 기간은 SnapCenter GUI가 관리 대상 호스트의 상태를 새로 고칠 수 있을 정도로 충분합니다. 플러그인을 즉시 재설치하면 설치가 실패합니다.
+
+Linux용 SnapCenter 플러그인 패키지를 제거하는 경우 설치 제거별 로그 파일은 _/custom_location/snapcenter/log_에서 사용할 수 있습니다.

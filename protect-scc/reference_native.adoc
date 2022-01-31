@@ -1,0 +1,147 @@
+---
+permalink: protect-scc/reference_native.html 
+sidebar: sidebar 
+keywords:  
+summary: 네이티브 스타일을 사용하여 플러그인을 개발합니다. 
+---
+= 네이티브 스타일
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter는 플러그인 생성을 위해 비 PERL 프로그래밍 또는 스크립팅 언어를 지원합니다. 이를 스크립트 또는 배치 파일일 수 있는 네이티브 스타일 프로그래밍이라고 합니다.
+
+네이티브 스타일 플러그인은 다음과 같은 특정 규칙을 따라야 합니다.
+
+플러그인은 실행 가능해야 합니다
+
+* Unix 시스템의 경우 에이전트를 실행하는 사용자는 플러그인에 대한 실행 권한이 있어야 합니다
+* Windows 시스템의 경우 PowerShell 플러그인에는 접미사가 .ps1이어야 하며, 다른 Windows 스크립트에는 .cmd 또는 .bat 접미사가 있어야 하며 사용자가 실행할 수 있어야 합니다
+* 플러그인은 "-quiesce", "-unquiesce"와 같은 명령줄 인수에 반응해야 합니다.
+* 작업 또는 기능이 구현되지 않은 경우 플러그인은 종료 코드 99를 반환해야 합니다
+* 플러그인은 특정 구문을 사용하여 결과를 서버로 다시 전달해야 합니다
+
+
+
+
+== 일반적인 플러그인 처리
+
+
+
+=== 오류 메시지를 로깅합니다
+
+각 작업은 콘텐츠를 표시하고 저장하는 서버로 메시지를 다시 보낼 수 있습니다. 메시지에는 메시지 수준, 타임스탬프 및 메시지 텍스트가 포함됩니다. 여러 줄 메시지가 지원됩니다.
+
+형식:
+
+....
+SC_MSG#<level>#<timestamp>#<message>
+SC_MESSAGE#<level>#<timestamp>#<message>
+....
+
+
+=== 플러그인 스텁 사용
+
+SnapCenter 플러그인은 플러그인 스텁을 구현해야 합니다. SnapCenter 서버가 특정 워크플로를 기반으로 호출하는 메서드입니다.
+
+|===
+| 플러그인 스텁 | 선택 사항/필수 요소입니다 | 목적 
+
+
+ a| 
+정지
+ a| 
+필수 요소입니다
+ a| 
+이 스텁은 정지 작업을 수행합니다. 스냅샷 복사본을 생성할 수 있는 상태로 애플리케이션을 배치합니다. 이 작업은 스토리지 스냅샷 복사본 작업 전에 호출됩니다.
+
+
+
+ a| 
+정지 해제
+ a| 
+필수 요소입니다
+ a| 
+이 스텁은 정지 해제를 수행하는 역할을 합니다. 응용 프로그램을 정상 상태로 만듭니다. 이 이름은 스토리지 스냅샷 복사본 작업 후에 호출됩니다.
+
+
+
+ a| 
+Clone_pre
+ a| 
+선택 사항
+ a| 
+이 스텁은 사전 클론 작업을 수행합니다. 이는 사용자가 기본 제공 SnapCenter 클론 생성 인터페이스를 사용하고 있으며 작업 "clone_vol 또는 clone_lun"을 수행하는 동안에만 트리거된다는 것을 전제로 합니다.
+
+
+
+ a| 
+clone_post
+ a| 
+선택 사항
+ a| 
+이 스텁은 사후 클론 작업을 수행하는 역할을 합니다. 이는 사용자가 기본 제공 SnapCenter 클론 생성 인터페이스를 사용 중이며 "clone_vol 또는 clone_lun" 작업을 수행하는 동안에만 트리거된다고 가정합니다.
+
+
+
+ a| 
+restore_pre
+ a| 
+선택 사항
+ a| 
+이 스텁은 사전 복원 작업을 수행하는 역할을 합니다. 이는 사용자가 기본 제공 SnapCenter 복원 인터페이스를 사용하고 있다고 가정하고 복원 작업을 수행하는 동안에만 트리거됩니다.
+
+
+
+ a| 
+복원
+ a| 
+선택 사항
+ a| 
+이 스텁은 모든 복구 작업을 수행합니다. 기본 제공 복원 인터페이스를 사용하지 않는 것으로 가정합니다. 복구 작업을 수행하는 동안 트리거됩니다.
+
+|===
+
+
+=== 예
+
+
+
+==== Windows PowerShell
+
+시스템에서 스크립트를 실행할 수 있는지 확인합니다. 스크립트를 실행할 수 없는 경우 스크립트에 대해 Set-ExecutionPolicy bypass를 설정하고 작업을 재시도하십시오.
+
+....
+if ($args.length -ne 1) {
+  write-warning "You must specify a method";
+  break;
+}
+function log ($level, $message) {
+  $d = get-date
+  echo "SC_MSG#$level#$d#$message"
+}
+function quiesce {
+  $app_name = (get-item env:APP_NAME).value
+  log "INFO" "Quiescing application using script $app_name";
+  log "INFO" "Quiescing application finished successfully"
+}
+function unquiesce {
+  $app_name = (get-item env:APP_NAME).value
+  log "INFO" "Unquiescing application using script $app_name";
+  log "INFO" "Unquiescing application finished successfully"
+}
+  switch ($args[0]) {
+    "-quiesce" {
+    quiesce;
+}
+"-unquiesce" {
+    unquiesce;
+}
+default {
+    write-error "Function $args[0] is not implemented";
+    exit 99;
+  }
+}
+exit 0;
+....

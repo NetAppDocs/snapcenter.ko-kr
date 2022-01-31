@@ -1,0 +1,12 @@
+---
+section: upgrade
+title: SnapCenter 서버 및 플러그인 업그레이드
+entries:
+- title: 사용 가능한 업데이트를 확인하도록 SnapCenter를 구성합니다
+  url: "/upgrade/task_configure_snapcenter_to_check_for_available_updates.html"
+- title: 워크플로 업그레이드
+  url: "/upgrade/upgrade_workflow.html"
+- title: SnapCenter 서버를 업그레이드합니다
+  url: "/upgrade/task_upgrade_snapcenter.html"
+- title: 플러그인 패키지를 업그레이드합니다
+  url: "/upgrade/task_upgrade_your_plug_in_packages.html"

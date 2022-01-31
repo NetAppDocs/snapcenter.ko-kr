@@ -1,0 +1,15 @@
+---
+permalink: protect-scsql/concept_multiple_databases_on_the_same_volume.html 
+sidebar: sidebar 
+keywords:  
+summary: '백업 정책에 백업당 최대 데이터베이스 수 설정 옵션이 있기 때문에 모든 데이터베이스를 동일한 볼륨에 둘 수 있습니다\(기본값은 100\).' 
+---
+= 동일한 볼륨에 여러 개의 데이터베이스가 있습니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+백업 정책에 백업당 최대 데이터베이스(기본값: 100)를 설정하는 옵션이 있으므로 모든 데이터베이스를 동일한 볼륨에 배치할 수 있습니다.
+
+예를 들어, 같은 볼륨에 200개의 데이터베이스가 있는 경우 두 스냅샷 복사본 각각에 100개의 데이터베이스가 있는 2개의 스냅샷 복사본이 생성됩니다.

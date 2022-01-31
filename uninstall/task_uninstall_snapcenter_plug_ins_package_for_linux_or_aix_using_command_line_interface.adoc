@@ -1,0 +1,23 @@
+---
+permalink: uninstall/task_uninstall_snapcenter_plug_ins_package_for_linux_or_aix_using_command_line_interface.html 
+sidebar: sidebar 
+keywords: uninstall plug-ins, linux, aix, command-line interface, cli 
+summary: 명령줄 인터페이스를 사용하여 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 제거할 수 있습니다. 
+---
+= CLI를 사용하여 Linux 또는 AIX용 플러그인 패키지를 제거합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+명령줄 인터페이스를 사용하여 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 제거할 수 있습니다.
+
+* 필요한 것 *
+
+* 예약된 작업을 삭제했는지 확인합니다
+* 실행 중인 모든 작업이 완료되었는지 확인합니다.
+
+
+* 단계 *
+
+설치 제거하려면 _/custom_location/NetApp/snapcenter/SPL/installation/plugins/uninstall_을 실행합니다.

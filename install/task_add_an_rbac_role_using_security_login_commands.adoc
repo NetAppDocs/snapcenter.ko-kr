@@ -1,0 +1,99 @@
+---
+permalink: install/task_add_an_rbac_role_using_security_login_commands.html 
+sidebar: sidebar 
+keywords: RBAC roles, add, ONTAP RBAC role 
+summary: 스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가할 수 있습니다. 
+---
+= 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가할 수 있습니다.
+
+* 필요한 것 *
+
+* Clustered ONTAP을 실행 중인 스토리지 시스템에 대해 ONTAP RBAC 역할을 생성하기 전에 다음을 확인해야 합니다.
++
+** 수행할 작업(또는 작업)입니다
+** 이러한 작업을 수행하는 데 필요한 권한입니다
+
+
+* RBAC 역할을 구성하려면 다음 작업을 수행해야 합니다.
++
+** 명령 및/또는 명령 디렉터리에 권한을 부여합니다.
++
+명령 /command 디렉토리에는 모두 액세스 및 읽기 전용이라는 두 가지 액세스 레벨이 있습니다.
+
++
+항상 먼저 모든 액세스 권한을 할당해야 합니다.
+
+** 사용자에게 역할을 할당합니다.
+** SnapCenter 플러그인이 전체 클러스터의 클러스터 관리자 IP에 연결되어 있는지, 아니면 클러스터 내의 SVM에 직접 연결되어 있는지 여부에 따라 구성을 다양하게 변경할 수 있습니다.
+
+
+
+
+* 이 작업에 대한 정보 *
+
+스토리지 시스템에서 이러한 역할을 간단히 구성하기 위해 NetApp 커뮤니티 포럼에 게시된 RBAC 사용자 작성자 for Data ONTAP 툴을 사용할 수 있습니다.
+
+이 도구는 자동으로 ONTAP 권한 설정을 올바르게 처리합니다. 예를 들어, RBAC Data ONTAP용 사용자 작성 도구 는 모든 액세스 권한이 먼저 나타나도록 올바른 순서로 권한을 자동으로 추가합니다. 읽기 전용 권한을 먼저 추가한 다음 모든 액세스 권한을 추가하면 ONTAP에서 모든 액세스 권한을 중복으로 표시하고 무시합니다.
+
+
+NOTE: 나중에 SnapCenter 또는 ONTAP를 업그레이드할 경우 RBAC 사용자 생성기 for Data ONTAP 도구를 다시 실행하여 이전에 만든 사용자 역할을 업데이트해야 합니다. 이전 버전의 SnapCenter 또는 ONTAP에 대해 만든 사용자 역할은 업그레이드된 버전에서 제대로 작동하지 않습니다. 이 도구를 다시 실행하면 자동으로 업그레이드를 처리합니다. 역할을 다시 생성할 필요는 없습니다.
+
+ONTAP RBAC 역할 설정에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-adm-auth-rbac/home.html["ONTAP 9 관리자 인증 및 RBAC 전원 가이드"^].
+
+
+NOTE: 일관성을 위해 SnapCenter 문서는 사용 권한을 사용하는 역할을 나타냅니다. OnCommand 시스템 관리자 GUI는 ""권한" 대신 ""속성""을 사용합니다. ONTAP RBAC 역할을 설정할 때 이 두 용어는 모두 동일합니다.
+
+* 단계 *
+
+. 스토리지 시스템에서 다음 명령을 입력하여 새 역할을 생성합니다.
++
+'Security login role create <role_name\> - cmddirname "command" - access all – vserver <svm_name\>'
+
++
+** SVM_NAME은 SVM의 이름입니다. 이 필드를 비워 두면 기본적으로 클러스터 관리자가 됩니다.
+** role_name 은 역할에 대해 지정하는 이름입니다.
+** 명령은 ONTAP 기능입니다.
++
+
+NOTE: 각 권한에 대해 이 명령을 반복해야 합니다. 모든 액세스 명령은 읽기 전용 명령 앞에 나열되어야 합니다.
+
++
+사용 권한 목록에 대한 자세한 내용은 을 참조하십시오 link:../install/task_create_an_ontap_cluster_role_with_minimum_privileges.html#ontap-cli-commands-for-creating-roles-and-assigning-permissions["역할을 생성하고 권한을 할당하는 ONTAP CLI 명령입니다"^].
+
+
+
+. 다음 명령을 입력하여 사용자 이름을 생성합니다.
++
+'보안 로그인 생성 - 사용자 이름 <user_name\> - 응용 프로그램 ontapi - AuthMethod <password\> - 역할 <name_of_role_in_step_1\> - vserver <svm_name\> - 설명 "user_description"
+
++
+** user_name은 만들고 있는 사용자의 이름입니다.
+** password>는 사용자의 암호입니다. 암호를 지정하지 않으면 시스템에 암호를 입력하라는 메시지가 표시됩니다.
+** SVM_NAME은 SVM의 이름입니다.
+
+
+. 다음 명령을 입력하여 사용자에게 역할을 할당합니다.
++
+'보안 로그인 수정 사용자 이름 <user_name\> – vserver <svm_name\> - role <role_name\> - application ontapi-application console - AuthMethod <password\>'
+
++
+** user_name>은 2단계에서 만든 사용자의 이름입니다. 이 명령을 사용하면 사용자를 수정하여 역할에 연결할 수 있습니다.
+** svm_name>은 SVM의 이름입니다.
+** role_name>은 1단계에서 만든 역할의 이름입니다.
+** password>는 사용자의 암호입니다. 암호를 지정하지 않으면 시스템에 암호를 입력하라는 메시지가 표시됩니다.
+
+
+. 다음 명령을 입력하여 사용자가 올바르게 생성되었는지 확인합니다.
++
+'Security login show –vserver <svm_name\>-user-or-group-name <user_name\>'
+
++
+user_name 은 3단계에서 만든 사용자의 이름입니다.
+
+

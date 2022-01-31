@@ -1,0 +1,42 @@
+---
+permalink: protect-sce/task_reseed_a_replica_using_powershell_cmdlets_for_exchange_database.html 
+sidebar: sidebar 
+keywords:  
+summary: PowerShell cmdlet을 사용하여 동일한 호스트에 있는 가장 최근 복사본 또는 대체 호스트에서 가장 최근 복사본을 사용하여 상태가 불량한 복제본을 복구할 수 있습니다. 
+---
+= Exchange 데이터베이스에 대해 PowerShell cmdlet을 사용하여 복제본을 다시 시딩했습니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+PowerShell cmdlet을 사용하여 동일한 호스트에 있는 가장 최근 복사본 또는 대체 호스트에서 가장 최근 복사본을 사용하여 상태가 불량한 복제본을 복구할 수 있습니다.
+
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
+* 단계 *
+
+. Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대해 SnapCenter Server와 연결 세션을 시작합니다.
++
+[listing]
+----
+Open-smconnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+----
+. '시드-SmDagReplicaCopy' cmdlet을 사용하여 데이터베이스를 다시 시딩했습니다.
++
+이 예에서는 호스트 "mva-rx200.netapp.com" 에서 해당 호스트의 최신 백업을 사용하여 실패한 데이터베이스 복제본을 다시 시딩합니다.
+
++
+[listing]
+----
+reseed-SmDagReplicaCopy -ReplicaHost "mva-rx200.netapp.com" -Database execdb
+----
++
+이 예제에서는 다른 호스트 "mva-rx201.netapp.com." 데이터베이스의 최신 백업(운영/복제본)을 사용하여 execdb라는 데이터베이스 복제본을 다시 시딩합니다
+
++
+[listing]
+----
+reseed-SmDagReplicaCopy -ReplicaHost "mva-rx200.netapp.com" -Database  execdb -BackupHost "mva-rx201.netapp.com"
+----
+

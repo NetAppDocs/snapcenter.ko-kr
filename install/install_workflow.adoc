@@ -1,0 +1,15 @@
+---
+permalink: install/install_workflow.html 
+sidebar: sidebar 
+keywords: install, snapcenter server, license, storage system, RBAC, provision storage, workflow 
+summary: 워크플로 이미지는 SnapCenter 서버를 설치하고 구성하는 단계를 보여 줍니다. 
+---
+= 워크플로를 설치합니다
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+워크플로우는 SnapCenter 서버를 설치하고 구성하는 데 필요한 여러 작업을 보여 줍니다.
+
+image::../media/install_snapcenter_server.png[SnapCenter 서버를 설치합니다]

@@ -1,0 +1,41 @@
+---
+permalink: protect-scsql/concept_what_you_can_do_with_the_snapcenter_plug_in_for_microsoft_sql_server.html 
+sidebar: sidebar 
+keywords:  
+summary: 사용자 환경에 Microsoft SQL Server용 SnapCenter 플러그인이 설치되어 있는 경우 SnapCenter를 사용하여 SQL Server 데이터베이스를 백업, 복원 및 복제할 수 있습니다. 
+---
+= Microsoft SQL Server용 SnapCenter 플러그인으로 수행할 수 있는 작업
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 환경에 Microsoft SQL Server용 SnapCenter 플러그인이 설치되어 있는 경우 SnapCenter를 사용하여 SQL Server 데이터베이스를 백업, 복원 및 복제할 수 있습니다.
+
+SQL Server 데이터베이스 및 데이터베이스 리소스의 백업 작업, 복원 작업 및 클론 작업을 지원하는 다음 작업을 수행할 수 있습니다.
+
+* SQL Server 데이터베이스 및 관련 트랜잭션 로그를 백업합니다
++
+마스터 및 msdb 시스템 데이터베이스에 대한 로그 백업을 만들 수 없습니다. 그러나 모델 시스템 데이터베이스에 대한 로그 백업을 생성할 수 있습니다.
+
+* 데이터베이스 리소스를 복원합니다
++
+** 마스터 시스템 데이터베이스, msdb 시스템 데이터베이스 및 모델 시스템 데이터베이스를 복원할 수 있습니다.
+** 여러 데이터베이스, 인스턴스 및 가용성 그룹은 복원할 수 없습니다.
+** 시스템 데이터베이스를 대체 경로로 복원할 수 없습니다.
+
+
+* 운영 데이터베이스의 시점 복제본을 생성합니다
++
+tempdb 시스템 데이터베이스에는 백업, 복원, 클론 및 클론 수명주기 작업을 수행할 수 없습니다.
+
+* 백업 작업을 즉시 확인하거나 나중에 확인을 연기할 수 있습니다
++
+SQL Server 시스템 데이터베이스 확인은 지원되지 않습니다. SnapCenter는 데이터베이스를 복제하여 검증 작업을 수행합니다. SnapCenter는 SQL Server 시스템 데이터베이스를 복제할 수 없으므로 이러한 데이터베이스를 확인할 수 없습니다.
+
+* 백업 작업 및 클론 작업 예약
+* 백업 작업, 복원 작업 및 클론 작업을 모니터링합니다
+
+
+
+NOTE: SQL Server용 플러그인은 SMB 공유에서 SQL Server 데이터베이스의 백업 및 복구를 지원하지 않습니다.

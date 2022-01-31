@@ -1,0 +1,40 @@
+---
+section: admin
+title: SnapCenter 서버 및 플러그인 관리
+entries:
+- title: 대시보드 보기
+  entries:
+  - title: 대시보드 개요
+    url: "/admin/concept_overview_of_dashboard.html"
+  - title: 대시보드에서 정보를 보는 방법
+    url: "/admin/task_how_to_view_information_on_the_dashboard.html"
+  - title: 대시보드에서 작업의 상태 보고서를 요청합니다
+    url: "/admin/task_request_status_reports_of_the_jobs_from_the_dashboard.html"
+  - title: 대시보드에서 보호 상태에 대한 보고서를 요청합니다
+    url: "/admin/task_request_reports_of_the_protection_status_from_the_dashboard.html"
+- title: RBAC 관리
+  url: "/admin/task_manage_rbac.html"
+- title: 호스트를 관리합니다
+  url: "/admin/concept_manage_hosts.html"
+- title: 리소스 페이지에서 지원되는 작업입니다
+  url: "/admin/concept_what_operations_can_be_performed_from_the_resource_page.html"
+- title: 정책 관리
+  url: "/admin/concept_manage_policies.html"
+- title: 자원 그룹을 관리합니다
+  url: "/admin/task_manage_resource_groups.html"
+- title: 백업 관리
+  url: "/admin/concept_manage_backups.html"
+- title: 클론 삭제
+  url: "/admin/task_delete_clones.html"
+- title: 작업, 일정, 이벤트 및 로그를 모니터링합니다
+  url: "/admin/concept_monitor_jobs_schedules_events_and_logs.html"
+- title: SnapCenter 보고 기능 개요
+  url: "/admin/concept_overview_of_snapcenter_reports.html"
+- title: SnapCenter 서버 리포지토리를 관리합니다
+  url: "/admin/concept_manage_the_snapcenter_server_repository.html"
+- title: 신뢰할 수 없는 도메인의 리소스를 관리합니다
+  url: "/admin/concept_manage_resources_of_untrusted_domains.html"
+- title: 스토리지 시스템을 관리합니다
+  url: "/admin/concept_manage_the_storage_system.html"
+- title: EMS Data 수집 관리
+  url: "/admin/concept_manage_ems_data_collection.html"
