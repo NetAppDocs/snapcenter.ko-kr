@@ -7785,4 +7785,5 @@
   <block id="60fb82bb98786b71893de4332fbed808" category="sidebar">Oracle Database에 지원되는 REST API</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
   <block id="c16c43065a548034a76faadb18015c27" category="sidebar">SnapCenter 역할 기반 액세스 제어(RBAC)</block>
+  <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="sidebar">SnapCenter 소프트웨어</block>
 </blocks>
