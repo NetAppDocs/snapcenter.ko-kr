@@ -101,3 +101,4 @@ NOTE: DR 백업을 저장해야 하는 백업 이름과 타겟 경로를 제공�
 게시
 
 |===
+자세한 내용은 를 참조하십시오 https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg["재해 복구 API"^] 비디오.

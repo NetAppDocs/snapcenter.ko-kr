@@ -7786,4 +7786,7 @@
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
   <block id="c16c43065a548034a76faadb18015c27" category="sidebar">SnapCenter 역할 기반 액세스 제어(RBAC)</block>
   <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="sidebar">SnapCenter 소프트웨어</block>
+  <block id="27e7993c4841ae5fd670cdd945ccb96d" category="inline-link">재해 복구 API</block>
+  <block id="90840bc3d6109c892e0f709274fdc6b6" category="paragraph">자세한 내용은 를 참조하십시오<block ref="af818973dd6acaf1e28a3bd4ca9bd4a5" category="inline-link-rx"></block> 비디오.</block>
+  <block id="699f1c0496b9360a6686498114b0be37" category="paragraph">FAS, AFF 및 Amazon FSx에 필요합니다</block>
 </blocks>
