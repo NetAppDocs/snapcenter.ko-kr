@@ -3840,7 +3840,6 @@
   <block id="cca6a85f5065269f712b6122c56bcc23" category="paragraph">LUN을 내보낼 호스트의 iSCSI 이니시에이터 이름을 입력합니다. 이 옵션은 LUN 리소스 유형을 선택한 경우에만 사용할 수 있습니다.</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="paragraph">프로토콜</block>
   <block id="19ca9a39b837f0de2cd60194c3115a82" category="paragraph">LUN 프로토콜을 입력합니다. 이 옵션은 LUN 리소스 유형을 선택한 경우에만 사용할 수 있습니다.</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">를 누릅니다</block>
   <block id="4e783e8dfeae9de37071ca1aacd853de" category="paragraph">선택한 리소스가 LUN이고 2차 백업에서 클론을 생성하는 경우 타겟 볼륨이 나열됩니다. 단일 소스에 여러 대상 볼륨이 있을 수 있습니다.</block>
   <block id="d21ab82b42875e082ef4574c36d6c5e4" category="admonition">클론 복제 전에 iSCSI 이니시에이터 또는 FCP가 존재하고 대체 호스트에 구성 및 로그인되어 있는지 확인해야 합니다.</block>
   <block id="2516fb414e835dfca0b69565d324572e" category="list-text">스크립트 * 페이지에서 다음 단계를 수행하십시오.</block>
@@ -7758,7 +7757,6 @@
   <block id="c839588253fb91ab7c3ffd7dbc89ef20" category="sidebar">SQL Server의 복원 전략</block>
   <block id="2dbf352013e90b28f510baa76c1423f6" category="sidebar">Microsoft SQL Server용 SnapCenter 플러그인 설치를 빠르게 시작합니다</block>
   <block id="25bf2c62056fbb603e50ca9faa296f05" category="sidebar">Microsoft SQL Server용 SnapCenter 플러그인 설치를 준비합니다</block>
-  <block id="3e3c892945f01849a83a9ba45b50046a" category="sidebar">사전 요구 사항 - 호스트를 추가하고 Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다</block>
   <block id="a637f97603ba27f9233ebf52eb975336" category="sidebar">Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다</block>
   <block id="32011135d9979489b3395d0006de49b3" category="sidebar">CA 인증서를 가져옵니다</block>
   <block id="b73d7cecae53125eeec14ebe51927b95" category="sidebar">재해 복구 구성</block>
@@ -7789,4 +7787,5 @@
   <block id="27e7993c4841ae5fd670cdd945ccb96d" category="inline-link">재해 복구 API</block>
   <block id="90840bc3d6109c892e0f709274fdc6b6" category="paragraph">자세한 내용은 를 참조하십시오<block ref="af818973dd6acaf1e28a3bd4ca9bd4a5" category="inline-link-rx"></block> 비디오.</block>
   <block id="699f1c0496b9360a6686498114b0be37" category="paragraph">FAS, AFF 및 Amazon FSx에 필요합니다</block>
+  <block id="c6a05503c268c70227420c852ced4926" category="admonition">SnapCenter에서는 /etc/fstab 파일의 UUID 매핑을 지원하지 않습니다.</block>
 </blocks>

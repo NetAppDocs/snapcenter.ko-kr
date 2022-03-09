@@ -40,6 +40,9 @@ NOTE: Oracle Database용 플러그인을 사용하여 SAP용 Oracle 데이터베
 
 
 
+NOTE: SnapCenter에서는 /etc/fstab 파일의 UUID 매핑을 지원하지 않습니다.
+
+
 
 == Linux 호스트 요구 사항
 
