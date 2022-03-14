@@ -19,7 +19,7 @@ NOTE: SnapCenterCLI는 SnapCenter 맞춤형 플러그인 명령을 지원하지 
 
 NetApp은 SnapCenter에 내장된 맞춤형 플러그인 프레임워크를 사용하여 ONTAP 스토리지에서 데이터 볼륨의 데이터 보호 작업을 수행할 수 있는 스토리지 플러그인을 제공합니다.
 
-호스트 추가 * 페이지에서 사용자 지정 플러그인 및 스토리지 플러그인을 설치할 수 있습니다.
+호스트 추가 페이지에서 사용자 지정 플러그인 및 스토리지 플러그인을 설치할 수 있습니다.
 
 link:task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html["호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다."^]
 

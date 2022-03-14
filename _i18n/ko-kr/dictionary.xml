@@ -14,7 +14,6 @@
   <block id="06ba1662cdf7d67ef2f8c4cd4520c5dd" category="paragraph">표시된 백업 수에는 보조 스토리지에서 삭제된 백업이 포함됩니다. 예를 들어 정책을 사용하여 6개의 백업을 생성하여 4개의 백업만 보존한 경우 표시되는 백업 수는 6입니다.</block>
   <block id="4839d2f25cc35b249d5db15efa1afd75" category="paragraph">* 단계 *</block>
   <block id="530a5fa7e8fbaa4c796dbd46c93a55dd" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.</block>
-  <block id="e3a280a0b3aaa97034f3a4a8b9e45d3c" category="list-text">Resources * 페이지의 * View * 드롭다운 목록에서 리소스 또는 리소스 그룹을 선택합니다.</block>
   <block id="9a045982bd2d3490ce0f3c3706be66b6" category="list-text">자원 세부 정보 보기 또는 자원 그룹 세부 정보 보기에서 자원을 선택합니다.</block>
   <block id="19bbc201cd8c48b8e705b901f38df232" category="paragraph">리소스가 보호되는 경우 선택한 리소스의 토폴로지 페이지가 표시됩니다.</block>
   <block id="e81c122fbd45bc68164a279e9e567412" category="list-text">Summary 카드를 검토하여 운영 스토리지와 보조 스토리지에서 사용할 수 있는 백업 및 클론 수를 요약합니다.</block>
@@ -175,7 +174,6 @@
   <block id="6f07fad9174a2429e52c321216b14548" category="list-text">스냅샷 복사본을 미러 또는 볼트로 복제할 경우 SnapCenter 관리자가 소스 볼륨과 타겟 볼륨 모두에 대해 SVM(스토리지 가상 머신)을 할당해야 합니다.</block>
   <block id="fdb09cc42e4c011a17d475c9e1a1815e" category="list-text">복원할 리소스 또는 리소스 그룹에 대해 현재 진행 중인 백업 작업을 취소해야 합니다.</block>
   <block id="2124f96b55bd8bcfe23c27d4d7c30129" category="paragraph">기본 복구 작업은 스토리지 객체만 복원합니다. 애플리케이션 레벨에서 복구 작업은 사용자 지정 플러그인이 해당 기능을 제공하는 경우에만 수행할 수 있습니다.</block>
-  <block id="ff48fff5b9628fa0fba10705ef9f5e19" category="list-text">리소스 * 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.</block>
   <block id="d40ea75f2b075d0e778b5d5f091abd87" category="paragraph">리소스는 유형, 호스트 또는 클러스터 이름, 관련 리소스 그룹 및 정책, 상태와 같은 정보와 함께 표시됩니다.</block>
   <block id="52715e18d74a43b14662045edb61d16e" category="admonition">백업이 리소스 그룹에 대한 것일 수도 있지만 복원할 때 복원할 개별 리소스를 선택해야 합니다.</block>
   <block id="bed4515974a65eaf00c6010cea1a213a" category="paragraph">리소스가 보호되지 않으면 * Overall Status * 열에 _Not protected_가 표시됩니다.</block>
@@ -186,13 +184,11 @@
   <block id="3d0f16bb4b02e629d0dbd2435499da80" category="inline-image-macro">복원 아이콘</block>
   <block id="26d6fe8240bb84db3aac12f067bd7006" category="list-text">기본 백업 테이블에서 복원할 백업을 선택한 다음 을 클릭합니다 <block ref="401f8f248ae37b21256b9fc8e83bcaa3" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="498bd352a95e11b9ca37bc1c4bfbc11d" category="image-alt">리소스 복원 중</block>
-  <block id="2fdb560890fbb8b17dd8503aa5bb4baf" category="list-text">Restore Scope * 페이지에서 * Complete Resource * 또는 * File Level * 을 선택합니다.</block>
   <block id="e665a840f7240ecfe0bd9c88c7d36b0c" category="list-text">Complete Resource * 를 선택하면 리소스 백업이 복원됩니다.</block>
   <block id="de21de4104bb03728916aa887ea228d0" category="paragraph">리소스에 Storage Footprint로 볼륨 또는 qtree가 포함되어 있는 경우 이러한 볼륨 또는 qtree의 최신 스냅샷 복사본이 삭제되고 복구할 수 없습니다. 또한 동일한 볼륨 또는 qtree에서 다른 리소스가 호스트되는 경우 해당 리소스도 삭제됩니다.</block>
   <block id="15390094a70f6891fc6b5bf032f36c29" category="list-text">파일 수준 * 을 선택한 경우 * 모두 * 를 선택하거나 볼륨 또는 qtree를 선택한 다음 선택한 볼륨 또는 qtree와 관련된 경로를 쉼표로 구분하여 입력할 수 있습니다.</block>
   <block id="f47a1af7a319b571a0bacba2d5bdd6cf" category="list-text">여러 볼륨 및 qtree를 선택할 수 있습니다.</block>
   <block id="5778b765a422af2fc3146858308856d0" category="list-text">리소스 유형이 LUN이면 전체 LUN이 복구됩니다. 여러 LUN을 선택할 수 있습니다. 참고: * All * 을 선택하면 볼륨, qtree 또는 LUN의 모든 파일이 복원됩니다.</block>
-  <block id="e0f9b86a9688fc173074916a91b12ea9" category="list-text">복구 유형 * 페이지에서 다음 단계를 수행하십시오. 로그를 적용하려면 옵션을 선택하십시오. 복원 유형을 선택하기 전에 플러그인이 모든 로그 및 로그를 지원하는지 확인하십시오.</block>
   <block id="5d920b501536441ea32ecc24679c72a2" category="cell">원하는 작업</block>
   <block id="5e2ad6fd9deb412d871137094ee43ef0" category="cell">수행할 작업...</block>
   <block id="31bd137fb863f9fc2588f7a75e79de3d" category="paragraph">모든 로그를 복원합니다</block>
@@ -201,9 +197,6 @@
   <block id="6bbfd0bc09af6711f6fd13689e4c4065" category="paragraph">로그 종료 * 를 선택합니다. 플러그인이 * 까지 * 로그를 지원하는지 확인합니다.</block>
   <block id="9f1b1572ccfe383b7b0fb70b6f420200" category="paragraph">리소스 백업을 복원합니다</block>
   <block id="a26531ddd22c342a5bd9860ea919b50d" category="paragraph">없음 * 을 선택합니다.</block>
-  <block id="9e904b59c4a3eb80247cfe28d96c2653" category="list-text">Pre ops * 페이지에서 복구 작업을 수행하기 전에 실행할 사전 복원 및 마운트 해제 명령을 입력합니다.</block>
-  <block id="6a2ca7ed888feb82f4f0e5778ca2b209" category="list-text">Post ops * 페이지에서 복구 작업을 수행한 후 실행할 mount 및 post restore 명령을 입력합니다.</block>
-  <block id="b723e46bf782113e1476771841c2a253" category="list-text">알림 * 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.</block>
   <block id="53582adf49551bf81650e7c9447e3a03" category="paragraph">또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. SMTP는 * 설정 * &gt; * 글로벌 설정 * 페이지에서도 구성해야 합니다.</block>
   <block id="fed1c121dc4f5a5484e5623e297385fb" category="list-text">요약을 검토하고 * Finish * 를 클릭합니다.</block>
   <block id="8b9460bf38a68108bcdd278a386b3156" category="list-text">모니터 * &gt; * 작업 * 을 클릭하여 작업 진행 상황을 모니터링합니다.</block>
@@ -211,8 +204,6 @@
   <block id="463f3aea4c7a61c6bfaa026c1c1c490c" category="doc">CA 인증서를 가져옵니다</block>
   <block id="04ec13527bec85c0b8e335fdace7f1fe" category="paragraph">MMC(Microsoft Management Console)를 사용하여 CA 인증서를 SnapCenter 서버 및 Windows 호스트 플러그인으로 가져와야 합니다.</block>
   <block id="b86fdb531ae29f629485f72c257ce9f0" category="list-text">MMC(Microsoft Management Console)로 이동한 다음 * 파일 * &gt; * Snapin 추가/제거 * 를 클릭합니다.</block>
-  <block id="1a2e4cdfbbe2caeffb27691fbb5c6d5f" category="list-text">스냅인 추가/제거 * 창에서 * 인증서 * 를 선택한 다음 * 추가 * 를 클릭합니다.</block>
-  <block id="04e51cc25f158c5f89bd52a2ab22b94e" category="list-text">인증서 스냅인 * 창에서 * 컴퓨터 계정 * 옵션을 선택한 다음 * 마침 * 을 클릭합니다.</block>
   <block id="accc52b05ff00dfcf027649214e40a24" category="list-text">콘솔 루트 * &gt; * 인증서 – 로컬 컴퓨터 * &gt; * 신뢰할 수 있는 루트 인증 기관 * &gt; * 인증서 * 를 클릭합니다.</block>
   <block id="237137d809be4e190c42d063e80272ab" category="list-text">"신뢰할 수 있는 루트 인증 기관" 폴더를 마우스 오른쪽 단추로 클릭한 다음 * 모든 작업 * &gt; * 가져오기 * 를 선택하여 가져오기 마법사를 시작합니다.</block>
   <block id="fbfdc821247ce02333095312b300d2f1" category="list-text">다음과 같이 마법사를 완료합니다.</block>
@@ -287,10 +278,7 @@
   <block id="665e27cacd5b140b3ca5a518bbd41724" category="doc">사용자 지정 플러그인 리소스의 리소스 그룹을 백업합니다</block>
   <block id="92ae04a417b2b1bf95cb914953f21cce" category="list-text">정책이 연결된 리소스 그룹을 만들어야 합니다.</block>
   <block id="0dd1baa389f6493ff89ba4f1d23f127b" category="list-text">보조 스토리지와 SnapMirror 관계가 있는 리소스를 백업하려면 스토리지 사용자에게 할당된 ONTAP 역할에 "'스냅샷 전체' 권한이 있어야 합니다. 그러나 "vsadmin" 역할을 사용하는 경우에는 "napmirror all" 권한이 필요하지 않습니다.</block>
-  <block id="623bafab9c8aaae5f5ecb400909703bc" category="list-text">리소스 * 페이지의 * 보기 * 목록에서 * 리소스 그룹 * 을 선택합니다.</block>
   <block id="862569d2dbddc7f68305bb1aa73accec" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 을 클릭하여 리소스 그룹을 검색할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 태그를 선택합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
-  <block id="07f2f7e4bc5eec5bdcc9f9c2e764cb1b" category="list-text">리소스 그룹 * 페이지에서 백업할 리소스 그룹을 선택한 다음 * 지금 백업 * 을 클릭합니다.</block>
-  <block id="c855c5061b89586d126413afa48d7026" category="list-text">백업 * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="44119ab6cb16491e354c029de67b6782" category="list-text">여러 정책을 리소스 그룹에 연결한 경우 * Policy * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.</block>
   <block id="b1b9720160580fd5949d50bf10097dc5" category="paragraph">필요 시 백업에 대해 선택한 정책이 백업 스케줄과 연결된 경우 스케줄 유형에 지정된 보존 설정에 따라 필요 시 백업이 유지됩니다.</block>
   <block id="96dd2bdaca6a007b13c9f42158b860a6" category="list-text">백업 * 을 클릭합니다.</block>
@@ -409,16 +397,11 @@
   <block id="0b15a431b87402bce4bdb3d69d72102d" category="list-text">백업 정책은 백업을 관리, 예약 및 유지하는 방법을 제어하는 규칙의 집합입니다. 또한 복제, 스크립트 및 애플리케이션 설정을 지정할 수 있습니다.</block>
   <block id="f29871ab419804e987d1bfb5f3274244" category="list-text">정책에 옵션을 지정하면 다른 리소스 그룹에 대한 정책을 다시 사용할 때 시간이 절약됩니다.</block>
   <block id="c09e638cb8ee35698e3172550b12d8fa" category="list-text">왼쪽 탐색 창에서 * 설정 * 을 클릭합니다.</block>
-  <block id="761a4b232f69415315fac01b8354061b" category="list-text">설정 * 페이지에서 * 정책 * 을 클릭합니다.</block>
   <block id="a5bb4561024cbac1f26c361cff68730e" category="list-text">새로 만들기 * 를 클릭합니다.</block>
-  <block id="f8c86cc4b1c8e607fa2e36ce41958b14" category="list-text">이름 * 페이지에서 정책 이름과 설명을 입력합니다.</block>
-  <block id="2714bab6d4b88697bcacb70aa904f3cc" category="list-text">설정 * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="b8d6ee3998ffd19868fb72c367024f19" category="list-text">On demand *, * Hourly *, * Daily *, * Weekly * 또는 * Monthly * 를 선택하여 일정 유형을 지정합니다.</block>
   <block id="42671d398be6103911a06f9936ab9855" category="admonition">리소스 그룹을 생성하는 동안 백업 작업의 스케줄(시작 날짜, 종료 날짜 및 빈도)을 지정할 수 있습니다. 따라서 동일한 정책 및 백업 빈도를 공유하는 리소스 그룹을 생성할 수 있지만, 각 정책에 서로 다른 백업 스케줄을 할당할 수 있습니다.</block>
   <block id="6b09ab256ee91abfcbae14dc82d761dc" category="image-alt">백업 설정</block>
   <block id="a16b9f3426d9cfca29c06a875b667023" category="admonition">오전 2시에 예약된 경우 DST(일광 절약 시간) 중에는 일정이 트리거되지 않습니다.</block>
-  <block id="87f42a9b8c87cbdbf5575c3773de6145" category="list-text">사용자 지정 백업 설정 * 섹션에서 플러그인으로 전달되어야 하는 특정 백업 설정을 키 값 형식으로 제공합니다. 플러그인으로 전달할 여러 키 값을 제공할 수 있습니다.</block>
-  <block id="2287ac98c2a1f4fb9b949d5863c94652" category="list-text">Retention * 페이지에서 백업 유형에 대한 보존 설정과 백업 유형 페이지에서 선택한 스케줄 유형을 지정합니다.</block>
   <block id="c1325f6903ebb5ebb2bb519a73ddb1b0" category="cell">그러면...</block>
   <block id="9562758d343cb5226c22630eacf99365" category="paragraph">일정 수의 스냅샷 복사본을 유지합니다</block>
   <block id="189e283fb708ef792d0d8144a72e798b" category="paragraph">유지할 총 스냅샷 복사본 * 을 선택하고 유지할 스냅샷 복사본 수를 지정합니다.</block>
@@ -427,7 +410,6 @@
   <block id="225ea283dca2590a2a542a782ac56927" category="admonition">최대 보존 값은 ONTAP 9.4 이상의 리소스에 대해 1018이고, ONTAP 9.3 이전 버전의 리소스에 대해서는 254입니다. 보존이 기본 ONTAP 버전에서 지원하는 값보다 높은 값으로 설정된 경우 백업이 실패합니다.</block>
   <block id="b16c2ae9651bd34c3e7c132b0b29cf32" category="paragraph">Snapshot 복사본을 일정 일 동안 유지합니다</block>
   <block id="f4a027d3dd6468d4bcffb446d92cfde1" category="paragraph">스냅샷 복사본 보관 * 을 선택한 다음, 스냅샷 복사본을 삭제하기 전에 유지할 일 수를 지정합니다.</block>
-  <block id="007bc7ea624d727e673382c125d08b20" category="list-text">Replication * 페이지에서 복제 설정을 지정합니다.</block>
   <block id="21f831502a413a739e20cbf9f2eefe54" category="cell">이 필드의 내용...</block>
   <block id="53ef3d7584a54991b60fba81e93d201f" category="paragraph">* 로컬 스냅샷 복사본을 생성한 후 SnapMirror 업데이트 * 를 참조하십시오</block>
   <block id="1275946d22bd30ab4fa43a93760353bd" category="paragraph">다른 볼륨에 백업 세트의 미러 복사본을 생성하려면 이 필드를 선택합니다(SnapMirror 복제).</block>
@@ -603,8 +585,6 @@
   <block id="797f1e031962d70e46335925184febf4" category="list-text">SnapCenter 서버에 플러그인을 업로드해야 합니다.</block>
   <block id="b6ddf325474f53377de3e17f65c983f3" category="inline-link">NetApp 스토리지 자동화 스토어</block>
   <block id="eb609425665410a2e3cc5d5000880798" category="paragraph">MySQL 및 DB2 애플리케이션에 대한 리소스를 추가할 수도 있습니다. 이러한 플러그인은 에서 다운로드할 수 있습니다<block ref="14adb94a4faec9ea0e0992d90e98b640" category="inline-link-rx"></block>.</block>
-  <block id="147c1d8355974d9a1cfcfdc6c4b79330" category="list-text">리소스 * 페이지에서 * 리소스 추가 * 를 클릭합니다.</block>
-  <block id="090c6b3f4fa0006b06c66c21617f1d1c" category="list-text">리소스 세부 정보 제공 * 페이지에서 다음 작업을 수행합니다.</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="paragraph">이름</block>
   <block id="0750f05e0542388153777a63b5fa887c" category="paragraph">리소스의 이름을 입력합니다.</block>
   <block id="dae4a538d4ca7b6c0789932062fe718d" category="paragraph">호스트 이름입니다</block>
@@ -616,11 +596,9 @@
   <block id="22d904afc998596607ae9259692598fb" category="paragraph">자격 증명을 선택하거나 새 자격 증명을 생성합니다.</block>
   <block id="16e83f7e57633cd58a4377b7c1b63e8b" category="paragraph">마운트 경로</block>
   <block id="1b77d8b94cdc028e50a0681f82c70f25" category="paragraph">리소스가 마운트된 마운트 경로를 입력합니다. 이는 Windows 호스트에만 적용됩니다.</block>
-  <block id="a55f4b67070d0fe2f9d3e6893f96ec2d" category="list-text">스토리지 공간 제공 * 페이지에서 스토리지 시스템을 선택하고 하나 이상의 볼륨, LUN 및 qtree를 선택한 다음 * 저장 * 을 클릭합니다.</block>
   <block id="dc502ecfca6ae1ebeee4b624e9b44123" category="paragraph">선택 사항: 을 클릭합니다 <block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 다른 스토리지 시스템에서 볼륨, LUN 및 qtree를 더 추가합니다.</block>
   <block id="e0a8c4d2ea78ad79b3f4ddb809734576" category="admonition">SnapCenter 맞춤형 플러그인은 물리적 환경과 가상 환경에 대한 리소스 및 스토리지 세부 정보의 자동 검색을 지원하지 않습니다. 리소스를 생성하는 동안 물리적 환경과 가상 환경에 대한 스토리지 정보를 제공해야 합니다.</block>
   <block id="e855bfeca424d5d865b9bac0eaf01f53" category="image-alt">있습니다</block>
-  <block id="e52191270458bbefa8b479207588f57f" category="list-text">리소스 설정 * 페이지에서 리소스에 대한 사용자 지정 키 값 쌍을 제공합니다.</block>
   <block id="863fe064f77b5a2b8dd60206770de2c1" category="paragraph">자원별 정보를 전달하려면 사용자 지정 키 값 쌍을 사용합니다. 예를 들어, MySQL 플러그인을 사용하는 경우 호스트를 host=hostname, port=port-no 로 지정하여 MySQL 및 master-slave 구성에서 master_slave=""Yes"" 또는 ""no"(name은 master_slave, value는 ""Yes"" 또는 ""No")로 지정해야 합니다.</block>
   <block id="ecc6a2a95106f31092b38c1ca663406e" category="admonition">HOST 및 PORT가 대문자로 되어 있는지 확인합니다.</block>
   <block id="e7406b64381fc805ceaee3d2f62a905c" category="image-alt">리소스 설정</block>
@@ -642,8 +620,6 @@
   <block id="aa5531c2ecb8be9440f8c1f83b8e7d4f" category="summary">리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다.</block>
   <block id="7f9a1e0f8fc64e3f207d5cd83dd8e67f" category="doc">리소스 그룹을 생성하고 정책을 연결합니다</block>
   <block id="a04d5d44d1dc39ffabb036a653aa3bd2" category="paragraph">리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다. 모든 데이터 보호 작업에는 리소스 그룹이 필요합니다. 또한 수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.</block>
-  <block id="da28968551b2d11e1b248026ca5ff54e" category="list-text">리소스 * 페이지에서 새 리소스 그룹을 클릭합니다.</block>
-  <block id="b0fc1039a955c18af316d4d9e35747ae" category="list-text">이름 * 페이지에서 다음 작업을 수행합니다.</block>
   <block id="fa4d1c967d467deb12174bc6b1b3355b" category="paragraph">자원 그룹의 이름을 입력합니다.</block>
   <block id="1d04752f728a1a0076882979b222e962" category="admonition">리소스 그룹 이름은 250자를 초과할 수 없습니다.</block>
   <block id="189f63f277cd73395561651753563065" category="paragraph">태그</block>
@@ -652,10 +628,8 @@
   <block id="52a580de823d89b3d7b0e19883cf0a1b" category="paragraph">스냅샷 복사본에 대해 사용자 지정 이름 형식을 사용합니다</block>
   <block id="aff716d8309a2ea5e7dcffc15638b023" category="paragraph">이 확인란을 선택하고 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="a80db864d152c8b32afdc8aba08be8a4" category="paragraph">예를 들어, _customtext_resource group_policy_hostname 또는 resource group_hostname_과 같이 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
-  <block id="1a010cd336c8c6c55566893caa1604cb" category="list-text">선택 사항: * 리소스 * 페이지의 * 리소스 유형 * 드롭다운 목록에서 호스트 이름을 선택하고 * 리소스 유형 * 드롭다운 목록에서 리소스 유형을 선택합니다.</block>
   <block id="667a5a1d21c8b2c591be7bfcf5d1b5ae" category="paragraph">그러면 화면의 정보를 필터링하는 데 도움이 됩니다.</block>
   <block id="c7e757b993a892f1adbc4d9d429ada9a" category="list-text">사용 가능한 리소스 * 섹션에서 리소스를 선택한 다음 오른쪽 화살표를 클릭하여 * 선택한 리소스 * 섹션으로 이동합니다.</block>
-  <block id="904f7720310e9af9147aa17272119cd9" category="list-text">선택 사항: * 응용 프로그램 설정 * 페이지에서 다음을 수행합니다.</block>
   <block id="b681aca5ebc16cfa17fba43067418799" category="list-text">백업 화살표를 클릭하여 추가 백업 옵션을 설정합니다.</block>
   <block id="8cc859910effe8112e2912d3644f0bc8" category="paragraph">정합성 보장 그룹 백업을 설정하고 다음 작업을 수행합니다.</block>
   <block id="a99f0aeaf38081c20a7370fb0f80e5fb" category="paragraph">정합성 보장 그룹 스냅샷 작업이 완료될 때까지 기다릴 여유가 없습니다</block>
@@ -693,7 +667,6 @@
   <block id="cc1f89ce717207d3bd06c999199b9304" category="paragraph">파일 시스템 정합성 보장 없이 SnapCenter를 선택합니다.</block>
   <block id="086beaa9afd2391b7d5204a8db47791c" category="paragraph">호스트에서 실행할 명령을 입력하여 스냅샷 복사본을 생성합니다.</block>
   <block id="fb99cb02e8a44f5112f8225ca020b979" category="paragraph">기타를 선택한 다음 호스트에서 실행할 명령을 입력하여 스냅샷 복사본을 생성합니다.</block>
-  <block id="e4924229fd9f556084a70f1ff44cbe46" category="list-text">Policies * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="70c30c71587e2d0c71b7f9e97a8aad7d" category="list-text">드롭다운 목록에서 하나 이상의 정책을 선택합니다.</block>
   <block id="e27c3f444b9f74c83a643ba11ed3a83e" category="admonition">* 를 클릭하여 정책을 생성할 수도 있습니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>*.</block>
   <block id="bfd0e05a188a0885b5397fae78f649b8" category="paragraph">정책은 * 선택한 정책에 대한 일정 구성 * 섹션에 나열됩니다.</block>
@@ -701,7 +674,6 @@
   <block id="1e414da00e22b0ba0fa519e7325b7ea9" category="list-text">policy_policy_name_name에 대한 스케줄 추가 대화 상자에서 스케줄을 구성한 다음 확인 을 클릭합니다.</block>
   <block id="2a7c4561536268cef70578e0e4124a6c" category="paragraph">여기서 policy_name은 선택한 정책의 이름입니다.</block>
   <block id="6041b17ee877813c3440ee714e48b911" category="paragraph">구성된 일정이 Applied Schedules 열에 나열됩니다. 타사 백업 스케줄은 SnapCenter 백업 스케줄과 겹치는 경우 지원되지 않습니다.</block>
-  <block id="144f8d6386b250b52168ed8d2be4b480" category="list-text">알림 * 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.</block>
   <block id="572a352f5f18989eb8c33a0e36d194c3" category="paragraph">또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. SMTP 서버는 * 설정 * &gt; * 글로벌 설정 * 에서 구성해야 합니다.</block>
   <block id="883f217b99bc288ae19aa7d6d60b021f" category="summary">작업 페이지를 사용하여 여러 SnapCenter 복원 작업의 진행률을 모니터링할 수 있습니다. 작업 진행률을 확인하여 작업이 언제 완료되는지 또는 문제가 있는지 확인할 수 있습니다.</block>
   <block id="78d6b4b75546fc8aa5983130521da2da" category="doc">맞춤형 플러그인 리소스 복구 작업을 모니터링합니다</block>
@@ -719,15 +691,12 @@
   <block id="d208aa08a03da9a8a8e5bd96ad0fedae" category="list-text"><block ref="ef6f1c216f28d7814323778090034017" category="inline-image-macro-rx" type="image"></block> 대기열에 있습니다</block>
   <block id="cc9dbc9fb7810be481501a3376208520" category="list-text"><block ref="c646c5e33fd3a6c1e32ebcb9f24cc88e" category="inline-image-macro-rx" type="image"></block> 취소됨</block>
   <block id="b40a6c0b08ac99c86eb676e2689c6996" category="list-text">왼쪽 탐색 창에서 * 모니터 * 를 클릭합니다.</block>
-  <block id="7f3e84692f24d61327601751bb201dc8" category="list-text">모니터 * 페이지에서 * 작업 * 을 클릭합니다.</block>
-  <block id="ebd28b4b3c3b4a23c21b9bc491c8fe5a" category="list-text">작업 * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="1bfa745c5533e2551a662571c60d9a71" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 복원 작업만 나열되도록 목록을 필터링하려면</block>
   <block id="7407325f29b504f9c8b87ec8da503815" category="list-text">시작 및 종료 날짜를 지정합니다.</block>
   <block id="72703ba150df91059707035aef45dd74" category="list-text">Type * 드롭다운 목록에서 * Restore * 를 선택합니다.</block>
   <block id="a28133afd7846d1e77aa696930846108" category="list-text">Status * (상태 *) 드롭다운 목록에서 복원 상태를 선택합니다.</block>
   <block id="e12538143afda34a18dc094aa39a01ff" category="list-text">성공적으로 완료된 작업을 보려면 * 적용 * 을 클릭합니다.</block>
   <block id="ece9c93963dca272468918a5414d7e34" category="list-text">복원 작업을 선택한 다음 * 세부 정보 * 를 클릭하여 작업 세부 정보를 봅니다.</block>
-  <block id="5509cf42b6301980d7d8df858ac79bc7" category="list-text">작업 세부 정보 * 페이지에서 * 로그 보기 * 를 클릭합니다.</block>
   <block id="2063f930237a8cb9c2f18d14af2c0772" category="paragraph">로그 보기 * 버튼은 선택한 작업에 대한 상세 로그를 표시합니다.</block>
   <block id="137d30f713a570b906d1df8bf7b0e6ac" category="admonition">볼륨 기반 복원 작업 후에는 백업 메타데이터가 SnapCenter 저장소에서 삭제되지만 백업 카탈로그 항목은 SAP HANA 카탈로그에 남아 있습니다. 복원 작업 상태가 표시됩니다 <block ref="718fe53e11bbf4bb30ca7e885db5e6f5" category="inline-image-macro-rx" type="image"></block>작업 세부 정보를 클릭하여 일부 하위 작업의 경고 표시를 확인해야 합니다. 경고 표지를 클릭하고 표시된 백업 카탈로그 항목을 삭제합니다.</block>
   <block id="59554a37a60d4da009dea594241b0ae1" category="summary">CA 인증서 지문을 받습니다.</block>
@@ -745,19 +714,16 @@
   <block id="eb324a0bcd793bce95da852c11a1a568" category="paragraph">_Get-ChildItem-Path 인증:\LocalMachine\My_</block>
   <block id="4a258e7f05f08d57a4acdbacea054638" category="list-text">엄지손가락 지문을 복사합니다.</block>
   <block id="caef6d3f9e7cdd9ed1d3eaabe29db549" category="summary">사용자 지정 플러그인 리소스를 보호하려면 SnapCenter 사용자 지정 플러그인을 설치하고 설정해야 합니다.</block>
-  <block id="299b0e289b8c6b18ae4948ce9c8d828b" category="doc">SnapCenter 사용자 지정 플러그인을 설치합니다</block>
   <block id="86f7f637d3819a7b4814644b7f8d8972" category="image-alt">SCC 설치 - 워크플로우를 구성합니다</block>
   <block id="d61e736bc78dc6b6bef444a82078d1f7" category="summary">작업 페이지를 사용하여 SnapCenter 플러그인 패키지 설치 진행률을 모니터링할 수 있습니다. 설치 진행 상황을 확인하여 설치 완료 시기 또는 문제가 있는지 확인할 수 있습니다.</block>
   <block id="36c1f2ec62294c41aad60383fd84873d" category="doc">사용자 지정 플러그인 설치 상태를 모니터링합니다</block>
   <block id="85d5aeaf07c5de74b3bb67fa1aa2989a" category="paragraph">작업 페이지에 다음 아이콘이 나타나고 작업의 상태를 나타냅니다.</block>
-  <block id="392fa8558824b1b16d8dfd1f6100c8e5" category="list-text">플러그인 설치 작업만 나열되도록 * 작업 * 페이지에서 목록을 필터링하려면 다음을 수행합니다.</block>
   <block id="8e6dd3fc1948fff834e92e1bc58be40a" category="list-text">필터 * 를 클릭합니다.</block>
   <block id="108130668c07a2242712d2ed44b07d84" category="list-text">선택 사항: 시작 및 종료 날짜를 지정합니다.</block>
   <block id="8256a7aa0926979fc59c75e9490c7f04" category="list-text">유형 드롭다운 메뉴에서 * 플러그인 설치 * 를 선택합니다.</block>
   <block id="fe2df42a6411c7acd38e945324686a20" category="list-text">상태 드롭다운 메뉴에서 설치 상태를 선택합니다.</block>
   <block id="400fae8e788b3721b9ac25fe01f04f50" category="list-text">적용 * 을 클릭합니다.</block>
   <block id="5b946f392253bfdf03165c0157bb4a9e" category="list-text">설치 작업을 선택하고 * 세부 정보 * 를 클릭하여 작업 세부 정보를 봅니다.</block>
-  <block id="b69ca9a37b35f7d7f9d83f9069243f8e" category="list-text">Job Details * 페이지에서 * View logs * 를 클릭합니다.</block>
   <block id="e0fbca907db95ebcd8e259b32ff0c736" category="summary">SnapCenter는 플러그인 애플리케이션 및 스토리지 시스템의 NetApp 기술과 통합됩니다. 사용자 지정 플러그인으로 작업하려면 SnapCenter 그래픽 사용자 인터페이스를 사용합니다.</block>
   <block id="7e2dbe0ceba88df5406b9c6925b9b55b" category="doc">SnapCenter 맞춤형 플러그인 기능</block>
   <block id="b1d3c10985fe921d1cd4f1920df9beb6" category="list-text">* 통합 그래픽 사용자 인터페이스 *</block>
@@ -787,9 +753,7 @@
   <block id="f3f82abc9f5d28fa0238928ccce9b6d3" category="list-text">맞춤형 플러그인 애플리케이션</block>
   <block id="448e40b8997cf376a098c21d0c4abd9a" category="paragraph">플러그인은 리소스를 추가하는 동안 선택 또는 생성된 자격 증명을 사용합니다. 데이터 보호 작업 중에 리소스에 자격 증명이 필요하지 않은 경우 자격 증명을 * 없음 * 으로 설정할 수 있습니다.</block>
   <block id="95029af97d5c955874317a8cc0ddb417" category="paragraph">개별 리소스 그룹에 대한 자격 증명을 설정했고 사용자 이름에 전체 관리자 권한이 없는 경우 최소한 리소스 그룹 및 백업 권한을 사용자 이름에 할당해야 합니다.</block>
-  <block id="1a732b1cf4de51edf0bb61eb5890849b" category="list-text">설정 * 페이지에서 * 자격 증명 * 을 클릭합니다.</block>
   <block id="ffa66d0b6548351c980beb43900626f7" category="image-alt">runas 계정을 설치합니다</block>
-  <block id="2044194eda6e0d4c9f0008e40a881dcc" category="list-text">자격 증명 * 페이지에서 자격 증명 구성에 필요한 정보를 지정합니다.</block>
   <block id="18274e168d1fce1bedb612015e797fb4" category="paragraph">자격 증명의 이름을 입력합니다.</block>
   <block id="987dce661afca3372aa3e05702fb1d06" category="paragraph">사용자 이름입니다</block>
   <block id="043b54e2cdecd741fe39907504ea04c1" category="paragraph">인증에 사용할 사용자 이름과 암호를 입력합니다.</block>
@@ -819,7 +783,6 @@
   <block id="4351322fd6537f248b9b6c0f176648c0" category="paragraph">이 예에서는 지정된 작업 ID에 대한 클론 보고서를 표시합니다.</block>
   <block id="18c6c7b07148849996bd7da366d6bf60" category="summary">작업 페이지를 사용하여 SnapCenter 클론 작업의 진행률을 모니터링할 수 있습니다. 작업 진행률을 확인하여 작업이 언제 완료되는지 또는 문제가 있는지 확인할 수 있습니다.</block>
   <block id="322752ebdea85a56b4a5d899f24c4325" category="doc">사용자 지정 플러그인 리소스 클론 작업을 모니터링합니다</block>
-  <block id="7ece64d8d9ea3a89221dea21761b07d9" category="list-text">Jobs * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="62db5b4d65c0cdab012121187a77e764" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 클론 작업만 나열되도록 목록을 필터링합니다.</block>
   <block id="4cfa68aad234b91494e417f8012ca40d" category="list-text">Type * 드롭다운 목록에서 * Clone * 을 선택합니다.</block>
   <block id="7c18f9fe3e82229bbf88d4133dde72bd" category="list-text">Status * (상태 *) 드롭다운 목록에서 클론 상태를 선택합니다.</block>
@@ -830,7 +793,6 @@
   <block id="2794927004b00b8d766ca3deca4c7096" category="paragraph">SnapCenterJobs 페이지를 사용하여 여러 백업 작업의 진행률을 모니터링할 수 있습니다. 진행 상황을 확인하여 완료 시기 또는 문제가 있는지 확인할 수 있습니다.</block>
   <block id="7944a2318d6a58176074a0d99b34c73d" category="paragraph">다음 아이콘이 작업 페이지에 나타나고 작업의 해당 상태를 나타냅니다.</block>
   <block id="c0a63413cafa6a465f587d5835701c87" category="list-text">모니터 페이지에서 * 작업 * 을 클릭합니다.</block>
-  <block id="ea2cb68ad61ca5f02a314e4b15a00394" category="list-text">작업 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="6044156c6f0da8e8ec296448fa2d5fa5" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 백업 작업만 나열되도록 목록을 필터링합니다.</block>
   <block id="e10f73b33c1a0725b8812f08089e7788" category="list-text">Type * 드롭다운 목록에서 * Backup * 을 선택합니다.</block>
   <block id="1f8a6ebe3d4d002c37961084ee957772" category="list-text">Status * (상태 *) 드롭다운에서 백업 상태를 선택합니다.</block>
@@ -879,7 +841,6 @@
   <block id="bceac0a8fa4156f8efbbf85fb76e4953" category="paragraph">WSFC(클러스터에 플러그인)를 설치하면 클러스터의 모든 노드에 플러그인이 설치됩니다.</block>
   <block id="92167459928f7cb7035350c0b52437da" category="list-text">맨 위에 * Managed Hosts * 탭이 선택되어 있는지 확인합니다.</block>
   <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">추가 * 를 클릭합니다.</block>
-  <block id="bea7916f232ad723c7894179dd785931" category="list-text">호스트 * 페이지에서 다음 작업을 수행합니다.</block>
   <block id="c2ece9a18147c056e75e4008644a9526" category="paragraph">호스트 유형</block>
   <block id="56a139bed9c50b0c2ef905b84f371cf2" category="paragraph">호스트 유형을 선택합니다.</block>
   <block id="aea23489ce3aa9b6406ebb28e0cda430" category="list-text">Windows</block>
@@ -946,7 +907,6 @@
   <block id="0e8f9ce78b94dad391f7bf1190e4c848" category="paragraph">작업 창</block>
   <block id="385678dd00c5a8c59bf6e2b642301b5d" category="list-text">백업 작업을 시작한 후 * 를 클릭합니다<block ref="f176a951032bbb2fc179630a5e58fad8" category="inline-image-macro-rx" type="image"></block>* 를 클릭합니다.</block>
   <block id="5605734dc1e0ba578df46e1ad0adc35e" category="list-text">작업을 선택합니다.</block>
-  <block id="ee649426fa36d629c5852919cbabc1c4" category="list-text">작업 세부 정보 페이지에서 * 작업 취소 * 를 클릭합니다.</block>
   <block id="569d7ad91ac8653d08a314e2f0c4f16d" category="paragraph">작업이 취소되고 리소스가 이전 상태로 돌아갑니다.</block>
   <block id="edc25de414c7fe73d241458dab7bca2b" category="summary">개별 사용자 지정 플러그인 리소스가 리소스 그룹에 포함되어 있지 않은 경우 리소스 페이지에서 리소스를 백업할 수 있습니다. 필요에 따라 리소스를 백업하거나 리소스에 정책이 연결되어 있고 스케줄이 구성된 경우 스케줄에 따라 백업이 자동으로 수행됩니다.</block>
   <block id="8ffa4ba0dd2df5995fd397c72a149679" category="doc">개별 맞춤형 플러그인 리소스를 백업합니다</block>
@@ -954,9 +914,7 @@
   <block id="08c86005ddd32599a5beea4c7b9ff4ad" category="list-text">보조 스토리지와 SnapMirror 관계가 있는 리소스를 백업하려면 스토리지 사용자에게 할당된 ONTAP 역할에 "'스냅샷 전체' 권한이 있어야 합니다. 그러나 "vsadmin" 역할을 사용하는 경우에는 "napmirror all" 권한이 필요하지 않습니다.</block>
   <block id="d9519d94a3a4c5d7cfd38a6562e76409" category="paragraph">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="085ab917326888bb9fd0378b5efb84b9" category="list-text">백업할 리소스를 클릭합니다.</block>
-  <block id="b21ec91fe314c04eeb47e4b321d72e47" category="list-text">리소스 * 페이지에서 사용자 지정 이름을 사용하려면 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 확인란을 선택한 다음 스냅샷 복사본 이름에 대한 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="8deb8aa93ea3b02fc36610daf36edad9" category="paragraph">예: _customtext_policy_hostname_or_resource_hostname_. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
-  <block id="dc185ba89c22c8ec7580a637beca38ed" category="list-text">응용 프로그램 설정 * 페이지에서 다음을 수행합니다.</block>
   <block id="23ce0178ca7588539a792fb41d10d6d6" category="list-text">백업 * 화살표를 클릭하여 추가 백업 옵션을 설정합니다.</block>
   <block id="75acd63fc160c8f401a6e89437895634" category="paragraph">필요한 경우 정합성 보장 그룹 백업을 설정하고 다음 작업을 수행합니다.</block>
   <block id="6ab61c7e4778c57cf88bc1b95a583d05" category="list-text">Quiesce, Snapshot copy 및 unquiesce 작업에 대한 사전 및 사후 명령을 실행하려면 * Scripts * 화살표를 클릭합니다. 백업 작업을 종료하기 전에 사전 명령을 실행할 수도 있습니다.</block>
@@ -1068,7 +1026,6 @@
   <block id="80b1e5cd733af4261b6b1a7b3c1228ea" category="paragraph">사용자 지정 플러그인이 설치된 경우 SnapCenter with NetApp SnapMirror 기술을 사용하여 다른 볼륨에 백업 세트의 미러 복사본을 생성하고 NetApp SnapVault 기술을 사용하여 D2D 백업 복제를 수행할 수 있습니다. 사용자 지정 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다.</block>
   <block id="6a6294c23eed134bb0ac5d4c8db8f675" category="admonition">SnapCenterCLI는 SnapCenter 맞춤형 플러그인 명령을 지원하지 않습니다.</block>
   <block id="49ee0af5f7bb584f9569b5628fd1170e" category="paragraph">NetApp은 SnapCenter에 내장된 맞춤형 플러그인 프레임워크를 사용하여 ONTAP 스토리지에서 데이터 볼륨의 데이터 보호 작업을 수행할 수 있는 스토리지 플러그인을 제공합니다.</block>
-  <block id="66c6afc0769d0be2108e2e5602a78fd5" category="paragraph">호스트 추가 * 페이지에서 사용자 지정 플러그인 및 스토리지 플러그인을 설치할 수 있습니다.</block>
   <block id="a344a2fc65197b27dcccc38ac1ef85a3" category="inline-link-macro">호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다.</block>
   <block id="a5f00a79eb947021702cee9fc1d05354" category="paragraph"><block ref="a5f00a79eb947021702cee9fc1d05354" category="inline-link-macro-rx"></block></block>
   <block id="56cb38ae9f515c555dfc8601fd4c0070" category="paragraph">NetApp은 또한 MySQL, MAXDB, DB2, Sybase, DPGLUE, MongoDB, ORASCPM 및 PostgreSQL 맞춤형 플러그인 이러한 플러그인은 에서 다운로드할 수 있습니다<block ref="554f546cf121f440c6cfd97d643765df" category="inline-link-rx"></block>.</block>
@@ -1178,13 +1135,11 @@
   <block id="0533c8fb80b8d3787108152ecf7ed2fb" category="paragraph">새로 복제된 리소스 이름에 추가할 접미사를 입력합니다. 접미사는 클론된 리소스가 호스트에서 고유하도록 보장합니다.</block>
   <block id="1caca09a5d2ecb11bb528e8d11e891fd" category="paragraph">예: RS1_clone. 원래 리소스와 동일한 호스트에 클론 생성 중인 경우 클론된 리소스를 원래 리소스와 구분할 수 있도록 접미사를 제공해야 합니다. 그렇지 않으면 작업이 실패합니다.</block>
   <block id="d45659570339304d92b272e6f147a29e" category="paragraph">선택한 리소스가 LUN이고 2차 백업에서 클론을 생성하는 경우 타겟 볼륨이 나열됩니다. 단일 소스에 여러 대상 볼륨이 있을 수 있습니다.</block>
-  <block id="d2bea44e3d1628098957452728baa152" category="list-text">설정 * 페이지에서 다음을 수행합니다.</block>
   <block id="104ca2920cf6d8ff50457af3ba1b6650" category="paragraph">이니시에이터 이름입니다</block>
   <block id="ab34841ca39ae1fe134cc677cfc650ef" category="paragraph">호스트 이니시에이터 이름, 즉 IQDN 또는 WWPN을 입력합니다.</block>
   <block id="fbc3c18d30cdcf55c959421811aa3c15" category="paragraph">Igroup 프로토콜</block>
   <block id="170690229e5c5ede71ec9027d4cc03ef" category="paragraph">Igroup 프로토콜을 선택합니다.</block>
   <block id="6377b459216ed64c59a38be93273d381" category="admonition">설정 페이지는 스토리지 유형이 LUN인 경우에만 표시됩니다.</block>
-  <block id="64ec09d3e87944e8fc9a6069c5aa8e0a" category="list-text">Scripts * 페이지에서 클론 작업 전후에 각각 실행해야 하는 사전 클론 또는 사후 클론 명령을 입력합니다. mount 명령을 입력하여 호스트에 파일 시스템을 마운트합니다.</block>
   <block id="d2f811cffe0f9a1380a49f7f5961cb09" category="list-text">Pre clone 명령: 이름이 같은 기존 데이터베이스를 삭제합니다</block>
   <block id="5fddd416d7d0fdc83ff16f74a6ee1443" category="list-text">사후 복제 명령: 데이터베이스를 확인하거나 데이터베이스를 시작합니다.</block>
   <block id="fd341cd800550ed4366f97632bc87dc0" category="paragraph">Linux 시스템의 볼륨 또는 qtree에 대한 마운트 명령: mount &lt;vserver_name&gt;: %&lt;volume_name_Clone/mnt&gt;</block>
@@ -1363,7 +1318,6 @@
   <block id="f72a9173829a8f26c57c075519f73a90" category="paragraph">데이터베이스 또는 리소스 그룹 토폴로지 페이지가 표시됩니다.</block>
   <block id="d3b04b1d5c6398c518253456a5486746" category="list-text">복사본 관리 섹션의 보조 스토리지 시스템(미러 또는 볼트)에서 * 백업 * 을 선택합니다.</block>
   <block id="80db249f44fe6e63971cbb849bf626c4" category="list-text">목록에서 백업을 선택한 다음 을 클릭합니다 <block ref="401f8f248ae37b21256b9fc8e83bcaa3" category="inline-image-macro-rx" type="image"></block>.</block>
-  <block id="ef7ae7460b74b1bbd1c065f57e7c3a55" category="list-text">위치 페이지에서 선택한 리소스를 복원할 대상 볼륨을 선택합니다.</block>
   <block id="60eb0e3609910449ad04c8c512423c52" category="list-text">복원 마법사를 완료하고 요약을 검토한 다음 * 마침 * 을 클릭합니다.</block>
   <block id="17fc745bbeffc9e152c50898b2e24e6f" category="summary">Microsoft Exchange Server 백업용 SnapCenter 플러그인에서 Exchange Server 데이터베이스를 복구하기 전에 몇 가지 요구 사항이 충족되는지 확인해야 합니다.</block>
   <block id="0a85ee51b9d331a550e21deab31b4cd2" category="doc">Exchange 데이터베이스 복구 요구 사항</block>
@@ -1436,8 +1390,6 @@
   <block id="ec7b72a8c05860fe4c7bb1822dfccbc0" category="paragraph">로그 백업 보존은 정책에 따라 효과적이며 데이터베이스 또는 리소스의 모든 로그 백업에 적용됩니다. 따라서 정책 B를 사용하여 전체 백업을 수행할 경우 로그 보존 설정은 정책 A가 동일한 데이터베이스 또는 리소스에 생성한 로그 백업에 영향을 줍니다. 마찬가지로 정책 A의 로그 보존 설정은 정책 B가 동일한 데이터베이스의 로그 백업에 영향을 줍니다.</block>
   <block id="8de37c701110ee880cc06580b3fdfef3" category="cell">* 모범 사례: * 보존하려는 전체 및 로그 백업 수에 따라 보조 보존 정책을 구성하는 것이 좋습니다. 2차 보존 정책을 구성할 때는 데이터베이스와 로그가 서로 다른 볼륨에 있을 때 각 백업마다 3개의 스냅샷 복사본을 가질 수 있고 데이터베이스와 로그가 같은 볼륨에 있을 때는 각 백업마다 2개의 스냅샷 복사본을 가질 수 있다는 점을 유의해야 합니다.</block>
   <block id="1f02ceac906eeeae0a190f295fe12381" category="list-text">설정 페이지에서 * 정책 * 을 클릭합니다.</block>
-  <block id="cc03ad53bbf6b185dc61673a77417691" category="list-text">이름 페이지에서 정책 이름 및 설명을 입력합니다.</block>
-  <block id="2de07cc9d87452c066654eb2ba4e2df4" category="list-text">백업 유형 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="19999b58b15a4b6c9b7d47212a32aeba" category="list-text">백업 유형 선택:</block>
   <block id="18566ccb16fd84825b0033ada84ed5cc" category="paragraph">데이터베이스 파일 및 필요한 트랜잭션 로그를 백업합니다</block>
   <block id="63afd0069eb731a8e67418ebe1db655d" category="paragraph">전체 백업 및 로그 백업 * 을 선택합니다.</block>
@@ -1465,7 +1417,6 @@
   <block id="7253b9a725166385e4f37093fbb8e27a" category="admonition">클러스터 구성에서 백업은 정책에 설정된 보존 설정에 따라 클러스터의 각 노드에 유지됩니다. 클러스터의 소유자 노드가 변경되면 이전 소유자 노드의 백업이 유지됩니다. 보존은 노드 레벨에서만 적용됩니다.</block>
   <block id="ff79310304bfb3f1e55091b1b1f56af6" category="list-text">일정 빈도 섹션에서 * On demand *, * Hourly *, * Daily *, * Weekly *, * Monthly * 등의 빈도 유형을 하나 이상 선택합니다.</block>
   <block id="d78054ed6f59db92a2be34fa81ab7795" category="admonition">리소스 그룹을 생성하는 동안 백업 작업의 스케줄(시작 날짜, 종료 날짜)을 지정할 수 있습니다. 이렇게 하면 동일한 정책 및 백업 빈도를 공유하는 리소스 그룹을 생성할 수 있지만 각 정책에 서로 다른 백업 스케줄을 할당할 수 있습니다.</block>
-  <block id="363a8df65f0559206f42af951a343ab4" category="list-text">보존 페이지에서 보존 설정을 구성합니다.</block>
   <block id="92a76125eefeff662e0dc946caca76e1" category="paragraph">표시되는 옵션은 이전에 선택한 백업 유형 및 빈도 유형에 따라 달라집니다.</block>
   <block id="f2027d6c54e1490c7848fc49c15e777d" category="list-text">로그 백업 보존 설정 섹션에서 다음 중 하나를 선택합니다.</block>
   <block id="eb7902c9b6a2a68bab30176b0646511a" category="paragraph">특정 수의 로그 백업만 유지합니다</block>
@@ -1488,7 +1439,6 @@
   <block id="5c63811228c15739fc821ea5492e3502" category="list-text">기본적으로 SnapCenter는 DAG의 다른 모든 호스트에서 이 데이터베이스에 대해 가장 오래된 전체 백업을 찾고 전체 백업 전에 이 호스트에서 수행된 모든 로그 백업을 삭제합니다.</block>
   <block id="9363a6dd8a937e03c1a0328e0f457267" category="list-text">DAG의 호스트에 있는 데이터베이스의 기본 보존 동작은 _C:\Program Files\NetApp\SnapCenter WebApp\web.config_file에 * MaxLogBackupOnlyWithoutFullBackup * 키를 추가하여 로그 백업만 사용하여 재정의할 수 있습니다.</block>
   <block id="2bc5f650183b4c6ef420f08e9de42168" category="paragraph">이 예에서 값 10은 호스트에 최대 10개의 로그 백업을 유지하는 것을 의미합니다.</block>
-  <block id="8c5fdfdc65ecf3becaffdf97e4023e70" category="list-text">복제 페이지에서 다음 보조 복제 옵션 중 하나 또는 둘 다를 선택합니다.</block>
   <block id="1841ccf0461e2eaacdadd6d0965185ca" category="paragraph">로컬 스냅샷 복사본을 생성한 후 SnapMirror를 업데이트합니다</block>
   <block id="993129239b6168608f9de64f4e71982a" category="paragraph">백업 세트의 미러 복사본을 다른 볼륨(SnapMirror)에 유지하려면 이 옵션을 선택합니다.</block>
   <block id="5599318ff76ac470ccc995aab6f33577" category="paragraph">로컬 스냅샷 복사본을 생성한 후 SnapVault를 업데이트합니다</block>
@@ -1496,7 +1446,6 @@
   <block id="58d70fc926069f010ab51ffa86e123d8" category="paragraph">보조 정책 레이블입니다</block>
   <block id="e64e99351ad3ec8079ffd2d91fbd7f12" category="paragraph">오류 재시도 횟수입니다</block>
   <block id="39007747bb71ef47183e492e75b22469" category="paragraph">프로세스가 중지되기 전에 수행해야 하는 복제 시도 횟수를 입력합니다.</block>
-  <block id="491468a9f64bda595083df9bb9686ee1" category="list-text">스크립트 페이지에서 백업 작업 전후에 실행해야 하는 ppt 또는 postscript의 경로와 인수를 각각 입력합니다.</block>
   <block id="959ee61833678423ed8659abb1b27012" category="list-text">Prescript 백업 인수에는 ""$Database" 및 ""$ServerInstance" 가 포함됩니다.</block>
   <block id="0814f59f5f07398b1fe9623ede563b6e" category="list-text">포스트스크립트 백업 인수에는 ""$Database", "$ServerInstance", "$BackupName", "$LogDirectory" 및 "$LogSnapshot""이 포함됩니다.</block>
   <block id="3d40243b2d8fd2d8429d6d1e417ad7b3" category="paragraph">스크립트를 실행하여 SNMP 트랩을 업데이트하고, 경고를 자동화하고, 로그를 보내는 등의 작업을 수행할 수 있습니다.</block>
@@ -1506,26 +1455,21 @@
   <block id="d5637dc8626943be066538cf923050b5" category="list-text">리소스 페이지의 * 보기 * 목록에서 * 데이터베이스 * 를 선택합니다.</block>
   <block id="5b1fb4d3a28a0f26688d270531975a93" category="admonition">최근에 SnapCenter에 리소스를 추가한 경우 * 리소스 새로 고침 * 을 클릭하여 새로 추가된 리소스를 확인합니다.</block>
   <block id="afa6a477c747b68e1d1dc87d163912e8" category="list-text">새 리소스 그룹 * 을 클릭합니다.</block>
-  <block id="9b5cbec4bb54238bfdb6edc4fa6ee513" category="list-text">이름 페이지에서 다음 작업을 수행합니다.</block>
   <block id="866fa0fd559b5b17698e491ad5db1137" category="paragraph">자원 그룹 이름을 입력합니다.</block>
   <block id="0394f23db0f190b75cbe21e4a5a40ee7" category="paragraph">선택 사항: 사용자 지정 스냅샷 복사본의 이름 및 형식을 입력합니다.</block>
   <block id="03f5752c8a2bd8ac3f833f6139819b87" category="paragraph">예를 들어, _customtext_resourcegroup_policy_hostname_or_resourcegroup_hostname_입니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
-  <block id="5d17e15850c13bff7cbc944eee0e360f" category="list-text">리소스 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="1dfefedcde6c869266d5859ab23ccea2" category="list-text">사용 가능한 리소스 목록을 필터링하려면 리소스 유형과 드롭다운 목록에서 데이터베이스 사용 가능 그룹을 선택합니다.</block>
   <block id="11ef45d816fd55939848d9cd23e6b990" category="admonition">최근에 추가한 자원은 자원 목록을 새로 고친 후에만 사용 가능한 자원 목록에 나타납니다.</block>
-  <block id="91e77a782e3fd14d1ce04e8e1d317399" category="paragraph">Available Resources * 및 * Selected Resources * 섹션에서 데이터베이스 이름이 호스트의 FQDN과 함께 표시됩니다. 이 FQDN은 데이터베이스가 특정 호스트에서 활성화되어 있으며 이 호스트에서 백업을 수행할 수 없음을 나타냅니다. 정책에서 백업 작업 생성 시 선택할 * 서버의 백업 복사본 * 옵션을 선택한 경우 백업할 서버 선택 옵션에서 하나 이상의 백업 서버를 선택해야 합니다.</block>
   <block id="fd9b238aef877a65aa688cbed16038c8" category="list-text">검색 텍스트 상자에 리소스 이름을 입력하거나 스크롤하여 리소스를 찾습니다.</block>
   <block id="88fd9ea8ef5d6be2e4dbe0754f9b540c" category="list-text">사용 가능한 리소스 섹션에서 선택한 리소스 섹션으로 리소스를 이동하려면 다음 단계 중 하나를 수행합니다.</block>
   <block id="d5e1fd204fed10a4447207586da4f7c6" category="list-text">동일한 스토리지 볼륨에 있는 모든 리소스를 선택한 리소스 섹션으로 이동하려면 * 동일한 스토리지 볼륨에 있는 모든 리소스를 자동 선택 * 을 선택합니다.</block>
   <block id="7cb4d9086d6c1cf01b806f319a85cc63" category="list-text">사용 가능한 리소스 섹션에서 리소스를 선택한 다음 오른쪽 화살표를 클릭하여 선택한 리소스 섹션으로 이동합니다.</block>
   <block id="40d8f5c9b7ab33a156de7775f928f1c6" category="paragraph">Microsoft Exchange Server용 SnapCenter의 리소스 그룹은 스냅샷 복사본당 30개 이상의 데이터베이스를 가질 수 없습니다. 하나의 리소스 그룹에 30개 이상의 데이터베이스가 있는 경우 추가 데이터베이스를 위해 두 번째 스냅샷 복사본이 생성됩니다. 따라서 기본 백업 작업 아래에 2개의 하위 작업이 생성됩니다. 보조 복제가 있는 백업의 경우 SnapMirror 또는 SnapVault 업데이트가 진행 중일 때 두 하위 작업의 업데이트가 겹치는 시나리오가 있을 수 있습니다. 로그가 작업이 완료되었음을 나타내더라도 기본 백업 작업은 계속 계속 실행됩니다.</block>
-  <block id="1c5d90541d4523a40a64ea3c68aa3a94" category="list-text">정책 페이지에서 다음 단계를 수행합니다.</block>
   <block id="615d8aed25e6e033e2c4a35b84715c0e" category="admonition">백업 작업 생성 시 선택할 서버에 대한 * 백업 복사본 * 옵션이 정책에 포함된 경우 하나 이상의 서버를 선택할 수 있는 서버 선택 옵션이 표시됩니다. 서버 선택 옵션에는 선택한 데이터베이스가 NetApp 스토리지에 있는 서버만 나열됩니다.</block>
   <block id="325c8572dc9de1be94418b7cc6a7a127" category="list-text">선택한 정책에 대한 일정 구성 섹션에서 * 를 클릭합니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>일정을 구성하려는 정책에 대한 * 스케줄 구성 * 열에 있습니다.</block>
   <block id="351f7bad3082107e47ad4d5178c303b5" category="list-text">policy_policy_name_schedules 추가 대화 상자에서 시작 날짜, 만료 날짜 및 빈도를 지정하여 스케줄을 구성한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="13d62cafc9cfc5929565224152d9294b" category="paragraph">정책에 나열된 각 빈도에 대해 이 작업을 수행해야 합니다. 구성된 스케줄은 선택한 정책에 대한 스케줄 구성 섹션의 * Applied Schedules * 열에 나열됩니다.</block>
   <block id="eecd36c568b40385bb729410ba711a64" category="paragraph">타사 백업 스케줄은 SnapCenter 백업 스케줄과 겹치는 경우 지원되지 않습니다.</block>
-  <block id="6ddf685dcef24877f30f43689b4a42a4" category="list-text">알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.</block>
   <block id="0771f0b55ed8545cb9de7dcadfc93b74" category="paragraph">또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. 자원 그룹에서 수행된 작업의 보고서를 첨부하려면 * 작업 보고서 첨부 * 를 선택합니다.</block>
   <block id="632e8f771f2b94f3016767f9170f82e3" category="paragraph">이메일 알림의 경우, GUI 또는 PowerShell 명령 'Set-SmtpServer'를 사용하여 SMTP 서버 세부 정보를 지정해야 합니다.</block>
   <block id="da88dc68f2a712cc761152a071758b5d" category="summary">PowerShell cmdlet을 사용하여 백업 및 복원하기 전에 SVM(Storage Virtual Machine) 연결과 자격 증명을 생성해야 합니다.</block>
@@ -1548,8 +1492,6 @@
   <block id="6c22568aa6116c11fda42febcf7b796a" category="list-text">리소스 그룹 페이지에서 백업할 리소스 그룹을 선택한 다음 * 지금 백업 * 을 클릭합니다.</block>
   <block id="bb43b313441613889840a70c3dde17eb" category="list-text">페이지 하단의 작업 창에서 작업을 두 번 클릭하여 작업 세부 정보 페이지를 표시하여 백업 진행 상황을 모니터링합니다.</block>
   <block id="504403a18a6f866f203ea7aac8f10d40" category="summary">리소스를 백업할 준비를 할 때 운영 및 보조 스토리지의 모든 백업을 그래픽으로 표시하는 것이 도움이 될 수 있습니다.</block>
-  <block id="01504df112b6927366a709864b35a8eb" category="doc">토폴로지 페이지에서 Exchange 백업을 봅니다</block>
-  <block id="a56f3f0905fe93731eb31a732c1de7e8" category="paragraph">토폴로지 페이지에서 선택한 리소스 또는 리소스 그룹에 사용할 수 있는 모든 백업을 볼 수 있습니다. 이러한 백업의 세부 정보를 확인한 다음 해당 백업을 선택하여 데이터 보호 작업을 수행할 수 있습니다.</block>
   <block id="da7ba1b167d82e2373bbaa468f982144" category="paragraph">복제본 관리 보기에서 다음 아이콘을 검토하여 운영 스토리지 또는 보조 스토리지(미러 복사본 또는 볼트 복제본)에서 백업을 사용할 수 있는지 여부를 확인할 수 있습니다.</block>
   <block id="2b6bd5280cfc8d7c0b1cae986d4b2a43" category="list-text"><block ref="b105aa2251195b489d5aac5cb4edab27" category="inline-image-macro-rx" type="image"></block> 기본 스토리지에서 사용할 수 있는 백업 수를 표시합니다.</block>
   <block id="1603c345e3bd553a1840ea73fd82637d" category="list-text"><block ref="9a2d53c694818a8706712f44ab9874ba" category="inline-image-macro-rx" type="image"></block> SnapMirror 기술을 사용하여 보조 스토리지에 미러링되는 백업 수를 표시합니다.</block>
@@ -1557,7 +1499,6 @@
   <block id="4efa69916535542be44a05417b8555a7" category="list-text">표시된 백업 수에는 보조 스토리지에서 삭제된 백업이 포함됩니다.</block>
   <block id="f1611a9521b32af570fdc53903e1b408" category="paragraph">예를 들어 정책을 사용하여 6개의 백업을 생성하여 4개의 백업만 보존한 경우 표시되는 백업 수는 6입니다.</block>
   <block id="4cbd17c67ce04dcc43d1fc0cb9c96bb8" category="cell">* 모범 사례: * 정확한 수의 복제된 백업이 표시되도록 토폴로지를 새로 고치는 것이 좋습니다.</block>
-  <block id="f66ee618877bb1a93213f22845015e24" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 데이터베이스, 리소스 또는 리소스 그룹을 선택합니다.</block>
   <block id="f701ff94b4fc5a718072051eb8266cd7" category="list-text">데이터베이스 세부 정보 보기 또는 리소스 그룹 세부 정보 보기에서 리소스를 선택합니다.</block>
   <block id="d4868b331fadf332cc1362d5cab4fcb0" category="paragraph">리소스가 보호되는 경우 선택한 리소스의 토폴로지 페이지가 표시됩니다.</block>
   <block id="1d3cf68630dd8ddf48c2af60725f63b7" category="list-text">Summary card(요약 카드) 섹션을 검토하여 운영 스토리지와 보조 스토리지에서 사용할 수 있는 백업의 수를 요약합니다.</block>
@@ -1603,7 +1544,6 @@
   <block id="588f36766e9f6a960b4f3c2a83a4a69b" category="summary">대기열에 있는 복원 작업을 취소할 수 있습니다.</block>
   <block id="ba8cc99b4cfaa3f9d3c3f0a8380082c0" category="doc">Exchange 데이터베이스에 대한 복구 작업을 취소합니다</block>
   <block id="291fce3784ace5b5b71f5f0d1a3acecd" category="paragraph">복원 작업을 취소하려면 SnapCenter 관리자 또는 작업 소유자로 로그인해야 합니다.</block>
-  <block id="f9663d6f7d3d8987d48c3c4b33d235a3" category="list-text">모니터 페이지 또는 작업 창에서 대기 중인 복원 작업을 취소할 수 있습니다.</block>
   <block id="60ac79a5e469c949334144bab0aa8ab3" category="list-text">실행 중인 복원 작업은 취소할 수 없습니다.</block>
   <block id="094532b5d63a35db46b0b307b24fe01e" category="list-text">SnapCenter GUI, PowerShell cmdlet 또는 CLI 명령을 사용하여 대기 중인 복원 작업을 취소할 수 있습니다.</block>
   <block id="f319250163ff24dbbbd6e1e43498fcfe" category="list-text">취소할 수 없는 복원 작업에는 * 작업 취소 * 버튼이 비활성화됩니다.</block>
@@ -1635,7 +1575,6 @@
   <block id="592f359ab27364a2fcfd0d2ff38f709d" category="inline-link">Data ONTAP VSS 하드웨어 공급자를 수동으로 등록하는 방법</block>
   <block id="71544fe094cc6a3179097e9242095914" category="paragraph">Microsoft Exchange Server용 SnapManager와 Windows용 SnapDrive가 이미 설치되어 있는 경우 Exchange용 플러그인을 동일한 Exchange Server에 설치하려면 Exchange용 플러그인 및 Windows용 SnapCenter 플러그인 패키지와 함께 설치된 VSS 하드웨어 공급자와 호환되지 않으므로 Windows용 SnapDrive에서 사용하는 VSS 하드웨어 공급자를 등록 취소해야 합니다. 자세한 내용은 을 참조하십시오<block ref="7fe4bf88f2a4ded52fc69cef274e20fe" category="inline-link-rx"></block>.</block>
   <block id="262d319024a0918be769dfc76e9786c3" category="list-text">맨 위에 * Managed Hosts * 가 선택되어 있는지 확인합니다.</block>
-  <block id="7d6ad814b2a9e7ec7367e283fc4e94d3" category="list-text">호스트 * 페이지에서 다음을 수행합니다.</block>
   <block id="a2019a474e94462a57623d70d38bc98e" category="paragraph">호스트 유형으로 * Windows * 를 선택합니다.</block>
   <block id="2468a2954805cef3720f8bb3dce33315" category="paragraph">SnapCenter 서버는 호스트를 추가한 다음 호스트에 Windows용 플러그인 및 Exchange용 플러그인이 설치되어 있지 않은 경우 호스트에 설치합니다.</block>
   <block id="ae76e5480413a8941c0de62a028a9445" category="paragraph">Windows용 플러그인과 Exchange용 플러그인은 동일한 버전이어야 합니다. 다른 버전의 Windows용 플러그인이 이전에 설치된 경우 SnapCenter는 설치 과정에서 버전을 업데이트합니다.</block>
@@ -1670,17 +1609,14 @@
   <block id="48d90a5e363abeb3058a0de5e6f65119" category="paragraph">복제본 재시딩은 4.1 이전 버전의 SnapCenter에서는 지원되지 않습니다.</block>
   <block id="b2570b05b44ba71c96d94339ccd4972a" category="list-text">다시 시딩하려는 데이터베이스의 백업을 만들어야 합니다.</block>
   <block id="6bdff70e9de2a356cc9745518bb414e7" category="cell">* 모범 사례: * 노드 사이의 지연 현상을 방지하려면 재시딩된 작업을 수행하기 전에 새 백업을 생성하거나 최신 백업이 있는 호스트를 선택하는 것이 좋습니다.</block>
-  <block id="e55db253bb52984bdf3db79b9f583b21" category="list-text">Resources * 페이지의 View 목록에서 적절한 옵션을 선택합니다.</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">옵션을 선택합니다</block>
   <block id="08367630ec592ba2c7487a0cf5b3bbe7" category="paragraph">단일 데이터베이스를 다시 시딩합니다</block>
   <block id="fbf4f3bf8a7c49583abb77b38aef59db" category="paragraph">보기 목록에서 * 데이터베이스 * 를 선택합니다.</block>
   <block id="02ef6de5e20a0597f2ed1b57dd05fdaa" category="paragraph">DAG에서 데이터베이스를 재시딩하는 경우</block>
   <block id="b83818b703f4f22e49bcfef1709247cc" category="paragraph">보기 목록에서 * 데이터베이스 가용성 그룹 * 을 선택합니다.</block>
   <block id="328f194158b92181c4084013caf302a8" category="list-text">다시 시딩할 리소스를 선택합니다.</block>
-  <block id="c236f27ae819ab955eac3457faaca20c" category="list-text">매수 관리 * 페이지에서 * 다시 시딩된 * 을 클릭합니다.</block>
   <block id="8883675804ac5bbba5130e11641b79a5" category="list-text">다시 시딩된 마법사의 비정상적인 데이터베이스 복사본 목록에서 다시 시딩할 복제본을 선택하고 * 다음 * 을 클릭합니다.</block>
   <block id="b68a364434a8e03152283d0df0545181" category="list-text">호스트 창에서 다시 연결할 백업이 있는 호스트를 선택한 후 * 다음 * 을 클릭합니다.</block>
-  <block id="5c65c2adacf5c7769052ec8446ac4494" category="list-text">Script* 페이지에서 재시딩된 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
   <block id="a6b1b92e7a6b44cfb15470a802c2480a" category="paragraph">예를 들어, 스크립트를 실행하여 SNMP 트랩을 업데이트하고, 경고를 자동화하고, 로그를 보내는 등의 작업을 수행할 수 있습니다.</block>
   <block id="ef6586c0fa57d6bd830cb6e333716d60" category="list-text">페이지 하단의 Activity[활동] 패널을 확장하여 작업 상태를 볼 수 있습니다.</block>
   <block id="17bc3a06ae36468b0fead1703d635b48" category="admonition">패시브 데이터베이스 복사본이 NetApp이 아닌 스토리지에 상주하는 경우 다시 시딩된 작업은 지원되지 않습니다.</block>
@@ -1758,22 +1694,18 @@
   <block id="da6f15c5790afdf8cafcbd8f903edb93" category="list-text">백업 작업에서 사용 중인 애그리게이트를 데이터베이스에서 사용하는 SVM에 할당해야 합니다.</block>
   <block id="64ac2dd533361c3963118cc11fb7cac1" category="list-text">NetApp 및 비 NetApp 스토리지에 액티브/패시브 데이터베이스 복사본이 있는 데이터베이스 또는 데이터베이스 가용성 그룹의 백업을 수행하려면 정책에서 백업 작업 생성 시간 * 동안 선택할 서버의 활성 복사본 * 백업 * 또는 * 백업 복사본 * 옵션을 선택한 경우 백업 작업이 경고 상태로 전환됩니다. 백업이 NetApp 스토리지의 액티브/패시브 데이터베이스 복사본에 대해 성공하고 NetApp이 아닌 타사 스토리지의 액티브/패시브 데이터베이스 복사본에 대해서는 백업이 실패합니다.</block>
   <block id="860213bd7e47ab530bb0265db0d4d02a" category="cell">* 모범 사례: * 활성 및 수동 데이터베이스의 백업을 동시에 실행하지 마십시오. 경쟁 조건이 발생할 수 있으며 백업 중 하나가 실패할 수 있습니다.</block>
-  <block id="da37ee5bc870b135bad369f9c2905d1c" category="list-text">리소스 페이지의 * 보기 * 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 을 선택합니다.</block>
-  <block id="ed4a8db68a4a80221f03308dde027da8" category="paragraph">리소스 페이지에서 을(를) 클릭합니다 <block ref="362bbfc4e46b557d6a4f1f7a4cbeaf25" category="inline-image-macro-rx" type="image"></block> 아이콘은 데이터베이스가 비NetApp 스토리지에 있음을 나타냅니다.</block>
   <block id="0ad1c36a6c3e0a80135136739263c1d7" category="admonition">DAG에서 액티브 데이터베이스 복제본이 타사 스토리지에 있고 하나 이상의 패시브 데이터베이스 복제본이 NetApp 스토리지에 상주하는 경우 데이터베이스를 보호할 수 있습니다.</block>
   <block id="f4fccf161b5e67001656d817cbe815c9" category="paragraph">를 클릭합니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 * 를 클릭할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
   <block id="bb40ccbb928b274cb38a895aef70f856" category="list-text">데이터베이스를 백업하려면 데이터베이스 이름을 클릭합니다.</block>
   <block id="8373034f279dfd1570ec179c090b858c" category="list-text">토폴로지 뷰가 표시되면 * 보호 * 를 클릭합니다.</block>
   <block id="c5f4c29439aa6c78216cfa3f9865548c" category="list-text">데이터베이스 보호 리소스 마법사가 표시되면 3단계를 계속 진행합니다.</block>
   <block id="54449f6b5c8531f99928e88f563830f0" category="list-text">데이터베이스 가용성 그룹을 백업하려면 데이터베이스 가용성 그룹 이름을 클릭합니다.</block>
-  <block id="baad8ca69a62db808c685106cba4b54f" category="list-text">사용자 지정 스냅샷 복사본 이름을 지정하려면 리소스 페이지에서 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 확인란을 선택한 다음 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="2ebdd237cad2d1f8e79c0e03ecacf3e4" category="admonition">백업 작업 생성 시 선택할 서버에 대한 * 백업 복사본 * 옵션이 정책에 포함된 경우 하나 이상의 서버를 선택할 수 있는 서버 선택 옵션이 표시됩니다. 서버 선택 옵션에는 선택한 데이터베이스가 NetApp 스토리지에 있는 서버만 나열됩니다.</block>
   <block id="d9efe8cd3b84ef411469a4acc1e9bb8a" category="list-text">를 클릭합니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>일정을 구성하려는 정책에 대한 스케줄 구성 열의</block>
   <block id="b04a2aa13bc9b5c2000bf98771ae837a" category="list-text">policy_policy_name_에 대한 스케줄 추가 창에서 스케줄을 구성한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="0f9a723c6f5eb511c1b09b3ba75314b7" category="paragraph">또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. 리소스에 대해 수행된 백업 작업의 보고서를 첨부하려면 * 작업 보고서 연결 * 을 선택합니다.</block>
   <block id="4dcb8f86b6b59353b86d64a1b6090e41" category="admonition">이메일 알림의 경우 GUI 또는 PowerShell 명령 Set-SmtpServer를 사용하여 SMTP 서버 세부 정보를 지정해야 합니다.</block>
   <block id="6e20353bd5ea6118ce22e0b4e81aef53" category="paragraph">데이터베이스 토폴로지 페이지가 표시됩니다.</block>
-  <block id="15fee9d2d8af79a5f55315e4555497bb" category="list-text">백업 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="ac86fe103cf04f08650a1f1b7245227f" category="paragraph">자세한 내용은 다음을 참조하십시오.<block ref="5ed64ecfdefd96aa04af76bd7b72fc3f" category="inline-link-rx"></block></block>
   <block id="2a1878497d482cf8e9e56639ad6cb01e" category="list-text">VMDK에서 애플리케이션 데이터를 백업하고 VMware vSphere용 SnapCenter 플러그인의 Java 힙 크기가 충분히 크지 않으면 백업이 실패할 수 있습니다.</block>
   <block id="5ee3d457acf0b72806d19545a995012b" category="paragraph">Java 힙 크기를 늘리려면 스크립트 파일 _/opt/netapp/init_scripts/scvservice_를 찾습니다. 이 스크립트에서 _do_start method_command는 SnapCenter VMware 플러그인 서비스를 시작합니다. 이 명령을 _java-jar-Xmx8192M-Xms4096M_로 업데이트합니다</block>
@@ -1792,10 +1724,8 @@
   <block id="4bd32f482f1d209996b1794f4443d847" category="list-text">Exchange용 플러그인은 BitLocker로 암호화된 드라이브를 복원할 수 없습니다.</block>
   <block id="8c7e591d564140d4060394fd9006b205" category="list-text">왼쪽 탐색 창의 리소스 페이지 왼쪽 위에 있는 * 리소스 * 를 클릭합니다.</block>
   <block id="79f095602c88486d39ad4207c96a129c" category="list-text">드롭다운 목록에서 Exchange Server 플러그인을 선택합니다.</block>
-  <block id="bffa712f6679ddaf66fd07bbc5c1050e" category="list-text">리소스 페이지의 보기 목록에서 * 데이터베이스 * 를 선택합니다.</block>
   <block id="0e2f3dfadb378a828cf0e0a5fbcee479" category="list-text">목록에서 데이터베이스를 선택합니다.</block>
   <block id="218b95133f2018d7cfe38bc3874cc444" category="list-text">Manage Copies 보기의 Primary Backups 표에서 * Backups * 를 선택한 다음 * 를 클릭합니다<block ref="401f8f248ae37b21256b9fc8e83bcaa3" category="inline-image-macro-rx" type="image"></block>*.</block>
-  <block id="0153fdbe4c67a65a68f9559bce914b4b" category="list-text">옵션 페이지에서 다음 로그 백업 옵션 중 하나를 선택합니다.</block>
   <block id="3a713b6a48cc037c8d09503563c3e079" category="paragraph">모든 로그 백업</block>
   <block id="61893d73ee37c6f5fac38f4632554470" category="paragraph">전체 백업 후 사용 가능한 모든 로그 백업을 복원하려면 * 모든 로그 백업 * 을 선택하여 최신 백업 복원 작업을 수행하십시오.</block>
   <block id="fc137183671cbfae3870d3ab3d14ca4a" category="paragraph">까지 로그 백업을 통해</block>
@@ -1809,7 +1739,6 @@
   <block id="f8a87f2ba44b113ba21b88fa1bdc5c6c" category="list-text">* 복구 후 데이터베이스 복구 및 마운트 * - 이 옵션은 기본적으로 선택되어 있습니다.</block>
   <block id="71d1bff9cc1d559e85b528e61f148aa0" category="list-text">* 복구하기 전에 백업에서 트랜잭션 로그의 무결성을 확인하지 않음 * - 기본적으로 SnapCenter는 복원 작업을 수행하기 전에 백업에서 트랜잭션 로그의 무결성을 확인합니다.</block>
   <block id="6a712065bfa43d8f459918717002e894" category="cell">* 모범 사례: * 이 옵션을 선택해서는 안 됩니다.</block>
-  <block id="b7d3bd6783e226c074596f48142d6dcf" category="list-text">스크립트 페이지에서 복원 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
   <block id="84a95ce00c7276c0cb54e78ef62305ca" category="paragraph">복구 매개 변수 인수에는 $Database 및 $ServerInstance가 포함됩니다.</block>
   <block id="e698e1e0bf09f5000073c6427be8cebd" category="paragraph">PostScript 인수 복원에는 $Database, $ServerInstance, $BackupName, $LogDirectory 및 $TargetServerInstance가 포함됩니다.</block>
   <block id="49c8b1bcf683d227985be7b6a7094156" category="list-text">페이지 하단의 Activity[활동] 패널을 확장하여 복구 작업의 상태를 볼 수 있습니다.</block>
@@ -1832,7 +1761,6 @@
   <block id="75e9a2879a00ab4de0f951128cd2d531" category="paragraph">데이터베이스가 마운트, 마운트 해제, 다시 시드되거나 복구 보류 상태인 경우 정상 상태가 아닙니다.</block>
   <block id="5e75febf1a7f4c71f1ddfe400df30121" category="list-text">DAG(Database Availability Group)가 있는 경우 DAG에서 백업 작업을 실행하여 그룹의 모든 데이터베이스를 백업할 수 있습니다.</block>
   <block id="96b6fde24fc45821a7c8c021ba21b20b" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 리소스 페이지의 왼쪽 위 모서리에 있는 플러그인 드롭다운 목록에서 * Microsoft Exchange Server * 를 선택합니다.</block>
-  <block id="7d1c9c8887f37af0f546e24935abae5c" category="list-text">리소스 * 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 또는 * 리소스 그룹 * 을 선택합니다.</block>
   <block id="322a7c54d7c7799de3e202746d568ea4" category="paragraph">모든 데이터베이스와 DAG는 DAG 또는 호스트 이름과 함께 FQDN 형식으로 표시되므로 여러 데이터베이스를 구별할 수 있습니다.</block>
   <block id="db8c73281f0636096f5bd11fbb13289a" category="paragraph">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 호스트 이름과 Exchange Server를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="a52716605edda155f499cf4c4572c6d5" category="list-text">리소스 새로 고침 * 을 클릭합니다.</block>
@@ -2077,7 +2005,6 @@
   <block id="d04228e20798411b28cae6cb653df92c" category="list-text">SnapCenter 서버 간에 페일오버가 발생하고 기존 SnapCenter 세션도 있는 경우 브라우저를 닫고 SnapCenter에 다시 로그온해야 합니다.</block>
   <block id="9095768bd723dca6aad8c82ad7df94fb" category="list-text">NLB 또는 F5(Load Balancer Setup)에서 NLB 또는 F5 노드에 의해 부분적으로 확인된 노드를 추가하고 SnapCenter 노드가 이 노드에 연결할 수 없는 경우 SnapCenter 호스트 페이지는 호스트 다운과 실행 상태 사이를 자주 전환합니다. 이 문제를 해결하려면 두 SnapCenter 노드가 모두 NLB 또는 F5 노드의 호스트를 해결할 수 있는지 확인해야 합니다.</block>
   <block id="061e7171f662c103e082fe0f01a9e8d7" category="summary">워크플로 이미지는 SnapCenter 서버를 설치하고 구성하는 단계를 보여 줍니다.</block>
-  <block id="6f550466a69bad21f11ab99fc12db497" category="doc">워크플로를 설치합니다</block>
   <block id="1b6e4426f8c688c2d09195bf31d0242c" category="paragraph">워크플로우는 SnapCenter 서버를 설치하고 구성하는 데 필요한 여러 작업을 보여 줍니다.</block>
   <block id="354c84f19db927b615f7e75880c69840" category="image-alt">SnapCenter 서버를 설치합니다</block>
   <block id="21b55e1babd986a5f3ed39019361ea07" category="summary">VMware 환경에서 Microsoft Windows용 SnapCenter 플러그인을 사용하여 LUN을 생성 및 관리하고 스냅샷 백업 복사본을 관리할 수 있습니다.</block>
@@ -2510,7 +2437,6 @@
   <block id="e4743b702519d8da9a05b726d45922cb" category="list-text">Windows Server 페일오버 클러스터의 호스트에서 LUN을 공유하지 않는 한 LUN을 둘 이상의 호스트에 연결할 수 없습니다.</block>
   <block id="adf745ed268ed28129fdac1a0d6db2cd" category="list-text">CSV(Cluster Shared Volumes)를 사용하는 Windows Server 페일오버 클러스터의 호스트가 LUN을 공유하는 경우 클러스터 그룹을 소유하는 호스트에 디스크를 생성해야 합니다.</block>
   <block id="5373ad4839a1eb28816da375405661e4" category="paragraph">디스크 생성 마법사가 열립니다.</block>
-  <block id="1e9f06c5bcb09772fff3daaf75f14b66" category="list-text">LUN 이름 페이지에서 LUN을 확인합니다.</block>
   <block id="1552eec8291d257c4b855dcfa425d802" category="paragraph">스토리지 시스템</block>
   <block id="dea96a60f4961ece06de89a7cd3a3569" category="paragraph">LUN의 SVM을 선택합니다.</block>
   <block id="224ab9568a70cebbf84c04a7f1a9dd07" category="paragraph">LUN 경로입니다</block>
@@ -2522,7 +2448,6 @@
   <block id="bdf4c1d5ca02c574bec0d99344ce0961" category="paragraph">클러스터 크기는 운영 체제 및 애플리케이션에 따라 다릅니다.</block>
   <block id="ab8f11ab476da497112c125a08c7a640" category="paragraph">LUN 레이블입니다</block>
   <block id="f8ad4868af4fafea3a2a9374124f511b" category="paragraph">선택적으로 LUN에 대한 설명 텍스트를 입력합니다.</block>
-  <block id="4c1f4035ad8802815357b5fc177ab32f" category="list-text">디스크 유형 페이지에서 디스크 유형을 선택합니다.</block>
   <block id="777475dcd2749b94375fe07762d9d76f" category="cell">선택...</block>
   <block id="bfa9de45095a3a90ebc55708a5ee6dd2" category="cell">만약...</block>
   <block id="2517e1c1ce0db51d6f0871974e047788" category="paragraph">전용 디스크</block>
@@ -2534,7 +2459,6 @@
   <block id="314b5fff97a985c7e6e1a7a94924e22a" category="paragraph">CSV(클러스터 공유 볼륨)</block>
   <block id="953b4e85053031cf239c125fd930e835" category="paragraph">LUN은 CSV를 사용하는 Windows Server 페일오버 클러스터의 호스트에서 공유됩니다.</block>
   <block id="0c55ad31ee0c2df8db024e7e8a58e4d0" category="paragraph">리소스 그룹 * 필드에 클러스터 리소스 그룹의 이름을 입력합니다. 디스크를 생성할 호스트가 클러스터 그룹의 소유자인지 확인합니다.</block>
-  <block id="21f9d4a03305b1afac43197bbafb9f79" category="list-text">드라이브 속성 페이지에서 드라이브 속성을 지정합니다.</block>
   <block id="5ad234cb2cde4266195252a23ca7d84e" category="cell">속성</block>
   <block id="f0fad3f8efc23e549b1f06ba35c6de8b" category="paragraph">마운트 지점을 자동으로 할당합니다</block>
   <block id="957058c6db2f3ae806d715c14d8716b2" category="paragraph">SnapCenter는 시스템 드라이브에 따라 볼륨 마운트 지점을 자동으로 할당합니다.</block>
@@ -2557,20 +2481,17 @@
   <block id="23e717d0518d13c04f9e9d1c9401f4e7" category="paragraph">GUID 파티션 테이블의 GPT 파티션 또는 마스터 부트 레코드의 MBR 파티션을 선택합니다.</block>
   <block id="cfb9bdcb9dc5967ab50e1d8a8c852f32" category="paragraph">MBR 파티션은 Windows Server 장애 조치 클러스터에서 정렬 불량 문제를 일으킬 수 있습니다.</block>
   <block id="0c2f681c20a51be258bfb4a262510256" category="admonition">UEFI(Unified Extensible Firmware Interface) 파티션 디스크는 지원되지 않습니다.</block>
-  <block id="133908a94330d8e6f172aeb626269c8d" category="list-text">LUN 매핑 페이지에서 호스트의 iSCSI 또는 FC 이니시에이터를 선택합니다.</block>
   <block id="c2ca16d048ec66e04bca283eab048ec2" category="paragraph">호스트</block>
   <block id="faed44c6b313c450b14b8e932266bafa" category="paragraph">클러스터 그룹 이름을 두 번 클릭하여 클러스터에 속한 호스트를 보여 주는 드롭다운 목록을 표시한 다음, 이니시에이터의 호스트를 선택합니다.</block>
   <block id="067be1f32c060b7475c1ba1035ad132b" category="paragraph">이 필드는 LUN이 Windows Server 페일오버 클러스터의 호스트에서 공유되는 경우에만 표시됩니다.</block>
   <block id="8a2eba6b1e11d7636e4146ab4a89bb56" category="paragraph">호스트 이니시에이터를 선택합니다</block>
   <block id="8bc047ea8a37ed1b49f45614b3bc0d8e" category="paragraph">파이버 채널 * 또는 * iSCSI * 를 선택한 다음 호스트에서 이니시에이터를 선택합니다.</block>
   <block id="5551992208c27e96b0b5dc1aa5d03c85" category="paragraph">다중 경로 I/O(MPIO)와 함께 FC를 사용하는 경우 여러 FC 이니시에이터를 선택할 수 있습니다.</block>
-  <block id="43d313eb61837aaa0aa021a089e70958" category="list-text">그룹 유형 페이지에서 기존 igroup을 LUN에 매핑할지 또는 새 igroup을 생성할지를 지정합니다.</block>
   <block id="6b41144e3cb346080bd08ed268613e21" category="paragraph">선택한 이니시에이터에 대해 새 igroup을 생성합니다</block>
   <block id="3cb6175c01351ed414af8d76b6c90f5e" category="paragraph">선택한 이니시에이터에 대해 새 igroup을 생성하려고 합니다.</block>
   <block id="b5d640b10ed2d047f729c46faa44ad52" category="paragraph">기존 igroup을 선택하거나 선택한 이니시에이터에 대한 새 igroup을 지정합니다</block>
   <block id="d1d9dcd13d4a2965e27eeb523e9771ef" category="paragraph">선택한 이니시에이터에 대해 기존 igroup을 지정하거나 지정한 이름의 새 igroup을 생성합니다.</block>
   <block id="6f6429c6048be4e0c87018cb014fe7fc" category="paragraph">igroup 이름 * 필드에 igroup 이름을 입력합니다. 기존 igroup 이름의 처음 몇 글자를 입력하여 필드를 자동으로 작성합니다.</block>
-  <block id="28406ace75604ece0ee96b512c5e648b" category="list-text">요약 페이지에서 선택 사항을 검토한 다음 * 마침 * 을 클릭합니다.</block>
   <block id="3bcaee55bc3b8ab73657418fcbdd8b03" category="paragraph">SnapCenter는 LUN을 생성하여 호스트의 지정된 드라이브 또는 드라이브 경로에 연결합니다.</block>
   <block id="573de45e1a85ca00a55d8605ac7c2232" category="section-title">디스크 크기를 조정합니다</block>
   <block id="22e9fa4a399c17c894138509ab0dde2e" category="paragraph">스토리지 시스템 요구사항의 변화에 따라 디스크 크기를 늘리거나 줄일 수 있습니다.</block>
@@ -2593,7 +2514,6 @@
   <block id="ef48dfdbb8c84d6033e6dc0436701f31" category="list-text">Windows용 플러그인은 디스크를 연결하는 호스트에만 설치해야 합니다.</block>
   <block id="9bccd838ddedeb361e65189136ac5c0f" category="list-text">연결 * 을 클릭합니다.</block>
   <block id="b157d785d97b6e87e604293cb7574fb7" category="paragraph">디스크 연결 마법사가 열립니다.</block>
-  <block id="d21e8d81671cb9505f0092d39603dbc7" category="list-text">LUN 이름 페이지에서 접속할 LUN을 확인합니다.</block>
   <block id="531d596770314776d7a72e97f261e472" category="paragraph">찾아보기 * 를 클릭하여 LUN이 포함된 볼륨의 전체 경로를 선택합니다.</block>
   <block id="f0c6a3f01495f3db9dc876058ec461e4" category="paragraph">페일오버 클러스터의 한 호스트에만 디스크를 연결해야 합니다.</block>
   <block id="293704e3fb57fe608b80c34b567a1d07" category="paragraph">디스크에 접속할 호스트가 클러스터 그룹의 소유자인지 확인합니다.</block>
@@ -2604,9 +2524,7 @@
   <block id="c4a61a8f4c151c2960aaeb5c55ffe0bf" category="paragraph">인접 필드에 지정한 드라이브 경로에 디스크를 마운트합니다.</block>
   <block id="b6a85ac8fe15498ef67910084c0f9c70" category="paragraph">클러스터 그룹 이름을 두 번 클릭하여 클러스터에 속한 호스트를 보여 주는 드롭다운 목록을 표시한 다음, 이니시에이터의 호스트를 선택합니다.</block>
   <block id="76c77977c77876d5056fc77e1b480697" category="paragraph">MPIO에서 FC를 사용하는 경우 여러 FC 이니시에이터를 선택할 수 있습니다.</block>
-  <block id="873c04038d6911ed12d19493897438ea" category="list-text">그룹 유형 페이지에서 기존 igroup을 LUN에 매핑할지 또는 새 igroup을 생성할지를 지정합니다.</block>
   <block id="e7c7d18068ad58c03d7d798a49a192db" category="paragraph">igroup 이름 * 필드에 igroup 이름을 입력합니다. 기존 igroup 이름의 처음 몇 글자를 입력하여 필드를 자동으로 작성합니다.</block>
-  <block id="5924636f75dd2750372eea4e06938d22" category="list-text">요약 페이지에서 선택 사항을 검토하고 * 마침 * 을 클릭합니다.</block>
   <block id="878f2995007930ece2059294960ad3f7" category="paragraph">SnapCenter는 LUN을 호스트의 지정된 드라이브 또는 드라이브 경로에 연결합니다.</block>
   <block id="49fb31eeb0051e10a07d2d01dc41635d" category="section-title">디스크 연결을 해제합니다</block>
   <block id="665d63ee6d6e20839047b206c28ce868" category="paragraph">LUN의 콘텐츠에 영향을 주지 않고 호스트에서 LUN을 분리할 수 있습니다. 단, 클론을 분리하기 전에 연결을 끊으면 클론의 내용이 손실됩니다.</block>
@@ -2916,7 +2834,6 @@
   <block id="8c1f23f212262c3300e93f874826f6e5" category="paragraph">ONTAP Select 또는 Cloud Volumes ONTAP 플랫폼과 함께 SnapCenter를 사용하는 경우 SnapCenter 용량 기반 라이센스를 하나 이상 설치해야 합니다.</block>
   <block id="7497c6eb5b40c317a0e3ac59d973ce6b" category="list-text">SnapCenter 관리자로 로그인해야 합니다.</block>
   <block id="55f664ebb6051a6a8020142e125c7571" category="paragraph">NetApp 라이센스 파일(NLF)을 사용하여 라이센스를 추가하는 경우 라이센스 파일의 위치를 알아야 합니다.</block>
-  <block id="3e95c3ade0efd0b3c285dd4e09c3339d" category="paragraph">설정 페이지에서 다음 작업을 수행할 수 있습니다.</block>
   <block id="f13e95a655fb97423bd52082209d8781" category="list-text">라이센스를 추가합니다.</block>
   <block id="c2267a540cdece9a806b765d927ba8ef" category="list-text">라이센스 세부 정보를 보고 각 라이센스에 대한 정보를 빠르게 찾습니다.</block>
   <block id="8f6fed4fa1610c2a997789b9a9a24e26" category="list-text">라이센스 용량을 업데이트하거나 임계값 알림 설정을 변경하는 등 기존 라이센스를 대체하려는 경우 라이센스를 수정합니다.</block>
@@ -2982,7 +2899,6 @@
   <block id="7e20d471144b1bff4e1f5d953e05ed15" category="paragraph">사용자 이름</block>
   <block id="95229c0e9bafe7503c923ea611608947" category="list-text">둘 이상의 역할이 할당된 경우 역할 상자에서 이 로그인 세션에 사용할 역할을 선택합니다.</block>
   <block id="99ce0efec833deb9d7875447b4055c4c" category="paragraph">로그인한 후 현재 사용자 및 관련 역할이 SnapCenter의 오른쪽 상단에 표시됩니다.</block>
-  <block id="0ea5b2b898d405eb396cfd33dc0280d0" category="paragraph">대시보드 * 페이지가 표시됩니다.</block>
   <block id="f24f841da2cc66fbc4e0a6f2c40b72db" category="paragraph">사이트에 연결할 수 없다는 오류로 인해 로깅이 실패하는 경우 SSL 인증서를 SnapCenter에 매핑해야 합니다.<block ref="69ff6e8027daf64e80eeddc397d64517" category="inline-link-rx"></block></block>
   <block id="d3e5cee34eb3f13b87152af755031a7c" category="paragraph">SnapCenter 서버에 RBAC 사용자로 처음으로 로그인한 후 리소스 목록을 새로 고칩니다.</block>
   <block id="1090b062786e635709586a0e23204d98" category="paragraph">SnapCenter에서 지원할 신뢰할 수 없는 Active Directory 도메인이 있는 경우 신뢰할 수 없는 도메인의 사용자에 대한 역할을 구성하기 전에 해당 도메인을 SnapCenter에 등록해야 합니다. <block ref="52762f74bd777af3d07699869e563415" category="inline-link-macro-rx"></block></block>
@@ -3184,11 +3100,9 @@
   <block id="3a6c1a3709f142da8374f25ad7aabeda" category="section-title">SnapManager Suite 라이센스가 설치되어 있는지 확인합니다</block>
   <block id="b7bbc11caf1a65c77460de0469d40f7d" category="paragraph">SnapCenter GUI를 사용하면 SnapManager 제품군 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있는지 여부를 확인하고 SnapManager 제품군 라이센스가 필요할 수 있는 스토리지 시스템을 식별할 수 있습니다. SnapManager 제품군 라이센스는 AFF 및 FAS SVM이나 운영 스토리지 시스템의 클러스터에만 적용됩니다.</block>
   <block id="6aa5717c99b34de9980debfbe3c6fa76" category="admonition">컨트롤러에 SnapManager Suite 라이센스가 이미 있는 경우 SnapCenter 표준 컨트롤러 기반 라이센스 권한이 자동으로 제공됩니다. SnapManager 라이센스 및 SnapCenter 표준 컨트롤러 기반 라이센스 이름은 서로 바꿔서 사용되지만 동일한 라이센스를 나타냅니다.</block>
-  <block id="d4f4bf7c0fccc84de2f6f808b0187018" category="list-text">스토리지 시스템 페이지의 * 유형 * 드롭다운에서 추가된 모든 SVM 또는 클러스터를 표시할지 여부를 선택합니다.</block>
   <block id="9ba45610f0250c3f3d93d968194d341c" category="list-text">추가된 모든 SVM을 보려면 * ONTAP SVM * 을 선택합니다.</block>
   <block id="91fd94b5750743b0b4db66d235c0cab9" category="list-text">추가된 모든 클러스터를 보려면 * ONTAP 클러스터 * 를 선택합니다.</block>
   <block id="784f9d2e91aebe7dc2a98209e667372a" category="paragraph">클러스터 이름을 클릭하면 클러스터에 포함된 모든 SVM이 스토리지 가상 시스템 섹션에 표시됩니다.</block>
-  <block id="ec0421929fd2fe5b362b05571f15b516" category="list-text">스토리지 연결 * 목록에서 컨트롤러 라이센스 열을 찾습니다.</block>
   <block id="56ea331cb0dea9dc3bddc3e0e2f3ef88" category="paragraph">컨트롤러 라이센스 열에는 다음 상태가 표시됩니다.</block>
   <block id="2522d4d4da08f9de2686d2c18e41a94b" category="list-text"><block ref="da9849daa2aa04218f87948a7256713b" category="inline-image-macro-rx" type="image"></block> SnapManager Suite 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있음을 나타냅니다.</block>
   <block id="3064686d0324adfa86cb183026ea8a66" category="list-text"><block ref="355b5886443669e7ad5ff1741a77218f" category="inline-image-macro-rx" type="image"></block> SnapManager Suite 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있지 않음을 나타냅니다.</block>
@@ -3354,7 +3268,6 @@
   <block id="fee0bec9fecb6576229640dcf9eec620" category="paragraph">SnapCenter에서 호스트를 제거하면 SnapCenter는 호스트를 제거하기 전에 호스트에 있는 모든 플러그인 패키지를 제거합니다.</block>
   <block id="cd9cae3233179ab0aa5b93a449869d50" category="list-text">SnapCenter GUI는 한 번에 하나의 호스트에서 플러그인을 제거합니다.</block>
   <block id="e4b51b04ea7a4e9b027ffb18024a9938" category="paragraph">SnapCenter GUI를 사용하는 경우 한 번에 하나의 호스트에서만 플러그인을 제거할 수 있습니다. 그러나 여러 제거 작업을 동시에 실행할 수 있습니다.</block>
-  <block id="7d9f81373d94c40ed01611d1c4047b55" category="paragraph">또한 _Uninstall-SmHostPackage_cmdlet 및 필수 매개 변수를 사용하여 여러 호스트에서 플러그인을 제거할 수도 있습니다. cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block>.</block>
   <block id="a4ad00e40c8d026de37f699c1cdc43f2" category="admonition">SnapCenter 서버가 설치된 호스트에서 Windows용 SnapCenter 플러그인 패키지를 제거하면 SnapCenter 서버 설치가 손상됩니다. SnapCenter 서버가 더 이상 필요하지 않은 경우가 아니면 Windows용 SnapCenter 플러그인 패키지를 제거하지 마십시오.</block>
   <block id="b431698bc085bcde968e1e3d9582578a" category="list-text">관리 호스트 페이지에서 플러그인 또는 플러그인 패키지를 제거할 호스트를 선택합니다.</block>
   <block id="9e8fa339338bb378f91b2bc7b281c6c6" category="list-text">제거하려는 플러그인 옆에 있는 * 제거 * &gt; * 제출 * 을 클릭합니다.</block>
@@ -3395,7 +3308,6 @@
   <block id="c1fb7c552ac7beaf17dc346fda22eff6" category="list-text">리소스 그룹을 제거하면 연결된 모든 스케줄도 제거됩니다.</block>
   <block id="622c9e28dad13fa5c04d47d33d343831" category="list-text">호스트에 다른 호스트와 공유되는 리소스 그룹이 있고 호스트를 삭제하는 경우 리소스 그룹도 삭제됩니다.</block>
   <block id="759ef57c3be2a273728558ce141e699a" category="list-text">사용 중단되거나 연결할 수 없는 플러그인 호스트를 제거하려면 _Remove-SmHost_cmdlet을 사용해야 합니다.</block>
-  <block id="6a8d52a8ff6ee487e051578b6f0aec34" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block></block>
   <block id="40b2be8df06289f2b15c3ba4ee7adb9d" category="list-text">호스트를 제거하는 데 필요한 시간은 백업 수와 보존 설정에 따라 달라집니다. 이는 각 컨트롤러에서 스냅샷 복사본이 삭제되고 메타데이터가 정리되기 때문입니다.</block>
   <block id="5d892beace7b1624b071044ece982dcc" category="list-text">제거할 호스트를 선택한 다음 * 제거 * 를 클릭합니다.</block>
   <block id="19355742858cf70570e1a01c80a490ab" category="list-text">Oracle RAC 클러스터의 경우 클러스터의 모든 호스트에서 SnapCenter 소프트웨어를 제거하려면 * 클러스터의 모든 호스트 포함 * 을 선택합니다.</block>
@@ -3437,7 +3349,6 @@
   <block id="414ff662e83e18f999457703c274be4b" category="paragraph">SVM에 상주하는 SMB3 공유에 연결된 게스트 시스템입니다</block>
   <block id="8c86f52713133502cb75e1adb8926660" category="paragraph">대기열에 있는 클론 작업을 취소할 수 있습니다.</block>
   <block id="bde3c82af55c53b214a27ef87c921a0d" category="paragraph">클론 작업을 취소하려면 SnapCenter 관리자 또는 작업 소유자로 로그인해야 합니다.</block>
-  <block id="a1164ca63e0846b4122478c48a4e7eb7" category="list-text">Monitor 페이지 또는 Activity 창에서 대기 중인 클론 작업을 취소할 수 있습니다.</block>
   <block id="fd3939a03847d5e7c9cad69eadccd5ea" category="list-text">실행 중인 클론 작업은 취소할 수 없습니다.</block>
   <block id="2f49986c4883da98bbe6207da84c7958" category="list-text">SnapCenter GUI, PowerShell cmdlet 또는 CLI 명령을 사용하여 대기 중인 클론 작업을 취소할 수 있습니다.</block>
   <block id="ae814120fc24f0ac821b8f45c0995ad3" category="list-text">역할을 만드는 동안 이 역할의 모든 구성원이 다른 구성원 개체 * 를 볼 수 있고 사용자\그룹 페이지에서 작동할 수 있는 경우 해당 역할을 사용하는 동안 다른 구성원의 대기 중인 클론 작업을 취소할 수 있습니다.</block>
@@ -3465,7 +3376,6 @@
   <block id="0fa0071d4364b9114c15a5d2758f2577" category="inline-link">ONTAP 9 논리적 스토리지 관리 가이드</block>
   <block id="c2ba780614c613756fa4439bc5df6c19" category="list-text">클론 분할 작업 제한에 대한 자세한 내용은 을 참조하십시오<block ref="3ae98799f9586e965a749204c2b3e8f9" category="inline-link-rx"></block>.</block>
   <block id="36a1ea715fb14810ed7b65454d89a74d" category="list-text">스토리지 시스템의 볼륨 또는 애그리게이트는 온라인 상태인지 확인합니다.</block>
-  <block id="e8d1ebda0ea7e91fbcbdfcca5543062f" category="list-text">Resources * 페이지의 View 목록에서 적절한 옵션을 선택합니다.</block>
   <block id="8edd4fe327b1637885140852a58cc272" category="paragraph">성능을 대폭 향상</block>
   <block id="f6886255755dd305e56a1cf9fcf3c5ee" category="paragraph">파일 시스템의 경우</block>
   <block id="efcc8219675b74be2ea4ec68fc2b81f2" category="paragraph">보기 목록에서 * 경로 * 를 선택합니다.</block>
@@ -3493,7 +3403,6 @@
   <block id="f46b2f71b2fe9da7f4e43792fb0b9b85" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 및 cmdlet 참조 정보에 PowerShell cmdlet에 대한 자세한 정보가 포함되어 있습니다.<block ref="62a3cd23c3c7b74965b1f4da6087788f" category="inline-link-rx"></block>.</block>
   <block id="4580f4b818b00829ad833fee80f6f773" category="summary">리소스 그룹은 호스트의 리소스 모음입니다. 리소스 그룹에 대한 백업 작업은 리소스 그룹에 정의된 모든 리소스에 대해 수행됩니다.</block>
   <block id="dbc89dfae1c6c8ad4eb43878b9171ca6" category="doc">리소스 그룹을 백업합니다</block>
-  <block id="2a5e924f8834eab73ee80f3787cd9bd9" category="paragraph">리소스 그룹은 * Resources * 페이지에서 필요에 따라 백업할 수 있습니다. 리소스 그룹에 정책이 연결되어 있고 스케줄이 구성되어 있는 경우 스케줄에 따라 백업이 자동으로 수행됩니다.</block>
   <block id="21364d4ce43113190e1c8a9ca29e8c66" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 을 클릭하여 리소스 그룹을 검색할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>을 클릭한 다음 태그를 선택합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="38daee81aaf3af99133cf03d753b6a86" category="list-text">여러 정책을 리소스 그룹에 연결한 경우 * Policy * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.</block>
   <block id="bb24de3098becb559d31066692208382" category="summary">SnapCenter를 사용하여 SAP HANA 데이터베이스 리소스를 백업하기 전에 백업할 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다. 백업 정책은 백업을 관리, 예약 및 유지하는 방법을 제어하는 규칙의 집합입니다.</block>
@@ -3514,11 +3423,9 @@
   <block id="6dfee293c05174bbd44cb5148876cd2b" category="admonition">리소스 그룹을 생성하는 동안 백업 작업의 스케줄(시작 날짜, 종료 날짜 및 빈도)을 지정할 수 있습니다. 따라서 동일한 정책 및 백업 빈도를 공유하는 리소스 그룹을 생성할 수 있을 뿐 아니라 각 정책에 서로 다른 백업 스케줄을 할당할 수도 있습니다.</block>
   <block id="b093b4eff25852e5f19297a922c5587f" category="list-text">사용자 지정 백업 설정 * 섹션에서 플러그인에 전달할 특정 백업 설정을 키 값 형식으로 제공합니다.</block>
   <block id="fc757224d0f11cae40cba577a1aa87f2" category="paragraph">플러그인으로 전달할 여러 키 값을 제공할 수 있습니다.</block>
-  <block id="c22ec2402b480dc8cb9b512d970791f3" category="list-text">Retention * 페이지에서 백업 유형에 대한 보존 설정과 백업 유형 페이지에서 선택한 스케줄 유형을 지정합니다.</block>
   <block id="7c180945c3efa4def592180bfeae77c5" category="admonition">스냅샷 복사본 기반 백업의 경우 SnapVault 복제를 사용하도록 설정하려는 경우 보존 수를 2 이상으로 설정해야 합니다. 보존 횟수를 1로 설정하면 새 스냅샷 복사본이 타겟으로 복제될 때까지 첫 번째 스냅샷 복사본이 SnapVault 관계의 참조 스냅샷 복사본이므로 보존 작업이 실패할 수 있습니다.</block>
   <block id="c0ab35de65d78830f03751afe7a38d7b" category="admonition">SAP HANA 시스템 복제의 경우 SAP HANA 시스템의 모든 리소스를 하나의 리소스 그룹에 추가하는 것이 좋습니다. 이렇게 하면 올바른 수의 백업이 유지됩니다.</block>
   <block id="a6be6f24e838a4da069bddb143958a11" category="admonition">SAP HANA 시스템 복제의 경우, 생성된 총 스냅샷 복사본은 리소스 그룹에 대한 보존 세트와 같습니다. 가장 오래된 스냅샷 복사본을 제거할 때는 가장 오래된 스냅샷 복사본이 있는 노드를 기반으로 합니다. 예를 들어, SAP HANA 시스템 복제 운영 및 SAP HANA 시스템 복제 보조 서버가 있는 리소스 그룹의 경우 보존 기간이 7로 설정됩니다. SAP HANA 시스템 복제 운영 및 SAP HANA 시스템 복제 2차 복제를 포함하여 한 번에 최대 7개의 스냅샷 복사본을 생성할 수 있습니다.</block>
-  <block id="0ed8618baf349f1ed78f131760d15112" category="list-text">스냅샷 복사본 기반 백업의 경우 * Replication * 페이지에서 복제 설정을 지정합니다.</block>
   <block id="b1b35a317e8c296440243c1d7986c039" category="paragraph">ONTAP의 보호 관계가 미러와 볼트 유형이고 이 옵션만 선택한 경우, 운영 스토리지에 생성된 스냅샷 복사본이 대상으로 전송되지 않고 대상에 나열됩니다. 복원 작업을 수행하기 위해 대상에서 이 스냅샷 복사본을 선택하면 선택한 볼트된/미러된 백업 오류 메시지에 대해 보조 위치를 사용할 수 없습니다. 라는 메시지가 표시됩니다.</block>
   <block id="dfc2bb18d15f87135d39c7efb3d45284" category="admonition">보조 스토리지에 대한 ONTAP의 SnapMirror 보존 정책을 구성하면 보조 스토리지에서 스냅샷 복사본의 최대 제한에 도달하지 않도록 해야 합니다.</block>
   <block id="a02dc7342a190de6a5009f0c2e71d869" category="summary">SAP HANA 데이터베이스에서 데이터 보호 작업을 수행하려면 HDB 사용자 저장소 키 및 HDBSQL OS 사용자를 구성해야 합니다.</block>
@@ -3527,13 +3434,10 @@
   <block id="19231ec7746e87de717dc81f2ffc3364" category="list-text">데이터베이스를 보호하거나 리소스 그룹에 추가하여 데이터 보호 작업을 수행하려면 HDB 보안 사용자 저장소 키 및 HDB SQL OS 사용자를 구성해야 합니다.</block>
   <block id="eebed0ac34228e0e0f38c9d860604c29" category="list-text">시스템 데이터베이스에 액세스하려면 HDB SQL OS 사용자를 구성해야 합니다. HDB SQL OS 사용자가 테넌트 데이터베이스에만 액세스하도록 구성된 경우 검색 작업이 실패합니다.</block>
   <block id="883766d38a60b014b1f295ce741d2078" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 SnapCenter Plug-in for SAP HANA Database 를 선택합니다.</block>
-  <block id="d35fc71270cb63828a7ed87684dbed4e" category="list-text">Resources * 페이지의 * View * 목록에서 리소스 유형을 선택합니다.</block>
   <block id="214914d9549015d63d4b86758e66e1aa" category="list-text">(선택 사항) 을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 호스트 이름을 선택합니다.</block>
   <block id="e6b04dca8731f73a6232df543bed1168" category="paragraph">그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="39e3c69c6f9d80e017de1f541e1670ca" category="list-text">데이터베이스를 선택한 다음 * 데이터베이스 구성 * 을 클릭합니다.</block>
-  <block id="3ebbb68ca41bdc76cf67e74151bc7877" category="list-text">데이터베이스 설정 구성 * 섹션에서 HDB 보안 사용자 저장소 키를 입력합니다.</block>
   <block id="41119aa704f7776e425d802cc1efdd26" category="admonition">플러그인 호스트 이름이 표시되고 HDB SQL OS 사용자가 자동으로 &lt;sid&gt; adm에 채워집니다.</block>
-  <block id="a264bbbc291d85528719be6062fca581" category="paragraph">Topology * 페이지에서 데이터베이스 구성을 수정할 수 있습니다.</block>
   <block id="8896e4ff5c38407b9b105f9412d0f746" category="doc">SAP HANA 데이터베이스용 SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템을 준비하십시오</block>
   <block id="75a7c9b2e73f5c1cc5286ea02330c1bd" category="doc">PowerShell cmdlet을 사용하여 SAP HANA 데이터베이스 백업 클론 생성</block>
   <block id="7efd97c2a4471de87de7e99332374e4a" category="list-text">Get-SmBackup cmdlet을 사용하여 클론 작업을 수행할 백업을 검색합니다.</block>
@@ -3568,7 +3472,6 @@
   <block id="9b09db11200fb787ad2c7a490fdd0a19" category="admonition">표시된 백업 수에는 보조 스토리지에서 삭제된 백업이 포함됩니다. 예를 들어 정책을 사용하여 6개의 백업을 생성하여 4개의 백업만 보존한 경우 표시되는 백업 수는 6입니다.</block>
   <block id="7debb54b4c31ab5f29560ac81dab00fe" category="admonition">미러 볼트 유형 볼륨에 있는 버전에 따라 유연한 미러 백업의 클론은 토폴로지 뷰에 표시되지만 토폴로지 뷰에 있는 미러 백업 횟수에는 버전에 따라 유연하게 백업할 수 있는 백업이 포함되지 않습니다.</block>
   <block id="41d38b2eca9ea765772bfdd8438f72b8" category="admonition">SAP HANA 시스템 복제 운영 리소스의 경우 복원 및 삭제 작업이 지원되며 2차 리소스의 경우 클론 작업이 지원됩니다.</block>
-  <block id="6379898c45630ea116a14e633a9211e1" category="paragraph">Topology * 페이지에서 선택한 리소스 또는 리소스 그룹에 사용할 수 있는 모든 백업 및 클론을 볼 수 있습니다. 이러한 백업 및 클론의 세부 정보를 확인한 다음 이를 선택하여 데이터 보호 작업을 수행할 수 있습니다.</block>
   <block id="0aa6b4b4509f20915de241ab3125773b" category="list-text">요약 카드 * 를 검토하여 기본 및 보조 스토리지에서 사용할 수 있는 백업 및 클론 수를 요약합니다.</block>
   <block id="7f6ba439286f41d27f288dd7335169c5" category="paragraph">요약 카드 * 섹션에는 파일 기반 백업, 스냅샷 복사본 백업 및 클론의 총 수가 표시됩니다.</block>
   <block id="8decbf1aae0caf98d11e0d7812d18fa5" category="list-text">테이블에서 백업을 선택한 다음 데이터 보호 아이콘을 클릭하여 복원, 클론 복제 및 삭제 작업을 수행합니다.</block>
@@ -3581,8 +3484,6 @@
   <block id="e15be16f18110aa6552081897dc73df4" category="list-text">remove-smbackup cmdlet을 사용하여 복제된 리소스의 백업을 삭제합니다.</block>
   <block id="5e3250069d03b2e8ebc3f52f29980a1b" category="list-text">remove-smresourcegroup cmdlet을 사용하여 복제된 리소스의 리소스 그룹을 삭제합니다.</block>
   <block id="660aad66a7be47efbd614fddb4ff93b8" category="list-text">remove-smprotectresource cmdlet을 사용하여 복제된 리소스의 보호를 제거합니다.</block>
-  <block id="73ce5c7870240c8849005fb9e0d7d1ed" category="list-text">리소스 * 페이지에서 상위 리소스를 선택합니다.</block>
-  <block id="cadb4e62a7f8b83ccb1bfab17c30b98f" category="list-text">Manage Copies * 뷰에서 운영 또는 2차(미러링 또는 복제) 스토리지 시스템에서 클론을 선택합니다.</block>
   <block id="90021265060d6610a36239d59c25b4e1" category="list-text">클론을 선택한 다음 을 클릭합니다 <block ref="097a6d0ab39a212263c3129e9214fa08" category="inline-image-macro-rx" type="image"></block> 를 클릭하여 클론을 삭제하거나 을 클릭합니다 <block ref="4e76ccc6d666f337d0615fe61d91903b" category="inline-image-macro-rx" type="image"></block> 를 눌러 클론을 분할합니다.</block>
   <block id="59c6ba47781a041c15edfebc84472167" category="summary">SnapCenter를 사용하면 SAP HANA 데이터베이스에 대해 다양한 유형의 복구 작업을 수행할 수 있습니다.</block>
   <block id="9d7dc02e84845aa22657a3f1578de42e" category="doc">SAP HANA 데이터베이스에 지원되는 복구 작업의 유형입니다</block>
@@ -3596,7 +3497,6 @@
   <block id="61686c99da00981a4798e50d18088b64" category="list-text">복원할 리소스 또는 리소스 그룹에 대해 현재 진행 중인 백업 작업을 취소해야 합니다.</block>
   <block id="84f9db11567ac33c4869aa6d75a3145c" category="list-text">SnapCenter에서 파일 기반 백업 복사본을 복원할 수 없습니다.</block>
   <block id="e32067064fc1cac141f0e078ce44a514" category="list-text">SnapCenter 4.3으로 업그레이드한 후 SnapCenter 4.2에서 수행된 백업을 복원할 수 있지만 복구할 수는 없습니다. SnapCenter 4.2에서 수행된 백업을 복구하려면 SnapCenter 외부에 있는 HANA Studio 또는 HANA 복구 스크립트를 사용해야 합니다.</block>
-  <block id="ad3693cf83b309e3ddceca1c27c69a03" category="list-text">리소스 * 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.</block>
   <block id="efada42e2701f3b873f103dd72d2f9d2" category="paragraph">리소스는 유형, 호스트, 관련 리소스 그룹 및 정책, 상태와 함께 표시됩니다.</block>
   <block id="dbe6efc32c385295f1a9ba3e243e0be2" category="paragraph">자원이 보호되지 않으면 전체 상태 열에 "보호되지 않음"이 표시됩니다. 이는 리소스가 보호되지 않거나 다른 사용자가 리소스를 백업했다는 것을 의미할 수 있습니다.</block>
   <block id="8472a70cb1c7c9b05987720df3eec96a" category="list-text">자원을 선택하거나 자원 그룹을 선택한 다음 해당 그룹에서 자원을 선택합니다.</block>
@@ -3608,9 +3508,7 @@
   <block id="57235293b58bcee8f885f03c7cc2bf98" category="list-text">리소스 유형이 LUN이면 전체 LUN이 복구됩니다.</block>
   <block id="e57982197dd9cb2dade8d5ebc3ffa4ab" category="paragraph">여러 LUN을 선택할 수 있습니다.</block>
   <block id="5c18d7aa6631fa3200cd47964b878e6b" category="admonition">All * 을 선택하면 볼륨, Qtree 또는 LUN의 모든 파일이 복원됩니다.</block>
-  <block id="5a9e4ec99f70663844651dab012833c7" category="list-text">Pre ops * 페이지에서 복구 작업을 수행하기 전에 실행할 사전 복원 및 마운트 해제 명령을 입력합니다.</block>
   <block id="fcf4ecdfd88713c0d570a4f8e0b97580" category="paragraph">자동 검색 리소스에 대해서는 마운트 해제 명령을 사용할 수 없습니다.</block>
-  <block id="08a5a68003231c7d43dedf7468830f06" category="list-text">Post ops * 페이지에서 복구 작업을 수행한 후 실행할 mount 및 post restore 명령을 입력합니다.</block>
   <block id="acba32a20bc1d94f470c6a5492751764" category="paragraph">자동 검색 리소스에 대해서는 마운트 명령을 사용할 수 없습니다.</block>
   <block id="53d187685aedd87c48a1c968cc264e39" category="paragraph">또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. SMTP는 * 설정 * &gt; * 글로벌 설정 * 페이지에서도 구성해야 합니다.</block>
   <block id="8a9acf145456ddf488e58afbf2c913a1" category="summary">리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 데이터베이스 및 비 데이터 볼륨입니다. 사용 가능한 SAP HANA 데이터베이스를 검색하고 나면 이러한 리소스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있습니다.</block>
@@ -3619,10 +3517,8 @@
   <block id="675eca4beb722810465328bbd683d9dd" category="list-text">Linux 호스트에서 HDB 보안 사용자 저장소 키 및 HDB SQL OS 사용자를 구성해야 합니다.</block>
   <block id="49e4d875540c673c8cf54539ae691bd3" category="list-text">HDB 사용자 저장소 키를 SID adm 사용자로 구성해야 합니다. 예를 들어, SID가 A22인 HANA 시스템의 경우 HDB 사용자 저장소 키는 a22adm 으로 구성해야 합니다.</block>
   <block id="93f2d6a1a85e6dc485df261b08b8eabb" category="list-text">SAP HANA 데이터베이스용 SnapCenter 플러그인은 RDM/VMDK 가상 환경에 상주하는 리소스의 자동 검색을 지원하지 않습니다. 데이터베이스를 수동으로 추가하는 동시에 가상 환경에 대한 스토리지 정보를 제공해야 합니다.</block>
-  <block id="c30af1b5f5aa663adb511ea3cc91349a" category="paragraph">플러그인을 설치하면 해당 Linux 호스트의 모든 리소스가 자동으로 검색되어 * Resources * 페이지에 표시됩니다.</block>
   <block id="a9d0e12f10920c999cb78960286bd82a" category="paragraph">자동으로 검색된 리소스는 수정하거나 삭제할 수 없습니다.</block>
   <block id="ea6799b398e3200b6531e1aa5a544d0c" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 SAP HANA 데이터베이스용 플러그인을 선택합니다.</block>
-  <block id="e8bf60be8e57f50d1f47ed903a286151" category="list-text">Resources * 페이지의 View 목록에서 리소스 유형을 선택합니다.</block>
   <block id="275739dcbd0826cc4a0ad3c63d35359a" category="list-text">(선택 사항) * 를 클릭합니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름을 선택합니다.</block>
   <block id="811422b4eb759583a4051504db293f64" category="paragraph">그런 다음 * 를 클릭할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
   <block id="0f034106893faef4643a4f2e45058c52" category="list-text">리소스 새로 고침 * 을 클릭하여 호스트에서 사용 가능한 리소스를 검색합니다.</block>
@@ -3653,7 +3549,6 @@
   <block id="e4a66fdeb97530f93b6abd40f37cabf6" category="list-text">백업 일정(백업을 수행할 정확한 시기</block>
   <block id="99cfce1788abdce92fe7f446ec8d1da4" category="paragraph">백업 스케줄은 리소스 또는 리소스 그룹 구성의 일부입니다. 예를 들어 주별 백업에 대한 정책이 구성된 리소스 그룹이 있는 경우 매주 목요일 오후 10시에 백업하도록 스케줄을 구성할 수 있습니다</block>
   <block id="28fcd30ab7740350640e0c975b072b39" category="doc">SAP HANA 데이터베이스 클론 작업을 모니터링합니다</block>
-  <block id="2c148096dce0a71b6150c9d7ea2850b6" category="summary">리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 데이터베이스 및 비 데이터 볼륨입니다. SAP HANA 데이터베이스 플러그인용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 SAP HANA 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
   <block id="d63d0f9078f63941d9f67771c5293aac" category="doc">Linux 호스트에서 리소스 자동 검색</block>
   <block id="916fc195781ef467aa61050483fa1044" category="paragraph">다음 SAP HANA 리소스에 대해 자동 검색이 지원됩니다.</block>
   <block id="1fd4f4fbe0be539c9586a7b058126eda" category="list-text">단일 컨테이너</block>
@@ -3723,10 +3618,7 @@
   <block id="9e869fca025d68642fcd561a55b8416a" category="doc">SAP HANA 데이터베이스용 SnapCenter 플러그인이 정합성 보장 그룹 스냅샷 복사본을 사용하는 방법</block>
   <block id="cda7be8fe8913527bfa13f746d857c84" category="paragraph">스토리지 컨트롤러가 스냅샷 복사본을 일관되게 그룹화할 때까지 대기 시간을 지정할 수도 있습니다. 사용 가능한 대기 시간 옵션은 * 긴급 *, * 보통 * 및 * 완화된 * 입니다. 또한 일관된 그룹 스냅샷 복사본 작업 중에 WAFL(Write Anywhere File Layout) 동기화를 활성화 또는 비활성화할 수 있습니다. WAFL 동기화는 일관성 그룹 스냅샷 복사본의 성능을 향상시킵니다.</block>
   <block id="2cda512470ebd52d3c5ba685f87bb1fb" category="paragraph">SAP HANA 시스템 복제 백업을 생성하려면 SAP HANA 시스템의 모든 리소스를 하나의 리소스 그룹에 추가하는 것이 좋습니다. 이렇게 하면 Takeover-failback 모드 중에 원활한 백업이 보장됩니다.</block>
-  <block id="7a94744cb3d378d57fb3df73e076ccd9" category="list-text">Resources * 페이지에서 * New Resource Group * 을 클릭합니다.</block>
   <block id="f575e6fdc603f5206dc21a87a354406b" category="paragraph">예를 들어 customtext_resource group_policy_hostname 또는 resource group_hostname을 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
-  <block id="7ed44c10eedc01fc94db833a1a93d545" category="list-text">리소스 * 페이지의 * 리소스 유형 * 드롭다운 목록에서 호스트 이름을 선택하고 리소스 유형 * 드롭다운 목록에서 리소스 유형을 선택합니다.</block>
-  <block id="fa2071eeb3539e3bb8c373e8cdcb9fff" category="list-text">응용 프로그램 설정 * 페이지에서 다음을 수행합니다.</block>
   <block id="ed8207a67488af27356940d5feaf9f82" category="paragraph">스냅샷 복사 작업이 완료될 때까지 대기 시간을 지정하려면 * 긴급 *, * 중간 * 또는 * 완화된 * 을 선택합니다.</block>
   <block id="0d7285674023c3795c1345455bf18c08" category="list-text">스크립트 * 화살표를 클릭하고 일시 중지, 스냅샷 복사 및 정지 해제 작업에 대한 사전 및 사후 명령을 입력합니다. 장애 발생 시 종료하기 전에 실행할 사전 명령을 입력할 수도 있습니다.</block>
   <block id="775b811b88d8fc4fc28b0d206dcc4c05" category="list-text">사용자 지정 구성 * 화살표를 클릭하고 이 리소스를 사용하는 모든 데이터 보호 작업에 필요한 사용자 지정 키 값 쌍을 입력합니다.</block>
@@ -3742,7 +3634,6 @@
   <block id="d1cb961e923b4db159abec1766c6b4a9" category="admonition">SnapCenter 4.2 및 이전 버전의 리소스와 연결된 백업은 보존 기간이 만료될 때까지 보존되어야 합니다. 보존 기간이 만료된 후에는 이전 MDC 리소스를 삭제하고 자동으로 검색된 새 MDC 리소스를 계속 관리할 수 있습니다.</block>
   <block id="362399f498ca9970e978590a1a110ca0" category="paragraph">'기존 MDC 리소스'는 SnapCenter 4.2 이전 릴리즈에서 수동으로 추가한 플러그인 호스트의 MDC 리소스입니다.</block>
   <block id="3330b4f2854f9b1e778b516e0e6e3546" category="paragraph">다음 단계를 수행하여 SnapCenter 4.3에서 검색된 새 리소스를 데이터 보호 작업에 사용할 수 있습니다.</block>
-  <block id="60e64b8db95c364e645b2976a26d8886" category="list-text">Resources * 페이지에서 이전 SnapCenter 릴리스에 추가된 백업이 있는 이전 MDC 리소스를 선택하고 Topology 페이지에서 "유지보수 모드"로 배치합니다.</block>
   <block id="86737276597e20e473f024ae6e4e193f" category="paragraph">자원이 자원 그룹의 일부인 경우 자원 그룹을 "유지보수 모드"로 설정합니다.</block>
   <block id="a4b619e8c6563e533bbd1ec034445744" category="list-text">리소스 페이지에서 새 리소스를 선택하여 SnapCenter 4.3으로 업그레이드한 후 검색된 새 MDC 리소스를 구성합니다.</block>
   <block id="d1598cea691871a6e0560cde4f9d6739" category="paragraph">"'새 MDC 리소스'는 SnapCenter 서버와 플러그인 호스트를 4.3으로 업그레이드한 후 새로 발견된 MDC 리소스입니다. 새 MDC 리소스는 기존 MDC 리소스와 동일한 SID를 가진 리소스로 식별될 수 있으며, 지정된 호스트의 경우 빨간색 자물쇠 아이콘이 리소스 페이지에 표시됩니다.</block>
@@ -3753,7 +3644,6 @@
   <block id="14b1f939d4d6ad1f9002f584e1e54fa8" category="paragraph">예를 들어 기본 스냅샷 복사본의 보존 기간이 7일이고 보조 스냅샷 복사본의 보존 기간이 45일이고 45일이 지난 후 모든 백업을 삭제한 경우 리소스 그룹과 이전 MDC 리소스를 삭제해야 합니다.</block>
   <block id="7b61486d739fb4f1d37092b600cea0e2" category="paragraph"><block ref="7b61486d739fb4f1d37092b600cea0e2" category="inline-link-macro-rx"></block></block>
   <block id="d03608911fb0f378ca59b86a32adfb17" category="summary">SAP HANA 데이터베이스를 보호하려면 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하고 설정해야 합니다.</block>
-  <block id="56a0f778b7f57042bb66476d29945940" category="doc">SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치합니다</block>
   <block id="8eb6eae2f08f541d02277c6746c4fa05" category="image-alt">SAP HANA 설치 구성 워크플로우</block>
   <block id="624da959c6b9ec232f2bebd4c11e271a" category="summary">백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 SAP HANA 데이터베이스용 파일 기반 백업 및 스냅샷 복사본 기반 백업 유형을 지원합니다.</block>
   <block id="2a681580cba5d0bac1fe8b6665a6a47e" category="doc">지원되는 백업 유형입니다</block>
@@ -3791,7 +3681,6 @@
   <block id="66f7a0f8b4cefaf4a1ca75e479e31fb0" category="paragraph">리소스 그룹은 보호할 내용과 시간을 일 및 시간 측면에서 보호할 시기를 정의하는 것으로 생각합니다. 정책을 보호할 방법을 정의하는 것으로 생각해 보십시오. 예를 들어 모든 데이터베이스를 백업하는 경우 호스트에 있는 모든 데이터베이스를 포함하는 리소스 그룹을 생성할 수 있습니다. 그런 다음 리소스 그룹에 일별 정책과 시간별 정책이라는 두 가지 정책을 연결할 수 있습니다. 리소스 그룹을 생성하고 정책을 연결할 때 매일 전체 백업을 수행하도록 리소스 그룹을 구성할 수 있습니다.</block>
   <block id="6abd8b687a0e2a8c4da6b246a16a0af1" category="doc">Windows 호스트에서 SnapCenter SAP HANA 플러그인 서비스에 대한 CA 인증서를 구성합니다</block>
   <block id="d1dcb191b3293b8d153cab7dba108004" category="doc">자동 검색된 데이터베이스 백업을 복원 및 복구합니다</block>
-  <block id="abea7576d1134dcb25c42dae9f680f24" category="list-text">Restore Scope * 페이지에서 * Complete Resource * 를 선택하여 SAP HANA 데이터베이스의 구성된 데이터 볼륨을 복원합니다.</block>
   <block id="aed0e005a0f720897a30773614d980d7" category="admonition">전체 리소스 * (볼륨 복원 * 포함 또는 제외) 또는 * 테넌트 데이터베이스 * 를 선택할 수 있습니다.</block>
   <block id="1b5d71bcf3ad020a170874b19a197c5e" category="paragraph">사용자가 * 테넌트 데이터베이스 * 또는 * 전체 복원 * 옵션을 선택하면 여러 테넌트의 경우 SnapCenter 서버가 복구 작업을 지원하지 않습니다. 복구 작업을 수행하려면 HANA Studio 또는 HANA Python 스크립트를 사용해야 합니다.</block>
   <block id="328fe5af43dcf98de458cd96c45d01e5" category="list-text">전체 볼륨을 복원하려면 * Volume Revert * 를 선택합니다.</block>
@@ -3801,7 +3690,6 @@
   <block id="ebe1639cfdfd980b05c9bbb602656161" category="paragraph">이 옵션은 MDC 리소스에 대해서만 사용할 수 있습니다.</block>
   <block id="b8b567d4ba521c0d72dfa10acaf6a9b9" category="paragraph">복구 작업을 수행하기 전에 테넌트 데이터베이스를 중지해야 합니다.</block>
   <block id="679e8f8e6d58783d3d45ada3d981be8c" category="paragraph">테넌트 데이터베이스 * 옵션을 선택한 경우 HANA Studio를 사용하거나 SnapCenter 외부의 HANA 복구 스크립트를 사용하여 복구 작업을 수행해야 합니다.</block>
-  <block id="f616c1aab43ea9282e39066e6573b4be" category="list-text">복구 범위 * 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
   <block id="61a6d655671eebbd633c1d84fae09e17" category="cell">만약...</block>
   <block id="f654f76bbacca38edc3d879989de4ea2" category="paragraph">현재 시간에 최대한 가깝게 복구하기를 원합니다</block>
   <block id="143681b131b1ea111e96705771df0125" category="paragraph">Recover to Most Recent state * 를 선택합니다. 단일 컨테이너 리소스의 경우 하나 이상의 로그 및 카탈로그 백업 위치를 지정합니다.</block>
@@ -3820,7 +3708,6 @@
   <block id="849bcb85218ecd43e31afb01c169f4e2" category="paragraph">특정 데이터 백업으로 복구하려는 경우</block>
   <block id="25dd764b5903964c3cacf615a80377b4" category="paragraph">지정된 데이터 백업으로 복구 * 를 선택합니다.</block>
   <block id="1c69cfcc6b3635cc197c0e3104cbd69f" category="paragraph">복구하기를 원하지 않습니다</block>
-  <block id="256c1085f9fb36669b70768d14d8a8f2" category="paragraph">복구 없음 * 을 선택합니다. HANA Studio에서 수동으로 복구 작업을 수행해야 합니다.</block>
   <block id="22d76fd0449efcbebf22dc1d75c06808" category="paragraph">호스트와 플러그인이 모두 SnapCenter 4.3으로 업그레이드되고, 복구용으로 선택한 백업이 리소스를 변환 또는 자동 검색 리소스로 검색된 후에 수행된다는 전제 하에 SnapCenter 4.3으로 업그레이드한 후 수행된 백업만 복구할 수 있습니다.</block>
   <block id="e53ba889508b719f73b0223755d7a145" category="summary">SnapCenter를 사용하여 백업을 복제할 수 있습니다. 기본 또는 보조 백업에서 클론을 생성할 수 있습니다.</block>
   <block id="cc9ec1117ac60bf06e35d58497993679" category="doc">SAP HANA 데이터베이스 백업의 클론을 생성합니다</block>
@@ -3829,7 +3716,6 @@
   <block id="a297443b1c16f57079ed8452e38d60a4" category="list-text">타겟 클론 서버에는 타겟 클론 SID 필드에 제공되는 것과 동일한 SAP HANA 인스턴스 SID가 있어야 합니다.</block>
   <block id="e3c97b7280ee6648e1258a38646e21fe" category="paragraph">* 이 작업 정보 * 클론 분할 작업 제한에 대한 자세한 내용은 을 참조하십시오<block ref="3ae98799f9586e965a749204c2b3e8f9" category="inline-link-rx"></block>.</block>
   <block id="03217f5a3bcb2ad8ec13a7298d3c340e" category="paragraph">리소스는 유형, 호스트, 관련 리소스 그룹 및 정책, 상태와 같은 정보와 함께 표시됩니다.</block>
-  <block id="3eab92324c5705ee90e87f29c098297d" category="list-text">Location * 페이지에서 다음 작업을 수행합니다.</block>
   <block id="01b968d19930c6a09e89b9a532f5e28c" category="paragraph">플러그인 호스트입니다</block>
   <block id="b960252a9e8d3c5abdf0f620698a96f5" category="paragraph">클론을 마운트할 호스트와 플러그인이 설치된 호스트를 선택합니다.</block>
   <block id="209072f7b35f3ff691fd8faa61f3c0a8" category="paragraph">타겟 클론 SID</block>
@@ -3842,7 +3728,6 @@
   <block id="19ca9a39b837f0de2cd60194c3115a82" category="paragraph">LUN 프로토콜을 입력합니다. 이 옵션은 LUN 리소스 유형을 선택한 경우에만 사용할 수 있습니다.</block>
   <block id="4e783e8dfeae9de37071ca1aacd853de" category="paragraph">선택한 리소스가 LUN이고 2차 백업에서 클론을 생성하는 경우 타겟 볼륨이 나열됩니다. 단일 소스에 여러 대상 볼륨이 있을 수 있습니다.</block>
   <block id="d21ab82b42875e082ef4574c36d6c5e4" category="admonition">클론 복제 전에 iSCSI 이니시에이터 또는 FCP가 존재하고 대체 호스트에 구성 및 로그인되어 있는지 확인해야 합니다.</block>
-  <block id="2516fb414e835dfca0b69565d324572e" category="list-text">스크립트 * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="dc14b8500a0b854f9aa01d447cd6350b" category="admonition">이 스크립트는 플러그인 호스트에서 실행됩니다.</block>
   <block id="5d786448af7775a55478237de43bc63f" category="list-text">클론 작업 전후에 각각 실행해야 하는 사전 클론 또는 사후 클론 명령을 입력합니다.</block>
   <block id="7771886b7e2cd056f9cc9817d8f1b5aa" category="list-text">mount 명령을 입력하여 호스트에 파일 시스템을 마운트합니다.</block>
@@ -3854,8 +3739,6 @@
   <block id="9cd58488a30b1e2a8252c0303b4a18d2" category="list-text">SAP HANA 시스템 복제의 경우 해당 HANA 시스템의 모든 리소스를 하나의 리소스 그룹에 추가하고 리소스 그룹 백업을 수행하는 것이 좋습니다. 이렇게 하면 Takeover-failback 모드 중에 원활한 백업이 보장됩니다.</block>
   <block id="c539927559212f942e79e0c2201b67a7" category="paragraph"><block ref="6b4a21b0947273e0629d5408bc6d8cf2" category="inline-link-macro-rx"></block>.</block>
   <block id="debb5252d4104d6fc24f89b3d71bc23b" category="list-text">왼쪽 탐색 창의 드롭다운 목록에서 SAP HANA 데이터베이스용 SnapCenter 플러그인을 선택한 다음 * 리소스 * 를 클릭합니다.</block>
-  <block id="c6bcf44c06a6425665008adff19d93f5" category="list-text">리소스 * 페이지에서 * SAP HANA 데이터베이스 추가 * 를 클릭합니다.</block>
-  <block id="70c6e16d5846190bb939d8bf7dd65498" category="list-text">리소스 세부 정보 제공 * 페이지에서 다음 작업을 수행합니다.</block>
   <block id="0ae55e3aeda2ed34504cdb299750c35e" category="paragraph">리소스 유형</block>
   <block id="f87b54c1e1b36fd8fdf7fe10d53c8f8c" category="paragraph">리소스 유형을 입력합니다. 리소스 유형은 단일 컨테이너, 다중 테넌트 데이터베이스 컨테이너(MDC) 및 비 데이터 볼륨입니다.</block>
   <block id="be5ab51d888f9dacb41587c99306d7cc" category="paragraph">HANA 시스템 이름</block>
@@ -3870,7 +3753,6 @@
   <block id="99e729822359383d3878548f668ad032" category="paragraph">SAP HANA 시스템 복제의 경우 2차 사용자 키의 유효성이 검사되지 않습니다. 이는 테이크오버 중에 사용됩니다.</block>
   <block id="cee248575d109b963f54afafda4720a1" category="paragraph">HDBSQL OS 사용자</block>
   <block id="596bf9414108fb79d00ec3039e739625" category="paragraph">HDB 보안 사용자 저장소 키가 구성된 사용자 이름을 입력합니다. Windows의 경우 HDBSQL OS 사용자가 시스템 사용자여야 합니다. 따라서 시스템 사용자에 대해 HDB 보안 사용자 저장소 키를 구성해야 합니다.</block>
-  <block id="0fbb10965129ebd05e8097124e3c74fe" category="list-text">스토리지 공간 제공 * 페이지에서 스토리지 시스템을 선택하고 하나 이상의 볼륨, LUN 및 qtree를 선택한 다음 * 저장 * 을 클릭합니다.</block>
   <block id="266587454e01a92f0bfd85f3e920b6e9" category="paragraph">선택 사항: * 를 클릭할 수 있습니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>다른 스토리지 시스템에서 볼륨, LUN 및 qtree를 더 추가하는 아이콘</block>
   <block id="88b9a84562729de4f24eef1b144f1867" category="paragraph">데이터베이스는 SID, 플러그인 호스트, 관련 리소스 그룹 및 정책, 전체 상태와 같은 정보와 함께 표시됩니다</block>
   <block id="3f1fe53287c04e073da002e39b799896" category="paragraph">사용자에게 리소스에 대한 액세스 권한을 제공하려면 사용자에게 리소스를 할당해야 합니다. 따라서 사용자는 자신에게 할당된 자산에 대한 사용 권한이 있는 작업을 수행할 수 있습니다.</block>
@@ -3924,14 +3806,11 @@
   <block id="1dbedac9aa8fb16b0d7e3f4c912759fc" category="paragraph">백업은 HANA Studio에서 복구에 사용할 수 있습니다.</block>
   <block id="1c9948efe4bec2e09636b9c816bd9d20" category="summary">자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이지에서 자원을 백업할 수 있습니다.</block>
   <block id="7394e84832837e7d0dc503d85eb3f36c" category="doc">SAP HANA 데이터베이스 백업</block>
-  <block id="70ab3ce2a34a0f520c8fa87db36b484c" category="paragraph">리소스가 아직 리소스 그룹에 속하지 않은 경우 * Resources * 페이지에서 리소스를 백업할 수 있습니다.</block>
   <block id="8f0e9744b1000b3672d2bdcf50a74d27" category="list-text">스냅샷 복사본 기반 백업 작업의 경우 모든 테넌트 데이터베이스가 유효하고 활성 상태인지 확인합니다.</block>
   <block id="1f2a97d23c720f6f85620fac8ce92aaf" category="paragraph"><block ref="1f2a97d23c720f6f85620fac8ce92aaf" category="inline-link-macro-rx"></block></block>
   <block id="961e6abd0c7a72786d3641390a4dea5f" category="list-text">하나 이상의 테넌트 데이터베이스가 다운될 때 파일 기반 백업을 만들려면 HANA 속성 파일에서 'Set-SmConfigSettings' cmdlet을 사용하여 allow_file_based_backup_IFINACTIVE_Tenants_present 매개 변수를 * Yes * 로 설정합니다.</block>
   <block id="942d4608d2f485c3d83b2faf1e7746fc" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="30086a18cf21b3d909c213d70f40a693" category="inline-link-rx"></block></block>
-  <block id="df634e4a8189c12da5a0e7f86ea32a7a" category="list-text">리소스 * 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.</block>
   <block id="127c10f681ffba1b9fa91c9bf92bcbc8" category="paragraph">를 클릭합니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
-  <block id="a2ceaea5e91bc166223fe86769773755" category="list-text">리소스 * 페이지에서 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 을 선택한 다음 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="50ce6bc02d574c2cab1fc82a19854cf8" category="paragraph">"정합성 보장 그룹 스냅샷" 작업이 완료될 때까지 기다릴 여유가 없습니다</block>
   <block id="35d7ec08143354023f987fa79b9fde69" category="paragraph">스냅샷 복사 작업이 완료될 때까지 대기 시간을 지정하려면 * 긴급 *, * 중간 * 또는 * 완화된 * 을 선택합니다. 긴급 = 5초, 중간 = 7초, 휴식 = 20초</block>
   <block id="78bc1eb0c9c9c6c68e04d6b93f620e64" category="list-text">Quiesce, Snapshot copy 및 unquiesce 작업에 대한 사전 및 사후 명령을 실행하려면 * Scripts * 화살표를 클릭합니다.</block>
@@ -3940,7 +3819,6 @@
   <block id="2ca1729f14a40401626e0eaac1397926" category="paragraph">SnapCenter 를 사용하여 스토리지 수준의 스냅샷 복사본을 생성합니다</block>
   <block id="106e549635779a49f4846a54f63000c8" category="paragraph">SnapCenter: Windows용 플러그인을 사용하여 파일 시스템을 일관된 상태로 전환한 다음 스냅샷 복사본을 생성합니다</block>
   <block id="90334c9b6a705f8c6dafb182257f149b" category="paragraph">_policy_name_은 선택한 정책의 이름입니다.</block>
-  <block id="0136d9cf170cf20a4bd5dccd8dcfe7d2" category="list-text">백업 * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="7dfb69fb5ea21273d78d12733b1b3b4f" category="list-text">리소스에 여러 정책을 적용한 경우 * 정책 * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.</block>
   <block id="993d084476d90eaf8ecb0ad1a0a2f901" category="summary">호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. SAP HANA 데이터베이스용 SnapCenter 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다.</block>
   <block id="66cf3f797a37d99d37e260746f767101" category="doc">호스트를 추가하고 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하기 위한 사전 요구사항</block>
@@ -4060,19 +3938,13 @@
   <block id="cc468f296e7a5bc7997a52b53651958a" category="section-title">스토리지 시스템 구성을 수정합니다</block>
   <block id="526c3e78622bb977268ad1bf3b5f2556" category="paragraph">SnapCenter를 사용하여 사용자 이름, 암호, 플랫폼, 포트, 프로토콜 등을 변경하려는 경우 스토리지 시스템 구성을 수정할 수 있습니다. 제한 시간, 기본 IP 주소 또는 메시징 옵션.</block>
   <block id="d28b4e572980622fc72878ef5f647d4c" category="paragraph">개별 사용자 또는 그룹에 대한 스토리지 접속을 수정할 수 있습니다. 동일한 스토리지 시스템에 대한 사용 권한이 있는 하나 이상의 그룹에 속해 있는 경우 스토리지 접속 이름은 스토리지 시스템에 대한 사용 권한이 있는 각 그룹에 대해 한 번씩 스토리지 접속 목록에 여러 번 표시됩니다.</block>
-  <block id="065af6f1a4b5ac7c703032f60a54b60d" category="list-text">스토리지 시스템 페이지의 * 유형 * 드롭다운에서 다음 작업 중 하나를 수행합니다.</block>
   <block id="99aff68d95be06841052f1bae2cdc21d" category="cell">단계...</block>
   <block id="a1afc26d8475c94113936d6fce8706bc" category="paragraph">ONTAP SVM</block>
   <block id="11d0686b458c2dfcd2220b6c66d96241" category="paragraph">추가된 모든 SVM(스토리지 가상 시스템)을 확인하고 필요한 SVM 구성을 수정합니다.</block>
-  <block id="8bff83115b7323c0076a1270610ea70f" category="list-text">스토리지 연결 페이지에서 적절한 SVM 이름을 클릭합니다.</block>
-  <block id="cb68029858f507e30222b142ac09e17c" category="list-text">SVM이 클러스터에 속하지 않는 경우 스토리지 시스템 수정 페이지에서 사용자 이름, 암호, EMS 및 AutoSupport 설정, 플랫폼, 프로토콜, 포트, 시간 초과 등의 구성을 수정합니다. 및 기본 IP를 선택합니다.</block>
-  <block id="494029a975be6f2564d5d16289a890c2" category="list-text">SVM이 클러스터의 일부인 경우 Modify Storage System 페이지에서 * Manage SVM Independently * 를 선택하고 사용자 이름, 암호, EMS 및 AutoSupport 설정, 플랫폼, 프로토콜, 포트, 시간 초과 등의 구성을 수정합니다. 및 기본 IP를 선택합니다.</block>
   <block id="311435fbd18e706eb4448dba7d2c0d1d" category="paragraph">SVM을 독립적으로 관리되도록 수정한 후 클러스터를 통해 관리하려는 경우 SVM을 삭제하고 * ReDiscover * 를 클릭해야 합니다. SVM이 ONTAP 클러스터에 추가됩니다.</block>
   <block id="53cade5f9811dae531a130389ffc12dd" category="admonition">SnapCenter GUI에서 스토리지 시스템 암호를 업데이트할 경우 업데이트된 암호가 SMCore에 반영되지 않고 백업 작업이 실패하고 잘못된 자격 증명 오류가 발생하므로 해당 플러그인 또는 서버 호스트의 SMCore 서비스를 다시 시작해야 합니다.</block>
   <block id="ec605af151edfcc96002ea7abae22af0" category="paragraph">ONTAP 클러스터</block>
   <block id="d96aaf84ad9d5434a2341533fead680c" category="paragraph">추가된 모든 클러스터를 확인하고 필요한 클러스터 구성을 수정합니다.</block>
-  <block id="320ead1a23f9d11816bf674cd3820192" category="list-text">스토리지 접속 페이지에서 클러스터 이름을 클릭합니다.</block>
-  <block id="9a614d9c0735290f5dba9ca6372f230b" category="list-text">스토리지 시스템 수정 페이지에서 사용자 이름 옆에 있는 편집 아이콘을 클릭하고 사용자 이름과 암호를 수정합니다.</block>
   <block id="6d080e5fae5a9945fb144b5c003f50ac" category="list-text">EMS 및 AutoSupport 설정을 선택하거나 지웁니다.</block>
   <block id="5228fb851f5bf68eb6c8b7b8440dbf61" category="list-text">추가 옵션 * 을 클릭하고 플랫폼, 프로토콜, 포트, 시간 초과 및 기본 IP와 같은 다른 구성을 수정합니다.</block>
   <block id="5186e4a7b4daf3d8824ea6fe58a5abf2" category="section-title">스토리지 시스템을 삭제합니다</block>
@@ -4096,9 +3968,7 @@
   <block id="23d952551b4d1fd585135076b2baeace" category="section-title">사용자 및 그룹을 수정합니다</block>
   <block id="e6371845b3e7d25cf772d7139863740a" category="paragraph">SnapCenter 사용자 또는 그룹을 수정하여 역할 및 자산을 변경할 수 있습니다.</block>
   <block id="9c42d371c7c4fa6877aa89d331283a4c" category="paragraph">SnapCenter 관리자로 로그인해야 합니다.</block>
-  <block id="496ffdc3f25f645e7033acccb2c16984" category="list-text">설정 페이지에서 * 사용자 및 액세스 * 를 클릭합니다.</block>
   <block id="3fcbfa7e53e0d1486b04ef88744e654b" category="list-text">사용자 또는 그룹 이름 목록에서 수정할 사용자 또는 그룹을 클릭합니다.</block>
-  <block id="f89e99e46b5cea8ded41b8c747fcf4c8" category="list-text">사용자 또는 그룹 세부 정보 페이지에서 역할 및 자산을 변경합니다.</block>
   <block id="49076cf727b0227582a4747208b25f26" category="summary">SnapCenter의 왼쪽 탐색 창에서 대시보드에서 최근 작업 활동, 경고, 보호 요약, 스토리지 효율성 및 사용, SnapCenter 작업 상태\(백업, 클론, 복원\), 독립 실행형 및 Windows 클러스터 호스트의 구성 상태 등을 한눈에 파악할 수 있습니다. SnapCenter에서 관리하는 SVM(스토리지 가상 머신) 수 및 라이센스 용량</block>
   <block id="1842816347041f3868bc9706c9a9e69b" category="doc">대시보드 개요</block>
   <block id="784e370a7c51736fcc92afb2efec1327" category="paragraph">SnapCenter의 왼쪽 탐색 창에서 대시보드에서 최근 작업 활동, 경고, 보호 요약, 스토리지 효율성 및 사용, SnapCenter 작업 상태(백업, 클론, 복원), 독립 실행형 및 Windows 클러스터 호스트의 구성 상태 등을 한눈에 파악할 수 있습니다. SnapCenter에서 관리하는 SVM(스토리지 가상 머신) 수 및 라이센스 용량</block>
@@ -4308,7 +4178,6 @@
   <block id="9c0b12ff642a1e6245f2162d1b798847" category="list-text">테스트 e-메일을 보내려면 e-메일을 보낼 e-메일 주소를 입력하고 제목을 입력한 다음 * 보내기 * 를 클릭합니다.</block>
   <block id="fa13fcc2a2bf565e053a02e58c2a0cd1" category="section-title">보고서를 e-메일로 보내는 옵션을 구성합니다</block>
   <block id="152f795518af672f9115ca4fd9aadada" category="paragraph">정기적으로 SnapCenter 데이터 보호 작업 업데이트를 자신 또는 다른 사람에게 보내 해당 업데이트의 상태를 모니터링하려는 경우 리소스 그룹을 만들 때 SnapCenter 보고서를 전자 메일로 보내는 옵션을 구성할 수 있습니다.</block>
-  <block id="a286af2d98a95c2fb765a8e878720636" category="paragraph">글로벌 설정 페이지의 설정 에서 SMTP 서버를 구성해야 합니다.</block>
   <block id="e3b901068db17421d22f056449b5f671" category="list-text">보려는 리소스 유형을 선택하고 * 새 리소스 그룹 * 을 클릭하거나 기존 리소스 그룹을 선택하고 * 수정 * 을 클릭하여 기존 리소스 그룹에 대한 이메일 보고서를 구성합니다.</block>
   <block id="42b912af9a1de9d791f5694853dbc26c" category="list-text">새 리소스 그룹 마법사의 알림 패널에서 풀다운 메뉴에서 보고서를 항상 수신할지, 실패했는지, 아니면 실패했는지 또는 경고인지 선택합니다.</block>
   <block id="c8dffb2ec8e06542867ba65875a20c6f" category="list-text">이메일을 보낼 주소, 이메일을 보낼 주소 및 이메일 제목을 입력합니다.</block>
@@ -4501,11 +4370,9 @@
   <block id="ebae46e6c1cf802f26210eac01893036" category="doc">SQL Server용 플러그인용 기본 또는 보조 스토리지 볼륨을 사용하여 백업 복사본 검증</block>
   <block id="fd27e632e4ffca03add8ef4ed0af0755" category="summary">Microsoft SQL Server 아카이브 백업용 SnapManager를 가져온 후에는 토폴로지 페이지에서 SnapCenter에서 이러한 백업을 볼 수 있습니다.</block>
   <block id="d5518c2f408f929ace2d131909aed4a2" category="doc">가져온 백업을 SnapCenter 서버에서 봅니다</block>
-  <block id="ab4ec5167cbab93f95ca6847efd4ac6f" category="paragraph">Microsoft SQL Server 아카이브 백업용 SnapManager를 가져온 후 * Topology * 페이지에서 SnapCenter에서 이러한 백업을 볼 수 있습니다.</block>
   <block id="013a22db3f8116886abce783cd41f0ce" category="list-text">모든 데이터베이스가 있는 리소스 그룹을 생성합니다.</block>
   <block id="650fc61d47780adbad85bfa072c0663d" category="list-text">자원 그룹을 선택합니다.</block>
   <block id="517849ba136afea5e787004dffb20912" category="list-text">리소스 그룹을 보호합니다.</block>
-  <block id="6599ce700a0ebce27d4a16f3119d9cb7" category="list-text">Topology * 페이지, * Manage Copies * 보기에서 Vault 사본에서 백업을 클릭합니다.</block>
   <block id="fd64ae65e36415bcb508e23c2f81edee" category="paragraph">백업 세부 정보가 표시됩니다.</block>
   <block id="243a37ea1abccc4f72cf92c4b36308be" category="admonition">아카이빙된 스냅샷 복사본이 마이그레이션되고 보조 보존의 일부로 스토리지에서 정리되면 SnapManager에 생성된 각 기본 스냅샷 복사본을 수동으로 정리해야 합니다.</block>
   <block id="f74dbba68e937810c60f2ff30516a3c7" category="summary">SnapCenter를 사용하여 SQL Server 데이터베이스 백업을 복제할 수 있습니다. 이전 버전의 데이터에 액세스하거나 복원하려는 경우 필요에 따라 데이터베이스 백업을 클론 복제할 수 있습니다.</block>
@@ -4523,9 +4390,7 @@
   <block id="90bd362d47c27a1c1824b4146fe8499c" category="list-text">리소스 페이지의 * 보기 * 목록에서 * 데이터베이스 * 또는 * 리소스 그룹 * 을 선택합니다.</block>
   <block id="4632a6c67f803e17d68ebb34598a6785" category="admonition">인스턴스 백업 클론 생성은 지원되지 않습니다.</block>
   <block id="42bc133dbae7dbb6cec9ed93a48aaa65" category="list-text">데이터베이스 또는 리소스 그룹을 선택합니다.</block>
-  <block id="ed43d12f020a2ac9ec05bbbd7c15c12b" category="list-text">Manage Copies * (복사본 관리 *) 보기 페이지에서 기본 또는 보조(미러링 또는 보관된) 스토리지 시스템에서 백업을 선택합니다.</block>
   <block id="d9f15a1f5a532a10eedb724ee7cefae8" category="list-text">백업을 선택한 다음 * 를 클릭합니다<block ref="44cb43ff1bef6ac179dd09e52aa35b83" category="inline-image-macro-rx" type="image"></block>*.</block>
-  <block id="bb785752279b411c79ed7bfbce9d2d39" category="list-text">클론 옵션 * 페이지에서 다음 작업을 수행합니다.</block>
   <block id="530587cce0e3987bdf3bb0fa8eb1fafb" category="paragraph">클론을 생성할 호스트를 선택합니다.</block>
   <block id="172ad591d7bca3f8b16f72da9e187238" category="paragraph">클론 인스턴스</block>
   <block id="ac2c35e8a2e69fb56e582c6ffe7704d3" category="paragraph">데이터베이스 백업을 복제할 클론 인스턴스를 선택합니다.</block>
@@ -4535,16 +4400,13 @@
   <block id="f796c2ac24f21dca755b63a0d8271808" category="paragraph">마운트 지점을 자동으로 할당하거나 경로 아래에 볼륨 마운트 지점을 자동으로 할당합니다</block>
   <block id="1746b60b3a3856170d0292307b2e02c7" category="paragraph">경로 아래에 마운트 지점을 자동으로 할당할지, 볼륨 마운트 지점을 자동으로 할당할지 여부를 선택합니다.</block>
   <block id="64c3c02aa6809d02911c724819bdca37" category="paragraph">경로 아래의 볼륨 마운트 지점 자동 할당: 경로 아래의 마운트 지점을 사용하여 특정 디렉토리를 제공할 수 있습니다. 마운트 지점은 해당 디렉토리 내에 생성됩니다. 이 옵션을 선택하기 전에 디렉토리가 비어 있는지 확인해야 합니다. 디렉토리에 데이터베이스가 있으면 마운트 작업 후 데이터베이스가 잘못된 상태가 됩니다.</block>
-  <block id="7c85ca3794fbcb06e42e50e61124e9dc" category="list-text">로그 * 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
   <block id="7c4a844d039e874f5a5d3c6319fa9633" category="paragraph">로그 없이 전체 백업만 클론하려면 이 옵션을 선택합니다.</block>
   <block id="1d38373eecaeeac0c2c69194a4c08b5f" category="paragraph">전체 백업 이후에 사용 가능한 모든 로그 백업을 클론하려면 이 옵션을 선택합니다.</block>
   <block id="47a39e3dec41c4e6f868ceda0ae37ee9" category="paragraph">선택한 날짜를 사용하여 백업 로그까지 생성된 백업 로그를 기반으로 데이터베이스를 복제하려면 이 옵션을 선택합니다.</block>
   <block id="21c614f77a0f65336c4db1c8bc7fde75" category="paragraph">트랜잭션 로그가 복제된 데이터베이스에 적용되지 않는 날짜 및 시간을 지정합니다.</block>
   <block id="418da21041a76d47214208138e1523e2" category="paragraph">이 시점 클론은 지정된 날짜 및 시간 이후에 기록된 트랜잭션 로그 항목의 클론을 중단합니다.</block>
-  <block id="847f76b3c1f78960c8aee5925dc8bb94" category="list-text">Script* 페이지에서 각각 클론 작업 전후에 실행해야 하는 ppt 또는 postscript의 스크립트 시간 제한, 경로 및 인수를 입력합니다.</block>
   <block id="cd580f0c35d4c37236f3153c15452b6f" category="paragraph">기본 스크립트 시간 초과는 60초입니다.</block>
   <block id="914e3ed381a18db751f3d27cad180ad7" category="paragraph">또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. 수행된 클론 작업의 보고서를 첨부하려면 * 작업 보고서 연결 * 을 선택합니다.</block>
-  <block id="c07bc6afd837580ac94b8ba64ed4462f" category="paragraph">EMS의 경우 를 참조할 수 있습니다<block ref="bf71d06d94476a49fc451638041a04a3" category="inline-link-rx"></block></block>
   <block id="b8ceb1eaf0d60af03679989562024d6b" category="paragraph">클론이 생성된 후에는 이름을 바꿀 수 없습니다.</block>
   <block id="8a2bd81e968aaadb6ec10a1b58f541cc" category="inline-link-macro">SQL Server 데이터베이스, 인스턴스 또는 가용성 그룹을 백업합니다</block>
   <block id="38c78702a48e457f5ef291281168432e" category="paragraph"><block ref="38c78702a48e457f5ef291281168432e" category="inline-link-macro-rx"></block></block>
@@ -4591,9 +4453,7 @@
   <block id="8de8d289eda0eddeff6c55dee5eaa498" category="list-text">SnapCenter 서버에 스토리지 시스템을 추가해야 합니다.</block>
   <block id="8c200fb6f4068d92863b1feb9c91e202" category="list-text">SQL Server 리소스를 새로 고친(검색된) 상태여야 합니다.</block>
   <block id="567ee5fafb197286f35c17cbadbca640" category="paragraph">이 마법사 페이지의 대부분의 필드는 설명이 필요 없습니다. 다음 정보는 안내가 필요할 수 있는 일부 필드에 대해 설명합니다.</block>
-  <block id="764aa5f228418528a9430646bc2705ce" category="list-text">리소스 * 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 인스턴스 * 를 선택합니다.</block>
   <block id="d7ccac91003ea67feddaa693a669508d" category="list-text">목록에서 데이터베이스 또는 인스턴스를 선택하고 * migrate * 를 클릭합니다.</block>
-  <block id="ed5beb97b374db2f275b8d00ef986365" category="list-text">Resources* 페이지에서 다음 작업을 수행합니다.</block>
   <block id="3216133ee23d6c1f35d7d07bbc617e2c" category="paragraph">* 데이터베이스 이름 * (선택 사항)</block>
   <block id="e86d326fb4f1685203b0473528e644f0" category="paragraph">마이그레이션할 인스턴스를 선택한 경우 * Databases * 드롭다운 목록에서 해당 인스턴스의 데이터베이스를 선택해야 합니다.</block>
   <block id="b970ee07b6143ad1b246eebfd81d4148" category="paragraph">* 목적지 선택 *</block>
@@ -4605,7 +4465,6 @@
   <block id="2c639d8cf692c100e3eba8b611821414" category="paragraph">* 옵션 *</block>
   <block id="f213982603abc601881eeb2188c85315" category="paragraph">소스에서 데이터베이스 복사본을 삭제하려면 * Delete copy of Migrated Database at Original Location * 을 선택합니다.</block>
   <block id="5994e6b51a5b5e47e819a6fe51011f18" category="paragraph">선택 사항: * 데이터베이스를 분리하기 전에 테이블에 대한 업데이트 통계를 실행합니다 *.</block>
-  <block id="62fd8d00ad65313c3c383e87cf59d9b1" category="list-text">Verify * 페이지에서 다음 작업을 수행합니다.</block>
   <block id="844191b6abba2936ab453e544dee90ee" category="paragraph">* 데이터베이스 일관성 검사 옵션 *</block>
   <block id="080912f05cdc8050320e2460ed452b26" category="paragraph">마이그레이션 전에 데이터베이스의 무결성을 확인하려면 * Run Before * 를 선택합니다. 마이그레이션 후 데이터베이스의 무결성을 확인하려면 * Run After * 를 선택합니다.</block>
   <block id="2fb95eb1f2c087c6e29a2b19dbba98f3" category="paragraph">* DBCC CHECKDB 옵션 *</block>
@@ -4637,40 +4496,31 @@
   <block id="024d2125c4de994f5780d700157a8f8a" category="doc">클론 수명주기 수행</block>
   <block id="e2baeb6d36971b32336c0afa64291666" category="paragraph">SnapCenter를 사용하면 리소스 그룹 또는 데이터베이스에서 클론을 생성할 수 있습니다. 필요 시 클론을 수행하거나 리소스 그룹 또는 데이터베이스의 반복적인 클론 작업을 예약할 수 있습니다. 주기적으로 백업을 클론하는 경우 클론을 사용하여 애플리케이션을 개발하거나 데이터를 채우거나 데이터를 복구할 수 있습니다.</block>
   <block id="cd39e8b84c367c07b34d183687284b51" category="paragraph">SnapCenter를 사용하면 여러 서버에서 동시에 여러 클론 작업을 실행하도록 예약할 수 있습니다.</block>
-  <block id="ed9657527d7348fddffe8c95ea08965a" category="list-text">리소스 * 페이지의 * 보기 * 목록에서 * 데이터베이스 * 또는 * 리소스 그룹 * 을 선택합니다.</block>
   <block id="2726d209d5a0e23756ae96a794207371" category="list-text">리소스 그룹 또는 데이터베이스를 선택한 다음 * Clone Lifecycle * 을 클릭합니다.</block>
-  <block id="6441503b262b57749180f2e9c6052fa0" category="list-text">옵션 * 페이지에서 다음 작업을 수행합니다.</block>
   <block id="591e6585720c653f81575f9e6baa87cd" category="paragraph">클론 작업 이름입니다</block>
   <block id="553f2922c37fae1a2da610849b20f3b7" category="paragraph">클론 라이프사이클 작업을 모니터링하고 수정하는 데 도움이 되는 클론 라이프사이클 작업 이름을 지정합니다.</block>
   <block id="dc6d5e38ce8cd31f35bbb1893e1025ac" category="paragraph">클론을 배치할 호스트를 선택합니다.</block>
   <block id="364e2a7bd0cd2b424f3fa5e7da436dc6" category="paragraph">데이터베이스를 복제할 클론 인스턴스를 선택합니다. 이 SQL 인스턴스는 지정된 클론 서버에 있어야 합니다.</block>
   <block id="a809dfe116e56fed2f0625063d743a9f" category="paragraph">클론 데이터베이스에 추가될 접미사를 입력하여 해당 접미사가 클론임을 나타냅니다. 클론 리소스 그룹을 생성하는 데 사용되는 각 SQL 인스턴스에는 고유한 데이터베이스 이름이 있어야 합니다. 예를 들어, 클론 리소스 그룹에 SQL 인스턴스 인스턴스 인스턴스 "inst1"의 소스 데이터베이스 "dB1"이 포함되어 있고 "dB1"이 "inst1"로 복제되는 경우 클론 데이터베이스 이름은 "dB1__clone"이어야 합니다. "__clone""은 데이터베이스가 동일한 인스턴스에 복제되기 때문에 필수 사용자 정의 접미부입니다. "dB1"이 SQL 인스턴스 "inst2"에 복제되면 데이터베이스가 다른 인스턴스로 복제되므로 클론 데이터베이스 이름은 "dB1"(접미사는 선택 사항)으로 유지될 수 있습니다.</block>
   <block id="5fca8a5475b30e9268f24da6e6908c4f" category="paragraph">경로 아래에 마운트 지점 또는 볼륨 마운트 지점을 자동으로 할당할지 여부를 선택합니다. 경로 아래에 있는 볼륨 마운트 지점을 자동 할당하도록 선택하면 특정 디렉토리를 제공할 수 있습니다. 마운트 지점은 해당 디렉토리 내에 생성됩니다. 이 옵션을 선택하기 전에 디렉토리가 비어 있는지 확인해야 합니다. 디렉토리에 데이터베이스가 있으면 마운트 작업 후 데이터베이스가 잘못된 상태가 됩니다.</block>
-  <block id="8825eb969049c4f62faa95a6fd1d2c1e" category="list-text">Location * 페이지에서 클론을 생성할 스토리지 위치를 선택합니다.</block>
-  <block id="69a848b2d14ccfc8fd67cfa17645962b" category="list-text">Script * 페이지에서 각각 클론 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 입력합니다.</block>
-  <block id="5a3291a492d954afcfe9f4d2704f1904" category="list-text">별표 * 페이지에서 다음 작업 중 하나를 수행합니다.</block>
   <block id="42d6449f67129f363083da153c1e4a56" category="list-text">클론 작업을 즉시 실행하려면 * 지금 실행 * 을 선택합니다.</block>
   <block id="6106775f73edc24edf8af08f95820dc2" category="list-text">클론 작업이 수행되는 빈도, 클론 스케줄이 시작되는 시간, 클론 작업이 발생하는 날짜, 스케줄이 만료되는 날짜 및 스케줄이 만료된 후에 클론을 삭제해야 하는지 여부를 결정하려면 * Configure schedule * 을 선택합니다.</block>
   <block id="7fbd5ad78d8bfea99956316bc22a845f" category="paragraph">모니터 * &gt; * 작업 * 페이지를 사용하여 복제 프로세스를 모니터링해야 합니다.</block>
   <block id="0ebfc8ee6fcce1769e02ab4f33c1967f" category="summary">리소스 그룹은 함께 백업 및 보호할 리소스를 추가하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다. 모든 데이터 보호 작업에는 리소스 그룹이 필요합니다. 또한 수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.</block>
   <block id="9b51fddaf011faab92bf06f41ccf6d11" category="doc">리소스 그룹을 만들고 SQL Server에 대한 정책을 연결합니다</block>
   <block id="8a256fc5affeb3e3570c3c8e73ce682b" category="paragraph">새 자원 그룹을 만들지 않고도 자원을 개별적으로 보호할 수 있습니다. 보호된 리소스에서 백업을 수행할 수 있습니다.</block>
-  <block id="8b4b456431f28d055e0a5167fbfa32ae" category="list-text">리소스 * 페이지의 * 보기 * 목록에서 * 데이터베이스 * 를 선택합니다.</block>
   <block id="80b4392036b2c71988077d45b3eedc67" category="paragraph">나중에 리소스 그룹을 검색하는 데 도움이 되는 하나 이상의 레이블을 입력합니다. 예를 들어 HR을 여러 자원 그룹에 태그로 추가하면 나중에 HR 태그와 연결된 모든 자원 그룹을 찾을 수 있습니다.</block>
   <block id="14896f2f427d28611f36aa160295c034" category="paragraph">선택 사항: 사용자 지정 스냅샷 복사본의 이름 및 형식을 입력합니다. 예를 들어 customtext_resourcegroup_policy_hostname 또는 resourcegroup_hostname을 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
-  <block id="4d0d357dcf40c05dde7b6cfc1b96b501" category="list-text">Resources* 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="cec46940af8355298a923d623115e6a7" category="list-text">드롭다운 목록에서 호스트 이름, 리소스 유형 및 SQL Server 인스턴스를 선택하여 리소스 목록을 필터링합니다.</block>
   <block id="78504af1df199590dc7639bdc6191b6f" category="admonition">최근에 추가한 자원은 자원 목록을 새로 고친 후에만 사용 가능한 자원 목록에 나타납니다.</block>
   <block id="3c8499d37e5b698773c087e64ded0e3e" category="list-text">사용 가능한 리소스* 섹션에서 선택한 리소스 섹션으로 리소스를 이동하려면 다음 단계 중 하나를 수행하십시오.</block>
   <block id="6a56bc07f3745de1f0cdc0e035cac845" category="list-text">사용 가능한 리소스 * 섹션에서 리소스를 선택한 다음 오른쪽 화살표를 클릭하여 * 선택한 리소스 * 섹션으로 이동합니다.</block>
   <block id="204b899f0e95e32b80ec8ea79f53c1ec" category="paragraph">선택한 정책에 대한 일정 구성 * 섹션에 선택한 정책이 나열됩니다.</block>
-  <block id="e96d7688d1b3b441e4f16605d2eed116" category="list-text">선택한 정책에 대한 일정 구성 * 섹션에서 * 를 클릭합니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>일정을 구성하려는 정책에 대한 스케줄 구성 열의</block>
   <block id="1d40f8a03f97a2b7db68e496f7964df0" category="paragraph">정책에 나열된 각 빈도에 대해 이 작업을 수행해야 합니다. 구성된 스케줄은 * 선택한 정책에 대한 스케줄 구성 * 섹션의 적용된 스케줄 열에 나열됩니다.</block>
   <block id="b527fc3a6976bd9e2f49e06db6a69f45" category="list-text">Microsoft SQL Server 스케줄러를 선택합니다.</block>
   <block id="de1ddb63cbc6eefd83b0824a3d2ba0b2" category="paragraph">스케줄링 정책과 연결할 스케줄러 인스턴스도 선택해야 합니다.</block>
   <block id="1848b4701478a3042656d71c7fb7eb58" category="paragraph">Microsoft SQL Server 스케줄러를 선택하지 않으면 기본값은 Microsoft Windows 스케줄러입니다.</block>
   <block id="c1bec73d098b5d8db439ae8b480c80ca" category="paragraph">타사 백업 스케줄은 SnapCenter 백업 스케줄과 겹치는 경우 지원되지 않습니다. Windows 작업 스케줄러 및 SQL Server Agent에서 일정을 수정하면 안 됩니다.</block>
-  <block id="6680524bf130286031391feee239b187" category="list-text">검증 * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="a5d937e33b78689c34405fbe81f90f13" category="list-text">검증 서버 * 드롭다운 목록에서 검증 서버를 선택합니다.</block>
   <block id="c77d16e2631c1e539982c0bc793f22b0" category="paragraph">목록에는 SnapCenter에 추가된 모든 SQL Server가 포함됩니다. 여러 검증 서버(로컬 호스트 또는 원격 호스트)를 선택할 수 있습니다.</block>
   <block id="35a91e9ad1ffed78f81a00fbc833fa69" category="admonition">검증 서버 버전은 기본 데이터베이스를 호스팅하는 SQL Server의 버전 및 버전과 일치해야 합니다.</block>
@@ -4692,14 +4542,10 @@
   <block id="f4e7f1b508b5c92ba9ac8b2340778652" category="list-text">SQL Server 인스턴스 인증의 경우 플러그인을 설치한 후 자격 증명을 추가해야 합니다.</block>
   <block id="7e5b014608ba541b2934ae4690bc2f90" category="list-text">GMSA 인증의 경우, GMSA를 활성화 및 사용하려면 SnapCenter에 호스트를 등록하는 동안 * 호스트 추가 * 또는 * 호스트 수정 * 페이지에서 GMSA를 설정해야 합니다.</block>
   <block id="9570e8f767f86ad72d04e9b2e50b2513" category="list-text">GMSA로 호스트를 추가하고 GMSA에 로그인 및 시스템 관리자 권한이 있는 경우 GMSA를 사용하여 SQL 인스턴스에 연결합니다.</block>
-  <block id="6dea157909bfad81bed3f43d98f3e117" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 인스턴스 * 또는 * 가용성 그룹 * 을 선택합니다.</block>
   <block id="6b3f89d4de284eef9726110270f3aca6" category="list-text">백업하려는 데이터베이스, 인스턴스 또는 가용성 그룹을 선택합니다.</block>
   <block id="8aacc4f53fdad965d551d7ddc2e431d1" category="paragraph">인스턴스 백업을 수행할 때 마지막 백업 상태 또는 해당 인스턴스의 타임스탬프에 대한 정보는 리소스 페이지에서 사용할 수 없습니다.</block>
   <block id="9d82e2623af61fdfe7b6c68017db0226" category="paragraph">토폴로지 보기에서는 백업 상태, 타임스탬프 또는 백업이 인스턴스 또는 데이터베이스에 대한 것인지 구분할 수 없습니다.</block>
-  <block id="416bcfc2c233cf328ee6f4e3abce5936" category="list-text">리소스 * 페이지에서 스냅샷 복사본의 * 사용자 지정 이름 형식 확인란을 선택한 다음 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="3b9b501ce9ff4819d459190476007edc" category="paragraph">예를 들어 customtext_policy_hostname 또는 resource_hostname을 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
-  <block id="d3bca1399c953f537808ea9d020c8cad" category="list-text">Policies * 페이지에서 다음 작업을 수행합니다.</block>
-  <block id="eefa76f069c6a3bf4276476436adf4df" category="list-text">Policies * 섹션의 드롭다운 목록에서 하나 이상의 정책을 선택합니다.</block>
   <block id="8651b9793bd6c1e48d295567e332b963" category="paragraph">* 를 클릭하여 정책을 생성할 수 있습니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>를 눌러 정책 마법사를 시작합니다.</block>
   <block id="730f69a1c6fa686c684abab6e3e4ce4c" category="list-text">정책 * "policy_name"에 대한 일정 추가 대화 상자에서 일정을 구성한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="08fe75bd987fb2dedbe7641f478927f0" category="paragraph">여기서 policy_name은 선택한 정책의 이름입니다.</block>
@@ -4711,7 +4557,6 @@
   <block id="770dea1a7ffca4cdfedbdad1adb3687d" category="paragraph">백업 후 검증 실행 * 을 선택합니다.</block>
   <block id="3c68b24e5b4018140925233153bb6538" category="admonition">검증 서버에 스토리지 접속이 없는 경우 디스크 마운트 실패 오류가 발생하면서 확인 작업이 실패합니다.</block>
   <block id="0f0ea16fe5c3ccaa1f1c239674409d15" category="list-text">백업 후 확인 * 을 선택하여 백업을 확인합니다.</block>
-  <block id="3bbda889c732b2c1d0be2a3446bf0fc3" category="paragraph">암시적 리소스 그룹이 만들어집니다. 이 정보는 * 사용자 액세스 * 페이지에서 해당 사용자 또는 그룹을 선택하여 볼 수 있습니다. 암시적 리소스 그룹 유형은 "리소스"입니다.</block>
   <block id="6b82c658b31dd0db1cb85c0f9d0dd56c" category="paragraph"><block ref="6b82c658b31dd0db1cb85c0f9d0dd56c" category="inline-link-macro-rx"></block></block>
   <block id="db9c751c1327ee48b470f3140421daf6" category="inline-link">TCP_TIMEOUT의 지연으로 인해 MySQL 연결 오류로 인해 백업 작업이 실패합니다</block>
   <block id="0cd607c6c3ab41f1a5532b188171495c" category="paragraph"><block ref="0cd607c6c3ab41f1a5532b188171495c" category="inline-link-rx"></block></block>
@@ -4730,9 +4575,7 @@
   <block id="aa8c5dd840695c92990cb144b6637720" category="list-text">복원 마법사 페이지의 대부분의 필드는 설명이 필요 없습니다. 다음 정보는 지침이 필요한 필드에 대해 설명합니다.</block>
   <block id="2606224d9c09d49413a7186dbb3381ae" category="list-text">목록에서 데이터베이스 또는 리소스 그룹을 선택합니다.</block>
   <block id="bac2e1a55f1e8e5ab31625d729ac8827" category="paragraph">토폴로지 페이지가 표시됩니다.</block>
-  <block id="fb47fa8462f4297da5b6bf77353204ff" category="list-text">Manage Copies * 뷰에서 스토리지 시스템에서 * Backups * 를 선택합니다.</block>
   <block id="04eac12d68f85a13d177dcc006084a83" category="list-text">테이블에서 백업을 선택한 다음 를 클릭합니다 <block ref="401f8f248ae37b21256b9fc8e83bcaa3" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭합니다.</block>
-  <block id="b2c2557c4f6de0ea57d94dccbf79fee6" category="list-text">Restore Scope * 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
   <block id="6ebf90b159436cafa574c6980450db68" category="paragraph">백업을 생성한 동일한 호스트에 데이터베이스를 복구합니다</block>
   <block id="48eaf0e0e1aadec10225194f6dcc8472" category="paragraph">백업을 수행한 동일한 SQL Server에 데이터베이스를 복원하려면 이 옵션을 선택합니다.</block>
   <block id="0e95e4329f1750e2a0133910c1db1b10" category="paragraph">데이터베이스를 대체 호스트로 복구합니다</block>
@@ -4743,7 +4586,6 @@
   <block id="487b63f94c6c1e7f4373deb2c7947eb5" category="paragraph">기존 데이터베이스 파일을 사용하여 데이터베이스를 복원합니다</block>
   <block id="08131404287cb8fa4717d7318b4ab0d7" category="paragraph">백업을 수행하는 동일한 호스트 또는 다른 호스트에 있는 대체 SQL Server로 데이터베이스를 복구하려는 경우 이 옵션을 선택합니다.</block>
   <block id="2eb870ac833c004c01a610e3ca684711" category="paragraph">데이터베이스 파일은 지정된 기존 파일 경로에 이미 있어야 합니다. 호스트 이름을 선택하고 데이터베이스 이름(선택 사항)을 입력한 다음 인스턴스를 선택하고 복구 경로를 지정합니다.</block>
-  <block id="dfd7c68485f622b45b6ca0d25ef3e7e3" category="list-text">복구 범위 * 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
   <block id="064a7d37c3604d930bd8fd7b2844e208" category="paragraph">로그 없이 전체 백업만 복원해야 하는 경우 * 없음 * 을 선택합니다.</block>
   <block id="be715f3669a8ed4dcde7c22428d2bdfb" category="paragraph">전체 백업 후 사용 가능한 모든 로그 백업을 복원하려면 * All log backups * up-to-the-minute backup restore operation(모든 로그 백업 * 최신 백업 복원 작업)을 선택합니다.</block>
   <block id="85df5d0a976a2b99b9fce8d416a1474a" category="paragraph">Bby log backups * 를 선택하여 선택한 날짜의 백업 로그까지 백업 로그를 기반으로 데이터베이스를 복원하는 시점 복원 작업을 수행합니다.</block>
@@ -4752,14 +4594,11 @@
   <block id="d4fc00020ef022a69aa0310f0e3d8cf7" category="paragraph">사용자 지정 로그 디렉터리를 사용합니다</block>
   <block id="e00328596f0de8a8447e8f7705472f1a" category="paragraph">모든 로그 백업 *, * 로그 백업 * 또는 * 특정 날짜별 * 을 선택하고 로그가 사용자 정의 위치에 있는 경우 * 사용자 정의 로그 디렉토리 사용 * 을 선택한 다음 로그 위치를 지정합니다.</block>
   <block id="57c2bee1335c7dde1ec8b1b7c865dcd4" category="admonition">사용자 지정 로그 디렉터리는 가용성 그룹 데이터베이스에서 지원되지 않습니다.</block>
-  <block id="c3e530aa608bc88a37dc41dd098ce760" category="list-text">Pre Ops * 페이지에서 다음 단계를 수행하십시오.</block>
-  <block id="2c1862acab2937e131b370bf16b90783" category="list-text">사전 복원 옵션 * 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
   <block id="940df971899f651cb88b01e557f54200" category="list-text">같은 이름으로 데이터베이스를 복원하려면 * 복원 중에 같은 이름으로 데이터베이스 덮어쓰기 * 를 선택합니다.</block>
   <block id="a73ea294ef31ea4d248721452fc4d030" category="list-text">데이터베이스를 복원하고 기존 복제 설정을 유지하려면 * SQL 데이터베이스 복제 설정 유지 * 를 선택합니다.</block>
   <block id="b83c2a88041c6f398d9699a5fff884e2" category="list-text">복원 작업을 시작하기 전에 트랜잭션 로그를 생성하려면 * 복원 전에 트랜잭션 로그 백업 생성 * 을 선택합니다.</block>
   <block id="751a5830c62a2a9d39e1ac466788489f" category="list-text">트랜잭션 로그 백업이 실패할 경우 복원 실패 * 전에 트랜잭션 로그 백업이 실패하면 복원 종료 * 를 선택하여 복원 작업을 중단합니다.</block>
   <block id="c28ee2bf34ef1fac06e2cb7596798b73" category="list-text">복구 작업을 수행하기 전에 실행할 선택적 스크립트를 지정합니다.</block>
-  <block id="e02cfc5c6added115692d51782fceeeb" category="list-text">Post Ops * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="5dde2b87c68245d88da750d15de38cae" category="list-text">복원 완료 후 데이터베이스 상태 선택 섹션에서 다음 옵션 중 하나를 선택합니다.</block>
   <block id="55958a9e3327d65ed94a2624cb640a07" category="list-text">지금 필요한 모든 백업을 복원하는 경우 * 운영, 추가 트랜잭션 로그를 복원할 수 없음 * 을 선택하십시오.</block>
   <block id="f8c4ec8de5d78138befe1f81c75b738c" category="paragraph">이는 기본 동작으로, 커밋되지 않은 트랜잭션을 롤백하여 데이터베이스를 사용할 수 있도록 합니다. 백업을 생성할 때까지 추가 트랜잭션 로그를 복원할 수 없습니다.</block>
@@ -4782,8 +4621,6 @@
   <block id="14310a3e36aca9ee4f8ae01ecce176f6" category="paragraph">관리자가 사용자에게 리소스를 할당하는 방법에 대한 자세한 내용은 SnapCenter 설치 정보를 참조하십시오.</block>
   <block id="8c47f48c6fb5493126c980bf2e721bcd" category="list-text">powershellProcessforScripts 매개 변수의 값을 web.config 파일에서 true 로 설정하여 powerpare 및 postscripts 로 PowerShell 스크립트를 실행해야 합니다.</block>
   <block id="ee2f9fb0aa9e8c0cc118a5f3a67a4b15" category="paragraph">백업 정책은 백업을 관리 및 유지하는 방법과 리소스 또는 리소스 그룹을 백업하는 빈도를 제어하는 규칙의 집합입니다. 또한 복제 및 스크립트 설정을 지정할 수 있습니다. 정책에 옵션을 지정하면 다른 리소스 그룹에 대한 정책을 다시 사용할 때 시간이 절약됩니다.</block>
-  <block id="a490c7db6666f931b80fe9e0de4e6a2a" category="list-text">이름 * 페이지에서 정책 이름과 설명을 입력합니다.</block>
-  <block id="073347ac045c782888a47724f9209b6e" category="list-text">백업 유형 * 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="1fbcfaad372de4aa8c4263630714d810" category="list-text">백업 유형을 선택합니다.</block>
   <block id="881a5cadbf2af4892868c95a8925ecdd" category="paragraph">데이터베이스 파일 및 트랜잭션 로그를 백업하고 트랜잭션 로그를 잘라냅니다</block>
   <block id="18d4675bdba207949ceb7f704c54e620" category="list-text">각 스냅샷 복사본에 대해 백업해야 하는 최대 데이터베이스 수를 입력합니다.</block>
@@ -4806,7 +4643,6 @@
   <block id="17c27964395af2cc0989da0544595045" category="list-text">이 정책으로 생성할 백업을 예약하려면 * On demand *, * Hourly *, * Daily *, * Weekly * 또는 * Monthly * 중 하나를 선택하여 스케줄 유형을 지정합니다.</block>
   <block id="e6383c275762841518a895807d340c7f" category="paragraph">정책에 대해 하나의 스케줄 유형을 선택할 수 있습니다.</block>
   <block id="1947481e76eb40f4adf8f5246fa95ff6" category="admonition">리소스 그룹을 생성하는 동안 백업 작업의 스케줄(시작 날짜, 종료 날짜 및 빈도)을 지정할 수 있습니다. 이렇게 하면 동일한 정책 및 백업 빈도를 공유하는 리소스 그룹을 생성할 수 있지만 각 정책에 서로 다른 백업 스케줄을 할당할 수 있습니다.</block>
-  <block id="0e2a767ba00c6c70c48d054df30cc155" category="list-text">Retention * 페이지에서 백업 유형 페이지에서 선택한 백업 유형에 따라 다음 작업 중 하나 이상을 수행합니다.</block>
   <block id="73d1997538c5c2799ee681d5e59023ad" category="list-text">최신 복원 작업에 대한 보존 설정 섹션에서 다음 작업 중 하나를 수행합니다.</block>
   <block id="5556fc25e3c9c42cb802a3ec13aa865f" category="paragraph">최근 &lt;number&gt;일 * 에 적용할 수 있는 로그 백업 보존 옵션을 선택하고 보존할 일 수를 지정합니다. 이 제한에 근접하면 이전 복사본을 삭제할 수 있습니다.</block>
   <block id="9bbf41d74c8f89f293d3299ea7bebf83" category="paragraph">마지막 &lt;number&gt;일간의 전체 백업 기간 * 에 적용할 수 있는 로그 백업 보존 옵션을 선택하고 로그 백업 사본을 보관할 일 수를 지정합니다.</block>
@@ -4816,20 +4652,15 @@
   <block id="a0257f49f5547a6ef191dd6c2f9b4c75" category="admonition">기본적으로 보존 횟수 값은 2로 설정됩니다. 보존 횟수를 1로 설정하면 새 스냅샷 복사본이 타겟으로 복제될 때까지 첫 번째 스냅샷 복사본이 SnapVault 관계의 참조 스냅샷 복사본이므로 보존 작업이 실패할 수 있습니다.</block>
   <block id="890049ee281f6f438392008ad804b79b" category="paragraph">에 대한 스냅샷 복사본을 유지합니다</block>
   <block id="6d8af80369897e48f5d0073fb1d5235e" category="paragraph">스냅샷 복사본을 삭제하기 전에 보관할 일 수를 지정하려면 * 스냅샷 복사본 보관 기간 * 을 선택합니다.</block>
-  <block id="ae74eb75970506352dd2e82de367087c" category="list-text">시간별, 일별, 주별 및 월별 보존 설정의 * 전체 백업 보존 설정 * 섹션에서 * 백업 유형 * 페이지에서 선택한 스케줄 유형에 대한 보존 설정을 지정합니다.</block>
   <block id="827a94fd354ba8465165672c359a430d" category="paragraph">유지할 스냅샷 복사본 수를 지정하려면 * 유지할 총 스냅샷 복사본 * 을 선택합니다. 스냅샷 복사본 수가 지정된 수를 초과하면 가장 오래된 복사본이 먼저 삭제된 후 스냅샷 복사본이 삭제됩니다.</block>
   <block id="efa04a2e0b433b54ed88de4c3b1b5a79" category="paragraph">로그 스냅샷 복사본의 보존은 기본적으로 7일로 설정됩니다. Set-SmPolicy cmdlet을 사용하여 로그 스냅샷 복사본 보존을 변경합니다.</block>
   <block id="723fe9aea6dfe1a0a822f218095c1c11" category="paragraph">이 예에서는 로그 스냅샷 복사본 보존을 2로 설정합니다.</block>
   <block id="f2d35fb96ac070e63c88b1b43cf8c70b" category="inline-link">SnapCenter은 데이터베이스의 스냅샷 복사본을 유지합니다</block>
   <block id="96df6a4d32e4546cfd055ffa3e9a7097" category="paragraph"><block ref="96df6a4d32e4546cfd055ffa3e9a7097" category="inline-link-rx"></block></block>
-  <block id="a65730a1788776ca8da2c3d0b85d38cb" category="list-text">Replication * 페이지에서 보조 스토리지 시스템에 대한 복제를 지정합니다.</block>
   <block id="b62913a5294dae473801568644e4e8a8" category="paragraph">다른 볼륨(SnapMirror)에 백업 세트의 미러 복사본을 생성하려면 이 옵션을 선택합니다.</block>
   <block id="289c48679623091e500c33f4b820d032" category="paragraph">스냅샷 복사본을 생성한 후 SnapVault를 업데이트합니다</block>
-  <block id="01fe8f5a62bd607ecda79132c86fb297" category="list-text">Script* 페이지에서 백업 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
   <block id="1701175190dfd6dd06812a1b97af8f95" category="paragraph">예를 들어 스크립트를 실행하여 SNMP 트랩을 업데이트하고, 경고를 자동화하고, 로그를 보낼 수 있습니다.</block>
   <block id="a0e2a78c6c2fd62817afcae7e0b538f5" category="admonition">보조 스토리지가 스냅샷 복사본의 최대 제한에 도달하지 않도록 ONTAP에서 SnapMirror 보존 정책을 구성해야 합니다.</block>
-  <block id="c8bdce6c02ca4f0f5a73ae8f145ca654" category="list-text">다음 백업 일정에 대한 * 검증 실행 * 섹션에서 일정 빈도를 선택합니다.</block>
-  <block id="74753f9987c38dce744f178a8e567580" category="list-text">데이터베이스 정합성 검사 옵션 * 섹션에서 다음 작업을 수행합니다.</block>
   <block id="369cd91c3e11b99e6fa5850b92b3090a" category="paragraph">무결성 구조를 데이터베이스의 물리적 구조로 제한(physical_only)</block>
   <block id="0de87de3224e64a78ce1093052a47d1d" category="paragraph">무결성 검사를 데이터베이스의 물리적 구조로 제한하고 데이터베이스에 영향을 미치는 찢어진 페이지, 체크섬 오류 및 일반적인 하드웨어 오류를 검색하려면 * 데이터베이스의 물리적 구조로 무결성 구조를 제한합니다(physical_only) * 를 선택합니다.</block>
   <block id="fdfc39464fafdd6ce6b729e0738e48a3" category="paragraph">모든 정보 메시지 억제(INFOMSGS 없음)</block>
@@ -4845,7 +4676,6 @@
   <block id="e120fc76fd23e12235b495bc6454901a" category="doc">SQL 플러그인에 필요한 최소 ONTAP 권한</block>
   <block id="f912f80c08d358e074ac7a8094ee08f8" category="summary">글로벌 설정 페이지에서 스토리지용 DR 모드를 활성화하여 SQL Server용 SnapCenter 플러그인을 복구할 수 있습니다.</block>
   <block id="3e2111f7bc94dc6561a302251b84a32e" category="doc">SQL Server용 SnapCenter 플러그인을 위한 스토리지 재해 복구(DR</block>
-  <block id="7ab0f5a69c334a7cb48096fbfec42764" category="paragraph">글로벌 설정 * 페이지에서 스토리지용 DR 모드를 활성화하여 SQL Server 스토리지용 SnapCenter 플러그인을 복구할 수 있습니다.</block>
   <block id="c4293a4e65f083bda8909c115c524834" category="list-text">플러그인이 유지보수 모드인지 확인합니다.</block>
   <block id="476ae0ff6d538c876bb858bf767ef19a" category="inline-link-macro">SnapMirror 관계를 더욱 공고히 합니다</block>
   <block id="9925d7679d8cfed4f5d94f8dc304fe87" category="list-text">SnapMirror/SnapVault 연결 끊기.<block ref="65d8b8ac32da9803ebe17e45340abf36" category="inline-link-macro-rx"></block></block>
@@ -4854,16 +4684,13 @@
   <block id="106152eddfd0777601f34fbcb5a4530f" category="list-text">MSSQL 서버 서비스를 다시 시작합니다.</block>
   <block id="6e965c5316b4dc760e2b4d3fcb1b1266" category="list-text">SQL 리소스가 다시 온라인 상태인지 확인합니다.</block>
   <block id="814edee34440283cced16298f89a35c7" category="paragraph">DR(재해 복구)은 VMDK 및 RDM 구성에서 지원되지 않습니다.</block>
-  <block id="ad5016482cbcfba3cb0a3a09e2e76299" category="list-text">설정 * 페이지에서 * 설정 * &gt; * 글로벌 설정 * &gt; * 재해 복구 * 로 이동합니다.</block>
   <block id="111dbdd7d01f5fee0a3a3a63d17a0892" category="list-text">재해 복구 사용 * 을 선택합니다.</block>
   <block id="7e7dac5c0403377139032fc9b9d33aef" category="list-text">Monitor * &gt; * Jobs * 를 클릭하여 DR 작업이 활성화되었는지 여부를 확인합니다.</block>
   <block id="80cb891c25496669e60c048f0fa8c262" category="list-text">페일오버 후에 새 데이터베이스가 생성되면 데이터베이스가 비 DR 모드로 전환됩니다.</block>
   <block id="f325c3bd1e3f0543a887367f1dbb2720" category="paragraph">새 데이터베이스는 페일오버 이전과 마찬가지로 계속 작동합니다.</block>
-  <block id="7a2edaa6ffcb0b073472c49f9a8ac058" category="list-text">DR 모드에서 생성된 새 백업은 * Topology * 페이지의 SnapMirror 또는 SnapVault(보조) 아래에 나열됩니다.</block>
   <block id="200173e810f24d588054234ea90379a4" category="paragraph">새 백업 옆에 "i" 아이콘이 표시되어 DR 모드 중에 이러한 백업이 생성되었음을 나타냅니다.</block>
   <block id="5e7078fc2c5f11497c9f2a56ffd9b736" category="list-text">UI 또는 다음 cmdlet('제거-SmBackup')을 사용하여 페일오버 중에 생성된 SQL Server 백업용 SnapCenter 플러그인을 삭제할 수 있습니다</block>
   <block id="b46fdb28b1bf03616f61fcda6f266b96" category="list-text">장애 조치 후 일부 리소스가 DR 모드가 아닌 모드로 전환되도록 하려면 "Remove-SmResourceDRMode"를 사용합니다</block>
-  <block id="faa1e43700e6130dd0bba699b9a8861a" category="paragraph">자세한 내용은 을 참조하십시오<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block>.</block>
   <block id="7ccaeb1e46c3ede7b5c8c6431b09266a" category="list-text">SnapCenter 서버는 DR 또는 비 DR 모드에 있지만 DR 모드 또는 비 DR 모드에 있는 스토리지 리소스가 있는 리소스 그룹이 아닌 개별 스토리지 리소스(SQL 데이터베이스)를 관리합니다.</block>
   <block id="463e628d0fee92af59d880953c74bf11" category="summary">백업에서 데이터베이스 리소스를 클론 복제하기 전에 SnapCenter Server를 사용하여 몇 가지 작업을 수행해야 합니다. 데이터베이스 클론 복제는 운영 데이터베이스 또는 해당 백업 세트의 시점 복사본을 생성하는 프로세스입니다. 응용 프로그램 개발 주기 동안 현재 데이터베이스 구조 및 콘텐츠를 사용하여 구현해야 하는 기능을 테스트하거나 데이터 웨어하우스를 채울 때 데이터 추출 및 조작 도구를 사용하거나 실수로 삭제 또는 변경된 데이터를 복구하기 위해 데이터베이스를 복제할 수 있습니다.</block>
   <block id="b7d4e9465660c3654b7e3da747496c5c" category="paragraph">데이터베이스 클론 생성 작업은 작업 ID를 기반으로 보고서를 생성합니다.</block>
@@ -4920,9 +4747,7 @@
   <block id="6490dd6973f2704b0b377c24b0992a87" category="list-text">1차 스토리지 시스템에서 2차 스토리지 시스템으로 스냅샷 복사본을 복제해야 합니다.</block>
   <block id="e1573e93dec4a09a53c7948b08bea942" category="list-text">SnapCenter 서버와 플러그인 호스트가 보조 스토리지 시스템에 접속할 수 있는지 확인해야 합니다.</block>
   <block id="48d655df40608a314f5332ec2869cbed" category="list-text">복원 마법사 페이지의 대부분의 필드는 기본 복원 프로세스에 설명되어 있습니다. 다음 정보는 지침이 필요한 일부 필드에 대해 설명합니다.</block>
-  <block id="f7737b5953ace8bc4a885ee18f11cd1a" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 리소스 그룹 * 을 선택합니다.</block>
   <block id="0e6942735cceeadb6d02fb320e94d290" category="list-text">복사본 관리 섹션에서 보조 스토리지 시스템(미러링 또는 볼트)에서 * 백업 * 을 선택합니다.</block>
-  <block id="78ee0570906ca53fe39c741d18f312f1" category="list-text">Location * 페이지에서 선택한 리소스를 복원할 대상 볼륨을 선택합니다.</block>
   <block id="6c227f8b891a9b16ff3ce0bfcdbc9e3d" category="paragraph">데이터베이스를 다른 데이터베이스에서 공유하는 다른 경로로 복원한 경우 전체 백업 및 백업 검증을 수행하여 복구된 데이터베이스에 물리적 레벨의 손상이 없는지 확인해야 합니다.</block>
   <block id="b97931d91e5908b44999bbc951cbee1f" category="summary">운영 또는 보조 스토리지의 백업 복사본에서 SQL Server 데이터베이스를 복원할 수 있습니다. 또한 데이터베이스를 원래 위치 외에 다른 대상에 복원할 수 있으므로 요구 사항을 지원하는 대상을 선택할 수 있습니다.</block>
   <block id="f773433327b73966f565bf778dba8fce" category="doc">복구 작업의 소스 및 대상</block>
@@ -4942,11 +4767,9 @@
   <block id="fb84146353d16d3119b204fb3e1ae3c5" category="doc">SQL 리소스 백업 요구 사항</block>
   <block id="383f069e9a025d3ba57152fa44fc4f74" category="list-text">비 NetApp 스토리지 시스템에서 NetApp 스토리지 시스템으로 리소스를 마이그레이션해야 합니다.</block>
   <block id="d5a74f53cbdf10b9d67fd47cd34a659a" category="list-text">보조 스토리지와 SnapMirror 관계가 있는 리소스를 백업하려면 스토리지 사용자에게 할당된 ONTAP 역할에 "'스냅샷 전체' 권한이 있어야 합니다. 그러나 "vsadmin" 역할을 사용하는 경우에는 "napmirror all" 권한이 필요하지 않습니다.</block>
-  <block id="bf042e72476ded6875022020c3a26624" category="list-text">SQL 인스턴스 자격 증명이 AD 사용자 또는 그룹에 할당되지 않으면 AD(Active Directory) 사용자가 시작한 백업 작업이 실패합니다. 설정 * &gt; * 사용자 액세스 페이지 * 에서 AD 사용자 또는 그룹에 SQL 인스턴스 자격 증명을 할당해야 합니다.</block>
   <block id="a82b50b51aff58b2b37cd32ccf921c55" category="list-text">리소스 그룹에 서로 다른 호스트의 데이터베이스가 여러 개 있는 경우 네트워크 문제로 인해 일부 호스트의 백업 작업이 늦게 트리거될 수 있습니다. Set-SmConfigSettings PS cmdlet을 사용하여 web.config에서 FMaxRetryForUninitializedHosts 의 값을 구성해야 합니다.</block>
   <block id="a8827ae14ad272b19b5554bf29b0dd50" category="summary">SQL Server 운영 스토리지용 SnapCenter 플러그인이 다시 온라인 상태가 되면 운영 스토리지로 페일백해야 합니다.</block>
   <block id="c259d7aac6b257b97bf45bb54cdbfb28" category="doc">SnapCenter Plug-in for SQL Server 보조 스토리지에서 운영 스토리지로 페일백</block>
-  <block id="fc9b6a369a3543bf9b9a3f06069c8323" category="list-text">관리 호스트 * 페이지의 * 유지 관리 * 모드로 SQL Server용 SnapCenter 플러그인을 배치합니다.</block>
   <block id="9f40ce1072a51b415774def35725f89b" category="list-text">호스트에서 보조 스토리지를 분리하고 운영 스토리지에서 접속합니다.</block>
   <block id="6a0b91ad1442c81abd43a4892141f895" category="list-text">운영 스토리지로 페일백하려면 역방향 재동기화 작업을 수행하여 페일오버 전의 관계 방향이 그대로 유지되는지 확인합니다.</block>
   <block id="e1a90fcb56ae2b5738e1b6621b9678d8" category="paragraph">역재동기화 작업 후 운영 스토리지와 보조 스토리지의 역할을 유지하려면 역방향 재동기화 작업을 다시 한 번 수행하십시오.</block>
@@ -4963,7 +4786,6 @@
   <block id="862e27b33388db0f7174e2affc68bbee" category="doc">토폴로지 페이지에서 SQL Server 백업 및 클론 보기</block>
   <block id="916ae24ede0fe52b13d762f08bbe7503" category="paragraph">Manage Copies * 보기에서 다음 아이콘을 검토하여 운영 스토리지 또는 보조 스토리지(미러 복사본 또는 볼트 사본)에서 백업 및 클론을 사용할 수 있는지 여부를 확인할 수 있습니다.</block>
   <block id="087beac5c653a245020b5cf6e4d5e0bb" category="paragraph">선택한 리소스가 복제된 데이터베이스인 경우 클론 생성된 데이터베이스를 보호합니다. 그러면 클론의 소스가 토폴로지 페이지에 표시됩니다. 복제에 사용된 백업을 보려면 * Details * 를 클릭합니다.</block>
-  <block id="299da7510f4498bb765c4ff3c964989a" category="paragraph">리소스가 보호되는 경우 선택한 리소스의 * Topology * 페이지가 표시됩니다.</block>
   <block id="b14fd9f5ab6e51e7c06988f9fcf9df95" category="paragraph">요약 카드 * 섹션에는 총 백업 및 클론 수가 표시됩니다.</block>
   <block id="4352314fc82600fe764ead91091936ed" category="list-text">테이블에서 클론을 선택하고 * Clone Split * 을 클릭합니다.</block>
   <block id="60b2a4dd687e5b16ce91fc08c7273c8b" category="summary">실행 중이거나 대기 중이거나 응답하지 않는 백업 작업을 취소할 수 있습니다. 백업 작업을 취소하면 생성된 백업이 SnapCenter 서버에 등록되지 않은 경우 SnapCenter 서버가 작업을 중지하고 스토리지에서 모든 스냅샷 복사본을 제거합니다. 백업이 이미 SnapCenter 서버에 등록되어 있는 경우 취소가 트리거된 후에도 이미 생성된 스냅샷 복사본이 롤백되지 않습니다.</block>
@@ -5101,7 +4923,6 @@
   <block id="768ec7bd106e7f2fd93257b2c6b114ad" category="paragraph">이 백업 유형은 일반 로그 백업의 시퀀싱에 영향을 주지 않습니다. 복사 전용 로그 백업은 온라인 복원 작업을 수행하는 데 유용합니다.</block>
   <block id="2414432c60e82c4bed04be0e4dafda65" category="doc">SQL Server 리소스 그룹을 백업합니다</block>
   <block id="e169c75993af25a436c2276ecc3bbdda" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 * 를 클릭하여 리소스 그룹을 검색할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 태그를 선택합니다. 그런 다음 * 를 클릭할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
-  <block id="989dfa35b9a4640fc52d5b7e4d40c38f" category="list-text">리소스 그룹 * 페이지에서 백업할 리소스 그룹을 선택한 다음 * 지금 백업 * 을 클릭합니다.</block>
   <block id="d8a3458cd303d8d6a9529b6dbba62424" category="list-text">백업 후 * Verify * 를 선택하여 필요 시 백업을 확인합니다.</block>
   <block id="8e927494c3186b26a3de09d9578e731f" category="paragraph">정책의 * Verify * 옵션은 예약된 작업에만 적용됩니다.</block>
   <block id="35002a531b4134648eef7b46ee445a29" category="paragraph"><block ref="35002a531b4134648eef7b46ee445a29" category="inline-link-macro-rx"></block></block>
@@ -5123,7 +4944,6 @@
   <block id="cbb9319067916a535f7b003c1a70b83f" category="paragraph"><block ref="cbb9319067916a535f7b003c1a70b83f" category="inline-link-macro-rx"></block></block>
   <block id="e0a6a8624a69b68bc0839f233664cd97" category="paragraph">호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다. 클러스터 또는 WSFC(Windows Server Failover Clustering)에 플러그인을 설치하는 경우 클러스터의 모든 노드에 플러그인이 설치됩니다.</block>
   <block id="e11f6d0c6669ff79495717e9f38e9fc3" category="paragraph">호스트 관리에 대한 자세한 내용은 을 참조하십시오 <block ref="801cfa467bb6d1aeeb6375d305370903" category="inline-link-macro-rx"></block>.</block>
-  <block id="1c92ab8626c20e01298d27cdffde2996" category="list-text">호스트 * 페이지에서 다음을 수행합니다.</block>
   <block id="eeb5e375c18c19a8f7f35271d9bde3ca" category="paragraph">호스트 유형으로 Windows를 선택합니다. 플러그인이 호스트에 아직 설치되지 않은 경우 SnapCenter 서버가 호스트를 추가한 다음 Windows용 플러그인을 설치합니다.</block>
   <block id="7195a4cd88071d03558b86e05a35dd43" category="paragraph">플러그인 페이지에서 Microsoft SQL Server 옵션을 선택하면 SnapCenter 서버가 SQL Server용 플러그인을 설치합니다.</block>
   <block id="281d15b67e07b0431db341ff866ac41e" category="paragraph">FQDN(정규화된 도메인 이름) 또는 호스트의 IP 주소를 입력합니다. IP 주소는 FQDN으로 확인되는 경우에만 신뢰할 수 없는 도메인 호스트에 대해 지원됩니다.</block>
@@ -5135,14 +4955,12 @@
   <block id="ee00c31059f22ec3b8beab1b62936c4e" category="paragraph">WSFC 또는 SQL 가용성 그룹의 모든 클러스터 노드를 추가하려면 이 확인란을 선택합니다. 클러스터 내에서 사용 가능한 여러 SQL 가용성 그룹을 관리하고 식별하려면 GUI에서 적절한 클러스터 확인란을 선택하여 모든 클러스터 노드를 추가해야 합니다.</block>
   <block id="4ced74f19d0af1905bae82fc201e12b3" category="admonition">GMSA를 사용하여 호스트를 추가하고 GMSA에 로그인 및 sys 관리자 권한이 있는 경우 GMSA를 사용하여 SQL 인스턴스에 연결합니다.</block>
   <block id="17bb48cb5022ca80557cfc9621510f56" category="list-text">SQL 플러그인의 경우 로그 디렉토리를 구성할 호스트를 선택합니다.</block>
-  <block id="7a50acefbe5c41037f8e8593206af659" category="list-text">Configure log directory * 를 클릭하고 * Configure host log directory * 페이지에서 * Browse * 를 클릭하고 다음 단계를 완료합니다.</block>
   <block id="a2e95b3d87ce22a616602c8fe4a615be" category="paragraph">NetApp LUN(드라이브)만 선택할 수 있습니다. SnapCenter는 호스트 로그 디렉토리를 백업 작업의 일부로 백업 및 복제합니다.</block>
   <block id="94f93df508e8b907861c0cbf749c1a16" category="image-alt">플러그인 페이지를 구성합니다</block>
   <block id="4ec95bc4f94136d65bed56645b271dc1" category="list-text">호스트 로그가 저장될 호스트에서 드라이브 문자 또는 마운트 지점을 선택합니다.</block>
   <block id="d687c5d710656984c3ed7b21d450d2bc" category="list-text">필요한 경우 하위 디렉토리를 선택합니다.</block>
   <block id="f12114bdb8ab18be62b5bcb364a98685" category="paragraph">사전 검사 건너뛰기 * 확인란을 선택하지 않은 경우 호스트가 플러그인 설치 요구사항을 충족하는지 여부를 확인합니다. 디스크 공간, RAM, PowerShell 버전, .NET 버전, 위치(Windows 플러그인의 경우) 및 Java 버전(Linux 플러그인의 경우)은 최소 요구 사항에 따라 검증됩니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다.</block>
   <block id="230797cd257f4279279a678587ed7d3e" category="summary">SQL Server 데이터베이스를 보호하려면 Microsoft SQL Server용 SnapCenter 플러그인을 설치하고 설정해야 합니다.</block>
-  <block id="f2307f08324f486f71f2209e1d4e0d5f" category="doc">Microsoft SQL Server용 SnapCenter 플러그인 워크플로우를 설치합니다</block>
   <block id="33666019cac43e63f53db79cad8f33ac" category="image-alt">scsql 설치 워크플로우 구성</block>
   <block id="51d95bab000b8bd5e8f9d83c3f25d453" category="summary">다시 시딩은 Availability Group\(AG\) 데이터베이스를 복원하는 옵션입니다. 보조 데이터베이스가 AG의 기본 데이터베이스와 동기화되지 않으면 보조 데이터베이스를 다시 시드할 수 있습니다.</block>
   <block id="951ead00aca07936d7cbe2d0eaf3bdde" category="doc">가용성 그룹 데이터베이스를 다시 시딩합니다</block>
@@ -5167,7 +4985,6 @@
   <block id="b41ec57cb303361cc859f1b83b71b8b7" category="list-text">데이터베이스가 VMware RDM LUN 또는 VMDK에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다.</block>
   <block id="04e7bb0411c1c8f56ca4fc8000c62ad8" category="inline-link">VMware vSphere용 SnapCenter 플러그인 구축</block>
   <block id="e37673f17122750178decda0b79b8cca" category="paragraph">자세한 내용은 을 참조하십시오<block ref="147b933388a6511d6c294a95b67dd2ec" category="inline-link-rx"></block></block>
-  <block id="744b275f4ee488ecd242922489efd077" category="paragraph">Details * 페이지의 * Overall Status * 옵션이 Not Available for backup으로 설정되어 있으면 데이터베이스를 백업할 수 없습니다. 다음 중 하나라도 해당하면 * Overall Status *(전체 상태 *) 옵션이 Not Available(백업 불가)로 설정됩니다.</block>
   <block id="526a7e9572c47574e4de3bcf48b01492" category="paragraph">데이터베이스가 오프라인 상태, 복원 중, 복구 보류 중, 의심스런 등의 상태일 때 정상 상태가 아닙니다.</block>
   <block id="194b1820aa96bee165e3c35a3e91e9bd" category="list-text">데이터베이스에 권한이 없습니다.</block>
   <block id="3bb68819532539f48f629ba62348a6c6" category="paragraph">예를 들어, 사용자가 데이터베이스에 대한 보기 액세스 권한만 있는 경우 데이터베이스의 파일 및 속성을 식별할 수 없으므로 백업할 수 없습니다.</block>
@@ -5247,7 +5064,6 @@
   <block id="3ac6ac17d67bf3a5fa25634ee8e5ee29" category="list-text">라이선스를 얻는 두 가지 방법 중 하나를 선택합니다.</block>
   <block id="1ec58aebb04dc06c65218ee0a1ec395c" category="list-text">라이센스를 가져오려면 NetApp Support 사이트 로그인 자격 증명을 입력하십시오.</block>
   <block id="8d1ce47f5c181adbba927f4ce22dbb2a" category="list-text">NetApp 라이센스 파일의 위치로 이동하여 * Open * 을 클릭합니다.</block>
-  <block id="9bb3d53fa0f584f5719be642bc9d0368" category="list-text">마법사의 * 알림 * 페이지에서 기본 용량 임계값인 90%를 사용합니다.</block>
   <block id="d088a4855be9bea0603e2e2116f75d0c" category="paragraph">* 스토리지 시스템 접속 설정 *</block>
   <block id="4e47abeee8d7eb5a872182a350fecedb" category="list-text">왼쪽 창에서 * 스토리지 시스템 &gt; 새로 만들기 * 를 클릭합니다.</block>
   <block id="610cac9ef97d97974dfcf5de0b7e0f1e" category="list-text">스토리지 시스템 추가 페이지에서 다음을 수행합니다.</block>
@@ -5259,7 +5075,6 @@
   <block id="edb3f96af88f92a47b3be973152729fe" category="list-text">왼쪽 창에서 * 설정 &gt; 자격 증명 &gt; 새로 만들기 * 를 클릭합니다.</block>
   <block id="31dc3f2be294ba75640afa6caeb0b782" category="paragraph">* 호스트를 추가하고 Microsoft SQL Server*용 플러그인을 설치합니다</block>
   <block id="585cc1564f4cb6953e8c9f28c1437b7a" category="list-text">SnapCenter GUI 왼쪽 창에서 * 호스트 &gt; 관리 호스트 &gt; 추가 * 를 클릭합니다.</block>
-  <block id="6238a815a7bf6615e4cf291589dd2f81" category="list-text">마법사의 호스트 페이지에서 다음을 수행합니다.</block>
   <block id="7200cb512c65b6adfa2cab18de8e420d" category="list-text">호스트 유형: Windows 호스트 유형을 선택합니다.</block>
   <block id="f8b8dda743e9c21b3090c210ba7bcccb" category="list-text">호스트 이름: SQL 호스트를 사용하거나 전용 Windows 호스트의 FQDN을 지정합니다.</block>
   <block id="5ddd08abdb13ac2a88aeaf83ceb4601a" category="list-text">자격 증명: 생성한 호스트의 유효한 자격 증명 이름을 선택하거나 새 자격 증명을 생성합니다.</block>
@@ -5313,7 +5128,6 @@
   <block id="6707464a5871a6aa26dcf785bea4052c" category="list-text">SQL 인스턴스 또는 호스트는 RBAC 사용자에게 할당됩니다.</block>
   <block id="4970872b4e7e80683035b5383cddcfad" category="paragraph">사용자에게 리소스 그룹과 백업 권한이 모두 있어야 합니다</block>
   <block id="afebb28fd320ef1336620e367e1e9af9" category="list-text">새 자격 증명을 추가하려면 * New * 를 클릭합니다.</block>
-  <block id="985077e00929ce396939c60300d6cda2" category="list-text">자격 증명 * 페이지에서 자격 증명을 구성합니다.</block>
   <block id="e98129085674125eccfb10fdf1a8b903" category="paragraph">* 자격 증명 이름 *</block>
   <block id="22a9d94cc3dd3f3f504402ee57041a90" category="paragraph">* 사용자 이름 *</block>
   <block id="2babd6364b44c08eef5ab4738c3db862" category="paragraph">SQL Server 인증에 사용되는 사용자 이름을 입력합니다.</block>
@@ -5327,10 +5141,8 @@
   <block id="1c6aec216640420d37199ef0555beab9" category="paragraph">SQL Server 인스턴스를 선택합니다.</block>
   <block id="a52c72cddb788a0e54ae847cfde710d9" category="list-text">확인 * 을 클릭하여 자격 증명을 추가합니다.</block>
   <block id="9cfc80fa5227a423a76220ce430d990c" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭합니다.</block>
-  <block id="3115e70c65ca0dc4154eadcfd1f08ae1" category="list-text">리소스 * 페이지의 * 보기 * 목록에서 * 인스턴스 * 를 선택합니다.</block>
   <block id="ae829e34e763c62f7fbf84dd61e419e2" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 클릭한 다음 호스트 이름을 선택하여 인스턴스를 필터링합니다.</block>
   <block id="e50f0759502e9232b70d6a9904881524" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
-  <block id="d696d7748da3566b817eef330883f600" category="list-text">인스턴스 보호 * 페이지에서 인스턴스를 보호하고 필요한 경우 * 자격 증명 구성 * 을 클릭합니다.</block>
   <block id="5479732a2e06d6b7a50f564e8fe27e30" category="paragraph">SnapCenter 서버에 로그인한 사용자가 Microsoft SQL Server용 SnapCenter 플러그인에 액세스할 수 없는 경우 사용자는 자격 증명을 구성해야 합니다.</block>
   <block id="8cfd48e3d0704f372da00b7de212f299" category="admonition">자격 증명 옵션은 데이터베이스 및 가용성 그룹에는 적용되지 않습니다.</block>
   <block id="c7abd5797dbf501112fdb42c49a4df92" category="doc">PowerShell cmdlet을 사용하여 백업을 제거합니다</block>
@@ -5340,7 +5152,6 @@
   <block id="8ab00376f11ae4d62cc80dab05f617ea" category="doc">SQL Server용 플러그인의 백업 보존 옵션</block>
   <block id="4a33fcf6d48bb7f648ebc49217cba162" category="summary">복원 워크플로에는 계획, 복원 작업 수행 및 작업 모니터링이 포함됩니다.</block>
   <block id="1ef6e64eb14d3b262db62b7d313ebbbe" category="summary">Oracle 데이터베이스를 보호하려면 Oracle 데이터베이스용 SnapCenter 플러그인을 설치하고 설정해야 합니다.</block>
-  <block id="829ab3d9655362e52e689933510a1e37" category="doc">Oracle Database용 플러그인 워크플로우를 설치합니다</block>
   <block id="a19d33029ae6794cb5370530a85b7fe4" category="image-alt">SCO 설치 워크플로우 구성</block>
   <block id="f0bf0f39170a5cc3bd7cc74a25e2e59d" category="summary">SnapCenter 플러그인 로더 서비스는 Linux 또는 AIX용 플러그인 패키지를 로드하여 SnapCenter 서버와 상호 작용합니다. SnapCenter 플러그인 로더 서비스는 SnapCenter용 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치할 때 설치됩니다.</block>
   <block id="58217bc6f1b79fc60156611e99bd9aa8" category="doc">SnapCenter 플러그인 로더 서비스를 구성합니다</block>
@@ -5404,7 +5215,6 @@
   <block id="8c8b459174fcbb06d857b29487307398" category="list-text">복사본 관리 보기에서 기본 또는 보조(미러링 또는 복제) 스토리지 시스템에서 * 백업 * 을 선택합니다.</block>
   <block id="aa828a29f50e6216fc962ecafa4a5c86" category="paragraph">백업이 카탈로그에 기재되지 않은 경우 백업을 선택하고 * Catalog * 를 클릭해야 합니다.</block>
   <block id="fc014b8bf15768f62382712f11088644" category="list-text">카탈로그 작성된 백업을 선택하고 * 를 클릭합니다<block ref="401f8f248ae37b21256b9fc8e83bcaa3" category="inline-image-macro-rx" type="image"></block>*.</block>
-  <block id="d9fe35cdd3dbd6af86ac225a3e5c1d5c" category="list-text">복원 범위 페이지에서 다음 작업을 수행합니다.</block>
   <block id="c6b08f2af3d6001970eab722de44fa24" category="list-text">RAC(Real Application Clusters) 환경에서 데이터베이스 백업을 선택한 경우 RAC 노드를 선택합니다.</block>
   <block id="94c47cc112da158abbb8d322edc6fd82" category="list-text">PDB의 PDB 또는 테이블스페이스를 복원할지 여부에 따라 다음 작업 중 하나를 수행합니다.</block>
   <block id="297e466888f00a848e001bcd37dbf30e" category="paragraph">PDB를 복원합니다</block>
@@ -5417,14 +5227,11 @@
   <block id="33d43417d667cddb16d043f057a804ef" category="list-text">복원할 단일 테이블스페이스 또는 여러 테이블스페이스를 지정합니다.</block>
   <block id="18378ef4ae596cb78463611593296364" category="admonition">SYSAUX, 시스템 및 실행 취소 테이블스페이스에서 PITR을 수행할 수 없습니다.</block>
   <block id="8c3518e0223eba2a595a920ea1fa79f3" category="list-text">복원 및 복구에 필요한 경우 * 데이터베이스 상태 변경 * 을 선택하여 복원 및 복구 작업을 수행하는 데 필요한 상태로 데이터베이스의 상태를 변경합니다.</block>
-  <block id="a410868d4b61c09c218275542abae04c" category="list-text">복구 범위 페이지에서 다음 작업 중 하나를 수행합니다.</block>
   <block id="ce901231ab959bb3de1942f73622bbda" category="list-text">특정 SCN(시스템 변경 번호)으로 복구하려면 SCN * 이 될 때까지 * 를 선택하고 SCN 및 보조 대상을 지정합니다.</block>
   <block id="212c6ed56e5ffa4096a163864fb51f7c" category="list-text">특정 날짜 및 시간으로 복구하려면 * 날짜 및 시간 * 을 선택하고 날짜 및 시간과 보조 대상을 지정합니다. SCN 또는 날짜 및 시간을 지정하면 SnapCenter는 PITR을 수행하는 데 필요하지만 카탈로그로 작성되고 마운트되지 않은 백업을 나열합니다. PITR에 필요한 로그 백업을 수동으로 마운트하고 카탈로그를 작성해야 합니다.</block>
-  <block id="360796e4edabeac0335f5ac6a5bd5b74" category="list-text">PreOps 페이지에서 복구 작업 전에 실행할 처방전의 경로와 인수를 입력합니다.</block>
   <block id="ad068b9fd01b2cf6ac4e86169a89e611" category="paragraph">처방된 내용을 /var/opt/snapcenter/spl/scripts 경로 또는 이 경로 내의 폴더에 저장해야 합니다. 기본적으로 /var/opt/snapcenter/SPL/scripts 경로가 채워집니다. 스크립트를 저장하기 위해 이 경로 내에 폴더를 만든 경우 경로에 해당 폴더를 지정해야 합니다.</block>
   <block id="1b4b1a8701700f9bb0245d7c920ebd16" category="paragraph">스크립트 시간 초과 값을 지정할 수도 있습니다. 기본값은 60초입니다.</block>
   <block id="172ee52d3388085fcb7367caffd5e053" category="paragraph">SnapCenter에서는 처방과 PS를 실행할 때 미리 정의된 환경 변수를 사용할 수 있습니다. <block ref="13fb589382a148f86473ae6fb30d81c9" category="inline-link-macro-rx"></block></block>
-  <block id="0a3fae6fefd6d4b0bcab880d0c2e13b3" category="list-text">PostOps 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="eb7bf4627cf3626a341dd717346d3885" category="list-text">복원 작업 후에 실행할 PostScript의 경로와 인수를 입력합니다.</block>
   <block id="74f5752b0eb7265c5eab7c68520f43d9" category="admonition">복원 작업이 실패하면 사후 스크립트가 실행되지 않고 정리 작업이 직접 트리거됩니다.</block>
   <block id="5b5efc09105794c60a1df368de3f2626" category="list-text">복구 후 데이터베이스를 열려면 이 확인란을 선택합니다.</block>
@@ -5437,7 +5244,6 @@
   <block id="8544e54da381581f9b9e4e593c42cb57" category="list-text">응용 프로그램 볼륨 추가 * 를 클릭합니다.</block>
   <block id="3e98357302d4518e158bc9dc7f45c162" category="list-text">Name(이름) 필드에 애플리케이션 볼륨의 이름을 입력합니다.</block>
   <block id="53b78d17407010f7e0c4051f330998b4" category="list-text">호스트 이름 필드에 호스트 이름을 입력합니다.</block>
-  <block id="26a5e231f5584bbd90b60022588fd6ab" category="list-text">Storage Footprint 페이지에서 스토리지 시스템 이름을 입력하고 하나 또는 볼륨을 선택한 다음 연결된 LUN 또는 qtree를 지정합니다.</block>
   <block id="bc1281f9dd3caf1b8951ef83af9fbe38" category="paragraph">여러 스토리지 시스템을 추가할 수 있습니다.</block>
   <block id="80e5eb37566e84270d23254e8f050156" category="list-text">리소스 페이지의 * 보기 * 목록에서 * 응용 프로그램 볼륨 * 을 선택하여 추가한 모든 응용 프로그램 볼륨을 봅니다.</block>
   <block id="088ea09c5845b030ebf8ae5975d090cb" category="section-title">애플리케이션 볼륨을 수정합니다</block>
@@ -5567,10 +5373,8 @@
   <block id="e525da83465049bad6a7bf2676a73ce2" category="paragraph">Oracle DBVERIFY 유틸리티를 사용하여 백업을 확인하려면 ASM 디스크 그룹에 파일이 있는 데이터베이스가 "mount" 또는 "open" 상태여야 합니다.</block>
   <block id="c58481c5b8cfb4b2b7162b1b1cf5c8dd" category="paragraph">수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.</block>
   <block id="c3bc5ff261b700cf2f6140bad7454c1c" category="image-alt">SCO 리소스 그룹 정책입니다</block>
-  <block id="c297550018422e0e9624086d7473d086" category="list-text">리소스 페이지에서 * 새 리소스 그룹 * 을 클릭합니다.</block>
   <block id="056af176267461e7d6a2a9e357208bd7" category="paragraph">백업에서 아카이브 로그 대상을 제외합니다</block>
   <block id="491a86dab4dbb4636159b9c8d91d9c09" category="paragraph">백업하지 않을 아카이브 로그 파일의 대상을 지정합니다.</block>
-  <block id="ab5b906ba59db7fec471d0c9100af840" category="list-text">리소스 페이지의 * 호스트 * 드롭다운 목록에서 Oracle 데이터베이스 호스트 이름을 선택합니다.</block>
   <block id="dea54623aa643ec856baf8abb4233177" category="admonition">리소스가 성공적으로 검색된 경우에만 사용 가능한 리소스 섹션에 리소스가 나열됩니다. 최근에 추가한 자원은 자원 목록을 새로 고친 후에만 사용 가능한 자원 목록에 나타납니다.</block>
   <block id="5dcd20433605552bfe1ee3f21d0564ef" category="list-text">사용 가능한 리소스 섹션에서 리소스를 선택하고 선택한 리소스 섹션으로 이동합니다.</block>
   <block id="16a4d8b6ed11330e0e6e2c8f2b58a1b0" category="admonition">단일 리소스 그룹의 Linux 및 AIX 호스트 모두에서 데이터베이스를 추가할 수 있습니다.</block>
@@ -5613,7 +5417,6 @@
   <block id="03b2f86fb8831a56c29a6b5186226676" category="paragraph">애플리케이션 볼륨만 포함하거나 애플리케이션 볼륨과 데이터베이스를 혼합하여 포함하는 리소스 그룹을 백업할 수 있습니다. 리소스 그룹에 대한 백업 작업은 리소스 그룹에 정의된 모든 리소스에 대해 수행됩니다.</block>
   <block id="768f623632c4bc282d735245d72f0082" category="paragraph">리소스 그룹에 여러 애플리케이션 볼륨이 있는 경우 모든 애플리케이션 볼륨에 SnapMirror 또는 SnapVault 복제 정책이 있어야 합니다.</block>
   <block id="aa937e10b9927770901c4ad133aa81f7" category="paragraph">기본적으로 일관성 그룹(CG) 백업이 생성됩니다. 볼륨 기반 백업을 생성하려면 _web.config_file에서 * EnableOracleNdvVolumeBasedBackup * 의 값을 true 로 설정해야 합니다.</block>
-  <block id="2f85ee188faa0fe45e7d972de01289f5" category="list-text">리소스 그룹 페이지에서 백업할 리소스 그룹을 선택한 다음 * 지금 백업 * 을 클릭합니다.</block>
   <block id="0bc92cf5f202f2c741414bccdc40afa9" category="admonition">검증 작업은 애플리케이션 볼륨이 아닌 데이터베이스에 대해서만 수행됩니다.</block>
   <block id="0b467061f52733da68bf2a4d7726c3f9" category="summary">백업 작업을 생성하기 전에 백업 전략을 정의하면 데이터베이스를 성공적으로 복원하거나 복제하는 데 필요한 백업이 있는지 확인할 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="4aad6a55b7d830fe36a2a075e0a60363" category="doc">Oracle 데이터베이스에 대한 백업 전략 정의</block>
@@ -5735,7 +5538,6 @@
   <block id="520f85e55e2b17285c39b1ad458556a0" category="list-text">를 클릭합니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
   <block id="c6cc754896fef7ff6303bf792f45397f" category="list-text">백업할 애플리케이션 볼륨을 선택합니다.</block>
   <block id="fb532da51d82ae5118e8f3d5cb3bbd50" category="paragraph">Application volume-protect(애플리케이션 볼륨 보호) 페이지가 표시됩니다.</block>
-  <block id="e22b04e052322d1ab38efc5986d43235" category="list-text">리소스 페이지에서 다음 작업을 수행합니다.</block>
   <block id="81e3d6d459d6185662dc1ac418aeba95" category="paragraph">이 확인란을 선택한 다음 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="d8e872fb73120498da08d2eb2e952e1f" category="paragraph">예를 들어 customtext__policy_hostname 또는 resource_hostname을 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
   <block id="b34b9f5decf78eb62a8145da0940d7d1" category="paragraph">_policy_name_은 선택한 정책의 이름입니다.</block>
@@ -5853,7 +5655,6 @@
   <block id="c4442e1ad348b99929c68427ef54fee7" category="paragraph">호스트 추가 페이지를 사용하여 호스트를 추가한 다음 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치할 수 있습니다. 플러그인은 원격 호스트에 자동으로 설치됩니다.</block>
   <block id="360de859ba00b96b2d06b95d1cf75618" category="paragraph">호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다. 클러스터(Oracle RAC)에 플러그인을 설치하는 경우 클러스터의 모든 노드에 플러그인이 설치됩니다. Oracle RAC One Node의 경우 액티브 노드와 패시브 노드 모두에 플러그인을 설치해야 합니다.</block>
   <block id="51ba13d2ba8a61213688413888b18fa4" category="paragraph">플러그인 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자 역할)에 할당되어야 합니다.</block>
-  <block id="2879e5b2c6ed1b211e0ec1e560542018" category="list-text">호스트 페이지에서 다음 작업을 수행합니다.</block>
   <block id="af4423132a34ab328420b1f839d69d91" category="paragraph">호스트 유형으로 * Linux * 또는 * AIX * 를 선택합니다.</block>
   <block id="2c2b55584d515e61d59129717e8ce988" category="paragraph">SnapCenter 서버는 호스트를 추가한 다음 호스트에 플러그인이 설치되어 있지 않은 경우 Oracle 데이터베이스용 플러그인과 UNIX용 플러그인을 설치합니다.</block>
   <block id="54ab1222542b75f84215a6d802ae90e7" category="list-text">Oracle RAC(Real Application Clusters) 환경의 모든 노드</block>
@@ -5907,7 +5708,6 @@
   <block id="4254dbd260949ca6f5ee8ef29a3dc68f" category="paragraph">상위 데이터베이스에서 하위 데이터베이스까지의 다양한 상태는 열기, 마운트, 시작 및 종료입니다. 데이터베이스가 더 높은 상태에 있지만 복원 작업을 수행하려면 상태를 더 낮은 상태로 변경해야 하는 경우 이 확인란을 선택해야 합니다. 데이터베이스가 더 낮은 상태에 있지만 복원 작업을 수행하려면 상태를 더 높은 상태로 변경해야 하는 경우 확인란을 선택하지 않아도 데이터베이스 상태가 자동으로 변경됩니다.</block>
   <block id="e4602b24fbe5e3160ce64aa6ae40879b" category="paragraph">데이터베이스가 열려 있는 상태이고 복구를 위해 데이터베이스가 마운트된 상태여야 하는 경우 이 확인란을 선택한 경우에만 데이터베이스 상태가 변경됩니다.</block>
   <block id="ceebf6d24d76b1f79e7d5aaaa8ee1299" category="list-text">백업 후 새 데이터 파일이 추가되거나 LUN이 LVM 디스크 그룹에 추가, 삭제 또는 재생성될 때 데이터 파일을 데이터 이동 없이 복원하려면 * 강제 복원 * 을 선택합니다.</block>
-  <block id="2365d9113b1bc87e6269c4e30fec989f" category="list-text">복구 범위 페이지에서 다음 작업을 수행합니다.</block>
   <block id="88b89a3ecc8bae770512fd2757a77e5c" category="paragraph">마지막 트랜잭션으로 복구하려고 합니다</block>
   <block id="6b88fe93605b37a71fe57b312195af04" category="paragraph">모든 로그 * 를 선택합니다.</block>
   <block id="00c60421974c4b44bc58c184a86fbd8d" category="paragraph">특정 SCN(시스템 변경 번호)으로 복구하려는 경우</block>
@@ -5953,7 +5753,6 @@
   <block id="32be37d76bd4ec69c9ff9fa8d3041696" category="list-text">복제할 PDB를 지정합니다.</block>
   <block id="fe6f4bb579b14c37b4aa4892d4c0398d" category="admonition">PDB는 한 번에 하나만 복제할 수 있습니다.</block>
   <block id="772f8002ed36d01430768d5ef12464c4" category="list-text">PDB 복제 이름을 지정합니다.</block>
-  <block id="ff59182002b9de78bd666e3c908c7d75" category="list-text">위치 페이지에서 다음 작업을 수행합니다.</block>
   <block id="bde5131f4b799399db6c2ebfc2dac01c" category="paragraph">호스트 복제</block>
   <block id="f1d95b736f2309d7f15056ba544937f7" category="paragraph">기본적으로 소스 데이터베이스 호스트는 채워집니다.</block>
   <block id="aeebb52b63a67a1c227c86664f5a8a20" category="paragraph">대체 호스트에서 클론을 생성하려면 소스 데이터베이스 호스트의 버전과 Oracle 및 OS 버전이 동일한 호스트를 선택합니다.</block>
@@ -5969,13 +5768,11 @@
   <block id="e4abcaf02ba1b0618c3d21fb44a6f39c" category="admonition">ASM 디스크 그룹 이름을 사용자 지정하는 경우 이름 길이가 Oracle에서 지원하는 최대 길이를 따르는지 확인합니다.</block>
   <block id="65118f0395036801c28df2472f94ff81" category="paragraph">다른 경로를 지정하려면 클론 데이터베이스의 데이터 파일 마운트 지점 또는 ASM 디스크 그룹 이름을 입력해야 합니다.</block>
   <block id="d65dff4f4a118a5eb7a81c13cc06deb5" category="paragraph">Oracle 홈, 사용자 이름 및 그룹 세부 정보는 소스 데이터베이스에서 자동으로 채워집니다. 클론을 생성할 호스트의 Oracle 환경에 따라 값을 변경할 수 있습니다.</block>
-  <block id="6c429b90640c6cdb7942d8d7ad913eeb" category="list-text">PreOps 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="d4959b63dd4f00aff8bb0ac537febece" category="list-text">클론 작업 전에 실행할 처방전의 경로와 인수를 입력합니다.</block>
   <block id="5f6b2d79f6548af28fe498a3d456665b" category="paragraph">처방된 내용을 /var/opt/snapcenter/spl/scripts 또는 이 경로 내의 폴더에 저장해야 합니다. 기본적으로 /var/opt/snapcenter/SPL/scripts 경로가 채워집니다. 이 경로 내의 폴더에 스크립트를 배치한 경우 스크립트가 있는 폴더까지 전체 경로를 제공해야 합니다.</block>
   <block id="8d0b25f92b903a24620536866eec34e9" category="paragraph">SnapCenter에서는 처방과 PS를 실행할 때 미리 정의된 환경 변수를 사용할 수 있습니다. <block ref="5b7d02e10c9ec6b7cbb457e491f8bd48" category="inline-link-macro-rx"></block></block>
   <block id="2a5cafafc37b9e4fe2ee40327d10fe7a" category="list-text">보조 CDB 클론 데이터베이스 매개 변수 설정 섹션에서 데이터베이스를 초기화하는 데 사용되는 미리 채워진 데이터베이스 매개 변수의 값을 수정합니다.</block>
   <block id="d07c6831b871d2e4c53474a4ea7eeb4e" category="list-text">기본 데이터베이스 매개 변수 설정을 가져오려면 * Reset * (재설정 *)을 클릭합니다.</block>
-  <block id="6ffee3a3e8f0ce178fcd79c8f86ac858" category="list-text">PostOps 페이지에서 * until Cancel * 이 기본적으로 선택되어 복제된 데이터베이스의 복구를 수행합니다.</block>
   <block id="e3fe4b09b06d79bfa19a9c9992e80621" category="paragraph">SnapCenter가 적절한 로그 백업을 찾지 못할 경우 * until Cancel * 옵션을 선택하지 않습니다. 로그 백업을 사용할 수 없는 경우 * 외부 아카이브 로그 위치 지정 * 에서 외부 아카이브 로그 위치를 제공할 수 있습니다. 여러 로그 위치를 지정할 수 있습니다.</block>
   <block id="a8e61d9fe2760511ccb92a4bb68e0fd7" category="admonition">FRA(Flash Recovery Area) 및 OMF(Oracle Managed Files)를 지원하도록 구성된 소스 데이터베이스를 복제하려는 경우 복구를 위한 로그 대상도 OMF 디렉토리 구조를 준수해야 합니다.</block>
   <block id="eff88d54854b0637031f4066736623bc" category="cell">필드 이름입니다</block>
@@ -6127,11 +5924,9 @@
   <block id="bfea201e67b6d8c8dfeba47e522016aa" category="doc">클론 애플리케이션 볼륨 백업</block>
   <block id="32b6ce3b4c07da5c7a5e9de96444b2c2" category="paragraph">SnapCenter를 사용하여 애플리케이션 볼륨 백업을 복제할 수 있습니다.</block>
   <block id="74d3d58640152be32c3310e1fc12c10f" category="list-text">애플리케이션 볼륨 세부 정보 보기 또는 리소스 그룹 세부 정보 보기에서 애플리케이션 볼륨을 선택합니다.</block>
-  <block id="1033cbded22495378dacd291f1162ccf" category="list-text">위치 페이지에서 다음 작업을 수행합니다.</block>
   <block id="4c7dcbe4abfbc350e53dbf8a26af7f4c" category="paragraph">클론을 생성할 호스트를 선택합니다.</block>
   <block id="bcad346982c227987828e4e1bd40eb20" category="paragraph">대상 리소스 이름입니다</block>
   <block id="9368d3530000e47eb158e87cc138d4d2" category="paragraph">자원 이름을 지정합니다.</block>
-  <block id="4d0707caac8910ddcde508468ba915e6" category="list-text">스크립트 페이지에서 클론 생성 전에 실행할 스크립트의 이름, 파일 시스템을 마운트하는 명령 및 클론 생성 후 실행할 스크립트의 이름을 지정합니다.</block>
   <block id="056f16a497e3816baf36ca8bb1f47e69" category="section-title">애플리케이션 볼륨 클론을 분할합니다</block>
   <block id="04e3f50ebfc3fe23fe3b15e74ef0c167" category="list-text">클론 생성된 리소스를 선택하고 을 클릭합니다 <block ref="4e76ccc6d666f337d0615fe61d91903b" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="1ea3b0b9fdff483105222183288bb47b" category="section-title">애플리케이션 볼륨 클론을 삭제합니다</block>
@@ -6282,7 +6077,6 @@
   <block id="826d4c472ac90863de8a57dd0fa235c9" category="list-text">가져올 데이터베이스를 식별합니다.</block>
   <block id="2c1c6673e3945e278317ed1055ec6e1c" category="list-text">SnapCenter를 사용하여 데이터베이스 호스트를 추가하고 Linux용 SnapCenter 플러그인 패키지를 설치합니다.</block>
   <block id="d36afc0c96384f1b8d6e0c77df034a21" category="list-text">SnapCenter를 사용하여 호스트의 데이터베이스에서 사용되는 SVM(스토리지 가상 머신)의 연결을 설정합니다.</block>
-  <block id="f3a7a48bfda7cd00557562917ad5f52e" category="list-text">리소스 페이지에서 가져올 데이터베이스가 검색되어 표시되는지 확인합니다.</block>
   <block id="b5f36ca82ced4b40d8d89a47801e486a" category="paragraph">가져오기 도구를 실행하려면 데이터베이스에 액세스할 수 있어야 하며 그렇지 않으면 리소스 그룹을 만들 수 없습니다.</block>
   <block id="74f5956c5d14baab70bcf3c3dcbaf534" category="paragraph">데이터베이스에 자격 증명이 구성되어 있는 경우 SnapCenter에서 해당 자격 증명을 생성하고 데이터베이스에 자격 증명을 할당한 다음 데이터베이스 검색을 다시 실행해야 합니다. 데이터베이스가 ASM(Automatic Storage Management)에 있는 경우 ASM 인스턴스에 대한 자격 증명을 생성하고 자격 증명을 데이터베이스에 할당해야 합니다.</block>
   <block id="2f1023b3845664d19b787aaf2e1d2537" category="list-text">가져오기 도구를 실행하는 사용자가 SnapManager SnapManager for Oracle 또는 SnapManager for SAP CLI 명령(예: 예약 일시 중지 명령)을 실행할 수 있는 충분한 권한을 가지고 있는지 확인합니다 SnapManager.</block>
@@ -6507,7 +6301,6 @@
   <block id="98e26fc0748d019e544e7992b813dd85" category="paragraph">SAN 환경에서 ASM 데이터베이스의 백업을 복제하는 동안 복제된 호스트 디바이스에 대한 udev 규칙이 _ /etc/udev/rules.d/999-scu-netapp.rules_ 에 생성됩니다. 클론 생성된 호스트 디바이스와 연결된 이러한 udev 규칙은 클론을 삭제할 때 삭제됩니다.</block>
   <block id="1ba74f30c8b4f7350ac2ed947066daaa" category="admonition">Flex ASM 설정에서 카디널리티가 RAC 클러스터의 노드 수보다 적은 경우 Leaf 노드에서 클론 작업을 수행할 수 없습니다.</block>
   <block id="95c107b923010c9fb0675e4be9bfe74d" category="list-text">테이블에서 데이터 백업을 선택한 다음 * 를 클릭합니다<block ref="11ec183c45ca833d0220ddbf2e2e1d98" category="inline-image-macro-rx" type="image"></block>*.</block>
-  <block id="17abefa6292f5f43727fb19530e09dbe" category="list-text">이름 페이지에서 다음 작업 중 하나를 수행합니다.</block>
   <block id="86e7ad678ec2c8cb2268508ddccf913a" category="paragraph">데이터베이스 클론 생성(CDB 또는 비 CDB)</block>
   <block id="0f033f18e4243669df37e74e3ec98d76" category="list-text">클론의 SID를 지정합니다.</block>
   <block id="6f26a0c56978a705b6572bde529f07ac" category="paragraph">클론 SID는 기본적으로 사용할 수 없으며 SID의 최대 길이는 8자입니다.</block>
@@ -6548,7 +6341,6 @@
   <block id="9d702669585828b8f94fde687d36b914" category="list-text">log_archive_duplex_DEST</block>
   <block id="799cf0f5a02e06708944d784ed741a4d" category="admonition">FRA(Fast Recovery Area)가 미리 채워진 데이터베이스 매개 변수에 정의되지 않았습니다. 관련 매개변수를 추가하여 FRA를 구성할 수 있습니다.</block>
   <block id="f6c8fe0c8daecf60e2ce9935d3fc45ca" category="admonition">log_archive_dest_1의 기본값은 $ORACLE_HOME/clone_sid이며 복제된 데이터베이스의 아카이브 로그가 이 위치에 생성됩니다. log_archive_dest_1 매개 변수를 삭제한 경우 아카이브 로그 위치는 Oracle에서 결정합니다. log_archive_dest_1을 편집하여 아카이브 로그의 새 위치를 정의할 수 있지만 파일 시스템 또는 디스크 그룹이 기존 상태여야 하며 호스트에서 사용할 수 있어야 합니다.</block>
-  <block id="2a6a35b587b1017b12403906f9c6fa21" category="list-text">PostOps 페이지에서 * Recover database * 및 * until Cancel * 이 기본적으로 선택되어 복제된 데이터베이스의 복구를 수행합니다.</block>
   <block id="e1b5a8cd41988739ea7e4a05f794d463" category="paragraph">SnapCenter는 클론 생성을 위해 선택한 데이터 백업 이후에 연속되지 않은 아카이브 로그가 있는 최신 로그 백업을 마운트하여 복구를 수행합니다. 운영 스토리지에서 클론을 수행하려면 로그 및 데이터 백업이 운영 스토리지에 있어야 하고 보조 스토리지에서 클론을 수행하려면 로그 및 데이터 백업이 보조 스토리지에 있어야 합니다.</block>
   <block id="a102a6efc5ff157ad0fe4bd169365272" category="paragraph">SnapCenter가 적절한 로그 백업을 찾지 못할 경우 * 데이터베이스 복구 * 및 * 취소 시까지 * 옵션이 선택되지 않습니다. 로그 백업을 사용할 수 없는 경우 * 외부 아카이브 로그 위치 지정 * 에서 외부 아카이브 로그 위치를 제공할 수 있습니다. 여러 로그 위치를 지정할 수 있습니다.</block>
   <block id="9f902875733e03eed9d93ab36061e79a" category="paragraph">소스 데이터베이스가 Data Guard 대기 또는 Active Data Guard 대기 데이터베이스인 경우 PostOps 페이지가 표시되지 않습니다. Data Guard 대기 또는 Active Data Guard 대기 데이터베이스의 경우 SnapCenter는 SnapCenter GUI에서 복구 유형을 선택할 수 있는 옵션을 제공하지 않지만 로그를 적용하지 않고 복구 유형 취소를 통해 데이터베이스를 복구합니다.</block>
@@ -6715,17 +6507,14 @@
   <block id="8f8654928a0369230f1d533710a0be96" category="doc">Windows 파일 시스템에 대한 리소스 그룹을 생성합니다</block>
   <block id="62305fdbdeb0bfd0c2832cfd34ad6507" category="list-text">리소스 페이지의 목록에서 * 파일 시스템 * 을 선택합니다.</block>
   <block id="bd268863b796bc63e2713dc5a39dbb1e" category="admonition">최근에 SnapCenter에 파일 시스템을 추가한 경우 * 리소스 새로 고침 * 을 클릭하여 새로 추가된 리소스를 확인합니다.</block>
-  <block id="30df6673074a25a40b4e4deb87bc48ee" category="list-text">마법사의 이름 페이지에서 다음을 수행합니다.</block>
   <block id="690a9bec3617f718bd8cc89a054f296c" category="paragraph">예를 들어 customtext_resourcegroup_policy_hostname 또는 resourcegroup_hostname을 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
   <block id="c101058e7ea21bbbf2a5ac893088e90b" category="paragraph">태그</block>
   <block id="97bb2f32b5c5b00dd996d61d3d89e4f8" category="paragraph">리소스 그룹을 찾을 때 도움이 되는 설명 태그를 입력합니다.</block>
-  <block id="dd70be58b3c1fad512645d9a5cecfbc3" category="list-text">리소스 페이지에서 다음 작업을 수행합니다.</block>
   <block id="40320bb5aab2bc3ee432d214bae12756" category="list-text">리소스 목록을 필터링할 호스트를 선택합니다.</block>
   <block id="702e8d31120a2237e6b73908699ecdc8" category="paragraph">최근에 추가한 자원은 자원 목록을 새로 고친 후에만 사용 가능한 자원 목록에 나타납니다.</block>
   <block id="fc0f8625139c08857a98ff360ae5841e" category="list-text">사용 가능한 리소스 섹션에서 백업할 파일 시스템을 클릭한 다음 오른쪽 화살표를 클릭하여 추가 섹션으로 이동합니다.</block>
   <block id="4265601c87361a7cd62256734c1f899a" category="paragraph">동일한 스토리지 볼륨에서 모든 리소스 자동 선택 * 옵션을 선택하면 동일한 볼륨에 있는 모든 리소스가 선택됩니다. 추가된 섹션으로 이동하면 해당 볼륨의 모든 리소스가 함께 이동합니다.</block>
   <block id="d0bb923d5452aed249e5dd3106e8b581" category="paragraph">단일 파일 시스템을 추가하려면 * 동일한 스토리지 볼륨에서 모든 리소스 자동 선택 * 옵션을 선택 취소한 다음, 추가된 섹션으로 이동할 파일 시스템을 선택합니다.</block>
-  <block id="6683f737b2a1ba35fd5bf26a6d580f95" category="list-text">정책 페이지에서 다음 작업을 수행합니다.</block>
   <block id="06b7a35647423a613441508027476181" category="paragraph">기존 정책을 선택하고 * 세부 정보 * 를 클릭하여 해당 정책을 사용할 수 있는지 여부를 확인할 수 있습니다.</block>
   <block id="cca9f37b92847fd5d373bfe5fd03eb96" category="paragraph">기존 정책이 요구 사항을 충족하지 않는 경우 * 를 클릭하여 새 정책을 생성할 수 있습니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>를 눌러 정책 마법사를 시작합니다.</block>
   <block id="ab549fb31447afed81e3fd9e890b0394" category="paragraph">선택한 정책이 선택한 정책에 대한 스케줄 구성 섹션의 정책 열에 나열됩니다.</block>
@@ -6733,7 +6522,6 @@
   <block id="35d29b40e80e1e7a9a337b582db6df91" category="list-text">정책이 여러 일정 유형(빈도)과 연결된 경우 구성할 빈도를 선택합니다.</block>
   <block id="e44e5d659314ff509ecc4d0c16427d88" category="list-text">policy_policy_name_schedules 추가 대화 상자에서 시작 날짜, 만료 날짜 및 빈도를 지정하여 스케줄을 구성한 다음 * 마침 * 을 클릭합니다.</block>
   <block id="e863e63daf1b528f8857d33e4d2e28bf" category="paragraph">구성된 스케줄은 선택한 정책에 대한 스케줄 구성 섹션의 적용된 스케줄 열에 나열됩니다.</block>
-  <block id="c082cf225602f30d7f17d4906d2b24d7" category="list-text">알림 페이지에서 다음과 같이 알림 정보를 제공합니다.</block>
   <block id="dbffe553f69671f19b9ec8802d562a97" category="paragraph">백업 리소스 그룹을 만들고 정책을 첨부하고 일정을 구성한 후 수신자에게 이메일을 보내려면 * Always *, * On Failure * 또는 * On failure 또는 Warning * 을 선택합니다. SMTP 서버, 기본 이메일 제목 줄, 받는 사람 및 보낸 사람 이메일 주소를 입력합니다.</block>
   <block id="5da618e8e4b89c66fe86e32cdafde142" category="paragraph">보낸 사람</block>
   <block id="b357b524e740bc85b9790a0712d84a30" category="paragraph">이메일 주소입니다</block>
@@ -6783,7 +6571,6 @@
   <block id="6b138857d259637a1bf0819ec12805f4" category="list-text">E-Series 스토리지</block>
   <block id="985a682f49f5796a4ea6a9800816a6f3" category="paragraph">E-series 스토리지에 연결된 Windows 호스트에는 Windows용 플러그인을 설치할 수 없습니다.</block>
   <block id="07716054933755edaa9ed4c5d855a4c5" category="list-text">맨 위에 * Managed Hosts * 가 선택되어 있는지 확인합니다.</block>
-  <block id="3e2cec7e660f1c526b1e5d4c251adefd" category="list-text">호스트 페이지에서 다음을 수행합니다.</block>
   <block id="89fc61a18422cc5ac697346cdc638c8a" category="paragraph">Windows * 호스트 유형을 선택합니다.</block>
   <block id="854fb7c261d9424b7afc73ff6ae9fcf8" category="paragraph">SnapCenter 서버는 호스트를 추가한 다음 호스트에 아직 설치되지 않은 경우 Windows용 플러그인을 설치합니다.</block>
   <block id="9fdebe93de822a51a910e1d372114579" category="list-text">WSFC(Windows Server Failover Clustering)</block>
@@ -6926,7 +6713,6 @@
   <block id="4a1235dca49f377ee2531fa84b5a11bf" category="paragraph">SnapCenter 플러그인을 설치할 시스템의 도메인 관리자 또는 관리자 그룹의 구성원을 지정합니다. 사용자 이름 필드의 올바른 형식은 다음과 같습니다.</block>
   <block id="a93932dc1af33276251008f69486a0e6" category="list-text">'사용자 이름@UPN'</block>
   <block id="1f304163a7909c028545d03ae0549ec7" category="paragraph">작업 그룹에 속한 시스템의 경우 SnapCenter 플러그인을 설치할 시스템에 기본 제공 로컬 관리자를 지정합니다. 사용자 계정에 상승된 권한이 있거나 호스트 시스템에서 사용자 액세스 제어 기능이 비활성화된 경우 로컬 관리자 그룹에 속하는 로컬 사용자 계정을 지정할 수 있습니다. 사용자 이름 필드의 올바른 형식은 다음과 같습니다</block>
-  <block id="00832b779bc9edc3f680504dba310586" category="paragraph">자격 증명 설정을 마친 후 * 사용자 및 액세스 * 페이지의 사용자 또는 사용자 그룹에 자격 증명 유지 관리를 할당할 수 있습니다.</block>
   <block id="64095c20adc24a03dbae2f21ec58ed74" category="doc">클론 작업을 모니터링합니다</block>
   <block id="37fc70b00044cce5cadf163e61bbc7b0" category="summary">사용자 환경에 Windows용 플러그인이 설치되어 있는 경우 SnapCenter를 사용하여 Windows 파일 시스템을 백업, 복원 및 클론 복제할 수 있습니다. 이러한 작업을 지원하는 작업을 수행할 수도 있습니다.</block>
   <block id="e78102d1f4d367f5c7058a49f091b873" category="doc">Microsoft Windows용 SnapCenter 플러그인으로 수행할 수 있는 작업</block>
@@ -6951,8 +6737,6 @@
   <block id="4de3c0c7a329c036679ae5d6debd6837" category="list-text">기존 정책을 복사하고 정책 구성을 수정합니다.</block>
   <block id="8c80ab949b8c4f5204c34e59ffd5d6db" category="list-text">새 정책을 생성합니다.</block>
   <block id="e8c762de3a8dd5521656740e398525de" category="list-text">새 정책을 만들려면 * New * 를 클릭합니다.</block>
-  <block id="41acab2da7017534f3b1be32d25efb5a" category="list-text">이름 페이지에서 정책 이름과 설명을 입력합니다.</block>
-  <block id="e87a375471e1cef4cd77369dbd348903" category="list-text">백업 옵션 페이지에서 다음 작업을 수행합니다.</block>
   <block id="6f43068825ab7b26f4e535c04ac19468" category="list-text">백업 설정을 선택합니다.</block>
   <block id="99ab5dae334a718f97e7fe69ed4dead8" category="paragraph">파일 시스템 정합성 보장 백업</block>
   <block id="f8c8c78e7ffffce80ffbd21d203b7d09" category="paragraph">백업 작업이 시작되기 전에 SnapCenter가 파일 시스템이 상주하는 디스크 드라이브를 일시 중지한 다음 백업 작업이 종료된 후 디스크 드라이브를 다시 시작하도록 하려면 이 옵션을 선택합니다.</block>
@@ -6966,8 +6750,6 @@
   <block id="0a3cfeac0775871baedb24392bc4423c" category="paragraph">다음보다 오래된 스냅샷 복사본을 삭제합니다</block>
   <block id="9fbc3fb0ee9d4d329dbc0f3053b7b871" category="paragraph">SnapCenter에서 백업 복사본을 삭제하기 전에 보존할 일 수를 지정하려면 이 옵션을 선택합니다.</block>
   <block id="e19ad44a5949f6c604b843ea60587e80" category="admonition">SnapVault 복제를 사용하도록 설정하려는 경우 보존 수를 2 이상으로 설정해야 합니다. 복제 수를 1로 설정하면 보존 작업이 실패할 수 있습니다. 그 이유는 첫 번째 스냅샷 복사본이 SnapVault 관계에 대한 참조 스냅샷 복사본으로, 새로운 스냅샷 복사본이 타겟으로 복제되기 때문입니다.</block>
-  <block id="528b991e02d6603cb6d43b5633c41bc7" category="list-text">복제 페이지에서 보조 스토리지 시스템에 대한 복제를 지정합니다.</block>
-  <block id="a0d0bc8e6daaaf8b0c2bf80df11cf096" category="list-text">스크립트 페이지에서 SnapCenter 서버가 백업 작업 전후에 실행할 처방인 경로 또는 PS를 각각 입력하고 SnapCenter가 스크립트가 시간 초과 전에 실행될 때까지 대기하는 시간 제한을 입력합니다.</block>
   <block id="6c713d56e86f927e1bd66c7de2ed52c1" category="summary">Microsoft Windows용 SnapCenter 플러그인을 한 번에 여러 호스트에 설치하려면 설치-SmHostPackage PowerShell cmdlet을 사용하십시오.</block>
   <block id="5e384e3303c9f77f2d01c5c5ef33a4d5" category="doc">PowerShell cmdlet을 사용하여 여러 원격 호스트에 Microsoft Windows용 SnapCenter 플러그인을 설치합니다</block>
   <block id="0d9483465e761bb4492b6191a84c809a" category="paragraph">한 번에 여러 호스트에 SnapCenter Plug-in for Microsoft Windows를 설치하려면 "Install-SmHostPackage" PowerShell cmdlet을 사용하십시오.</block>
@@ -7715,7 +7497,6 @@
   <block id="3d8a9e359cdf4b956d6850836e03a25e" category="sidebar">맞춤형 플러그인의 백업 전략</block>
   <block id="eada736bfcfe3be151f853e6f08f6d26" category="sidebar">네이티브 스타일</block>
   <block id="08759ac851b4d644eddfd819f2b366e9" category="sidebar">SnapCenter 사용자 지정 플러그인 설치를 준비합니다</block>
-  <block id="16a0da04ed4ea27dbbb965b612c6b369" category="sidebar">SnapCenter 사용자 지정 플러그인에 대한 워크플로우를 설치합니다</block>
   <block id="834849dd07442651b1ce8092c92186f0" category="sidebar">SnapCenter 사용자 지정 플러그인을 설치합니다</block>
   <block id="e94a41320f7b470ab4c94c28575be94e" category="sidebar">CA 인증서를 구성합니다</block>
   <block id="0e1b3005c7d7fef8012117ae579df248" category="sidebar">워크플로를 백업합니다</block>
@@ -7726,7 +7507,6 @@
   <block id="16a46d711b809ec337c7f5488089048a" category="sidebar">Exchange 리소스를 백업합니다</block>
   <block id="e846bcfd3a099fef65a4bf829013b44e" category="sidebar">Exchange 리소스를 복구합니다</block>
   <block id="ab5f4e39159ac71e7f3f1e7080905a20" category="sidebar">SnapCenter 서버 설치</block>
-  <block id="8080a0ca91a92bcdd7db001b9dd7d378" category="sidebar">워크플로 설치</block>
   <block id="f514139bd8bb4cc318cbbff458dd2226" category="sidebar">SnapCenter 서버 설치를 준비합니다</block>
   <block id="bb8e9cdba9e13f92c0ca73c3ae3f6c05" category="sidebar">스토리지 가상 머신 접속 및 자격 증명</block>
   <block id="d816b0b5150b290e2a4a44bdb570d328" category="sidebar">CA 인증서를 가져옵니다</block>
@@ -7744,7 +7524,6 @@
   <block id="883135fe64e6d1e34b5f9e436f840927" category="sidebar">SAP HANA 데이터베이스를 위한 백업 전략</block>
   <block id="01feedeb5589791154fb6933172b117e" category="sidebar">SAP HANA 데이터베이스용 복원 및 복구 전략</block>
   <block id="b121f809528d9b2de8b169c1a245c274" category="sidebar">SAP HANA 데이터베이스용 SnapCenter 플러그인 설치를 준비합니다</block>
-  <block id="8df068e4b07db24cbb362d904ec51ab4" category="sidebar">SAP HANA 데이터베이스용 SnapCenter 플러그인 워크플로우를 설치합니다</block>
   <block id="abad280cf46d16a0bab0a51ae1663cf8" category="sidebar">SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치합니다</block>
   <block id="d03427303a92403b89bef9b602954bc0" category="sidebar">리소스를 검색하고 데이터 보호를 위한 멀티테넌트 데이터베이스 컨테이너를 준비합니다</block>
   <block id="6119871227cfd0ac53fa00369e5ea153" category="sidebar">SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다</block>
@@ -7788,4 +7567,169 @@
   <block id="90840bc3d6109c892e0f709274fdc6b6" category="paragraph">자세한 내용은 를 참조하십시오<block ref="af818973dd6acaf1e28a3bd4ca9bd4a5" category="inline-link-rx"></block> 비디오.</block>
   <block id="699f1c0496b9360a6686498114b0be37" category="paragraph">FAS, AFF 및 Amazon FSx에 필요합니다</block>
   <block id="c6a05503c268c70227420c852ced4926" category="admonition">SnapCenter에서는 /etc/fstab 파일의 UUID 매핑을 지원하지 않습니다.</block>
+  <block id="3160f4991d365988a865df5567f2147f" category="list-text">작업 페이지에서 다음 단계를 수행하십시오.</block>
+  <block id="1c41074e44dc2e55551dfb68d2bc354d" category="list-text">작업 세부 정보 페이지에서 * 로그 보기 * 를 클릭합니다.</block>
+  <block id="c6c1feaee0176e99111e0aef49c594be" category="list-text">인증서 스냅인 창에서 * 컴퓨터 계정 * 옵션을 선택한 다음 * 마침 * 을 클릭합니다.</block>
+  <block id="a2286f0c6fbfecb0501c43aa965242b6" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.</block>
+  <block id="0ab7e5f8a6ae4c1833f0606e717b782e" category="list-text">리소스 페이지에서 * 스냅샷 복사본에 대해 사용자 지정 이름 형식 사용 * 을 선택한 다음 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
+  <block id="007bb45dbc12aff746ee53defa1f784f" category="list-text">응용 프로그램 설정 페이지에서 다음을 실행합니다.</block>
+  <block id="1bf25096670c9621cda8c9d3e8bee4ad" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.</block>
+  <block id="4da4dfc97db1c4c71939b200e576ecc4" category="list-text">위치 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="ece79c0a7a1f1af0f056c2757943a57b" category="list-text">스크립트 페이지에서 다음 단계를 수행합니다.</block>
+  <block id="b1de5eba37ffd3b926bf5e26b51748a1" category="list-text">리소스 페이지에서 이전 SnapCenter 릴리스에 추가된 백업이 있는 이전 MDC 리소스를 선택하고 토폴로지 페이지에서 "유지 관리 모드"로 배치합니다.</block>
+  <block id="242bcc86f62f0d46e4d2e051c2d27552" category="list-text">작업 페이지에서 플러그인 설치 작업만 나열되도록 목록을 필터링하려면 다음을 수행합니다.</block>
+  <block id="0fade6059cbb08ae2900df60356ee4c4" category="list-text">리소스 페이지의 보기 목록에서 적절한 옵션을 선택합니다.</block>
+  <block id="c741f40a4fb7e6bd9a457120a09a6498" category="list-text">설정 페이지에서 다음 단계를 수행하십시오.</block>
+  <block id="d19356a2f0a6b22cf9697eeb6f1aaab2" category="list-text">스냅샷 복사본 기반 백업의 경우 복제 페이지에서 복제 설정을 지정합니다.</block>
+  <block id="560aff56bcecef38b5d4c7891081bbc3" category="list-text">리소스 페이지에서 * SAP HANA 데이터베이스 추가 * 를 클릭합니다.</block>
+  <block id="14fdd328e53552c727d0f36c3d306b64" category="list-text">리소스 세부 정보 제공 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="44dab87fe2da08cd26ee4f07dbdf1d56" category="list-text">스토리지 설치 공간 제공 페이지에서 스토리지 시스템을 선택하고 하나 이상의 볼륨, LUN 및 qtree를 선택한 다음 * 저장 * 을 클릭합니다.</block>
+  <block id="104f1f04203f9640543715600bfb008a" category="list-text">복구 범위 페이지에서 * Complete Resource * 를 선택하여 SAP HANA 데이터베이스의 구성된 데이터 볼륨을 복원합니다.</block>
+  <block id="40209fe76c8831a482604f99535ca9cc" category="list-text">복구 범위 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
+  <block id="d73a914cb42f4329fcad78926aa1794f" category="paragraph">No recovery * 를 선택합니다. HANA Studio에서 수동으로 복구 작업을 수행해야 합니다.</block>
+  <block id="f8ea625073f716b15f3e5f9e95cfb620" category="list-text">복구 작업을 수행하기 전에 Pre restore 및 unmount 명령을 Pre ops 페이지에 입력합니다.</block>
+  <block id="2e9892fdbfed0b91269baed4bcb0a87e" category="list-text">작업 게시 페이지에서 복구 작업을 수행한 후 실행할 mount 및 post restore 명령을 입력합니다.</block>
+  <block id="360027b0fe13d40229e30b3f3bf19043" category="list-text">자격 증명 페이지에서 자격 증명 구성에 필요한 정보를 지정합니다.</block>
+  <block id="8c7f76f09d0b2b40d4ffd4ef78ab735b" category="paragraph">자격 증명 설정을 마친 후 사용자 및 액세스 페이지의 사용자 또는 사용자 그룹에 자격 증명 유지 관리를 할당할 수 있습니다.</block>
+  <block id="4be65a5ea46b3e2f23ace622863d9afc" category="list-text">리소스 페이지의 * 보기 * 목록에서 리소스 유형을 선택합니다.</block>
+  <block id="7549e4590c51e2808eff73abfe0bfd99" category="list-text">데이터베이스 설정 구성 섹션에서 HDB 보안 사용자 저장소 키를 입력합니다.</block>
+  <block id="508557159ac9ed78ebc5783d068e5939" category="paragraph">토폴로지 페이지에서 데이터베이스 구성을 수정할 수 있습니다.</block>
+  <block id="dd948b85f562407a9aee87c28c0fd30e" category="list-text">복원 범위 페이지에서 * 전체 리소스 * 또는 * 파일 수준 * 을 선택합니다.</block>
+  <block id="395cb45f84a87f78c742de279b13d230" category="summary">리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 데이터베이스 및 비 데이터 볼륨입니다. SAP HANA 데이터베이스 플러그인용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 SAP HANA 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
+  <block id="69b78244df6d0e155ae65ee682dd4e8d" category="paragraph">플러그인을 설치하면 해당 Linux 호스트의 모든 리소스가 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
+  <block id="3e025b4a685d145a938552cff1a33612" category="list-text">자원 페이지의 보기 목록에서 자원 유형을 선택합니다.</block>
+  <block id="1360b9c3f96e4bcb224d198ae827046e" category="doc">SAP HANA 데이터베이스용 SnapCenter 플러그인 설치 워크플로우</block>
+  <block id="980b59d7d9d445544dc02109e7629575" category="list-text">호스트 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="8bd989fb65665020d24c4db21e1da81d" category="list-text">리소스 페이지에서 * 새 리소스 그룹 * 을 클릭합니다.</block>
+  <block id="2577791612c938dc7bd356c695b38b81" category="list-text">이름 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="0e37d8b83258c6a647c282f496b46f7b" category="list-text">리소스 페이지의 * 호스트 * 드롭다운 목록에서 호스트 이름을 선택하고 * 리소스 유형 * 드롭다운 목록에서 리소스 유형을 선택합니다.</block>
+  <block id="2a251da54f18e5dbcf2e7040051b6002" category="list-text">자원 페이지에서 상위 자원을 선택합니다.</block>
+  <block id="9fbd721fcf9b4830fd6828081be6f142" category="list-text">Manage Copies 보기의 운영 또는 2차(미러링 또는 복제) 스토리지 시스템에서 클론을 선택합니다.</block>
+  <block id="c259ed629dc67d1a7600c880484eb692" category="list-text">호스트 페이지에서 다음을 수행합니다.</block>
+  <block id="5ecc20833e4d1392fd69f4308b10ca8d" category="list-text">Configure log directory * 를 클릭하고 Configure host log directory 페이지에서 * Browse * 를 클릭하고 다음 단계를 완료합니다.</block>
+  <block id="7ffc5c3595639b4cfa7e25819a476178" category="list-text">관리 호스트 페이지의 * 유지 관리 * 모드로 SQL Server용 SnapCenter 플러그인을 배치합니다.</block>
+  <block id="7dfa5abc2b998d3aad88a3f5fe324a1f" category="list-text">설정 페이지에서 * 설정 * &gt; * 글로벌 설정 * &gt; * 재해 복구 * 로 이동합니다.</block>
+  <block id="5c1f48d6a29c5819710005753e862f03" category="list-text">Monitor * 페이지 또는 * Activity * 창에서 대기 중인 클론 작업을 취소할 수 있습니다.</block>
+  <block id="51a8ab5658be4bf41d1caa79bb680f38" category="list-text">옵션 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="f5b8bad30d46940258dc0b10c276c4e4" category="list-text">Location 페이지에서 클론을 생성할 스토리지 위치를 선택합니다.</block>
+  <block id="4efced0758e3c842e9e2cd9af1e96abf" category="list-text">스크립트 페이지에서 복제 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
+  <block id="db4332c3482f50f007196785ab57d358" category="list-text">스케줄 페이지에서 다음 작업 중 하나를 수행합니다.</block>
+  <block id="4b70ba28cecacc0b972de64bf00eafac" category="paragraph">EMS의 경우 를 참조할 수 있습니다<block ref="6a6cc2b71a11174970b94b5318ade705" category="inline-link-rx"></block></block>
+  <block id="71bf6e81bdfb948b524b45205bf1d65f" category="list-text">SQL 인스턴스 자격 증명이 AD 사용자 또는 그룹에 할당되지 않으면 AD(Active Directory) 사용자가 시작한 백업 작업이 실패합니다. 설정 * &gt; * 사용자 액세스 * 페이지에서 AD 사용자 또는 그룹에 SQL 인스턴스 자격 증명을 할당해야 합니다.</block>
+  <block id="d54432dcfb60b8b22d76998e3ae88f6c" category="list-text">Monitor* 페이지 또는 * Activity* 창에서 대기 중인 복원 작업을 취소할 수 있습니다.</block>
+  <block id="886ea91e68cf0b81982d756722488f4e" category="list-text">보존 페이지에서 백업 유형 페이지에서 선택한 백업 유형에 따라 다음 작업 중 하나 이상을 수행합니다.</block>
+  <block id="058ebe875bccef9354f43eaa6facdc04" category="list-text">시간별, 일별, 주별 및 월별 보존 설정의 * 전체 백업 보존 설정 * 섹션에서 백업 유형 페이지에서 선택한 스케줄 유형에 대한 보존 설정을 지정합니다.</block>
+  <block id="91c72a64980863f26bec585770f3d671" category="list-text">복제 페이지에서 보조 스토리지 시스템에 대한 복제를 지정합니다.</block>
+  <block id="8a24b0ef145ce6b12a15abff3b19d28f" category="list-text">스크립트 페이지에서 백업 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
+  <block id="aec87100b169f0f2c41c04f01deccfff" category="list-text">다음 백업 스케줄에 대한 확인 실행 섹션에서 스케줄 빈도를 선택합니다.</block>
+  <block id="78b5b7c604c7bf8d28d141a67b26385f" category="list-text">데이터베이스 일관성 검사 옵션 섹션에서 다음 작업을 수행합니다.</block>
+  <block id="2c3e3526b66e323981835b856ece9251" category="list-text">Manage Copies 보기의 스토리지 시스템에서 * Backups * 를 선택합니다.</block>
+  <block id="d8ff4520b6c4267ed19fca77339d67e9" category="list-text">복원 범위 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
+  <block id="4705d281c9921b63a9dd9f1db71dc981" category="list-text">복구 범위 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
+  <block id="e366e89ba265796c84ae8b264d23c084" category="list-text">Pre Ops 페이지에서 다음 단계를 수행합니다.</block>
+  <block id="05374563e03e65699382a4bc77ac0c30" category="list-text">복원 전 옵션 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
+  <block id="1bc19e2965a9acc467f9e92ccafe753d" category="list-text">Post Ops 페이지에서 다음 단계를 수행하십시오.</block>
+  <block id="7b7d58eae7c1c48c220ea2cf5f2754c6" category="list-text">마법사의 알림 페이지에서 기본 용량 임계값인 90%를 사용합니다.</block>
+  <block id="391f0cfb81e64e89ce06d9fb74afdee6" category="list-text">마법사의 호스트 페이지에서 다음을 수행합니다.</block>
+  <block id="4ff00993f5ada1fd5d65d0155fb57afc" category="list-text">위치 페이지에서 선택한 리소스를 복원할 대상 볼륨을 선택합니다.</block>
+  <block id="25c32a730da76a44edba3eed7970d7b5" category="list-text">복사본 관리 보기 페이지에서 기본 또는 보조(미러링 또는 보관된) 스토리지 시스템에서 백업을 선택합니다.</block>
+  <block id="01e2b44d2ed56123a7aac06f5ddcc2c1" category="list-text">클론 옵션 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="ce65625de67b9025c5e67557d499c6cf" category="list-text">로그 페이지에서 다음 옵션 중 하나를 선택합니다.</block>
+  <block id="1813891225fbe3440817ee7ab349f81e" category="list-text">스크립트 페이지에서 복제 작업 전후에 실행해야 하는 스크립트 시간 초과, 경로 및 처방된 postscript 또는 postscript의 인수를 각각 입력합니다.</block>
+  <block id="87212cf47371074063ab454ea6ae59b3" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 인스턴스 * 를 선택합니다.</block>
+  <block id="8db95e3d1291d5905de937134e83c882" category="list-text">리소스 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="240eeb3866483db7f3da9b3689f8837d" category="list-text">확인 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="4ef7e21a631ca3e8e53bd58d8f6a3dd8" category="list-text">자격 증명 페이지에서 자격 증명을 구성합니다.</block>
+  <block id="9b2d19ed2c6ef4ad66cf85a7f008aa99" category="list-text">리소스 페이지의 * 보기 * 목록에서 * 인스턴스 * 를 선택합니다.</block>
+  <block id="3729214a02912f5fc0f81c3f5dffad3b" category="list-text">인스턴스 보호 페이지에서 인스턴스를 보호하고 필요한 경우 * 자격 증명 구성 * 을 클릭합니다.</block>
+  <block id="8559383a73a140c79f029e57a237db3b" category="list-text">리소스 페이지에서 다음 단계를 수행하십시오.</block>
+  <block id="f03c757efff1b7a92c7b30cbc8c7c0b8" category="doc">Microsoft SQL Server용 SnapCenter 플러그인 설치 워크플로</block>
+  <block id="dda83e7a78cbb5a39ad65f48499b90ee" category="list-text">토폴로지 페이지의 복사본 관리 보기에서 볼트 사본에서 백업을 클릭합니다.</block>
+  <block id="5d1ccbabeac3da21e18ec5dee9e1b5d3" category="list-text">DR 모드에서 생성된 새 백업은 토폴로지 페이지의 SnapMirror 또는 SnapVault(보조) 아래에 나열됩니다.</block>
+  <block id="2325ed96f22c1b6048f710fb3ef2f0ea" category="paragraph">자세한 내용은 를 참조하십시오<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block>.</block>
+  <block id="1e898ea74f227f6f8576a3c8a19476db" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 인스턴스 * 또는 * 가용성 그룹 * 을 선택합니다.</block>
+  <block id="53c98fb3ede460fb23424f1db6ea0273" category="list-text">리소스 페이지에서 * 스냅샷 복사본의 * 사용자 지정 이름 형식 확인란을 선택한 다음 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
+  <block id="075e5d48960664645c5727a530a7c640" category="list-text">정책 섹션의 드롭다운 목록에서 하나 이상의 정책을 선택합니다.</block>
+  <block id="1ca9ef3a64115b9b5155a63404740914" category="paragraph">암시적 리소스 그룹이 만들어집니다. 사용자 액세스 페이지에서 해당 사용자 또는 그룹을 선택하여 이 정보를 볼 수 있습니다. 암시적 리소스 그룹 유형은 "리소스"입니다.</block>
+  <block id="e5acff5734e40c3c2497b77505329dc5" category="paragraph">설정 페이지에서 다음 작업을 수행할 수 있습니다.</block>
+  <block id="05f4bbedc7296e63af5610bfc33574b5" category="list-text">스토리지 시스템 페이지의 * 유형 * 드롭다운에서 추가된 모든 SVM 또는 클러스터를 표시할지 여부를 선택합니다.</block>
+  <block id="98670eb8cc95dd053ed921df2975cefe" category="list-text">Storage Connections 목록에서 Controller License 열을 찾습니다.</block>
+  <block id="706c1d4933d296d42d61b064f4e637ae" category="doc">설치 워크플로우</block>
+  <block id="e9d3b5a3d1afd5fb9c202b34ca152f94" category="paragraph">대시보드 페이지가 표시됩니다.</block>
+  <block id="4280c9202b1c158150f778ee64cbef6f" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 를 참조할 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block>.</block>
+  <block id="54d9d2711f26f6d25c1c19795cdc618a" category="list-text">LUN 이름 페이지에서 LUN을 확인합니다.</block>
+  <block id="88578c7b1de571017d7d10d8540d4348" category="list-text">디스크 유형 페이지에서 디스크 유형을 선택합니다.</block>
+  <block id="3caeaa05ee72cad81ca0a5710f8ebefe" category="list-text">드라이브 속성 페이지에서 드라이브 속성을 지정합니다.</block>
+  <block id="8a3edf006623273cce9d7ea8c3a0c584" category="list-text">LUN 매핑 페이지에서 호스트의 iSCSI 또는 FC 이니시에이터를 선택합니다.</block>
+  <block id="99e0cd14f8ef7eb5cfe0d0c5da63dcdd" category="list-text">그룹 유형 페이지에서 기존 igroup을 LUN에 매핑할지 또는 새 igroup을 생성할지를 지정합니다.</block>
+  <block id="7de6dcccd0bb819f18ca4dce5df244a8" category="list-text">요약 페이지에서 선택 사항을 검토한 다음 * 마침 * 을 클릭합니다.</block>
+  <block id="75f804d7190a938a6ccb9b46667f5456" category="list-text">LUN 이름 페이지에서 접속할 LUN을 확인합니다.</block>
+  <block id="be45b03820d1e456f9325fb674b2bcbf" category="list-text">그룹 유형 페이지에서 기존 igroup을 LUN에 매핑할지 또는 새 igroup을 생성할지를 지정합니다.</block>
+  <block id="3b7900676757680182a9634d46c4cf8e" category="list-text">요약 페이지에서 선택 사항을 검토하고 * 마침 * 을 클릭합니다.</block>
+  <block id="1507ae94c7f9827f09f5e402073eac7e" category="list-text">이름 페이지에서 다음 작업 중 하나를 수행합니다.</block>
+  <block id="33490e608e572cb634ebc7c1d7368581" category="list-text">위치 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="c4575b1b73984d25b217eb42d0f4bcd1" category="list-text">PreOps 페이지에서 다음 단계를 수행하십시오.</block>
+  <block id="0b25cbc7182735d30fe23bf6cbd75a73" category="list-text">PostOps 페이지에서 * Recover database * 및 * until Cancel * 이 기본적으로 선택되어 복제된 데이터베이스의 복구를 수행합니다.</block>
+  <block id="cee1384e1e14806f593560787cfe2b74" category="list-text">복구 범위 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="e542bedc80779f8ba91bf83659fd05f3" category="list-text">복구 범위 페이지에서 다음 작업 중 하나를 수행합니다.</block>
+  <block id="787a758f98c660998f056235d371c22c" category="list-text">PreOps 페이지에서 복구 작업 전에 실행할 처방전의 경로와 인수를 입력합니다.</block>
+  <block id="03f3198f4f3bab3ba43a2dbb99af4d8a" category="list-text">PostOps 페이지에서 다음 단계를 수행하십시오.</block>
+  <block id="9b8f1dcf619049f562efeddfc02128a4" category="list-text">알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일 알림을 보낼 시나리오를 선택합니다.</block>
+  <block id="8d2ba99665e114b5e2a9d74a31cdf554" category="list-text">리소스 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="b311986e61e20df74cfba5511a5bdf33" category="list-text">리소스 페이지의 * 호스트 * 드롭다운 목록에서 Oracle 데이터베이스 호스트 이름을 선택합니다.</block>
+  <block id="d789a2423eab9030be0a2356fd87fd2f" category="list-text">PostOps 페이지에서 * until Cancel * 이 기본적으로 선택되어 복제된 데이터베이스의 복구를 수행합니다.</block>
+  <block id="0451cf0b41ac5c3ff855d450e9329288" category="list-text">복구 범위 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="1cd8b2345e3fc8629233e588fdab2761" category="doc">Oracle 데이터베이스용 SnapCenter 플러그인 설치 워크플로우</block>
+  <block id="c154f07a4589eb83e2c309a57882666a" category="list-text">리소스 페이지에서 가져올 데이터베이스가 검색되어 표시되는지 확인합니다.</block>
+  <block id="b171e637bb7cf16f18741fbe5702d170" category="list-text">스크립트 페이지에서 클론 생성 전에 실행할 스크립트의 이름, 파일 시스템을 마운트하는 명령 및 클론 생성 후 실행할 스크립트의 이름을 지정합니다.</block>
+  <block id="2e1075c2f00fe853dfc8acda6a66a53f" category="list-text">Storage Footprint 페이지에서 스토리지 시스템 이름을 입력하고 하나 또는 볼륨을 선택한 다음 연결된 LUN 또는 qtree를 지정합니다.</block>
+  <block id="c513fadbc5c352b88ef69bb2bec105ec" category="list-text">스토리지 연결 페이지에서 적절한 SVM 이름을 클릭합니다.</block>
+  <block id="9442f446bcaa1c558d0de046c938e087" category="list-text">SVM이 클러스터에 속하지 않는 경우 스토리지 시스템 수정 페이지에서 사용자 이름, 암호, EMS 및 AutoSupport 설정, 플랫폼, 프로토콜, 포트, 시간 초과 등의 구성을 수정합니다. 및 기본 IP를 선택합니다.</block>
+  <block id="f16ff770d40beb50d9a06eeef742b55c" category="list-text">SVM이 클러스터의 일부인 경우 Modify Storage System 페이지에서 * Manage SVM Independently * 를 선택하고 사용자 이름, 암호, EMS 및 AutoSupport 설정, 플랫폼, 프로토콜, 포트, 시간 초과 등의 구성을 수정합니다. 및 기본 IP를 선택합니다.</block>
+  <block id="d039a603d997ac00b47067de1d3fe4d0" category="list-text">스토리지 접속 페이지에서 클러스터 이름을 클릭합니다.</block>
+  <block id="8d7db53d96207eb3497c3fd3793b614e" category="list-text">스토리지 시스템 수정 페이지에서 사용자 이름 옆에 있는 편집 아이콘을 클릭하고 사용자 이름과 암호를 수정합니다.</block>
+  <block id="fd66cad12811213ea5497a162ec395b7" category="list-text">설정 페이지에서 * 사용자 및 액세스 * 를 클릭합니다.</block>
+  <block id="d705855ae418769e2afd7f42a4b93e1e" category="list-text">사용자 또는 그룹 세부 정보 페이지에서 역할 및 자산을 변경합니다.</block>
+  <block id="260acfdf5030f722009f34bb0d8e9589" category="paragraph">설정의 글로벌 설정 페이지에서 SMTP 서버를 구성해야 합니다.</block>
+  <block id="99d089abd651815a06636851b1cec8c5" category="list-text">리소스 페이지의 보기 목록에서 * 데이터베이스 * 를 선택합니다.</block>
+  <block id="e170e48914067faa2b014fec33ad5e1a" category="list-text">옵션 페이지에서 다음 로그 백업 옵션 중 하나를 선택합니다.</block>
+  <block id="f4cdc419e04045f8c3af5c2605ee299b" category="list-text">스크립트 페이지에서 복원 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
+  <block id="baf51638fcd69f7ad248b14cc9899660" category="doc">토폴로지 페이지에서 Exchange 백업을 봅니다</block>
+  <block id="49586cbe3592d1c0d3aa8eb60491a444" category="paragraph">토폴로지 페이지에서 선택한 리소스 또는 리소스 그룹에 사용할 수 있는 모든 백업을 볼 수 있습니다. 이러한 백업의 세부 정보를 확인한 다음 해당 백업을 선택하여 데이터 보호 작업을 수행할 수 있습니다.</block>
+  <block id="c7b46f77fd84fb455f4fc38752eb34aa" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 데이터베이스, 리소스 또는 리소스 그룹을 선택합니다.</block>
+  <block id="ea651e7d348fad133122cd96d8a57514" category="paragraph">Available Resources and Selected Resources 섹션에 호스트의 FQDN과 함께 데이터베이스 이름이 표시됩니다. 이 FQDN은 데이터베이스가 특정 호스트에서 활성화되어 있으며 이 호스트에서 백업을 수행할 수 없음을 나타냅니다. 정책에서 백업 작업 생성 시 선택할 * 서버의 백업 복사본 * 옵션을 선택한 경우 백업할 서버 선택 옵션에서 하나 이상의 백업 서버를 선택해야 합니다.</block>
+  <block id="56211ba6636186607e13945dac559a10" category="list-text">리소스 페이지의 * 보기 * 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 을 선택합니다.</block>
+  <block id="6da272f1d69c440674470ba19591ba05" category="paragraph">리소스 페이지에서 을(를) 선택합니다 <block ref="362bbfc4e46b557d6a4f1f7a4cbeaf25" category="inline-image-macro-rx" type="image"></block> 아이콘은 데이터베이스가 비NetApp 스토리지에 있음을 나타냅니다.</block>
+  <block id="15729e255e75ea1df4e86881a1909cec" category="list-text">사용자 지정 스냅샷 복사본 이름을 지정하려면 리소스 페이지에서 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 확인란을 선택한 다음 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
+  <block id="d99fed20823b9c8ab623e15a5dda6022" category="list-text">보존 페이지에서 보존 설정을 구성합니다.</block>
+  <block id="5aeb9e6d879dba508efed2806a37d0b1" category="list-text">복제 페이지에서 다음 보조 복제 옵션 중 하나 또는 둘 다를 선택합니다.</block>
+  <block id="31db120ce3e7f7d5198a060e87905d01" category="doc">Microsoft Exchange Server용 SnapCenter 플러그인 설치 워크플로우</block>
+  <block id="71edd90271636e3f12b43102371d4d7d" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 또는 * 리소스 그룹 * 을 선택합니다.</block>
+  <block id="e0902178b3a4911c34f934ab886ffefa" category="list-text">호스트 페이지에서 다음을 수행합니다.</block>
+  <block id="3f1f9e5412a3186c0134e9b8b8e5c92e" category="list-text">복사본 관리 페이지에서 * 다시 시딩된 * 을 클릭합니다.</block>
+  <block id="81d75f55d874a1528428add2f9ce0e46" category="list-text">스크립트 페이지에서 재시딩된 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
+  <block id="5693c7d2b02d83427ab807d73a04e2e7" category="list-text">위치 페이지에서 선택한 리소스를 복원할 대상 볼륨을 선택합니다.</block>
+  <block id="ce6e296d4e6f07e1cb707c2eaeaf04ad" category="list-text">사용자 지정 백업 설정 섹션에서 플러그인으로 전달되어야 하는 특정 백업 설정을 키 값 형식으로 제공합니다. 플러그인으로 전달할 여러 키 값을 제공할 수 있습니다.</block>
+  <block id="d9ac41630ae6a20177466403e2d328d8" category="doc">SnapCenter 맞춤형 플러그인의 설치 워크플로우</block>
+  <block id="726980167284c65abff52d65b5d3232b" category="list-text">복구 유형 페이지에서 다음 단계를 수행합니다. 옵션을 선택하여 로그를 적용합니다. 복원 유형을 선택하기 전에 플러그인이 모든 로그 및 로그를 지원하는지 확인하십시오.</block>
+  <block id="80cb8ef1d01a491a4a563ec56f39cedc" category="list-text">리소스 페이지에서 사용자 지정 이름을 사용하려면 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 확인란을 선택한 다음 스냅샷 복사본 이름의 사용자 지정 이름 형식을 입력합니다.</block>
+  <block id="dd4b762c191c7a235ce898c094749679" category="paragraph">호스트 추가 페이지에서 사용자 지정 플러그인 및 스토리지 플러그인을 설치할 수 있습니다.</block>
+  <block id="134848154c843b2b7ebbc0c3bf4c17a4" category="list-text">리소스 페이지에서 * 리소스 추가 * 를 클릭합니다.</block>
+  <block id="d98e943b0122d016274bcbbeba1d647d" category="list-text">리소스 설정 페이지에서 리소스에 대한 사용자 지정 키 값 쌍을 제공합니다.</block>
+  <block id="fc239c2b2a79ad8ee77cc5430b1803fe" category="paragraph">자격 증명 설정을 마친 후 사용자 및 액세스 페이지의 사용자 또는 사용자 그룹에 자격 증명 유지 관리를 할당할 수 있습니다.</block>
+  <block id="f316f1145e3342e626b49461ffc2ab89" category="list-text">자원 페이지에서 새 자원 그룹을 클릭합니다.</block>
+  <block id="94f48d06961651ce76410fb0e6059f76" category="list-text">선택 사항: 리소스 페이지의 * 리소스 유형 * 드롭다운 목록에서 호스트 이름을 선택하고 * 리소스 유형 * 드롭다운 목록에서 리소스 유형을 선택합니다.</block>
+  <block id="08b935061f93c6a0dff0b7e6979bd0d5" category="list-text">선택 사항: 응용 프로그램 설정 페이지에서 다음을 수행합니다.</block>
+  <block id="3b1aa43ebee12f3a0512b18010894a41" category="list-text">설정 페이지에서 다음을 수행합니다.</block>
+  <block id="1b1111057cfcc40728752f48e637a2b1" category="list-text">스크립트 페이지에서 클론 작업 전후에 각각 실행해야 하는 사전 클론 또는 사후 클론 명령을 입력합니다. mount 명령을 입력하여 호스트에 파일 시스템을 마운트합니다.</block>
+  <block id="d3a7899ba84bc1cba2dbfdbfddb73d2b" category="list-text">이름 페이지에 정책 이름과 설명을 입력합니다.</block>
+  <block id="f471a8ee4242d9fbaf7751c9646120e4" category="list-text">백업 옵션 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="fe096510391eb2244a7625318c206713" category="list-text">스크립트 페이지에서 SnapCenter 서버가 백업 작업 전후에 실행할 처방인 경로 또는 PS를 각각 입력하고 SnapCenter가 스크립트가 시간 초과 전에 실행될 때까지 대기하는 시간 제한을 입력합니다.</block>
+  <block id="475b0c397d9f036e875b5629bbe88a2e" category="paragraph">자격 증명 설정을 마친 후 사용자 및 액세스 페이지의 사용자 또는 사용자 그룹에 자격 증명 유지 관리를 할당할 수 있습니다.</block>
+  <block id="d08277bb970ddff932213b2609ab446f" category="list-text">마법사의 이름 페이지에서 다음을 수행합니다.</block>
+  <block id="a15a8538f26ed0800d76a7c5251218aa" category="list-text">리소스 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="7827adf9dce3d6a77b179ccf2a468de3" category="list-text">알림 페이지에서 다음과 같이 알림 정보를 제공합니다.</block>
+  <block id="15e336a500bbc8b78c88e27a721b8803" category="doc">Microsoft Windows용 SnapCenter 플러그인 설치 워크플로</block>
+  <block id="44f89507afec59f4cedb4b405c468c9c" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block></block>
+  <block id="4c1df4d227c6def4b8391fc8b18a81bf" category="paragraph">또한 _Uninstall-SmHostPackage_cmdlet 및 필수 매개 변수를 사용하여 여러 호스트에서 플러그인을 제거할 수도 있습니다. cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block>.</block>
 </blocks>

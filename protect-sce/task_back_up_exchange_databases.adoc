@@ -31,7 +31,7 @@ summary: 데이터베이스가 리소스 그룹에 속하지 않은 경우 리�
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 * Microsoft Exchange Server 플러그인 * 을 선택합니다.
 . 리소스 페이지의 * 보기 * 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 을 선택합니다.
 +
-리소스 페이지에서 을(를) 클릭합니다 image:../media/not_supported_icon.png[""] 아이콘은 데이터베이스가 비NetApp 스토리지에 있음을 나타냅니다.
+리소스 페이지에서 을(를) 선택합니다 image:../media/not_supported_icon.png[""] 아이콘은 데이터베이스가 비NetApp 스토리지에 있음을 나타냅니다.
 
 +
 

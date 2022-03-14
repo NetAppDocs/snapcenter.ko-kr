@@ -40,7 +40,7 @@ entries:
     url: "/protect-scc/reference_custom_plugin_in_snapcenter.html"
 - title: SnapCenter 사용자 지정 플러그인 설치를 준비합니다
   entries:
-  - title: SnapCenter 사용자 지정 플러그인에 대한 워크플로우를 설치합니다
+  - title: SnapCenter 맞춤형 플러그인의 설치 워크플로우
     url: "/protect-scc/task_install_snapcenter_custom_plug_in.html"
   - title: 호스트 추가 및 SnapCenter 사용자 지정 플러그인 설치를 위한 사전 요구 사항
     url: "/protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html"

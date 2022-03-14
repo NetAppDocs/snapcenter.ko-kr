@@ -75,7 +75,7 @@ NOTE: SnapCenter에 처음 로그인하는 경우 설치 프로세스 중에 제
 
 * 결과 *
 
-대시보드 * 페이지가 표시됩니다.
+대시보드 페이지가 표시됩니다.
 
 사이트에 연결할 수 없다는 오류로 인해 로깅이 실패하는 경우 SSL 인증서를 SnapCenter에 매핑해야 합니다. https://kb.netapp.com/?title=Advice_and_Troubleshooting%2FData_Protection_and_Security%2FSnapCenter%2FSnapCenter_will_not_open_with_error_%2522This_site_can%2527t_be_reached%2522["자세한 정보"^]
 

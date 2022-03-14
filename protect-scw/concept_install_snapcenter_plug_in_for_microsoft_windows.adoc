@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing 
 summary: 데이터베이스 파일이 아닌 Windows 파일을 보호하려면 Microsoft Windows용 SnapCenter 플러그인을 설치하고 설정해야 합니다. 
 ---
-= Microsoft Windows용 SnapCenter 플러그인을 설치합니다
+= Microsoft Windows용 SnapCenter 플러그인 설치 워크플로
 :icons: font
 :imagesdir: ../media/
 

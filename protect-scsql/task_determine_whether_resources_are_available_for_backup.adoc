@@ -31,7 +31,7 @@ summary: 리소스는 설치한 플러그인에서 유지 관리하는 데이터
 
 * 이 작업에 대한 정보 *
 
-Details * 페이지의 * Overall Status * 옵션이 Not Available for backup으로 설정되어 있으면 데이터베이스를 백업할 수 없습니다. 다음 중 하나라도 해당하면 * Overall Status *(전체 상태 *) 옵션이 Not Available(백업 불가)로 설정됩니다.
+Details 페이지의 * Overall Status * 옵션이 Not Available for backup으로 설정되어 있으면 데이터베이스를 백업할 수 없습니다. 다음 중 하나라도 해당하면 * Overall Status *(전체 상태 *) 옵션이 Not Available(백업 불가)로 설정됩니다.
 
 * 데이터베이스가 NetApp LUN에 없습니다.
 * 데이터베이스가 정상 상태가 아닙니다.

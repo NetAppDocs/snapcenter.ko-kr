@@ -16,7 +16,7 @@ entries:
     url: "/protect-sco/reference_minimum_ontap_privileges_required_for_oracle_plug_in.html"
 - title: Oracle 데이터베이스용 SnapCenter 플러그인을 설치합니다
   entries:
-  - title: Oracle Database용 플러그인 워크플로우를 설치합니다
+  - title: Oracle 데이터베이스용 SnapCenter 플러그인 설치 워크플로우
     url: "/protect-sco/install-snapcenter-plug-in-for-oracle-workflow.html"
   - title: 호스트를 추가하고 Linux 또는 AIX용 플러그인 패키지를 설치하기 위한 사전 요구 사항
     url: "/protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html"

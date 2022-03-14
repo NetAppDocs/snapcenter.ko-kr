@@ -48,7 +48,7 @@ entries:
       url: "/protect-hana/reference_types_of_recovery_operations_supported_for_sap_hana_database.html"
 - title: SAP HANA 데이터베이스용 SnapCenter 플러그인 설치를 준비합니다
   entries:
-  - title: SAP HANA 데이터베이스용 SnapCenter 플러그인 워크플로우를 설치합니다
+  - title: SAP HANA 데이터베이스용 SnapCenter 플러그인 설치 워크플로우
     url: "/protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html"
   - title: 호스트를 추가하고 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하기 위한 사전 요구사항
     url: "/protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html"

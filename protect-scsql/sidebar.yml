@@ -59,7 +59,7 @@ entries:
   url: "/protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html"
 - title: Microsoft SQL Server용 SnapCenter 플러그인 설치를 준비합니다
   entries:
-  - title: Microsoft SQL Server용 SnapCenter 플러그인 워크플로우를 설치합니다
+  - title: Microsoft SQL Server용 SnapCenter 플러그인 설치 워크플로
     url: "/protect-scsql/task_install_snapcenter_plug_in_for_microsoft_sql_server_database.html"
   - title: 사전 요구 사항 - 호스트를 추가하고 Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다
     url: "/protect-scsql/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_microsoft_sql_server.html"

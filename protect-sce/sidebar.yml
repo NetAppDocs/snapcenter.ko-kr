@@ -21,7 +21,7 @@ entries:
     url: "/protect-sce/task_define_a_restore_strategy_for_exchange_databases.html"
 - title: Microsoft Exchange Server용 SnapCenter 플러그인을 설치합니다
   entries:
-  - title: 워크플로를 설치합니다
+  - title: Microsoft Exchange Server용 SnapCenter 플러그인 설치 워크플로우
     url: "/protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html"
   - title: 호스트를 추가하고 Microsoft Exchange Server용 SnapCenter 플러그인을 설치하기 위한 사전 요구 사항
     url: "/protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html"

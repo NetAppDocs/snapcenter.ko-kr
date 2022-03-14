@@ -10,7 +10,7 @@ summary: 글로벌 설정 페이지에서 스토리지용 DR 모드를 활성화
 
 
 [role="lead"]
-글로벌 설정 * 페이지에서 스토리지용 DR 모드를 활성화하여 SQL Server 스토리지용 SnapCenter 플러그인을 복구할 수 있습니다.
+글로벌 설정 페이지에서 스토리지용 DR 모드를 활성화하여 SQL Server용 SnapCenter 플러그인을 복구할 수 있습니다.
 
 * 필요한 것 *
 
@@ -28,7 +28,7 @@ DR(재해 복구)은 VMDK 및 RDM 구성에서 지원되지 않습니다.
 
 * 단계 *
 
-. 설정 * 페이지에서 * 설정 * > * 글로벌 설정 * > * 재해 복구 * 로 이동합니다.
+. 설정 페이지에서 * 설정 * > * 글로벌 설정 * > * 재해 복구 * 로 이동합니다.
 . 재해 복구 사용 * 을 선택합니다.
 . 적용 * 을 클릭합니다.
 . Monitor * > * Jobs * 를 클릭하여 DR 작업이 활성화되었는지 여부를 확인합니다.
@@ -40,14 +40,14 @@ DR(재해 복구)은 VMDK 및 RDM 구성에서 지원되지 않습니다.
 +
 새 데이터베이스는 페일오버 이전과 마찬가지로 계속 작동합니다.
 
-* DR 모드에서 생성된 새 백업은 * Topology * 페이지의 SnapMirror 또는 SnapVault(보조) 아래에 나열됩니다.
+* DR 모드에서 생성된 새 백업은 토폴로지 페이지의 SnapMirror 또는 SnapVault(보조) 아래에 나열됩니다.
 +
 새 백업 옆에 "i" 아이콘이 표시되어 DR 모드 중에 이러한 백업이 생성되었음을 나타냅니다.
 
 * UI 또는 다음 cmdlet('제거-SmBackup')을 사용하여 페일오버 중에 생성된 SQL Server 백업용 SnapCenter 플러그인을 삭제할 수 있습니다
 * 장애 조치 후 일부 리소스가 DR 모드가 아닌 모드로 전환되도록 하려면 "Remove-SmResourceDRMode"를 사용합니다
 +
-자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 * SnapCenter 서버는 DR 또는 비 DR 모드에 있지만 DR 모드 또는 비 DR 모드에 있는 스토리지 리소스가 있는 리소스 그룹이 아닌 개별 스토리지 리소스(SQL 데이터베이스)를 관리합니다.
 

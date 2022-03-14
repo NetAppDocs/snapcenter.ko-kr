@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing 
 summary: 사용자 지정 플러그인 리소스를 보호하려면 SnapCenter 사용자 지정 플러그인을 설치하고 설정해야 합니다. 
 ---
-= SnapCenter 사용자 지정 플러그인을 설치합니다
+= SnapCenter 맞춤형 플러그인의 설치 워크플로우
 :icons: font
 :imagesdir: ../media/
 

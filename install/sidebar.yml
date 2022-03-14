@@ -2,7 +2,7 @@
 section: install
 title: SnapCenter 서버 설치
 entries:
-- title: 워크플로 설치
+- title: 설치 워크플로우
   url: "/install/install_workflow.html"
 - title: SnapCenter 서버 설치를 준비합니다
   entries:
