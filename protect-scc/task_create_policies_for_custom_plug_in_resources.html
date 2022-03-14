@@ -50,10 +50,10 @@
   
   <link rel="stylesheet" href="/ko-kr/snapcenter/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ko-kr/snapcenter/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/ko-kr/snapcenter/css/product-family.css' type="text/css">
   <link rel='stylesheet' href='/ko-kr/snapcenter/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/snapcenter/js/na-search.js'></script><script src='/ko-kr/snapcenter/js/na-pagenav.js'></script><link rel='stylesheet' href='/ko-kr/snapcenter/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/snapcenter/css/prism-netapp.css' type='text/css'>
 
@@ -131,7 +131,6 @@
   }
   </script>
   <script src='/ko-kr/snapcenter/js/version-dropdown.js'></script>
-  <script src='/ko-kr/snapcenter/js/product-family.js'></script>
   <script src='/ko-kr/snapcenter/js/FileSaver.min.js'></script>
   <script src='/ko-kr/snapcenter/js/jszip-utils.min.js'></script>
   <script src='/ko-kr/snapcenter/js/jszip.min.js'></script>
@@ -144,6 +143,43 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"><div id="version-dropdown-ie-i18n">
+  <div id="version-dropdown-ie-i18n-menu">
+    <span class="ie-i18n-lang"><span class="version-title">SnapCenter 소프트웨어 </span><span class="version">4.6</span></span>
+    <span class="version-dropdown-caret"></span>
+  </div>
+  <div id="version-dropdown-n-property-navigation-bar__menu--language-selector" class="n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+    <div class="n-language-selector-menu">
+      <ul class="n-menu__list">
+        <li class="n-menu__list-column">
+          <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/snapcenter/protect-scc/task_create_policies_for_custom_plug_in_resources.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>SnapCenter 소프트웨어</span><span class="version"> 4.6</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/snapcenter-45/protect-scc/task_create_policies_for_custom_plug_in_resources.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>SnapCenter 소프트웨어</span><span class="version"> 4.5</span></span>
+              </a></li></ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/snapcenter/issues/new?body=Page%3A%20[사용자 지정 플러그인 리소스에 대한 정책을 생성합니다](https://docs.netapp.com/ko-kr/snapcenter/protect-scc/task_create_policies_for_custom_plug_in_resources.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snapcenter/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/snapcenter/blob/main/protect-scc/task_create_policies_for_custom_plug_in_resources.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snapcenter/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/snapcenter/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">이 페이지의 내용</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -2939,7 +2975,7 @@
         <div class="na-navbar-padding"> SnapCenter 서버 설치</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/install/install_workflow.html">
-        워크플로 설치
+        설치 워크플로우
       </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> SnapCenter 서버 설치를 준비합니다</div>
       </a>
@@ -3109,7 +3145,7 @@
         <div class="na-navbar-padding"> Microsoft SQL Server용 SnapCenter 플러그인 설치를 준비합니다</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scsql/task_install_snapcenter_plug_in_for_microsoft_sql_server_database.html">
-        Microsoft SQL Server용 SnapCenter 플러그인 워크플로우를 설치합니다
+        Microsoft SQL Server용 SnapCenter 플러그인 설치 워크플로
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scsql/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_microsoft_sql_server.html">
         사전 요구 사항 - 호스트를 추가하고 Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scsql/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_sql.html">
@@ -3301,7 +3337,7 @@
         <div class="na-navbar-padding"> SAP HANA 데이터베이스용 SnapCenter 플러그인 설치를 준비합니다</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-hana/task_install_snapcenter_plug_in_for_sap_hana_database.html">
-        SAP HANA 데이터베이스용 SnapCenter 플러그인 워크플로우를 설치합니다
+        SAP HANA 데이터베이스용 SnapCenter 플러그인 설치 워크플로우
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-hana/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_plug_in_for_sap_hana_database.html">
         호스트를 추가하고 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하기 위한 사전 요구사항
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_hana.html">
@@ -3438,7 +3474,7 @@
         <div class="na-navbar-padding"> Oracle 데이터베이스용 SnapCenter 플러그인을 설치합니다</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-sco/install-snapcenter-plug-in-for-oracle-workflow.html">
-        Oracle Database용 플러그인 워크플로우를 설치합니다
+        Oracle 데이터베이스용 SnapCenter 플러그인 설치 워크플로우
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html">
         호스트를 추가하고 Linux 또는 AIX용 플러그인 패키지를 설치하기 위한 사전 요구 사항
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html">
@@ -3580,7 +3616,7 @@
         <div class="na-navbar-padding"> Microsoft Windows용 SnapCenter 플러그인을 설치합니다</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scw/concept_install_snapcenter_plug_in_for_microsoft_windows.html">
-        워크플로를 설치합니다
+        Microsoft Windows용 SnapCenter 플러그인 설치 워크플로
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scw/reference_installation_requirements_for_snapcenter_plug_in_for_microsoft_windows.html">
         Microsoft Windows용 SnapCenter 플러그인 설치 요구 사항
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html">
@@ -3683,7 +3719,7 @@
         <div class="na-navbar-padding"> Microsoft Exchange Server용 SnapCenter 플러그인을 설치합니다</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-sce/concept_install_snapcenter_plug_in_for_microsoft_exchange_server.html">
-        워크플로를 설치합니다
+        Microsoft Exchange Server용 SnapCenter 플러그인 설치 워크플로우
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-sce/reference_prerequisites_to_add_hosts_and_install_snapcenter_plug_in_for_microsoft_exchange_server.html">
         호스트를 추가하고 Microsoft Exchange Server용 SnapCenter 플러그인을 설치하기 위한 사전 요구 사항
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-sce/task_set_up_credentials_for_the_snapcenter_plug_in_for_windows_sce.html">
@@ -3813,7 +3849,7 @@
         <div class="na-navbar-padding"> SnapCenter 사용자 지정 플러그인 설치를 준비합니다</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scc/task_install_snapcenter_custom_plug_in.html">
-        SnapCenter 사용자 지정 플러그인에 대한 워크플로우를 설치합니다
+        SnapCenter 맞춤형 플러그인의 설치 워크플로우
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html">
         호스트 추가 및 SnapCenter 사용자 지정 플러그인 설치를 위한 사전 요구 사항
       </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/snapcenter/protect-scc/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_scc.html">
@@ -4029,19 +4065,16 @@
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">홈</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">설명서</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/ko-kr/snapcenter/">SnapCenter&nbsp;Software&nbsp;4.6</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          사용자 지정 플러그인 리소스에 대한 정책을 생성합니다
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -4070,24 +4103,24 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-09 09:42:44 +0000">03/09/2022</time>
+    <time datetime="2022-03-14 20:27:04 +0000">03/14/2022</time>
     
   
 
 <span>기여자
-  <a target="_blank" href="https://github.com/netapp-nsriram">
-    <img  class="avatar avatar-small"
-          alt="netapp-nsriram"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/64957347?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
   <a target="_blank" href="https://github.com/netapp-soumikd">
     <img  class="avatar avatar-small"
           alt="netapp-soumikd"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/64966556?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-nsriram">
+    <img  class="avatar avatar-small"
+          alt="netapp-nsriram"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64957347?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -4103,7 +4136,6 @@
 
 
 </p>
-
 
 <div class="paragraph lead">
 <p>SnapCenter를 사용하여 사용자 지정 플러그인 특정 리소스를 백업하기 전에 백업할 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다.</p>
@@ -4151,16 +4183,16 @@
 <p>왼쪽 탐색 창에서 * 설정 * 을 클릭합니다.</p>
 </li>
 <li>
-<p>설정 * 페이지에서 * 정책 * 을 클릭합니다.</p>
+<p>설정 페이지에서 * 정책 * 을 클릭합니다.</p>
 </li>
 <li>
 <p>새로 만들기 * 를 클릭합니다.</p>
 </li>
 <li>
-<p>이름 * 페이지에서 정책 이름과 설명을 입력합니다.</p>
+<p>이름 페이지에 정책 이름과 설명을 입력합니다.</p>
 </li>
 <li>
-<p>설정 * 페이지에서 다음 단계를 수행하십시오.</p>
+<p>설정 페이지에서 다음 단계를 수행하십시오.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -4203,11 +4235,11 @@
 <div class="ulist">
 <ul>
 <li>
-<p>사용자 지정 백업 설정 * 섹션에서 플러그인으로 전달되어야 하는 특정 백업 설정을 키 값 형식으로 제공합니다. 플러그인으로 전달할 여러 키 값을 제공할 수 있습니다.</p>
+<p>사용자 지정 백업 설정 섹션에서 플러그인으로 전달되어야 하는 특정 백업 설정을 키 값 형식으로 제공합니다. 플러그인으로 전달할 여러 키 값을 제공할 수 있습니다.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Retention * 페이지에서 백업 유형에 대한 보존 설정과 백업 유형 페이지에서 선택한 스케줄 유형을 지정합니다.</p>
+<p>보존 페이지에서 백업 유형에 대한 보존 설정과 백업 유형 페이지에서 선택한 스케줄 유형을 지정합니다.</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -4267,7 +4299,7 @@ SnapVault 복제를 설정하려면 보존 수를 2 이상으로 설정해야 �
 </table>
 </li>
 <li>
-<p>Replication * 페이지에서 복제 설정을 지정합니다.</p>
+<p>복제 페이지에서 복제 설정을 지정합니다.</p>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -4377,43 +4409,6 @@ SnapVault 복제를 설정하려면 보존 수를 2 이상으로 설정해야 �
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"><div id="version-dropdown-ie-i18n">
-  <div id="version-dropdown-ie-i18n-menu">
-    <span class="ie-i18n-lang"><span class="version-title">SnapCenter 소프트웨어 </span><span class="version">4.6</span></span>
-    <span class="version-dropdown-caret"></span>
-  </div>
-  <div id="version-dropdown-n-property-navigation-bar__menu--language-selector" class="n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-    <div class="n-language-selector-menu">
-      <ul class="n-menu__list">
-        <li class="n-menu__list-column">
-          <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/snapcenter/protect-scc/task_create_policies_for_custom_plug_in_resources.html" class="n-menu__header-text" target="_blank">
-                <span translate="no" class="notranslate"><span>SnapCenter 소프트웨어</span><span class="version"> 4.6</span></span>
-              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/snapcenter-45/protect-scc/task_create_policies_for_custom_plug_in_resources.html" class="n-menu__header-text" target="_blank">
-                <span translate="no" class="notranslate"><span>SnapCenter 소프트웨어</span><span class="version"> 4.5</span></span>
-              </a></li></ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/snapcenter/issues/new?body=Page%3A%20[사용자 지정 플러그인 리소스에 대한 정책을 생성합니다](https://docs.netapp.com/ko-kr/snapcenter/protect-scc/task_create_policies_for_custom_plug_in_resources.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snapcenter/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/snapcenter/blob/main/protect-scc/task_create_policies_for_custom_plug_in_resources.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/snapcenter/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/snapcenter/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">이 페이지의 내용</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
   <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
