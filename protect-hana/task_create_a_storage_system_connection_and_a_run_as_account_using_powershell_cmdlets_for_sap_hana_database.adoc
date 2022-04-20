@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 'PowerShell cmdlet을 사용하여 SAP HANA 데이터베이스를 백업, 복원 또는 클론 복제하기 전에 스토리지 가상 머신(SVM\) 연결과 자격 증명을 생성해야 합니다.' 
 ---
 = SAP HANA 데이터베이스용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

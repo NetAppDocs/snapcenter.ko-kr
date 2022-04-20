@@ -5,6 +5,7 @@ keywords:
 summary: API에 액세스하면 실시간 설정에서 보다 복잡한 워크플로 프로세스를 사용하여 API를 사용하기 전에 몇 가지 관점을 제공합니다. 
 ---
 = REST API를 시작합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords: import, SnapManager for Oracle, SnapManager for SAP
 summary: SnapManager for Oracle 및 SnapManager for SAP에서 SnapCenter로 데이터를 가져오면 이전 버전의 데이터를 계속 사용할 수 있습니다. 
 ---
 = SnapManager for Oracle 및 SnapManager for SAP에서 SnapCenter로 데이터를 가져옵니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

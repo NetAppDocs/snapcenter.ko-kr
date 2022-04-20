@@ -5,6 +5,7 @@ keywords: backup policies, policies
 summary: SnapCenter를 사용하여 Oracle 데이터베이스 리소스를 백업하기 전에 백업하려는 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다. 백업 정책은 백업을 관리, 예약 및 유지하는 방법을 제어하는 규칙의 집합입니다. 복제, 스크립트 및 백업 유형 설정을 지정할 수도 있습니다. 정책을 만들면 다른 리소스 또는 리소스 그룹에서 정책을 다시 사용하려는 시간이 절약됩니다. 
 ---
 = Oracle 데이터베이스에 대한 백업 정책을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

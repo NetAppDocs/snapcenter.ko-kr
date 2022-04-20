@@ -5,6 +5,7 @@ keywords: alternate methods, install, plug-ins package, linux, aix, remote hosts
 summary: 다른 대체 방법을 사용하여 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치할 수 있습니다. 
 ---
 = Linux 또는 AIX용 플러그인 패키지를 설치하는 다른 방법
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

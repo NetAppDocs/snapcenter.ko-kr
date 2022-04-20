@@ -1,4 +1,5 @@
 = CA 인증서를 배포합니다
+:allow-uri-read: 
 
 
 데이터베이스가 가상 머신(VM)에 저장되어 있거나 VM 및 데이터 저장소를 보호하려는 경우 SnapCenter Plug-in for VMware vSphere 가상 어플라이언스를 구축해야 합니다.

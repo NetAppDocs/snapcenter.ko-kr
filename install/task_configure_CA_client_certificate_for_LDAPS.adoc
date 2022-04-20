@@ -5,6 +5,7 @@ keywords: CA client certificate, LDAPS
 summary: Windows Active Directory LDAPS가 CA 인증서와 함께 구성된 경우 SnapCenter 서버에서 LDAPS에 대한 CA 클라이언트 인증서를 구성해야 합니다. 
 ---
 = LDAPS에 대한 CA 클라이언트 인증서를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

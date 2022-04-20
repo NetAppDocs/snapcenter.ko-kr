@@ -5,6 +5,7 @@ keywords:
 summary: SnapManager for Microsoft SQL Server에서 SnapCenter로 보관된 백업을 가져오기 전에 제한 사항을 이해하면 가져오기를 성공적으로 완료할 수 있습니다. 이러한 백업은 SnapVault 기술을 사용하여 아카이빙되어야 합니다. 
 ---
 = 불러오기 피처와 관련된 제한 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: backup, cli, commands
 summary: 백업 워크플로우에는 계획, 백업용 리소스 식별, 백업 정책 생성, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다. 
 ---
 = UNIX 명령을 사용하여 Oracle 데이터베이스를 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

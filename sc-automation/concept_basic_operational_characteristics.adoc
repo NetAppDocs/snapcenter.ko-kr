@@ -5,6 +5,7 @@ keywords: request and response, object identifiers, synchronous, asynchronous
 summary: REST는 일반적인 기술과 모범 사례를 설정하지만 각 API의 세부 사항은 설계 선택에 따라 달라질 수 있습니다. 
 ---
 = 기본 작동 특성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

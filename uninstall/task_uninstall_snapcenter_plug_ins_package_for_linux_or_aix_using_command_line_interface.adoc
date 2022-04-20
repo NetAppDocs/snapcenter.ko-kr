@@ -5,6 +5,7 @@ keywords: uninstall plug-ins, linux, aix, command-line interface, cli
 summary: 명령줄 인터페이스를 사용하여 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 제거할 수 있습니다. 
 ---
 = CLI를 사용하여 Linux 또는 AIX용 플러그인 패키지를 제거합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

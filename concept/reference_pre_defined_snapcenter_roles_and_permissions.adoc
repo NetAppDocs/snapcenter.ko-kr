@@ -5,6 +5,7 @@ keywords: RBAC, role, permission, pre-defined role
 summary: 'SnapCenter에는 미리 정의된 역할이 제공되며 각 역할에는 이미 설정된 사용 권한이 있습니다. 역할 기반 액세스 제어 \(RBAC\)를 설정 및 관리할 때 이러한 사전 정의된 역할을 사용하거나 새 역할을 생성할 수 있습니다.' 
 ---
 = 사전 정의된 SnapCenter 역할 및 권한
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

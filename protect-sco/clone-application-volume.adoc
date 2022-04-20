@@ -5,6 +5,7 @@ keywords: application volume, clone, split a clone
 summary: SnapCenter를 사용하여 애플리케이션 볼륨 백업을 클론 복제하고, 클론을 분할하고, 클론을 삭제할 수 있습니다. 
 ---
 = 클론 애플리케이션 볼륨 백업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

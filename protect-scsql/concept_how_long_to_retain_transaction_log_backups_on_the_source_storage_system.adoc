@@ -5,6 +5,7 @@ keywords:
 summary: Microsoft SQL Server용 SnapCenter 플러그인에는 최신 복원 작업을 수행하기 위한 트랜잭션 로그 백업이 필요합니다. 이 작업은 데이터베이스를 두 개의 전체 백업 사이의 시간으로 복원합니다. 
 ---
 = 소스 스토리지 시스템에서 트랜잭션 로그 백업을 유지하는 데 걸리는 시간
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

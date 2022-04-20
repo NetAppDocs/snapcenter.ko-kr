@@ -5,6 +5,7 @@ keywords:
 summary: 네이티브 스타일을 사용하여 플러그인을 개발합니다. 
 ---
 = 네이티브 스타일
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

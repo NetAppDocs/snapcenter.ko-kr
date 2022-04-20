@@ -5,6 +5,7 @@ keywords: SnapCenter, SPL, Plug-in loader service, CA certificate, certificate
 summary: Linux 호스트에서 SnapCenter 플러그인 로더 서비스를 사용하여 CA 인증서를 구성합니다 
 ---
 = Linux 호스트에서 SnapCenter SPL(Plug-in Loader) 서비스를 사용하여 CA 인증서를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: SnapCenter는 플러그인 애플리케이션 및 스토리지 시스템의 NetApp 기술과 통합됩니다. SAP HANA 데이터베이스용 플러그인과 함께 사용하려면 SnapCenter 그래픽 사용자 인터페이스를 사용해야 합니다. 
 ---
 = SAP HANA 데이터베이스용 SnapCenter 플러그인 기능
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

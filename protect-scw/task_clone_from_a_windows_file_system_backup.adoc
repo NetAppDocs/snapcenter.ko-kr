@@ -5,6 +5,7 @@ keywords: clone
 summary: SnapCenter를 사용하여 Windows 파일 시스템 백업을 복제할 수 있습니다. 실수로 삭제되거나 변경된 단일 파일의 복제본을 원하는 경우 백업을 복제하고 클론에서 해당 파일에 액세스할 수 있습니다. 
 ---
 = Windows 파일 시스템 백업에서 클론을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

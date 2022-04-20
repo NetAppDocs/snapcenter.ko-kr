@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenter 사용자 인터페이스 내에서 Exchange용 플러그인을 설치해야 합니다. 그러나 어떤 이유로 인해 Windows 명령줄에서 자동 모드로 Exchange용 플러그인 설치 프로그램을 실행할 수 없습니다. 
 ---
 = 명령줄에서 Exchange용 SnapCenter 플러그인을 자동으로 설치합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

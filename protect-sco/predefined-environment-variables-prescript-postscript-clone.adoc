@@ -5,6 +5,7 @@ keywords: environment variable, predefined, prescript, postscript, clone
 summary: SnapCenter를 사용하면 데이터베이스를 복제하는 동안 처방과 PS를 실행할 때 미리 정의된 환경 변수를 사용할 수 있습니다. 
 ---
 = 클론별 정의 정의 지정 지정 지정 및 PostScript에 대한 사전 정의된 환경 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

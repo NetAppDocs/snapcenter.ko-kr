@@ -5,6 +5,7 @@ keywords: credentials, install plug-in, Linux, AIX, GUI, add host, monitor
 summary: SnapCenter 호스트 추가 페이지를 사용하여 호스트를 추가한 다음 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치할 수 있습니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 
 ---
 = GUI를 사용하여 Linux 또는 AIX용 플러그인 패키지를 설치하고 호스트를 추가합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

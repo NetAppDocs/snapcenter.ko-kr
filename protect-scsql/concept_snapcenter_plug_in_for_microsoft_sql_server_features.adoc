@@ -5,6 +5,7 @@ keywords:
 summary: SQL Server용 플러그인은 Windows 호스트의 Microsoft SQL Server 및 스토리지 시스템의 NetApp Snapshot 복사본 기술과 통합됩니다. SQL Server용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다. 
 ---
 = Microsoft SQL Server용 SnapCenter 플러그인 기능
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

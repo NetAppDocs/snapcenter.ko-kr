@@ -5,6 +5,7 @@ keywords:
 summary: 특정 복구 모델은 기본적으로 각 데이터베이스 유형에 할당됩니다. SQL Server 데이터베이스 관리자는 각 데이터베이스를 다른 복구 모델에 다시 할당할 수 있습니다. 
 ---
 = SnapCenter에서 지원하는 SQL Server 복구 모델
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

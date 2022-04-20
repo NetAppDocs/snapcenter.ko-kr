@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: SAP HANA 데이터베이스용 SnapCenter 플러그인은 SAP HANA 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트 측 구성 요소입니다. SAP HANA 데이터베이스용 플러그인은 SnapCenter 환경에서 SAP HANA 데이터베이스의 백업, 복원 및 클론 복제를 자동화합니다. 
 ---
 = SAP HANA 데이터베이스용 SnapCenter 플러그인 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: '백업 빈도 \(스케줄 유형\)는 정책에 지정되고 백업 스케줄은 리소스 그룹 구성에 지정됩니다.' 
 ---
 = SQL Server용 플러그인 백업 스케줄입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: '백업 작업을 생성하기 전에 백업 전략을 정의하면 데이터베이스를 성공적으로 복원하는 데 필요한 백업이 있는지 확인하는 데 도움이 됩니다. 서비스 수준 계약(SLA), 복구 시간 목표(RTO) 및 복구 시점 목표\(RPO\)에 따라 백업 전략이 주로 결정됩니다.' 
 ---
 = Exchange Server 리소스에 대한 백업 전략 정의
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

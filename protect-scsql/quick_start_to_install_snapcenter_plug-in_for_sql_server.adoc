@@ -5,6 +5,7 @@ keywords: credentials
 summary: SnapCenter 서버 및 Microsoft SQL Server용 SnapCenter 플러그인 설치에 대한 지침은 에 나와 있습니다. 
 ---
 = SQL Server용 SnapCenter 플러그인 설치를 빠르게 시작합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이지에서 자원을 백업할 수 있습니다. 
 ---
 = SQL 리소스를 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: PDB, pluggable database, restore, CDB, PITR, point-in-time recovery, R
 summary: '컨테이너 데이터베이스 \(CDB\)의 다른 PDB에 영향을 주지 않고 손상되거나 삭제된 플러그형 데이터베이스(PDB)를 복원 및 복구할 수 있습니다. SnapCenter는 RMAN을 사용하여 PDB의 시점 복구\(PITR\)를 수행합니다.' 
 ---
 = 시점 복구를 사용하여 플러그형 데이터베이스를 복원 및 복구합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

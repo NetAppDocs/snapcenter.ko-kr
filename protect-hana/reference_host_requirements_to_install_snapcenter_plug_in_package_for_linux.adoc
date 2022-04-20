@@ -5,6 +5,7 @@ keywords: SnapCenter
 summary: Linux용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 기본적인 호스트 시스템 공간 및 사이징 요구 사항을 숙지해야 합니다. 
 ---
 = Linux용 SnapCenter 플러그인 패키지 설치를 위한 호스트 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

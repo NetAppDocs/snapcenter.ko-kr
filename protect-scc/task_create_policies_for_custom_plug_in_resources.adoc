@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenter를 사용하여 사용자 지정 플러그인 특정 리소스를 백업하기 전에 백업할 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다. 
 ---
 = 사용자 지정 플러그인 리소스에 대한 정책을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: uri endpoints, http messages, json format
 summary: REST는 분산 웹 응용 프로그램을 만드는 스타일입니다. 웹 서비스 API 설계에 적용할 경우 서버 기반 리소스를 노출하고 상태를 관리하기 위한 일련의 기술과 Best Practice를 수립합니다. 이 솔루션은 메인스트림 프로토콜과 표준을 사용하여 SnapCenter 관리를 위한 유연한 기반을 제공합니다. 
 ---
 = REST 웹 서비스 기반
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

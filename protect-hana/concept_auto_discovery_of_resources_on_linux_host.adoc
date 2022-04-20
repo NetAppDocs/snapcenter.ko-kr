@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 데이터베이스 및 비 데이터 볼륨입니다. SAP HANA 데이터베이스 플러그인용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 SAP HANA 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다. 
 ---
 = Linux 호스트에서 리소스 자동 검색
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

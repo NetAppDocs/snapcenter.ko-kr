@@ -5,6 +5,7 @@ keywords: credentials
 summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. 사용자 지정 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다. 
 ---
 = 호스트 추가 및 SnapCenter 사용자 지정 플러그인 설치를 위한 사전 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

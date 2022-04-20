@@ -5,6 +5,7 @@ keywords:
 summary: 필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중인 SnapCenter 플러그인에 따라 다릅니다. 
 ---
 = 사용자 지정 플러그인에 필요한 최소 ONTAP 권한
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -13,7 +14,7 @@ summary: 필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중�
 필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중인 SnapCenter 플러그인에 따라 다릅니다.
 
 |===
-| 모든 액세스 명령: ONTAP 8.2._x_ 이상에 필요한 최소 권한 
+| All-access 명령: ONTAP 8.3.0 이상에 필요한 최소 권한 
 
 
  a| 
@@ -188,7 +189,7 @@ vserver show 를 참조하십시오
 
 |===
 |===
-| 읽기 전용 명령: ONTAP 8.2._x_ 이상에 필요한 최소 권한 
+| 읽기 전용 명령: ONTAP 8.3.0 이상에 필요한 최소 권한 
 
 
  a| 

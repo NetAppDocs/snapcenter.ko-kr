@@ -5,6 +5,7 @@ keywords: NLB, configure
 summary: 'Microsoft NLB(네트워크 로드 밸런싱)를 구성하여 SnapCenter 고가용성을 설정할 수 있습니다.' 
 ---
 = Microsoft 네트워크 로드 밸런서를 수동으로 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for Microsoft Windows
 summary: Microsoft Windows용 SnapCenter 플러그인은 Microsoft 파일 시스템 리소스에 대한 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트 측 구성 요소입니다. 또한 Windows 파일 시스템에 스토리지 프로비저닝, 스냅샷 복사본 정합성 보장 및 공간 재확보 기능을 제공합니다. Windows용 플러그인은 SnapCenter 환경에서 파일 시스템 백업, 복원 및 클론 복제 작업을 자동화합니다. 
 ---
 = Microsoft Windows용 SnapCenter 플러그인 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

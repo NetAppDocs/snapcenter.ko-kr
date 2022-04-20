@@ -5,6 +5,7 @@ keywords: ONTAP cluster role, privileges
 summary: SnapCenter에서 작업을 수행하기 위해 ONTAP 관리자 역할을 사용할 필요가 없도록 최소 권한으로 ONTAP 클러스터 역할을 생성해야 합니다. 
 ---
 = 최소 권한으로 ONTAP 클러스터 역할을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

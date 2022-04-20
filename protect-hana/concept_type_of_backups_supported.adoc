@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 SAP HANA 데이터베이스용 파일 기반 백업 및 스냅샷 복사본 기반 백업 유형을 지원합니다. 
 ---
 = 지원되는 백업 유형입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenter를 사용하면 SAP HANA 데이터베이스에 대해 다양한 유형의 복구 작업을 수행할 수 있습니다. 
 ---
 = SAP HANA 데이터베이스에 지원되는 복구 작업의 유형입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

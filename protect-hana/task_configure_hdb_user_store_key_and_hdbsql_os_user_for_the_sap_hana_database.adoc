@@ -5,6 +5,7 @@ keywords:
 summary: SAP HANA 데이터베이스에서 데이터 보호 작업을 수행하려면 HDB 사용자 저장소 키 및 HDBSQL OS 사용자를 구성해야 합니다. 
 ---
 = SAP HANA 데이터베이스용 HDB 사용자 저장소 키 및 HDBSQL OS 사용자를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

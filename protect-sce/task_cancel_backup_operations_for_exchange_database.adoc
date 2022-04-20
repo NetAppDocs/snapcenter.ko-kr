@@ -5,6 +5,7 @@ keywords:
 summary: 대기열에 있는 백업 작업을 취소할 수 있습니다. 
 ---
 = Exchange 데이터베이스에 대한 백업 작업을 취소합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

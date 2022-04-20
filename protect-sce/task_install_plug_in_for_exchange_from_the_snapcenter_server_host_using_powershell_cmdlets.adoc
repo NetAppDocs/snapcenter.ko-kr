@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenter GUI에서 Exchange용 플러그인을 설치해야 합니다. GUI를 사용하지 않으려는 경우 SnapCenter 서버 호스트 또는 원격 호스트에서 PowerShell cmdlet을 사용할 수 있습니다. 
 ---
 = PowerShell cmdlet을 사용하여 SnapCenter Server 호스트에서 Exchange용 플러그인을 설치합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

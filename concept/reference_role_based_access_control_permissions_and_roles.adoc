@@ -5,6 +5,7 @@ keywords: RBAC, roles, permissions
 summary: 'SnapCenter RBAC(역할 기반 액세스 제어)를 사용하여 역할을 만들고 해당 역할에 권한을 추가한 다음 사용자나 사용자 그룹을 역할에 할당할 수 있습니다. 따라서 SnapCenter 관리자는 중앙에서 관리되는 환경을 만들 수 있고, 애플리케이션 관리자는 데이터 보호 작업을 관리할 수 있습니다. SnapCenter에는 몇 가지 미리 정의된 역할 및 권한이 제공됩니다.' 
 ---
 = RBAC 권한 및 역할
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

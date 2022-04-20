@@ -5,6 +5,7 @@ keywords: restore
 summary: SAP HANA 데이터베이스 백업을 복구하려면 SnapCenter 서버와의 연결 세션 시작, 백업 목록 표시 및 백업 정보 검색, 백업 복구가 포함됩니다. 
 ---
 = PowerShell cmdlet을 사용하여 SAP HANA 데이터베이스를 복원합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

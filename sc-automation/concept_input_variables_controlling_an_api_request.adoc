@@ -5,6 +5,7 @@ keywords: http methods, request headers, request body, filtering objects, size, 
 summary: HTTP 요청에 설정된 매개 변수와 변수를 통해 API 호출이 처리되는 방식을 제어할 수 있습니다. 
 ---
 = API 요청을 제어하는 입력 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: PERL을 사용하여 플러그인을 개발합니다. 
 ---
 = Perl 기반 개발
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

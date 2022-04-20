@@ -5,6 +5,7 @@ keywords: backups
 summary: 다른 데이터 보호 작업에 Exchange 백업이 더 이상 필요하지 않은 경우 Remove-SmBackup cmdlet을 사용하여 Exchange 백업을 삭제할 수 있습니다. 
 ---
 = PowerShell cmdlet을 사용하여 Exchange 백업을 제거합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

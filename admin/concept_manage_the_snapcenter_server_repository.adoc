@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenter에서 수행되는 다양한 작업과 관련된 정보는 SnapCenter 서버 데이터베이스 저장소에 저장됩니다. SnapCenter 서버가 데이터 손실로부터 보호되도록 리포지토리의 백업을 만들어야 합니다. 
 ---
 = SnapCenter 서버 리포지토리를 관리합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

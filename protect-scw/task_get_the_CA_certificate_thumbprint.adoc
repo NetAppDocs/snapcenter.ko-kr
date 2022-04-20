@@ -5,6 +5,7 @@ keywords: SnapCenter
 summary: CA 인증서 지문을 받습니다. 
 ---
 = CA 인증서 지문을 받습니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

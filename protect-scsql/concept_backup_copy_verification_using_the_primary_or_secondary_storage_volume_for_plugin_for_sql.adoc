@@ -5,6 +5,7 @@ keywords:
 summary: 운영 스토리지 볼륨 또는 SnapMirror 또는 SnapVault 보조 스토리지 볼륨에서 백업 복사본을 확인할 수 있습니다. 보조 스토리지 볼륨을 사용하여 검증하면 운영 스토리지 볼륨의 로드가 감소합니다. 
 ---
 = SQL Server용 플러그인용 기본 또는 보조 스토리지 볼륨을 사용하여 백업 복사본 검증
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

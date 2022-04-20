@@ -5,6 +5,7 @@ keywords:
 summary: 복원 및 복구 워크플로에는 계획, 복원 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
 = 사용자 지정 플러그인 리소스를 복원합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

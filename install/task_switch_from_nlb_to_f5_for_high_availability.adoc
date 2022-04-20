@@ -5,6 +5,7 @@ keywords: F5, NLB, high availability
 summary: 'SnapCenter HA 구성을 NLB(네트워크 로드 밸런싱)에서 F5 로드 밸런서를 사용하도록 변경할 수 있습니다.' 
 ---
 = 고가용성을 위해 NLB에서 F5로 전환합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

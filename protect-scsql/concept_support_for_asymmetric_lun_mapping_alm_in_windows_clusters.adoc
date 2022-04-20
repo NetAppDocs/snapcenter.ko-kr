@@ -5,6 +5,7 @@ keywords: ALM
 summary: 'Microsoft SQL Server용 SnapCenter 플러그인은 SQL Server 2012 이상에서 검색, 고가용성을 위한 Asymmetric LUN Mapping\(ALM\) 구성, 재해 복구를 위한 가용성 그룹을 지원합니다. 리소스를 검색할 때 SnapCenter는 로컬 호스트와 ALM 구성의 원격 호스트에서 데이터베이스를 검색합니다.' 
 ---
 = Windows 클러스터에서 비대칭 LUN 매핑 지원
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

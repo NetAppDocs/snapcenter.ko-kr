@@ -5,6 +5,7 @@ keywords: requirements, prerequisites
 summary: Oracle 데이터베이스를 백업하기 전에 사전 요구 사항이 완료되었는지 확인해야 합니다. 
 ---
 = Oracle 데이터베이스 백업 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

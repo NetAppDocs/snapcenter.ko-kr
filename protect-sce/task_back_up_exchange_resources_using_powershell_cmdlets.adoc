@@ -5,6 +5,7 @@ keywords: backup
 summary: Exchange Server 데이터베이스 백업에는 SnapCenter Server와의 연결 설정, Exchange Server 데이터베이스 검색, 정책 추가, 백업 리소스 그룹 생성, 백업 및 백업 상태 보기가 포함됩니다. 
 ---
 = PowerShell cmdlet을 사용하여 Exchange 리소스를 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

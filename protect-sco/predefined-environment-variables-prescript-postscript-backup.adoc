@@ -5,6 +5,7 @@ keywords: environment variable, predefined, prescript, postscript, backup, polic
 summary: SnapCenter를 사용하면 백업 정책을 생성하는 동안 처방과 PS를 실행할 때 미리 정의된 환경 변수를 사용할 수 있습니다. 
 ---
 = 백업 특정 처방과 PS에 대한 사전 정의된 환경 변수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

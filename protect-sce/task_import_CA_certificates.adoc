@@ -5,6 +5,7 @@ keywords: SnapCenter
 summary: SnapCenter 서버 및 Windows 호스트 플러그인의 CA 인증서를 가져옵니다 
 ---
 = CA 인증서를 가져옵니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

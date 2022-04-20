@@ -5,6 +5,7 @@ keywords:
 summary: 'PowerShell cmdlet을 사용하여 EMS(Event Management System) 데이터 수집을 예약하고 관리할 수 있습니다. EMS 데이터 수집에는 SnapCenter 서버, 설치된 SnapCenter 플러그인 패키지, 호스트 및 이와 유사한 정보에 대한 세부 정보를 수집한 다음 지정된 ONTAP 스토리지 가상 시스템\(SVM\)으로 전송하는 작업이 포함됩니다.' 
 ---
 = EMS Data 수집 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

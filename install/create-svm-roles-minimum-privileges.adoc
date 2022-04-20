@@ -5,6 +5,7 @@ keywords: svm role, privileges
 summary: ONTAP에서 SVM을 SanpCenter와 함께 사용하도록 구성하고 vsadmin 역할을 사용하지 않으려는 경우 SVM 역할을 생성해야 합니다. 
 ---
 = 최소 권한으로 SVM 역할 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

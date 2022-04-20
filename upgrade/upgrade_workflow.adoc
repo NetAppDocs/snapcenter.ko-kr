@@ -5,6 +5,7 @@ keywords: upgrade, snapcenter server, plug-ins, workflow
 summary: 에서는 SnapCenter 서버 및 플러그인을 업그레이드하는 방법을 설명합니다 
 ---
 = 워크플로우 업그레이드
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. 
 ---
 = 호스트를 추가하고 Microsoft Exchange Server용 SnapCenter 플러그인을 설치하기 위한 사전 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

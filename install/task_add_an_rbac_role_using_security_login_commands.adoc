@@ -5,6 +5,7 @@ keywords: RBAC roles, add, ONTAP RBAC role
 summary: 스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가할 수 있습니다. 
 ---
 = 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

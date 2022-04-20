@@ -5,6 +5,7 @@ keywords: resource groups
 summary: 리소스 그룹은 보호할 여러 파일 시스템을 추가할 수 있는 컨테이너입니다. 또한 수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결한 다음 백업 일정을 지정해야 합니다. 
 ---
 = Windows 파일 시스템에 대한 리소스 그룹을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

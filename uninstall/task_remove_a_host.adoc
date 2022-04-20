@@ -5,6 +5,7 @@ keywords: uninstall, remove, remove host
 summary: SnapCenter 서버가 호스트를 제거하면 먼저 SnapCenter 리소스 페이지에서 해당 호스트에 대해 나열된 백업, 클론, 클론 작업, 리소스 그룹 및 리소스를 제거한 다음 호스트에서 플러그인 패키지를 제거합니다. 
 ---
 = 호스트를 제거합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

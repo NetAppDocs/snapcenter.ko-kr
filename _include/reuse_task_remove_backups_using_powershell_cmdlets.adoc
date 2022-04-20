@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 다른 데이터 보호 작업에 더 이상 필요하지 않은 경우 Remove-SmBackup cmdlet을 사용하여 백업을 삭제할 수 있습니다.

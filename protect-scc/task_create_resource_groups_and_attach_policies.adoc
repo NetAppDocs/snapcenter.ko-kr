@@ -5,6 +5,7 @@ keywords:
 summary: 리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다. 
 ---
 = 리소스 그룹을 생성하고 정책을 연결합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

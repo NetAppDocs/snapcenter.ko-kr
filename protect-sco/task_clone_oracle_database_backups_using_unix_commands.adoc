@@ -5,6 +5,7 @@ keywords: clone, CLI, commands
 summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
 = UNIX 명령을 사용하여 Oracle 데이터베이스 백업의 클론을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

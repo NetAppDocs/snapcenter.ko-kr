@@ -5,6 +5,7 @@ keywords: exporting certificates
 summary: SnapCenter 인증서를 내보냅니다. 
 ---
 = SnapCenter 인증서를 내보냅니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

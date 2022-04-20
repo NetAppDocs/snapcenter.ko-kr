@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenter 재해 복구 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. 
 ---
 = SnapCenter 서버의 재해 복구에 REST API가 지원됩니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

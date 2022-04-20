@@ -5,6 +5,7 @@ keywords: clone operation, clone, workflow
 summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
 = 클론 복제 워크플로우
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

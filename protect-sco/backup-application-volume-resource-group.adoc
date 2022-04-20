@@ -5,6 +5,7 @@ keywords: application volume, resource group, back up, database
 summary: 애플리케이션 볼륨만 포함하거나 애플리케이션 볼륨과 데이터베이스를 혼합하여 포함하는 리소스 그룹을 백업할 수 있습니다. 
 ---
 = 애플리케이션 볼륨 리소스 그룹을 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

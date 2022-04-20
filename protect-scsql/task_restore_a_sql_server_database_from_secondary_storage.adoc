@@ -5,6 +5,7 @@ keywords:
 summary: '보조 스토리지 시스템의 물리적 LUN\(RDM, iSCSI 또는 FCP\)에서 백업된 SQL Server 데이터베이스를 복원할 수 있습니다. 복구 기능은 보조 스토리지 시스템에 상주하는 지정된 SQL Server 백업에서 지정된 데이터베이스로 모든 데이터와 로그 페이지를 복사하는 다중 위상 프로세스입니다.' 
 ---
 = 보조 스토리지에서 SQL Server 데이터베이스를 복구합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: SnapCenter Server
 summary: 작업 창에는 가장 최근에 수행한 작업 5개가 표시됩니다. 작업 창은 작업이 시작된 시점과 작업의 상태도 표시합니다. 
 ---
 = 활동 창에서 SAP HANA 데이터베이스의 데이터 보호 작업을 모니터링합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

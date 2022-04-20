@@ -5,6 +5,7 @@ keywords: SnapCenter
 summary: SnapCenter 서버를 설치하기 전에 공간 및 크기 조정 요구 사항을 숙지해야 합니다. 사용 가능한 시스템 및 보안 업데이트도 적용해야 합니다. 
 ---
 = 요구사항을 충족해야 합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

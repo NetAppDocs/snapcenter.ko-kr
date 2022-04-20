@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
 = PowerShell cmdlet을 사용하여 SAP HANA 데이터베이스 백업 클론 생성
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

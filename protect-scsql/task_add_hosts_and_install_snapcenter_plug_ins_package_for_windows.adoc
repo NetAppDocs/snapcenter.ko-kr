@@ -5,6 +5,7 @@ keywords: credentials
 summary: SnapCenterAdd 호스트 페이지를 사용하여 호스트를 추가하고 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 
 ---
 = 호스트를 추가하고 Windows용 SnapCenter 플러그인 패키지를 설치합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

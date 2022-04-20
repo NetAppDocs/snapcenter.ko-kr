@@ -5,6 +5,7 @@ keywords: SnapCenter
 summary: Linux 호스트에서 SnapCenter 사용자 지정 플러그인 서비스에 대한 CA 인증서를 구성합니다 
 ---
 = Linux 호스트에서 SnapCenter 사용자 지정 플러그인 서비스에 대한 CA 인증서를 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: Oracle 데이터베이스를 복제하기 전에 필수 구성 요소가 완료되었는지 확인해야 합니다. 
 ---
 = Oracle 데이터베이스 클론 생성 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

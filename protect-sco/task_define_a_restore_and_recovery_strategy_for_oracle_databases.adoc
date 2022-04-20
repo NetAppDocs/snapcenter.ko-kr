@@ -5,6 +5,7 @@ keywords: backup types, restore methods, connect-and-copy restore, full restore,
 summary: 복구 및 복구 작업을 성공적으로 수행하려면 데이터베이스를 복원 및 복구하기 전에 전략을 정의해야 합니다. 
 ---
 = Oracle 데이터베이스에 대한 복구 및 복구 전략 정의
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

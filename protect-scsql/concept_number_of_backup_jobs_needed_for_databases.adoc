@@ -5,6 +5,7 @@ keywords:
 summary: '필요한 백업 작업 수를 결정하는 요인에는 데이터베이스 크기, 사용된 볼륨 수, 데이터베이스 변경 속도 및 SLA(서비스 수준 계약)\ 등이 있습니다.' 
 ---
 = 데이터베이스에 필요한 백업 작업 수입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

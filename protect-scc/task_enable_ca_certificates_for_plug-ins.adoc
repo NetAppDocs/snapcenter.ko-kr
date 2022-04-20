@@ -5,6 +5,7 @@ keywords: SnapCenter
 summary: CA 인증서를 구성하고 SnapCenter 서버 및 해당 플러그인 호스트에 CA 인증서를 배포해야 합니다. 
 ---
 = 플러그인에 대해 CA 인증서를 활성화합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

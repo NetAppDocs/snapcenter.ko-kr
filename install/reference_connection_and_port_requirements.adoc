@@ -5,6 +5,7 @@ keywords: ports, port requirements
 summary: SnapCenter 서버 및 응용 프로그램 또는 데이터베이스 플러그인을 설치하기 전에 연결 및 포트 요구 사항이 충족되었는지 확인해야 합니다. 
 ---
 = 연결 및 포트 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -145,3 +146,4 @@ MDC(멀티테넌트 데이터베이스 컨테이너) 단일 테넌트의 경우 
 SnapCenter 서버, 플러그인 호스트 또는 다른 Windows 클라이언트가 사용자를 인증할 수 있도록 도메인 컨트롤러에서 Microsoft 필수 포트를 열어야 합니다.
 
 |===
+포트 세부 정보를 수정하려면 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html#modify-plug-in-hosts[] [플러그인 호스트 수정^].

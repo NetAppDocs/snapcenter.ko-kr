@@ -5,6 +5,7 @@ keywords:
 summary: '다시 시딩은 Availability Group\(AG\) 데이터베이스를 복원하는 옵션입니다. 보조 데이터베이스가 AG의 기본 데이터베이스와 동기화되지 않으면 보조 데이터베이스를 다시 시드할 수 있습니다.' 
 ---
 = 가용성 그룹 데이터베이스를 다시 시딩합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

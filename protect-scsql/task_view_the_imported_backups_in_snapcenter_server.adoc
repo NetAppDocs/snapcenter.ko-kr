@@ -5,6 +5,7 @@ keywords:
 summary: Microsoft SQL Server 아카이브 백업용 SnapManager를 가져온 후에는 토폴로지 페이지에서 SnapCenter에서 이러한 백업을 볼 수 있습니다. 
 ---
 = 가져온 백업을 SnapCenter 서버에서 봅니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

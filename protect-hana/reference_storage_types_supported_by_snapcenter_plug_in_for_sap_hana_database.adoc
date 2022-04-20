@@ -5,6 +5,7 @@ keywords:
 summary: 'SnapCenter는 물리적 시스템과 가상 머신(VM\) 모두에서 다양한 스토리지 유형을 지원합니다. SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.' 
 ---
 = SAP HANA 데이터베이스용 SnapCenter 플러그인이 지원하는 스토리지 유형입니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: oracle, preparation for protection, prerequisites
 summary: 백업, 클론 복제 또는 복원 작업과 같은 데이터 보호 작업을 수행하기 전에 전략을 정의하고 환경을 설정해야 합니다. SnapVault 서버에서 SnapMirror 및 SnapCenter 기술을 사용하도록 설정할 수도 있습니다. 
 ---
 = Oracle 데이터베이스 보호를 위한 준비
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -27,7 +28,7 @@ NOTE: SnapCenter은 서로 다른 클러스터에서 동일한 이름의 여러 
 * SnapCenter 서버를 사용하여 VMware RDM LUN 또는 VMDK에 상주하는 Oracle 데이터베이스를 보호하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다.
 * Linux 또는 AIX 호스트에 Java를 설치합니다.
 +
-을 참조하십시오 link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html#linux-host-requirements["Linux 호스트 요구 사항"^] 또는  를 참조하십시오.
+을 참조하십시오 link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html#linux-host-requirements["Linux 호스트 요구 사항"^] 또는 link:../protect-sco/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux_or_aix.html#aix-host-requirements["AIX 호스트 요구 사항"^] 를 참조하십시오.
 
 * 애플리케이션 방화벽의 시간 초과 값을 3시간 이상으로 설정해야 합니다.
 * NFS 환경에 Oracle 데이터베이스가 있는 경우 마운트, 클론, 검증 및 복원 작업을 수행하려면 운영 스토리지 또는 2차 스토리지에 대해 NFS 데이터 LIF를 하나 이상 구성해야 합니다.

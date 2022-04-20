@@ -5,6 +5,7 @@ keywords:
 summary: Exchange용 플러그인을 사용하여 Exchange Server 데이터베이스를 백업 및 복원할 수 있습니다. 
 ---
 = Microsoft Exchange Server용 SnapCenter 플러그인으로 수행할 수 있는 작업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

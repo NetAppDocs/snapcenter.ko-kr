@@ -5,6 +5,7 @@ keywords:
 summary: 'SnapCenter의 왼쪽 탐색 창에서 대시보드에서 최근 작업 활동, 경고, 보호 요약, 스토리지 효율성 및 사용, SnapCenter 작업 상태\(백업, 클론, 복원\), 독립 실행형 및 Windows 클러스터 호스트의 구성 상태 등을 한눈에 파악할 수 있습니다. SnapCenter에서 관리하는 SVM(스토리지 가상 머신) 수 및 라이센스 용량' 
 ---
 = 대시보드 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: SQL 리소스를 백업하기 전에 몇 가지 요구 사항이 충족되었는지 확인해야 합니다. 
 ---
 = SQL 리소스 백업 요구 사항
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

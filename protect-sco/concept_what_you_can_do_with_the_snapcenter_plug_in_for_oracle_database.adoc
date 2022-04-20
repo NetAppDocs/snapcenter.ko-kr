@@ -5,6 +5,7 @@ keywords: backup, restore, clone, oracle database
 summary: 'Oracle 데이터베이스용 플러그인을 사용하여 백업, 확인, 복원, 복구, 마운트, Oracle 데이터베이스 및 해당 리소스의 마운트 해제 및 클론 생성 Oracle RMAN(Recovery Manager)을 사용하여 데이터베이스 백업의 카탈로그를 작성하거나 카탈로그를 해제할 수도 있습니다.' 
 ---
 = Oracle 데이터베이스용 플러그인을 사용하여 수행할 수 있는 작업
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

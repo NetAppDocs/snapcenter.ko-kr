@@ -5,6 +5,7 @@ keywords: SnapCenter, import, import ca certificate, mmc, microsoft management c
 summary: 'MMC(Microsoft Management Console)를 사용하여 CA 인증서를 SnapCenter 서버 및 Windows 호스트 플러그인으로 가져와야 합니다.' 
 ---
 = CA 인증서를 가져옵니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

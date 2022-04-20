@@ -5,6 +5,7 @@ keywords:
 summary: 신뢰할 수 없는 여러 Active Directory 도메인의 호스트, 사용자 및 그룹을 관리하려면 Active Directory를 SnapCenter 서버에 등록해야 합니다. 
 ---
 = 신뢰할 수 없는 Active Directory 도메인을 등록합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

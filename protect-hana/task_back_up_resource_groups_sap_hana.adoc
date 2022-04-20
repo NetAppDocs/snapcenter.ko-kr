@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 리소스 그룹은 호스트의 리소스 모음입니다. 리소스 그룹에 대한 백업 작업은 리소스 그룹에 정의된 모든 리소스에 대해 수행됩니다. 
 ---
 = 리소스 그룹을 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

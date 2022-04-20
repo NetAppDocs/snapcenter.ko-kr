@@ -5,6 +5,7 @@ keywords: add, storage system, SVM
 summary: ONTAP에서 SnapCenter 스토리지에 액세스하여 데이터 보호 및 프로비저닝 작업을 수행할 수 있도록 스토리지 시스템을 설정해야 합니다. 독립 실행형 SVM이나 여러 SVM으로 구성된 클러스터를 추가할 수 있습니다. 
 ---
 = 스토리지 시스템을 추가합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

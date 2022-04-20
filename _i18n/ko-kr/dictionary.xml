@@ -1041,7 +1041,6 @@
   <block id="fb6b3e3a502ac26107b3d7836e7155db" category="list-text">원격 설치를 위한 자격 증명을 입력합니다.</block>
   <block id="04a9cf8066f01cc2ca9e6a6e6b25a340" category="summary">필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중인 SnapCenter 플러그인에 따라 다릅니다.</block>
   <block id="301724bd950c161b79552d6f655df446" category="doc">사용자 지정 플러그인에 필요한 최소 ONTAP 권한</block>
-  <block id="7a411b0cfbb1617c0f5ce030e3ede650" category="cell">모든 액세스 명령: ONTAP 8.2._x_ 이상에 필요한 최소 권한</block>
   <block id="f29e68a537349e874e09abd00f21d020" category="paragraph">event generate-autosupport-log입니다</block>
   <block id="e3890e588ffa00d05486b60aaec37e39" category="paragraph">작업 기록이 표시됩니다</block>
   <block id="5b4f487acd2a1e48d6c43939945c2783" category="paragraph">작업 중지</block>
@@ -1115,7 +1114,6 @@
   <block id="81fdc65419165207d0f3b0ece7db1d35" category="paragraph">vserver export-policy show를 참조하십시오</block>
   <block id="5a533c7bcb2424b4226650432977866b" category="paragraph">SVM iSCSI 연결이 표시됩니다</block>
   <block id="448da724515e17f1a0d8b304eb2f526c" category="paragraph">vserver show 를 참조하십시오</block>
-  <block id="2cf90fefb7b745bf948963db2d5e45a9" category="cell">읽기 전용 명령: ONTAP 8.2._x_ 이상에 필요한 최소 권한</block>
   <block id="2c680d95270ab9050da54ca67f598551" category="summary">SnapCenter를 사용하여 백업을 복제할 수 있습니다. 기본 또는 보조 백업에서 클론을 생성할 수 있습니다. 클론 작업의 기능은 사용하는 플러그인에 따라 다릅니다.</block>
   <block id="569002e953b26f14a2da67d9ad9dcc73" category="doc">백업에서 복제합니다</block>
   <block id="81c54d2e986218192c378df7d2c3b960" category="list-text">리소스 또는 리소스 그룹을 백업해야 합니다.</block>
@@ -1559,7 +1557,6 @@
   <block id="f43b8555947d4751531f2048f4ceb68f" category="list-text">메시지 큐 서비스가 실행되고 있어야 합니다.</block>
   <block id="5da8a38d0d164ee119a4369bd402f7e7" category="inline-link-macro">Windows Server 2012 이상에서 그룹 관리 서비스 계정을 구성합니다</block>
   <block id="c3d3d7d361f2929e16e2c819af868aee" category="list-text">그룹 GMSA(Managed Service Account)를 사용하는 경우 관리자 권한으로 GMSA를 구성해야 합니다. 자세한 내용은 을 참조하십시오<block ref="de44f57898ffbf94587de066666e509e" category="inline-link-macro-rx"></block>.</block>
-  <block id="fdb65cf918a8b520afc6b815f2425d07" category="paragraph">호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다. 클러스터(Exchange DAG)에 플러그인을 설치하는 경우 일부 노드에 NetApp LUN에 데이터베이스가 없는 경우에도 클러스터의 모든 노드에 플러그인이 설치됩니다.</block>
   <block id="dd786dfb050710e6332db19b625147c8" category="paragraph">SnapCenter 4.6부터 SCE는 멀티 테넌시를 지원하며 다음 방법을 사용하여 호스트를 추가할 수 있습니다.</block>
   <block id="491321bbc588ef6bf8de927c397372c4" category="cell">호스트 작업을 추가합니다</block>
   <block id="4247b9f663a0312ef986a547512d2507" category="cell">4.5 이하</block>
@@ -6206,7 +6203,6 @@
   <block id="01e68d5655a01e54fb5027616f590fd2" category="list-text">오프라인 마운트 백업</block>
   <block id="2e4bdeccde8318fa75a497d93f6e9c2b" category="list-text">오프라인 종료 백업</block>
   <block id="81e63b5a91ea892b6224da11b246a5cf" category="list-text">Data Guard 대기 데이터베이스 및 Active Data Guard 대기 데이터베이스 백업</block>
-  <block id="43825f0055e62a6331e60802dcd94c00" category="admonition">다중 경로 구성 파일의 user_friendly_names 옵션이 yes로 설정되어 있고 udev 규칙 파일을 사용하여 Oracle ASM 디스크에 대해 별칭 또는 기호 링크가 정의되어 있는 경우 Oracle ASM 구성이 지원되지 않습니다.</block>
   <block id="0d296b92c09b34ffa602cfd268c9bde2" category="admonition">아카이브 로그 백업의 클론 생성은 지원되지 않습니다.</block>
   <block id="069e204626201110538d5c5c80f7886a" category="section-title">Oracle 데이터베이스에 지원되는 클론 생성 유형입니다</block>
   <block id="9af986db528c988b61119454f9ef1f9e" category="paragraph">Oracle 데이터베이스 환경에서 SnapCenter은 데이터베이스 백업의 복제를 지원합니다. 기본 및 보조 스토리지 시스템에서 백업을 복제할 수 있습니다.</block>
@@ -6239,7 +6235,6 @@
   <block id="c2d742e2aecdede3243c86015a588b10" category="admonition">Oracle Linux 또는 Red Hat Enterprise Linux 6.6 또는 7.0 운영 체제의 LVM에서 Oracle 데이터베이스를 사용하는 경우 최신 버전의 LVM(Logical Volume Manager)을 설치해야 합니다.</block>
   <block id="b8be58329edfa59d774ce8216f3afcfe" category="section-title">Linux 호스트에 대해 루트가 아닌 사용자에 대한 sudo 권한을 구성합니다</block>
   <block id="2ea002d427cbfb999f631ee124f6c1e4" category="paragraph">SnapCenter 2.0 이상 버전에서는 루트가 아닌 사용자가 Linux용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.</block>
-  <block id="6a3ea203b56114b349f3a7f98d6fe556" category="list-text">sudo 1.8.7 이상</block>
   <block id="15365f4ad2016523469fa400d8c372e8" category="list-text">루트가 아닌 사용자가 Oracle 설치 그룹에 속하는지 확인합니다.</block>
   <block id="9fc7e0af2d8808b59624854d31dab1bb" category="list-text">MAC HMAC-SHA2-256 및 MAC HMAC-SHA2-512의 메시지 인증 코드 알고리즘을 구성하려면 _/etc/ssh/sshd_config_file을 편집합니다.</block>
   <block id="a522c9aaeab8d877d6b5ee133ac06025" category="paragraph">구성 파일을 업데이트한 후 sshd 서비스를 다시 시작합니다.</block>
@@ -7260,10 +7255,8 @@
   <block id="948b4d6914f4248c5e96a053c1d7ae63" category="paragraph">SnapCenter 재해 복구 기능을 사용하여 리소스 손상 또는 서버 충돌과 같은 재해 발생 시 SnapCenter 서버를 복구할 수 있습니다. SnapCenter 리포지토리, 서버 일정 및 서버 구성 요소를 복구할 수 있습니다.</block>
   <block id="7b7cd2b9067ed1c82323fb382c11f370" category="paragraph">다음은 DR(재해 복구)의 유형입니다.</block>
   <block id="1636245b9e25bb600e733929465df761" category="list-text">* SnapCenter 서버 DR *</block>
-  <block id="f26c16c1937780fa95f00744522a7981" category="paragraph">SnapCenter 서버 데이터는 SnapCenter 서버에서 플러그인을 관리하는지 여부와 관계없이 백업 및 복구됩니다.</block>
   <block id="eb3b9ec963eb618621a779602a309514" category="inline-link-macro">SnapCenter 서버의 재해 복구를 위한 REST API 워크플로우</block>
   <block id="e667e897b20b02966f899ad38ce1ba39" category="paragraph"><block ref="e667e897b20b02966f899ad38ce1ba39" category="inline-link-macro-rx"></block></block>
-  <block id="4c927ea1ab3c5cf125d6da515fcf2e34" category="list-text">* SQL Server DR *</block>
   <block id="0554390053842752b7d1d3059c743b32" category="paragraph">DR은 SQL Server용 SnapCenter 플러그인에만 지원됩니다. SQL Server용 SnapCenter 플러그인이 다운된 경우 다른 SQL 호스트로 전환하고 몇 가지 단계를 수행하여 데이터를 복구합니다.</block>
   <block id="47046db67c1574cb29142c431fb68f1f" category="paragraph"><block ref="47046db67c1574cb29142c431fb68f1f" category="inline-link-macro-rx"></block></block>
   <block id="196a4a3e452864b82a133adc0c1c5228" category="paragraph">SnapCenter는 ONTAP SnapMirror 기술을 사용하여 데이터를 복제합니다. 데이터를 2차 사이트로 복제하여 DR에 사용하고 동기화 상태로 유지할 수 있습니다. SnapMirror의 복제 관계를 끊어 페일오버를 시작할 수 있습니다. 페일백 중에 동기화를 취소할 수 있으며 DR 사이트의 데이터를 기본 위치로 다시 복제할 수 있습니다.</block>
@@ -7732,4 +7725,17 @@
   <block id="15e336a500bbc8b78c88e27a721b8803" category="doc">Microsoft Windows용 SnapCenter 플러그인 설치 워크플로</block>
   <block id="44f89507afec59f4cedb4b405c468c9c" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block></block>
   <block id="4c1df4d227c6def4b8391fc8b18a81bf" category="paragraph">또한 _Uninstall-SmHostPackage_cmdlet 및 필수 매개 변수를 사용하여 여러 호스트에서 플러그인을 제거할 수도 있습니다. cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block>.</block>
+  <block id="45cfde3246d77aae99351b410b97c7c0" category="doc">SAP HANA 플러그인에 필요한 최소 ONTAP 권한</block>
+  <block id="f787fb91924061fe015dd390115ff7b0" category="cell">All-access 명령: ONTAP 8.3.0 이상에 필요한 최소 권한</block>
+  <block id="3c7a1d3e0ce94aeb0c7ab231e365f15e" category="cell">읽기 전용 명령: ONTAP 8.3.0 이상에 필요한 최소 권한</block>
+  <block id="8bd83f1f314ef9e02c70e66cc9fb845c" category="paragraph">포트 세부 정보를 수정하려면 을 참조하십시오<block ref="50723147440c13da7c31ceaceb52ba16" category="inline-link-rx"></block> [플러그인 호스트 수정^].</block>
+  <block id="5e312685e47c74b5ee2a4102a18ee03f" category="doc">Exchange 플러그인에 필요한 최소 ONTAP 권한</block>
+  <block id="f2e203e95de8a92902a61dcabea6f456" category="list-text">호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다.</block>
+  <block id="adc8d83761c6331a65ee343d3de2a603" category="list-text">Exchange 노드가 DAG의 일부인 경우 SnapCenter 서버에 하나의 노드만 추가할 수 없습니다.</block>
+  <block id="5b75eba7d9db0318ac1f23b295c25952" category="list-text">클러스터(Exchange DAG)에 플러그인을 설치하는 경우 일부 노드에 NetApp LUN에 데이터베이스가 없는 경우에도 클러스터의 모든 노드에 플러그인이 설치됩니다.</block>
+  <block id="685c106cf385da9da7d774e7b6cddea8" category="paragraph">SQL Server용 SnapCenter 플러그인 및 SQL Server용 SnapCenter 플러그인을 복구할 수도 있습니다.</block>
+  <block id="8fa1aa495cfe5fdc95202bda34adafcd" category="paragraph">SnapCenter 서버 데이터는 SnapCenter 서버에서 플러그인을 추가하거나 관리했는지와 관계없이 백업 및 복구됩니다.</block>
+  <block id="30c24db21140190d4033af17ccd83090" category="list-text">* SnapCenter 플러그인 및 스토리지 DR *</block>
+  <block id="67c5ed4921b287cb12a0c466f01e9689" category="admonition">다중 경로 구성 파일의 user_friendly_names 옵션이 yes로 설정되어 있으면 SAN 구성이 지원되지 않습니다.</block>
+  <block id="f91d0c3af79b649ecca3ab95634c22c6" category="list-text">sudo 버전 1.8.7 ~ 1.8.19P2.</block>
 </blocks>

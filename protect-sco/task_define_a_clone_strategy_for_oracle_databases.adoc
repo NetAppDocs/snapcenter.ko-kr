@@ -5,6 +5,7 @@ keywords: backup types, cloning type, clone name, limitations
 summary: 데이터베이스를 복제하기 전에 전략을 정의하면 클론 생성 작업이 성공적으로 수행됩니다. 
 ---
 = Oracle 데이터베이스에 대한 클론 전략 정의
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
@@ -27,7 +28,7 @@ SnapCenter는 다양한 유형의 Oracle 데이터베이스 백업 복제를 지
 * 온라인 데이터 백업, 온라인 전체 백업, 오프라인 마운트 백업 및 ASM(Automatic Storage Management) 구성에서 오프라인 종료 백업
 +
 
-IMPORTANT: 다중 경로 구성 파일의 user_friendly_names 옵션이 yes로 설정되어 있고 udev 규칙 파일을 사용하여 Oracle ASM 디스크에 대해 별칭 또는 기호 링크가 정의되어 있는 경우 Oracle ASM 구성이 지원되지 않습니다.
+IMPORTANT: 다중 경로 구성 파일의 user_friendly_names 옵션이 yes로 설정되어 있으면 SAN 구성이 지원되지 않습니다.
 
 
 

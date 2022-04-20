@@ -5,6 +5,7 @@ keywords:
 summary: '백업을 생성하기 전에 백업 전략을 정의하면 파일 시스템을 성공적으로 복원하거나 복제하는 데 필요한 백업을 얻을 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 주로 결정됩니다.' 
 ---
 = Windows 파일 시스템에 대한 백업 전략 정의
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

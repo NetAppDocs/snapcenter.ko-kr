@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: 복원 및 복구 워크플로에는 계획, 복원 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
 = 워크플로를 복원합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

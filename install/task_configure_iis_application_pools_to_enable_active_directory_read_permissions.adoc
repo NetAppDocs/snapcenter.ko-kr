@@ -5,6 +5,7 @@ keywords: IIS application pool, active directory, enable
 summary: 'SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 인터넷 정보 서비스\(IIS\)를 구성할 수 있습니다.' 
 ---
 = Active Directory 읽기 권한을 사용하도록 IIS 응용 프로그램 풀을 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

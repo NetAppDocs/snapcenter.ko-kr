@@ -5,6 +5,7 @@ keywords: disks, create, manage, clustered disks, view
 summary: Windows 호스트는 스토리지 시스템의 LUN을 가상 디스크로 인식합니다. SnapCenter를 사용하여 FC 연결 또는 iSCSI 연결 LUN을 생성하고 구성할 수 있습니다. 
 ---
 = 디스크를 생성하고 관리합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

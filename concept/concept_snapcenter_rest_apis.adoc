@@ -5,6 +5,7 @@ keywords: REST APIs
 summary: REST API를 사용하여 몇 가지 SnapCenter 관리 작업을 수행할 수 있습니다. REST API는 Swagger 웹 페이지를 통해 표시됩니다. Swagger 웹 페이지에 액세스하여 REST API 설명서를 표시하고 API 호출을 수동으로 실행할 수 있습니다. REST API를 사용하여 SnapCenter 서버 또는 SnapCenter vSphere 호스트를 관리할 수 있습니다. 
 ---
 = REST API를 사용하여 SnapCenter 자동화
+:allow-uri-read: 
 
 
 [role="lead"]

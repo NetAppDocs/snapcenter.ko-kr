@@ -5,6 +5,7 @@ keywords: SnapCenter plug-in for Exchange Server
 summary: 데이터베이스가 리소스 그룹에 속하지 않은 경우 리소스 페이지에서 데이터베이스 또는 데이터베이스 가용성 그룹을 백업할 수 있습니다. 
 ---
 = Exchange 데이터베이스를 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

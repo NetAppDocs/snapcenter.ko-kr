@@ -5,6 +5,7 @@ keywords:
 summary: 복제본이 손상된 경우와 같이 복제본을 재시딩해야 하는 경우 SnapCenter의 재시딩된 기능을 사용하여 최신 백업으로 재시딩할 수 있습니다. 
 ---
 = 패시브 Exchange 노드 복제본을 다시 시딩했습니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

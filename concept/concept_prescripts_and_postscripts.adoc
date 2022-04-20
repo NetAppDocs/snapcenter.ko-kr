@@ -5,6 +5,7 @@ keywords: prescript, postscript, script path, script timeout, script types suppo
 summary: 데이터 보호 작업의 일부로 사용자 지정 처방과 사후 스크립트를 사용할 수 있습니다. 이러한 스크립트를 사용하면 데이터 보호 작업 전 또는 이후에 자동화를 수행할 수 있습니다. 예를 들어 데이터 보호 작업 장애 또는 경고를 자동으로 알리는 스크립트를 포함할 수 있습니다. 처방전과 소인을 설정하기 전에 이러한 스크립트를 만들기 위한 몇 가지 요구 사항을 이해해야 합니다. 
 ---
 = 사전 스크립트 및 포스트스크립트
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: REST APIs, oracle database
 summary: 에서는 Oracle 데이터베이스에 지원되는 REST API 워크플로우에 대해 설명합니다 
 ---
 = Oracle 데이터베이스에 지원되는 REST API
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

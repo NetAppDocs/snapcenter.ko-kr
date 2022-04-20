@@ -5,6 +5,7 @@ keywords: igroup
 summary: '이니시에이터 그룹(igroup)을 생성하여 스토리지 시스템에서 특정 LUN에 액세스할 수 있는 호스트를 지정합니다. SnapCenter를 사용하여 Windows 호스트에서 igroup을 생성, 이름 바꾸기, 수정 또는 삭제할 수 있습니다.' 
 ---
 = Igroup 생성 및 관리
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

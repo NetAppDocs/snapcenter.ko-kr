@@ -5,6 +5,7 @@ keywords: SnapCenter Plug-in for SAP HANA Database
 summary: SnapCenter는 스토리지 시스템과 파일 시스템 레벨, SAP HANA 백업 카탈로그 내에서 로그 및 데이터 백업의 하우스키핑을 관리합니다. 
 ---
 = SnapCenter에서 로그 및 데이터 백업의 관리 방법
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

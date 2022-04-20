@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenter는 플러그인 애플리케이션 및 스토리지 시스템의 NetApp 기술과 통합됩니다. 사용자 지정 플러그인으로 작업하려면 SnapCenter 그래픽 사용자 인터페이스를 사용합니다. 
 ---
 = SnapCenter 맞춤형 플러그인 기능
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

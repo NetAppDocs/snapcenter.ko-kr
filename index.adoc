@@ -8,6 +8,7 @@ summary: SnapCenter 소프트웨어는 하이브리드 클라우드 어디서나
 ---
 = SnapCenter 소프트웨어 설명서
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

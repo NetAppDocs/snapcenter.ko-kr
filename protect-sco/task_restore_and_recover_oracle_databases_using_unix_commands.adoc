@@ -5,6 +5,7 @@ keywords: restore, recover, CLI
 summary: 복원 및 복구 워크플로에는 계획, 복원 및 복구 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
 = UNIX 명령을 사용하여 Oracle 데이터베이스를 복구 및 복구합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

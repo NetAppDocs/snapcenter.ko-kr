@@ -5,6 +5,7 @@ keywords: upgrade, upgrade plug-in packages
 summary: 플러그인 패키지는 SnapCenter 업그레이드의 일부로 배포됩니다. 
 ---
 = 플러그인 패키지를 업그레이드합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords:
 summary: 클론 워크플로우에는 클론 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
 = 사용자 지정 플러그인 리소스 백업의 클론을 생성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

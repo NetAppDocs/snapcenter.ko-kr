@@ -5,6 +5,7 @@ keywords:
 summary: SQL Server 운영 스토리지용 SnapCenter 플러그인이 다시 온라인 상태가 되면 운영 스토리지로 페일백해야 합니다. 
 ---
 = SnapCenter Plug-in for SQL Server 보조 스토리지에서 운영 스토리지로 페일백
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

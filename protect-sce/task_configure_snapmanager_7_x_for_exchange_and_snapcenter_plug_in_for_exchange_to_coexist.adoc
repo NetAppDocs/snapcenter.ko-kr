@@ -5,6 +5,7 @@ keywords:
 summary: Microsoft Exchange Server용 SnapCenter 플러그인을 Microsoft Exchange Server용 SnapManager와 함께 사용하려면 Microsoft Exchange Server용 SnapManager가 설치된 동일한 Exchange Server에 Microsoft Exchange Server용 SnapCenter 플러그인을 설치하고 Exchange 일정에 대해 SnapManager를 사용하지 않도록 설정해야 합니다. 및 Microsoft Exchange Server용 SnapCenter 플러그인을 사용하여 새 일정 및 백업을 구성합니다. 
 ---
 = Exchange 및 SnapCenter에 대해 SnapManager 7.x가 공존하도록 구성합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

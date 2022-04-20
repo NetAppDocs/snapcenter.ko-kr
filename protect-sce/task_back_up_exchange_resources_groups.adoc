@@ -5,6 +5,7 @@ keywords: SnapCenter plug-in for Exchange Server
 summary: 리소스 그룹은 호스트 또는 Exchange DAG의 리소스 모음이며 리소스 그룹에는 전체 DAG 또는 개별 데이터베이스가 포함될 수 있습니다. 리소스 페이지에서 리소스 그룹을 백업할 수 있습니다. 
 ---
 = Exchange 리소스 그룹을 백업합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

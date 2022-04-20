@@ -5,6 +5,7 @@ keywords: split, PDB, cloned PDB
 summary: 'SnapCenter를 사용하여 복제된 플러그형 데이터베이스 \(PDB\)를 분할할 수 있습니다.' 
 ---
 = 플러그형 데이터베이스의 클론 분할
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

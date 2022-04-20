@@ -5,6 +5,7 @@ keywords:
 summary: SnapCenter는 시스템 상태 및 운영 성공을 모니터링하고 관리할 수 있는 다양한 보고 옵션을 제공합니다. 
 ---
 = SnapCenter 보고 기능 개요
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

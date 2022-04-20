@@ -5,6 +5,7 @@ keywords: plug-in for Oracle features
 summary: Oracle 데이터베이스용 플러그인은 Linux 또는 AIX 호스트의 Oracle 데이터베이스 및 스토리지 시스템의 NetApp 기술과 통합됩니다. 
 ---
 = Oracle Database용 플러그인의 기능
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

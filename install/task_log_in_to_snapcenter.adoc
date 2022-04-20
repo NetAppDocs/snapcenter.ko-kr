@@ -5,6 +5,7 @@ keywords: log in, logging, SnapCenter UI, modify timeout, GUI session timeout, d
 summary: 'SnapCenter는 역할 기반 액세스 제어(RBAC)를 지원합니다. SnapCenter 관리자는 SnapCenter RBAC를 통해 역할 및 리소스를 작업 그룹 또는 Active Directory의 사용자 또는 Active Directory의 그룹에 할당합니다. 이제 RBAC 사용자는 할당된 역할을 사용하여 SnapCenter에 로그인할 수 있습니다.' 
 ---
 = SnapCenter에 로그인합니다
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
