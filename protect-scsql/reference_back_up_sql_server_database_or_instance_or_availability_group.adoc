@@ -45,6 +45,6 @@ SnapCenter에서 스냅샷 복사본을 생성하면 전체 스토리지 시스�
 
 * 자세한 정보 찾기 *
 
-link:task_back_up_resources_using_powershell_cmdlets.html["PowerShell cmdlet을 사용하여 리소스를 백업합니다"]
+link:task_back_up_resources_using_powershell_cmdlets_for_sql.html["PowerShell cmdlet을 사용하여 리소스를 백업합니다"]
 
 link:https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Quiesce_or_grouping_resources_operations_fail["리소스 중지 또는 그룹화 작업이 실패했습니다"]

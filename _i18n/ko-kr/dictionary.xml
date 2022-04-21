@@ -4554,7 +4554,6 @@
   <block id="770dea1a7ffca4cdfedbdad1adb3687d" category="paragraph">백업 후 검증 실행 * 을 선택합니다.</block>
   <block id="3c68b24e5b4018140925233153bb6538" category="admonition">검증 서버에 스토리지 접속이 없는 경우 디스크 마운트 실패 오류가 발생하면서 확인 작업이 실패합니다.</block>
   <block id="0f0ea16fe5c3ccaa1f1c239674409d15" category="list-text">백업 후 확인 * 을 선택하여 백업을 확인합니다.</block>
-  <block id="6b82c658b31dd0db1cb85c0f9d0dd56c" category="paragraph"><block ref="6b82c658b31dd0db1cb85c0f9d0dd56c" category="inline-link-macro-rx"></block></block>
   <block id="db9c751c1327ee48b470f3140421daf6" category="inline-link">TCP_TIMEOUT의 지연으로 인해 MySQL 연결 오류로 인해 백업 작업이 실패합니다</block>
   <block id="0cd607c6c3ab41f1a5532b188171495c" category="paragraph"><block ref="0cd607c6c3ab41f1a5532b188171495c" category="inline-link-rx"></block></block>
   <block id="c473dc65af16d92c688e88cffad5b825" category="inline-link">Windows 스케줄러 오류로 인해 백업이 실패합니다</block>
@@ -5299,7 +5298,6 @@
   <block id="160c0afc78008acd5e27a47466223006" category="summary">리소스(데이터베이스) 또는 리소스 그룹의 백업을 생성할 수 있습니다.</block>
   <block id="cb21f64b7aa1d58307ba1cfcc254fb77" category="paragraph">리소스(데이터베이스) 또는 리소스 그룹의 백업을 생성할 수 있습니다. 백업 워크플로우에는 계획, 백업용 리소스 식별, 백업 정책 생성, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다.</block>
   <block id="fb21695f6b72866357b3e3381a3dd8d4" category="image-alt">Oracle용 백업 워크플로우</block>
-  <block id="79f1d28a9c264ee5568738c6d26d2b27" category="paragraph">Oracle 데이터베이스용 백업을 생성하는 동안 데이터베이스에서 여러 작업이 실행되지 않도록 Oracle 데이터베이스 호스트의 _$ORACLE_HOME/dbs_ 디렉토리에 운영 잠금 파일(.sm_lock_dbsid)이 생성됩니다. 데이터베이스가 백업되면 운영 잠금 파일이 자동으로 제거됩니다.</block>
   <block id="74be1413d8c1294602864c1d9e25f626" category="paragraph">그러나 이전 백업이 경고와 함께 완료된 경우 운영 잠금 파일이 삭제되지 않고 다음 백업 작업이 대기 큐로 들어갑니다. sm_lock_dbsid * 파일이 삭제되지 않으면 결국 취소될 수 있습니다. 이러한 경우 다음 단계를 수행하여 운영 잠금 파일을 수동으로 삭제해야 합니다.</block>
   <block id="aededc4f899d57c4f01639108c3e587e" category="list-text">명령 프롬프트에서 $ORACLE_HOME/dbs로 이동합니다.</block>
   <block id="3ab07b443e5100312a8428cab6f6a083" category="list-text">작동 잠금인 rm-rf.sm_lock_dbsid를 삭제합니다</block>
@@ -7738,4 +7736,6 @@
   <block id="30c24db21140190d4033af17ccd83090" category="list-text">* SnapCenter 플러그인 및 스토리지 DR *</block>
   <block id="67c5ed4921b287cb12a0c466f01e9689" category="admonition">다중 경로 구성 파일의 user_friendly_names 옵션이 yes로 설정되어 있으면 SAN 구성이 지원되지 않습니다.</block>
   <block id="f91d0c3af79b649ecca3ab95634c22c6" category="list-text">sudo 버전 1.8.7 ~ 1.8.19P2.</block>
+  <block id="51fb25555c87830dd2151ad5f3b7a845" category="paragraph"><block ref="51fb25555c87830dd2151ad5f3b7a845" category="inline-link-macro-rx"></block></block>
+  <block id="10e4911e9effb28d4e43d47f67fac6db" category="paragraph">Oracle 데이터베이스용 백업을 생성하는 동안 데이터베이스에서 여러 작업이 실행되지 않도록 Oracle 데이터베이스 호스트의 _$Oracle_HOME/DBS_ 디렉토리에 운영 잠금 파일(_.sm_lock_dbsid_)이 생성됩니다. 데이터베이스가 백업되면 운영 잠금 파일이 자동으로 제거됩니다.</block>
 </blocks>

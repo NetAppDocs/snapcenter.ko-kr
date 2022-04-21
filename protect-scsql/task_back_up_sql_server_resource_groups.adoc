@@ -43,7 +43,7 @@ link:task_create_backup_policies_for_sql_server_databases.html["SQL Server 데�
 
 link:task_create_resource_groups_and_attach_policies_for_sql_server.html["리소스 그룹을 만들고 SQL Server에 대한 정책을 연결합니다"]
 
-link:task_back_up_resources_using_powershell_cmdlets.html["PowerShell cmdlet을 사용하여 리소스를 백업합니다"]
+link:task_back_up_resources_using_powershell_cmdlets_for_sql.html["PowerShell cmdlet을 사용하여 리소스를 백업합니다"]
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value["TCP_TIMEOUT의 지연으로 인해 MySQL 연결 오류로 인해 백업 작업이 실패합니다"]
 
