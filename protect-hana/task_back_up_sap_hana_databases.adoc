@@ -20,10 +20,10 @@ summary: 자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이
 * 스냅샷 복사본 기반 백업 작업의 경우 모든 테넌트 데이터베이스가 유효하고 활성 상태인지 확인합니다.
 * SAP HANA 시스템 복제 백업을 생성하려면 SAP HANA 시스템의 모든 리소스를 하나의 리소스 그룹에 추가하는 것이 좋습니다. 이렇게 하면 Takeover-failback 모드 중에 원활한 백업이 보장됩니다.
 +
-link:protect-hana/task_create_resource_groups_and_attach_policies.html["리소스 그룹을 생성하고 정책을 연결합니다"].
+link:task_create_resource_groups_and_attach_policies.html["리소스 그룹을 생성하고 정책을 연결합니다"].
 
 +
-link:protect-hana/task_back_up_resource_groups_sap_hana.html["리소스 그룹을 백업합니다"]
+link:task_back_up_resource_groups_sap_hana.html["리소스 그룹을 백업합니다"]
 
 * 하나 이상의 테넌트 데이터베이스가 다운될 때 파일 기반 백업을 만들려면 HANA 속성 파일에서 'Set-SmConfigSettings' cmdlet을 사용하여 allow_file_based_backup_IFINACTIVE_Tenants_present 매개 변수를 * Yes * 로 설정합니다.
 +

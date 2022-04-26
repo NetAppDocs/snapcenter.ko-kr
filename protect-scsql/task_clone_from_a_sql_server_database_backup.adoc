@@ -153,7 +153,7 @@ EMS의 경우 를 참조할 수 있습니다 https://docs.netapp.com/us-en/snapc
 
 link:reference_back_up_sql_server_database_or_instance_or_availability_group.html["SQL Server 데이터베이스, 인스턴스 또는 가용성 그룹을 백업합니다"]
 
-link:task_clone_backups_using_powershell_cmdlets.html["PowerShell cmdlet을 사용하여 백업 클론 생성"]
+link:task_clone_backups_using_powershell_cmdlets_for_sql.html["PowerShell cmdlet을 사용하여 백업 클론 생성"]
 
 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value["클론 작업이 실패하거나 기본 TCP_TIMEOUT 값으로 완료하는 데 시간이 더 오래 걸릴 수 있습니다"]
 

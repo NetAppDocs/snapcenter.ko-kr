@@ -20,7 +20,7 @@ summary: SnapCenterAdd 호스트 페이지를 사용하여 호스트를 추가�
 * 메시지 큐 서비스가 실행 중인지 확인해야 합니다.
 * 그룹 GMSA(Managed Service Account)를 사용하는 경우 관리자 권한으로 GMSA를 구성해야 합니다.
 +
-link:task_configure_gMSA_on_windows_server_2012_or_later_for_sql.html["Windows Server 2012 이상에서 그룹 관리 서비스 계정을 SQL용으로 구성합니다"^]
+link:task_configure_gMSA_on_windows_server_2012_or_later.html["Windows Server 2012 이상에서 그룹 관리 서비스 계정을 SQL용으로 구성합니다"^]
 
 
 

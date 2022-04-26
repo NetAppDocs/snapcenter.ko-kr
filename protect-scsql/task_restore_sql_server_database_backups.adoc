@@ -172,6 +172,6 @@ Undo directory(디렉터리 실행 취소) 옵션이 활성화된 경우 더 많
 
 * 자세한 정보 찾기 *
 
-link:task_restore_and_recover_resources_using_powershell_cmdlets.html["PowerShell cmdlet을 사용하여 리소스 복원 및 복구"]
+link:task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html["PowerShell cmdlet을 사용하여 리소스 복원 및 복구"]
 
 link:task_restore_a_sql_server_database_from_secondary_storage.html["보조 스토리지에서 SQL Server 데이터베이스를 복구합니다"]
