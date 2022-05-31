@@ -4371,7 +4371,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-20 03:27:30 +0000">04/20/2022</time>
+    <time datetime="2022-05-31 19:41:44 +0000">05/31/2022</time>
     
   
 
@@ -4389,7 +4389,7 @@
 <h2 id="지원되는-스크립트-유형입니다">지원되는 스크립트 유형입니다</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>지원되는 스크립트 유형은 다음과 같습니다.</p>
+<p>Windows에서 지원되는 스크립트 유형은 다음과 같습니다.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -4404,13 +4404,51 @@
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>UNIX에서 지원되는 스크립트 유형은 다음과 같습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Perl 스크립트</p>
+</li>
+<li>
+<p>Python 스크립트</p>
+</li>
+<li>
+<p>쉘 스크립트</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/snapcenter/images/note.svg" alt="참고">
+</td>
+<td class="content">
+기본 bash shell과 함께 sh-shell, k-shell 및 c-shell과 같은 다른 쉘도 지원됩니다.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="스크립트-경로">스크립트 경로</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>가상화되지 않은 스토리지 시스템과 가상화된 스토리지 시스템에서 SnapCenter 작업의 일부로 실행되는 모든 처방과 사후 스크립트는 플러그인 호스트에서 실행됩니다. 따라서 플러그인 호스트 또는 플러그인 호스트에서 액세스할 수 있는 SMB 공유에 스크립트가 있어야 합니다.</p>
+<p>가상화되지 않은 스토리지 시스템과 가상화된 스토리지 시스템에서 SnapCenter 작업의 일부로 실행되는 모든 처방과 사후 스크립트는 플러그인 호스트에서 실행됩니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Windows 스크립트는 플러그인 호스트 또는 플러그인 호스트에서 액세스할 수 있는 SMB 공유에 있어야 합니다.</p>
+</li>
+<li>
+<p>UNIX 스크립트는 플러그인 호스트에 있어야 합니다.</p>
+</li>
+</ul>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4419,7 +4457,7 @@
 <img src="/us-en/snapcenter/images/note.svg" alt="참고">
 </td>
 <td class="content">
-스크립트 경로는 스크립트가 실행될 때 검증됩니다.
+스크립트 경로는 실행 시 검증됩니다.
 </td>
 </tr>
 </table>
@@ -4433,7 +4471,19 @@
 <p>스크립트는 백업 정책에 지정됩니다. 백업 작업이 시작되면 정책은 자동으로 스크립트를 백업 중인 리소스와 연결합니다. 백업 정책을 만들 때 처방과 PS 인수를 지정할 수 있습니다.</p>
 </div>
 <div class="paragraph">
-<p>여러 스크립트를 지정하려면 각 스크립트 경로 뒤에 * Enter * 를 눌러 각 스크립트를 별도의 줄에 나열합니다. 세미콜론(;)은 허용되지 않습니다. 여러 개의 처방과 여러 개의 소인을 지정할 수 있습니다. 단일 스크립트는 처방과 PS로 모두 코딩될 수 있으며 다른 스크립트를 호출할 수 있습니다.</p>
+<p>Windows의 경우에만 여러 스크립트를 지정할 수 있습니다. 각 스크립트 경로 뒤에 * Enter * 를 눌러 각 스크립트를 별도의 줄에 나열해야 합니다. 세미콜론(;)은 허용되지 않습니다. 여러 개의 처방과 여러 개의 소인을 지정할 수 있습니다. 단일 스크립트는 처방과 PS로 모두 코딩될 수 있으며 다른 스크립트를 호출할 수 있습니다.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/snapcenter/images/note.svg" alt="참고">
+</td>
+<td class="content">
+UNIX의 경우 여러 스크립트를 지정할 수 없습니다.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -4441,7 +4491,10 @@
 <h2 id="스크립트-시간-초과">스크립트 시간 초과</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>백업 스크립트의 시간 제한은 15분이며 수정할 수 없습니다.</p>
+<p>Windows의 경우 시간 초과는 15분으로 설정되어 수정할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>UNIX의 경우 시간 초과는 기본적으로 60초로 설정됩니다. 시간 초과 값을 수정할 수 있습니다.</p>
 </div>
 </div>
 </div>
@@ -4449,7 +4502,10 @@
 <h2 id="스크립트-출력">스크립트 출력</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>prescpts 및 postscripts 출력 파일의 기본 디렉터리는 Windows\System32입니다.</p>
+<p>Windows prescpts 및 postscripts 출력 파일의 기본 디렉터리는 Windows\System32입니다.</p>
+</div>
+<div class="paragraph">
+<p>UNIX 처방과 postscript에 대한 기본 위치는 없습니다. 원하는 위치로 출력 파일을 리디렉션할 수 있습니다.</p>
 </div>
 </div>
 </div>
