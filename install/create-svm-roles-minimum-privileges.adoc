@@ -39,11 +39,11 @@ NOTE: 각 권한에 대해 이 명령을 반복해야 합니다.
 
 SVM 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령을 실행해야 합니다.
 
-* '보안 로그인 역할 생성 - role SVM_SVM_Role_Name - cmddirname "SnapMirror list-destinations" - vserver SVM_Name - 모두 액세스'
-* '보안 로그인 역할 생성 - role SVM_SVM_Role_Name - cmddirname" event generate-autosupport-log" - vserver SVM_Name - 모두 액세스'
-* '보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "작업 기록 표시" - 모두 액세스'
-* '보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "job stop" - 모두 액세스'
-* '보안 로그인 역할 생성 - SVM SVM_이름 - 역할 SVM_SVM_역할_이름 - cmddirname "LUN" - 모두 액세스'
+* 'Security login role create - role SVM_Role_Name - cmddirname "SnapMirror list-destinations" - vserver SVM_Name - access all'
+* 'Security login role create - role SVM_Role_Name - cmddirname' event generate-autosupport-log" - vserver SVM_Name - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "job history show" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "job stop" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "lun" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun create" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun delete" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup add" - access all'
@@ -52,7 +52,7 @@ SVM 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup rename" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup show" - access all'을 선택합니다
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping add-reporting-nodes" - access all'
-* '보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "lun mapping create" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "lun mapping create" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping delete" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping remove-reporting-nodes" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping show" - access all'
@@ -63,7 +63,7 @@ SVM 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun resize" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun serial" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun show" - access all'
-* '보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "network interface" - 액세스 읽기 전용'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "network interface" - access readonly'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror policy add-rule" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "snapmirror policy modify -rule" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror policy remove-rule" - access all'
@@ -106,9 +106,10 @@ SVM 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy delete" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy rule create" - access all'
 * '보안 로그인 역할 생성 - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy rule show" - access all'을 선택합니다
-* '보안 로그인 역할 생성 - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy show" - 액세스 모든 ``보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "vserver iscsi connection show" - 모두 액세스'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy show" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "vserver iscsi connection show" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver" - access readonly'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver iscsi" - access all'
-* '보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "volume clone split status" - 모두 액세스'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "volume clone split status" - access all'
 

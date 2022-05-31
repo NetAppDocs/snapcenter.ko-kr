@@ -16,3 +16,53 @@ SnapCenter의 각 릴리즈에는 업데이트된 SnapCenter 서버 및 플러�
 워크플로우는 SnapCenter 서버 및 플러그인 패키지를 업그레이드하는 데 필요한 여러 작업을 보여 줍니다.
 
 image::../media/upgrade_workflow.png[워크플로우 업그레이드]
+
+
+
+== 지원되는 업그레이드 경로
+
+|===
+| SnapCenter 서버 버전을 사용 중인 경우... | SnapCenter 서버를 다음으로 직접 업그레이드할 수 있습니다. | 지원되는 플러그인 버전입니다 
+
+
+.2+| 4.3.x | 4.4.x  a| 
+* 4.3.x
+* 4.4.x
+
+
+
+
+| 4.5.x  a| 
+* 4.5.x
+
+
+
+
+.2+| 4.4.x | 4.5.x  a| 
+* 4.4.x
+* 4.5.x
+
+
+
+
+| 4.6.x  a| 
+* 4.6.x
+
+
+
+
+ a| 
+4.5.x
+ a| 
+4.6.x
+ a| 
+* 4.5.x
+* 4.6.x
+
+
+|===
+
+IMPORTANT: 예를 들어 SnapCenter 버전 4.3.x를 사용 중이고 4.6.x로 업그레이드하려면 먼저 4.5.x로 업그레이드한 다음 4.6.x로 롤링 업그레이드를 수행해야 합니다
+
+
+NOTE: VMware vSphere용 SnapCenter 플러그인 업그레이드에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html["VMware vSphere용 SnapCenter 플러그인 업그레이드"^].

@@ -2087,11 +2087,6 @@
   <block id="87438cb05e7f3a99d7cb0f708d03820f" category="paragraph">'보안 로그인 잠금 해제 - 사용자 &lt;user_name\&gt; - vserver &lt;svm_name\&gt;'</block>
   <block id="5828bd4572658b3ec60c10c123756d37" category="section-title">SVM 역할 생성 및 권한 할당을 위한 ONTAP CLI 명령</block>
   <block id="926b7acb0dd0dddac1e9ab03e87150b7" category="paragraph">SVM 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령을 실행해야 합니다.</block>
-  <block id="3fd8ba893562f342d865571b0059781e" category="list-text">'보안 로그인 역할 생성 - role SVM_SVM_Role_Name - cmddirname "SnapMirror list-destinations" - vserver SVM_Name - 모두 액세스'</block>
-  <block id="038be67ee8a52d8b3eab699d5f7c43d3" category="list-text">'보안 로그인 역할 생성 - role SVM_SVM_Role_Name - cmddirname" event generate-autosupport-log" - vserver SVM_Name - 모두 액세스'</block>
-  <block id="16b2bf2485b29324d1d9c52df65291c4" category="list-text">'보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "작업 기록 표시" - 모두 액세스'</block>
-  <block id="a0df08dd4d49098e386a72bc7f795b26" category="list-text">'보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "job stop" - 모두 액세스'</block>
-  <block id="8205a16103582031e200a6f0062cb43d" category="list-text">'보안 로그인 역할 생성 - SVM SVM_이름 - 역할 SVM_SVM_역할_이름 - cmddirname "LUN" - 모두 액세스'</block>
   <block id="77d14dd229f22e75b140b12306c243d3" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun create" - access all'</block>
   <block id="e1591576a5800f25342f1c086407ae01" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun delete" - access all'</block>
   <block id="fb12f3dd2e8853d45d6a0ea4b329075d" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup add" - access all'</block>
@@ -2100,7 +2095,6 @@
   <block id="d86a9f51c3fc7522bd8adde0ec1c5197" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup rename" - access all'</block>
   <block id="9b164f1f7736600715be680a2838a2a8" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup show" - access all'을 선택합니다</block>
   <block id="72d871fffa8a9997809196f91f71162a" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping add-reporting-nodes" - access all'</block>
-  <block id="daf7b5d2005961b7fd1da6d40f58ecb5" category="list-text">'보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "lun mapping create" - access all'</block>
   <block id="55ee80641b5e4a7129b766c5f1947cb9" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping delete" - access all'</block>
   <block id="0452c90c862e8bea83d415d798fe7a17" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping remove-reporting-nodes" - access all'</block>
   <block id="e236a547a0832ed88896e7bd4979e95d" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping show" - access all'</block>
@@ -2111,7 +2105,6 @@
   <block id="cc726ab19c5f6ebad14747bfb9ca2b1d" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun resize" - access all'</block>
   <block id="a358cbd4a618edf90cae23f19bebb285" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun serial" - access all'</block>
   <block id="ffd0adba3d8a766871862b8166efb08a" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun show" - access all'</block>
-  <block id="0f0a2ef01be3fa45bc7144749af7247b" category="list-text">'보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "network interface" - 액세스 읽기 전용'</block>
   <block id="c7a78c9e0680e33782bcb69c308c2726" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror policy add-rule" - access all'</block>
   <block id="581ff44a24f5961a469602e478f31324" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "snapmirror policy modify -rule" - access all'</block>
   <block id="6252c3ab8ec38aa610d862bd24476214" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror policy remove-rule" - access all'</block>
@@ -2154,11 +2147,9 @@
   <block id="c2c2354ac74c20c7387d70aa883c0529" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy delete" - access all'</block>
   <block id="3cdfaff1528e474040e3b89b41b06add" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy rule create" - access all'</block>
   <block id="b05817f4014440d7bfff2409db27e664" category="list-text">'보안 로그인 역할 생성 - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy rule show" - access all'을 선택합니다</block>
-  <block id="ed851dfd4557d096974fc08b45d7fe9a" category="list-text">'보안 로그인 역할 생성 - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy show" - 액세스 모든 ``보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "vserver iscsi connection show" - 모두 액세스'</block>
   <block id="f8ab61d03ef9c157f83d8967c5325f72" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver" - access readonly'</block>
   <block id="32b2dd2ad5bcd04617f8049be39f3a4e" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy" - access all'</block>
   <block id="070716b587ce6b006f4906a8222fc505" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver iscsi" - access all'</block>
-  <block id="9c4ec47b74ac2ceb05d2eec75e743a66" category="list-text">'보안 로그인 역할 생성 - vserver SVM_Name - role SVM_SVM_Role_Name - cmddirname "volume clone split status" - 모두 액세스'</block>
   <block id="979623b664e821ca043ae0d13a9b68a0" category="summary">자격 증명은 응용 프로그램이나 환경에 따라 다른 인증 방법을 사용합니다. 자격 증명은 SnapCenter 작업을 수행할 수 있도록 사용자를 인증합니다. 플러그인 설치를 위한 자격 증명 세트와 데이터 보호 작업을 위한 다른 자격 증명 세트를 생성해야 합니다.</block>
   <block id="5b00a6bb860d50a1c997c998160e673c" category="doc">자격 증명에 대한 인증 방법입니다</block>
   <block id="7e68841acc918ef617f53709d7f28228" category="section-title">Windows 인증</block>
@@ -3158,31 +3149,9 @@
   <block id="6246f3e3294191ea51e0e29f715acfad" category="list-text">업그레이드 중에는 호스트가 예약된 작업을 실행하지 못하도록 유지 보수 모드로 자동 전환됩니다. 업그레이드 후 호스트가 자동으로 유지 보수 모드에서 해제됩니다.</block>
   <block id="a6230500cc307e0a76e575726dcf9cdd" category="list-text">업그레이드 중에 SQL 스크립트를 실행하여 NSM 데이터베이스에서 Exchange 데이터를 업데이트합니다. 그러면 DAG 및 호스트 단축 이름이 FQDN으로 변환됩니다. 이 기능은 Exchange 플러그인이 있는 SnapCenter 서버를 사용하는 경우에만 적용됩니다.</block>
   <block id="9b8f4a16b159f7670582bbc9d12e5328" category="list-text">업그레이드 작업을 시작하기 전에 호스트를 유지 관리 모드로 수동으로 배치한 경우 업그레이드 후 * 호스트 * &gt; * 스케줄 활성화 * 를 클릭하여 호스트를 유지 관리 모드에서 수동으로 해제해야 합니다.</block>
-  <block id="b0d7fc0fc319194e91f66a827df0c05a" category="list-text">지원되는 업그레이드 경로:</block>
-  <block id="7fc17decf9554a362d80ff8052528439" category="cell">사용 중인 경우...</block>
-  <block id="ef8c3ec83a38657dcd15b9735798ad77" category="cell">할 수 있는 일...</block>
-  <block id="4e17fd3e19df0a7760aabcc920a3a583" category="paragraph">4.0.x</block>
-  <block id="484cc1fa3a792ef81da92bac4d6da925" category="list-text">4.1.x 또는 4.2.x로 직접 업그레이드</block>
-  <block id="fcfd33d072b85651aa4529f8a77ec69e" category="list-text">먼저 4.1.x 또는 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드하십시오</block>
-  <block id="af4ba18efa244f231f7fd0c4483cf443" category="list-text">먼저 4.2.x로 업그레이드한 다음 4.4.x로 업그레이드하십시오</block>
-  <block id="b85081b787a16b4ec9757708a11143b9" category="list-text">먼저 4.2.x로 업그레이드한 다음 4.4.x로 업그레이드한 다음 4.5로 업그레이드하십시오</block>
-  <block id="51956a3902b95971c29c308dc090cee8" category="list-text">먼저 4.2.x로 업그레이드한 다음 4.4.x로 업그레이드한 다음 4.6으로 업그레이드합니다</block>
-  <block id="b1ee733d2443984b256ad5beee30d6ca" category="paragraph">4.1.x</block>
-  <block id="538bc4c4a0100dea348459df2abd822b" category="list-text">4.2.x 또는 4.3.x로 직접 업그레이드</block>
-  <block id="4eb9a81b6065934fe54be4cbb4e4853c" category="list-text">먼저 4.2.x 또는 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드하십시오</block>
-  <block id="6a0ada299166e4ef0ba4db95ab037aa0" category="list-text">먼저 4.3.x로 업그레이드한 다음 4.5로 업그레이드하십시오</block>
-  <block id="ef6f1862c0f4d80a09c593805ff3f2bf" category="list-text">먼저 4.3.x로 업그레이드한 다음 4.5.x로 업그레이드한 다음 4.6으로 업그레이드하십시오</block>
-  <block id="9f144f5f546870968ec5ee9301456d60" category="paragraph">4.2.x</block>
-  <block id="179e0b30bcd54c1c40d89dfeb9a7d148" category="list-text">4.3.x 또는 4.4.x로 직접 업그레이드</block>
-  <block id="79524d2d520f4e0f11429f4feda3b208" category="list-text">먼저 4.3.x 또는 4.4.x로 업그레이드한 다음 4.5로 업그레이드하십시오</block>
-  <block id="f005205229710f7853a613da5c8259ae" category="list-text">먼저 4.4.x로 업그레이드한 다음 4.6으로 업그레이드하여 4.6으로 업그레이드하십시오</block>
   <block id="55cbbab091e104a7f3d3dbf6ba99ba61" category="paragraph">4.3.x</block>
-  <block id="17aad294f75d5ee636d86f5635291248" category="list-text">4.4.x 또는 4.5로 직접 업그레이드</block>
-  <block id="5a1831d1dbc85fe00723563fb086a383" category="list-text">먼저 4.5.x로 업그레이드한 다음 4.6으로 업그레이드하여 4.6으로 업그레이드하십시오</block>
   <block id="fef826a349ca99b933042ba1dfa73260" category="paragraph">4.4.x</block>
-  <block id="4674c78db9c7c48890d8aa9d1776d5a2" category="paragraph">4.5 또는 4.6으로 직접 업그레이드하십시오</block>
   <block id="4b1f6cbbab8f5d76a3e1d1b2c562722e" category="paragraph">4.5.x</block>
-  <block id="f8f3d4aadad29017a7c0ed081553f07a" category="paragraph">4.6으로 직접 업그레이드</block>
   <block id="d6d9056bd3ccaf6f2ea25c46f86b217c" category="list-text">NetApp Support 사이트에서 SnapCenter 서버 설치 패키지를 다운로드하십시오.</block>
   <block id="8e3a959801db0274c8bf2982a663244b" category="paragraph"><block ref="8e3a959801db0274c8bf2982a663244b" category="inline-link-rx"></block></block>
   <block id="b74248c6cef601e9db35af2dd0a5b036" category="list-text">C:\Program Files\NetApp\SnapCenter WebApp에 있는 web.config의 복사본을 생성합니다.</block>
@@ -3209,27 +3178,6 @@
   <block id="28cc8014ba404c5800363561063ce630" category="paragraph">플러그인이 업그레이드되거나 SnapCenter 플러그인 로더(SPL) 서비스가 다시 시작되면 java_home의 값이 업데이트됩니다. SPL을 업그레이드하거나 다시 시작하기 전에 skip_jAVAHOME_update 매개 변수를 추가하고 값을 true 로 설정하면 java_home 값이 업데이트되지 않습니다.</block>
   <block id="35702b2ddcae5a0a26dfc495c46421b5" category="list-text">SnapCenter 서버 호스트 또는 플러그인 호스트에서 수정한 모든 SnapCenter 구성 파일을 백업해야 합니다.</block>
   <block id="8a34c1f412e1e3388d29a41e30823460" category="list-text">업그레이드 절차에서는 Windows, Linux 또는 AIX 호스트를 "유지 관리" 모드로 전환하여 호스트가 예약된 작업을 실행하지 못하도록 합니다.</block>
-  <block id="63dba214769467ec95d70f709f506981" category="cell">사용 중인 경우...</block>
-  <block id="8fb06ada7461bb627377a8ee9a7ccbf6" category="list-text">4.1.x로 직접 업그레이드</block>
-  <block id="49e209e2198b7351ac4c93318932ae0a" category="list-text">먼저 4.1.x로 업그레이드한 다음 4.2.x로 업그레이드하십시오</block>
-  <block id="2ea52419cec36b53a98c614bc928223f" category="list-text">먼저 4.1.x로 업그레이드한 다음 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드하십시오</block>
-  <block id="a5872ee6e593e85685073da86b16352b" category="list-text">먼저 4.1.x로 업그레이드한 다음 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드하십시오</block>
-  <block id="19cd583944e0a968cef282d18043e45a" category="list-text">먼저 4.1.x로 업그레이드한 다음 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드한 다음 4.5로 업그레이드하십시오</block>
-  <block id="a15140d49e45f662c60c6bf44b28b4c4" category="list-text">먼저 4.1.x로 업그레이드한 다음 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드한 다음 4.5.x로 업그레이드한 다음 4.6으로 업그레이드합니다</block>
-  <block id="046e347178074d7707b5c3da4ea5a61b" category="list-text">4.2.x로 직접 업그레이드</block>
-  <block id="ba2827429ba898319b96871384020c3a" category="list-text">먼저 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드하십시오</block>
-  <block id="5c27e14af89e6146a66293c13fa6622f" category="list-text">먼저 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드하십시오</block>
-  <block id="2860e58d71ba76950aec5d596990da8a" category="list-text">먼저 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드한 다음 4.5로 업그레이드하십시오</block>
-  <block id="d19f71f7d90bf7a5de265505ad86a7b8" category="list-text">먼저 4.2.x로 업그레이드한 다음 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드한 다음 4.5.x로 업그레이드한 다음 4.6으로 업그레이드합니다</block>
-  <block id="b64bd4e14a7ac7ed05ec8eb0313b0288" category="list-text">4.3.x로 직접 업그레이드</block>
-  <block id="1fc14ad13a22e99797ce2d25fd1bcabb" category="list-text">먼저 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드하십시오</block>
-  <block id="32df7497d27db58e0f9877655c6ad6fb" category="list-text">먼저 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드한 다음 4.5로 업그레이드하십시오</block>
-  <block id="b82ae9b595615838e0e4da9befc559d0" category="list-text">먼저 4.3.x로 업그레이드한 다음 4.4.x로 업그레이드한 다음 4.5.x로 업그레이드한 다음 4.6으로 업그레이드하십시오</block>
-  <block id="0375ceaf49bb68d380ac402fcc55c9ce" category="list-text">4.4.x로 직접 업그레이드</block>
-  <block id="e83964f4d5096cec3e9f79899b8f9881" category="list-text">먼저 4.4.x로 업그레이드한 다음 4.5로 업그레이드하십시오</block>
-  <block id="f2ff723377a283be6f489a385be77f13" category="list-text">먼저 4.4.x로 업그레이드한 다음 4.5.x로 업그레이드한 다음 4.6으로 업그레이드하십시오</block>
-  <block id="8ffa70fd4aad59373a1c170a9715213e" category="list-text">4.5로 직접 업그레이드</block>
-  <block id="ae6152fdf638c88998b16f0fae964b24" category="list-text">먼저 4.5.x로 업그레이드한 다음 4.6으로 업그레이드하십시오</block>
   <block id="dd9f485e72f96875e028693823f26e70" category="inline-link">VMware vSphere용 SnapCenter 플러그인 업그레이드</block>
   <block id="25878f69131b31b18aeda7ba36139c1b" category="admonition">VMware vSphere용 SnapCenter 플러그인 업그레이드에 대한 자세한 내용은 을 참조하십시오<block ref="9fa07c2f7a59d2185d48077e327b705e" category="inline-link-rx"></block>.</block>
   <block id="f957674174a2517cb9b6bb5f34a9d71f" category="list-text">왼쪽 탐색 창에서 * 호스트 * &gt; * 관리 호스트 * 를 클릭합니다.</block>
@@ -7411,20 +7359,14 @@
   <block id="61f6987ebe8ac6f46f0b880c5ae59a51" category="summary">데이터 보호 작업의 일부로 사용자 지정 처방과 사후 스크립트를 사용할 수 있습니다. 이러한 스크립트를 사용하면 데이터 보호 작업 전 또는 이후에 자동화를 수행할 수 있습니다. 예를 들어 데이터 보호 작업 장애 또는 경고를 자동으로 알리는 스크립트를 포함할 수 있습니다. 처방전과 소인을 설정하기 전에 이러한 스크립트를 만들기 위한 몇 가지 요구 사항을 이해해야 합니다.</block>
   <block id="7322146fa0278b7076d42a67da3ca68f" category="doc">사전 스크립트 및 포스트스크립트</block>
   <block id="435a98a7bde7c8c702ecea454519078b" category="section-title">지원되는 스크립트 유형입니다</block>
-  <block id="11e6b1e8a6ab60d570eefed8daa57bd8" category="paragraph">지원되는 스크립트 유형은 다음과 같습니다.</block>
   <block id="629e171db7b408e3e171f1586f3caf6f" category="list-text">배치 파일</block>
   <block id="9fa24628162fd1328c53cf7accffa4b0" category="list-text">PowerShell 스크립트</block>
   <block id="4e25347d36a68a5bcb305fa81271c194" category="list-text">Perl 스크립트</block>
   <block id="cb1dcb2d36da486647d1983837107510" category="section-title">스크립트 경로</block>
-  <block id="2bc22da857118b35633e6993a93f9998" category="paragraph">가상화되지 않은 스토리지 시스템과 가상화된 스토리지 시스템에서 SnapCenter 작업의 일부로 실행되는 모든 처방과 사후 스크립트는 플러그인 호스트에서 실행됩니다. 따라서 플러그인 호스트 또는 플러그인 호스트에서 액세스할 수 있는 SMB 공유에 스크립트가 있어야 합니다.</block>
-  <block id="90b0c56b568dc02463dea1bc976d53d4" category="admonition">스크립트 경로는 스크립트가 실행될 때 검증됩니다.</block>
   <block id="2ef92c32f18381ca1aac0ef10eb1ed42" category="section-title">스크립트 지정 위치</block>
   <block id="74791fd4df03254b423dc68919cf67a3" category="paragraph">스크립트는 백업 정책에 지정됩니다. 백업 작업이 시작되면 정책은 자동으로 스크립트를 백업 중인 리소스와 연결합니다. 백업 정책을 만들 때 처방과 PS 인수를 지정할 수 있습니다.</block>
-  <block id="b38a293fb34c1cc09303ec2335385e9e" category="paragraph">여러 스크립트를 지정하려면 각 스크립트 경로 뒤에 * Enter * 를 눌러 각 스크립트를 별도의 줄에 나열합니다. 세미콜론(;)은 허용되지 않습니다. 여러 개의 처방과 여러 개의 소인을 지정할 수 있습니다. 단일 스크립트는 처방과 PS로 모두 코딩될 수 있으며 다른 스크립트를 호출할 수 있습니다.</block>
   <block id="3093ae9f5bdaf1b35b772bada2c6ddc5" category="section-title">스크립트 시간 초과</block>
-  <block id="6e26923a4679c31544b8127ace79f5c4" category="paragraph">백업 스크립트의 시간 제한은 15분이며 수정할 수 없습니다.</block>
   <block id="a8b41ff3cf6d5a098fc3bc734aaecc1c" category="section-title">스크립트 출력</block>
-  <block id="aab85822b1fb7e074e6646a06f9ae63e" category="paragraph">prescpts 및 postscripts 출력 파일의 기본 디렉터리는 Windows\System32입니다.</block>
   <block id="c30d59401403b986989fc4a149ff2aea" category="summary">SnapCenter는 엄격한 보안 및 인증 기능을 사용하여 데이터를 안전하게 보호합니다.</block>
   <block id="c81d278ed6d59212379f4589585fc795" category="doc">보안 기능</block>
   <block id="79333b6bf46efb54b1410de6b731a635" category="paragraph">SnapCenter에는 다음과 같은 보안 기능이 포함되어 있습니다.</block>
@@ -7738,4 +7680,36 @@
   <block id="f9db2c2c51ac713541e90ff79219156d" category="paragraph"><block ref="f9db2c2c51ac713541e90ff79219156d" category="inline-link-macro-rx"></block></block>
   <block id="7a679a1d48731136f64e6e6d38429002" category="paragraph"><block ref="7a679a1d48731136f64e6e6d38429002" category="inline-link-macro-rx"></block></block>
   <block id="8eea6d6db8756ac6f485ef882956153e" category="paragraph"><block ref="8eea6d6db8756ac6f485ef882956153e" category="inline-link-macro-rx"></block></block>
+  <block id="0fc6896a1941ab3074a525b384b1d103" category="paragraph">를 클릭합니다<block ref="1b419d76cc3163a36d36ff494ed65b44" category="inline-link-rx"></block> 지원되는 버전에 대한 최신 정보를 제공합니다.</block>
+  <block id="ace671fcc1d4c5939c3ed0ebf95d2b2c" category="paragraph">Windows에서 지원되는 스크립트 유형은 다음과 같습니다.</block>
+  <block id="29233ecbd2b929a26387627ae9f90bbf" category="paragraph">UNIX에서 지원되는 스크립트 유형은 다음과 같습니다.</block>
+  <block id="11ab50b04d8cca57ff15c12c97d5679c" category="list-text">Python 스크립트</block>
+  <block id="6ed9402e52f305d484cb3e2eee84b210" category="list-text">쉘 스크립트</block>
+  <block id="ceb1c56a363e3e946d8da6a79de2b489" category="admonition">기본 bash shell과 함께 sh-shell, k-shell 및 c-shell과 같은 다른 쉘도 지원됩니다.</block>
+  <block id="6b98b59317c1c01b7bc7ca4cd17411bb" category="paragraph">가상화되지 않은 스토리지 시스템과 가상화된 스토리지 시스템에서 SnapCenter 작업의 일부로 실행되는 모든 처방과 사후 스크립트는 플러그인 호스트에서 실행됩니다.</block>
+  <block id="6b0556ded1c4e7755a840e42c90a320a" category="list-text">Windows 스크립트는 플러그인 호스트 또는 플러그인 호스트에서 액세스할 수 있는 SMB 공유에 있어야 합니다.</block>
+  <block id="c157096c2e47e568177494234a87f0e1" category="list-text">UNIX 스크립트는 플러그인 호스트에 있어야 합니다.</block>
+  <block id="fef867655f1f81bcdd0d00a9356cb04e" category="admonition">스크립트 경로는 실행 시 검증됩니다.</block>
+  <block id="ef663b0b3b7a27afee6c150520bfb95a" category="paragraph">Windows의 경우에만 여러 스크립트를 지정할 수 있습니다. 각 스크립트 경로 뒤에 * Enter * 를 눌러 각 스크립트를 별도의 줄에 나열해야 합니다. 세미콜론(;)은 허용되지 않습니다. 여러 개의 처방과 여러 개의 소인을 지정할 수 있습니다. 단일 스크립트는 처방과 PS로 모두 코딩될 수 있으며 다른 스크립트를 호출할 수 있습니다.</block>
+  <block id="f857e3b29391e444ec1b7f560c89a1ee" category="admonition">UNIX의 경우 여러 스크립트를 지정할 수 없습니다.</block>
+  <block id="90de0033880b7e0780a5ee32f1b401ff" category="paragraph">Windows의 경우 시간 초과는 15분으로 설정되어 수정할 수 없습니다.</block>
+  <block id="a9a44363ed14921d094b6371dd75c7f1" category="paragraph">UNIX의 경우 시간 초과는 기본적으로 60초로 설정됩니다. 시간 초과 값을 수정할 수 있습니다.</block>
+  <block id="7d901a35f38f46ac340bf0fcef37cb9d" category="paragraph">Windows prescpts 및 postscripts 출력 파일의 기본 디렉터리는 Windows\System32입니다.</block>
+  <block id="7a21760d7cbd0896708b77121ef519dc" category="paragraph">UNIX 처방과 postscript에 대한 기본 위치는 없습니다. 원하는 위치로 출력 파일을 리디렉션할 수 있습니다.</block>
+  <block id="eccc8325175b53fdef9a1846222d4161" category="section-title">지원되는 업그레이드 경로</block>
+  <block id="521d29d37f5561d4922ece42dc92cb07" category="cell">SnapCenter 서버 버전을 사용 중인 경우...</block>
+  <block id="7676f59833cee6720de923cfeef21ede" category="cell">SnapCenter 서버를 다음으로 직접 업그레이드할 수 있습니다.</block>
+  <block id="8d0f374d6bbbe36aead49222bc8c909f" category="cell">지원되는 플러그인 버전입니다</block>
+  <block id="955d0e9747f65e6a6a1963edce3fa678" category="cell">4.6.x</block>
+  <block id="9039ba0f0b3a3b38ef80aa48945fa3c0" category="admonition">예를 들어 SnapCenter 버전 4.3.x를 사용 중이고 4.6.x로 업그레이드하려면 먼저 4.5.x로 업그레이드한 다음 4.6.x로 롤링 업그레이드를 수행해야 합니다</block>
+  <block id="7864e6541a8699c6dcea2ad2d5e5e78b" category="list-text">'Security login role create - role SVM_Role_Name - cmddirname "SnapMirror list-destinations" - vserver SVM_Name - access all'</block>
+  <block id="4cd712891b20fcc891bdeef703a3e915" category="list-text">'Security login role create - role SVM_Role_Name - cmddirname' event generate-autosupport-log" - vserver SVM_Name - access all'</block>
+  <block id="35191da723a7990e2ec356b702112b64" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "job history show" - access all'</block>
+  <block id="950cb25af5f80592c9b230d80411689a" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "job stop" - access all'</block>
+  <block id="54e321a9e203600e142532be5ad7c700" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "lun" - access all'</block>
+  <block id="a9da71cc1d3b73e669689da7c0d74191" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "lun mapping create" - access all'</block>
+  <block id="6afbab2a305c532b10701b75eef00e06" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "network interface" - access readonly'</block>
+  <block id="d80b7e944064bf3bd382ae2be696ab9e" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy show" - access all'</block>
+  <block id="1c1ebdb4d2cea4a9f1b480ef6387ebbd" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "vserver iscsi connection show" - access all'</block>
+  <block id="2bad882b7fb5945b0373cf8c526cb4ac" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "volume clone split status" - access all'</block>
 </blocks>

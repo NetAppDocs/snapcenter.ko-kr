@@ -32,7 +32,7 @@ image::../media/sc-F5-configure-workflow.png[SC F5 워크플로우 구성]
 
 
 
-=== 추가 F5 구성 정보
+== 추가 F5 구성 정보
 
 * 고가용성을 위해 SnapCenter를 설치하고 구성한 후 F5 클러스터 IP를 가리키도록 SnapCenter 바탕 화면 바로 가기를 편집합니다.
 * SnapCenter 서버 간에 페일오버가 발생하고 기존 SnapCenter 세션도 있는 경우 브라우저를 닫고 SnapCenter에 다시 로그온해야 합니다.
