@@ -5120,7 +5120,6 @@
   <block id="0ab847ca1ec1d021003071c720300912" category="paragraph">키 저장소 파일의 절대 경로를 표시합니다.</block>
   <block id="732ad24112805352918b98d2d2fe992b" category="paragraph">SNAPCENTER_SERVER_PORT</block>
   <block id="7aeb909709612da033f3993a0e728a27" category="paragraph">SnapCenter 서버가 실행 중인 포트 번호를 표시합니다.</block>
-  <block id="862cd99023ad6510575f8ce1923ec11e" category="paragraph">SPL_LOGS_MAX_COUNT</block>
   <block id="311a6927001a0f29e0c3f5a5c31d4242" category="paragraph">_/custom_location/snapcenter/SPL/logs_folder에 유지되는 SnapCenter 플러그인 로더 로그 파일의 수를 표시합니다.</block>
   <block id="543a5f51e636298cf3ed33a0e1d218db" category="paragraph">기본값은 5000으로 설정됩니다. 카운트가 지정된 값보다 큰 경우 마지막으로 수정된 5000개의 파일이 유지됩니다. SnapCenter 플러그인 로더 서비스가 시작된 후 24시간마다 파일 수 검사가 자동으로 수행됩니다.</block>
   <block id="763a333a6966604fcf8fe0eee9f23c9f" category="admonition">spl.properties 파일을 수동으로 삭제하면 보존할 파일 수가 9999로 설정됩니다.</block>
@@ -7712,4 +7711,14 @@
   <block id="d80b7e944064bf3bd382ae2be696ab9e" category="list-text">'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy show" - access all'</block>
   <block id="1c1ebdb4d2cea4a9f1b480ef6387ebbd" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "vserver iscsi connection show" - access all'</block>
   <block id="2bad882b7fb5945b0373cf8c526cb4ac" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "volume clone split status" - access all'</block>
+  <block id="af9210ab244187eb84af56c8e51b082c" category="paragraph">VMware 환경에서 Microsoft Windows용 SnapCenter 플러그인을 사용하여 LUN을 생성 및 관리하고 스냅샷 복사본을 관리할 수 있습니다.</block>
+  <block id="c9956993c3473df3ea1961fead514074" category="paragraph">logs_MAX_count</block>
+  <block id="9b24859b2a7f9c7d8afb9ec3b025e927" category="paragraph">Log_MAX_SIZE(로그 최대 크기)</block>
+  <block id="92cb537bc0c912cec1e9669f256ebc89" category="paragraph">작업 로그 파일의 최대 크기를 표시합니다.</block>
+  <block id="7618cb309cdd6214baddcc65ec4c89f4" category="paragraph">최대 크기에 도달하면 로그 파일이 압축되고 로그가 해당 작업의 새 파일에 기록됩니다.</block>
+  <block id="e9345db0fc7d18cab70b42d9af5c38a2" category="paragraph">최근 _ 일 _ 의 _ 로그 유지</block>
+  <block id="7c8e4d34b8c6cc18e06524f05da1a10d" category="paragraph">로그가 유지되는 최대 일 수를 표시합니다.</block>
+  <block id="664943be24af2306e90a21dd26536e1c" category="paragraph">certificate_validation을 활성화합니다</block>
+  <block id="22d8a94cf37cc6d66c941a43b9d79fa8" category="paragraph">호스트에 대해 CA 인증서 유효성 검사가 활성화되면 true를 표시합니다.</block>
+  <block id="ebda26e1e82bba1d66e8fbdf1eec4b08" category="paragraph">spl.properties* 파일을 편집하거나 SnapCenter GUI 또는 cmdlet을 사용하여 이 매개변수를 활성화 또는 비활성화할 수 있습니다.</block>
 </blocks>

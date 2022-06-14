@@ -11,7 +11,7 @@ summary: VMware 환경에서 Microsoft Windows용 SnapCenter 플러그인을 사
 
 
 [role="lead"]
-VMware 환경에서 Microsoft Windows용 SnapCenter 플러그인을 사용하여 LUN을 생성 및 관리하고 스냅샷 백업 복사본을 관리할 수 있습니다.
+VMware 환경에서 Microsoft Windows용 SnapCenter 플러그인을 사용하여 LUN을 생성 및 관리하고 스냅샷 복사본을 관리할 수 있습니다.
 
 
 
