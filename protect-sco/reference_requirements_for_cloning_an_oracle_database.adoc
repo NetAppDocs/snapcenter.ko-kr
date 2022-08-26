@@ -51,6 +51,7 @@ ASM 디스크 그룹에 상주하는 데이터 파일은 SnapCenter 클론 워�
 
 
 
+** NVMe의 경우 NVMe util을 설치해야 합니다
 
 
 * 로그 백업을 사용하여 대체 호스트에 클론을 생성하는 동안 보조 로케이터를 검색하려면 데이터 LUN과 미러, 볼트 또는 미러 볼트와 같은 로그 LUN에 대한 보호 유형이 동일해야 합니다.
@@ -74,4 +75,20 @@ NOTE: 새로 클론된 마운트 지점을 autofs 하위 시스템에 수동으�
 * use_lvmetad = 0 in_/etc/lvm/lvm.conf_의 값을 설정하고 lvm2-lvmetad 서비스를 중지하여 Oracle Linux 7 이상 또는 Red Hat Enterprise Linux(RHEL) 7 이상의 SAN 환경에서 클론을 성공적으로 수행해야 합니다.
 * Oracle 데이터베이스 11.2.0.3 이상을 사용하고 보조 인스턴스의 데이터베이스 ID가 NID 스크립트를 사용하여 변경된 경우 13366202 Oracle 패치를 설치해야 합니다.
 * 볼륨을 호스팅하는 애그리게이트는 SVM(스토리지 가상 머신)의 할당된 애그리게이트 목록에 있어야 합니다.
+* NVMe의 경우 대상 포트를 연결에 제외해야 하는 경우 /var/opt/snapcenter/scu/etc/NVMe.conf 파일에 타겟 노드 이름과 포트 이름을 추가해야 합니다.
++
+파일이 없는 경우 아래 예와 같이 파일을 작성해야 합니다.
+
++
+_블랙리스트{_
+
++
+....
+# You can add comments by using the ‘#’ at the beginning of the line
+nn-0x<target_node_name_1>:pn-0x<target_port_name_1>
+nn-0x<target_node_name_2>:pn-0x<target_port_name_2>
+....
++
+_} _
+
 

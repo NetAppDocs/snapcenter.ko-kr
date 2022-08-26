@@ -27,7 +27,45 @@ link:concept_develop_a_plug_in_for_your_application.html["응용 프로그램용
 
 == 일반
 
-iSCSI를 사용하는 경우 iSCSI 서비스가 실행 중이어야 합니다.
+iSCSI를 사용하는 경우 iSCSI 서비스가 실행되고 있어야 합니다.
+
+
+
+== SHA512 해시
+
+* NetApp에서 제공하는 사용자 지정 플러그인의 경우 사용자 지정 플러그인 파일의 SHA512 해시를 _CUSTOM_PLUGIN_CHECKSH체크섬_LIST_FILE에 추가해야 합니다.
++
+** Linux 호스트의 경우 SHA512 해시는 _/var/opt/snapcenter/SCC/custom_plugin_checksum_list.txt_에 있습니다
+** Windows 호스트의 경우 SHA512 해시는 _C:\Program Files\NetApp\SnapCenter Plug-in Creator\etc\custom_plugin_checksum_list.txt_에 있습니다
++
+사용자 지정 설치 경로의 경우 SHA512 해시는 _<사용자 지정 경로>\NetApp\SnapCenter\Snapcenter 플러그인 생성자\etc\custom_plugin_checksum_list.txt_에 있습니다
+
+
+
++
+custom_plugin_checksum_list 는 SnapCenter에서 호스트에 설치하는 사용자 지정 플러그인 설치의 일부입니다.
+
+* 응용 프로그램에 대해 생성된 사용자 지정 플러그인의 경우 다음 단계를 수행해야 합니다.
++
+.. 플러그인 zip 파일의 SHA512 해시를 생성했습니다.
++
+과 같은 온라인 도구를 사용할 수 있습니다 https://emn178.github.io/online-tools/sha512_file_hash.html["SHA512 해시"^].
+
+.. 생성된 SHA512 해시를 새 줄에 CUSTOM_PLUGIN_CHECK체크섬_LIST 파일에 추가했습니다.
++
+주석은 # 기호로 시작하여 해시가 속한 플러그인을 식별합니다.
+
++
+다음은 체크섬 파일의 SHA512 해시 항목의 예입니다.
+
++
+....
+#ORASCPM
+03721f567a1e4a1cb5569066b9a58af619ee12b1f8713108f81b696cfbdb81c25232fa63d6e6777a2b2a1ec068bb0a93a59a8ade71587182f8bccbe81f7e0ba6
+....
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/task_determine_whether_oracle_databases_are_available_for_backup.html 
 sidebar: sidebar 
-keywords: credentials,SnapCenter Plug-in for Oracle Databases 
+keywords: credentials,SnapCenter Plug-in for Oracle Databases, non-database entries, oratab 
 summary: 리소스는 SnapCenter에서 관리하는 호스트의 Oracle 데이터베이스입니다. 사용 가능한 데이터베이스를 발견한 후 이러한 데이터베이스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있습니다. 
 ---
 = Oracle 데이터베이스를 백업에 사용할 수 있는지 여부를 확인합니다
@@ -62,3 +62,45 @@ NetApp이 아닌 스토리지 시스템에 있는 데이터베이스에는 데�
 
 
 NOTE: Oracle 데이터베이스 인증을 활성화한 경우 리소스 보기에 빨간색 자물쇠 아이콘이 표시됩니다. 데이터베이스를 보호하거나 리소스 그룹에 데이터베이스 자격 증명을 추가하여 데이터 보호 작업을 수행하려면 데이터베이스 자격 증명을 구성해야 합니다.
+
+
+
+== SnapCenter가 비데이터베이스 항목을 검색하지 못하도록 하는 방법
+
+SnapCenter가 oratab 파일에 추가된 비데이터베이스 항목을 검색하지 못하도록 할 수 있습니다.
+
+* 단계 *
+
+. Oracle용 플러그인을 설치한 후 루트 사용자는 _ /var/opt/snapcenter/sSCO/etc/_ 디렉터리 아래에 * sc_oratab.config * 파일을 만들어야 합니다.
++
+나중에 파일을 유지 관리할 수 있도록 Oracle 바이너리 소유자 및 그룹에 쓰기 권한을 부여합니다.
+
+. 데이터베이스 관리자는 * sc_oratab.config * 파일에 비데이터베이스 항목을 추가해야 합니다.
++
+/etc/oratab_file의 비데이터베이스 항목에 대해 정의된 형식을 동일하게 유지하는 것이 좋습니다. 그렇지 않을 경우 사용자가 비데이터베이스 엔터티 문자열만 추가할 수 있습니다.
+
++
+
+NOTE: 문자열은 대/소문자를 구분합니다. 앞에 #이 있는 텍스트는 주석으로 처리됩니다. 데이터베이스 이름이 아닌 이름 뒤에 주석을 추가할 수 있습니다.
+
++
+....
+For example:
+--------------------------------------------
+# Sample entries
+# Each line can have only one non-database name
+# These are non-database name
+oratar  # Added by the admin group -1
+#Added by the script team
+NEWSPT
+DBAGNT:/ora01/app/oracle/product/agent:N
+-----------------------------------------------
+....
+. 리소스를 검색합니다.
++
+SC_oratab.config * 에 추가된 비데이터베이스 항목은 리소스 페이지에 나열되지 않습니다.
+
+
+
+
+IMPORTANT: SnapCenter 플러그인을 업그레이드하기 전에 항상 SC_oratab.config 파일을 백업하는 것이 좋습니다.

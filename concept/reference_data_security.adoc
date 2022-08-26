@@ -20,6 +20,10 @@ SnapCenter에는 다음과 같은 보안 기능이 포함되어 있습니다.
 * SnapCenter는 FIPS(Federal Information Processing Standard)를 준수하는 보안 알고리즘을 사용합니다.
 * SnapCenter는 고객이 제공한 인증 CA 인증서 사용을 지원합니다.
 * SnapCenter 4.1.1 이상은 ONTAP와의 TLS(전송 계층 보안) 1.2 통신을 지원합니다. 클라이언트와 서버 간에 TLS 1.2 통신을 사용할 수도 있습니다.
+* SnapCenter는 특정 SSL 암호화 제품군을 지원하여 네트워크 통신 전반에 보안을 제공합니다.
++
+자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_the_supported_SSL_Cipher_Suite["지원되는 SSL 암호화 제품군을 구성하는 방법"].
+
 * SnapCenter는 회사의 방화벽 내부에 설치되어 SnapCenter 서버에 액세스하고 SnapCenter 서버와 플러그인 간의 통신을 지원합니다.
 * SnapCenter API 및 작업 액세스는 24시간 후에 만료되는 AES 암호화로 암호화된 토큰을 사용합니다.
 * SnapCenter는 Windows Active Directory와 통합되어 로그인 및 액세스 권한을 제어하는 역할 기반 액세스 제어(RBAC)를 사용합니다.
@@ -34,6 +38,16 @@ SnapCenter에는 다음과 같은 보안 기능이 포함되어 있습니다.
 
 SnapCenter 서버 설치 프로그램을 사용하면 설치하는 동안 중앙 집중식 SSL 인증서 지원을 사용할 수 있습니다. 서버와 플러그인 간의 보안 통신을 강화하기 위해 SnapCenter는 고객이 제공한 인증 CA 인증서 사용을 지원합니다.
 
-SnapCenter 서버 및 해당 플러그인을 설치한 후 CA 인증서를 배포해야 합니다. 자세한 내용은 을 참조하십시오 link:../install/reference_generate_CA_certificate_CSR_file.html["CA 인증서 CSR 파일을 생성합니다"^].
+SnapCenter 서버 및 해당 플러그인을 설치한 후 CA 인증서를 배포해야 합니다. 자세한 내용은 을 참조하십시오 link:../install/reference_generate_CA_certificate_CSR_file.html["CA 인증서 CSR 파일을 생성합니다"].
 
 VMware vSphere용 SnapCenter 플러그인용 CA 인증서를 구축할 수도 있습니다. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates["인증서를 만들고 가져옵니다"^].
+
+
+
+== 멀티팩터 인증(MFA)
+
+MFA는 SAML(Security Assertion Markup Language)을 통해 타사 ID 공급자(IDP)를 사용하여 사용자 세션을 관리합니다. 이 기능은 TOTP, 생체 인식, 푸시 알림 등과 같은 여러 요소를 기존 사용자 이름 및 암호와 함께 사용할 수 있는 옵션을 제공하므로 인증 보안이 향상됩니다. 또한 고객은 자신의 사용자 ID 공급자를 사용하여 포트폴리오 전체에서 통합 사용자 로그인(SSO)을 얻을 수 있습니다.
+
+MFA는 SnapCenter 서버 UI 로그인에만 적용됩니다. 로그인은 IDP AD FS(Active Directory Federation Services)를 통해 인증됩니다. AD FS에서 다양한 인증 요소를 구성할 수 있습니다. SnapCenter는 서비스 공급자이며 AD FS에서 SnapCenter를 기반 공급업체로 구성해야 합니다. SnapCenter에서 MFA를 사용하려면 AD FS 메타데이터가 필요합니다.
+
+MFA를 사용하는 방법에 대한 자세한 내용은 을 참조하십시오 link:../install/enable_multifactor_authentication.html["다중 요소 인증을 활성화합니다"].

@@ -34,7 +34,7 @@ SnapCenter 서버 DR은 모든 플러그인을 지원합니다.
 기존 SnapCenter 서버 DR 백업을 가져옵니다
 
 
-NOTE: DR 백업을 저장해야 하는 백업 이름과 타겟 경로를 제공해야 합니다.
+NOTE: DR 백업이 저장되는 타겟 경로를 제공해야 합니다.
  a| 
 `/4.5/disasterrecovery/server/backup? TargetPath={path}'
  a| 
@@ -45,7 +45,7 @@ NOTE: DR 백업을 저장해야 하는 백업 이름과 타겟 경로를 제공�
  a| 
 2
  a| 
-새 서버 DR 백업을 생성합니다. 지정된 서버 DR 백업에서 SnapCenter 서버를 복원합니다.
+새 서버 DR 백업을 생성합니다.
  a| 
 '/4.5/disasterrecovery/server/backup'
  a| 
@@ -62,7 +62,6 @@ NOTE: DR 백업을 저장해야 하는 백업 이름과 타겟 경로를 제공�
 
 * 2차 서버 호스트 이름은 1차 서버와 동일해야 하지만 IP 주소는 다를 수 있습니다.
 * 서버 버전은 기본 서버와 동일해야 합니다.
-* 호스트 이름은 운영 서버와 같아야 합니다.
 * 다음 명령을 사용하여 DR 백업 파일이 새 SnapCenter 서버로 복사되었는지 확인합니다.
 +
 '<Ssource_Path>\<Destination_Server_IP>\<Folder_Path>/O/X/E/H/K{ex:xcopy C:\DRBackup\\10.225.81.114\c$\DRBackup/O/X/E/H/K}'
@@ -73,7 +72,7 @@ NOTE: DR 백업을 저장해야 하는 백업 이름과 타겟 경로를 제공�
 
 예: 10.225.81.35 SCServer1
 
-서버 etc/host 항목은 복원되지 않습니다. DR 백업 폴더에서 수동으로 복원할 수 있습니다.
+서버 etc/host 파일은 복원되지 않습니다. DR 백업 폴더에서 수동으로 복원할 수 있습니다.
  a| 
 '/4.5/Disasterrecovery/server/restore'
  a| 

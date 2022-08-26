@@ -17,6 +17,17 @@ SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 복원 및
 
 * 리소스 또는 리소스 그룹을 백업해야 합니다.
 * 복원할 리소스 또는 리소스 그룹에 대해 현재 진행 중인 백업 작업을 취소해야 합니다.
+* 사전 복원, 사후 복원, 마운트 및 마운트 해제 명령의 경우 다음 경로에서 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
++
+Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
+
++
+Linux의 경우: _/var/opt/snapcenter/SCC/allowed_commands_list.txt_
+
++
+
+NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
+
 
 
 * 이 작업에 대한 정보 *

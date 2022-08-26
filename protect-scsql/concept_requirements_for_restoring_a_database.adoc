@@ -41,7 +41,7 @@ https://support.microsoft.com/kb/2887595["Microsoft 지원 문서 2887595: Windo
 * 데이터베이스를 복구하기 전에 모든 백업 및 클론 작업을 중지해야 합니다.
 * 데이터베이스 크기가 테라바이트(TB)인 경우 복원 작업 시간이 초과될 수 있습니다.
 +
-Set-SmConfigSettings-Agent-configSettings@{"RESTTimeout"="20000000"} 명령을 실행하여 SnapCenter 서버의 RESTTimeout 매개 변수 값을 20000000 ms로 늘려야 합니다. 데이터베이스 크기에 따라 시간 초과 값을 변경할 수 있으며 설정할 수 있는 최대값은 2147483648입니다.
+Set-SmConfigSettings-Agent-configSettings@{"RESTTimeout"="20000000"} 명령을 실행하여 SnapCenter 서버의 RESTTimeout 매개 변수 값을 20000000 ms로 늘려야 합니다. 데이터베이스 크기에 따라 시간 초과 값을 변경할 수 있으며 설정할 수 있는 최대값은 86400,000ms입니다.
 
 
 

@@ -28,6 +28,16 @@ SnapCenter를 사용하여 SQL Server 데이터베이스 백업을 복제할 수
 * FCI(장애 조치 클러스터 인스턴스)에 클론을 생성하는 동안 마운트 지점이 존재하고, 공유 디스크이며, 경로와 FCI가 동일한 SQL 리소스 그룹에 속해야 합니다.
 * 각 호스트에 하나의 VFC 또는 FC 이니시에이터만 연결되어 있는지 확인합니다. 이는 SnapCenter가 호스트당 하나의 이니시에이터만 지원하기 때문입니다.
 * 소스 데이터베이스 또는 타겟 인스턴스가 클러스터 공유 볼륨(CSV)에 있으면 복제된 데이터베이스가 CSV에 있게 됩니다.
+* scripts_path는 플러그인 호스트의 SMCoreServiceHost.exe.Config 파일에 있는 PredefinedWindowsScriptsDirectory 키를 사용하여 정의됩니다.
++
+필요한 경우 이 경로를 변경하고 SMcore 서비스를 다시 시작할 수 있습니다. 보안을 위해 기본 경로를 사용하는 것이 좋습니다.
+
++
+키 값은 swagger에서 API:API/4.7/configsettings를 통해 표시할 수 있습니다
+
++
+Get API를 사용하여 키 값을 표시할 수 있습니다. API 설정은 지원되지 않습니다.
+
 
 
 
@@ -127,6 +137,10 @@ NOTE: 인스턴스 백업 클론 생성은 지원되지 않습니다.
 예를 들어, 스크립트를 실행하여 SNMP 트랩을 업데이트하고, 경고를 자동화하고, 로그를 보내는 등의 작업을 수행할 수 있습니다.
 
 +
+
+NOTE: 처방자 또는 사후 스크립트 경로에는 드라이브 또는 공유가 포함되어서는 안 됩니다. 경로는 scripts_path에 상대해야 합니다.
+
++
 기본 스크립트 시간 초과는 60초입니다.
 
 . 알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.
@@ -137,8 +151,7 @@ NOTE: 인스턴스 백업 클론 생성은 지원되지 않습니다.
 
 NOTE: 이메일 알림의 경우 GUI 또는 PowerShell 명령 Set-SmtpServer를 사용하여 SMTP 서버 세부 정보를 지정해야 합니다.
 
-
-
++
 EMS의 경우 를 참조할 수 있습니다 https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html["EMS Data 수집 관리"]
 
 . 요약을 검토하고 * Finish * 를 클릭합니다.

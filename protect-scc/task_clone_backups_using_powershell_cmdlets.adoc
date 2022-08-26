@@ -17,7 +17,7 @@ summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 �
 
 PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
 
-PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 * 단계 *
 

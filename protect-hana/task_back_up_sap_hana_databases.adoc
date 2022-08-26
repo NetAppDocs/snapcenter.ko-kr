@@ -27,9 +27,19 @@ link:task_back_up_resource_groups_sap_hana.html["리소스 그룹을 백업합�
 
 * 하나 이상의 테넌트 데이터베이스가 다운될 때 파일 기반 백업을 만들려면 HANA 속성 파일에서 'Set-SmConfigSettings' cmdlet을 사용하여 allow_file_based_backup_IFINACTIVE_Tenants_present 매개 변수를 * Yes * 로 설정합니다.
 +
-cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"]
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300["SnapCenter 소프트웨어 cmdlet 참조 가이드"]
+
+* 일시 중지, 스냅샷 복사 및 정지 해제 작업에 대한 사전 및 사후 명령의 경우 플러그인 호스트에서 사용할 수 있는 명령 목록에 다음 경로의 명령이 있는지 확인해야 합니다.
++
+Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
+
++
+Linux의 경우: _/var/opt/snapcenter/SCC/allowed_commands_list.txt_
 
 
+
+
+NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
 
 * 단계 *
 

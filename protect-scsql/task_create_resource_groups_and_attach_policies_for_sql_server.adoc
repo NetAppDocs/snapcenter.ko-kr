@@ -93,7 +93,7 @@ Microsoft SQL Server 스케줄러를 선택하지 않으면 기본값은 Microso
 
 
 +
-타사 백업 스케줄은 SnapCenter 백업 스케줄과 겹치는 경우 지원되지 않습니다. Windows 작업 스케줄러 및 SQL Server Agent에서 일정을 수정하면 안 됩니다.
+타사 백업 스케줄은 SnapCenter 백업 스케줄과 겹치는 경우 지원되지 않습니다. 스케줄을 수정하고 Windows 스케줄러 또는 SQL Server 에이전트에서 생성된 백업 작업의 이름을 변경해서는 안 됩니다.
 
 . 확인 페이지에서 다음 단계를 수행하십시오.
 +

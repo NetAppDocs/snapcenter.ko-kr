@@ -63,12 +63,14 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-* Microsoft .NET Framework 4.5.2 이상
+* Microsoft .NET Framework 4.7.2 이상
 * WMF(Windows Management Framework) 4.0 이상
 * PowerShell 4.0 이상
 
 
 지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+
+NET 문제 해결 정보는 다음을 참조하십시오. link:..https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다."]
 
 |===
 
@@ -122,7 +124,7 @@ SnapCenter 플러그인을 설치할 시스템의 도메인 관리자 또는 관
 작업 그룹에 속한 시스템의 경우 SnapCenter 플러그인을 설치할 시스템에 기본 제공 로컬 관리자를 지정합니다. 사용자 계정에 상승된 권한이 있거나 호스트 시스템에서 사용자 액세스 제어 기능이 비활성화된 경우 로컬 관리자 그룹에 속하는 로컬 사용자 계정을 지정할 수 있습니다. 사용자 이름 필드의 올바른 형식은 다음과 같습니다
 
 +
-암호에 큰따옴표(")를 사용하지 마십시오.
+암호에 큰따옴표(") 또는 백틱(')을 사용하지 마십시오. 보다 작음(<) 및 느낌표(!)를 사용해서는 안 됩니다. 암호를 사용한 기호. 예를 들어 LessThan <!10, Lessthan10 <!, backtick'12.
 
 
 
@@ -158,7 +160,9 @@ Windows Server 2012 이상을 사용하면 관리되는 도메인 계정에서 �
 . 각 도메인에 대해 Windows 도메인 컨트롤러에서 Add-KDSRootKey-EffectiveImmediately 명령을 실행합니다
 . GMSA 생성 및 구성:
 +
-.. 사용자 그룹 계정을 만듭니다.
+.. 다음 형식으로 사용자 그룹 계정을 만듭니다.
++
+ domainName\accountName$
 .. 그룹에 컴퓨터 개체를 추가합니다.
 .. 방금 생성한 사용자 그룹을 사용하여 GMSA를 생성합니다.
 +

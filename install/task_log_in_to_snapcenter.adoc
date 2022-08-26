@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: log in, logging, SnapCenter UI, modify timeout, GUI session timeout, disbale SSL 3.0, SSL 3.0, security 
 summary: 'SnapCenter는 역할 기반 액세스 제어(RBAC)를 지원합니다. SnapCenter 관리자는 SnapCenter RBAC를 통해 역할 및 리소스를 작업 그룹 또는 Active Directory의 사용자 또는 Active Directory의 그룹에 할당합니다. 이제 RBAC 사용자는 할당된 역할을 사용하여 SnapCenter에 로그인할 수 있습니다.' 
 ---
-= SnapCenter에 로그인합니다
+= RBAC 승인을 사용하여 SnapCenter에 로그인합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -35,7 +35,7 @@ IMPORTANT: 웹 브라우저에 여러 개의 탭이 열려 있는 경우 SnapCen
 
 HA(고가용성) 구축을 위해서는 가상 클러스터 IP_\https://Virtual_Cluster_IP_or_FQDN:8146_ 를 사용하여 SnapCenter에 액세스해야 합니다. Internet Explorer(IE)에서 _\https://Virtual_Cluster_IP_or_FQDN:8146_ 으로 이동할 때 SnapCenter UI가 표시되지 않으면 각 플러그인 호스트의 IE에 가상 클러스터 IP 주소 또는 FQDN을 신뢰할 수 있는 사이트로 추가해야 합니다. 그렇지 않으면 각 플러그인 호스트에서 IE 고급 보안을 해제해야 합니다. 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_access_cluster_IP_address_from_outside_network["외부 네트워크에서 클러스터 IP 주소에 액세스할 수 없습니다"^].
 
-SnapCenter GUI 사용 외에도 PowerShell cmdlet을 사용하여 스크립트를 생성하여 구성, 백업 및 복원 작업을 수행할 수 있습니다. 일부 cmdlet은 SnapCenter 릴리즈마다 변경될 수 있습니다. 를 클릭합니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^] 세부 정보가 있습니다.
+SnapCenter GUI 사용 외에도 PowerShell cmdlet을 사용하여 스크립트를 생성하여 구성, 백업 및 복원 작업을 수행할 수 있습니다. 일부 cmdlet은 SnapCenter 릴리즈마다 변경될 수 있습니다. 를 클릭합니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300["SnapCenter 소프트웨어 cmdlet 참조 가이드"^] 세부 정보가 있습니다.
 
 
 NOTE: SnapCenter에 처음 로그인하는 경우 설치 프로세스 중에 제공한 자격 증명을 사용하여 로그인해야 합니다.
@@ -85,6 +85,44 @@ NOTE: SnapCenter에 처음 로그인하는 경우 설치 프로세스 중에 제
 SnapCenter 서버에 RBAC 사용자로 처음으로 로그인한 후 리소스 목록을 새로 고칩니다.
 
 SnapCenter에서 지원할 신뢰할 수 없는 Active Directory 도메인이 있는 경우 신뢰할 수 없는 도메인의 사용자에 대한 역할을 구성하기 전에 해당 도메인을 SnapCenter에 등록해야 합니다. link:../install/task_register_untrusted_active_directory_domains.html["자세한 정보"^]
+
+
+
+== 멀티팩터 인증(MFA)을 사용하여 SnapCenter에 로그인
+
+SnapCenter 서버는 Active Directory의 일부인 도메인 계정에 대해 MFA를 지원합니다.
+
+* 필요한 것 *
+
+* MFA를 활성화해야 합니다.
++
+MFA를 사용하는 방법에 대한 자세한 내용은 을 참조하십시오 link:../install/enable_multifactor_authentication.html["다중 요소 인증을 활성화합니다"]
+
+
+
+* 이 작업에 대한 정보 *
+
+* FQDN만 지원됩니다
+* 작업 그룹 및 도메인 간 사용자는 MFA를 사용하여 로그인할 수 없습니다
+
+
+* 단계 *
+
+. 로컬 호스트 데스크톱에 있는 바로 가기나 설치 마지막에 제공된 URL 또는 SnapCenter 관리자가 제공한 URL에서 SnapCenter를 실행합니다.
+. AD FS 로그인 페이지에서 사용자 이름 및 암호 를 입력합니다.
++
+AD FS 페이지에 잘못된 사용자 이름 또는 암호 오류 메시지가 표시되면 다음을 확인해야 합니다.
+
++
+** 사용자 이름 또는 암호가 유효한지 여부를 나타냅니다
++
+사용자 계정이 AD(Active Directory)에 있어야 합니다.
+
+** AD에 설정된 최대 허용 시도 횟수를 초과했는지 여부
+** AD 및 AD FS의 가동 및 실행 여부를 나타냅니다
+
+
+
 
 
 

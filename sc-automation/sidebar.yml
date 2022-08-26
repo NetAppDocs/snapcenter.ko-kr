@@ -16,10 +16,8 @@ entries:
   url: "/sc-automation/concept_interpreting_an_api_response.html"
 - title: REST API 지원
   entries:
-  - title: REST API 워크플로우는 다른 플러그인에 대해 지원됩니다
+  - title: SnapCenter 서버 및 플러그인에 지원되는 REST API
     url: "/sc-automation/reference_supported_rest_apis.html"
-  - title: Oracle Database에 지원되는 REST API
-    url: "/sc-automation/refrence_rest_apis_supported_for_oracle_database.html"
   - title: SnapCenter 서버의 재해 복구에 REST API가 지원됩니다
     url: "/sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html"
 - title: Swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법

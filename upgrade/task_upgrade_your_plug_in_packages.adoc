@@ -28,6 +28,18 @@ SnapCenter 구성 파일의 예: SnapDriveService.exe.config, SMCoreServiceHost.
 
 
 
+* 이 작업에 대한 정보 *
+
+* 업그레이드 절차에서는 Windows, Linux 또는 AIX 호스트를 "유지 관리" 모드로 전환하여 호스트가 예약된 작업을 실행하지 못하도록 합니다.
+* Microsoft SQL Server용 SnapCenter 플러그인, Microsoft Exchange Server용 SnapCenter 플러그인 및 Microsoft Windows용 SnapCenter 플러그인의 경우, 실행할 scripts_path의 서버 및 플러그인 호스트를 4.7 버전으로 업그레이드하는 것이 좋습니다.
++
+정책에서 predpts 및 postscript가 활성화된 기존 백업 및 검증 스케줄의 경우 업그레이드 후에도 백업 작업이 계속 작동합니다.
+
++
+Job details * 페이지에서 스크립트를 scripts_path에 복사하고 정책을 편집하여 scripts_path와 관련된 경로를 제공하는 것이 좋습니다. 클론 수명주기 작업의 경우 하위 작업 레벨에 경고 메시지가 표시됩니다.
+
+
+
 * 단계 *
 
 . 왼쪽 탐색 창에서 * 호스트 * > * 관리 호스트 * 를 클릭합니다.

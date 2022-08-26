@@ -36,6 +36,7 @@ Oracle Database용 플러그인은 다음과 같은 이점도 제공합니다.
 +
 권한이 있는 SnapCenter 사용자가 응용 프로그램 수준 권한을 갖도록 자격 증명을 설정할 수도 있습니다.
 
+* 복원 및 클론 작업을 위한 ALM(Archive Log Management) 지원
 * NetApp FlexClone 기술을 사용하여 테스트 또는 데이터 추출을 위한 공간 효율적인 프로덕션 데이터베이스 시점 복사본 생성
 +
 클론을 생성하려는 스토리지 시스템에는 FlexClone 라이센스가 필요합니다.
@@ -53,8 +54,25 @@ Oracle Database용 플러그인은 다음과 같은 이점도 제공합니다.
 기본적으로 설정된 SLM 기능은 최적화된 경로가 없는 LUN을 주기적으로 검색하여 수정합니다. /var/opt/snapcenter/SCU 등에 있는 scu.properties 파일에서 매개변수를 수정하여 SLM을 구성할 수 있습니다
 
 +
-** enable_lunPATH_monitoring의 값을 false로 설정하여 이 기능을 비활성화할 수 있습니다.
-** LUNPATH_MONITORING_INTERVAL에 값(시간)을 할당하여 LUN 경로가 자동으로 수정되는 빈도를 지정할 수 있습니다. SLM에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["ONTAP 9 SAN 관리 가이드 를 참조하십시오"^].
+** enable_lunPATH_monitoring 매개변수 값을 false로 설정하여 이 기능을 비활성화할 수 있습니다.
+** LUNPATH_MONITORING_INTERVAL 매개변수에 값(시간)을 할당하여 LUN 경로가 자동으로 수정되는 빈도를 지정할 수 있습니다. SLM에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["ONTAP 9 SAN 관리 가이드 를 참조하십시오"^].
+
+
+* Linux에서 비휘발성 메모리 익스프레스(NVMe) 지원
++
+** NVMe util이 호스트에 설치되어 있어야 합니다.
++
+대체 호스트에 클론 또는 마운트하려면 NVMe util을 설치해야 합니다.
+
+** 백업, 복원, 클론, 마운트, 마운트 해제, VMDK 및 RDM과 같은 가상화된 환경을 제외하고 NVMe 하드웨어에서 카탈로그, 카탈로그 해제 및 검증 작업이 지원됩니다.
++
+위의 작업은 파티션이 없거나 단일 파티션이 있는 장치에서 지원됩니다.
 
 
 
+
+
+
+NOTE: 커널에서 기본 다중 경로 옵션을 설정하여 NVMe 장치에 대한 다중 경로 솔루션을 구성할 수 있습니다. 장치 매퍼(DM) 다중 경로가 지원되지 않습니다.
+
++ 지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].

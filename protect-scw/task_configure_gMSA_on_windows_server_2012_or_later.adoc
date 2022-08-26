@@ -24,7 +24,9 @@ Windows Server 2012 이상을 사용하면 관리되는 도메인 계정에서 �
 . 각 도메인에 대해 Windows 도메인 컨트롤러에서 Add-KDSRootKey-EffectiveImmediately 명령을 실행합니다
 . GMSA 생성 및 구성:
 +
-.. 사용자 그룹 계정을 만듭니다.
+.. 다음 형식으로 사용자 그룹 계정을 만듭니다.
++
+ domainName\accountName$
 .. 그룹에 컴퓨터 개체를 추가합니다.
 .. 방금 생성한 사용자 그룹을 사용하여 GMSA를 생성합니다.
 +

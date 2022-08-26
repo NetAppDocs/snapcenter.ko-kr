@@ -19,9 +19,21 @@ SnapCenter를 사용하여 백업을 복제할 수 있습니다. 기본 또는 �
 * 볼륨을 호스팅하는 애그리게이트는 SVM(스토리지 가상 머신)의 할당된 애그리게이트 목록에 있어야 합니다.
 * 파일 기반 백업의 클론은 생성할 수 없습니다.
 * 타겟 클론 서버에는 타겟 클론 SID 필드에 제공되는 것과 동일한 SAP HANA 인스턴스 SID가 있어야 합니다.
+* 사전 클론 생성 또는 사후 클론 명령의 경우 플러그인 호스트에서 사용할 수 있는 명령 목록에 다음 경로의 명령이 있는지 확인해야 합니다.
++
+Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
+
++
+Linux의 경우: _/var/opt/snapcenter/SCC/allowed_commands_list.txt_
 
 
-* 이 작업 정보 * 클론 분할 작업 제한에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["ONTAP 9 논리적 스토리지 관리 가이드"^].
+
+
+NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
+
+* 이 작업에 대한 정보 *
+
+클론 분할 작업 제한에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["ONTAP 9 논리적 스토리지 관리 가이드"^].
 
 * 단계 *
 
@@ -106,7 +118,7 @@ Linux 시스템의 볼륨 또는 qtree에 대한 마운트 명령:
 NFS의 예:
 
 +
- mount VSERVER_DATA_IP:%{VOLUME_NAME_Clone} /mnt
+ mount VSERVER_DATA_IP:%VOLUME_NAME_Clone /mnt
 
 
 . 알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.

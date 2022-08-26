@@ -126,7 +126,7 @@ RAM
  a| 
 SnapCenter 서버 호스트 및 플러그인 호스트에 필요:
 
-* Microsoft .NET Framework 4.5.2 이상
+* Microsoft .NET Framework 4.7.2 이상
 * WMF(Windows Management Framework) 4.0 이상
 * PowerShell 4.0 이상
 

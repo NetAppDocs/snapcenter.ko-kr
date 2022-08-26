@@ -38,6 +38,7 @@ NOTE: ASM_diskstring 매개 변수를 편집하는 방법에 대한 자세한 �
 ** 원래 호스트의 UID 및 GID와 동일합니다
 ** 원래 호스트의 Oracle 버전과 동일합니다
 ** 원래 호스트의 OS 배포 및 버전과 동일합니다
+** NVMe의 경우 NVMe util을 설치해야 합니다
 
 
 
@@ -77,7 +78,7 @@ ASM 데이터베이스의 백업을 마운트하는 경우 마운트 경로 + di
 './sccli get-Smbackup-BackupNamebackup_name'입니다
 
 +
-명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880725["SnapCenter 소프트웨어 명령 참조 가이드"^].
+명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301["SnapCenter 소프트웨어 명령 참조 가이드"^].
 
 
 

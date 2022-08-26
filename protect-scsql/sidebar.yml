@@ -101,16 +101,6 @@ entries:
       url: "/protect-scsql/task_storage_disaster_recovery_for_scsql.html"
     - title: SnapCenter Plug-in for SQL Server 보조 스토리지에서 운영 스토리지로 페일백
       url: "/protect-scsql/task_failback_from_scsql_secondary_storage_to_primary_storage.html"
-  - title: Microsoft SQL Server용 SnapManager에서 SnapCenter로 아카이빙된 백업을 가져옵니다
-    entries:
-    - title: 아카이브된 백업 가져오기 개요
-      url: "/protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html"
-    - title: 불러오기 피처와 관련된 제한 사항
-      url: "/protect-scsql/concept_limitations_related_to_the_import_feature.html"
-    - title: 보관된 백업을 가져옵니다
-      url: "/protect-scsql/task_import_archived_backups.html"
-    - title: 가져온 백업을 SnapCenter 서버에서 봅니다
-      url: "/protect-scsql/task_view_the_imported_backups_in_snapcenter_server.html"
 - title: VMware vSphere용 SnapCenter 플러그인을 설치합니다
   url: "/protect-scsql/task_install_snapcenter_plug_in_for_vmware_vsphere.html"
 - title: 데이터 보호를 준비합니다

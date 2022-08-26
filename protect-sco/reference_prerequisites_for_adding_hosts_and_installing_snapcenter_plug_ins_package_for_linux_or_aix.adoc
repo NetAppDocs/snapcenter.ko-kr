@@ -137,6 +137,9 @@ MACs hmac-sha2-256
 * /custom_location/NetApp/snapcenter/SPL/bin/SPL입니다
 
 
+
+NOTE: RAC 설정을 관리하는 경우 루트가 아닌 사용자는 Oracle 사용자여야 하며 루트가 아닌 OS 사용자일 수 없습니다.
+
 * 단계 *
 
 . Linux용 SnapCenter 플러그인 패키지를 설치할 Linux 호스트에 로그인합니다.
@@ -262,6 +265,9 @@ MACs hmac-sha2-256
 * /custom_location/netapp/snapcenter/SPL/설치/플러그인/제거
 * /custom_location/NetApp/snapcenter/SPL/bin/SPL입니다
 
+
+
+NOTE: RAC 설정을 관리하는 경우 루트가 아닌 사용자는 Oracle 사용자여야 하며 루트가 아닌 OS 사용자일 수 없습니다.
 
 * 단계 *
 
