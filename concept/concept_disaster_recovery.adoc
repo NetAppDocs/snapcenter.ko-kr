@@ -22,7 +22,7 @@ SQL Server용 SnapCenter 플러그인 및 SQL Server용 SnapCenter 플러그인�
 SnapCenter 서버 데이터는 SnapCenter 서버에서 플러그인을 추가하거나 관리했는지와 관계없이 백업 및 복구됩니다.
 
 +
-보조 SnapCenter 서버는 운영 SnapCenter 서버와 동일한 위치 및 포트에 설치해야 합니다.
+보조 SnapCenter 서버는 운영 SnapCenter 서버와 동일한 설치 디렉토리 및 포트에 설치해야 합니다.
 
 +
 MFA(다중 인증)의 경우 SnapCenter 서버에 대해 DR 복원을 수행할 때 모든 브라우저 탭을 닫고 브라우저를 다시 열어 다시 로그인하십시오. 이렇게 하면 기존 또는 활성 세션 쿠키가 지워 올바른 구성 데이터가 업데이트됩니다.

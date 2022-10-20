@@ -34,7 +34,7 @@ summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에
 http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
 
 +
-https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+https://imt.netapp.com/matrix/imt.jsp?components=105284;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
 
 
@@ -48,7 +48,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src
 http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
 
 +
-https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+https://imt.netapp.com/matrix/imt.jsp?components=105284;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
 * Linux 호스트에서 실행되는 SAP HANA 데이터베이스의 경우 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인은 자동으로 설치됩니다.
 

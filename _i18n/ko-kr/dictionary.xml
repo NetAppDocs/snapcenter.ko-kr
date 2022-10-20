@@ -309,7 +309,6 @@
   <block id="a4e3a610e00b4c12463fae493d4a60a0" category="paragraph">SnapCenter 서버 호스트에 Windows 2019 또는 Windows 2016을 사용하는 경우 Java 1.8, 64비트를 설치해야 합니다. 상호 운용성 매트릭스 툴(IMT): 요구사항에 대한 최신 정보를 제공합니다.</block>
   <block id="6919c26b69875a76335f5a1dd643e508" category="inline-link">모든 운영 체제에 대한 Java 다운로드</block>
   <block id="9226092112d9484949841b47e3b0500e" category="paragraph"><block ref="9226092112d9484949841b47e3b0500e" category="inline-link-rx"></block></block>
-  <block id="9edee40c6e1ff30ec157f230e3d5f5d9" category="paragraph"><block ref="722d79c89bed8ce7aee52c7798452e1f" category="inline-link-rx"></block></block>
   <block id="37a4cc09c312ec6afaacfc25056bc091" category="list-text">여러 경로에 대한 액세스를 제공하려면 비루트 사용자에 대해 sudo 권한을 구성해야 합니다. visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다. 예를 들면, 다음과 같습니다.</block>
   <block id="68c649f38a72af40607349aa57e26c9f" category="paragraph">non_root_user 는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.</block>
   <block id="5e398ea531b7d56ad433ce2103049eab" category="summary">필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)\ 등이 있습니다.</block>
@@ -954,7 +953,6 @@
   <block id="083ad21990802d20fc5fdefdb7255565" category="paragraph">2GB</block>
   <block id="e1c05a94a3712659051eb07eafa04bd4" category="paragraph">Java 1.8(64비트) Oracle Java 또는 OpenJDK Flavors</block>
   <block id="bac8e3a852c936b4db89afd35d4d962a" category="paragraph">Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.</block>
-  <block id="b3ffee37db8c555449d0068b62ebb22f" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="1b419d76cc3163a36d36ff494ed65b44" category="inline-link-rx"></block></block>
   <block id="2ed40d52224af2dfedf93c8eb0550f77" category="summary">생성된 사용자 지정 플러그인은 SnapCenter 서버를 사용하여 호스트에 설치하여 응용 프로그램의 데이터 보호를 활성화할 수 있습니다.</block>
   <block id="3a08617a6dcc882e91018fc505870b76" category="doc">SnapCenter의 사용자 지정 플러그인</block>
   <block id="b5c77f66454d4e3d57521e8099507412" category="paragraph">Java, PERL 또는 네이티브 스타일을 사용하여 만든 사용자 지정 플러그인은 SnapCenter 서버를 사용하여 호스트에 설치하여 응용 프로그램의 데이터 보호를 활성화할 수 있습니다. 이 자습서에 제공된 절차를 사용하여 SnapCenter 호스트에 설치하려면 플러그인을 내보내야 합니다.</block>
@@ -1869,7 +1867,6 @@
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">NetApp ONTAP용 Amazon FSx 문서</block>
   <block id="6ae4072dd3f83211384c8e5499a7935c" category="paragraph">NetApp ONTAP용 Amazon FSx에 대한 자세한 내용은 를 참조하십시오<block ref="6acd76e3ffef3be13d939109e0593e26" category="inline-link-rx"></block>.</block>
   <block id="cf12f1baaed2b3c195374322d8d857bc" category="list-text">SnapCenter는 다양한 애플리케이션 및 데이터베이스의 보호를 지원합니다.</block>
-  <block id="f04a38723eca96ec9e60d19902a556e5" category="paragraph">지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오<block ref="89a335e37ffcb5152f6dbe1ca3dcb8c4" category="inline-link-rx"></block>.</block>
   <block id="57cb4604cb5a08f7df53f4664acf802c" category="summary">SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 인터넷 정보 서비스\(IIS\)를 구성할 수 있습니다.</block>
   <block id="852f965b48b17a73b0751ade963c60d7" category="doc">Active Directory 읽기 권한을 사용하도록 IIS 응용 프로그램 풀을 구성합니다</block>
   <block id="455df4e09a44d6f772e16ebd873a4ec2" category="paragraph">SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 IIS(인터넷 정보 서비스)를 구성할 수 있습니다.</block>
@@ -4887,11 +4884,9 @@
   <block id="9d09cebdc5095408e7e5f8bc09c08c42" category="paragraph">을 참조하십시오 <block ref="6de8516502145d64739d69762f4898a1" category="inline-link-macro-rx"></block>.</block>
   <block id="89a71adc7ceff2f08a2162d1abfd9de6" category="paragraph">* 추가 요구 사항 *</block>
   <block id="918d32b75f0ab883abba3a8dc0c3ae8d" category="inline-link">상호 운용성 매트릭스 툴</block>
-  <block id="b8a9ed6469f62c8937ce80d84ec8d1f7" category="paragraph">ONTAP 및 애플리케이션 플러그인 최소 요구 사항은 을 참조하십시오<block ref="951d8153a11e103ff4de247b28991efc" category="inline-link-rx"></block></block>
   <block id="8124579383e90243e4b06323d2b37f8d" category="cell">호스트</block>
   <block id="a55b17d8324fe50e023be8010d4b5474" category="cell">최소 요구 사항</block>
   <block id="a0315547f70da02dc3ae867b333d7a34" category="paragraph">운영 체제(64비트)</block>
-  <block id="e624c30d3beef6cbd03a548e7bce7186" category="paragraph">을 참조하십시오<block ref="951d8153a11e103ff4de247b28991efc" category="inline-link-rx"></block></block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="paragraph">CPU</block>
   <block id="0e6a971ec5306b612f39cb5f57db7161" category="list-text">서버 호스트: 4코어</block>
   <block id="30a4532a5bee2de6dedd7d0dd519c56c" category="list-text">플러그인 호스트: 1 코어</block>
@@ -5231,7 +5226,6 @@
   <block id="ba09c94fed381b580a726fc94531b160" category="list-text">Oracle Linux 또는 RHEL 운영 체제의 LVM에 Oracle 데이터베이스가 있는 경우 최신 버전의 LVM(Logical Volume Management)을 설치합니다.</block>
   <block id="8770246977269a639c8c2818412dc3ac" category="list-text">Oracle용 SnapManager를 사용하고 있고 Oracle 데이터베이스용 SnapCenter 플러그인으로 마이그레이션하려는 경우 sccli 명령 sc-migrate 를 사용하여 프로필을 SnapCenter의 정책 및 리소스 그룹으로 마이그레이션할 수 있습니다.</block>
   <block id="4c893189fecc8b6e5c41ae931ffd7f89" category="list-text">백업 복제를 원하는 경우 ONTAP에서 SnapMirror 및 SnapVault를 구성합니다</block>
-  <block id="f0858d52541a7ad3eeb536bfddff4459" category="list-text"><block ref="292ae4b085fa15d429fc53821bef8949" category="inline-link-rx"></block></block>
   <block id="50295902d444d01e41805e9bc1b0598e" category="list-text"><block ref="50295902d444d01e41805e9bc1b0598e" category="inline-link-rx"></block></block>
   <block id="a909d5db254f7262bb93275a07812330" category="inline-link">RHEL 7 이상의 비 다중 경로 환경에서 데이터 보호 작업이 실패합니다</block>
   <block id="637e979b90ef1f6ab2dd922a7436fbec" category="list-text"><block ref="637e979b90ef1f6ab2dd922a7436fbec" category="inline-link-rx"></block></block>
@@ -5304,7 +5298,6 @@
   <block id="750b10574c7c5ac05afa7817be89a63e" category="list-text">Oracle ASM 필터 드라이버(ASMFD)</block>
   <block id="da02aa1448f6bd34e97b4d20a7b5bdcf" category="admonition">PDB 마이그레이션 및 PDB 복제 작업은 지원되지 않습니다.</block>
   <block id="0483f292b9712b967df26187e876eb45" category="list-text">Oracle Flex ASM</block>
-  <block id="b05284393d78b482f708946df4cf0209" category="paragraph">지원되는 Oracle 버전에 대한 최신 정보는 를 참조하십시오<block ref="89a335e37ffcb5152f6dbe1ca3dcb8c4" category="inline-link-rx"></block>.</block>
   <block id="2e00e783f5f2412a8f09c782c23524f4" category="section-title">Oracle 데이터베이스에 지원되는 백업 유형입니다</block>
   <block id="63a9fc894d971ef7a1fef2e8bafbd8d4" category="paragraph">백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 Oracle 데이터베이스에 대한 온라인 및 오프라인 백업 유형을 지원합니다.</block>
   <block id="cd9177f3a112508cd1d4ef7ec5499433" category="section-title">온라인 백업</block>
@@ -5871,7 +5864,6 @@
   <block id="28ada90c589b6b80a72ff33d9870e73f" category="admonition">SnapCenter 그래픽 사용자 인터페이스(GUI)에서는 데이터 가져오기가 지원되지 않습니다.</block>
   <block id="91048ee9b28431a0b8417fc6aca22a53" category="section-title">데이터 가져오기에 지원되는 구성입니다</block>
   <block id="b136948fc75470b29a82776a9d289413" category="paragraph">Oracle용 SnapManager 3.4.x 및 SAP용 SnapManager 3.4.x에서 SnapCenter로 데이터를 가져오기 전에 Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성을 알고 있어야 합니다.</block>
-  <block id="92222a3fa1663d14d5f222993666e586" category="paragraph">Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성은 에 나와 있습니다<block ref="89a335e37ffcb5152f6dbe1ca3dcb8c4" category="inline-link-rx"></block>.</block>
   <block id="c11806b444e73d136144652a83923eba" category="section-title">SnapCenter로 가져온 항목</block>
   <block id="d80d91babef4edbe3aa5ac78f57b8cbc" category="paragraph">프로파일을 사용하여 수행한 프로파일, 일정 및 작업을 가져올 수 있습니다.</block>
   <block id="e3fde9f3aff3294492c93c044790a79f" category="cell">SnapManager for Oracle 및 SnapManager for SAP에서</block>
@@ -7517,7 +7509,6 @@
   <block id="f9db2c2c51ac713541e90ff79219156d" category="paragraph"><block ref="f9db2c2c51ac713541e90ff79219156d" category="inline-link-macro-rx"></block></block>
   <block id="7a679a1d48731136f64e6e6d38429002" category="paragraph"><block ref="7a679a1d48731136f64e6e6d38429002" category="inline-link-macro-rx"></block></block>
   <block id="8eea6d6db8756ac6f485ef882956153e" category="paragraph"><block ref="8eea6d6db8756ac6f485ef882956153e" category="inline-link-macro-rx"></block></block>
-  <block id="0fc6896a1941ab3074a525b384b1d103" category="paragraph">를 클릭합니다<block ref="1b419d76cc3163a36d36ff494ed65b44" category="inline-link-rx"></block> 지원되는 버전에 대한 최신 정보를 제공합니다.</block>
   <block id="ace671fcc1d4c5939c3ed0ebf95d2b2c" category="paragraph">Windows에서 지원되는 스크립트 유형은 다음과 같습니다.</block>
   <block id="29233ecbd2b929a26387627ae9f90bbf" category="paragraph">UNIX에서 지원되는 스크립트 유형은 다음과 같습니다.</block>
   <block id="11ab50b04d8cca57ff15c12c97d5679c" category="list-text">Python 스크립트</block>
@@ -7556,7 +7547,6 @@
   <block id="7c8e4d34b8c6cc18e06524f05da1a10d" category="paragraph">로그가 유지되는 최대 일 수를 표시합니다.</block>
   <block id="664943be24af2306e90a21dd26536e1c" category="paragraph">certificate_validation을 활성화합니다</block>
   <block id="22d8a94cf37cc6d66c941a43b9d79fa8" category="paragraph">호스트에 대해 CA 인증서 유효성 검사가 활성화되면 true를 표시합니다.</block>
-  <block id="12979c0044e0f2a4436304e71df2bd9b" category="paragraph">보조 SnapCenter 서버는 운영 SnapCenter 서버와 동일한 위치 및 포트에 설치해야 합니다.</block>
   <block id="d1e90d50eb139f0fd560c55b6bf37057" category="paragraph">MFA(다중 인증)의 경우 SnapCenter 서버에 대해 DR 복원을 수행할 때 모든 브라우저 탭을 닫고 브라우저를 다시 열어 다시 로그인하십시오. 이렇게 하면 기존 또는 활성 세션 쿠키가 지워 올바른 구성 데이터가 업데이트됩니다.</block>
   <block id="bf3e76e4f1322979745fbde954cda8f3" category="list-text">SnapCenter는 특정 SSL 암호화 제품군을 지원하여 네트워크 통신 전반에 보안을 제공합니다.</block>
   <block id="5d06d972bc910c7d332d38f29622193f" category="inline-link">지원되는 SSL 암호화 제품군을 구성하는 방법</block>
@@ -7914,4 +7904,19 @@
   <block id="29a6d4ddcd28e22d7ba6ab65da50bf6f" category="paragraph">cmdlet 실행에 대한 자세한 내용은 을 참조하십시오<block ref="9af97e8a01b20be8df7443d0a4ef81ca" category="inline-link-rx"></block></block>
   <block id="0352418be0d30e5f0f0b3f664c74e1aa" category="admonition">플러그인의 페일오버 또는 페일백 중에는 플러그인 전체 상태가 즉시 업데이트되지 않습니다. 호스트 및 플러그인의 전체 상태는 후속 호스트 새로 고침 작업 중에 업데이트됩니다.</block>
   <block id="d7b3c4517cc189c6cdd986195fa3f33f" category="sidebar">SnapCenter 소프트웨어 4.7 설명서</block>
+  <block id="ad2df38df99c722f88cf142744758e07" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="f05f98f17d4e0568e31244784ca320bd" category="inline-link-rx"></block></block>
+  <block id="d91808c8a4d610ed99302113da2f85d2" category="paragraph"><block ref="0eee65cb82c15fd964b7785d5f117a10" category="inline-link-rx"></block></block>
+  <block id="e306f8020786d4a39801b24a0c26a65d" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="26d76f2e486b882ba3b23e9b38f63829" category="inline-link-rx"></block>.</block>
+  <block id="b6353e58a793ffb65b97fb54ed68ff89" category="paragraph">ONTAP 및 애플리케이션 플러그인 최소 요구 사항은 을 참조하십시오<block ref="895e9fc4fedf805e54b700a772e16c16" category="inline-link-rx"></block></block>
+  <block id="cfcb453ff70ad933cab89769866a7ca8" category="paragraph">을 참조하십시오<block ref="895e9fc4fedf805e54b700a772e16c16" category="inline-link-rx"></block></block>
+  <block id="0675325e7eaef3f6ab445bb6f63484b1" category="list-text"><block ref="3f0414c37a83af730261bc95d9d01546" category="inline-link-rx"></block></block>
+  <block id="a0b646a3488d81d565a66dfa155ab64f" category="paragraph">를 클릭합니다<block ref="acbd4d43b54b8ece885d46b425b04ecf" category="inline-link-rx"></block> 지원되는 버전에 대한 최신 정보를 제공합니다.</block>
+  <block id="d9f5c0652a9a0f5a632c2b39950788b1" category="paragraph">지원되는 Oracle 버전에 대한 최신 정보는 를 참조하십시오<block ref="ad50fcde58174eb161421bebd1f28ec8" category="inline-link-rx"></block>.</block>
+  <block id="f774d1f4e0076ce76f72417458eea1a5" category="paragraph">Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성은 에 나와 있습니다<block ref="ad50fcde58174eb161421bebd1f28ec8" category="inline-link-rx"></block>.</block>
+  <block id="bbba754ddb8dc1ad1e612a5ec76136db" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="ad50fcde58174eb161421bebd1f28ec8" category="inline-link-rx"></block>.</block>
+  <block id="db73b4bff7f9b92f00d36e2a3fa01152" category="paragraph">보조 SnapCenter 서버는 운영 SnapCenter 서버와 동일한 설치 디렉토리 및 포트에 설치해야 합니다.</block>
+  <block id="9ed4d117d7b8f3381a2011b69e6dfef2" category="paragraph">지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오<block ref="4d75397e7ff03528228bfd2c042ee164" category="inline-link-rx"></block>.</block>
+  <block id="097869dcfdfea94a43eab778d57a4e83" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="102c8b4f5323d57ed48904a1ba94c2de" category="inline-link-rx"></block>.</block>
+  <block id="bf14f1703af6af8b51300dc61dc1594c" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="4d75397e7ff03528228bfd2c042ee164" category="inline-link-rx"></block>.</block>
+  <block id="02f8c9fac34de290666ccfe51e19b761" category="paragraph"><block ref="c86a29400a88b8541473f7e26922bd2f" category="inline-link-rx"></block></block>
 </blocks>
