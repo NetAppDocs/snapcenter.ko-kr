@@ -51,6 +51,9 @@ ONTAP 시스템에서 실행되는 Microsoft Exchange Server, Microsoft SQL Serv
 +
 사용자 정의 SnapCenter 플러그인을 만들 수 있는 프레임워크를 제공하여 다른 표준 또는 사용자 지정 애플리케이션 및 데이터베이스에서도 데이터 보호가 지원됩니다. 따라서 동일한 단일 창에서 다른 애플리케이션과 데이터베이스의 데이터를 보호할 수 있습니다. NetApp은 이 프레임워크를 활용하여 NetApp 자동화 스토어에서 IBM DB2, MongoDB, MySQL용 SnapCenter 맞춤형 플러그인을 출시했습니다.
 
++
+https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^]
+
 * 정책 기반 백업
 +
 정책 기반 백업은 NetApp Snapshot 복사본 기술을 활용하여 빠르고 공간 효율적이며 애플리케이션 정합성을 보장하는 디스크 기반 백업을 생성합니다. 필요에 따라 기존 보호 관계를 업데이트하여 보조 스토리지에 대한 이러한 백업을 자동으로 보호할 수 있습니다.
@@ -74,6 +77,15 @@ SnapCenter GUI는 하이브리드 클라우드의 모든 대상에서 리소스�
 * REST API, Windows cmdlet, UNIX 명령
 +
 SnapCenter에는 모든 오케스트레이션 소프트웨어와 통합할 수 있는 대부분의 기능, Windows PowerShell cmdlet 및 명령줄 인터페이스 사용을 위한 REST API가 포함되어 있습니다.
+
++
+REST API에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html["REST API 개요"].
+
++
+Windows cmdlet에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+
++
+UNIX 명령에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301["SnapCenter 소프트웨어 명령 참조 가이드"^].
 
 * 중앙 집중식 데이터 보호 대시보드 및 보고
 * 보안 및 위임을 위한 역할 기반 액세스 제어(RBAC).
@@ -143,7 +155,7 @@ NOTE: UNIX용 SnapCenter 플러그인은 독립 실행형 플러그인이 아니
 
 * SnapCenter 맞춤형 플러그인
 +
-사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 있습니다 https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"].
+사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 있습니다 https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^].
 
 
 
@@ -340,7 +352,7 @@ NOTE: MySQL, DB2 및 MongoDB 맞춤형 플러그인은 NetApp 커뮤니티를 �
 
 NetApp은 맞춤형 플러그인을 생성 및 사용할 수 있는 기능을 지원하지만 생성하는 맞춤형 플러그인은 NetApp에서 지원하지 않습니다.
 
-자세한 내용은 을 참조하십시오 link:../protect-scc/concept_develop_a_plug_in_for_your_application.html["응용 프로그램용 플러그인을 개발합니다"^]
+자세한 내용은 을 참조하십시오 link:../protect-scc/concept_develop_a_plug_in_for_your_application.html["응용 프로그램용 플러그인을 개발합니다"]
 
 
 

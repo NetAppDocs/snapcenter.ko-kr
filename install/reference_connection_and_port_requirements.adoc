@@ -61,7 +61,7 @@ MySQL 포트
 
 이 포트는 SnapCenter 및 MySQL 리포지토리 데이터베이스 간의 통신에 사용됩니다.
 
-SnapCenter 서버에서 MySQL 서버로 보안 연결을 생성할 수 있습니다. link:../install/concept_configure_secured_mysql_connections_with_snapcenter_server.html["자세한 정보"^]
+SnapCenter 서버에서 MySQL 서버로 보안 연결을 생성할 수 있습니다. link:../install/concept_configure_secured_mysql_connections_with_snapcenter_server.html["자세한 정보"]
 
 
 
@@ -128,7 +128,7 @@ ONTAP 클러스터 또는 SVM 통신 포트
 
 
  a| 
-SAP HANA 데이터베이스 포트용 SnapCenter 플러그인
+SAP HANA 데이터베이스 vCode용 SnapCenter 플러그인 맞춤법 검사기
  a| 
 3instance_number13 또는 3instance_number15, HTTP 또는 HTTPS, 양방향 및 사용자 지정 가능
 
@@ -146,4 +146,4 @@ MDC(멀티테넌트 데이터베이스 컨테이너) 단일 테넌트의 경우 
 SnapCenter 서버, 플러그인 호스트 또는 다른 Windows 클라이언트가 사용자를 인증할 수 있도록 도메인 컨트롤러에서 Microsoft 필수 포트를 열어야 합니다.
 
 |===
-포트 세부 정보를 수정하려면 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html#modify-plug-in-hosts[] [플러그인 호스트 수정^].
+포트 세부 정보를 수정하려면 을 참조하십시오 link:../admin/concept_manage_hosts.html#modify-plug-in-hosts["플러그인 호스트를 수정합니다"].

@@ -2313,7 +2313,6 @@
   <block id="cdc31d96c535e9b4d0a4c97b0340372f" category="admonition">SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다.</block>
   <block id="f011a01ebc3350e546311efaf71140bc" category="inline-link-macro">SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다</block>
   <block id="247c902b5f932e2e47b98b966ab41a08" category="inline-link-macro">SnapCenter 표준 용량 기반 라이센스 추가</block>
-  <block id="d0487d3c65933c7dda38325ae975026b" category="paragraph">하나 이상의 SnapCenter 라이센스를 설치해야 합니다. 라이센스를 추가하는 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="0ca3149bbd09cc6482f3e5921aad891d" category="inline-link-macro-rx"></block> 또는 <block ref="daae28e1483ad0a51ebe8ba1b52cdeb5" category="inline-link-macro-rx"></block>.</block>
   <block id="59746a4c33021bdc9cb716ea91eadbb0" category="section-title">SMBR(Single Mailbox Recovery) 라이센스</block>
   <block id="8119a3fca1d141f0d7a8e7156604c296" category="paragraph">Exchange용 SnapCenter 플러그인을 사용하여 Microsoft Exchange Server 데이터베이스 및 SMBR(Single Mailbox Recovery)을 관리하는 경우 사용자 메일박스를 기준으로 별도로 구입해야 하는 SMBR용 추가 라이센스가 필요합니다.</block>
   <block id="0d5e6d352f8f3217e51e0df5fe981349" category="inline-link">SMBR 릴리스 노트</block>
@@ -2905,7 +2904,6 @@
   <block id="91ca015b30de2a05aff2f16ec93231dd" category="paragraph">MySQL 포트</block>
   <block id="ced7e40a06bd114bdd410398e025c7bd" category="paragraph">3306(HTTPS), 양방향</block>
   <block id="efe50212c612e0d762535b54fd67befd" category="paragraph">이 포트는 SnapCenter 및 MySQL 리포지토리 데이터베이스 간의 통신에 사용됩니다.</block>
-  <block id="2fd902191e98265318221699b71a7bbc" category="paragraph">SnapCenter 서버에서 MySQL 서버로 보안 연결을 생성할 수 있습니다. <block ref="98294cf010405bdb856636ffa91b07b6" category="inline-link-macro-rx"></block></block>
   <block id="4abc501abe98e95144eba2c4d17174ad" category="paragraph">Windows 플러그인 호스트</block>
   <block id="0d1c7f3b029cde2163a99c08de7fc3c3" category="paragraph">135, 445(TCP)</block>
   <block id="9ce593479d7ce75e23fe1f85463ed78d" category="paragraph">135번 및 445번 포트 외에도 Microsoft에서 지정한 동적 포트 범위도 열려 있어야 합니다. 원격 설치 작업은 이 포트 범위를 동적으로 검색하는 WMI(Windows Management Instrumentation) 서비스를 사용합니다.</block>
@@ -2928,7 +2926,6 @@
   <block id="48552dce4d9810446c70f66f21f08120" category="paragraph">ONTAP 클러스터 또는 SVM 통신 포트</block>
   <block id="0e2baf6e148be111338e84354edd4364" category="paragraph">443(HTTPS), 양방향 80(HTTP), 양방향</block>
   <block id="a26bff28c23606c7396b4619af8af1bd" category="paragraph">이 포트는 SnapCenter Server를 실행하는 호스트와 SVM 간 통신에 SAL(Storage Abstraction Layer)에서 사용됩니다. 이 포트는 현재 SnapCenter 플러그인 호스트와 SVM 간 통신에 SnapCenter의 SAL에서 사용됩니다.</block>
-  <block id="657328b06bb4725d5cf327593551d8d6" category="paragraph">SAP HANA 데이터베이스 포트용 SnapCenter 플러그인</block>
   <block id="a703a5f03b1b230925e5a7bef766ea84" category="paragraph">3instance_number13 또는 3instance_number15, HTTP 또는 HTTPS, 양방향 및 사용자 지정 가능</block>
   <block id="5afe34fece774db451a111901841c2f9" category="paragraph">MDC(멀티테넌트 데이터베이스 컨테이너) 단일 테넌트의 경우 포트 번호는 13으로 끝나며 MDC가 아닌 경우 포트 번호는 15로 끝납니다.</block>
   <block id="f79f66ef0d80eeeac5a8a3b2f86e2d84" category="paragraph">예를 들어, 32013은 인스턴스 20의 포트 번호이고 31015는 인스턴스 10의 포트 번호입니다.</block>
@@ -7116,7 +7113,6 @@
   <block id="41055e583e58ee1a92771580cdfe9b3f" category="list-text">AIX용 SnapCenter 플러그인 패키지, 다음 플러그인 포함:</block>
   <block id="f131ab7559cf49d32373fdff9b7cbaaa" category="admonition">UNIX용 SnapCenter 플러그인은 독립 실행형 플러그인이 아니며 독립적으로 설치할 수 없습니다. 이 플러그인은 Oracle 데이터베이스용 SnapCenter 플러그인을 설치하면 자동으로 설치됩니다.</block>
   <block id="ad41f7a9e85843a998743e132424a395" category="list-text">SnapCenter 맞춤형 플러그인</block>
-  <block id="4d85577b7a29bc5d237d7c7beb5ebc7c" category="paragraph">사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 있습니다<block ref="14adb94a4faec9ea0e0992d90e98b640" category="inline-link-rx"></block>.</block>
   <block id="4bfa416280fc4f5037348c904859e18f" category="paragraph">SnapCenter Plug-in for VMware vSphere(이전의 NetApp Data Broker)는 가상화된 데이터베이스 및 파일 시스템에서 SnapCenter 데이터 보호 작업을 지원하는 독립 실행형 가상 어플라이언스입니다.</block>
   <block id="2aa0571a478e7d0fecaba7f94c88bf25" category="section-title">SnapCenter 서버</block>
   <block id="e4b70dc0a2377b7bbef832a55b2d603c" category="paragraph">SnapCenter 서버에는 웹 서버, 중앙 집중식 HTML5 기반 사용자 인터페이스, PowerShell cmdlet, REST API 및 SnapCenter 저장소가 포함됩니다.</block>
@@ -7184,7 +7180,6 @@
   <block id="bef4d00fa5327b323d516fbe5c1bce99" category="paragraph">SnapCenter 소프트웨어용 MySQL, DB2 및 MongoDB 맞춤형 플러그인 샘플은 에서 다운로드할 수 있습니다<block ref="554f546cf121f440c6cfd97d643765df" category="inline-link-rx"></block>.</block>
   <block id="dbe26f725743679de01e440c2e7697ad" category="admonition">MySQL, DB2 및 MongoDB 맞춤형 플러그인은 NetApp 커뮤니티를 통해서만 지원됩니다.</block>
   <block id="a84dab656bf020b14be7a5c3596b4288" category="paragraph">NetApp은 맞춤형 플러그인을 생성 및 사용할 수 있는 기능을 지원하지만 생성하는 맞춤형 플러그인은 NetApp에서 지원하지 않습니다.</block>
-  <block id="e0348137514c6fa588f7dc1c018f38d7" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="42bf949f5c33c0da2d19dcdbdfcd8185" category="inline-link-macro-rx"></block></block>
   <block id="3012455ba6e0ba02dfa333bdecc83c57" category="section-title">SnapCenter 리포지토리</block>
   <block id="cc1d85843af98a2ce08e58f1408e6364" category="paragraph">NSM 데이터베이스라고도 하는 SnapCenter 저장소는 모든 SnapCenter 작업에 대한 정보와 메타데이터를 저장합니다.</block>
   <block id="b795272c033653aa88e12f8f4fd442ca" category="paragraph">SnapCenter 서버를 설치할 때 MySQL Server 리포지토리 데이터베이스가 기본적으로 설치됩니다. MySQL Server가 이미 설치되어 있고 SnapCenter Server를 새로 설치하는 경우 MySQL Server를 제거해야 합니다.</block>
@@ -7488,7 +7483,6 @@
   <block id="45cfde3246d77aae99351b410b97c7c0" category="doc">SAP HANA 플러그인에 필요한 최소 ONTAP 권한</block>
   <block id="f787fb91924061fe015dd390115ff7b0" category="cell">All-access 명령: ONTAP 8.3.0 이상에 필요한 최소 권한</block>
   <block id="3c7a1d3e0ce94aeb0c7ab231e365f15e" category="cell">읽기 전용 명령: ONTAP 8.3.0 이상에 필요한 최소 권한</block>
-  <block id="8bd83f1f314ef9e02c70e66cc9fb845c" category="paragraph">포트 세부 정보를 수정하려면 을 참조하십시오<block ref="50723147440c13da7c31ceaceb52ba16" category="inline-link-rx"></block> [플러그인 호스트 수정^].</block>
   <block id="5e312685e47c74b5ee2a4102a18ee03f" category="doc">Exchange 플러그인에 필요한 최소 ONTAP 권한</block>
   <block id="f2e203e95de8a92902a61dcabea6f456" category="list-text">호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다.</block>
   <block id="adc8d83761c6331a65ee343d3de2a603" category="list-text">Exchange 노드가 DAG의 일부인 경우 SnapCenter 서버에 하나의 노드만 추가할 수 없습니다.</block>
@@ -7919,4 +7913,14 @@
   <block id="097869dcfdfea94a43eab778d57a4e83" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="102c8b4f5323d57ed48904a1ba94c2de" category="inline-link-rx"></block>.</block>
   <block id="bf14f1703af6af8b51300dc61dc1594c" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="4d75397e7ff03528228bfd2c042ee164" category="inline-link-rx"></block>.</block>
   <block id="02f8c9fac34de290666ccfe51e19b761" category="paragraph"><block ref="c86a29400a88b8541473f7e26922bd2f" category="inline-link-rx"></block></block>
+  <block id="b6b7e7973fe70256b1b775baf8ac7261" category="paragraph">하나 이상의 SnapCenter 라이센스를 설치해야 합니다. 라이센스를 추가하는 방법에 대한 자세한 내용은 을 참조하십시오 <block ref="978050eb868e07441781781da059ebc5" category="inline-link-macro-rx"></block> 또는 <block ref="47cf8583fc17afccfc8268b2830ab680" category="inline-link-macro-rx"></block>.</block>
+  <block id="13aef2b62d8736d22562e85c99ca60eb" category="paragraph">SnapCenter 서버에서 MySQL 서버로 보안 연결을 생성할 수 있습니다. <block ref="cd7568118ad87382648cb2133a315ffd" category="inline-link-macro-rx"></block></block>
+  <block id="6529e3cc72b3980f54f2d2ad982c79c2" category="paragraph">SAP HANA 데이터베이스 vCode용 SnapCenter 플러그인 맞춤법 검사기</block>
+  <block id="0cfe29479bcdd52d04233cb07867b8dc" category="paragraph">포트 세부 정보를 수정하려면 을 참조하십시오 <block ref="e76f469a4971f2c04dd83de4f8464750" category="inline-link-macro-rx"></block>.</block>
+  <block id="66ee30700091538587a27acf4ecad692" category="inline-link">REST API 개요</block>
+  <block id="9a9a51f1993f5461829d8466a8fb013e" category="paragraph">REST API에 대한 자세한 내용은 를 참조하십시오<block ref="ea5c19f623f4ce0e4a3a37a512890f94" category="inline-link-rx"></block>.</block>
+  <block id="ac82cdc7de65b45fb896f54ac6f878a6" category="paragraph">Windows cmdlet에 대한 자세한 내용은 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
+  <block id="9381fc6f6aaa8ab22b178a15c78fbc00" category="paragraph">UNIX 명령에 대한 자세한 내용은 을 참조하십시오<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
+  <block id="c41cef29e8776e4670cacce5775ec017" category="paragraph">사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 있습니다<block ref="554f546cf121f440c6cfd97d643765df" category="inline-link-rx"></block>.</block>
+  <block id="0403e11795fb79ba2a2b089e5837948f" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="5d3441c720944f2bfbf67dc2b7c68bf1" category="inline-link-macro-rx"></block></block>
 </blocks>
