@@ -2164,7 +2164,6 @@
   <block id="5f1f3816baaf1ae27261430125d83764" category="admonition">나중에 SnapCenter 또는 ONTAP를 업그레이드할 경우 RBAC 사용자 생성기 for Data ONTAP 도구를 다시 실행하여 이전에 만든 사용자 역할을 업데이트해야 합니다. 이전 버전의 SnapCenter 또는 ONTAP에 대해 만든 사용자 역할은 업그레이드된 버전에서 제대로 작동하지 않습니다. 이 도구를 다시 실행하면 자동으로 업그레이드를 처리합니다. 역할을 다시 생성할 필요는 없습니다.</block>
   <block id="9dc5053bca32e6394932747f3adab2c4" category="inline-link">ONTAP 9 관리자 인증 및 RBAC 전원 가이드</block>
   <block id="cf450319b4b50a20dcf243d6273acbf4" category="paragraph">ONTAP RBAC 역할 설정에 대한 자세한 내용은 을 참조하십시오<block ref="4054a3747c1ed1604c443c75434e693a" category="inline-link-rx"></block>.</block>
-  <block id="2e8490dc7bdf2a0cd98dea04491763dc" category="admonition">일관성을 위해 SnapCenter 문서는 사용 권한을 사용하는 역할을 나타냅니다. OnCommand 시스템 관리자 GUI는 ""권한" 대신 ""속성""을 사용합니다. ONTAP RBAC 역할을 설정할 때 이 두 용어는 모두 동일합니다.</block>
   <block id="eaa07c06fe679751494bfd4b2951b580" category="list-text">스토리지 시스템에서 다음 명령을 입력하여 새 역할을 생성합니다.</block>
   <block id="2c7e6d2877f857f126c24c7742e84098" category="paragraph">'Security login role create &lt;role_name\&gt; - cmddirname "command" - access all – vserver &lt;svm_name\&gt;'</block>
   <block id="af7e38d09fe8c21a2365c6a2c6e9bafe" category="list-text">SVM_NAME은 SVM의 이름입니다. 이 필드를 비워 두면 기본적으로 클러스터 관리자가 됩니다.</block>
@@ -5188,9 +5187,7 @@
   <block id="b7a9dc8480c6c9ddaf18628dd79ad61c" category="list-text">데이터 디스크 그룹의 이름은 구성할 수 있지만 클론이 수행될 호스트의 다른 ASM 디스크 그룹에서 해당 이름을 사용하지 않도록 해야 합니다.</block>
   <block id="c014ba7a65ae579a2708beb53f5cb976" category="paragraph">ASM 디스크 그룹에 상주하는 데이터 파일은 SnapCenter 클론 워크플로우의 일부로 프로비저닝됩니다.</block>
   <block id="24aa4d1e777d4325bd7a1077e581f96f" category="list-text">로그 백업을 사용하여 대체 호스트에 클론을 생성하는 동안 보조 로케이터를 검색하려면 데이터 LUN과 미러, 볼트 또는 미러 볼트와 같은 로그 LUN에 대한 보호 유형이 동일해야 합니다.</block>
-  <block id="d75efecf969e318e8631aa633aad8a12" category="list-text">소스 데이터베이스 매개 변수 파일에서 exclude_seed_cdb_view 값을 false 로 설정하여 12__c__ 데이터베이스 백업 클론 생성을 위한 시드 PDB 관련 정보를 검색해야 합니다.</block>
   <block id="b110267fdfa8216b83e8bc846b22d07d" category="paragraph">시드 PDB는 CDB가 PDB를 생성하는 데 사용할 수 있는 시스템 제공 템플릿입니다. 시드 PDB의 이름은 PDB$seed입니다. PDB$ 시드에 대한 자세한 내용은 Oracle Doc ID 1940806.1을 참조하십시오.</block>
-  <block id="62b66450faeba3ebd26d4c69a00d90b2" category="admonition">12__c__database를 백업하기 전에 값을 설정해야 합니다.</block>
   <block id="940b5af8a20e62b932b6d5f2cb0da283" category="list-text">SnapCenter는 autofs 서브시스템에서 관리하는 파일 시스템의 백업을 지원합니다. 데이터베이스를 복제하는 경우 플러그인 호스트의 루트 사용자에게 autofs 마운트 지점의 루트 아래에 디렉토리를 생성할 권한이 없으므로 데이터 마운트 지점이 autofs 마운트 지점의 루트 아래에 있지 않은지 확인합니다.</block>
   <block id="baa3ce4e65add470c5afafe3bbd7cb96" category="paragraph">제어 및 재실행 로그 파일이 데이터 마운트 지점에 있는 경우 제어 파일 경로를 수정한 다음 그에 따라 로그 파일 경로를 다시 실행해야 합니다.</block>
   <block id="e49a081ca61f3da79922a289670f328d" category="admonition">새로 클론된 마운트 지점을 autofs 하위 시스템에 수동으로 등록할 수 있습니다. 새로 클론된 마운트 지점은 자동으로 등록되지 않습니다.</block>
@@ -6429,7 +6426,6 @@
   <block id="89369317547508f73174b251351213fb" category="paragraph">선택적으로 경로를 사용자 지정할 수 있습니다. Windows용 SnapCenter 플러그인 패키지의 경우 기본 경로는 C:\Program Files\NetApp\SnapCenter입니다. 그러나 원하는 경우 기본 경로를 사용자 지정할 수 있습니다.</block>
   <block id="0f24a42c91809cffb3303665febc60e6" category="paragraph">WSFC에서 모든 클러스터 노드를 추가하려면 이 확인란을 선택합니다.</block>
   <block id="ef3600a5849bde43368ee5e3a3f04387" category="paragraph">Skip Prech사전 검사 * 확인란을 선택하지 않은 경우 호스트는 플러그인 설치 요구 사항을 충족하는지 여부를 확인합니다. 디스크 공간, RAM, PowerShell 버전, .NET 버전 및 위치는 최소 요구 사항에 따라 검증됩니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다.</block>
-  <block id="a303765ccf8e62e799f0ecddd5246086" category="summary">백업을 생성하기 전에 백업 전략을 정의하면 파일 시스템을 성공적으로 복원하거나 복제하는 데 필요한 백업을 얻을 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="256a24bb2bbfd11bdbce6eda99d9c9f4" category="doc">Windows 파일 시스템에 대한 백업 전략 정의</block>
   <block id="f39d4c826787f2bc363e01f37833b893" category="paragraph">백업을 생성하기 전에 백업 전략을 정의하면 파일 시스템을 성공적으로 복원하거나 복제하는 데 필요한 백업을 얻을 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="49a469761aa5e6bfe27af78b7c460d38" category="section-title">Windows 파일 시스템에 대한 백업 스케줄입니다</block>
@@ -7609,8 +7605,6 @@
   <block id="f5834ae40c2c791cfe589857bdad345c" category="paragraph">spl.properties 를 편집하거나 SnapCenter GUI 또는 cmdlet을 사용하여 이 매개 변수를 활성화 또는 비활성화할 수 있습니다.</block>
   <block id="7de59fae501cc41425b292c47c8d9c12" category="list-text">NVMe의 경우 대상 포트를 연결에 제외해야 하는 경우 /var/opt/snapcenter/scu/etc/NVMe.conf 파일에 타겟 노드 이름과 포트 이름을 추가해야 합니다.</block>
   <block id="71ce3de936c35ae0967019943cb6334a" category="paragraph">파일이 없는 경우 아래 예와 같이 파일을 작성해야 합니다.</block>
-  <block id="280f5c08d4f27f31b36e59d180eaeae6" category="paragraph">_블랙리스트{_</block>
-  <block id="8c6edcef1c9a50bf9ecd0f192cee6137" category="paragraph">_} _</block>
   <block id="bf51eb5d79e16ead1ceda527dda582b6" category="doc">SnapCenter 서버 및 플러그인에 지원되는 REST API</block>
   <block id="9ee6893a33efb203b34a11b10f9d01eb" category="paragraph">이 API를 사용하여 SnapCenter 서버에 로그인할 수 있습니다. 이 API는 후속 요청을 인증하는 데 사용되는 사용자 인증 토큰을 반환합니다.</block>
   <block id="f274ae38a991dabe63ac23d64b046496" category="paragraph">API를 사용하여 다른 작업을 수행할 수 있습니다.</block>
@@ -7923,4 +7917,7 @@
   <block id="9381fc6f6aaa8ab22b178a15c78fbc00" category="paragraph">UNIX 명령에 대한 자세한 내용은 을 참조하십시오<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
   <block id="c41cef29e8776e4670cacce5775ec017" category="paragraph">사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 있습니다<block ref="554f546cf121f440c6cfd97d643765df" category="inline-link-rx"></block>.</block>
   <block id="0403e11795fb79ba2a2b089e5837948f" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="5d3441c720944f2bfbf67dc2b7c68bf1" category="inline-link-macro-rx"></block></block>
+  <block id="74fec6bb431ffa93b327d4933607ec3f" category="admonition">일관성을 위해 SnapCenter 문서는 사용 권한을 사용하는 역할을 나타냅니다. OnCommand 시스템 관리자 GUI는 _privilege_ 대신 _attribute_라는 용어를 사용합니다. ONTAP RBAC 역할을 설정할 때 이 두 용어는 모두 동일합니다.</block>
+  <block id="654c0ff0573689496c47502d09cfe7a8" category="list-text">소스 데이터베이스 매개 변수 파일에서 exclude_seed_cdb_view의 값을 false로 설정하여 12_c_database의 백업 복제를 위한 시드 PDB 관련 정보를 검색해야 합니다.</block>
+  <block id="dfb3e8f24407538f95c7f42d27411d1b" category="admonition">12_c_database를 백업하기 전에 값을 설정해야 합니다.</block>
 </blocks>

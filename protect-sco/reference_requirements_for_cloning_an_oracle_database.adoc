@@ -55,13 +55,13 @@ ASM 디스크 그룹에 상주하는 데이터 파일은 SnapCenter 클론 워�
 
 
 * 로그 백업을 사용하여 대체 호스트에 클론을 생성하는 동안 보조 로케이터를 검색하려면 데이터 LUN과 미러, 볼트 또는 미러 볼트와 같은 로그 LUN에 대한 보호 유형이 동일해야 합니다.
-* 소스 데이터베이스 매개 변수 파일에서 exclude_seed_cdb_view 값을 false 로 설정하여 12__c__ 데이터베이스 백업 클론 생성을 위한 시드 PDB 관련 정보를 검색해야 합니다.
+* 소스 데이터베이스 매개 변수 파일에서 exclude_seed_cdb_view의 값을 false로 설정하여 12_c_database의 백업 복제를 위한 시드 PDB 관련 정보를 검색해야 합니다.
 +
 시드 PDB는 CDB가 PDB를 생성하는 데 사용할 수 있는 시스템 제공 템플릿입니다. 시드 PDB의 이름은 PDB$seed입니다. PDB$ 시드에 대한 자세한 내용은 Oracle Doc ID 1940806.1을 참조하십시오.
 
 +
 
-NOTE: 12__c__database를 백업하기 전에 값을 설정해야 합니다.
+NOTE: 12_c_database를 백업하기 전에 값을 설정해야 합니다.
 
 * SnapCenter는 autofs 서브시스템에서 관리하는 파일 시스템의 백업을 지원합니다. 데이터베이스를 복제하는 경우 플러그인 호스트의 루트 사용자에게 autofs 마운트 지점의 루트 아래에 디렉토리를 생성할 권한이 없으므로 데이터 마운트 지점이 autofs 마운트 지점의 루트 아래에 있지 않은지 확인합니다.
 +
@@ -80,15 +80,10 @@ NOTE: 새로 클론된 마운트 지점을 autofs 하위 시스템에 수동으�
 파일이 없는 경우 아래 예와 같이 파일을 작성해야 합니다.
 
 +
-_블랙리스트{_
-
-+
 ....
-# You can add comments by using the ‘#’ at the beginning of the line
+blacklist {
 nn-0x<target_node_name_1>:pn-0x<target_port_name_1>
 nn-0x<target_node_name_2>:pn-0x<target_port_name_2>
+}
 ....
-+
-_} _
-
 
