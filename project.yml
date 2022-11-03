@@ -16,7 +16,7 @@ settings:
   - name: SnapCenter 소프트웨어
     url: "/snapcenter-45"
     version-number: '4.5'
-  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,fr-fr,de-de
 sidebar:
   entries:
   - title: SnapCenter 소프트웨어 4.7 설명서
