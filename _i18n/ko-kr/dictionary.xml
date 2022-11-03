@@ -7920,4 +7920,5 @@
   <block id="74fec6bb431ffa93b327d4933607ec3f" category="admonition">일관성을 위해 SnapCenter 문서는 사용 권한을 사용하는 역할을 나타냅니다. OnCommand 시스템 관리자 GUI는 _privilege_ 대신 _attribute_라는 용어를 사용합니다. ONTAP RBAC 역할을 설정할 때 이 두 용어는 모두 동일합니다.</block>
   <block id="654c0ff0573689496c47502d09cfe7a8" category="list-text">소스 데이터베이스 매개 변수 파일에서 exclude_seed_cdb_view의 값을 false로 설정하여 12_c_database의 백업 복제를 위한 시드 PDB 관련 정보를 검색해야 합니다.</block>
   <block id="dfb3e8f24407538f95c7f42d27411d1b" category="admonition">12_c_database를 백업하기 전에 값을 설정해야 합니다.</block>
+  <block id="98084b9b354e4b46189c9b89dc98527a" category="list-text"><block ref="e083e217410d0cc67271c8e1828e715a" prefix="" category="inline-code"></block></block>
 </blocks>

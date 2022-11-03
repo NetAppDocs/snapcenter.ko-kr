@@ -113,4 +113,5 @@ SVM 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy" - access all'
 * 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver iscsi" - access all'
 * 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "volume clone split status" - access all'
+* `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname “volume managed-feature” -access all`
 
