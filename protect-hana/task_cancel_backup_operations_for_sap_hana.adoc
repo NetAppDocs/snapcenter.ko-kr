@@ -1,14 +1,9 @@
----
-permalink: protect-hana/task_cancel_backup_operations_for_sap_hana.html 
-sidebar: sidebar 
-keywords:  
-summary: 대기열에 있는 백업 작업을 취소할 수 있습니다. 
----
-= SAP HANA의 백업 작업을 취소합니다
+= 
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
+
+'''
+Permalink: protect - HANA/task_cancel_backup_operations_for_sap_hana.html sidebar: sidebar keywords: 요약: '대기 중인 백업 작업을 취소할 수 있습니다.' SAP HANA의 백업 작업 취소: 아이콘: font:imagesdir:../media/
 
 대기열에 있는 백업 작업을 취소할 수 있습니다.
 

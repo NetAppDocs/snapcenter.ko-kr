@@ -184,9 +184,6 @@ SVM iSCSI 연결이 표시됩니다
 
 vserver show 를 참조하십시오
 
-|===
-|===
-| 읽기 전용 명령: ONTAP 8.3.0 이상에 필요한 최소 권한 
 
 
  a| 
@@ -195,5 +192,7 @@ vserver show 를 참조하십시오
 네트워크 인터페이스가 표시됩니다
 
 SVM
+
+MetroCluster 쇼
 
 |===

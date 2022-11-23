@@ -20,7 +20,7 @@ SnapCenter에는 애플리케이션, 데이터베이스, 파일 시스템 및 �
  a| 
 SnapCenter 표준 컨트롤러 기반
  a| 
-FAS, AFF 및 Amazon FSx에 필요합니다
+FAS 및 AFF에 필요합니다
 
 SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS 또는 AFF 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려면 세일즈 담당자에게 연락하여 프리미엄 번들 평가 라이센스를 받으십시오.
 

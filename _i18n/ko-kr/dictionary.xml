@@ -212,7 +212,6 @@
   <block id="91817a3c4feab4788ad5f16317cd2b5e" category="paragraph">내보낸 인증서에 사용할 새 암호를 지정하고 * 다음 * 을 클릭합니다.</block>
   <block id="262ae19666f55b8c3fbe02b43c8f93b8" category="paragraph">인증서 가져오기 마법사 완료</block>
   <block id="addd3f74b675e28bf71a9fb679c0fac1" category="paragraph">요약을 검토한 후 * Finish * 를 클릭하여 가져오기를 시작합니다.</block>
-  <block id="00f1ae92d58286283bc965b1952157af" category="admonition">인증서 가져오기는 개인 키와 함께 번들로 제공됩니다(지원되는 형식은 *.pfx, * P12, *.p7b).</block>
   <block id="104bdf61dc45d8330dd81b72891ea1ad" category="list-text">"개인" 폴더에 대해 5단계를 반복합니다.</block>
   <block id="83aeb7b594481ad598eb0b519836777b" category="summary">SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. SnapCenter 사용자 지정 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.</block>
   <block id="c48a2f5430d3aff55420b834363bcc46" category="doc">SnapCenter 사용자 지정 플러그인에서 지원하는 스토리지 유형입니다</block>
@@ -2571,12 +2570,6 @@
   <block id="e36c8512e3778b0a83d27f616b9ba1ff" category="paragraph">'보안 로그인 잠금 해제 - 사용자 &lt;user_name\&gt; - vserver &lt;cluster_name\&gt;'</block>
   <block id="d96a08e21a2a6f654ce7bfb34d9c3bf4" category="section-title">클러스터 역할을 생성하고 권한을 할당하는 ONTAP CLI 명령입니다</block>
   <block id="166504d6fb19fa3fcbbf622275eef589" category="paragraph">클러스터 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령을 실행해야 합니다.</block>
-  <block id="41d7ade3381c454a1329620f9f658b8b" category="list-text">'Security login role create - role_Name - cmddirname "cluster identity modify" - vserver Cluster_name or cluster_name - access all'</block>
-  <block id="6fb89d73c4a5ac47fffbb74dfa2e83f1" category="list-text">'Security login role create - role_Name - cmddirname "cluster identity show" - vserver Cluster_name - access all'</block>
-  <block id="065992cd0013f37f03b4e13303b9ba92" category="list-text">'Security login role create - role_Name - cmddirname "cluster modify" - vserver Cluster_name - access all'</block>
-  <block id="6cf57dddc7246be83fead826cd2d488b" category="list-text">'Security login role create - role_Name - cmddirname "cluster peer show" - vserver Cluster_name - access all'</block>
-  <block id="09835700a8ab8639649722dc18579f0c" category="list-text">'Security login role create - role_Name - cmddirname "cluster show" - vserver Cluster_name - access all'</block>
-  <block id="9d566854ec7ef14de553dc0b2222fae0" category="list-text">'Security login role create - role_Name - cmddirname' event generate-autosupport-log" - vserver Cluster_name - access all'</block>
   <block id="cd2a321672946fd6e39976559e1e72a9" category="list-text">'Security login role create - vserver Cluster_name - role Role_Name - cmddirname "job history show" - access all'</block>
   <block id="bb513c5a705eb742be0e75eb7c864f5b" category="list-text">'Security login role create - vserver Cluster_name - role Role_Name - cmddirname "job stop" - access all'</block>
   <block id="6435842f20dddcddfd00a9e7ec2f3111" category="list-text">'Security login role create - vserver Cluster_name - role Role_Name - cmddirname "lun" - access all'</block>
@@ -3506,7 +3499,6 @@
   <block id="780c0ca05b56b9c80b7a61ef7ff2efa8" category="summary">SnapCenter는 스토리지 시스템과 파일 시스템 레벨, SAP HANA 백업 카탈로그 내에서 로그 및 데이터 백업의 하우스키핑을 관리합니다.</block>
   <block id="9024e1f264db01cbcede096090ebf938" category="doc">SnapCenter에서 로그 및 데이터 백업의 관리 방법</block>
   <block id="d92a8f6f3c2b6a9c57099c523a22f5b2" category="paragraph">운영 또는 2차 스토리지의 스냅샷 복사본과 SAP HANA 카탈로그의 해당 항목이 보존 설정에 따라 삭제됩니다. 백업 및 리소스 그룹을 삭제하는 동안 SAP HANA 카탈로그 항목도 삭제됩니다.</block>
-  <block id="ffaafcbad8fa7abfb6f9166b4bc76388" category="doc">SAP HANA의 백업 작업을 취소합니다</block>
   <block id="8f088fc353589a53b22d09fce118b2a6" category="doc">SAP HANA 데이터베이스용 SnapCenter 플러그인에 대한 자격 증명 설정</block>
   <block id="afd7453bfb7b2ee3805b612dd9889484" category="summary">복구 및 복구 작업을 성공적으로 수행하려면 데이터베이스를 복원 및 복구하기 전에 전략을 정의해야 합니다.</block>
   <block id="f053b1c99159302e4282006cc7c9d970" category="doc">SAP HANA 리소스에 대한 복원 및 복구 전략 정의</block>
@@ -6614,25 +6606,12 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
-  <block id="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link"><block ref="de6edae22bc37b97b38a15c7f8af62e2" category="inline-link-rx"></block></block>
-  <block id="bb66384fc72d3c628df8a5f0f82af691" category="paragraph"><block ref="bb66384fc72d3c628df8a5f0f82af691" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">상표</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp, NetApp 로고, NetApp 상표 페이지에 나열된 마크는 NetApp Inc.의 상표입니다. 기타 회사 및 제품 이름은 해당 소유자의 상표일 수 있습니다.</block>
-  <block id="a93bc0a57623c2facaa010825c808507" category="inline-link"><block ref="a93bc0a57623c2facaa010825c808507" category="inline-link-rx"></block></block>
-  <block id="e895a12067be0bbd74a4e8b2b0aa1151" category="paragraph"><block ref="e895a12067be0bbd74a4e8b2b0aa1151" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">특허</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">NetApp 소유 특허 목록은 다음 사이트에서 확인할 수 있습니다.</block>
-  <block id="547ea2e305891e64d8e744949b0aca2c" category="inline-link"><block ref="547ea2e305891e64d8e744949b0aca2c" category="inline-link-rx"></block></block>
-  <block id="f48d97bbf0d920d837c970ab54fcbf14" category="paragraph"><block ref="f48d97bbf0d920d837c970ab54fcbf14" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">개인 정보 보호 정책</block>
-  <block id="50921fca0d376fca62102a5e608994e2" category="inline-link"><block ref="50921fca0d376fca62102a5e608994e2" category="inline-link-rx"></block></block>
-  <block id="3440f69304b6f0194e5502be93aede3f" category="paragraph"><block ref="3440f69304b6f0194e5502be93aede3f" category="inline-link-rx"></block></block>
-  <block id="b4de17ead867a3cf0b9d11e57e562672" category="section-title">기계 번역</block>
-  <block id="19d4bd8b5bc76a91b74c1aa69ecea894" category="paragraph">현지화된 컨텐츠에 대한 중요 정보.</block>
-  <block id="db9bfd81e26275c9db26e2db3ac172c3" category="inline-link"><block ref="db9bfd81e26275c9db26e2db3ac172c3" category="inline-link-rx"></block></block>
-  <block id="53028fa3036b4b4d8b4ba1c27bf5f0f8" category="paragraph"><block ref="53028fa3036b4b4d8b4ba1c27bf5f0f8" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
-  <block id="0d06100a9c9a8a7758a0d58988e99d2f" category="paragraph">이 제품에 사용된 타사 저작권 및 라이센스에 대한 정보를 제공합니다. 본 제품은 아래 언급된 소프트웨어 구성 요소를 모두 사용하는 것은 아닙니다.</block>
   <block id="6fc21adbf0e55cc3da583314e4540308" category="summary">각 API 요청은 클라이언트에 대한 응답을 다시 생성합니다. 응답을 검토하여 성공 여부를 확인하고 필요에 따라 추가 데이터를 검색해야 합니다.</block>
   <block id="976d8d5ed712e4649d1d7ad11f37cbdc" category="doc">API 응답 해석</block>
   <block id="0a289f551402f1b0bba7f13be5d7fdc4" category="section-title">HTTP 상태 코드입니다</block>
@@ -7315,7 +7294,6 @@
   <block id="bbbbcb8f41827abddd8ec6151fdf9e99" category="sidebar">SnapCenter 소프트웨어</block>
   <block id="27e7993c4841ae5fd670cdd945ccb96d" category="inline-link">재해 복구 API</block>
   <block id="90840bc3d6109c892e0f709274fdc6b6" category="paragraph">자세한 내용은 를 참조하십시오<block ref="af818973dd6acaf1e28a3bd4ca9bd4a5" category="inline-link-rx"></block> 비디오.</block>
-  <block id="699f1c0496b9360a6686498114b0be37" category="paragraph">FAS, AFF 및 Amazon FSx에 필요합니다</block>
   <block id="c6a05503c268c70227420c852ced4926" category="admonition">SnapCenter에서는 /etc/fstab 파일의 UUID 매핑을 지원하지 않습니다.</block>
   <block id="3160f4991d365988a865df5567f2147f" category="list-text">작업 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="1c41074e44dc2e55551dfb68d2bc354d" category="list-text">작업 세부 정보 페이지에서 * 로그 보기 * 를 클릭합니다.</block>
@@ -7921,4 +7899,21 @@
   <block id="654c0ff0573689496c47502d09cfe7a8" category="list-text">소스 데이터베이스 매개 변수 파일에서 exclude_seed_cdb_view의 값을 false로 설정하여 12_c_database의 백업 복제를 위한 시드 PDB 관련 정보를 검색해야 합니다.</block>
   <block id="dfb3e8f24407538f95c7f42d27411d1b" category="admonition">12_c_database를 백업하기 전에 값을 설정해야 합니다.</block>
   <block id="98084b9b354e4b46189c9b89dc98527a" category="list-text"><block ref="e083e217410d0cc67271c8e1828e715a" prefix="" category="inline-code"></block></block>
+  <block id="0d51371cbb850772d2130a36f4368df4" category="list-text">MetroCluster 쇼</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
+  <block id="1dee04b6f048297be6da9f8740c99b6d" category="admonition">인증서 가져오기는 개인 키와 함께 번들로 제공됩니다(지원되는 형식은 *.pfx, *.p12 및 *.p7b입니다).</block>
+  <block id="ad6e610d08a861e343805ef4cb444552" category="paragraph">Permalink:protect-scsql/task_clone_backups_using_powershell_cmdlets_for_sql.html sidebar:sidebar keywords:클론 요약:'클론 워크플로우에는 계획, 클론 작업 수행 및 작업 모니터링이 포함됩니다.' PowerShell cmdlet을 사용한 클론 백업: 아이콘: font:imagesdir:./media/</block>
+  <block id="bd259d74a88fa9ae4cdb9c027643d76a" category="paragraph">FAS 및 AFF에 필요합니다</block>
+  <block id="56b5155701c0c0dd57595a6dd3daf917" category="list-text"><block ref="336b55519098bef0384fc43c7f43f47b" prefix="" category="inline-code"></block></block>
+  <block id="eda6105c4f159883b951dcd044964c6f" category="list-text"><block ref="2c9674954a47108e373e077d3bcb8357" prefix="" category="inline-code"></block></block>
+  <block id="4cf7cdb80a69806b961d32bc57f3ac26" category="list-text"><block ref="ad3921143a52d77fc513fd3dae33e149" prefix="" category="inline-code"></block></block>
+  <block id="7b7a10c598084df58b9da02c47af7a60" category="list-text"><block ref="f6adba9e3b22137c40b1d75ee2b37e75" prefix="" category="inline-code"></block></block>
+  <block id="d8135ce9a2bd17b9c659e4605801a778" category="list-text"><block ref="f659aa294fff6eaecdf95876c173adf6" prefix="" category="inline-code"></block></block>
+  <block id="dde541c94f2b033571de6bfe76fcf3c3" category="list-text"><block ref="234efccf9d477e939eeae95c37c1803f" prefix="" category="inline-code"></block></block>
+  <block id="e2bb7a9783ce9c6c02e6001911562e16" category="list-text"><block ref="2e72f8b3689961923dec66f94cdf620f" prefix="" category="inline-code"></block></block>
+  <block id="91ae9720ac69723481c4de57234c575e" category="paragraph">Permalink: protect - HANA/task_cancel_backup_operations_for_sap_hana.html sidebar: sidebar keywords: 요약: '대기 중인 백업 작업을 취소할 수 있습니다.' SAP HANA의 백업 작업 취소: 아이콘: font:imagesdir:../media/</block>
 </blocks>
