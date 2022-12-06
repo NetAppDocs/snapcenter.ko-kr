@@ -15,7 +15,7 @@ entries:
   - title: 사전 정의된 SnapCenter 역할 및 권한
     url: "/concept/reference_pre_defined_snapcenter_roles_and_permissions.html"
 - title: 재해 복구
-  url: "/protect-concept/concept_disaster_recovery.html"
+  url: "/concept/concept_disaster_recovery.html"
 - title: 리소스, 리소스 그룹 및 정책
   url: "/concept/concept_resources_resource_groups_and_policies.html"
 - title: 사전 스크립트 및 포스트스크립트
