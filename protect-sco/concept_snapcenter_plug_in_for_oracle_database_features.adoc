@@ -75,4 +75,18 @@ Oracle Database용 플러그인은 다음과 같은 이점도 제공합니다.
 
 NOTE: 커널에서 기본 다중 경로 옵션을 설정하여 NVMe 장치에 대한 다중 경로 솔루션을 구성할 수 있습니다. 장치 매퍼(DM) 다중 경로가 지원되지 않습니다.
 
-+ 지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=103047;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+* Oracle 및 그리드 대신 기본이 아닌 모든 사용자를 지원합니다.
++
+기본값이 아닌 사용자를 지원하려면 _FILE/var/opt/snapcenter/sSCO/etc/_에 있는 * sco.properties* 파일에서 매개 변수 값을 수정하여 기본값이 아닌 사용자를 설정해야 합니다.
+
++
+매개 변수의 기본값은 Oracle 및 GRID로 설정됩니다.
+
++
+** db_user=oracle입니다
+** db_group=oinstall을 선택합니다
+** gi_user = 그리드
+** GI_GROUP = oinstall.(Gi_group = 설치
+
+
+

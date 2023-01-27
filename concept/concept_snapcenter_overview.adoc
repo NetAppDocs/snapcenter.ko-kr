@@ -28,16 +28,19 @@ SnapCenter는 다음과 같은 방법으로 구축할 수 있습니다.
 +
 ** ONTAP FAS 또는 AFF 기본 시스템에 있으며 ONTAP FAS 또는 AFF 보조 시스템에 복제된 데이터입니다
 ** ONTAP Select 운영 시스템에 있는 데이터
+** ONTAP FAS 또는 AFF 운영 및 2차 시스템에 있으며 로컬 StorageGRID 오브젝트 스토리지로 보호되는 데이터(NetApp BlueXP 클라우드 백업 통합 사용)
 
 
 * 하이브리드 클라우드의 사내 로 다음을 보호:
 +
-** ONTAP FAS 또는 AFF 기본 시스템에 있으며 Cloud Volumes ONTAP 또는 NetApp 프라이빗 스토리지 2차 시스템에 복제된 데이터입니다
+** ONTAP FAS 또는 AFF 기본 시스템에 있으며 Cloud Volumes ONTAP에 복제된 데이터입니다
+** ONTAP FAS 또는 AFF 운영 및 2차 시스템에 있으며 클라우드의 오브젝트 및 아카이브 스토리지로 보호되는 데이터(NetApp BlueXP 클라우드 백업 통합 사용)
 
 
 * 퍼블릭 클라우드에서 다음을 보호합니다.
 +
 ** Cloud Volumes ONTAP(이전의 ONTAP 클라우드) 운영 시스템에 있는 데이터
+** ONTAP용 Amazon FSX에 있는 데이터입니다
 
 
 
@@ -82,10 +85,10 @@ SnapCenter에는 모든 오케스트레이션 소프트웨어와 통합할 수 �
 REST API에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html["REST API 개요"].
 
 +
-Windows cmdlet에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+Windows cmdlet에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 +
-UNIX 명령에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301["SnapCenter 소프트웨어 명령 참조 가이드"^].
+UNIX 명령에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885486["SnapCenter 소프트웨어 명령 참조 가이드"^].
 
 * 중앙 집중식 데이터 보호 대시보드 및 보고
 * 보안 및 위임을 위한 역할 기반 액세스 제어(RBAC).

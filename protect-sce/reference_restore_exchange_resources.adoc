@@ -17,4 +17,4 @@ SnapCenter를 사용하여 하나 이상의 백업을 활성 파일 시스템에
 
 image:../media/all_plug_ins_restore_workflow.png[""]
 
-PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업 및 복원 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업 및 복원 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].

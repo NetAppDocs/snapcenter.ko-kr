@@ -17,7 +17,7 @@ summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 �
 
 다음 명령을 실행하여 Oracle 데이터베이스 클론 사양 파일을 생성하고 클론 작업을 시작해야 합니다.
 
-명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301["SnapCenter 소프트웨어 명령 참조 가이드"^].
+명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885486["SnapCenter 소프트웨어 명령 참조 가이드"^].
 
 * 단계 *
 

@@ -10,6 +10,20 @@ summary: 다른 대체 방법을 사용하여 Linux용 SnapCenter 플러그인 �
 :imagesdir: ../media/
 
 
+[role="lead"]
+cmdlet 또는 CLI를 사용하여 Linux 또는 AIX용 플러그인 패키지를 수동으로 설치할 수도 있습니다.
+
+플러그인을 수동으로 설치하기 전에 _C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * snapcenter_public_key.pub * 및 * snapcenter_linux_host_plugin.bin.SIG * 키를 사용하여 바이너리 패키지의 서명을 확인해야 합니다.
+
+
+NOTE: 플러그인을 설치할 호스트에 * OpenSSL 1.0.2g * 가 설치되어 있는지 확인합니다.
+
+다음 명령을 실행하여 바이너리 패키지의 서명을 확인합니다.
+
+* Linux 호스트의 경우: `openssl dgst -sha256 -verify snapcenter_public_key.pub -signature snapcenter_linux_host_plugin.bin.sig snapcenter_linux_host_plugin.bin`
+* AIX 호스트의 경우: `openssl dgst -sha256 -verify snapcenter_public_key.pub -signature snapcenter_linux_host_plugin.bsx.sig snapcenter_linux_host_plugin.bsx`
+
+
 
 
 == cmdlet을 사용하여 여러 원격 호스트에 설치합니다
@@ -35,7 +49,7 @@ NOTE: 사전 확인 스크립트는 방화벽 거부 규칙에 지정된 플러�
 . 원격 설치를 위한 자격 증명을 입력합니다.
 
 
-cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 
 
@@ -65,9 +79,9 @@ NOTE: 다른 SnapCenter 작업이 실행 중인 동안 페일오버가 발생하
 
 
 
-== Linux용 플러그인 패키지를 자동 모드 또는 콘솔 모드로 설치합니다
+== Linux용 플러그인 패키지를 자동 모드로 설치합니다
 
-CLI(명령줄 인터페이스)를 사용하여 콘솔 모드 또는 자동 모드에서 Linux용 SnapCenter 플러그인 패키지를 설치할 수 있습니다.
+CLI(명령줄 인터페이스)를 사용하여 Linux용 SnapCenter 플러그인 패키지를 자동 모드로 설치할 수 있습니다.
 
 * 필요한 것 *
 
@@ -89,32 +103,10 @@ CLI(명령줄 인터페이스)를 사용하여 콘솔 모드 또는 자동 모�
 기본 설치 경로는 _C:\ProgramData\NetApp\SnapCenter\PackageRepository_입니다. 이 경로는 SnapCenter 서버가 설치된 호스트에서 액세스할 수 있습니다.
 
 . 명령 프롬프트에서 설치 파일을 다운로드한 디렉토리로 이동합니다.
-. 기본 설치 모드에 따라 다음 단계 중 하나를 수행합니다.
+. 실행
 +
-|===
-| 설치 모드 | 단계 
-
-
- a| 
-콘솔 모드
- a| 
-.. 실행:
-+
-'./SnapCenter_linux_host_plugin.bin – i console'
-
-.. 화면의 지시에 따라 설치를 완료합니다.
-
-
-
-
- a| 
-자동 모드
- a| 
-실행:
-
 './SnapCenter_Linux_HOST_PLUGIN.BIN-I Silent-dport=8145-DSERVER_IP=SnapCenter_Server_FQDN-DSERVER_HTTPS_PORT=SnapCenter_Server_Port-DUSER_INSTALL_DIR==/OPT/CUSTOM_PATH'
 
-|===
 . spL_enabled_plugins=SCO, SCU를 추가한 다음 SnapCenter 플러그인 로더 서비스를 다시 시작하려면 _/var/opt/snapcenter/spl/etc/_에 있는 spl.properties 파일을 편집합니다.
 
 

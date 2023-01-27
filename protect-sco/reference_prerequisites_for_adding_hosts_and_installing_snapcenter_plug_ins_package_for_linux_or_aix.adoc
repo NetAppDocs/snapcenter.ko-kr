@@ -16,14 +16,18 @@ summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에
 * iSCSI를 사용하는 경우 iSCSI 서비스가 실행 중이어야 합니다.
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
 +
-Oracle 데이터베이스용 SnapCenter 플러그인은 루트가 아닌 사용자가 설치할 수 있습니다. 그러나 비루트 사용자에 대한 sudo 권한을 구성하여 플러그인 프로세스를 설치하고 시작해야 합니다. 플러그인을 설치하면 프로세스가 효과적인 루트 사용자로 실행됩니다.
+Oracle 데이터베이스용 SnapCenter 플러그인은 루트가 아닌 사용자가 설치할 수 있습니다. 그러나 비루트 사용자에 대한 sudo 권한을 구성하여 플러그인 프로세스를 설치하고 시작해야 합니다. 플러그인을 설치하면 프로세스가 루트가 아닌 효과적인 사용자로 실행됩니다.
 
 * AIX 호스트에 AIX용 SnapCenter 플러그인 패키지를 설치하는 경우 디렉토리 레벨 심볼 링크를 수동으로 해결해야 합니다.
 +
 AIX용 SnapCenter 플러그인 패키지는 파일 레벨 심볼 링크를 자동으로 확인하지만 java_home 절대 경로를 얻기 위한 디렉토리 레벨 심볼 링크는 확인하지는 않습니다.
 
 * 설치 사용자에 대해 인증 모드를 Linux 또는 AIX로 사용하여 자격 증명을 작성합니다.
-* Linux 또는 AIX 호스트에 Java 1.8.x, 64비트를 설치해야 합니다.
+* Linux 또는 AIX 호스트에 Java 1.8.x 또는 Java 11, 64비트를 설치해야 합니다.
++
+
+NOTE: Linux 호스트에 Java 11의 인증된 버전만을 설치했는지 확인합니다.
+
 +
 Java를 다운로드하는 방법에 대한 자세한 내용은 다음을 참조하십시오.
 
@@ -87,7 +91,12 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-Java 1.8.x(64비트) Oracle Java 및 OpenJDK의 기능
+* Java 1.8.x(64비트) Oracle Java 및 OpenJDK의 기능
+* Java 11(64비트) Oracle Java 및 OpenJDK의 기능
+
+
+
+NOTE: Linux 호스트에 Java 11의 인증된 버전만을 설치했는지 확인합니다.
 
 Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.
 
@@ -98,12 +107,11 @@ Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/et
 
 === Linux 호스트에 대해 루트가 아닌 사용자에 대한 sudo 권한을 구성합니다
 
-SnapCenter 2.0 이상 버전에서는 루트가 아닌 사용자가 Linux용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.
+SnapCenter 2.0 이상 버전에서는 루트가 아닌 사용자가 Linux용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 플러그인 프로세스는 효과적인 비루트 사용자로 실행됩니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.
 
 * 필요한 것 *
 
-* sudo 버전 1.8.7 ~ 1.8.19P2.
-* 루트가 아닌 사용자가 Oracle 설치 그룹에 속하는지 확인합니다.
+* sudo 버전 1.8.7 이상
 * MAC HMAC-SHA2-256 및 MAC HMAC-SHA2-512의 메시지 인증 코드 알고리즘을 구성하려면 _/etc/ssh/sshd_config_file을 편집합니다.
 +
 구성 파일을 업데이트한 후 sshd 서비스를 다시 시작합니다.
@@ -132,13 +140,10 @@ MACs hmac-sha2-256
 
 루트가 아닌 사용자에 대해 sudo 권한을 구성하여 다음 경로에 대한 액세스를 제공해야 합니다.
 
-* /home/_sudo_user_/.sc_netapp/snapcenter_linux_host_plugin.bin
+* /home/_linux_user_/.sc_netapp/snapcenter_linux_host_plugin.bin
 * /custom_location/netapp/snapcenter/SPL/설치/플러그인/제거
 * /custom_location/NetApp/snapcenter/SPL/bin/SPL입니다
 
-
-
-NOTE: RAC 설정을 관리하는 경우 루트가 아닌 사용자는 Oracle 사용자여야 하며 루트가 아닌 OS 사용자일 수 없습니다.
 
 * 단계 *
 
@@ -147,35 +152,32 @@ NOTE: RAC 설정을 관리하는 경우 루트가 아닌 사용자는 Oracle 사
 +
 [listing, subs="+quotes"]
 ----
-Cmnd_Alias SCCMD = sha224:checksum_value== /home/_SUDO_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin,
-/opt/NetApp/snapcenter/spl/installation/plugins/uninstall,
-/opt/NetApp/snapcenter/spl/bin/spl
-Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_SUDO_USER_/.sc_netapp/Linux_Prechecks.sh
-_SUDO_USER_ ALL=(ALL) NOPASSWD:SETENV: SCCMD, PRECHECKCMD
-Defaults: _SUDO_USER_ env_keep=JAVA_HOME
-Defaults: _SUDO_USER_ !visiblepw
-Defaults: _SUDO_USER_ !requiretty
+Cmnd_Alias HPPLCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin, /opt/NetApp/snapcenter/spl/installation/plugins/uninstall, /opt/NetApp/snapcenter/spl/bin/spl, /opt/NetApp/snapcenter/scc/bin/scc
+Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/Linux_Prechecks.sh
+Cmnd_Alias CONFIGCHECKCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/plugins/scu/scucore/configurationcheck/Config_Check.sh
+Cmnd_Alias SCCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/bin/sc_command_executor
+Cmnd_Alias SCCCMDEXECUTOR =checksum_value== /opt/NetApp/snapcenter/scc/bin/sccCommandExecutor
+_LINUX_USER_ ALL=(ALL) NOPASSWD:SETENV: HPPLCMD, PRECHECKCMD, CONFIGCHECKCMD, SCCCMDEXECUTOR, SCCMD
+Defaults: _LINUX_USER_ !visiblepw
+Defaults: _LINUX_USER_ !requiretty
 ----
 +
-_sudo_user_는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.
 
-+
-체크섬 값은 _C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * oracle_checksum.txt * 파일에서 확인할 수 있습니다.
+NOTE: 다른 허용 명령과 함께 RAC 설정을 사용하는 경우 다음을 /etc/sudoers 파일에 추가해야 합니다. '/<crs_home>/bin/olsnodes'
 
-+
+
+
+_/etc/oracle/OLR.loc_file에서 _CRS_HOME_ 값을 가져올 수 있습니다.
+
+_linux_user_는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.
+
+_C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * Oracle_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.
+
 사용자 지정 위치를 지정한 경우 위치는 _CUSTOM_PATH\NetApp\SnapCenter\Package Repository_입니다.
 
-+
 
 IMPORTANT: 이 예제는 고유한 데이터를 만들기 위한 참조로만 사용해야 합니다.
 
-
-
-|===
-
-
-| *모범 사례:* 보안상의 이유로 설치 또는 업그레이드를 모두 완료한 후 sudo 항목을 제거해야 합니다. 
-|===
 
 
 == AIX 호스트 요구 사항
@@ -216,7 +218,9 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-Java 1.8.x(64비트) IBM Java
+* Java 1.8.x(64비트) IBM Java
+* Java 11(64비트) IBM Java
+
 
 Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.
 
@@ -227,12 +231,11 @@ Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/et
 
 === AIX 호스트에 대한 루트가 아닌 사용자에 대한 sudo 권한을 구성합니다
 
-SnapCenter 4.4 이상에서는 루트가 아닌 사용자가 AIX용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.
+SnapCenter 4.4 이상에서는 루트가 아닌 사용자가 AIX용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 플러그인 프로세스는 효과적인 비루트 사용자로 실행됩니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.
 
 * 필요한 것 *
 
-* sudo 버전 1.8.7 ~ 1.8.19P2.
-* 루트가 아닌 사용자가 Oracle 설치 그룹에 속하는지 확인합니다.
+* sudo 버전 1.8.7 이상
 * MAC HMAC-SHA2-256 및 MAC HMAC-SHA2-512의 메시지 인증 코드 알고리즘을 구성하려면 _/etc/ssh/sshd_config_file을 편집합니다.
 +
 구성 파일을 업데이트한 후 sshd 서비스를 다시 시작합니다.
@@ -266,9 +269,6 @@ MACs hmac-sha2-256
 * /custom_location/NetApp/snapcenter/SPL/bin/SPL입니다
 
 
-
-NOTE: RAC 설정을 관리하는 경우 루트가 아닌 사용자는 Oracle 사용자여야 하며 루트가 아닌 OS 사용자일 수 없습니다.
-
 * 단계 *
 
 . AIX용 SnapCenter 플러그인 패키지를 설치할 AIX 호스트에 로그인합니다.
@@ -276,34 +276,32 @@ NOTE: RAC 설정을 관리하는 경우 루트가 아닌 사용자는 Oracle 사
 +
 [listing, subs="+quotes"]
 ----
-Cmnd_Alias SCCMD = sha224:checksum_value== /home/_AIX_USER_/.sc_netapp/snapcenter_aix_host_plugin.bsx,
-/opt/NetApp/snapcenter/spl/installation/plugins/uninstall,
-/opt/NetApp/snapcenter/spl/bin/spl
+Cmnd_Alias HPPACMD = sha224:checksum_value== /home/_AIX_USER_/.sc_netapp/snapcenter_aix_host_plugin.bsx,
+/opt/NetApp/snapcenter/spl/installation/plugins/uninstall, /opt/NetApp/snapcenter/spl/bin/spl
 Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_AIX_USER_/.sc_netapp/AIX_Prechecks.sh
-_AIX_USER_ ALL=(ALL) NOPASSWD:SETENV: SCCMD, PRECHECKCMD
+Cmnd_Alias CONFIGCHECKCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/plugins/scu/scucore/configurationcheck/Config_Check.sh
+Cmnd_Alias SCCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/bin/sc_command_executor
+_AIX_USER_ ALL=(ALL) NOPASSWD:SETENV: HPPACMD, PRECHECKCMD, CONFIGCHECKCMD, SCCMD
 Defaults: _AIX_USER_ !visiblepw
 Defaults: _AIX_USER_ !requiretty
 ----
 +
+
+NOTE: 다른 허용 명령과 함께 RAC 설정을 사용하는 경우 다음을 /etc/sudoers 파일에 추가해야 합니다. '/<crs_home>/bin/olsnodes'
+
+
+
+_/etc/oracle/OLR.loc_file에서 _CRS_HOME_ 값을 가져올 수 있습니다.
+
 _AIX_USER_는 사용자가 작성한 루트가 아닌 사용자의 이름입니다.
 
-+
-체크섬 값은 _C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * oracle_checksum.txt * 파일에서 확인할 수 있습니다.
+_C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * Oracle_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.
 
-+
 사용자 지정 위치를 지정한 경우 위치는 _CUSTOM_PATH\NetApp\SnapCenter\Package Repository_입니다.
 
-+
 
 IMPORTANT: 이 예제는 고유한 데이터를 만들기 위한 참조로만 사용해야 합니다.
 
-
-
-|===
-
-
-| *모범 사례:* 보안상의 이유로 설치 또는 업그레이드를 모두 완료한 후 sudo 항목을 제거해야 합니다. 
-|===
 
 
 == 자격 증명을 설정합니다

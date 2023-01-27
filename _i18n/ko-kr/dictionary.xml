@@ -294,7 +294,6 @@
   <block id="07af457ed5409f58b0d5ca2b41b5ec39" category="inline-link-macro">응용 프로그램용 플러그인을 개발합니다</block>
   <block id="0f06c6acfdc3dffd800e63c8779e7702" category="paragraph"><block ref="0f06c6acfdc3dffd800e63c8779e7702" category="inline-link-macro-rx"></block></block>
   <block id="68fb2fed97574d4bec00513cc08371c2" category="list-text">MySQL 또는 DB2 애플리케이션을 관리하려면 NetApp에서 제공하는 MySQL 및 DB2 사용자 지정 플러그인을 다운로드해야 합니다.</block>
-  <block id="f89305d1d014c12309b5d1517ccb86c1" category="list-text">Linux 또는 Windows 호스트에 Java 1.8, 64비트를 설치해야 합니다.</block>
   <block id="0653ebf18e2e782a5156c7cfd676052f" category="list-text">Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자에 속한 경우 호스트에서 UAC를 비활성화해야 합니다.</block>
   <block id="f6435544e19487a5d349a72241d6531d" category="list-text">호스트 추가 작업이 수행되는 클라이언트 호스트에서 사용자 지정 플러그인을 사용할 수 있어야 합니다.</block>
   <block id="0db377921f4ce762c62526131097968f" category="section-title">일반</block>
@@ -304,12 +303,8 @@
   <block id="dbef26874057ae0be535fee20766f8cb" category="list-text">SnapCenter에서 클러스터 노드를 관리하는 경우 클러스터의 모든 노드에 대한 관리 권한이 있는 사용자가 있어야 합니다.</block>
   <block id="cfe19b0ae08454358fbe515d88fd6095" category="section-title">Linux 호스트</block>
   <block id="92f854eabda8c2aa761e01fba1c6ffd4" category="list-text">루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.</block>
-  <block id="77e7447575a3762683d98ed271c3c484" category="list-text">Linux 호스트에 Java 1.8 64비트를 설치해야 합니다.</block>
-  <block id="a4e3a610e00b4c12463fae493d4a60a0" category="paragraph">SnapCenter 서버 호스트에 Windows 2019 또는 Windows 2016을 사용하는 경우 Java 1.8, 64비트를 설치해야 합니다. 상호 운용성 매트릭스 툴(IMT): 요구사항에 대한 최신 정보를 제공합니다.</block>
   <block id="6919c26b69875a76335f5a1dd643e508" category="inline-link">모든 운영 체제에 대한 Java 다운로드</block>
   <block id="9226092112d9484949841b47e3b0500e" category="paragraph"><block ref="9226092112d9484949841b47e3b0500e" category="inline-link-rx"></block></block>
-  <block id="37a4cc09c312ec6afaacfc25056bc091" category="list-text">여러 경로에 대한 액세스를 제공하려면 비루트 사용자에 대해 sudo 권한을 구성해야 합니다. visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다. 예를 들면, 다음과 같습니다.</block>
-  <block id="68c649f38a72af40607349aa57e26c9f" category="paragraph">non_root_user 는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.</block>
   <block id="5e398ea531b7d56ad433ce2103049eab" category="summary">필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)\ 등이 있습니다.</block>
   <block id="fee335c3c26419e1b2971157844984a7" category="doc">필요한 백업 작업 수입니다</block>
   <block id="8b3a2edf035fc93730de54663ee89cc2" category="paragraph">필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)가 포함됩니다.</block>
@@ -605,9 +600,6 @@
   <block id="365baef9f1edf6ea17574e122b03eb49" category="list-text">다음 명령을 실행하여 SMCore 기본 포트 8145를 사용하여 기존 인증서 바인딩을 제거합니다.</block>
   <block id="3109a55b6060cd504e355fdd531a0e16" category="paragraph">"&gt;netsh http delete sslcert ipport=0.0.0.0:_&lt;SMCore Port&gt;"를 선택합니다</block>
   <block id="cfeefc3191032a82f3264d4300d89c85" category="list-text">다음 명령을 실행하여 새로 설치된 인증서를 Windows 호스트 플러그인 서비스와 바인딩합니다.</block>
-  <block id="99c470daf80afb33d111c92f14095194" category="paragraph">"&gt;$cert="_&lt;certificate thumbprint&gt;_"</block>
-  <block id="20fb30dfe9f1ec90bb124da18ae04452" category="paragraph">'&gt;$GUID=[GUID]::NewGuid().ToString("B")'</block>
-  <block id="318849febfe915a444ce0f492dcc3995" category="paragraph">"&gt;netsh http add sslcert ipport=0.0.0.0:_&lt;SMCore Port&gt;_CertHash=$cert AppID="$GUID""</block>
   <block id="aa5531c2ecb8be9440f8c1f83b8e7d4f" category="summary">리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다.</block>
   <block id="7f9a1e0f8fc64e3f207d5cd83dd8e67f" category="doc">리소스 그룹을 생성하고 정책을 연결합니다</block>
   <block id="a04d5d44d1dc39ffabb036a653aa3bd2" category="paragraph">리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다. 모든 데이터 보호 작업에는 리소스 그룹이 필요합니다. 또한 수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.</block>
@@ -5154,7 +5146,6 @@
   <block id="cb21f64b7aa1d58307ba1cfcc254fb77" category="paragraph">리소스(데이터베이스) 또는 리소스 그룹의 백업을 생성할 수 있습니다. 백업 워크플로우에는 계획, 백업용 리소스 식별, 백업 정책 생성, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다.</block>
   <block id="fb21695f6b72866357b3e3381a3dd8d4" category="image-alt">Oracle용 백업 워크플로우</block>
   <block id="74be1413d8c1294602864c1d9e25f626" category="paragraph">그러나 이전 백업이 경고와 함께 완료된 경우 운영 잠금 파일이 삭제되지 않고 다음 백업 작업이 대기 큐로 들어갑니다. sm_lock_dbsid * 파일이 삭제되지 않으면 결국 취소될 수 있습니다. 이러한 경우 다음 단계를 수행하여 운영 잠금 파일을 수동으로 삭제해야 합니다.</block>
-  <block id="aededc4f899d57c4f01639108c3e587e" category="list-text">명령 프롬프트에서 $ORACLE_HOME/dbs로 이동합니다.</block>
   <block id="3ab07b443e5100312a8428cab6f6a083" category="list-text">작동 잠금인 rm-rf.sm_lock_dbsid를 삭제합니다</block>
   <block id="23257e3404df9a371ee4e65b5f6db441" category="summary">Oracle 데이터베이스를 복제하기 전에 필수 구성 요소가 완료되었는지 확인해야 합니다.</block>
   <block id="c3f3510a6fc8f24504e19e3fa075dcd8" category="doc">Oracle 데이터베이스 클론 생성 요구 사항</block>
@@ -5522,7 +5513,6 @@
   <block id="98ecfe0d837e77006a17452ca412bc0a" category="doc">Oracle 데이터베이스 복원 및 복구</block>
   <block id="588fdca387b41a3ed6e9915f94a10eb5" category="paragraph">복구는 구성된 아카이브 로그 위치에서 사용할 수 있는 아카이브 로그를 사용하여 수행됩니다. 데이터베이스가 ARCHIVELOG 모드에서 실행 중인 경우 Oracle 데이터베이스는 채워진 REDO 로그 파일 그룹을 하나 이상의 오프라인 대상(집합적으로 아카이빙된 REDO 로그라고 함)에 저장합니다. SnapCenter는 지정된 SCN, 선택한 날짜 및 시간 또는 모든 로그 옵션을 기반으로 최적의 로그 백업 수를 식별하고 마운트합니다. 복구에 필요한 아카이브 로그를 구성된 위치에서 사용할 수 없는 경우 로그를 포함하는 스냅샷 복사본을 마운트하고 경로를 외부 아카이브 로그로 지정해야 합니다.</block>
   <block id="fbb97552b0524a5656aa7f96bad51e9d" category="paragraph">ASMlib에서 ASMFD로 ASM 데이터베이스를 마이그레이션할 경우 ASMlib를 통해 생성된 백업을 사용하여 데이터베이스를 복원할 수 없습니다. ASMFD 구성에서 백업을 생성하고 이 백업을 사용하여 복원해야 합니다. 마찬가지로 ASM 데이터베이스가 ASMFD에서 ASMlib로 마이그레이션될 경우 ASMlib 구성에서 백업을 생성하여 복원해야 합니다.</block>
-  <block id="1acd8224c87a1b1dc19ffd6fa16675a0" category="paragraph">데이터베이스를 복구할 때 데이터베이스에서 여러 작업이 실행되지 않도록 Oracle 데이터베이스 호스트의 $ORACLE_HOME/dbs 디렉토리에 운영 잠금 파일(.sm_lock_dbsid)이 생성됩니다. 데이터베이스가 복원되면 운영 잠금 파일이 자동으로 제거됩니다.</block>
   <block id="0555155513875ba53e743b223483c213" category="admonition">SPFILE 및 암호 파일의 복원은 지원되지 않습니다.</block>
   <block id="e760b586cefa27f7097ba67da884d07c" category="list-text">데이터베이스 세부 정보 보기 또는 리소스 그룹 세부 정보 보기에서 데이터베이스를 선택합니다.</block>
   <block id="f05b46d73f8ba8658025a02ed06f70c7" category="list-text">테이블에서 백업을 선택한 다음 * 를 클릭합니다<block ref="401f8f248ae37b21256b9fc8e83bcaa3" category="inline-image-macro-rx" type="image"></block>*.</block>
@@ -6062,11 +6052,9 @@
   <block id="f53e56a4d19d8e8ec1f0bcbeb8901201" category="list-text">호스트에 직접 연결된 LUN(예: Windows 호스트의 Microsoft iSCSI Initiator 사용)에서 동일한 Windows 호스트의 VMDK 또는 RDM LUN에 또는 다른 Windows 호스트의 RDM LUN에 대한 데이터베이스 클론 생성은 지원되지 않습니다.</block>
   <block id="9bb2c52e1872acfc5eceefc0b22ce45b" category="doc">Oracle 데이터베이스 클론 작업을 모니터링합니다</block>
   <block id="826556e756cdab94a0e1867b949a6a62" category="doc">호스트를 추가하고 Linux 또는 AIX용 플러그인 패키지를 설치하기 위한 사전 요구 사항</block>
-  <block id="3b859f32496d3f2bcdf0f4018df92a19" category="paragraph">Oracle 데이터베이스용 SnapCenter 플러그인은 루트가 아닌 사용자가 설치할 수 있습니다. 그러나 비루트 사용자에 대한 sudo 권한을 구성하여 플러그인 프로세스를 설치하고 시작해야 합니다. 플러그인을 설치하면 프로세스가 효과적인 루트 사용자로 실행됩니다.</block>
   <block id="b2e43cf8357eaf43ddb786837e13f48b" category="list-text">AIX 호스트에 AIX용 SnapCenter 플러그인 패키지를 설치하는 경우 디렉토리 레벨 심볼 링크를 수동으로 해결해야 합니다.</block>
   <block id="7ea03b56d913b0b846ddb14167eed21a" category="paragraph">AIX용 SnapCenter 플러그인 패키지는 파일 레벨 심볼 링크를 자동으로 확인하지만 java_home 절대 경로를 얻기 위한 디렉토리 레벨 심볼 링크는 확인하지는 않습니다.</block>
   <block id="b5920495a710a16336b4343815e09685" category="list-text">설치 사용자에 대해 인증 모드를 Linux 또는 AIX로 사용하여 자격 증명을 작성합니다.</block>
-  <block id="374d8bb4c8991242f4d1db3a5f9de15b" category="list-text">Linux 또는 AIX 호스트에 Java 1.8.x, 64비트를 설치해야 합니다.</block>
   <block id="697264ee44b8135822004ecfca316383" category="paragraph">Java를 다운로드하는 방법에 대한 자세한 내용은 다음을 참조하십시오.</block>
   <block id="b39cb17b9cdc66c349706beec444daeb" category="list-text"><block ref="b39cb17b9cdc66c349706beec444daeb" category="inline-link-rx"></block></block>
   <block id="bc48cf3211c060ba15626ae660001fc7" category="inline-link">AIX용 IBM Java</block>
@@ -6077,29 +6065,21 @@
   <block id="8be45a76eb810a7022d2e3f4f9917085" category="section-title">Linux 호스트 요구 사항</block>
   <block id="c2d742e2aecdede3243c86015a588b10" category="admonition">Oracle Linux 또는 Red Hat Enterprise Linux 6.6 또는 7.0 운영 체제의 LVM에서 Oracle 데이터베이스를 사용하는 경우 최신 버전의 LVM(Logical Volume Manager)을 설치해야 합니다.</block>
   <block id="b8be58329edfa59d774ce8216f3afcfe" category="section-title">Linux 호스트에 대해 루트가 아닌 사용자에 대한 sudo 권한을 구성합니다</block>
-  <block id="2ea002d427cbfb999f631ee124f6c1e4" category="paragraph">SnapCenter 2.0 이상 버전에서는 루트가 아닌 사용자가 Linux용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.</block>
-  <block id="15365f4ad2016523469fa400d8c372e8" category="list-text">루트가 아닌 사용자가 Oracle 설치 그룹에 속하는지 확인합니다.</block>
   <block id="9fc7e0af2d8808b59624854d31dab1bb" category="list-text">MAC HMAC-SHA2-256 및 MAC HMAC-SHA2-512의 메시지 인증 코드 알고리즘을 구성하려면 _/etc/ssh/sshd_config_file을 편집합니다.</block>
   <block id="a522c9aaeab8d877d6b5ee133ac06025" category="paragraph">구성 파일을 업데이트한 후 sshd 서비스를 다시 시작합니다.</block>
   <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">예:</block>
   <block id="a7016f1c2daee7897ce7d4eca17cda75" category="paragraph">루트가 아닌 사용자에 대해 sudo 권한을 구성하여 다음 경로에 대한 액세스를 제공해야 합니다.</block>
-  <block id="bf73671827fef4f1a412173c21cca9e0" category="list-text">/home/_sudo_user_/.sc_netapp/snapcenter_linux_host_plugin.bin</block>
   <block id="9bdf1f7010d0194ec04db4d5e52f9b98" category="list-text">/custom_location/netapp/snapcenter/SPL/설치/플러그인/제거</block>
   <block id="662f0ac9bbed9d4111fe177372a0dc72" category="list-text">/custom_location/NetApp/snapcenter/SPL/bin/SPL입니다</block>
   <block id="4e665afb5c15dd75650eeba423b153f0" category="list-text">Linux용 SnapCenter 플러그인 패키지를 설치할 Linux 호스트에 로그인합니다.</block>
   <block id="45eaa72ccd2ef9b50e78fc8cce523fc1" category="list-text">visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다.</block>
-  <block id="35371c45053db2ea279f99081926a9d2" category="paragraph">_sudo_user_는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.</block>
-  <block id="165213b1e3edf24771bca90f4733f8db" category="paragraph">체크섬 값은 _C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * oracle_checksum.txt * 파일에서 확인할 수 있습니다.</block>
   <block id="0b0fd18186bda52c22aadf2139f743c5" category="paragraph">사용자 지정 위치를 지정한 경우 위치는 _CUSTOM_PATH\NetApp\SnapCenter\Package Repository_입니다.</block>
   <block id="74781435cbc6fb9ba200eaf23bcdeaf1" category="admonition">이 예제는 고유한 데이터를 만들기 위한 참조로만 사용해야 합니다.</block>
-  <block id="a2b1203f9f334871a5873cd98bbf1fb3" category="cell">*모범 사례:* 보안상의 이유로 설치 또는 업그레이드를 모두 완료한 후 sudo 항목을 제거해야 합니다.</block>
   <block id="6347721d31864738b0e7a03f5553e69b" category="section-title">AIX 호스트 요구 사항</block>
   <block id="fed30036a3caffc826b4e66f434f67ea" category="paragraph">AIX용 SnapCenter 플러그인 패키지를 설치하기 전에 호스트가 요구 사항을 충족하는지 확인해야 합니다.</block>
   <block id="cddfaa01c32e2362546c78364751248b" category="admonition">AIX용 SnapCenter 플러그인 패키지의 일부인 UNIX용 SnapCenter 플러그인은 동시 볼륨 그룹을 지원하지 않습니다.</block>
   <block id="895327977020e495debf0b375c7541d8" category="paragraph">AIX 6.1 이상</block>
-  <block id="2dafadf226896cb3cd576171339c6e92" category="paragraph">Java 1.8.x(64비트) IBM Java</block>
   <block id="f805f99adc12df0c565005d33166c7bc" category="section-title">AIX 호스트에 대한 루트가 아닌 사용자에 대한 sudo 권한을 구성합니다</block>
-  <block id="8550694ccd5a31f4fce5f8d906032e80" category="paragraph">SnapCenter 4.4 이상에서는 루트가 아닌 사용자가 AIX용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.</block>
   <block id="841774125775c871852a88e3823b3b8c" category="list-text">/home/_aix_user_/.sc_netapp/snapcenter_aix_host_plugin.bsx</block>
   <block id="c9d390513716fa3f8a5e273f77a61c88" category="list-text">AIX용 SnapCenter 플러그인 패키지를 설치할 AIX 호스트에 로그인합니다.</block>
   <block id="48e70d153806720eebac4a7aec8e0f2c" category="paragraph">_AIX_USER_는 사용자가 작성한 루트가 아닌 사용자의 이름입니다.</block>
@@ -6217,8 +6197,6 @@
   <block id="e78669315fa3cb3d6f0c002f2d950706" category="list-text">호스트 이름에 대한 클러스터 IP를 지정하여 _Add-SmHost_cmdlet을 사용하여 SnapCenter 서버에 노드를 추가합니다.</block>
   <block id="681589da8e5ea7856b147b13f1dfc3a0" category="paragraph">노드 1에서 Oracle 데이터베이스를 검색하고(클러스터 IP가 노드 1에서 호스팅된다고 가정) 데이터베이스의 백업을 생성합니다. 페일오버가 발생하면 노드 1에서 생성된 백업을 사용하여 노드 2에서 데이터베이스를 복원할 수 있습니다. 노드 1에 생성된 백업을 사용하여 노드 2에 클론을 생성할 수도 있습니다.</block>
   <block id="195d8db26fde9acff2adb626b1025899" category="admonition">다른 SnapCenter 작업이 실행 중인 동안 페일오버가 발생하면 오래된 볼륨, 디렉토리 및 잠금 파일이 있습니다.</block>
-  <block id="0952803227edd46a47ef4b484702384a" category="section-title">Linux용 플러그인 패키지를 자동 모드 또는 콘솔 모드로 설치합니다</block>
-  <block id="1b1ea6702103eaa6c019551c58eadf2f" category="paragraph">CLI(명령줄 인터페이스)를 사용하여 콘솔 모드 또는 자동 모드에서 Linux용 SnapCenter 플러그인 패키지를 설치할 수 있습니다.</block>
   <block id="914a337023fe8ac3119f5b617372d906" category="list-text">플러그인 패키지를 설치하기 위한 사전 요구 사항을 검토해야 합니다.</block>
   <block id="38a6403c6b95c3993934085e06e83949" category="list-text">디스플레이 환경 변수가 설정되어 있지 않은지 확인해야 합니다.</block>
   <block id="7237746e5dd0e0279963b5c8e63878de" category="paragraph">디스플레이 환경 변수가 설정된 경우 설정되지 않은 디스플레이를 실행한 다음 플러그인을 수동으로 설치해야 합니다.</block>
@@ -6226,14 +6204,6 @@
   <block id="4ce7dac83f454983c14a21b1b3cc1949" category="list-text">SnapCenter 서버 설치 위치에서 Linux용 SnapCenter 플러그인 패키지를 다운로드합니다.</block>
   <block id="9bd1bc5d05404746d14d6abd8dbeff62" category="paragraph">기본 설치 경로는 _C:\ProgramData\NetApp\SnapCenter\PackageRepository_입니다. 이 경로는 SnapCenter 서버가 설치된 호스트에서 액세스할 수 있습니다.</block>
   <block id="5c1710bcbaa54d3596474a1772fb16f8" category="list-text">명령 프롬프트에서 설치 파일을 다운로드한 디렉토리로 이동합니다.</block>
-  <block id="7f84f1f7bcbe72e3d29ae36712ba177a" category="list-text">기본 설치 모드에 따라 다음 단계 중 하나를 수행합니다.</block>
-  <block id="9938beade9d664b2ff37722b333ad588" category="cell">설치 모드</block>
-  <block id="f3a29486bed19a90f2da6d007818b427" category="cell">단계</block>
-  <block id="4da77e3f9dd240f6e8f0f0d9158931c6" category="paragraph">콘솔 모드</block>
-  <block id="82602ac8fbb0d9bd1ad61b19c8acd7a8" category="list-text">실행:</block>
-  <block id="8e687db5cc8ca6a905dcffdf7a3f48b2" category="paragraph">'./SnapCenter_linux_host_plugin.bin – i console'</block>
-  <block id="6a2864f971041eec7dde349f5cb3ac19" category="list-text">화면의 지시에 따라 설치를 완료합니다.</block>
-  <block id="83abfa620bfb1e15b56d0797f356014b" category="paragraph">자동 모드</block>
   <block id="9d8cac6a5cfb7edebc1dcf401bcd0d5d" category="paragraph">'./SnapCenter_Linux_HOST_PLUGIN.BIN-I Silent-dport=8145-DSERVER_IP=SnapCenter_Server_FQDN-DSERVER_HTTPS_PORT=SnapCenter_Server_Port-DUSER_INSTALL_DIR==/OPT/CUSTOM_PATH'</block>
   <block id="50eb312d1da1f4e80fa5b62205e7e3be" category="list-text">spL_enabled_plugins=SCO, SCU를 추가한 다음 SnapCenter 플러그인 로더 서비스를 다시 시작하려면 _/var/opt/snapcenter/spl/etc/_에 있는 spl.properties 파일을 편집합니다.</block>
   <block id="647dea8558dda6998a36aeb80b501e6f" category="admonition">플러그인 패키지를 설치하면 SnapCenter 서버가 아닌 호스트에 플러그인이 등록됩니다. SnapCenter GUI 또는 PowerShell cmdlet을 사용하여 호스트를 추가하여 SnapCenter 서버에 플러그인을 등록해야 합니다. 호스트를 추가하는 동안 자격 증명으로 "없음"을 선택합니다. 호스트가 추가되면 설치된 플러그인이 자동으로 검색됩니다.</block>
@@ -6583,7 +6553,6 @@
   <block id="92cc2a9a2d5824e9c2b490a8fb082801" category="paragraph">SnapCenter에서 자동으로 삭제하기 전에 자동으로 저장되는 스냅샷 복사본의 수를 지정하려면 이 옵션을 선택합니다.</block>
   <block id="0a3cfeac0775871baedb24392bc4423c" category="paragraph">다음보다 오래된 스냅샷 복사본을 삭제합니다</block>
   <block id="9fbc3fb0ee9d4d329dbc0f3053b7b871" category="paragraph">SnapCenter에서 백업 복사본을 삭제하기 전에 보존할 일 수를 지정하려면 이 옵션을 선택합니다.</block>
-  <block id="e19ad44a5949f6c604b843ea60587e80" category="admonition">SnapVault 복제를 사용하도록 설정하려는 경우 보존 수를 2 이상으로 설정해야 합니다. 복제 수를 1로 설정하면 보존 작업이 실패할 수 있습니다. 그 이유는 첫 번째 스냅샷 복사본이 SnapVault 관계에 대한 참조 스냅샷 복사본으로, 새로운 스냅샷 복사본이 타겟으로 복제되기 때문입니다.</block>
   <block id="6c713d56e86f927e1bd66c7de2ed52c1" category="summary">Microsoft Windows용 SnapCenter 플러그인을 한 번에 여러 호스트에 설치하려면 설치-SmHostPackage PowerShell cmdlet을 사용하십시오.</block>
   <block id="5e384e3303c9f77f2d01c5c5ef33a4d5" category="doc">PowerShell cmdlet을 사용하여 여러 원격 호스트에 Microsoft Windows용 SnapCenter 플러그인을 설치합니다</block>
   <block id="0d9483465e761bb4492b6191a84c809a" category="paragraph">한 번에 여러 호스트에 SnapCenter Plug-in for Microsoft Windows를 설치하려면 "Install-SmHostPackage" PowerShell cmdlet을 사용하십시오.</block>
@@ -7042,7 +7011,6 @@
   <block id="3b5d218d734c41cfe8d9efd5e6fc8373" category="list-text">ONTAP FAS 또는 AFF 기본 시스템에 있으며 ONTAP FAS 또는 AFF 보조 시스템에 복제된 데이터입니다</block>
   <block id="7deab53ede49d0d1a58c65f2e25ff259" category="list-text">ONTAP Select 운영 시스템에 있는 데이터</block>
   <block id="bc549d53e5e7a7aeb8a41511751a99f2" category="list-text">하이브리드 클라우드의 사내 로 다음을 보호:</block>
-  <block id="0dca0a7e993ee78e7df3e6d98ad0e813" category="list-text">ONTAP FAS 또는 AFF 기본 시스템에 있으며 Cloud Volumes ONTAP 또는 NetApp 프라이빗 스토리지 2차 시스템에 복제된 데이터입니다</block>
   <block id="ca5570a253e3c0a27562c65c06bb6125" category="list-text">퍼블릭 클라우드에서 다음을 보호합니다.</block>
   <block id="b340c2b4a7a978a510c8ebb351622143" category="list-text">Cloud Volumes ONTAP(이전의 ONTAP 클라우드) 운영 시스템에 있는 데이터</block>
   <block id="1b195709096f08d5640d18382cb88214" category="paragraph">SnapCenter에는 다음과 같은 주요 기능이 포함되어 있습니다.</block>
@@ -7465,9 +7433,7 @@
   <block id="8fa1aa495cfe5fdc95202bda34adafcd" category="paragraph">SnapCenter 서버 데이터는 SnapCenter 서버에서 플러그인을 추가하거나 관리했는지와 관계없이 백업 및 복구됩니다.</block>
   <block id="30c24db21140190d4033af17ccd83090" category="list-text">* SnapCenter 플러그인 및 스토리지 DR *</block>
   <block id="67c5ed4921b287cb12a0c466f01e9689" category="admonition">다중 경로 구성 파일의 user_friendly_names 옵션이 yes로 설정되어 있으면 SAN 구성이 지원되지 않습니다.</block>
-  <block id="f91d0c3af79b649ecca3ab95634c22c6" category="list-text">sudo 버전 1.8.7 ~ 1.8.19P2.</block>
   <block id="51fb25555c87830dd2151ad5f3b7a845" category="paragraph"><block ref="51fb25555c87830dd2151ad5f3b7a845" category="inline-link-macro-rx"></block></block>
-  <block id="10e4911e9effb28d4e43d47f67fac6db" category="paragraph">Oracle 데이터베이스용 백업을 생성하는 동안 데이터베이스에서 여러 작업이 실행되지 않도록 Oracle 데이터베이스 호스트의 _$Oracle_HOME/DBS_ 디렉토리에 운영 잠금 파일(_.sm_lock_dbsid_)이 생성됩니다. 데이터베이스가 백업되면 운영 잠금 파일이 자동으로 제거됩니다.</block>
   <block id="378c4677444d1c0a4a5f7af5b98179fa" category="paragraph"><block ref="18c30fe5285c9c31acdd1bd6d51af1bd" category="inline-link-macro-rx"></block>.</block>
   <block id="ae75553103cbeaaaa3b0e4002805ae6f" category="paragraph"><block ref="ae75553103cbeaaaa3b0e4002805ae6f" category="inline-link-macro-rx"></block></block>
   <block id="6ce007c78eb3953e5a2c4d5ee67f6f7e" category="inline-link-macro">Microsoft Exchange Server에 대해 Windows Server 2012 이상에서 그룹 관리 서비스 계정을 구성합니다</block>
@@ -7485,10 +7451,6 @@
   <block id="6b98b59317c1c01b7bc7ca4cd17411bb" category="paragraph">가상화되지 않은 스토리지 시스템과 가상화된 스토리지 시스템에서 SnapCenter 작업의 일부로 실행되는 모든 처방과 사후 스크립트는 플러그인 호스트에서 실행됩니다.</block>
   <block id="c157096c2e47e568177494234a87f0e1" category="list-text">UNIX 스크립트는 플러그인 호스트에 있어야 합니다.</block>
   <block id="fef867655f1f81bcdd0d00a9356cb04e" category="admonition">스크립트 경로는 실행 시 검증됩니다.</block>
-  <block id="ef663b0b3b7a27afee6c150520bfb95a" category="paragraph">Windows의 경우에만 여러 스크립트를 지정할 수 있습니다. 각 스크립트 경로 뒤에 * Enter * 를 눌러 각 스크립트를 별도의 줄에 나열해야 합니다. 세미콜론(;)은 허용되지 않습니다. 여러 개의 처방과 여러 개의 소인을 지정할 수 있습니다. 단일 스크립트는 처방과 PS로 모두 코딩될 수 있으며 다른 스크립트를 호출할 수 있습니다.</block>
-  <block id="f857e3b29391e444ec1b7f560c89a1ee" category="admonition">UNIX의 경우 여러 스크립트를 지정할 수 없습니다.</block>
-  <block id="90de0033880b7e0780a5ee32f1b401ff" category="paragraph">Windows의 경우 시간 초과는 15분으로 설정되어 수정할 수 없습니다.</block>
-  <block id="a9a44363ed14921d094b6371dd75c7f1" category="paragraph">UNIX의 경우 시간 초과는 기본적으로 60초로 설정됩니다. 시간 초과 값을 수정할 수 있습니다.</block>
   <block id="7d901a35f38f46ac340bf0fcef37cb9d" category="paragraph">Windows prescpts 및 postscripts 출력 파일의 기본 디렉터리는 Windows\System32입니다.</block>
   <block id="7a21760d7cbd0896708b77121ef519dc" category="paragraph">UNIX 처방과 postscript에 대한 기본 위치는 없습니다. 원하는 위치로 출력 파일을 리디렉션할 수 있습니다.</block>
   <block id="eccc8325175b53fdef9a1846222d4161" category="section-title">지원되는 업그레이드 경로</block>
@@ -7538,8 +7500,6 @@
   <block id="487a34d280250073f86b353bd430b05b" category="paragraph">필요한 경우 이 경로를 변경하고 SMcore 서비스를 다시 시작할 수 있습니다. 보안을 위해 기본 경로를 사용하는 것이 좋습니다.</block>
   <block id="cb0f6b6fa4cffa93ac67dd15850cae3d" category="paragraph">키 값은 swagger에서 API:API/4.7/configsettings를 통해 표시할 수 있습니다</block>
   <block id="cf2ded6f4d7ccf880ce7a042e4726b3e" category="paragraph">Get API를 사용하여 키 값을 표시할 수 있습니다. API 설정은 지원되지 않습니다.</block>
-  <block id="801129a6382d5583ff918700b1c08bcc" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="990d8375f83595a5ed234c9b7d01d800" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 또는 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block> PowerShell cmdlet에 대한 자세한 내용은 에 나와 있습니다.</block>
   <block id="3bcbed691a828d3bec798c7f504ae72f" category="paragraph">SnapCenter는 스냅샷 복사본 작업이 완료된 후 SnapMirror 및 SnapVault에 대한 업데이트를 수행합니다. SnapMirror 및 SnapVault 업데이트는 SnapCenter 작업의 일부로 수행되고, 별도의 ONTAP 일정을 만들지 않습니다.</block>
   <block id="d332f88a3886e736c322b3643225a6cd" category="admonition">SnapCenter는 SnapMirror와 SnapVault 볼륨(* Primary * &gt; * Mirror * &gt; * Vault *) 간의 계단식 관계를 지원하지 않습니다. 팬아웃 관계를 사용해야 합니다.</block>
   <block id="08e9631e1208ded677a67844beb7e0f6" category="list-text">Microsoft .Net 4.7.2 이상을 설치해야 합니다.</block>
@@ -7547,8 +7507,6 @@
   <block id="a97c26d42ce7ddd336973734ea88cb27" category="inline-link-macro">인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다.</block>
   <block id="81c513c33c426053d0ffea586847b7ae" category="paragraph">NET 문제 해결 정보는 다음을 참조하십시오. <block ref="dded983644794c871dd2db9dcf66e032" category="inline-link-macro-rx"></block></block>
   <block id="76532e7091335c4eb76878af878c5b79" category="paragraph">암호에 큰따옴표(") 또는 백틱(')을 사용하지 마십시오. 보다 작음(&lt;) 및 느낌표(!)를 사용해서는 안 됩니다. 암호를 사용한 기호. 예를 들어 LessThan &lt;!10, Lessthan10 &lt;!, backtick'12.</block>
-  <block id="ced7a5b3383b556d1b18d34c718324e0" category="inline-link">SnapCenter 소프트웨어 4.7 릴리스 정보</block>
-  <block id="999d9efd57a168cef0440d07870393a9" category="paragraph">자세한 내용은 를 참조하십시오<block ref="237f55bc8fab90384c3ca78c8a284ce0" category="inline-link-rx"></block>.</block>
   <block id="07a2a06d39605aa9ff4e7d9c550b1f32" category="admonition">마운트 경로의 경로와 컨텐츠를 외부 로그 위치로 나열하기 전에 확인해야 합니다.</block>
   <block id="75274e3b5c9387e61941a9dbd37f3bda" category="list-text">복원 및 클론 작업을 위한 ALM(Archive Log Management) 지원</block>
   <block id="5bc73a697938fe752e1c9b686f4c9bca" category="list-text">enable_lunPATH_monitoring 매개변수 값을 false로 설정하여 이 기능을 비활성화할 수 있습니다.</block>
@@ -7559,7 +7517,6 @@
   <block id="f82f8d5187ab10ecec9a6d1d0fe7041f" category="list-text">백업, 복원, 클론, 마운트, 마운트 해제, VMDK 및 RDM과 같은 가상화된 환경을 제외하고 NVMe 하드웨어에서 카탈로그, 카탈로그 해제 및 검증 작업이 지원됩니다.</block>
   <block id="77e1aff98fab667da904795d94a0856d" category="paragraph">위의 작업은 파티션이 없거나 단일 파티션이 있는 장치에서 지원됩니다.</block>
   <block id="3bf355c6205f457fe62af33466b47331" category="admonition">커널에서 기본 다중 경로 옵션을 설정하여 NVMe 장치에 대한 다중 경로 솔루션을 구성할 수 있습니다. 장치 매퍼(DM) 다중 경로가 지원되지 않습니다.</block>
-  <block id="313e53f94847871555c0dacdb19532a4" category="paragraph">+ 지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="89a335e37ffcb5152f6dbe1ca3dcb8c4" category="inline-link-rx"></block>.</block>
   <block id="0ac22ed74dd628cec8a2c5e2f64bf612" category="list-text">백업 중인 데이터베이스가 큰 경우 SnapCenter 서버 호스트의 _C:\Program Files\NetApp\SMCore\SMCoreServiceHost.exe.config_file에서 RESTTimeout 값을 86400,000ms로 늘려야 합니다(TB 단위 크기).</block>
   <block id="12030a592b1dcd9007e06eda350e5904" category="list-text">특정 날짜 및 시간으로 복구하려면 * 날짜 및 시간 * 을 선택하고 날짜 및 시간과 보조 대상을 지정합니다.</block>
   <block id="740364074f07d3ca5c0b017db01d8838" category="paragraph">SnapCenter는 지정된 SCN 또는 선택한 날짜 및 시간을 기반으로 PITR을 수행하는 데 필요한 최적의 데이터 및 로그 백업 수를 식별하고 카탈로그로 작성합니다.</block>
@@ -7574,12 +7531,6 @@
   <block id="220e4e8875d5bfeb100296afce222233" category="paragraph">SC_oratab.config * 에 추가된 비데이터베이스 항목은 리소스 페이지에 나열되지 않습니다.</block>
   <block id="7029c5bea579ddb5d0fdbec271a7133d" category="admonition">SnapCenter 플러그인을 업그레이드하기 전에 항상 SC_oratab.config 파일을 백업하는 것이 좋습니다.</block>
   <block id="1dd4fbdaa30b28c2614e7e12c52dc73c" category="list-text">NVMe의 경우 NVMe util을 설치해야 합니다</block>
-  <block id="cfbef5b174453552f2d4d170dce0dd4a" category="paragraph">명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
-  <block id="72b052d6a4c562079ee16c3d0499607b" category="paragraph">명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
-  <block id="c2dc8716150e6132feb70c1e92a1d958" category="paragraph">명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
-  <block id="88774565f8cf3008ad5989ee93e3c95a" category="admonition">RAC 설정을 관리하는 경우 루트가 아닌 사용자는 Oracle 사용자여야 하며 루트가 아닌 OS 사용자일 수 없습니다.</block>
-  <block id="d28c7ce894468cfd819345b4bf0b5f06" category="paragraph">또는 을 참조할 수도 있습니다<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block> 또는<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="f7912f8718a1ef8c305b03f04aa3ed87" category="paragraph">UNIX 명령에 대한 자세한 내용은 를 참조하십시오<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
   <block id="f5834ae40c2c791cfe589857bdad345c" category="paragraph">spl.properties 를 편집하거나 SnapCenter GUI 또는 cmdlet을 사용하여 이 매개 변수를 활성화 또는 비활성화할 수 있습니다.</block>
   <block id="7de59fae501cc41425b292c47c8d9c12" category="list-text">NVMe의 경우 대상 포트를 연결에 제외해야 하는 경우 /var/opt/snapcenter/scu/etc/NVMe.conf 파일에 타겟 노드 이름과 포트 이름을 추가해야 합니다.</block>
   <block id="71ce3de936c35ae0967019943cb6334a" category="paragraph">파일이 없는 경우 아래 예와 같이 파일을 작성해야 합니다.</block>
@@ -7732,11 +7683,6 @@
   <block id="c3117c33abd012814d4b2d7b924c1f8d" category="admonition">DR 백업이 저장되는 타겟 경로를 제공해야 합니다.</block>
   <block id="2012ae142f225323da2a6e6b42372bd8" category="paragraph">새 서버 DR 백업을 생성합니다.</block>
   <block id="6d4bea151109003c5e0920bae84073a0" category="paragraph">서버 etc/host 파일은 복원되지 않습니다. DR 백업 폴더에서 수동으로 복원할 수 있습니다.</block>
-  <block id="7a8511ac66e8ad507e84e1b59fb8c137" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block></block>
-  <block id="911e666bb69c0269db366306dcba920d" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="355ab8d4b3c8bcfd96ba2c083cf60281" category="paragraph">또한 _Uninstall-SmHostPackage_cmdlet 및 필수 매개 변수를 사용하여 여러 호스트에서 플러그인을 제거할 수도 있습니다. cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="08d73a168fe24a5b54b3d9999dc177a0" category="paragraph">cmdlet에 대한 자세한 내용은 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="e42dff8645643bcf58420492d58f8cda" category="paragraph">자세한 내용은 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
   <block id="5cfcff9080dfd6a0b46f31dd889d7691" category="list-text">MFA 설정에 대한 SnapCenter 명령은 모든 노드에서 실행되어야 합니다. AD FS(Active Directory Federation Services) 서버에서 F5 클러스터 세부 정보를 사용하여 기반 당사자 구성을 수행해야 합니다. MFA를 사용하도록 설정하면 노드 레벨 SnapCenter UI 액세스가 차단됩니다.</block>
   <block id="88b8c728864c341ef14637e289839640" category="list-text">ASP.NET 4.7.2</block>
   <block id="8098ea3ff2e42300d1835034eb9f2ad7" category="paragraph">NET Framework 4.7.2 기능+</block>
@@ -7813,7 +7759,6 @@
   <block id="3ed7d0eb5098b6db6af6c5b3eb2ce30f" category="paragraph">MFA를 비활성화하고 _Set-SmMultiFactorAuthentication-Disable_cmdlet을 사용하여 MFA를 사용하도록 설정할 때 만든 구성 파일을 정리합니다.</block>
   <block id="fe46b74f13369d6c44d60eb009d09999" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "snapmirror show-history" - access all'</block>
   <block id="3ff2f50a0428ccd330fd2b2e2baa3b97" category="doc">RBAC 승인을 사용하여 SnapCenter에 로그인합니다</block>
-  <block id="fa5e0ef5462c888da7fe991f9bcf5da9" category="paragraph">SnapCenter GUI 사용 외에도 PowerShell cmdlet을 사용하여 스크립트를 생성하여 구성, 백업 및 복원 작업을 수행할 수 있습니다. 일부 cmdlet은 SnapCenter 릴리즈마다 변경될 수 있습니다. 를 클릭합니다<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block> 세부 정보가 있습니다.</block>
   <block id="8674ed970a497f68c8817c2f50e67e43" category="section-title">멀티팩터 인증(MFA)을 사용하여 SnapCenter에 로그인</block>
   <block id="87f394d82c9a69653bdcd732b405a220" category="paragraph">SnapCenter 서버는 Active Directory의 일부인 도메인 계정에 대해 MFA를 지원합니다.</block>
   <block id="4ec1436ddb22128657c95d226f087159" category="list-text">MFA를 활성화해야 합니다.</block>
@@ -7826,22 +7771,12 @@
   <block id="df83de2f1142c69999c260b19f81239e" category="paragraph">사용자 계정이 AD(Active Directory)에 있어야 합니다.</block>
   <block id="f7d89272be4f4a54f90ac672c9001efc" category="list-text">AD에 설정된 최대 허용 시도 횟수를 초과했는지 여부</block>
   <block id="00bb96dadf000907b7f5bff0ae2a1a57" category="list-text">AD 및 AD FS의 가동 및 실행 여부를 나타냅니다</block>
-  <block id="b72b363fb9a595ad28aabe930bb28366" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 를 참조할 수도 있습니다<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="c70464b7e0f2ad9d136a0cce124b524e" category="inline-link">SnapCenter 4.7에 대한 고지 사항</block>
-  <block id="4be462fcf740489c25950b8da5069ee8" category="paragraph"><block ref="4be462fcf740489c25950b8da5069ee8" category="inline-link-rx"></block></block>
   <block id="773a4c1c97f6070d698ee85302dc51cf" category="list-text">사전 복원, 사후 복원, 마운트 및 마운트 해제 명령의 경우 다음 경로에서 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.</block>
   <block id="19650f12fd9f269a497d4edc60754137" category="paragraph">Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_</block>
   <block id="e7b4efc5dd5b16a36c26e91652b78194" category="paragraph">Linux의 경우: _/var/opt/snapcenter/SCC/allowed_commands_list.txt_</block>
   <block id="2dd7c4421097b3d796ff9bf355ebaa6e" category="admonition">명령이 명령 목록에 없으면 작업이 실패합니다.</block>
   <block id="e61e5d73b3b042b28dcdf96a5c438a4e" category="list-text">사전 클론 생성 또는 사후 클론 명령의 경우 플러그인 호스트에서 사용할 수 있는 명령 목록에 다음 경로의 명령이 있는지 확인해야 합니다.</block>
-  <block id="4a80bf6e28aaba8782d26fd8348ce6e1" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="9af97e8a01b20be8df7443d0a4ef81ca" category="inline-link-rx"></block></block>
   <block id="d5d9a4c4e51c27e556fb89bfdd11f0b0" category="list-text">일시 중지, 스냅샷 복사 및 정지 해제 작업에 대한 사전 및 사후 명령의 경우 플러그인 호스트에서 사용할 수 있는 명령 목록에 다음 경로의 명령이 있는지 확인해야 합니다.</block>
-  <block id="9ac9a1a16b9b854c3b9c883b63a5f7a8" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 및 cmdlet 참조 정보에 PowerShell cmdlet에 대한 자세한 정보가 포함되어 있습니다.<block ref="5e7d1ae427cf89aac03ab8d36d50c405" category="inline-link-rx"></block>.</block>
-  <block id="83a6f3b236b04c53983a7b4c375e880b" category="paragraph">명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="f1a3e7d70788bebca070b29762dc37eb" category="paragraph"><block ref="5e7d1ae427cf89aac03ab8d36d50c405" category="inline-link-rx"></block>.</block>
-  <block id="a4db0151065a2ee1abfaef83c4ceb68c" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="9af97e8a01b20be8df7443d0a4ef81ca" category="inline-link-rx"></block></block>
-  <block id="f3f2079e0fc30d00110219dabf6ef6ce" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="44cd542095ed7517091dbb356fe6673c" category="paragraph">PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
   <block id="3c8f1b708d97734299340f633acf1b28" category="paragraph">iSCSI를 사용하는 경우 iSCSI 서비스가 실행되고 있어야 합니다.</block>
   <block id="9415aa73bf3f3a2a034e0e07c5d506cf" category="section-title">SHA512 해시</block>
   <block id="aeff1fc8cacc5ff5c9b086664b2f5560" category="list-text">NetApp에서 제공하는 사용자 지정 플러그인의 경우 사용자 지정 플러그인 파일의 SHA512 해시를 _CUSTOM_PLUGIN_CHECKSH체크섬_LIST_FILE에 추가해야 합니다.</block>
@@ -7855,21 +7790,13 @@
   <block id="94e0e32bde2e2ee99521f81221ceee7a" category="list-text">생성된 SHA512 해시를 새 줄에 CUSTOM_PLUGIN_CHECK체크섬_LIST 파일에 추가했습니다.</block>
   <block id="17bc29e04b5123febcd35bdbc90142b4" category="paragraph">주석은 # 기호로 시작하여 해시가 속한 플러그인을 식별합니다.</block>
   <block id="7867996900fccc9a8502aad8682cccfe" category="paragraph">다음은 체크섬 파일의 SHA512 해시 항목의 예입니다.</block>
-  <block id="3c346bb5f93f34966ee965302e263b4b" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="9af97e8a01b20be8df7443d0a4ef81ca" category="inline-link-rx"></block>.</block>
-  <block id="d08251d66235a8f6a65aacb7fbdc43ec" category="list-text">SVM에 여러 데이터 경로(LIF)가 있을 경우 SnapCenter은 NFS 클론 복제된 볼륨을 마운트하기 위해 적절한 데이터 경로(LIF)를 선택합니다. 그러나 특정 데이터 경로(LIF)를 지정하려면 Set-SvmPreferredDataPath CLI를 실행해야 합니다. 명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
   <block id="49e317595cf8eea53ae1d965b4173dbc" category="list-text">플러그인 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자 역할)에 할당된 사용자여야 합니다.</block>
-  <block id="fba8e16f3f22c15c55085aa461b4a879" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="71f18f8813db5be2902a244346744c57" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업 및 복원 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
   <block id="fb6661786b7d5b1cfb5df7ffe94a3009" category="paragraph">타사 백업 스케줄은 SnapCenter 백업 스케줄과 겹치는 경우 지원되지 않습니다. 스케줄을 수정하고 Windows 스케줄러 또는 SQL Server 에이전트에서 생성된 백업 작업의 이름을 변경해서는 안 됩니다.</block>
   <block id="5891deda92209d1d45144775b7d5c20d" category="admonition">Windows 스케줄러 또는 SQL Server 에이전트에서 생성된 백업 작업의 이름은 바꾸지 않아야 합니다.</block>
-  <block id="6cd1a141ceeb4cee6a85c4a31c4aeb35" category="paragraph">PowerShell cmdlet을 수동으로 또는 스크립트에서 사용하여 백업, 복원, 복구, 확인 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="9af97e8a01b20be8df7443d0a4ef81ca" category="inline-link-rx"></block></block>
-  <block id="e98179401fffdbe49af0925735c4e9d0" category="paragraph">자세한 내용은 를 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
   <block id="b4681b9eaef5652378ef9426e99a8f63" category="paragraph">Set-SmConfigSettings-Agent-configSettings@{"RESTTimeout"="20000000"} 명령을 실행하여 SnapCenter 서버의 RESTTimeout 매개 변수 값을 20000000 ms로 늘려야 합니다. 데이터베이스 크기에 따라 시간 초과 값을 변경할 수 있으며 설정할 수 있는 최대값은 86400,000ms입니다.</block>
   <block id="2bdfb7ceab741b8d183afcf3b24c6f17" category="list-text">클론 수명주기 마법사 페이지의 대부분의 필드는 별도의 설명이 필요 없습니다. 다음 정보는 지침이 필요한 필드에 대해 설명합니다.</block>
   <block id="59080c688ea671f9f0cc2eed3afb7bf8" category="paragraph">암호에 큰따옴표(") 또는 백틱(')을 사용하지 마십시오. 보다 작음(&lt;) 및 느낌표(!)를 사용해서는 안 됩니다. 암호를 사용한 기호. 예를 들어 LessThan &lt;!10, Lessthan10 &lt;!, backtick'12.</block>
-  <block id="29a6d4ddcd28e22d7ba6ab65da50bf6f" category="paragraph">cmdlet 실행에 대한 자세한 내용은 을 참조하십시오<block ref="9af97e8a01b20be8df7443d0a4ef81ca" category="inline-link-rx"></block></block>
   <block id="0352418be0d30e5f0f0b3f664c74e1aa" category="admonition">플러그인의 페일오버 또는 페일백 중에는 플러그인 전체 상태가 즉시 업데이트되지 않습니다. 호스트 및 플러그인의 전체 상태는 후속 호스트 새로 고침 작업 중에 업데이트됩니다.</block>
-  <block id="d7b3c4517cc189c6cdd986195fa3f33f" category="sidebar">SnapCenter 소프트웨어 4.7 설명서</block>
   <block id="ad2df38df99c722f88cf142744758e07" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="f05f98f17d4e0568e31244784ca320bd" category="inline-link-rx"></block></block>
   <block id="d91808c8a4d610ed99302113da2f85d2" category="paragraph"><block ref="0eee65cb82c15fd964b7785d5f117a10" category="inline-link-rx"></block></block>
   <block id="e306f8020786d4a39801b24a0c26a65d" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="26d76f2e486b882ba3b23e9b38f63829" category="inline-link-rx"></block>.</block>
@@ -7891,8 +7818,6 @@
   <block id="0cfe29479bcdd52d04233cb07867b8dc" category="paragraph">포트 세부 정보를 수정하려면 을 참조하십시오 <block ref="e76f469a4971f2c04dd83de4f8464750" category="inline-link-macro-rx"></block>.</block>
   <block id="66ee30700091538587a27acf4ecad692" category="inline-link">REST API 개요</block>
   <block id="9a9a51f1993f5461829d8466a8fb013e" category="paragraph">REST API에 대한 자세한 내용은 를 참조하십시오<block ref="ea5c19f623f4ce0e4a3a37a512890f94" category="inline-link-rx"></block>.</block>
-  <block id="ac82cdc7de65b45fb896f54ac6f878a6" category="paragraph">Windows cmdlet에 대한 자세한 내용은 을 참조하십시오<block ref="d4c5c0570d011aab6fdb5c260e0a26e0" category="inline-link-rx"></block>.</block>
-  <block id="9381fc6f6aaa8ab22b178a15c78fbc00" category="paragraph">UNIX 명령에 대한 자세한 내용은 을 참조하십시오<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
   <block id="c41cef29e8776e4670cacce5775ec017" category="paragraph">사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 있습니다<block ref="554f546cf121f440c6cfd97d643765df" category="inline-link-rx"></block>.</block>
   <block id="0403e11795fb79ba2a2b089e5837948f" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="5d3441c720944f2bfbf67dc2b7c68bf1" category="inline-link-macro-rx"></block></block>
   <block id="74fec6bb431ffa93b327d4933607ec3f" category="admonition">일관성을 위해 SnapCenter 문서는 사용 권한을 사용하는 역할을 나타냅니다. OnCommand 시스템 관리자 GUI는 _privilege_ 대신 _attribute_라는 용어를 사용합니다. ONTAP RBAC 역할을 설정할 때 이 두 용어는 모두 동일합니다.</block>
@@ -7916,4 +7841,123 @@
   <block id="dde541c94f2b033571de6bfe76fcf3c3" category="list-text"><block ref="234efccf9d477e939eeae95c37c1803f" prefix="" category="inline-code"></block></block>
   <block id="e2bb7a9783ce9c6c02e6001911562e16" category="list-text"><block ref="2e72f8b3689961923dec66f94cdf620f" prefix="" category="inline-code"></block></block>
   <block id="91ae9720ac69723481c4de57234c575e" category="paragraph">Permalink: protect - HANA/task_cancel_backup_operations_for_sap_hana.html sidebar: sidebar keywords: 요약: '대기 중인 백업 작업을 취소할 수 있습니다.' SAP HANA의 백업 작업 취소: 아이콘: font:imagesdir:../media/</block>
+  <block id="6c27677d6e913bc79948a8f54acbd25c" category="list-text">ONTAP FAS 또는 AFF 운영 및 2차 시스템에 있으며 로컬 StorageGRID 오브젝트 스토리지로 보호되는 데이터(NetApp BlueXP 클라우드 백업 통합 사용)</block>
+  <block id="88ff864aa61d80e2b8a79a0f91b36f3b" category="list-text">ONTAP FAS 또는 AFF 기본 시스템에 있으며 Cloud Volumes ONTAP에 복제된 데이터입니다</block>
+  <block id="4715420841b96150a5fff8e31c55eeb2" category="list-text">ONTAP FAS 또는 AFF 운영 및 2차 시스템에 있으며 클라우드의 오브젝트 및 아카이브 스토리지로 보호되는 데이터(NetApp BlueXP 클라우드 백업 통합 사용)</block>
+  <block id="b380e442ff5c6e48e283af8b6f99806f" category="list-text">ONTAP용 Amazon FSX에 있는 데이터입니다</block>
+  <block id="bb9b211047ca9fd3aa94d088f95891ee" category="paragraph">Windows cmdlet에 대한 자세한 내용은 을 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="491d379e6629985a2ada1aa1be5dbaff" category="paragraph">UNIX 명령에 대한 자세한 내용은 을 참조하십시오<block ref="868bc9c3fbc71eae2d899862af6d942e" category="inline-link-rx"></block>.</block>
+  <block id="a297bacde66e3d1853eb926b992016ec" category="list-text">IPsec은 Windows 및 Linux 호스트 시스템용 ONTAP의 SnapCenter에서 지원됩니다.<block ref="52c5124591037410e72e18ed041cfca4" category="inline-link-rx"></block>.</block>
+  <block id="c23c7626b0637210ef5d62fd1d1df00f" category="list-text">SnapCenter 서버와 ONTAP 간의 CA 인증서 인증을 지원합니다.<block ref="8dc6eaab1bf71e00e4e0bc0ca43579e6" category="inline-link-rx"></block>.</block>
+  <block id="330847308f1658ea8a183b76b1e6b361" category="list-text">무결성 검증 도구는 SnapCenter 서버 및 플러그인에 추가되며 새로 설치 및 업그레이드 작업을 수행하는 동안 제공된 모든 바이너리의 유효성을 검사합니다.</block>
+  <block id="70871ac0eac7d5e43a705f18b69f6651" category="admonition">여러 스크립트를 지정할 수 없습니다.</block>
+  <block id="d3873d463c5b3fb3a7750ff0ae00fee1" category="paragraph">시간 초과는 기본적으로 60초로 설정됩니다. 시간 초과 값을 수정할 수 있습니다.</block>
+  <block id="7dc560127d94117067b15f71651a7211" category="paragraph">감사 설정 관련 구성 파일은 DR 백업 및 복구 작업 후 DR 서버 둘 다 백업되지 않습니다. 감사 로그 설정을 수동으로 반복해야 합니다.</block>
+  <block id="5f3dbd65abc0c8e09475825857078de8" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="7a29c89d8f76feea0ca358fb1edb3864" category="inline-link">SnapCenter 4.8에 대한 고지 사항</block>
+  <block id="87cf8ed19692a681dacb14a050a89217" category="paragraph"><block ref="87cf8ed19692a681dacb14a050a89217" category="inline-link-rx"></block></block>
+  <block id="7ed3417ce7f529178e5bb25b31b39fc6" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 또는 을 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block> PowerShell cmdlet에 대한 자세한 내용은 에 나와 있습니다.</block>
+  <block id="cab00f169fcfeb601710dd89ecbfedf0" category="admonition">보존 카운트를 2 이상으로 설정해야 합니다. 보존 카운트의 최소값은 2입니다.</block>
+  <block id="5efaab231bdeaf77ed795fa0e9d5b3e4" category="paragraph"><block ref="0a3e2ef7f51b42a7ddee804547031be0" category="inline-link-rx"></block>.</block>
+  <block id="c6bac95430dac4e5070788ce23acefc4" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="3f0d4c4b3a1c9cfa1189bb7484d60c1b" category="inline-link-rx"></block></block>
+  <block id="0001160fa843faa4e5294c286bd2a184" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 및 cmdlet 참조 정보에 PowerShell cmdlet에 대한 자세한 정보가 포함되어 있습니다.<block ref="0a3e2ef7f51b42a7ddee804547031be0" category="inline-link-rx"></block>.</block>
+  <block id="9e9b8895f32adb6f730895bc11f2874a" category="paragraph">명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="7d5e98342223338218f7d96b6f09048c" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block></block>
+  <block id="517b39b6edfcd923dff2604ce021f723" category="paragraph">또한 _Uninstall-SmHostPackage_cmdlet 및 필수 매개 변수를 사용하여 여러 호스트에서 플러그인을 제거할 수도 있습니다. cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="e125da4cc0e5138fb35b5f0e2a1ba201" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="a79368498522acef202a75204e93905e" category="inline-link">SnapCenter 소프트웨어 4.8 릴리스 정보</block>
+  <block id="c9d12743ca0ae0d66da7b9ce9795a0e8" category="paragraph">자세한 내용은 를 참조하십시오<block ref="9b9dacb6ec864e8f90c589c7a3a6bf3e" category="inline-link-rx"></block>.</block>
+  <block id="5caa66eb9aef1c67f7e4f30ff2fa96b3" category="paragraph">데이터베이스를 복구할 때 데이터베이스에서 여러 작업이 실행되지 않도록 Oracle 데이터베이스 호스트의 _/var/opt/snapcenter/sSCO/lock_directory에 운영 잠금 파일(.sm_lock_dbsid)이 생성됩니다. 데이터베이스가 복원되면 운영 잠금 파일이 자동으로 제거됩니다.</block>
+  <block id="6aa52762a93e2798d142fe8255a41086" category="paragraph">선택적 사전 설치 검사를 건너뜁니다</block>
+  <block id="b1973a0eeb1e8eeaf3ab59ec202bef7a" category="paragraph">이미 플러그인을 수동으로 설치했고 호스트가 플러그인 설치 요구 사항을 충족하는지 확인하지 않으려면 이 확인란을 선택합니다.</block>
+  <block id="c2e2989cd34de9d2b93fbc71f60ffe4e" category="paragraph">또는 을 참조할 수도 있습니다<block ref="868bc9c3fbc71eae2d899862af6d942e" category="inline-link-rx"></block> 또는<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="4a320bb1e5b313ab794ae3a798ba5cde" category="paragraph">Oracle 데이터베이스용 SnapCenter 플러그인은 루트가 아닌 사용자가 설치할 수 있습니다. 그러나 비루트 사용자에 대한 sudo 권한을 구성하여 플러그인 프로세스를 설치하고 시작해야 합니다. 플러그인을 설치하면 프로세스가 루트가 아닌 효과적인 사용자로 실행됩니다.</block>
+  <block id="9bcf1803da6ec5a261d57713df8efcbd" category="list-text">Linux 또는 AIX 호스트에 Java 1.8.x 또는 Java 11, 64비트를 설치해야 합니다.</block>
+  <block id="48b525b2b37df887839c2e72d7a4a780" category="admonition">Linux 호스트에 Java 11의 인증된 버전만을 설치했는지 확인합니다.</block>
+  <block id="959d1796c42866efcf2433173a31c265" category="list-text">Java 1.8.x(64비트) Oracle Java 및 OpenJDK의 기능</block>
+  <block id="9cc285535dae9f8a4e5b6b210f8e838e" category="list-text">Java 11(64비트) Oracle Java 및 OpenJDK의 기능</block>
+  <block id="f9c6e2752992927f2c51ce2a85236ca9" category="paragraph">SnapCenter 2.0 이상 버전에서는 루트가 아닌 사용자가 Linux용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 플러그인 프로세스는 효과적인 비루트 사용자로 실행됩니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.</block>
+  <block id="e3f6dee76e478bb44341e47d36be0f01" category="list-text">sudo 버전 1.8.7 이상</block>
+  <block id="8e2de751f9a0d6e07b10791d5aec1925" category="list-text">/home/_linux_user_/.sc_netapp/snapcenter_linux_host_plugin.bin</block>
+  <block id="8ccb5ba037aab4670372942b6305b04b" category="admonition">다른 허용 명령과 함께 RAC 설정을 사용하는 경우 다음을 /etc/sudoers 파일에 추가해야 합니다. '/&lt;crs_home&gt;/bin/olsnodes'</block>
+  <block id="be02fb47e5ce9564292c10ef20e0af69" category="paragraph">_/etc/oracle/OLR.loc_file에서 _CRS_HOME_ 값을 가져올 수 있습니다.</block>
+  <block id="656c356e64e4c0be274c5c901e543686" category="paragraph">_linux_user_는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.</block>
+  <block id="b0103119f5d82629abb866083340dfee" category="paragraph">_C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * Oracle_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.</block>
+  <block id="5dcb853141d33f26c1df2f75da07200a" category="list-text">Java 1.8.x(64비트) IBM Java</block>
+  <block id="3fe85b9e16f08cb63e5aaa5c215097d7" category="list-text">Java 11(64비트) IBM Java</block>
+  <block id="449945354085db74a6111d72389e1ae2" category="paragraph">SnapCenter 4.4 이상에서는 루트가 아닌 사용자가 AIX용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 플러그인 프로세스는 효과적인 비루트 사용자로 실행됩니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.</block>
+  <block id="7377c325bca0c913abf66d3359e41873" category="paragraph">명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="868bc9c3fbc71eae2d899862af6d942e" category="inline-link-rx"></block>.</block>
+  <block id="1c23de25f91ce669fff9d59cc422c0a2" category="list-text">Oracle 및 그리드 대신 기본이 아닌 모든 사용자를 지원합니다.</block>
+  <block id="5719854a3b7b80da5cee21080c26176d" category="paragraph">기본값이 아닌 사용자를 지원하려면 _FILE/var/opt/snapcenter/sSCO/etc/_에 있는 * sco.properties* 파일에서 매개 변수 값을 수정하여 기본값이 아닌 사용자를 설정해야 합니다.</block>
+  <block id="596031c7fa0294b7a2d304ec2e1bce8b" category="paragraph">매개 변수의 기본값은 Oracle 및 GRID로 설정됩니다.</block>
+  <block id="4a85b53e62777e7f5c185c944d3c55a1" category="list-text">db_user=oracle입니다</block>
+  <block id="bd1da13993f5b5f04502598c088daa4d" category="list-text">db_group=oinstall을 선택합니다</block>
+  <block id="663b345154500cc2d3165730e7c7b6bc" category="list-text">gi_user = 그리드</block>
+  <block id="e5df7718dd7d60593c1dd152b40b7e4c" category="list-text">GI_GROUP = oinstall.(Gi_group = 설치</block>
+  <block id="0711b76cd7e563341c756717999a670c" category="paragraph">명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="868bc9c3fbc71eae2d899862af6d942e" category="inline-link-rx"></block>.</block>
+  <block id="11e64631478998d0abd8d43e9b74d6a6" category="paragraph">UNIX 명령에 대한 자세한 내용은 를 참조하십시오<block ref="868bc9c3fbc71eae2d899862af6d942e" category="inline-link-rx"></block>.</block>
+  <block id="f121e384c92705c4b18570e5ff63adf9" category="paragraph">cmdlet 또는 CLI를 사용하여 Linux 또는 AIX용 플러그인 패키지를 수동으로 설치할 수도 있습니다.</block>
+  <block id="806e5ebc9beaaf28454809d5a1530f91" category="paragraph">플러그인을 수동으로 설치하기 전에 _C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * snapcenter_public_key.pub * 및 * snapcenter_linux_host_plugin.bin.SIG * 키를 사용하여 바이너리 패키지의 서명을 확인해야 합니다.</block>
+  <block id="f718f3aee36dcfdcdb35028984a1e647" category="admonition">플러그인을 설치할 호스트에 * OpenSSL 1.0.2g * 가 설치되어 있는지 확인합니다.</block>
+  <block id="ceb8053c7838cc55543eb21a9426de24" category="paragraph">다음 명령을 실행하여 바이너리 패키지의 서명을 확인합니다.</block>
+  <block id="f454a08c3c09ccd56f92c300d394cf1e" category="list-text">Linux 호스트의 경우:<block ref="c319b701e180ce91b77f310475381d12" prefix=" " category="inline-code"></block></block>
+  <block id="9da5a8f942c8a23f24249f767440fb3d" category="list-text">AIX 호스트의 경우:<block ref="df3a3103b9e18ec4362f3fe7eb83c8e3" prefix=" " category="inline-code"></block></block>
+  <block id="aaef67c26b65c13acea2119d8265ce29" category="section-title">Linux용 플러그인 패키지를 자동 모드로 설치합니다</block>
+  <block id="6623e432bed8da22308ef3173b2ba905" category="paragraph">CLI(명령줄 인터페이스)를 사용하여 Linux용 SnapCenter 플러그인 패키지를 자동 모드로 설치할 수 있습니다.</block>
+  <block id="82c192c42c691360a69594ce2e29350e" category="paragraph">Oracle 데이터베이스에 대한 백업을 생성하는 동안 데이터베이스에서 여러 작업이 실행되지 않도록 Oracle 데이터베이스 호스트의 _/var/opt/snapcenter/sSCO/lock_directory에 운영 잠금 파일(_.sm_lock_dbsid_)이 생성됩니다. 데이터베이스가 백업되면 운영 잠금 파일이 자동으로 제거됩니다.</block>
+  <block id="8e42557ecacac1b49fb43986a24acae3" category="list-text">명령 프롬프트에서 _ /var/opt/snapcenter/sSCO/lock_ 로 이동합니다.</block>
+  <block id="12e41bdd9444d355c65f1b199c10bb5f" category="paragraph">명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="868bc9c3fbc71eae2d899862af6d942e" category="inline-link-rx"></block>.</block>
+  <block id="2d68b9458c6165a5eeeb8d311718b600" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업 및 복원 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="c6f3b6a232739129385caa78e571328f" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="b6a1d5caea1f8fdc446d41a31f9cfe3e" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="3f0d4c4b3a1c9cfa1189bb7484d60c1b" category="inline-link-rx"></block></block>
+  <block id="ae91f671bc06c1b556cc5ac890cddce0" category="list-text">Linux 또는 Windows 호스트에 Java 1.8 또는 Java 11(64비트)을 설치해야 합니다.</block>
+  <block id="ac9f8e08e831f7c1b56f125cc171d3e4" category="list-text">Linux 호스트에 Java 1.8 또는 Java 11(64비트)을 설치해야 합니다.</block>
+  <block id="c4dff45b697890d0a8ca7ca9f815fee6" category="paragraph">SnapCenter 서버 호스트에 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 1.8 또는 Java 11(64비트)을 설치해야 합니다. 상호 운용성 매트릭스 툴(IMT): 요구사항에 대한 최신 정보를 제공합니다.</block>
+  <block id="8cab0b64f941cd66c63c70f6dcc91d69" category="list-text">여러 경로에 대한 액세스를 제공하려면 비루트 사용자에 대해 sudo 권한을 구성해야 합니다. visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다.</block>
+  <block id="2cae85768532ad729badbc9d82df69b0" category="admonition">Sudo 버전 1.8.7 이상을 사용하고 있는지 확인합니다.</block>
+  <block id="7c17a5f75782af4f820b286a07f51777" category="paragraph">PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="1ef6040ccf2cfe6eabc18de550769a4f" category="list-text">SVM에 여러 데이터 경로(LIF)가 있을 경우 SnapCenter은 NFS 클론 복제된 볼륨을 마운트하기 위해 적절한 데이터 경로(LIF)를 선택합니다. 그러나 특정 데이터 경로(LIF)를 지정하려면 Set-SvmPreferredDataPath CLI를 실행해야 합니다. 명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="868bc9c3fbc71eae2d899862af6d942e" category="inline-link-rx"></block>.</block>
+  <block id="87dee260ac24c847f6318306d701cdaf" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="3f0d4c4b3a1c9cfa1189bb7484d60c1b" category="inline-link-rx"></block>.</block>
+  <block id="3c408f97e0a21affc59c011044498f97" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="551a33d207af23d33dc7ae8b0fcc767e" category="paragraph">PowerShell cmdlet을 수동으로 또는 스크립트에서 사용하여 백업, 복원, 복구, 확인 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="3f0d4c4b3a1c9cfa1189bb7484d60c1b" category="inline-link-rx"></block></block>
+  <block id="36b5bc8569a0d58f30345b63446499e3" category="paragraph">자세한 내용은 를 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="2dfd0f9f208059d0a9543cb1558cea8f" category="paragraph">cmdlet 실행에 대한 자세한 내용은 을 참조하십시오<block ref="3f0d4c4b3a1c9cfa1189bb7484d60c1b" category="inline-link-rx"></block></block>
+  <block id="4e8d1223f4ffd73f23495af28c3c7669" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 를 참조할 수도 있습니다<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="b1d0f68016df3655c241c0884e44b7fb" category="paragraph">cmdlet에 대한 자세한 내용은 을 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="1e0e854d46f7fdae75748f42803b83f4" category="paragraph">자세한 내용은 을 참조하십시오<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="423dd9f09f9c39167ffc1c8d5030b8c6" category="list-text">페일오버 중에 감사 로그 설정은 두 번째 노드에 반영되지 않습니다. 따라서 F5 패시브 노드가 활성화될 때 감사 로그 설정을 수동으로 반복해야 합니다.</block>
+  <block id="b2079ecc7149f6a09b8dd46c38e9fbe6" category="paragraph">SnapCenter GUI 사용 외에도 PowerShell cmdlet을 사용하여 스크립트를 생성하여 구성, 백업 및 복원 작업을 수행할 수 있습니다. 일부 cmdlet은 SnapCenter 릴리즈마다 변경될 수 있습니다. 를 클릭합니다<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block> 세부 정보가 있습니다.</block>
+  <block id="6e5f2d1e77d0e2fa921f3222dc72f4e7" category="summary">소프트웨어 플랫폼 및 해당 플랫폼에서 실행 중인 모든 소프트웨어의 보안 이벤트를 기록하도록 를 구성할 수 있습니다.</block>
+  <block id="d454841b95073c538e44b3f3299d1ce5" category="doc">감사 로그 설정을 구성합니다</block>
+  <block id="8e2dc41a491856f4fec28e22208ade0b" category="paragraph">감사 로그는 SnapCenter 서버의 모든 작업에 대해 생성됩니다. 기본적으로 감사 로그는 기본적으로 설치된 위치인 _C:\Program Files\NetApp\SnapCenter WebApp\audit\_에 보호됩니다.</block>
+  <block id="5ed1b0e090dc9a05e51d817a1c55c890" category="paragraph">감사 로그는 각 감사 이벤트에 대해 디지털 서명된 다이제스트를 생성하여 무단 수정으로부터 보호합니다. 생성된 다이제스트는 별도의 감사 체크섬 파일에 보관되며, 컨텐츠의 무결성을 보장하기 위해 정기적인 무결성 검사를 수행합니다.</block>
+  <block id="734c77935d0e356a02cffa5bdcf4eeea" category="list-text">경고는 다음과 같은 경우에 전송됩니다.</block>
+  <block id="f1f8c5af0be546c7d0628f3709a3e94d" category="list-text">감사 로그 무결성 검사 스케줄 또는 Syslog 서버가 활성화 또는 비활성화되어 있습니다</block>
+  <block id="878218ae1c3f1a803da46fc67047328e" category="list-text">감사 로그 무결성 검사, 감사 로그 또는 Syslog 서버 로그 실패</block>
+  <block id="1f4f6bb6a3727e7259a572df780132e9" category="list-text">디스크 공간이 부족합니다</block>
+  <block id="a8b829b4549eb0268e8a4bcfdb283ccd" category="list-text">무결성 검사가 실패한 경우에만 이메일이 전송됩니다.</block>
+  <block id="5653bc89f7b74b08b75280647c8e7814" category="list-text">감사 로그 디렉토리와 감사 체크섬 로그 디렉토리 경로를 함께 수정해야 합니다. 이 중 하나만 수정할 수 없습니다.</block>
+  <block id="3561daaa2a73d8e47ede784f533c90f0" category="list-text">감사 로그 디렉토리 및 감사 체크섬 로그 디렉토리 경로가 수정되면 이전 위치에 있는 감사 로그에 대한 무결성 검사를 수행할 수 없습니다.</block>
+  <block id="f2b056d9585421258b6725769cc3ef78" category="list-text">감사 로그 디렉토리 및 감사 체크섬 로그 디렉토리 경로는 SnapCenter 서버의 로컬 드라이브에 있어야 합니다.</block>
+  <block id="3c15d7a6541e416f0d13373ee63fd0c0" category="paragraph">공유 또는 네트워크 마운트 드라이브는 지원되지 않습니다.</block>
+  <block id="d90e9077285809de90243e91ed3a10bc" category="list-text">Syslog 서버 설정에서 UDP 프로토콜을 사용하는 경우 포트가 중단되었거나 사용할 수 없어 발생한 오류는 SnapCenter에서 오류 또는 경고로 캡처될 수 없습니다.</block>
+  <block id="b398a3651d49f0eb14349eff9cfdec58" category="list-text">Set-SmAuditSettings 및 Get-SmAuditSettings 명령을 사용하여 감사 로그를 구성할 수 있습니다.</block>
+  <block id="28e97aa2b5ca929ab9bd2ef8535b4f26" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 Get-Help command_name을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="c8399eb92bca49a664acc7e0445d090e" category="inline-link-rx"></block>.</block>
+  <block id="b081c433d361cfcb39c391b352a6f526" category="list-text">설정 * 페이지에서 * 설정 * &gt; * 글로벌 설정 * &gt; * 감사 로그 설정 * 으로 이동합니다.</block>
+  <block id="f3645e45f905156003cb2bb7741a86f3" category="list-text">Audit log(감사 로그) 섹션에서 세부 정보를 입력합니다.</block>
+  <block id="bc622cdadddc54b812b2df6bb7115372" category="list-text">감사 로그 디렉토리 * 및 * 감사 체크섬 로그 디렉토리 * 를 입력합니다</block>
+  <block id="0f0fe34e5db47bfababf3c8feae7d98c" category="list-text">최대 파일 크기를 입력합니다</block>
+  <block id="0e8e39045f055a207d497573e149652d" category="list-text">최대 로그 파일을 입력합니다</block>
+  <block id="935cb3c2695f175068a87c5d68e847d5" category="list-text">경고를 보낼 디스크 공간 사용 비율을 입력합니다</block>
+  <block id="9ab05ba909846c3d7f2f7c066b084728" category="list-text">(선택 사항) * Log UTC Time * 을 활성화합니다.</block>
+  <block id="7f2d97437d7de429ba8a4765db91d854" category="list-text">(선택 사항) * 감사 로그 무결성 검사 일정 * 을 활성화하고 * 무결성 검사 시작 * 을 클릭하여 필요 시 무결성 검사를 수행합니다.</block>
+  <block id="8aee3d0fefbd000c19b3ee35aa2bc680" category="paragraph">또한 * Start-SmAuditIntegrityCheck * 명령을 실행하여 요청 시 무결성 검사를 시작할 수도 있습니다.</block>
+  <block id="69a043658ef8489e6882e8795cebb91b" category="list-text">(선택 사항) 전달된 감사 로그를 원격 syslog 서버로 활성화하고 Syslog Server 세부 정보를 입력합니다.</block>
+  <block id="3ea690d333a0676fa4a069c2a47f4d15" category="paragraph">Syslog 서버에서 TLS 1.2 프로토콜용 '신뢰할 수 있는 루트'로 인증서를 가져와야 합니다.</block>
+  <block id="d8fd61c62424b805c059b1d8a8802558" category="list-text">Syslog 서버 호스트를 입력합니다</block>
+  <block id="fe221223e4b9ae05f1cf4d2a3acb3e2b" category="list-text">Syslog 서버 포트를 입력합니다</block>
+  <block id="79e06e5c035a2c2f7382e995d5baa08e" category="list-text">Syslog Server Protocol을 입력합니다</block>
+  <block id="7a86ee54e2df90d7a4109938e53c1deb" category="list-text">RFC 형식을 입력합니다</block>
+  <block id="ace31f9e5f442121e5c3914671ec85d3" category="list-text">모니터 * &gt; * 작업 * 을 클릭하면 감사 무결성 검사 및 디스크 공간 검사를 볼 수 있습니다.</block>
+  <block id="d251696f5e122ef9209620841c14e519" category="sidebar">SnapCenter 소프트웨어 4.8 문서</block>
 </blocks>

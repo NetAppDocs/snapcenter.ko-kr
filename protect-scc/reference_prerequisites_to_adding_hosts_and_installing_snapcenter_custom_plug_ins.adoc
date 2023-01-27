@@ -18,7 +18,7 @@ summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에
 link:concept_develop_a_plug_in_for_your_application.html["응용 프로그램용 플러그인을 개발합니다"]
 
 * MySQL 또는 DB2 애플리케이션을 관리하려면 NetApp에서 제공하는 MySQL 및 DB2 사용자 지정 플러그인을 다운로드해야 합니다.
-* Linux 또는 Windows 호스트에 Java 1.8, 64비트를 설치해야 합니다.
+* Linux 또는 Windows 호스트에 Java 1.8 또는 Java 11(64비트)을 설치해야 합니다.
 * Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자에 속한 경우 호스트에서 UAC를 비활성화해야 합니다.
 * 호스트 추가 작업이 수행되는 클라이언트 호스트에서 사용자 지정 플러그인을 사용할 수 있어야 합니다.
 
@@ -80,9 +80,9 @@ custom_plugin_checksum_list 는 SnapCenter에서 호스트에 설치하는 사�
 == Linux 호스트
 
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
-* Linux 호스트에 Java 1.8 64비트를 설치해야 합니다.
+* Linux 호스트에 Java 1.8 또는 Java 11(64비트)을 설치해야 합니다.
 +
-SnapCenter 서버 호스트에 Windows 2019 또는 Windows 2016을 사용하는 경우 Java 1.8, 64비트를 설치해야 합니다. 상호 운용성 매트릭스 툴(IMT): 요구사항에 대한 최신 정보를 제공합니다.
+SnapCenter 서버 호스트에 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 1.8 또는 Java 11(64비트)을 설치해야 합니다. 상호 운용성 매트릭스 툴(IMT): 요구사항에 대한 최신 정보를 제공합니다.
 
 +
 http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
@@ -90,13 +90,31 @@ http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 
 +
 https://imt.netapp.com/matrix/imt.jsp?components=105308;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
-* 여러 경로에 대한 액세스를 제공하려면 비루트 사용자에 대해 sudo 권한을 구성해야 합니다. visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다. 예를 들면, 다음과 같습니다.
+* 여러 경로에 대한 액세스를 제공하려면 비루트 사용자에 대해 sudo 권한을 구성해야 합니다. visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다.
 +
-[listing]
+
+NOTE: Sudo 버전 1.8.7 이상을 사용하고 있는지 확인합니다.
+
++
+[listing, subs="+quotes"]
 ----
-Cmnd_Alias SCCMD = /opt/NetApp/snapcenter/scc/bin/scc <non_root_user> ALL=(ALL) NOPASSWD:SETENV: SCCMD
+Cmnd_Alias HPPLCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/snapcenter_linux_host_plugin.bin, /opt/NetApp/snapcenter/spl/installation/plugins/uninstall, /opt/NetApp/snapcenter/spl/bin/spl, /opt/NetApp/snapcenter/scc/bin/scc
+Cmnd_Alias PRECHECKCMD = sha224:checksum_value== /home/_LINUX_USER_/.sc_netapp/Linux_Prechecks.sh
+Cmnd_Alias CONFIGCHECKCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/plugins/scu/scucore/configurationcheck/Config_Check.sh
+Cmnd_Alias SCCMD = sha224:checksum_value== /opt/NetApp/snapcenter/spl/bin/sc_command_executor
+Cmnd_Alias SCCCMDEXECUTOR =checksum_value== /opt/NetApp/snapcenter/scc/bin/sccCommandExecutor
+_LINUX_USER_ ALL=(ALL) NOPASSWD:SETENV: HPPLCMD, PRECHECKCMD, CONFIGCHECKCMD, SCCCMDEXECUTOR, SCCMD
+Defaults: _LINUX_USER_ !visiblepw
+Defaults: _LINUX_USER_ !requiretty
 ----
 +
-non_root_user 는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.
+_linux_user_는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.
+
++
+_C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * Oracle_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.
+
++
+
+IMPORTANT: 이 예제는 고유한 데이터를 만들기 위한 참조로만 사용해야 합니다.
 
 

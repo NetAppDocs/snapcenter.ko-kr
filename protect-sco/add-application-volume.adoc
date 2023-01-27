@@ -1,7 +1,7 @@
 ---
 permalink: protect-sco/add-application-volume.html 
 sidebar: sidebar 
-keywords: application volume, overview, add, modify, delete 
+keywords: application volume, overview, add, modify, delete, Oracle database 
 summary: 애플리케이션 볼륨을 수동으로 추가해야 합니다. 
 ---
 = 애플리케이션 볼륨 추가

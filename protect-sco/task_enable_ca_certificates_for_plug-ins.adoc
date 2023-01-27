@@ -19,7 +19,7 @@ CA 인증서를 구성하고 SnapCenter 서버 및 해당 플러그인 호스트
 * _get-SmCertificateSettings_를 사용하여 플러그인의 인증서 상태를 표시할 수 있습니다.
 
 
-cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 * 단계 *
 
