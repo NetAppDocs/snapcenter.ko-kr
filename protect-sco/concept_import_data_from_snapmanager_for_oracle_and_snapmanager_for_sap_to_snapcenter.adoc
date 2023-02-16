@@ -35,7 +35,7 @@ SnapCenter는 7-Mode에서 작동하는 Data ONTAP를 지원하지 않습니다.
 
 Oracle용 SnapManager 3.4.x 및 SAP용 SnapManager 3.4.x에서 SnapCenter로 데이터를 가져오기 전에 Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성을 알고 있어야 합니다.
 
-Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성은 에 나와 있습니다 https://imt.netapp.com/matrix/imt.jsp?components=105283;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성은 에 나와 있습니다 https://imt.netapp.com/matrix/imt.jsp?components=108392;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
 
 
 

@@ -32,4 +32,4 @@ Internet Explorer 보안 설정을 변경하면 상당한 브라우저 표시 �
 * Microsoft Edge를 참조하십시오
 
 
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=105046;&solution=1257&isHWU#welcome["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].

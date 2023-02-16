@@ -32,7 +32,7 @@ SnapCenter 사용자 인터페이스 내에서 Exchange용 플러그인을 설�
 
 . 플러그인을 설치할 호스트에 설치 파일을 복사합니다.
 . 로컬 호스트의 Windows 명령 프롬프트에서 플러그인 설치 파일을 저장한 디렉토리로 이동합니다.
-. 다음 명령을 입력하여 변수가 데이터로 교체되도록 설치합니다.
+. 다음 명령을 입력하여 플러그인을 설치합니다.
 +
 _snapcenter_windows_host_plugin.exe" /silent/debuglog"<Debug_Log_Path>"/log"<Log_Path>"BI_SNAPCENTER_PORT=<Num>Suite_INSTALLDIR="<Install_Directory_Path>"BI_ServiceAccount=<domain\administrator>BI_SERVICEPSCE=<설치 암호>
 
@@ -46,8 +46,6 @@ _C:\ProgramData\NetApp\SnapCenter\Package Repository\snapcenter_windows_host_plu
 
 NOTE: Exchange용 플러그인을 설치하는 동안 전달되는 모든 매개 변수는 대/소문자를 구분합니다.
 
-+
-.. _/silent/debuglog "C:\Installdebug.log" /log "C:\temp" BI_SNAPCENTER_PORT=8145 Suite_INSTALLDIR="C:\Program Files" BI_ServiceAccount=demo\administrator BI_SERVICEPWD=Netapp1! ISFeatureInstall = HPPW, SCW _
 +
 변수에 대해 다음 값을 입력합니다.
 
@@ -99,8 +97,6 @@ ISFeatureInstall을 선택합니다
 SnapCenter가 원격 호스트에 구축할 솔루션을 지정합니다.
 
 |===
-
-
 . Windows 작업 스케줄러, 기본 설치 로그 파일 _C:\Installdebug.log_ 및 추가 설치 파일을 _C:\Temp_에서 모니터링합니다.
 . %temp%_ 디렉토리를 모니터링하여 _msiexe.exe_설치 프로그램이 오류 없이 소프트웨어를 설치하고 있는지 확인합니다.
 +

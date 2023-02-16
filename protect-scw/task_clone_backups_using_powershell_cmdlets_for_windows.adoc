@@ -10,6 +10,7 @@ summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 �
 :imagesdir: ../media/
 
 
+[role="lead"]
 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 모니터링이 포함됩니다.
 
 PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
