@@ -7,7 +7,7 @@ indexpage:
   - title: 시작하십시오
     links:
     - title: 릴리스 정보
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883299
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885481
     - title: SnapCenter에 대해 자세히 알아보십시오
       url: "/concept/concept_snapcenter_overview.html"
     - title: SQL Server 데이터베이스 보호를 위한 빠른 참조입니다
