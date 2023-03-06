@@ -9,7 +9,7 @@ entries:
 - title: REST 웹 서비스 기반
   url: "/sc-automation/concept_rest_web_services_foundation.html"
 - title: 기본 작동 특성
-  url: "/sc-automation/concept_basic_operational_characterstics.html"
+  url: "/sc-automation/concept_basic_operational_characteristics.html"
 - title: API 요청을 제어하는 입력 변수입니다
   url: "/sc-automation/concept_input_variables_controlling_an_api_request.html"
 - title: API 응답 해석
