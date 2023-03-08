@@ -6844,29 +6844,16 @@
   <block id="607ae7a08e1d8da9ed8df0e56a63095d" category="summary">SnapCenter 재해 복구 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다.</block>
   <block id="78a063ff38d2b793d6d796023bf46a0c" category="doc">SnapCenter 서버의 재해 복구에 REST API가 지원됩니다</block>
   <block id="0e8b55402d6627c0f8102010e3494744" category="inline-link-macro">swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법</block>
-  <block id="91ab0f2c983023d0027fbe07aa0f3fe7" category="paragraph">SnapCenter DR(재해 복구) 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. REST API를 사용하여 REST API Swagger 페이지에서 다음 작업을 수행할 수 있습니다. Swagger 페이지에 액세스하는 방법은 를 참조하십시오 <block ref="2025c045f65fe4c2f57ea8e2f34bc22a" category="inline-link-macro-rx"></block>.</block>
   <block id="c3801e49df2e57ee5488d512e1cf02b0" category="list-text">DR 복원 API를 실행하려면 SnapCenter 서버가 실행 중이어야 합니다.</block>
   <block id="a58600f18618dccbf582ceb82520f1ae" category="paragraph">SnapCenter 서버 DR은 모든 플러그인을 지원합니다.</block>
-  <block id="48c7c41b72e1d678923ce3571aa65b2d" category="cell">단계</block>
   <block id="aba3d4b49c454e1974970e7b5514b001" category="cell">REST API</block>
   <block id="511e67fd33176b5c5df2fcf5169691d4" category="paragraph">기존 SnapCenter 서버 DR 백업을 가져옵니다</block>
   <block id="5683cd95d1258c1198131ee3fde12f8f" category="paragraph">`/4.5/disasterrecovery/server/backup? TargetPath={path}'</block>
-  <block id="c81e728d9d4c2f636f067f89cc14862c" category="paragraph">2</block>
   <block id="4d5710dee895c5f98e2a36bdeef9d63c" category="paragraph">'/4.5/disasterrecovery/server/backup'</block>
-  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="paragraph">3</block>
   <block id="3d53caca8e9b880190a77914260432ef" category="paragraph">지정된 서버 DR 백업에서 SnapCenter 서버를 복원합니다.</block>
-  <block id="fc01add8dc5e609f9be29c977daabdb7" category="paragraph">* 필수 구성 요소 *</block>
-  <block id="119b209f3bca82380d31e9ec34d4997b" category="list-text">2차 서버 호스트 이름은 1차 서버와 동일해야 하지만 IP 주소는 다를 수 있습니다.</block>
-  <block id="f052ac36f43bc8a21796f6c4fc5a79e2" category="list-text">서버 버전은 기본 서버와 동일해야 합니다.</block>
-  <block id="58d4bb8d9e64a51c8e256edf1012afef" category="list-text">다음 명령을 사용하여 DR 백업 파일이 새 SnapCenter 서버로 복사되었는지 확인합니다.</block>
-  <block id="9d50f2e9dcf6f8828b93d76e4e348c5c" category="paragraph">'&lt;Ssource_Path&gt;\&lt;Destination_Server_IP&gt;\&lt;Folder_Path&gt;/O/X/E/H/K{ex:xcopy C:\DRBackup\\10.225.81.114\c$\DRBackup/O/X/E/H/K}'</block>
-  <block id="6318bc3cec87bcdb03cab32f9670f6dc" category="paragraph">플러그인이 서버 호스트 이름을 확인할 수 없는 경우 각 플러그인 호스트에 로그인하고 새 IP에 대한 etc/host 항목을 "&lt;New IP&gt;SC_Server_Name" 형식으로 추가합니다</block>
-  <block id="a09638d3ee7f516207640b2340404009" category="paragraph">예: 10.225.81.35 SCServer1</block>
   <block id="4be41a636618a9946610f44cdfd45adf" category="paragraph">'/4.5/Disasterrecovery/server/restore'</block>
-  <block id="a87ff679a2f3e71d9181a67b7542122c" category="paragraph">4</block>
   <block id="de7c2595c4bced19b8869303d92cef7d" category="paragraph">백업 이름을 기준으로 서버 DR 백업을 삭제합니다.</block>
   <block id="13914c16a90c0b0c44e99f78ba2183b2" category="paragraph">``4.5/disasterrecovery/server/backup’’으로 표시됩니다</block>
-  <block id="e4da3b7fbbce2345d7772b0674a318d5" category="paragraph">5</block>
   <block id="9aa96933bdaa05ec27830a1517e54f9a" category="paragraph">스토리지 DR을 설정하거나 해제합니다</block>
   <block id="9bb6ced642f1be37b6ad58e85292fffa" category="paragraph">'/4.5/disasterrecovery/storage'</block>
   <block id="12c254b6e514e7d479282efdf4ebc497" category="doc">리소스, 리소스 그룹 및 정책</block>
@@ -7671,7 +7658,6 @@
   <block id="7a39a5111b0101ad3147c54ee235c183" category="paragraph">이 API를 사용하여 SnapCenter 버전을 볼 수 있습니다.</block>
   <block id="c3117c33abd012814d4b2d7b924c1f8d" category="admonition">DR 백업이 저장되는 타겟 경로를 제공해야 합니다.</block>
   <block id="2012ae142f225323da2a6e6b42372bd8" category="paragraph">새 서버 DR 백업을 생성합니다.</block>
-  <block id="6d4bea151109003c5e0920bae84073a0" category="paragraph">서버 etc/host 파일은 복원되지 않습니다. DR 백업 폴더에서 수동으로 복원할 수 있습니다.</block>
   <block id="5cfcff9080dfd6a0b46f31dd889d7691" category="list-text">MFA 설정에 대한 SnapCenter 명령은 모든 노드에서 실행되어야 합니다. AD FS(Active Directory Federation Services) 서버에서 F5 클러스터 세부 정보를 사용하여 기반 당사자 구성을 수행해야 합니다. MFA를 사용하도록 설정하면 노드 레벨 SnapCenter UI 액세스가 차단됩니다.</block>
   <block id="88b8c728864c341ef14637e289839640" category="list-text">ASP.NET 4.7.2</block>
   <block id="8098ea3ff2e42300d1835034eb9f2ad7" category="paragraph">NET Framework 4.7.2 기능+</block>
@@ -7956,4 +7942,28 @@
   <block id="62daf6a07ef62b5f47d64602451886c4" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="78bb88f9abe535c4182359f981c4d0d5" category="inline-link-rx"></block>.</block>
   <block id="8b64c44e24e9cf1c59554cf2c41479bf" category="paragraph">지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오<block ref="78bb88f9abe535c4182359f981c4d0d5" category="inline-link-rx"></block>.</block>
   <block id="026ab5d2853d1f0c92bc7f3703d62e90" category="sidebar">SnapCenter 소프트웨어는 하이브리드 클라우드 어디서나 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대해 애플리케이션 정합성을 보장하는 데이터 보호를 제공하는 단순하고 확장 가능한 중앙 집중식 플랫폼입니다. 이 설명서 라이브러리에는 버전 4.8에 대한 정보가 포함되어 있습니다.</block>
+  <block id="3f02fb62bfeb289d4be1d20d610004f0" category="doc">DR(재해 복구) REST API</block>
+  <block id="d32779bdd599ffb81c5a1d466000d56e" category="paragraph">SnapCenter DR(재해 복구) 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. DR REST API를 사용하기 전에 다음 단계를 수행하십시오.</block>
+  <block id="c78f6c96db76c1f69e91b5487e704f43" category="list-text">DR 백업 REST API를 사용하여 지정된 서버 DR 백업에서 SnapCenter 서버를 복원하는 새 서버 DR 백업 생성:<block ref="fe172164c0bbfbb71439d4e0d42883f5" prefix=" " category="inline-code"></block></block>
+  <block id="f72771614abb57fc7a16f6aa264da665" category="list-text">보조 서버 시스템을 불러오지만 보조 서버에 SnapCenter 서버를 설치하기 전에 필수 구성 요소를 완료해야 합니다.</block>
+  <block id="494f2693f3776d355700eeab7dd75821" category="list-text">대체 서버 호스트 이름/호스트 FQDN은 기본 서버 호스트 이름과 같아야 하지만 IP 주소는 다를 수 있습니다.</block>
+  <block id="31f27d6daa5ab50a1011f7c910c6e5d3" category="list-text">2차 서버 버전은 1차 서버와 동일해야 합니다.</block>
+  <block id="7aafedae29efa6e49e3abbb250243837" category="list-text">보조 SnapCenter는 운영 포트와 동일한 위치에 동일한 포트에 설치해야 합니다.</block>
+  <block id="8490b635a4e468a237b8b257d031011c" category="list-text">서버 DR 복원 작업을 트리거하기 전에 재해 발생 후 DR 백업이 저장되는 경로 또는 대상 경로를 가져와야 합니다.</block>
+  <block id="8972c05484753254a6f948a4962b6811" category="list-text">다음 명령을 사용하여 DR 백업 파일이 새 SnapCenter 서버에 복사되었는지 확인합니다.<block ref="f9683fa16c9d437a04d3664577ef2872" prefix=" " category="inline-code"></block></block>
+  <block id="4939134c976f3894f29e1ce445b76428" category="list-text">보조 시스템에 SnapCenter 서버를 설치합니다.</block>
+  <block id="dc75347cc15e78823bdaadb0ea654097" category="list-text">DR 복원 작업을 수행하는 동안 SnapCenter 서버와 관련된 작업이 실행되고 있지 않은지 확인해야 합니다.</block>
+  <block id="9a4130dee8443d03bcdf62bae505136e" category="list-text">보조 SnapCenter 서버를 운영 서버와 동일한 위치에 동일한 포트에 설치합니다.</block>
+  <block id="5753398a53564a3efa071ab4a2a25e75" category="list-text">DR 복원 API를 사용하여 서버 DR 복원 작업 수행: <block ref="60709718d7a794a4b06a075a7df6ad86" prefix=" " category="inline-code"></block></block>
+  <block id="e729f7885b63addbf250ef2f33329efb" category="paragraph">플러그인이 서버 호스트 이름을 확인할 수 없는 경우 각 플러그인 호스트에 로그인하고 &lt;New IP&gt; SC_Server_Name 형식으로 새 IP에 대한 etc/host 항목을 추가합니다. 예를 들면, 다음과 같습니다.<block ref="787ca03a3d14e5cce46cedf0bba7ac2b" prefix=" " category="inline-code"></block></block>
+  <block id="421f836e09d607d08dad463276b0c52e" category="paragraph">서버 etc/host 항목은 복원되지 않습니다. DR 백업 폴더에서 수동으로 복원할 수 있습니다.</block>
+  <block id="cf6d86307a7decebf79e2175ef2bc96f" category="inline-link">SnapCenter를 다른 서버로 마이그레이션하는 방법</block>
+  <block id="40b06602d6310e9f595ec07f57b84775" category="admonition">F5 설치의 경우 복원 작업이 독립 실행형으로 수행되며 일련의 명령을 실행하여 F5를 다시 만들어야 합니다. 참조, 링크:<block ref="fb5c34144d693d79610d99e63e5e4e12" category="inline-link-rx"></block></block>
+  <block id="d51a9a84121a4ca319f6f0b5d481f073" category="admonition">DR 복구 후 호스트가 추가되지만 플러그인을 수동으로 설치해야 합니다.</block>
+  <block id="2dce035ff36be1c01663c842167acf77" category="admonition">Windows용 SnapCenter 플러그인을 설치하고 NetApp LUN을 서버 시스템에 연결한 경우에만 저장소 백업 일정이 복구됩니다.</block>
+  <block id="d894da67863cc5e9abfa9afc40b47771" category="paragraph">REST API를 사용하여 REST API Swagger 페이지에서 다음 작업을 수행할 수 있습니다. Swagger 페이지에 액세스하는 방법은 를 참조하십시오 <block ref="2025c045f65fe4c2f57ea8e2f34bc22a" category="inline-link-macro-rx"></block>.</block>
+  <block id="04f76259e3406e39f106d09b85354906" category="inline-link">Exchange 백업용 SnapCenter는 볼트 대상 로그 볼륨에 스냅샷의 절반만 유지합니다</block>
+  <block id="67e1d332319e6fe55fd35967c2ec989e" category="admonition">Exchange 볼륨(LUN)을 처리할 때 로그 및 데이터베이스에 대해 별도의 볼트 정책을 생성하고 동일한 레이블을 사용하여 로그 정책의 유지(보존)를 데이터베이스 정책으로 각 레이블에 대해 두 배로 설정합니다. 자세한 내용은 다음을 참조하십시오.<block ref="069d987d34ba2a5b3f4862b42bb7f849" category="inline-link-rx"></block></block>
+  <block id="b885eb831c1b0ea66dc957240ef0bacd" category="admonition">제어 파일을 복원하는 동안 복원 프로세스를 통해 파일을 대상 위치로 복사할 수 있도록 디렉터리 구조가 있는지 또는 올바른 사용자 및 그룹 소유로 만들어야 하는지 확인합니다. 디렉토리가 없으면 복원 작업이 실패합니다.</block>
+  <block id="3a6eb59ee064b09b020c1a87c5de4988" category="admonition">IBM Java는 지원되지 않습니다.</block>
 </blocks>

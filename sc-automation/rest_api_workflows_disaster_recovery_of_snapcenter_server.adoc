@@ -4,14 +4,66 @@ sidebar: sidebar
 keywords:  
 summary: SnapCenter 재해 복구 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. 
 ---
-= SnapCenter 서버의 재해 복구에 REST API가 지원됩니다
+= DR(재해 복구) REST API
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
+:firstname: [.lead]
+:author: [.lead]
+:authorinitials: [
+:authors: [.lead]
 
 
-[role="lead"]
-SnapCenter DR(재해 복구) 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. REST API를 사용하여 REST API Swagger 페이지에서 다음 작업을 수행할 수 있습니다. Swagger 페이지에 액세스하는 방법은 를 참조하십시오 link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html["swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법"].
+SnapCenter DR(재해 복구) 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. DR REST API를 사용하기 전에 다음 단계를 수행하십시오.
+
+* 단계 *
+
+. DR 백업 REST API를 사용하여 지정된 서버 DR 백업에서 SnapCenter 서버를 복원하는 새 서버 DR 백업 생성: `/4.5/disasterrecovery/server/backup`
+. 보조 서버 시스템을 불러오지만 보조 서버에 SnapCenter 서버를 설치하기 전에 필수 구성 요소를 완료해야 합니다.
++
+** 대체 서버 호스트 이름/호스트 FQDN은 기본 서버 호스트 이름과 같아야 하지만 IP 주소는 다를 수 있습니다.
+** 2차 서버 버전은 1차 서버와 동일해야 합니다.
+** 보조 SnapCenter는 운영 포트와 동일한 위치에 동일한 포트에 설치해야 합니다.
+
+
+. 서버 DR 복원 작업을 트리거하기 전에 재해 발생 후 DR 백업이 저장되는 경로 또는 대상 경로를 가져와야 합니다.
++
+** 다음 명령을 사용하여 DR 백업 파일이 새 SnapCenter 서버에 복사되었는지 확인합니다.
+`xcopy <Ssource_Path> \\<Destination_Server_IP>\<Folder_Path> /O /X /E /H /K {ex : xcopy C:\DRBackup \\10.225.81.114\c$\DRBackup /O /X /E /H /K}`
+
+
+. 보조 시스템에 SnapCenter 서버를 설치합니다.
++
+** DR 복원 작업을 수행하는 동안 SnapCenter 서버와 관련된 작업이 실행되고 있지 않은지 확인해야 합니다.
+
+
+. 보조 SnapCenter 서버를 운영 서버와 동일한 위치에 동일한 포트에 설치합니다.
++
+** DR 복원 API를 사용하여 서버 DR 복원 작업 수행:  `/4.5/disasterrecovery/server/restore`
++
+플러그인이 서버 호스트 이름을 확인할 수 없는 경우 각 플러그인 호스트에 로그인하고 <New IP> SC_Server_Name 형식으로 새 IP에 대한 etc/host 항목을 추가합니다. 예를 들면, 다음과 같습니다. `10.225.81.35 SCServer1`
+
++
+서버 etc/host 항목은 복원되지 않습니다. DR 백업 폴더에서 수동으로 복원할 수 있습니다.
+
+
+
+
+
+
+NOTE: F5 설치의 경우 복원 작업이 독립 실행형으로 수행되며 일련의 명령을 실행하여 F5를 다시 만들어야 합니다. 참조, 링크: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_Migrate_SnapCenter_migrate_to_another_Server["SnapCenter를 다른 서버로 마이그레이션하는 방법"^]
+
+
+NOTE: DR 복구 후 호스트가 추가되지만 플러그인을 수동으로 설치해야 합니다.
+
+
+NOTE: Windows용 SnapCenter 플러그인을 설치하고 NetApp LUN을 서버 시스템에 연결한 경우에만 저장소 백업 일정이 복구됩니다.
+
+
+
+== SnapCenter 서버의 재해 복구에 REST API가 지원됩니다
+
+REST API를 사용하여 REST API Swagger 페이지에서 다음 작업을 수행할 수 있습니다. Swagger 페이지에 액세스하는 방법은 를 참조하십시오 link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html["swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법"].
 
 * 필요한 것 *
 
@@ -23,13 +75,10 @@ SnapCenter DR(재해 복구) 기능은 REST API를 사용하여 SnapCenter 서�
 
 SnapCenter 서버 DR은 모든 플러그인을 지원합니다.
 
-[cols="10,40,50,10"]
 |===
-| 단계 | 설명 | REST API | HTTP 메소드 
+| 설명 | REST API | HTTP 메소드 
 
 
- a| 
-1
  a| 
 기존 SnapCenter 서버 DR 백업을 가져옵니다
 
@@ -43,8 +92,6 @@ NOTE: DR 백업이 저장되는 타겟 경로를 제공해야 합니다.
 
 
  a| 
-2
- a| 
 새 서버 DR 백업을 생성합니다.
  a| 
 '/4.5/disasterrecovery/server/backup'
@@ -54,25 +101,7 @@ NOTE: DR 백업이 저장되는 타겟 경로를 제공해야 합니다.
 
 
  a| 
-3
- a| 
 지정된 서버 DR 백업에서 SnapCenter 서버를 복원합니다.
-
-* 필수 구성 요소 *
-
-* 2차 서버 호스트 이름은 1차 서버와 동일해야 하지만 IP 주소는 다를 수 있습니다.
-* 서버 버전은 기본 서버와 동일해야 합니다.
-* 다음 명령을 사용하여 DR 백업 파일이 새 SnapCenter 서버로 복사되었는지 확인합니다.
-+
-'<Ssource_Path>\<Destination_Server_IP>\<Folder_Path>/O/X/E/H/K{ex:xcopy C:\DRBackup\\10.225.81.114\c$\DRBackup/O/X/E/H/K}'
-
-
-
-플러그인이 서버 호스트 이름을 확인할 수 없는 경우 각 플러그인 호스트에 로그인하고 새 IP에 대한 etc/host 항목을 "<New IP>SC_Server_Name" 형식으로 추가합니다
-
-예: 10.225.81.35 SCServer1
-
-서버 etc/host 파일은 복원되지 않습니다. DR 백업 폴더에서 수동으로 복원할 수 있습니다.
  a| 
 '/4.5/Disasterrecovery/server/restore'
  a| 
@@ -80,8 +109,6 @@ NOTE: DR 백업이 저장되는 타겟 경로를 제공해야 합니다.
 
 
 
- a| 
-4
  a| 
 백업 이름을 기준으로 서버 DR 백업을 삭제합니다.
  a| 
@@ -91,8 +118,6 @@ NOTE: DR 백업이 저장되는 타겟 경로를 제공해야 합니다.
 
 
 
- a| 
-5
  a| 
 스토리지 DR을 설정하거나 해제합니다
  a| 
