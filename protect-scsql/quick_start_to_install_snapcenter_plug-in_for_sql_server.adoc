@@ -196,13 +196,13 @@ ONTAP 클러스터 또는 SVM 통신 포트
 
 SQL Server에 대한 sysadmin 권한이 있는 사용자가 있어야 합니다. 플러그인은 Microsoft VDI 프레임워크를 사용하므로 sysadmin 액세스가 필요합니다.
 
-Microsoft SQL Server용 SnapManager를 사용하고 있고 SnapManager for Microsoft SQL Server에서 SnapCenter로 데이터를 가져오려면 를 참조하십시오 link:../protect-scsql/concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html["보관된 백업을 가져옵니다"^]
-
 
 
 == SnapCenter 서버를 설치합니다
 
-* SnapCenter 서버 * 를 다운로드하고 설치합니다
+
+
+=== SnapCenter 서버를 다운로드하고 설치합니다
 
 * 단계 *
 
@@ -221,7 +221,9 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 . 지금 설치 * 를 클릭합니다.
 
 
-* SnapCenter에 로그인합니다 *
+
+
+=== SnapCenter에 로그인합니다
 
 * 단계 *
 
@@ -236,7 +238,9 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 . 로그인 * 을 클릭합니다.
 
 
-* SnapCenter 표준 컨트롤러 기반 라이센스 추가 *
+
+
+=== SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다
 
 * 단계 *
 
@@ -250,7 +254,9 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 
 
 
-* SnapCenter 용량 기반 라이센스 추가 *
+
+
+=== SnapCenter 용량 기반 라이센스를 추가합니다
 
 * 단계 *
 
@@ -265,7 +271,9 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 . 마침 * 을 클릭합니다.
 
 
-* 스토리지 시스템 접속 설정 *
+
+
+=== 스토리지 시스템 접속을 설정합니다
 
 * 단계 *
 
@@ -285,7 +293,9 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 
 == Microsoft SQL Server용 플러그인을 설치합니다
 
-* 자격 증명으로 실행 을 설정하고 Microsoft SQL Server*용 플러그인을 설치합니다
+
+
+=== 자격 증명으로 실행 을 설정하여 Microsoft SQL Server용 플러그인을 설치합니다
 
 * 단계 *
 
@@ -299,7 +309,9 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 
 
 
-* 호스트를 추가하고 Microsoft SQL Server*용 플러그인을 설치합니다
+
+
+=== 호스트를 추가하고 Microsoft SQL Server용 플러그인을 설치합니다
 
 * 단계 *
 

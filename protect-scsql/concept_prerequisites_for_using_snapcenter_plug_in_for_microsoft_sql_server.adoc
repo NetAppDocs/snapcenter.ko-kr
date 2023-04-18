@@ -30,13 +30,6 @@ cmdlet 실행에 대한 자세한 내용은 을 참조하십시오 https://libra
 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/["VMware vSphere용 SnapCenter 플러그인 설명서"]
 
 * Microsoft Windows용 SnapCenter 플러그인을 사용하여 호스트 측 스토리지 프로비저닝을 수행합니다.
-* 기존 데이터베이스를 NetApp 스토리지로 이동
-+
-자세한 내용은 SnapCenter 가져오기 정보 를 참조하십시오.
-
-+
-link:concept_import_archived_backups_from_snapmanager_for_sql_to_snapcenter.html["Microsoft SQL Server용 SnapManager에서 SnapCenter로 아카이빙된 백업을 가져옵니다"]
-
 * 백업 복제를 원하는 경우 SnapMirror 및 SnapVault 관계를 설정합니다.
 
 
