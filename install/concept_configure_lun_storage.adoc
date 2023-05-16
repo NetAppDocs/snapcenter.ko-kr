@@ -13,7 +13,7 @@ summary: SnapCenter를 사용하여 FC 연결 또는 iSCSI 연결 LUN을 구성�
 [role="lead"]
 SnapCenter를 사용하여 FC 연결 또는 iSCSI 연결 LUN을 구성할 수 있습니다. SnapCenter를 사용하여 기존 LUN을 Windows 호스트에 연결할 수도 있습니다.
 
-LUN은 SAN 구성의 기본 스토리지 단위입니다. Windows 호스트는 시스템의 LUN을 가상 디스크로 인식합니다. 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanconf/home.html["ONTAP 9 SAN 구성 가이드"^].
+LUN은 SAN 구성의 기본 스토리지 단위입니다. Windows 호스트는 시스템의 LUN을 가상 디스크로 인식합니다. 자세한 내용은 을 참조하십시오 http://["ONTAP 9 SAN 구성 가이드"^].
 
 
 
@@ -24,7 +24,7 @@ iSCSI를 사용하여 LUN에 연결하는 경우 통신을 설정하기 위해 L
 * 시작하기 전에 *
 
 * 스토리지 시스템 노드를 iSCSI 타겟으로 정의해야 합니다.
-* 스토리지 시스템에서 iSCSI 서비스를 시작해야 합니다. http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-sanag/home.html["자세한 정보"^]
+* 스토리지 시스템에서 iSCSI 서비스를 시작해야 합니다. http://["자세한 정보"^]
 
 
 * 이 작업에 대한 정보 *

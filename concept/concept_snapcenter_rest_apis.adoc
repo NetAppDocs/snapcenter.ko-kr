@@ -30,4 +30,4 @@ https://<OVA_IP_address_or_host_name>:<scv_plugin_port>/api/swagger-ui.html# 으
 |===
 SnapCenter REST API에 대한 자세한 내용은 를 참조하십시오 link:../sc-automation/overview_rest_apis.html["REST API 개요"^]
 
-VMware vSphere REST API용 SnapCenter 플러그인에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html["VMware vSphere REST API용 SnapCenter 플러그인"^]
+VMware vSphere REST API용 SnapCenter 플러그인에 대한 자세한 내용은 을 참조하십시오 https://["VMware vSphere REST API용 SnapCenter 플러그인"^]

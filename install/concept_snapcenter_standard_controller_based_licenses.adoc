@@ -176,7 +176,7 @@ FAS 또는 AFF 스토리지를 사용하는 경우 ONTAP 명령줄을 사용하�
 
 * 단계 *
 
-. NetApp Support 사이트 에 로그인합니다 http://mysupport.netapp.com/["mysupport.netapp.com"^].
+. NetApp Support 사이트 에 로그인합니다 http://["mysupport.netapp.com"^].
 . 시스템 * > * 소프트웨어 라이센스 * 로 이동합니다.
 . 선택 기준 영역에서 일련 번호(장치 뒷면에 있음)가 선택되었는지 확인하고 컨트롤러 일련 번호를 입력한 다음 * Go! * 를 클릭합니다.
 +
@@ -238,7 +238,7 @@ NOTE: SnapCenter 표준 컨트롤러 기반 라이센스를 사용하는 경우�
 .. Open-SmConnection cmdlet을 실행하여 SnapCenter 서버에서 SnapCenterAdmin 계정에 대한 연결 세션을 시작합니다.
 .. Set-SmRepositoryPassword를 실행하여 MySQL 암호를 재설정합니다.
 +
-cmdlet에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+cmdlet에 대한 자세한 내용은 을 참조하십시오 https://["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 
 

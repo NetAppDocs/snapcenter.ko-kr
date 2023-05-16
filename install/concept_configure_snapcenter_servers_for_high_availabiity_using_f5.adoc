@@ -16,7 +16,7 @@ SnapCenter에서 HA(고가용성)를 지원하기 위해 F5 로드 밸런서를 
 
 IMPORTANT: SnapCenter 4.2.x에서 업그레이드한 후 이전에 네트워크 로드 밸런싱(NLB)을 사용한 경우 해당 구성을 계속 사용하거나 F5 로 전환할 수 있습니다.
 
-워크플로 이미지에는 F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 단계가 나와 있습니다. 자세한 지침은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer["F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 방법"^].
+워크플로 이미지에는 F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 단계가 나와 있습니다. 자세한 지침은 을 참조하십시오 https://["F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 방법"^].
 
 image::../media/sc-F5-configure-workflow.png[SC F5 워크플로우 구성]
 
@@ -26,7 +26,7 @@ image::../media/sc-F5-configure-workflow.png[SC F5 워크플로우 구성]
 * Add-SmServer 를 클릭합니다
 * 제거 - SmServerCluster
 +
-자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+자세한 내용은 을 참조하십시오 https://["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 
 

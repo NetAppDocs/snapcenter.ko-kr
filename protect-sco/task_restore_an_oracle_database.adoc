@@ -13,6 +13,10 @@ summary: 데이터가 손실된 경우 SnapCenter를 사용하여 하나 이상�
 [role="lead"]
 데이터가 손실된 경우 SnapCenter를 사용하여 하나 이상의 백업에서 액티브 파일 시스템으로 데이터를 복구한 다음 데이터베이스를 복구할 수 있습니다.
 
+* 시작하기 전에 *
+
+플러그인을 비루트 사용자로 설치한 경우, prescpt 및 PostScript 디렉토리에 실행 권한을 수동으로 할당해야 합니다.
+
 * 이 작업에 대한 정보 *
 
 복구는 구성된 아카이브 로그 위치에서 사용할 수 있는 아카이브 로그를 사용하여 수행됩니다. 데이터베이스가 ARCHIVELOG 모드에서 실행 중인 경우 Oracle 데이터베이스는 채워진 REDO 로그 파일 그룹을 하나 이상의 오프라인 대상(집합적으로 아카이빙된 REDO 로그라고 함)에 저장합니다. SnapCenter는 지정된 SCN, 선택한 날짜 및 시간 또는 모든 로그 옵션을 기반으로 최적의 로그 백업 수를 식별하고 마운트합니다. 복구에 필요한 아카이브 로그를 구성된 위치에서 사용할 수 없는 경우 로그를 포함하는 스냅샷 복사본을 마운트하고 경로를 외부 아카이브 로그로 지정해야 합니다.
@@ -166,8 +170,8 @@ No recovery * 를 선택합니다.
 
 NOTE: 마운트 경로의 경로와 컨텐츠를 외부 로그 위치로 나열하기 전에 확인해야 합니다.
 
-** http://www.netapp.com/us/media/tr-4591.pdf["NetApp 기술 보고서 4591: 데이터베이스 데이터 보호 백업, 복구, 복제 및 DR"^]
-** https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc["ORA-00308 오류로 인해 작업이 실패합니다"^]
+** http://["NetApp 기술 보고서 4591: 데이터베이스 데이터 보호 백업, 복구, 복제 및 DR"^]
+** https://["ORA-00308 오류로 인해 작업이 실패합니다"^]
 
 
 |===
@@ -228,8 +232,8 @@ NOTE: 이메일 알림의 경우 GUI 또는 PowerShell 명령 Set-SmtpServer를 
 
 * 자세한 정보 *
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations["SnapCenter 작업을 수행하기 위해 Oracle RAC One Node 데이터베이스를 건너뜁니다"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_from_a_secondary_SnapMirror_or_SnapVault_location["보조 SnapMirror 또는 SnapVault 위치에서 복원하지 못했습니다"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_when_a_backup_of_an_orphan_incarnation_is_selected["고아 성육신의 백업에서 복원하지 못했습니다"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
+* https://["SnapCenter 작업을 수행하기 위해 Oracle RAC One Node 데이터베이스를 건너뜁니다"^]
+* https://["보조 SnapMirror 또는 SnapVault 위치에서 복원하지 못했습니다"^]
+* https://["고아 성육신의 백업에서 복원하지 못했습니다"^]
+* https://["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
 

@@ -13,6 +13,10 @@ summary: '동일한 호스트 또는 대체 호스트에서 플러깅 지원 데
 [role="lead"]
 PDB(Pluggable Database)를 동일한 호스트 또는 대체 호스트의 다른 또는 동일한 타겟 CDB에 복제할 수 있습니다. 복제된 PDB를 원하는 SCN 또는 날짜 및 시간으로 복구할 수도 있습니다.
 
+* 시작하기 전에 *
+
+플러그인을 비루트 사용자로 설치한 경우, prescpt 및 PostScript 디렉토리에 실행 권한을 수동으로 할당해야 합니다.
+
 * 단계 *
 
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
@@ -202,6 +206,6 @@ RAC 설정에서 복제된 PDB의 스토리지는 PDB 클론이 수행된 노드
 
 * 자세한 정보 찾기 *
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc["ORA-00308 오류 메시지와 함께 복구 또는 클론 생성이 실패합니다"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
+* https://["ORA-00308 오류 메시지와 함께 복구 또는 클론 생성이 실패합니다"^]
+* https://["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
 

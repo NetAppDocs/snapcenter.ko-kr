@@ -6,7 +6,7 @@ CSR(인증서 서명 요청)을 생성하고 생성된 CSR을 사용하여 CA(�
 
 CSR은 서명된 CA 인증서를 조달하기 위해 공인 인증서 공급업체에 제공되는 인코딩된 텍스트 블록입니다.
 
-CSR 생성에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_generate_CA_Certificate_CSR_file["CA 인증서 CSR 파일을 생성하는 방법"^].
+CSR 생성에 대한 자세한 내용은 을 참조하십시오 https://["CA 인증서 CSR 파일을 생성하는 방법"^].
 
 
 NOTE: 도메인(* .domain.company.com) 또는 시스템(machine1.domain.company.com CA 인증서를 소유하고 있는 경우 CA 인증서 CSR 파일 생성을 건너뛸 수 있습니다. SnapCenter를 사용하여 기존 CA 인증서를 배포할 수 있습니다.

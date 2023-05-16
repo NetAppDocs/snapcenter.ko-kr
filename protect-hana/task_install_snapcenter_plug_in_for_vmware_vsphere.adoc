@@ -13,13 +13,13 @@ summary: '데이터베이스가 가상 머신(VM)에 저장되어 있거나 VM �
 [role="lead"]
 데이터베이스가 가상 머신(VM)에 저장되어 있거나 VM 및 데이터 저장소를 보호하려는 경우 SnapCenter Plug-in for VMware vSphere 가상 어플라이언스를 구축해야 합니다.
 
-배포에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html["구축 개요"^].
+배포에 대한 자세한 내용은 을 참조하십시오 https://["구축 개요"^].
 
 
 
 == CA 인증서를 배포합니다
 
-VMware vSphere용 SnapCenter 플러그인을 사용하여 CA 인증서를 구성하려면 를 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)["SSL 인증서를 생성하거나 가져옵니다"^].
+VMware vSphere용 SnapCenter 플러그인을 사용하여 CA 인증서를 구성하려면 를 참조하십시오 https://["SSL 인증서를 생성하거나 가져옵니다"^].
 
 
 

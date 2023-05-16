@@ -45,7 +45,7 @@ NOTE: VMDK는 지원되지 않습니다.
 
 SnapCenter 4.1.1 사용자의 경우 VMware vSphere 4.1.1 용 SnapCenter 플러그인 설명서에 가상화 데이터베이스와 파일 시스템을 보호하는 방법에 대한 정보가 나와 있습니다. SnapCenter 4.2.x 사용자, NetApp Data Broker 1.0 및 1.0.1의 경우, Linux 기반 NetApp Data Broker 가상 어플라이언스(Open Virtual Appliance 형식)에서 제공하는 VMware vSphere용 SnapCenter 플러그인을 사용하여 가상화된 데이터베이스 및 파일 시스템을 보호하는 방법에 대한 정보가 수록되어 있습니다. SnapCenter 4.3.x 사용자의 경우 SnapCenter Plug-in for VMware vSphere 4.3 설명서에는 Linux 기반 SnapCenter Plug-in for VMware vSphere 가상 어플라이언스(오픈 가상 어플라이언스 형식)를 사용하여 가상화된 데이터베이스와 파일 시스템을 보호하는 방법에 대한 정보가 수록되어 있습니다.
 
-https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/["VMware vSphere용 SnapCenter 플러그인 설명서"^]
+https://["VMware vSphere용 SnapCenter 플러그인 설명서"^]
 
 
 

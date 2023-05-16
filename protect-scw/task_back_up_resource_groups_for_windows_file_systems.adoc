@@ -51,7 +51,7 @@ NOTE: Oracle 데이터베이스용 SnapCenter 플러그인의 경우 데이터�
 +
 ** MetroCluster 구성에서 SnapCenter는 페일오버 후 보호 관계를 감지하지 못할 수 있습니다.
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["MetroCluster 페일오버 후 SnapMirror 또는 SnapVault 관계를 감지할 수 없습니다"^]
+https://["MetroCluster 페일오버 후 SnapMirror 또는 SnapVault 관계를 감지할 수 없습니다"^]
 
 ** VMDK에서 애플리케이션 데이터를 백업하고 VMware vSphere용 SnapCenter 플러그인의 Java 힙 크기가 충분히 크지 않으면 백업이 실패할 수 있습니다. Java 힙 크기를 늘리려면 스크립트 파일 '/opt/netapp/init_scripts/scvservice'를 찾습니다. 이 스크립트에서 do_start method 명령이 SnapCenter VMware 플러그인 서비스를 시작합니다. 이 명령을 'java-jar-Xmx8192M-Xms4096M'으로 업데이트합니다.
 

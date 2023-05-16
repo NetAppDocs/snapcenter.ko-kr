@@ -22,7 +22,7 @@ summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에
 * SnapManager for Microsoft Exchange Server 및 SnapDrive for Windows가 이미 설치되어 있는 경우, 동일한 Exchange Server에 Exchange용 플러그인을 설치하기 전에 SnapDrive for Windows에서 사용하는 VSS 하드웨어 공급자를 등록 취소해야 SnapCenter를 사용하여 데이터를 성공적으로 보호할 수 있습니다.
 * Microsoft Exchange Server용 SnapManager와 Exchange용 플러그인이 동일한 서버에 설치되어 있는 경우 Windows 스케줄러에서 Microsoft Exchange Server용 SnapManager가 생성한 모든 스케줄을 일시 중지하거나 삭제해야 합니다.
 * 호스트는 서버에서 FQDN(정규화된 도메인 이름)으로 확인할 수 있어야 합니다. 호스트 파일을 확인할 수 있도록 수정하고 호스트 파일에 짧은 이름과 FQDN이 모두 지정된 경우 _<IP_address><host_FQDN><host_name>_ 형식으로 SnapCenter hosts 파일에 항목을 생성합니다.
-* 방화벽에서 다음 포트가 차단되지 않았는지 확인합니다. 차단되지 않으면 호스트 추가 작업이 실패합니다. 이 문제를 해결하려면 동적 포트 범위를 구성해야 합니다. 자세한 내용은 을 참조하십시오 https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls["Microsoft 설명서"^].
+* 방화벽에서 다음 포트가 차단되지 않았는지 확인합니다. 차단되지 않으면 호스트 추가 작업이 실패합니다. 이 문제를 해결하려면 동적 포트 범위를 구성해야 합니다. 자세한 내용은 을 참조하십시오 https://["Microsoft 설명서"^].
 +
 ** Windows 2016 및 Exchange 2016의 경우 포트 범위 50000 - 51000
 ** Windows 2012 R2 및 Exchange 2013의 경우 포트 범위는 6000-6500입니다
@@ -57,7 +57,7 @@ Windows용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 �
  a| 
 Microsoft Windows
 
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=108395;&solution=1258&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
 
 
 
@@ -86,9 +86,9 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
 * PowerShell 4.0 이상
 
 
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=108395;&solution=1258&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
 
-NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_upgrade_or_install_fails_with_This_KB_is_not_related_to_the_OS["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다."]
+NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다."]
 
 |===
 
@@ -128,7 +128,7 @@ SnapCenter에서 Exchange Server 또는 DAG를 추가하고 호스트 또는 DAG
 
 
 
-== Windows Server 2012 이상에서 GMSA를 구성합니다
+== Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항
 
 Windows용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 기본적인 호스트 시스템 공간 요구 사항 및 사이징 요구 사항을 숙지해야 합니다.
 
@@ -141,7 +141,7 @@ Windows용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 �
  a| 
 Microsoft Windows
 
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=108395;&solution=1258&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
 
 
 
@@ -170,8 +170,8 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
 * PowerShell 4.0 이상
 
 
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=108395;&solution=1258&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
 
-NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_upgrade_or_install_fails_with_This_KB_is_not_related_to_the_OS["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다."]
+NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다."]
 
 |===

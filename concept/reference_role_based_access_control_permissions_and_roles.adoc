@@ -40,7 +40,7 @@ VM, VMDK 및 데이터 저장소의 VM 일관성 있는 데이터 보호를 관�
 * SCV 게스트 파일 복원
 
 
-자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html["VMware vSphere 사용자를 위한 SnapCenter 플러그인의 RBAC 유형"^]
+자세한 내용은 을 참조하십시오 https://["VMware vSphere 사용자를 위한 SnapCenter 플러그인의 RBAC 유형"^]
 
 |===
 

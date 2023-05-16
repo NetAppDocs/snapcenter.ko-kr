@@ -13,6 +13,10 @@ summary: SnapCenter를 사용하여 데이터베이스 백업을 사용하여 Or
 [role="lead"]
 SnapCenter를 사용하여 데이터베이스 백업을 사용하여 Oracle 데이터베이스를 복제할 수 있습니다.
 
+* 시작하기 전에 *
+
+플러그인을 비루트 사용자로 설치한 경우, prescpt 및 PostScript 디렉토리에 실행 권한을 수동으로 할당해야 합니다.
+
 * 이 작업에 대한 정보 *
 
 클론 생성 작업을 수행하면 데이터베이스 데이터 파일의 복사본이 생성되고 새 온라인 redo 로그 파일과 제어 파일이 생성됩니다. 지정된 복구 옵션에 따라 데이터베이스를 지정된 시간으로 선택적으로 복구할 수 있습니다.
@@ -341,7 +345,7 @@ AIX 설정에서 lkdev 명령을 사용하여 잠그고 rendev 명령을 사용�
 
 * 자세한 정보 찾기 *
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc["ORA-00308 오류 메시지와 함께 복구 또는 클론 생성이 실패합니다"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_recover_a_cloned_database["복제된 데이터베이스를 복구하지 못했습니다"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
+* https://["ORA-00308 오류 메시지와 함께 복구 또는 클론 생성이 실패합니다"^]
+* https://["복제된 데이터베이스를 복구하지 못했습니다"^]
+* https://["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
 

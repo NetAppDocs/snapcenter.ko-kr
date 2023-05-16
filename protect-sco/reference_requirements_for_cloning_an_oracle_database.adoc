@@ -24,7 +24,7 @@ Oracle 데이터베이스를 복제하기 전에 필수 구성 요소가 완료�
 * ASM over NFS를 사용하는 경우 ASM_diskstring 매개 변수에 정의된 기존 경로에 _/var/opt/snapcenter/SCU/clones/ */ *_를 추가해야 합니다.
 * ASM_diskstring 매개 변수에서 ASMFD 또는 configure_ORCL: *_을 사용하는 경우 ASMlib를 사용하는 경우 _AFD: *_를 구성해야 합니다.
 +
-ASM_diskstring 매개 변수를 편집하는 방법에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter["ASM_diskstring에 디스크 경로를 추가하는 방법"^].
+ASM_diskstring 매개 변수를 편집하는 방법에 대한 자세한 내용은 을 참조하십시오 https://["ASM_diskstring에 디스크 경로를 추가하는 방법"^].
 
 * 대체 호스트에서 클론을 생성하는 경우 대체 호스트는 다음 요구 사항을 충족해야 합니다.
 +
@@ -33,8 +33,8 @@ ASM_diskstring 매개 변수를 편집하는 방법에 대한 자세한 내용�
 +
 *** 운영 스토리지 또는 보조(볼트 또는 미러) 스토리지에서 대체 호스트로 클론을 생성하는 경우 iSCSI 세션이 보조 스토리지와 대체 호스트 간에 설정되거나 FC에 대해 적절하게 조닝(Zoning)되었는지 확인합니다.
 +
-**** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936["Linux 호스트 유틸리티 설치 및 설정 안내서"^]
-**** https://library.netapp.com/ecm/ecm_download_file/ECMP1119223["AIX 호스트 유틸리티 설치 및 설정 안내서"^]
+**** https://["Linux 호스트 유틸리티 설치 및 설정 안내서"^]
+**** https://["AIX 호스트 유틸리티 설치 및 설정 안내서"^]
 
 
 *** Vault 또는 Mirror 스토리지에서 동일한 호스트로 클론을 생성하는 경우, iSCSI 세션이 Vault 또는 Mirror 스토리지와 호스트 간에 설정되어 있는지 또는 FC에 맞게 조닝(zoning)되어 있는지 확인합니다.

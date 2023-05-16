@@ -40,9 +40,9 @@ NOTE: SnapCenter은 서로 다른 클러스터에서 동일한 이름의 여러 
 
 * SAN 환경에 Oracle 데이터베이스가 있는 경우 다음 가이드에 설명된 권장 사항에 따라 SAN 환경을 구성해야 합니다.
 +
-** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547957["Linux Unified Host Utilities의 권장 호스트 설정"^]
-** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547958["ONTAP 스토리지에 Linux 호스트 사용"^]
-** https://library.netapp.com/ecm/ecm_download_file/ECMP1119218["AIX 호스트 유틸리티의 영향을 받는 호스트 설정"^]
+** https://["Linux Unified Host Utilities의 권장 호스트 설정"^]
+** https://["ONTAP 스토리지에 Linux 호스트 사용"^]
+** https://["AIX 호스트 유틸리티의 영향을 받는 호스트 설정"^]
 
 
 * Oracle Linux 또는 RHEL 운영 체제의 LVM에 Oracle 데이터베이스가 있는 경우 최신 버전의 LVM(Logical Volume Management)을 설치합니다.
@@ -54,7 +54,7 @@ SnapCenter 4.1.1 사용자의 경우 VMware vSphere 4.1.1 용 SnapCenter 플러�
 
 * 자세한 정보 찾기 *
 
-* https://imt.netapp.com/matrix/imt.jsp?components=108392;&solution=1259&isHWU&src=IMT["상호 운용성 매트릭스 툴"^]
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html["VMware vSphere용 SnapCenter 플러그인 설명서"^]
-* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Data_protection_operation_fails_in_a_non-multipath_environment_in_RHEL_7_and_later["RHEL 7 이상의 비 다중 경로 환경에서 데이터 보호 작업이 실패합니다"^]
+* https://["상호 운용성 매트릭스 툴"^]
+* https://["VMware vSphere용 SnapCenter 플러그인 설명서"^]
+* https://["RHEL 7 이상의 비 다중 경로 환경에서 데이터 보호 작업이 실패합니다"^]
 

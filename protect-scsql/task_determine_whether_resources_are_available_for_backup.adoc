@@ -25,7 +25,7 @@ summary: 리소스는 설치한 플러그인에서 유지 관리하는 데이터
 * Windows 클러스터에서 Microsoft SQL 데이터베이스를 검색하려면 FCI(장애 조치 클러스터 인스턴스) TCP/IP 포트의 차단을 해제해야 합니다.
 * 데이터베이스가 VMware RDM LUN 또는 VMDK에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다.
 +
-자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html["VMware vSphere용 SnapCenter 플러그인 구축"^]
+자세한 내용은 을 참조하십시오 https://["VMware vSphere용 SnapCenter 플러그인 구축"^]
 
 * GMSA로 호스트를 추가하고 GMSA에 로그인 및 시스템 관리자 권한이 있는 경우 GMSA를 사용하여 SQL 인스턴스에 연결합니다.
 

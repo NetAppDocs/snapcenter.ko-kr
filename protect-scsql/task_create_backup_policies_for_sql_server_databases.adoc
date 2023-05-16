@@ -231,7 +231,7 @@ IMPORTANT: SnapVault 복제를 설정하려면 보존 수를 2 이상으로 설�
 Set-SmPolicy -PolicyName 'newpol' -PolicyType 'Backup' -PluginPolicyType 'SCSQL' -sqlbackuptype 'FullBackupAndLogBackup' -RetentionSettings @{BackupType='DATA';ScheduleType='Hourly';RetentionCount=2},@{BackupType='LOG_SNAPSHOT';ScheduleType='None';RetentionCount=2},@{BackupType='LOG';ScheduleType='Hourly';RetentionCount=2} -scheduletype 'Hourly'
 ----
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_retains_Snapshot_copies_of_the_database["SnapCenter은 데이터베이스의 스냅샷 복사본을 유지합니다"]
+https://["SnapCenter은 데이터베이스의 스냅샷 복사본을 유지합니다"]
 
 
 

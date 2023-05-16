@@ -49,7 +49,7 @@ custom_plugin_checksum_list 는 SnapCenter에서 호스트에 설치하는 사�
 +
 .. 플러그인 zip 파일의 SHA512 해시를 생성했습니다.
 +
-과 같은 온라인 도구를 사용할 수 있습니다 https://emn178.github.io/online-tools/sha512_file_hash.html["SHA512 해시"^].
+과 같은 온라인 도구를 사용할 수 있습니다 https://["SHA512 해시"^].
 
 .. 생성된 SHA512 해시를 새 줄에 CUSTOM_PLUGIN_CHECK체크섬_LIST 파일에 추가했습니다.
 +
@@ -85,10 +85,10 @@ custom_plugin_checksum_list 는 SnapCenter에서 호스트에 설치하는 사�
 SnapCenter 서버 호스트에 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 1.8 또는 Java 11(64비트)을 설치해야 합니다. 상호 운용성 매트릭스 툴(IMT): 요구사항에 대한 최신 정보를 제공합니다.
 
 +
-http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
+http://["모든 운영 체제에 대한 Java 다운로드"]
 
 +
-https://imt.netapp.com/matrix/imt.jsp?components=108393;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+https://["NetApp 상호 운용성 매트릭스 툴"]
 
 * 여러 경로에 대한 액세스를 제공하려면 비루트 사용자에 대해 sudo 권한을 구성해야 합니다. visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다.
 +

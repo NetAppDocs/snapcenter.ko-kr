@@ -90,7 +90,7 @@ RBAC 사용자 또는 그룹을 클러스터 또는 DAG에 재할당하여 RBAC 
 
 
 
-IMPORTANT: VMware vSphere용 SnapCenter 플러그인 기능을 사용하여 VM, VMDK 또는 데이터 저장소를 보호하는 경우 VMware vSphere GUI를 사용하여 vCenter 사용자를 VMware vSphere용 SnapCenter 플러그인 역할에 추가해야 합니다. VMware vSphere 역할에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_predefined_roles_packaged_with_snapcenter.html["VMware vSphere용 SnapCenter 플러그인과 함께 패키지로 제공되는 사전 정의된 역할"^].
+IMPORTANT: VMware vSphere용 SnapCenter 플러그인 기능을 사용하여 VM, VMDK 또는 데이터 저장소를 보호하는 경우 VMware vSphere GUI를 사용하여 vCenter 사용자를 VMware vSphere용 SnapCenter 플러그인 역할에 추가해야 합니다. VMware vSphere 역할에 대한 자세한 내용은 를 참조하십시오 https://["VMware vSphere용 SnapCenter 플러그인과 함께 패키지로 제공되는 사전 정의된 역할"^].
 
 * 단계 *
 

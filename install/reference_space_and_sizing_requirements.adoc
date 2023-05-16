@@ -24,7 +24,7 @@ Microsoft Windows
 
 운영 체제의 영어, 독일어, 일본어 및 중국어 간체 버전만 지원됩니다.
 
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
 
 
 
@@ -73,8 +73,8 @@ NOTE: 참고: SnapCenter 저장소가 설치된 동일한 드라이브에 SnapCe
 * PowerShell 4.0 이상
 
 
-NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다"^].
+NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다"^].
 
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"^].
 
 |===

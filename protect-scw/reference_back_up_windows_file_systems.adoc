@@ -19,4 +19,4 @@ summary: 사용자 환경에 Microsoft Windows용 SnapCenter 플러그인을 설
 
 image::../media/sce_backup_workflow.gif[SCE 백업 워크플로우]
 
-PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 또는 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^] PowerShell cmdlet에 대한 자세한 내용은 에 나와 있습니다.
+PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 또는 을 참조하십시오 https://["SnapCenter 소프트웨어 cmdlet 참조 가이드"^] PowerShell cmdlet에 대한 자세한 내용은 에 나와 있습니다.

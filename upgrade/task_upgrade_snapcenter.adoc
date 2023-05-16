@@ -45,7 +45,7 @@ Job details * 페이지에서 스크립트를 scripts_path에 복사하고 정�
 
 . NetApp Support 사이트에서 SnapCenter 서버 설치 패키지를 다운로드하십시오.
 +
-https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[]
+https://[]
 
 . C:\Program Files\NetApp\SnapCenter WebApp에 있는 web.config의 복사본을 생성합니다.
 . Windows 작업 스케줄에서 플러그인 호스트와 관련된 SnapCenter 스케줄을 내보내면 업그레이드에 실패할 경우 이를 사용하여 스케줄을 복구할 수 있습니다.

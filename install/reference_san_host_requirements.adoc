@@ -17,7 +17,7 @@ SnapCenter에는 호스트 유틸리티 또는 DSM이 포함되어 있지 않습
 
 * Host Utilities(호스트 유틸리티)
 +
-호스트 유틸리티는 FC와 iSCSI를 지원하며 Windows Server에서 MPIO를 사용할 수 있도록 합니다. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/ontap-sanhost/["Host Utilities 설명서"^].
+호스트 유틸리티는 FC와 iSCSI를 지원하며 Windows Server에서 MPIO를 사용할 수 있도록 합니다. 자세한 내용은 을 참조하십시오 https://["Host Utilities 설명서"^].
 
 * Windows MPIO용 Microsoft DSM
 +
@@ -28,6 +28,6 @@ SnapCenter에는 호스트 유틸리티 또는 DSM이 포함되어 있지 않습
 
 +
 
-NOTE: ONTAP DSM을 사용하는 경우 Microsoft DSM으로 마이그레이션해야 합니다. 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Data_ONTAP_DSM_for_Windows_MPIO/How_to_migrate_from_Data_ONTAP_DSM_4.1p1_to_Microsoft_native_DSM["ONTAP DSM에서 Microsoft DSM으로 마이그레이션하는 방법"^].
+NOTE: ONTAP DSM을 사용하는 경우 Microsoft DSM으로 마이그레이션해야 합니다. 자세한 내용은 을 참조하십시오 https://["ONTAP DSM에서 Microsoft DSM으로 마이그레이션하는 방법"^].
 
 

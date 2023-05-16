@@ -23,7 +23,7 @@ SnapCenter를 사용하여 백업된 Exchange 데이터베이스를 복구할 �
 Move-ActiveMailboxDatabase 명령을 실행하여 수동 데이터베이스 복사본을 활성 데이터베이스 복사본으로 만듭니다.
 
 +
-를 클릭합니다 https://docs.microsoft.com/en-us/powershell/module/exchange/move-activemailboxdatabase?view=exchange-ps["Microsoft 설명서"^] 이 명령에 대한 정보를 포함합니다.
+를 클릭합니다 https://["Microsoft 설명서"^] 이 명령에 대한 정보를 포함합니다.
 
 
 

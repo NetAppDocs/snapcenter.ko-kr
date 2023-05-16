@@ -45,7 +45,7 @@ summary: 스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 �
 
 NOTE: 나중에 SnapCenter 또는 ONTAP를 업그레이드할 경우 RBAC 사용자 생성기 for Data ONTAP 도구를 다시 실행하여 이전에 만든 사용자 역할을 업데이트해야 합니다. 이전 버전의 SnapCenter 또는 ONTAP에 대해 만든 사용자 역할은 업그레이드된 버전에서 제대로 작동하지 않습니다. 이 도구를 다시 실행하면 자동으로 업그레이드를 처리합니다. 역할을 다시 생성할 필요는 없습니다.
 
-ONTAP RBAC 역할 설정에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-adm-auth-rbac/home.html["ONTAP 9 관리자 인증 및 RBAC 전원 가이드"^].
+ONTAP RBAC 역할 설정에 대한 자세한 내용은 을 참조하십시오 http://["ONTAP 9 관리자 인증 및 RBAC 전원 가이드"^].
 
 
 NOTE: 일관성을 위해 SnapCenter 문서는 사용 권한을 사용하는 역할을 나타냅니다. OnCommand 시스템 관리자 GUI는 _privilege_ 대신 _attribute_라는 용어를 사용합니다. ONTAP RBAC 역할을 설정할 때 이 두 용어는 모두 동일합니다.

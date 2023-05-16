@@ -48,7 +48,7 @@ DR(재해 복구)은 VMDK 및 RDM 구성에서 지원되지 않습니다.
 * UI 또는 다음 cmdlet('제거-SmBackup')을 사용하여 페일오버 중에 생성된 SQL Server 백업용 SnapCenter 플러그인을 삭제할 수 있습니다
 * 장애 조치 후 일부 리소스가 DR 모드가 아닌 모드로 전환되도록 하려면 "Remove-SmResourceDRMode"를 사용합니다
 +
-자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+자세한 내용은 를 참조하십시오 https://["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 * SnapCenter 서버는 DR 또는 비 DR 모드에 있지만 DR 모드 또는 비 DR 모드에 있는 스토리지 리소스가 있는 리소스 그룹이 아닌 개별 스토리지 리소스(SQL 데이터베이스)를 관리합니다.
 

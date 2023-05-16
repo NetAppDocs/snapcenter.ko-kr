@@ -21,7 +21,7 @@ summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에
 Microsoft SQL Server용 SnapCenter 플러그인은 Microsoft VDI 프레임워크를 사용하므로 sysadmin 액세스가 필요합니다.
 
 +
-http://support.microsoft.com/kb/2926557/["Microsoft 지원 문서 2926557: SQL Server VDI 백업 및 복원 작업에는 sysadmin 권한이 필요합니다"]
+http://["Microsoft 지원 문서 2926557: SQL Server VDI 백업 및 복원 작업에는 sysadmin 권한이 필요합니다"]
 
 * Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다.
 * SnapManager for Microsoft SQL Server가 설치된 경우 서비스 및 일정을 중지하거나 사용하지 않아야 합니다.

@@ -28,8 +28,6 @@ entries:
     url: "/protect-scw/concept_install_snapcenter_plug_in_for_microsoft_windows.html"
   - title: Microsoft Windows용 SnapCenter 플러그인 설치 요구 사항
     url: "/protect-scw/reference_installation_requirements_for_snapcenter_plug_in_for_microsoft_windows.html"
-  - title: Windows Server 2012 이상에서 GMSA를 구성합니다
-    url: "/protect-scw/task_configure_gMSA_on_windows_server_2012_or_later.html"
   - title: 호스트를 추가하고 Microsoft Windows용 SnapCenter 플러그인을 설치합니다
     url: "/protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html"
   - title: PowerShell cmdlet을 사용하여 여러 원격 호스트에 Microsoft Windows용 SnapCenter 플러그인을

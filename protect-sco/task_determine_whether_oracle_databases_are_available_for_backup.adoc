@@ -18,7 +18,7 @@ summary: 리소스는 SnapCenter에서 관리하는 호스트의 Oracle 데이�
 * SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 생성, 자격 증명 추가 등의 작업을 완료해야 합니다.
 * 데이터베이스가 가상 머신 디스크(VMDK) 또는 원시 디바이스 매핑(RDM)에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다.
 +
-자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html["VMware vSphere용 SnapCenter 플러그인 구축"^].
+자세한 내용은 을 참조하십시오 https://["VMware vSphere용 SnapCenter 플러그인 구축"^].
 
 * 데이터베이스가 VMDK 파일 시스템에 있는 경우 vCenter에 로그인하고 * VM 옵션 * > * 고급 * > * 구성 편집 * 으로 이동하여 _disk.enableUUID_의 값을 VM에 대해 TRUE로 설정해야 합니다.
 * SnapCenter가 수행하는 프로세스를 검토하여 다양한 유형의 Oracle 데이터베이스를 검색해야 합니다.
