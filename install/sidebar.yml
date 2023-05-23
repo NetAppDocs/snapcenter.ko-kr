@@ -24,7 +24,7 @@ entries:
     url: "/install/concept_authentication_methods_for_your_credentials.html"
   - title: 스토리지 가상 머신 접속 및 자격 증명
     url: "/install/concept_svm_connections_and_credentials.html"
-  - title: 멀티팩터 인증(MFA) 활성화
+  - title: 멀티팩터 인증(MFA) 관리
     url: "/install/enable_multifactor_authentication.html"
 - title: SnapCenter 서버를 설치합니다
   url: "/install/task_install_the_snapcenter_server_using_the_install_wizard.html"

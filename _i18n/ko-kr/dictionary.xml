@@ -4266,12 +4266,8 @@
   <block id="f7e7f0dd9d36aec3d609775de2dbbd0b" category="paragraph"><block ref="f7e7f0dd9d36aec3d609775de2dbbd0b" category="inline-link-rx"></block></block>
   <block id="1e9ab426973a56020f8d1db85cb07f06" category="inline-link">장애 조치 클러스터 인스턴스 데이터베이스 클론에 장애가 발생합니다</block>
   <block id="2df5362c7aa8c12a0dd2f1b211cdf61d" category="paragraph"><block ref="2df5362c7aa8c12a0dd2f1b211cdf61d" category="inline-link-rx"></block></block>
-  <block id="93cc1cc2daa04d11bc708425a3170d4d" category="summary">SQL Server용 SnapCenter 플러그인이 다운된 경우 몇 가지 수동 단계를 수행하여 복구할 수 있습니다.</block>
   <block id="dc894d281805d8d1c222c04f94404928" category="doc">SQL Server용 SnapCenter 플러그인의 재해 복구</block>
-  <block id="37ffa79bbd2952586645cff30d8eba05" category="paragraph">SQL Server용 SnapCenter 플러그인이 다운된 경우 다른 SQL 호스트로 전환하고 몇 가지 단계를 수행하여 데이터를 복구합니다.</block>
   <block id="7a1a91fe74f7d2f66d8eabb50e547d5f" category="list-text">보조 호스트의 운영 체제, 애플리케이션 및 호스트 이름은 운영 호스트와 동일해야 합니다.</block>
-  <block id="6ed11385ad389d901916b25a0b21aef9" category="list-text">호스트 추가 * 또는 * 호스트 수정 * 페이지를 사용하여 대체 호스트로 SnapCenter SQL Server용 플러그인을 푸시합니다.</block>
-  <block id="fc11fadbfb2b2b87f8c260a133d75ad2" category="paragraph"><block ref="fc11fadbfb2b2b87f8c260a133d75ad2" category="inline-link-macro-rx"></block></block>
   <block id="8bcdd66a940ad127d312a11316df6669" category="list-text">SnapCenter Plug-in for SQL Server를 수정하고 설치하려면 * Hosts * 페이지에서 호스트를 선택합니다.</block>
   <block id="2a1a78f96ec6b03f3ccdd06b708e6f1a" category="list-text">(선택 사항) 재해 복구(DR) 백업에서 새 시스템으로 SQL Server용 SnapCenter 플러그인 구성 파일을 교체합니다.</block>
   <block id="9f2c74676fb5b339a2fd4a0ccd75bd1e" category="list-text">DR 백업에서 SnapCenter Plug-in for SQL Server 폴더에서 Windows 및 SQL 일정을 가져옵니다.</block>
@@ -6932,14 +6928,7 @@
   <block id="2d058bff360144951b6c9212e64bf5d8" category="paragraph">VMware vSphere REST API용 SnapCenter 플러그인에 대한 자세한 내용은 을 참조하십시오<block ref="bf36dff0c9f063d6a54a8208136c7e68" category="inline-link-rx"></block></block>
   <block id="3d94bcd4444e768c821c4af7214a7a73" category="summary">SnapCenter 재해 복구 기능을 사용하여 리소스 손상 또는 서버 충돌과 같은 재해 발생 시 SnapCenter 서버를 복구할 수 있습니다.</block>
   <block id="e413eba49b15917b0c9dbf2620f3e66e" category="doc">재해 복구</block>
-  <block id="948b4d6914f4248c5e96a053c1d7ae63" category="paragraph">SnapCenter 재해 복구 기능을 사용하여 리소스 손상 또는 서버 충돌과 같은 재해 발생 시 SnapCenter 서버를 복구할 수 있습니다. SnapCenter 리포지토리, 서버 일정 및 서버 구성 요소를 복구할 수 있습니다.</block>
-  <block id="7b7cd2b9067ed1c82323fb382c11f370" category="paragraph">다음은 DR(재해 복구)의 유형입니다.</block>
-  <block id="1636245b9e25bb600e733929465df761" category="list-text">* SnapCenter 서버 DR *</block>
   <block id="eb3b9ec963eb618621a779602a309514" category="inline-link-macro">SnapCenter 서버의 재해 복구를 위한 REST API 워크플로우</block>
-  <block id="e667e897b20b02966f899ad38ce1ba39" category="paragraph"><block ref="e667e897b20b02966f899ad38ce1ba39" category="inline-link-macro-rx"></block></block>
-  <block id="0554390053842752b7d1d3059c743b32" category="paragraph">DR은 SQL Server용 SnapCenter 플러그인에만 지원됩니다. SQL Server용 SnapCenter 플러그인이 다운된 경우 다른 SQL 호스트로 전환하고 몇 가지 단계를 수행하여 데이터를 복구합니다.</block>
-  <block id="47046db67c1574cb29142c431fb68f1f" category="paragraph"><block ref="47046db67c1574cb29142c431fb68f1f" category="inline-link-macro-rx"></block></block>
-  <block id="196a4a3e452864b82a133adc0c1c5228" category="paragraph">SnapCenter는 ONTAP SnapMirror 기술을 사용하여 데이터를 복제합니다. 데이터를 2차 사이트로 복제하여 DR에 사용하고 동기화 상태로 유지할 수 있습니다. SnapMirror의 복제 관계를 끊어 페일오버를 시작할 수 있습니다. 페일백 중에 동기화를 취소할 수 있으며 DR 사이트의 데이터를 기본 위치로 다시 복제할 수 있습니다.</block>
   <block id="096047cf506c2b6d8aa479fb6c367de8" category="summary">SnapCenter에는 미리 정의된 역할이 제공되며 각 역할에는 이미 설정된 사용 권한이 있습니다. 역할 기반 액세스 제어 \(RBAC\)를 설정 및 관리할 때 이러한 사전 정의된 역할을 사용하거나 새 역할을 생성할 수 있습니다.</block>
   <block id="a607c43df1ec34570cfd92c7f8f85068" category="doc">사전 정의된 SnapCenter 역할 및 권한</block>
   <block id="3777cceb702f246ac78189bafd5dcb33" category="paragraph">SnapCenter에는 미리 정의된 역할이 제공되며 각 역할에는 이미 설정된 사용 권한이 있습니다. 역할 기반 액세스 제어(RBAC)를 설정 및 관리할 때 이러한 사전 정의된 역할을 사용하거나 새 역할을 생성할 수 있습니다.</block>
@@ -7392,9 +7381,6 @@
   <block id="f2e203e95de8a92902a61dcabea6f456" category="list-text">호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다.</block>
   <block id="adc8d83761c6331a65ee343d3de2a603" category="list-text">Exchange 노드가 DAG의 일부인 경우 SnapCenter 서버에 하나의 노드만 추가할 수 없습니다.</block>
   <block id="5b75eba7d9db0318ac1f23b295c25952" category="list-text">클러스터(Exchange DAG)에 플러그인을 설치하는 경우 일부 노드에 NetApp LUN에 데이터베이스가 없는 경우에도 클러스터의 모든 노드에 플러그인이 설치됩니다.</block>
-  <block id="685c106cf385da9da7d774e7b6cddea8" category="paragraph">SQL Server용 SnapCenter 플러그인 및 SQL Server용 SnapCenter 플러그인을 복구할 수도 있습니다.</block>
-  <block id="8fa1aa495cfe5fdc95202bda34adafcd" category="paragraph">SnapCenter 서버 데이터는 SnapCenter 서버에서 플러그인을 추가하거나 관리했는지와 관계없이 백업 및 복구됩니다.</block>
-  <block id="30c24db21140190d4033af17ccd83090" category="list-text">* SnapCenter 플러그인 및 스토리지 DR *</block>
   <block id="67c5ed4921b287cb12a0c466f01e9689" category="admonition">다중 경로 구성 파일의 user_friendly_names 옵션이 yes로 설정되어 있으면 SAN 구성이 지원되지 않습니다.</block>
   <block id="51fb25555c87830dd2151ad5f3b7a845" category="paragraph"><block ref="51fb25555c87830dd2151ad5f3b7a845" category="inline-link-macro-rx"></block></block>
   <block id="378c4677444d1c0a4a5f7af5b98179fa" category="paragraph"><block ref="18c30fe5285c9c31acdd1bd6d51af1bd" category="inline-link-macro-rx"></block>.</block>
@@ -7438,7 +7424,6 @@
   <block id="7c8e4d34b8c6cc18e06524f05da1a10d" category="paragraph">로그가 유지되는 최대 일 수를 표시합니다.</block>
   <block id="664943be24af2306e90a21dd26536e1c" category="paragraph">certificate_validation을 활성화합니다</block>
   <block id="22d8a94cf37cc6d66c941a43b9d79fa8" category="paragraph">호스트에 대해 CA 인증서 유효성 검사가 활성화되면 true를 표시합니다.</block>
-  <block id="d1e90d50eb139f0fd560c55b6bf37057" category="paragraph">MFA(다중 인증)의 경우 SnapCenter 서버에 대해 DR 복원을 수행할 때 모든 브라우저 탭을 닫고 브라우저를 다시 열어 다시 로그인하십시오. 이렇게 하면 기존 또는 활성 세션 쿠키가 지워 올바른 구성 데이터가 업데이트됩니다.</block>
   <block id="bf3e76e4f1322979745fbde954cda8f3" category="list-text">SnapCenter는 특정 SSL 암호화 제품군을 지원하여 네트워크 통신 전반에 보안을 제공합니다.</block>
   <block id="5d06d972bc910c7d332d38f29622193f" category="inline-link">지원되는 SSL 암호화 제품군을 구성하는 방법</block>
   <block id="f63adc493855850c393ed81600d0452d" category="paragraph">자세한 내용은 을 참조하십시오<block ref="30d10745fe88e7ddd3a6030b89647570" category="inline-link-rx"></block>.</block>
@@ -7646,19 +7631,14 @@
   <block id="88b8c728864c341ef14637e289839640" category="list-text">ASP.NET 4.7.2</block>
   <block id="8098ea3ff2e42300d1835034eb9f2ad7" category="paragraph">NET Framework 4.7.2 기능+</block>
   <block id="266e3e529821464e265179afab77cc0e" category="list-text">NET Framework 4.7.2</block>
-  <block id="606d5e037822a442727a528828b14a45" category="doc">멀티팩터 인증(MFA) 활성화</block>
-  <block id="ef3ab6fc872d21b146098f5850df64c9" category="paragraph">MFA 기능을 활성화하려면 AD FS(Active Directory Federation Service) 서버 및 SnapCenter 서버에서 몇 가지 단계를 수행해야 합니다.</block>
   <block id="b2f9ddbfbf0bb6739ee75e8c2a6ac138" category="list-text">Windows AD FS(Active Directory Federation Service)가 해당 도메인에서 실행 중이어야 합니다.</block>
-  <block id="ff213a826598e59e3839e9ee5713eb9a" category="list-text">Azure MFA, Cisco Duo 등의 AD FS 지원 다중 인증 서비스가 있어야 합니다.</block>
   <block id="cb7f79bbeb52e82fa7926e0724dba11e" category="list-text">SnapCenter 및 AD FS 서버 타임 스탬프는 시간대와 상관없이 동일해야 합니다.</block>
   <block id="0ee03cd1523961dfa875fac5c6817350" category="list-text">SnapCenter 서버에 대해 승인된 CA 인증서를 조달하고 구성합니다.</block>
   <block id="4090d0adfa0a73ca248f3a29df56f147" category="paragraph">CA 인증서는 다음과 같은 이유로 필수입니다.</block>
-  <block id="e26a403b5bc4392b06e59bf0ea5f3734" category="list-text">자체 서명된 인증서가 노드 수준에서 고유하기 때문에 ADFS-F5 통신이 끊어지지 않도록 합니다.</block>
   <block id="3e3aa2cc7dad01d563ee8f2059cd8120" category="list-text">독립 실행형 또는 고가용성 구성에서 업그레이드, 복구 또는 재해 복구(DR) 중에 자체 서명된 인증서가 다시 만들어지지 않으므로 MFA 재구성이 방지됩니다.</block>
   <block id="6c09b2d713717656ff82620da0253eb5" category="list-text">IP-FQDN 해상도를 확인합니다.</block>
   <block id="760bd9baa4b7633c0843cb714f00a44e" category="paragraph">CA 인증서에 대한 자세한 내용은 을 참조하십시오 <block ref="de78619abe7dcb7b53be3c4ab98b1283" category="inline-link-macro-rx"></block>.</block>
   <block id="c746671a4c0cb7e7a37abe538fe2107e" category="list-text">SnapCenter는 다른 애플리케이션이 동일한 AD FS에 구성되어 있을 때 SSO 기반 로그인을 지원합니다. 특정 AD FS 구성에서 SnapCenter는 AD FS 세션 지속성에 따라 보안상의 이유로 사용자 인증을 요구할 수 있습니다.</block>
-  <block id="0d432c3383a301d652dc61c7708c5724" category="list-text">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 Get-Help command_name을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block>.</block>
   <block id="0470044badbfb7d0d8a4ec5bab24ebb3" category="list-text">AD FS(Active Directory Federation Services) 호스트에 연결합니다.</block>
   <block id="6ef1300bebff7801c85a1789a6c0790a" category="list-text">에서 AD FS 페더레이션 메타데이터 파일을 다운로드합니다 <block ref="a9571343becbc81f25857902551c1e72" category="inline-link-rx"></block> FQDN&gt;/FederationMetadata/2007-06/FederationMetadata.xml"</block>
   <block id="cc53a56f022408c7c918dae3f5120646" category="list-text">다운로드한 파일을 SnapCenter 서버에 복사하여 MFA 기능을 활성화합니다.</block>
@@ -7666,16 +7646,12 @@
   <block id="696ac2aea44e94108d138faca1e6061a" category="list-text">PowerShell 세션을 사용하여 _New-SmMultactorAuthenticationMetadata-path_cmdlet을 사용하여 SnapCenter MFA 메타데이터 파일을 생성합니다.</block>
   <block id="c82bb0422af1b29a8b9694bbfe3ebe9e" category="paragraph">path 매개 변수는 SnapCenter 서버 호스트에 MFA 메타데이터 파일을 저장할 경로를 지정합니다.</block>
   <block id="56fcee91de3134d2db0d32a05335e432" category="list-text">생성된 파일을 AD FS 호스트에 복사하여 SnapCenter를 클라이언트 엔터티로 구성합니다.</block>
-  <block id="9268a48919705f415838693aa4146e28" category="list-text">SnapCenter 서버에 대해 _Set-SmMultiFactorAuthentication-Enable-Path_cmdlet을 사용하여 MFA를 활성화합니다.</block>
   <block id="588a899e5cfd7ee10458176f79204605" category="paragraph">path 매개 변수는 3단계에서 SnapCenter 서버로 복제된 AD FS MFA 메타데이터 XML 파일의 위치를 지정합니다.</block>
-  <block id="b47bdbc8d57f844fea0134ffbecf2242" category="list-text">(선택 사항) _get-SmMultiFactorAuthentication_cmdlet을 사용하여 MFA 구성 상태 및 설정을 확인합니다.</block>
   <block id="9e93c22d2a1e4426ec1fd94bd4ac31b3" category="list-text">MMC(Microsoft Management Console)로 이동하여 다음 단계를 수행하십시오.</block>
   <block id="9bcb5adfefb899867ed5b11f042b98db" category="list-text">파일 * &gt; * Snapin 추가/제거 * 를 클릭합니다.</block>
   <block id="cf424f2e43207d2c78b3d27a5dc0fda2" category="list-text">콘솔 루트 * &gt; * 인증서 – 로컬 컴퓨터 * &gt; * 개인 * &gt; * 인증서 * 를 클릭합니다.</block>
   <block id="b245a32518063d47ab60cd9ae65b7937" category="list-text">SnapCenter에 바인딩된 CA 인증서를 마우스 오른쪽 단추로 클릭한 다음 * 모든 작업 * &gt; * 개인 키 관리 * 를 선택합니다.</block>
   <block id="39b5fcc1b0398cd4cdbf088d9851aa36" category="list-text">권한 마법사에서 다음 단계를 수행합니다.</block>
-  <block id="cd55bfd42602b8f720a9d41caf148f78" category="list-text">추가 * 를 클릭합니다</block>
-  <block id="fc4f9883b30f507feb5ab0b4d42267cd" category="list-text">Locations * 를 클릭하고 관련 호스트(계층 상단)를 선택합니다.</block>
   <block id="198e6981b37af309244a71441c5344c9" category="list-text">Locations * (위치 *) 팝업 창에서 * OK * (확인 *)를 클릭합니다.</block>
   <block id="80f7b3672de7c3d1051cd5ee2c883f05" category="list-text">개체 이름 필드에 'IIS_IUSRS'를 입력하고 * 이름 확인 * 을 클릭한 다음 * 확인 * 을 클릭합니다.</block>
   <block id="576824a9a44254550a67ab8aab39ac32" category="paragraph">검사가 성공적으로 완료되면 * OK * 를 클릭합니다.</block>
@@ -7683,38 +7659,29 @@
   <block id="90fa18d048bbd4d789b594ebceeb2490" category="list-text">'신뢰할 수 있는 당사자'를 마우스 오른쪽 버튼으로 클릭 * &gt; * '신뢰할 수 있는 당사자 신뢰 추가' * &gt; * 시작 * 을 클릭합니다.</block>
   <block id="0179eedc054410462409658b0bad268c" category="list-text">두 번째 옵션을 선택하고 SnapCenter MFA 메타데이터 파일을 찾은 후 * 다음 * 을 클릭합니다.</block>
   <block id="b6312d7d51f31ed2e0c8dc5372435335" category="list-text">표시 이름을 지정하고 * 다음 * 을 클릭합니다.</block>
-  <block id="0e94f80e83724112f00526866ff5106f" category="list-text">필요에 따라 액세스 제어 정책을 선택하고 * 다음 * 을 클릭합니다.</block>
-  <block id="148d7f6f40daf98c2955bdd9fe18e6c1" category="list-text">다음 탭의 설정을 기본값으로 설정합니다.</block>
   <block id="0c43eee88d95f645135455225ef45492" category="paragraph">SnapCenter는 이제 제공된 표시 이름을 가진 의존자로 반영됩니다.</block>
   <block id="72636fa45db48574ba9c546fdd1db0a8" category="list-text">이름을 선택하고 다음 단계를 수행하십시오.</block>
   <block id="fcfb637a4b496a9a140b628cdb573932" category="list-text">청구 발급 정책 편집 * 을 클릭합니다.</block>
   <block id="082c51e92370324bc62e7c80c44d8941" category="list-text">규칙 추가 * 를 클릭하고 * 다음 * 을 클릭합니다.</block>
-  <block id="6def5028f1988fc94fac52ad11230808" category="list-text">청구 규칙의 이름을 지정합니다</block>
   <block id="894da100f84831f7c70c6bfa7616298a" category="list-text">속성 저장소로 * Active Directory * 를 선택합니다.</block>
   <block id="7fdc58355431a6a3d9515f7519f55a21" category="list-text">속성을 * User-Principal-Name * 으로 선택하고 발신 클레임 유형을 * Name-ID * 로 선택합니다.</block>
   <block id="adfd9f210cddba9223539ba1793c20cb" category="list-text">ADFS 서버에서 다음 PowerShell 명령을 실행합니다.</block>
-  <block id="ac4be3bbcd220f4cca6269e289646cd3" category="paragraph">_Set - AdfsRelyingPartyTrust - TARGETNAME '&lt;종속자의 표시 이름&gt;' - SigningCertificateRevocationCheck None _</block>
-  <block id="573e4455d62a0e745b09afd6c4db34f0" category="paragraph">_Set - AdfsRelyingPartyTrust - TARGETNAME '&lt;의존자 표시 이름&gt;' - EncryptionCertificateRevocationCheck None _</block>
   <block id="06a6a46ff24f4c0f682d4804aaf90175" category="list-text">메타데이터를 성공적으로 가져왔는지 확인하려면 다음 단계를 수행하십시오.</block>
   <block id="c3613ef2b11238bd320ee942d11e6fe4" category="list-text">신뢰할 수 있는 상대 신뢰를 마우스 오른쪽 단추로 클릭하고 * 속성 * 을 선택합니다.</block>
   <block id="35602ea96136092b8b885fe1ef749873" category="list-text">끝점, 식별자 및 서명 필드가 채워져 있는지 확인합니다.</block>
   <block id="907fe6bfcd498fe3e561f7fb3ee67c89" category="paragraph">SnapCenter MFA 기능은 REST API를 사용하여 활성화할 수도 있습니다.</block>
-  <block id="1958e9c22cb352dba19d476e05b4a53b" category="paragraph">SnapCenter에서 MFA 설정을 활성화, 업데이트 또는 비활성화한 후 모든 브라우저 탭을 닫고 브라우저를 다시 열어 다시 로그인하십시오. 기존 또는 활성 세션 쿠키가 지워집니다.</block>
   <block id="442ed19a31ac1f651ba7bf07effe122c" category="inline-link-macro">여러 탭의 SnapCenter 로그인에 MFA 오류가 표시됩니다</block>
   <block id="aeb89440d41f10fd9cc43ab75d800138" category="section-title">AD FS MFA 메타데이터를 업데이트합니다</block>
   <block id="19b3ff63dd3f3b6c1e3e48e8b3be6141" category="paragraph">AD FS 서버에 업그레이드, CA 인증서 갱신, DR 등과 같은 수정 사항이 있을 때마다 SnapCenter에서 AD FS MFA 메타데이터를 업데이트해야 합니다.</block>
   <block id="2a18eff05051b9c720a786193ade4742" category="list-text">다운로드한 파일을 SnapCenter 서버에 복사하여 MFA 구성을 업데이트합니다.</block>
   <block id="0129ab4e23da78e3b3d44732592d15ea" category="list-text">다음 cmdlet을 실행하여 SnapCenter에서 AD FS 메타데이터를 업데이트합니다.</block>
-  <block id="16c05d08e46f0d446d2623a535219dd1" category="paragraph">_Set-SmMultiFactorAuthentication - 경로 &lt;ADFS MFA 메타데이터 XML 파일 위치&gt; _</block>
   <block id="97088f26ec75cb4d55c4fe5eeb3b62b4" category="section-title">SnapCenter MFA 메타데이터를 업데이트합니다</block>
   <block id="ac82039d46e3be923c813d3d4c5456e4" category="paragraph">복구, CA 인증서 갱신, DR 등과 같은 ADFS 서버에 수정 사항이 있을 때마다 AD FS에서 SnapCenter MFA 메타데이터를 업데이트해야 합니다.</block>
   <block id="56ec825045a003fc115765658ea8b639" category="list-text">사용 당사자 신뢰 * 를 클릭합니다.</block>
   <block id="83e84b83a6a686044df5e13021693e95" category="list-text">SnapCenter에 대해 만든 기반 당사자 신뢰를 마우스 오른쪽 단추로 클릭하고 * 삭제 * 를 클릭합니다.</block>
   <block id="d929cc2f30ed7ebb91266d0b79b5f2cf" category="paragraph">신뢰할 수 있는 사용자의 사용자 정의 이름이 표시됩니다.</block>
   <block id="18231d11def74e66e747d2eb30fc1c50" category="list-text">MFA(Multi-factor Authentication)를 활성화합니다.</block>
-  <block id="7c83e4b143b42aa42696c765109a8cc2" category="paragraph">을 참조하십시오 <block ref="5ec6b0ec41fc91e8184fa478c63adb14" category="inline-link-macro-rx"></block></block>
   <block id="a606674f3f6a9cee6f0ddf2eef03b07b" category="section-title">MFA(Multi-Factor Authentication) 비활성화</block>
-  <block id="3ed7d0eb5098b6db6af6c5b3eb2ce30f" category="paragraph">MFA를 비활성화하고 _Set-SmMultiFactorAuthentication-Disable_cmdlet을 사용하여 MFA를 사용하도록 설정할 때 만든 구성 파일을 정리합니다.</block>
   <block id="fe46b74f13369d6c44d60eb009d09999" category="list-text">'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "snapmirror show-history" - access all'</block>
   <block id="3ff2f50a0428ccd330fd2b2e2baa3b97" category="doc">RBAC 승인을 사용하여 SnapCenter에 로그인합니다</block>
   <block id="8674ed970a497f68c8817c2f50e67e43" category="section-title">멀티팩터 인증(MFA)을 사용하여 SnapCenter에 로그인</block>
@@ -7955,7 +7922,6 @@
   <block id="cc12c6014b5ec85f58b6fb31a26a66f7" category="section-title">스토리지 시스템 접속을 설정합니다</block>
   <block id="1d765f352f6f5ec7cfa899be682026d8" category="section-title">자격 증명으로 실행 을 설정하여 Microsoft SQL Server용 플러그인을 설치합니다</block>
   <block id="10976e15f1cbbbbb65eaf072d358489b" category="section-title">호스트를 추가하고 Microsoft SQL Server용 플러그인을 설치합니다</block>
-  <block id="a066d76a64fcb852398ad527b862a806" category="paragraph">문제 해결에 대한 자세한 내용은 을 참조하십시오<block ref="f832f6c8f890b8aacf5c6ca5adeb731b" category="inline-link-rx"></block>.</block>
   <block id="9756c6d75626032c8da05d425c1d0ca9" category="inline-link">인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다</block>
   <block id="462fbac4d281be78bedf063a9dbd9f61" category="paragraph">NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오<block ref="b173f6267e94bec8cf82a1d95b991ed7" category="inline-link-rx"></block>.</block>
   <block id="0cf3e7b313a6954f7aed921dae42be39" category="list-text"><block ref="36ad9b98fe40ea7db5d149de26f34551" prefix="" category="inline-code"></block></block>
@@ -7964,4 +7930,44 @@
   <block id="198803c71459bc222adc91a3d7048f01" category="paragraph">사용자 정의 로그 디렉토리 사용 * 옵션은 * 대체 호스트로 데이터베이스 복원 * 또는 * 기존 데이터베이스 파일을 사용하여 데이터베이스 복원 * 을 선택한 경우에만 사용할 수 있습니다. 공유 경로를 사용할 수도 있지만 SQL 사용자가 경로에 액세스할 수 있는지 확인할 수도 있습니다.</block>
   <block id="b3fae7a36581789e46e17a83505c11b3" category="paragraph">플러그인을 비루트 사용자로 설치한 경우, prescpt 및 PostScript 디렉토리에 실행 권한을 수동으로 할당해야 합니다.</block>
   <block id="17049c1cdf73c2b4b41219f99ace3f81" category="list-text">플러그인 설치를 위한 기본 셸은 * bash * 이어야 합니다.</block>
+  <block id="a8d03bc12fa704a66e02c6802c0766f8" category="summary">SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 수동 단계를 수행하여 플러그인을 복구합니다.</block>
+  <block id="4846f8fb7f3c4d1460329ca7b77ea8ea" category="paragraph">SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 단계를 수행하여 다른 SQL 호스트로 전환하고 데이터를 복구합니다.</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">필요한 것</block>
+  <block id="112fa4c1243fe1af31b4cf57c26ced23" category="list-text">호스트 추가 * 또는 * 호스트 수정 * 페이지를 사용하여 대체 호스트로 SnapCenter SQL Server용 플러그인을 푸시합니다. 을 참조하십시오 <block ref="fc11fadbfb2b2b87f8c260a133d75ad2" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
+  <block id="d13de4a83d7b44c2e65495def8ef1c7b" category="paragraph-title">를 참조하십시오</block>
+  <block id="ab9238ca6f628634f6f6f2cf63502cdb" category="paragraph">를 참조하십시오 <block ref="44de5c9fafab2e4e76e19e3717abc2e2" category="inline-link-macro-rx"></block> 비디오.</block>
+  <block id="94c4200231b3891f27561beda5d4e31f" category="doc">SnapCenter 재해 복구</block>
+  <block id="1da5a00a663269fc81a2098b0d91e4d6" category="paragraph">SnapCenter 재해 복구(DR) 기능을 사용하여 리소스 손상 또는 서버 충돌과 같은 재해 발생 시 SnapCenter 서버를 복구할 수 있습니다. SnapCenter 리포지토리, 서버 일정 및 서버 구성 요소를 복구할 수 있습니다. SQL Server용 SnapCenter 플러그인 및 SQL Server용 SnapCenter 플러그인을 복구할 수도 있습니다.</block>
+  <block id="68e856b5be6554a8e4ee8b393b327b0b" category="paragraph">이 섹션에서는 SnapCenter의 두 가지 DR(재해 복구) 유형에 대해 설명합니다.</block>
+  <block id="4bafae51c760477df325c1b3815da1aa" category="list-title">SnapCenter 서버 DR</block>
+  <block id="4561e7fcd617a663505d8992af88d242" category="list-text">SnapCenter 서버 데이터는 백업되며 SnapCenter 서버에 플러그인을 추가하거나 관리하지 않고도 복구할 수 있습니다.</block>
+  <block id="3dbcd484a9ede0a6feaf76cb9d8a6868" category="list-text">MFA(다중 인증)의 경우 SnapCenter 서버 DR 중에 모든 브라우저 탭을 닫고 브라우저를 다시 열어 다시 로그인해야 합니다. 이렇게 하면 기존 또는 활성 세션 쿠키가 지워 올바른 구성 데이터가 업데이트됩니다.</block>
+  <block id="20383b74f2f17a4c5b8bc914455eed3d" category="list-text">SnapCenter 재해 복구 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. 을 참조하십시오 <block ref="e667e897b20b02966f899ad38ce1ba39" category="inline-link-macro-rx"></block>.</block>
+  <block id="717bb61127675bdfbac9d09d06c4bd89" category="paragraph-title">SnapCenter 플러그인 및 스토리지 DR</block>
+  <block id="a3c30c25a1e544471bac224e74207425" category="paragraph">DR은 SQL Server용 SnapCenter 플러그인에만 지원됩니다. SQL Server용 SnapCenter 플러그인이 다운된 경우 다른 SQL 호스트로 전환하고 몇 가지 단계를 수행하여 데이터를 복구합니다. 을 참조하십시오 <block ref="47046db67c1574cb29142c431fb68f1f" category="inline-link-macro-rx"></block>.</block>
+  <block id="9fbd6c9c898d3b24f2f3cfa67bb8c2b2" category="paragraph">SnapCenter는 ONTAP SnapMirror 기술을 사용하여 데이터를 복제합니다. 데이터를 2차 사이트로 복제하여 DR에 사용하고 동기화 상태로 유지할 수 있습니다. SnapMirror의 복제 관계를 끊어 페일오버를 시작할 수 있습니다. 페일백 중에 동기화를 취소할 수 있으며 DR 사이트의 데이터를 기본 위치로 다시 복제할 수 있습니다.</block>
+  <block id="d4dbc002513d2615e9e9009874835b86" category="doc">멀티팩터 인증(MFA) 관리</block>
+  <block id="eba5e183c4f404bb057076dc4ea10e64" category="paragraph">이 항목에서는 AD FS(Active Directory Federation Service) 서버 및 SnapCenter 서버에서 MFA(Multi-Factor Authentication) 기능을 관리하는 방법에 대해 설명합니다.</block>
+  <block id="8e5ca8947d2ccd889e10c25276502da0" category="section-title">멀티팩터 인증(MFA) 활성화</block>
+  <block id="cf9e251e098e2f47bcb8e04e9e5ff28a" category="paragraph">이 항목에서는 AD FS(Active Directory Federation Service) 서버 및 SnapCenter 서버에서 MFA 기능을 사용하도록 설정하는 방법에 대해 설명합니다.</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">이 작업에 대해</block>
+  <block id="1f6600010f63592c168af66c387c499f" category="list-text">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 를 실행하여 얻을 수 있습니다<block ref="b306feeed6ddda97d08ef1f2a0ba62d9" prefix=" " category="inline-code"></block>. 또는 를 볼 수도 있습니다<block ref="5df59c30e631270dc31bf843919ab849" category="inline-link-rx"></block>.</block>
+  <block id="4ceb1d36799251586ba061a0c2b9a7a8" category="list-text">Azure MFA, Cisco Duo 등과 같은 AD FS 지원 다중 요소 인증 서비스가 있어야 합니다.</block>
+  <block id="090c9bbbd344aa7f6441901f2b8792f8" category="list-text">자체 서명된 인증서가 노드 수준에서 고유하므로 ADFS-F5 통신이 끊어지지 않도록 합니다.</block>
+  <block id="30c7dffa036eadcc0342139cec28fa70" category="list-text">에서 AD FS 페더레이션 메타데이터 파일을 다운로드합니다 <block ref="a9571343becbc81f25857902551c1e72" category="inline-link-rx"></block> FQDN&gt;/FederationMetadata/2007-06/FederationMetadata.xml".</block>
+  <block id="aae311364aff04070e63a86b4fe0296f" category="list-text">를 사용하여 SnapCenter 서버에 대해 MFA를 활성화합니다<block ref="1254f269a5dd80690678b4df201e88a5" prefix=" " category="inline-code"></block> cmdlet.</block>
+  <block id="13cb11c142fa4483919ae32dd2a04113" category="list-text">(선택 사항) 를 사용하여 MFA 구성 상태 및 설정을 확인합니다<block ref="d99b90475295700e9775deadcb723ac6" prefix=" " category="inline-code"></block> cmdlet.</block>
+  <block id="67fadfdbaf1af58c1560a82586252863" category="list-text">Locations * 를 클릭하고 관련 호스트(계층 구조의 맨 위)를 선택합니다.</block>
+  <block id="35adcaf3c3f08c3b4becd894c0fafea3" category="list-text">필요에 따라 액세스 제어 정책을 선택하고 * 다음 * 을 클릭합니다.</block>
+  <block id="ba119cc36777aa5836242da63619667d" category="list-text">다음 탭에서 기본 설정으로 설정을 선택합니다.</block>
+  <block id="55257e6ccdd63f9f4ab886869cbbf5cf" category="list-text">청구 규칙의 이름을 지정합니다.</block>
+  <block id="6e98d99dca8f4518c9e7567d19ce708c" category="paragraph"><block ref="513dca79729c465b5c3001bf26148c0c" prefix="" category="inline-code"></block></block>
+  <block id="a339a650564d067ea1ade511a61340e3" category="paragraph"><block ref="9111d0f1b6d8fdece369a21eacf0663f" prefix="" category="inline-code"></block></block>
+  <block id="e5111e1a8d09cf3b9cc87da0144221fb" category="list-text">모든 브라우저 탭을 닫고 브라우저를 다시 열어 기존 또는 활성 세션 쿠키를 지우고 다시 로그인합니다.</block>
+  <block id="4df2c26ea6368491393f05baf8841e6d" category="paragraph">을 참조하십시오. 을 참조하십시오 <block ref="46642a8ad62fd1a061e94d6b7bf62dc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="f668cd2acef670f8b213c6c785ddf8d6" category="paragraph"><block ref="7da21d8fe0787a3171af06722db1ee6f" prefix="" category="inline-code"></block></block>
+  <block id="0f5b112cebb37022dbfe2c80e388d605" category="paragraph">을 참조하십시오 <block ref="5ec6b0ec41fc91e8184fa478c63adb14" category="inline-link-macro-rx"></block>.</block>
+  <block id="a8d67928879d7cbd7d3c5d1b6d797736" category="list-text">MFA를 비활성화하고 를 사용하여 MFA를 활성화했을 때 생성된 구성 파일을 정리합니다<block ref="3f459b2c524cc44ef57664fd75d5c093" prefix=" " category="inline-code"></block> cmdlet.</block>
+  <block id="6bcc192d7209e867a0f8afd8938c62eb" category="sidebar">멀티팩터 인증(MFA) 관리</block>
 </blocks>
