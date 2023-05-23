@@ -8065,13 +8065,12 @@
   <block id="8d6dff35d77be2858cb012c9525717f5" category="sidebar">미리 정의된 환경 변수</block>
   <block id="d275b6dbfd1b9b66915ebb6018551bec" category="sidebar">백업 보존</block>
   <block id="12e6d0dc88f359dcf5383de2e7e9270d" category="sidebar">명명 규칙</block>
-  <block id="e9dd934a8e85b48c6d3946a93f06f678" category="sidebar">백업 전략 정의</block>
   <block id="2f914c665c66ccefda5991dcf0a8eea3" category="sidebar">백업 요구 사항을 검토합니다</block>
   <block id="a9f304050cba6c177490ec2a73015cbe" category="sidebar">Oracle 데이터베이스 살펴보기</block>
   <block id="0a4a3719bc7519d1162060e0f0e08f8a" category="sidebar">백업 정책을 생성합니다</block>
-  <block id="53a051ccb17163d7cd9ed3432619fb1d" category="sidebar">리소스 그룹 생성(선택 사항)</block>
   <block id="dc99555922001c1adae2d9d4baee2217" category="sidebar">백업 진행률을 모니터링합니다</block>
   <block id="cfe10065fd0fa721a87935a2eac20f7b" category="sidebar">기타 백업 작업</block>
   <block id="75b8e448161fa30feba883267dc81521" category="sidebar">UNIX 명령을 사용하여 백업합니다</block>
   <block id="de148ec1fc3c9bb7b03f1506761bed93" category="sidebar">백업을 봅니다</block>
+  <block id="020a36deb114af1bb518c70d5975e940" category="sidebar">리소스 그룹을 생성합니다</block>
 </blocks>

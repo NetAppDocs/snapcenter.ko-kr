@@ -60,15 +60,13 @@ entries:
       url: "/protect-sco/schedule-backups.html"
     - title: 명명 규칙
       url: "/protect-sco/naming-backups.html"
-  - title: 백업 전략 정의
-    url: "/protect-sco/task_define_a_backup_strategy_for_oracle_databases.html"
   - title: 백업 요구 사항을 검토합니다
     url: "/protect-sco/reference_requirements_for_backing_up_an_oracle_database.html"
   - title: Oracle 데이터베이스 살펴보기
     url: "/protect-sco/task_determine_whether_oracle_databases_are_available_for_backup.html"
   - title: 백업 정책을 생성합니다
     url: "/protect-sco/task_create_backup_policies_for_oracle_database.html"
-  - title: 리소스 그룹 생성(선택 사항)
+  - title: 리소스 그룹을 생성합니다
     url: "/protect-sco/task_create_resource_groups_and_attach_policies_for_oracle_databases.html"
   - title: Oracle 리소스를 백업합니다
     url: "/protect-sco/task_back_up_oracle_resources.html"
