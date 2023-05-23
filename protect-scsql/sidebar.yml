@@ -56,7 +56,13 @@ entries:
   - title: SQL Server에 대한 클론 생성 전략을 정의합니다
     url: "/protect-scsql/task_define_a_clone_strategy_for_sql_server.html"
 - title: Microsoft SQL Server용 SnapCenter 플러그인 설치를 빠르게 시작합니다
-  url: "/protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html"
+  entries:
+  - title: SnapCenter 서버 및 플러그인 설치 준비
+    url: "/protect-scsql/quick-start-to-prepare-for-snapcenter-plug-in-install-for-sql-server.html"
+  - title: Microsoft SQL Server용 SnapCenter 서버를 설치합니다
+    url: "/protect-scsql/task-install-snapcenter-server-for-sql-server.html"
+  - title: Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다
+    url: "/protect-scsql/task-install-snapcenter-plug-in-for-sql-server.html"
 - title: Microsoft SQL Server용 SnapCenter 플러그인 설치를 준비합니다
   entries:
   - title: Microsoft SQL Server용 SnapCenter 플러그인 설치 워크플로

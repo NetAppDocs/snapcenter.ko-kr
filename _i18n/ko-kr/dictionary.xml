@@ -566,7 +566,6 @@
   <block id="48f5a315d78b006c306e66d7b35fa6f4" category="summary">백업하거나 클론 복제할 리소스를 추가해야 합니다. 환경에 따라 백업 또는 복제할 데이터베이스 인스턴스 또는 컬렉션이 리소스가 될 수 있습니다.</block>
   <block id="5acceba2cee4fe40d121e90d997fa439" category="doc">SnapCenter 사용자 지정 플러그인에 리소스를 추가합니다</block>
   <block id="04e793c2d8facdc933edd3335c890a34" category="list-text">SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 생성, 자격 증명 추가 등의 작업을 완료해야 합니다.</block>
-  <block id="09f1a1e976c751f8b861a75492f30752" category="list-text">사용자 지정 플러그인을 만들어야 합니다.</block>
   <block id="797f1e031962d70e46335925184febf4" category="list-text">SnapCenter 서버에 플러그인을 업로드해야 합니다.</block>
   <block id="b6ddf325474f53377de3e17f65c983f3" category="inline-link">NetApp 스토리지 자동화 스토어</block>
   <block id="eb609425665410a2e3cc5d5000880798" category="paragraph">MySQL 및 DB2 애플리케이션에 대한 리소스를 추가할 수도 있습니다. 이러한 플러그인은 에서 다운로드할 수 있습니다<block ref="14adb94a4faec9ea0e0992d90e98b640" category="inline-link-rx"></block>.</block>
@@ -581,7 +580,6 @@
   <block id="22d904afc998596607ae9259692598fb" category="paragraph">자격 증명을 선택하거나 새 자격 증명을 생성합니다.</block>
   <block id="16e83f7e57633cd58a4377b7c1b63e8b" category="paragraph">마운트 경로</block>
   <block id="1b77d8b94cdc028e50a0681f82c70f25" category="paragraph">리소스가 마운트된 마운트 경로를 입력합니다. 이는 Windows 호스트에만 적용됩니다.</block>
-  <block id="dc502ecfca6ae1ebeee4b624e9b44123" category="paragraph">선택 사항: 을 클릭합니다 <block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 다른 스토리지 시스템에서 볼륨, LUN 및 qtree를 더 추가합니다.</block>
   <block id="e0a8c4d2ea78ad79b3f4ddb809734576" category="admonition">SnapCenter 맞춤형 플러그인은 물리적 환경과 가상 환경에 대한 리소스 및 스토리지 세부 정보의 자동 검색을 지원하지 않습니다. 리소스를 생성하는 동안 물리적 환경과 가상 환경에 대한 스토리지 정보를 제공해야 합니다.</block>
   <block id="e855bfeca424d5d865b9bac0eaf01f53" category="image-alt">있습니다</block>
   <block id="863fe064f77b5a2b8dd60206770de2c1" category="paragraph">자원별 정보를 전달하려면 사용자 지정 키 값 쌍을 사용합니다. 예를 들어, MySQL 플러그인을 사용하는 경우 호스트를 host=hostname, port=port-no 로 지정하여 MySQL 및 master-slave 구성에서 master_slave=""Yes"" 또는 ""no"(name은 master_slave, value는 ""Yes"" 또는 ""No")로 지정해야 합니다.</block>
@@ -612,7 +610,6 @@
   <block id="a80db864d152c8b32afdc8aba08be8a4" category="paragraph">예를 들어, _customtext_resource group_policy_hostname 또는 resource group_hostname_과 같이 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
   <block id="667a5a1d21c8b2c591be7bfcf5d1b5ae" category="paragraph">그러면 화면의 정보를 필터링하는 데 도움이 됩니다.</block>
   <block id="c7e757b993a892f1adbc4d9d429ada9a" category="list-text">사용 가능한 리소스 * 섹션에서 리소스를 선택한 다음 오른쪽 화살표를 클릭하여 * 선택한 리소스 * 섹션으로 이동합니다.</block>
-  <block id="b681aca5ebc16cfa17fba43067418799" category="list-text">백업 화살표를 클릭하여 추가 백업 옵션을 설정합니다.</block>
   <block id="8cc859910effe8112e2912d3644f0bc8" category="paragraph">정합성 보장 그룹 백업을 설정하고 다음 작업을 수행합니다.</block>
   <block id="a99f0aeaf38081c20a7370fb0f80e5fb" category="paragraph">정합성 보장 그룹 스냅샷 작업이 완료될 때까지 기다릴 여유가 없습니다</block>
   <block id="16bfcf20ed729d5958d62a1310952406" category="paragraph">긴급, 중간 또는 완해제 를 선택하여 스냅샷 복사 작업이 완료될 때까지 기다리는 시간을 지정합니다.</block>
@@ -620,8 +617,6 @@
   <block id="33d8fc89984b399b5f14da8a76d58c5a" category="paragraph">WAFL 동기화를 비활성화합니다</block>
   <block id="27a16d7d61f6682ceaf4d8022ffa250f" category="paragraph">WAFL 정합성 보장 지점을 강제로 사용하지 않으려면 이 옵션을 선택합니다.</block>
   <block id="129db5e4908943c18847d24dd577782f" category="paragraph"><block ref="129db5e4908943c18847d24dd577782f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b23b98054bcf29cc3dd1bd3464052bcb" category="list-text">스크립트 화살표를 클릭하고 일시 중지, 스냅샷 복사 및 일시 중지 해제 작업에 대한 사전 및 사후 명령을 입력합니다. 장애 발생 시 종료하기 전에 실행할 사전 명령을 입력할 수도 있습니다.</block>
-  <block id="18c6405661af0f133718c3a6c6e5b2b9" category="list-text">사용자 지정 구성 화살표를 클릭하고 이 리소스를 사용하는 모든 데이터 보호 작업에 필요한 사용자 지정 키 값 쌍을 입력합니다.</block>
   <block id="51ac4bf63a0c6a9cefa7ba69b4154ef1" category="cell">설정</block>
   <block id="96611acf5bf8bf22163153db770f7f60" category="paragraph">archive_log_enable입니다</block>
   <block id="eae66b4b74b6b82ce35a83d2757f6d46" category="paragraph">(예/아니요)</block>
@@ -652,8 +647,6 @@
   <block id="70c30c71587e2d0c71b7f9e97a8aad7d" category="list-text">드롭다운 목록에서 하나 이상의 정책을 선택합니다.</block>
   <block id="e27c3f444b9f74c83a643ba11ed3a83e" category="admonition">* 를 클릭하여 정책을 생성할 수도 있습니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>*.</block>
   <block id="bfd0e05a188a0885b5397fae78f649b8" category="paragraph">정책은 * 선택한 정책에 대한 일정 구성 * 섹션에 나열됩니다.</block>
-  <block id="7968dcde042f7f2966214a9d3b89b418" category="list-text">Configure Schedules * 열에서 * 를 클릭합니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>구성할 정책에 대해 * 를 선택합니다.</block>
-  <block id="1e414da00e22b0ba0fa519e7325b7ea9" category="list-text">policy_policy_name_name에 대한 스케줄 추가 대화 상자에서 스케줄을 구성한 다음 확인 을 클릭합니다.</block>
   <block id="2a7c4561536268cef70578e0e4124a6c" category="paragraph">여기서 policy_name은 선택한 정책의 이름입니다.</block>
   <block id="6041b17ee877813c3440ee714e48b911" category="paragraph">구성된 일정이 Applied Schedules 열에 나열됩니다. 타사 백업 스케줄은 SnapCenter 백업 스케줄과 겹치는 경우 지원되지 않습니다.</block>
   <block id="572a352f5f18989eb8c33a0e36d194c3" category="paragraph">또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. SMTP 서버는 * 설정 * &gt; * 글로벌 설정 * 에서 구성해야 합니다.</block>
@@ -2729,7 +2722,6 @@
   <block id="e7a171b81194b9ce74b91f45c49e46c5" category="admonition">최근에 배포된 CA 인증서가 드롭다운 메뉴에 나열되지 않으면 CA 인증서가 개인 키와 연결되어 있는지 확인합니다.</block>
   <block id="a871272a246bcd1f81af54f623825883" category="admonition">다음 경로를 사용하여 인증서를 추가해야 합니다. * 콘솔 루트 &gt; 인증서 - 로컬 컴퓨터 &gt; 신뢰할 수 있는 루트 인증 기관 &gt; 인증서 *.</block>
   <block id="f8a549c5d60e74034419845623f5c51a" category="summary">SnapCenter 표준 용량 라이센스를 사용하여 ONTAP Select 및 Cloud Volumes ONTAP 플랫폼의 데이터를 보호할 수 있습니다.</block>
-  <block id="a6f6b8e1900f201c352d37d7ad4eee46" category="paragraph">라이센스의 특징은 다음과 같습니다.</block>
   <block id="1e1ad6d102344db746935e8ae7b4053a" category="list-text">51xxxxxxx 형식의 9자리 일련 번호로 구성됩니다</block>
   <block id="8df6c319bc0dd3bc17034d6f7b0b0d01" category="paragraph">라이센스 일련 번호 및 유효한 NetApp Support 사이트 로그인 자격 증명을 사용하여 SnapCenter GUI를 통해 라이센스를 활성화합니다.</block>
   <block id="f8b3fa2bcdc37eb746dd0ca2b1318a58" category="list-text">사용된 스토리지 용량 또는 보호할 데이터의 크기 중 더 낮은 것을 기준으로 비용을 설정하고 SnapCenter에서 데이터를 관리하는 별도의 영구 라이센스로 사용할 수 있습니다</block>
@@ -2737,9 +2729,6 @@
   <block id="3ad8f1015a5748dc3e790e64bb9a4e26" category="paragraph">예를 들어, 1TB, 2TB, 4TB 등에 대한 용량 기반 라이센스를 얻을 수 있습니다.</block>
   <block id="ec72ca404ef39d44f067aaaae39cf0e4" category="list-text">100TB 용량 사용 권한이 있는 90일 평가판 라이센스로 제공됩니다</block>
   <block id="eb55a5732c8239cbf4f476df49cc20a3" category="paragraph">필요한 라이센스에 대한 자세한 내용은 를 참조하십시오 <block ref="6de8516502145d64739d69762f4898a1" category="inline-link-macro-rx"></block>.</block>
-  <block id="b7045e270f9ec5cdf3d4a2f1516dd0fd" category="section-title">용량 기반 라이센스를 추가하기 위한 사전 요구 사항</block>
-  <block id="fc839d90b395c50c0f0c94028073c2fc" category="paragraph">용량 기반 라이센스를 추가하기 전에 용량 요구 사항을 계산하고 용량 기반 라이센스의 일련 번호를 검색한 다음 필요에 따라 라이센스 파일을 생성해야 합니다.</block>
-  <block id="b0c7f3b2e1c49f12743f8681bad9f4d9" category="section-title">용량 요구 사항 계산</block>
   <block id="b253c383592a32db835b060dd347fb51" category="paragraph">SnapCenter 용량 기반 라이센스를 얻기 전에 SnapCenter에서 관리할 호스트의 용량을 계산해야 합니다.</block>
   <block id="fff248d88b8e6fe585098d0e2e47af26" category="paragraph">Cloud Volumes ONTAP 또는 ONTAP Select 시스템에서 클러스터 관리자여야 합니다.</block>
   <block id="b3ce93a0fdb481ef23214dbe76f20fbd" category="paragraph">SnapCenter는 사용된 실제 용량을 계산합니다. 파일 시스템 또는 데이터베이스의 크기가 1TB이지만 500GB의 공간만 사용되는 경우 SnapCenter는 500GB의 사용된 용량을 계산합니다. 볼륨 용량은 중복제거 및 압축 후 계산되며 전체 볼륨의 사용된 용량을 기준으로 계산됩니다.</block>
@@ -2747,19 +2736,12 @@
   <block id="7a8bc63ce0be9d70f65ff4bebb9b433c" category="list-text">사용된 볼륨 용량을 보려면 명령을 입력합니다.</block>
   <block id="c52aa08e4b032ad1666772ea0c44119c" category="paragraph">두 볼륨의 사용된 총 용량은 5TB 미만입니다. 따라서 모든 5TB 데이터를 보호하려면 최소 SnapCenter 용량 기반 라이센스 요구사항이 5TB 이상입니다.</block>
   <block id="9efbb933648d3e7cf5a18b9babea2e3b" category="paragraph">그러나 총 사용 용량 5TB의 2TB만 보호하려면 2TB 용량 기반 라이센스를 얻을 수 있습니다.</block>
-  <block id="8653cfd71a4452fb9ae4b9ab1e4f43c5" category="section-title">용량 기반 라이센스의 일련 번호를 검색합니다</block>
   <block id="2743dc2e5d64cfecd6d65ef69f417e95" category="paragraph">SnapCenter 용량 기반 라이센스 일련 번호는 주문 확인 또는 문서 패키지에서 사용할 수 있습니다. 하지만 이 일련 번호가 없는 경우 NetApp Support 사이트에서 검색할 수 있습니다.</block>
   <block id="8e4be97b92b5d685df7ecc1adcda7baf" category="paragraph">유효한 NetApp Support 사이트 로그인 자격 증명이 있어야 합니다.</block>
-  <block id="0373910e51252c7b97dcbea9f4942604" category="inline-link">mysupport.netapp.com</block>
-  <block id="260c486181bff01291b08f4368caf4e0" category="list-text">NetApp Support 사이트 에 로그인합니다<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>.</block>
   <block id="55b506dcddf68638833e19d289e73897" category="list-text">시스템 * &gt; * 소프트웨어 라이센스 * 로 이동합니다.</block>
   <block id="a83a5d4a0177a0501c4a3ed3bc37cd53" category="list-text">선택 기준 영역의 모두 표시: 일련 번호 및 라이센스 드롭다운 메뉴에서 * SC_STANDARD * 를 선택합니다.</block>
-  <block id="afdb1414f39146e968c3e38bd864c000" category="image-alt">NSS 라이선스 선택</block>
-  <block id="969166d70500094403472cee53c7eb80" category="list-text">회사 이름을 입력한 다음 * Go! * 를 클릭합니다.</block>
   <block id="072c7ce9ef654fbadd39bfb8d07dd1f6" category="paragraph">51xxxxxxx 형식의 9자리 SnapCenter 라이센스 일련 번호가 표시됩니다.</block>
   <block id="2be4e86fec9db8038212e41252f1f190" category="list-text">일련 번호를 기록합니다.</block>
-  <block id="aec2fa195585d5a55c735b267231ecf8" category="section-title">NetApp 라이센스 파일을 생성합니다</block>
-  <block id="7ab335ae0eb6b3dd5aa9c839cf5ead00" category="paragraph">SnapCenter GUI에 NetApp Support 사이트 자격 증명과 SnapCenter 라이센스 일련 번호를 입력하지 않거나 SnapCenter에서 NetApp Support 사이트에 인터넷에 액세스할 수 없는 경우, NetApp 라이센스 파일(NLF)을 생성할 수 있습니다. 그런 다음 SnapCenter 호스트에서 액세스할 수 있는 위치에 파일을 다운로드하여 저장합니다.</block>
   <block id="b38bcb46a26616707e57598919123e4f" category="list-text">ONTAP Select를 SnapCenter 또는 Cloud Volumes ONTAP와 함께 사용해야 합니다.</block>
   <block id="26e6565b87611c0e2e61e424bbf253a8" category="list-text">유효한 NetApp Support 사이트 로그인 자격 증명이 있어야 합니다.</block>
   <block id="ef37f690ac766ca61a4b063851b90274" category="list-text">51xxxxxxx 형식의 라이센스 일련 번호는 9자리 숫자여야 합니다.</block>
@@ -2768,9 +2750,7 @@
   <block id="cc5aaa62ea65ba445a0ca28e684ec137" category="list-text">필요한 정보를 입력합니다.</block>
   <block id="aa96972d8a9d395572c58293f4cfc359" category="list-text">제품 라인 필드의 풀다운 메뉴에서 * SnapCenter 표준(용량 기반) * 을 선택합니다.</block>
   <block id="abd5fbd31eb442bc0a035e9cad7fe8f3" category="list-text">제품 일련 번호 필드에 SnapCenter 라이센스 일련 번호를 입력합니다</block>
-  <block id="32b485c6c6f806ed5cacdc290d9f46ae" category="list-text">NetApp 데이터 개인 정보 보호 정책을 읽고 동의한 다음 * 제출 * 을 클릭합니다.</block>
   <block id="352b74507f3abbcaae93745904ef3f5a" category="list-text">라이센스 파일을 저장한 다음 파일 위치를 기록합니다.</block>
-  <block id="2fab191a54d328d06a3a746dee5bbad2" category="section-title">용량 기반 라이센스 추가</block>
   <block id="8c1f23f212262c3300e93f874826f6e5" category="paragraph">ONTAP Select 또는 Cloud Volumes ONTAP 플랫폼과 함께 SnapCenter를 사용하는 경우 SnapCenter 용량 기반 라이센스를 하나 이상 설치해야 합니다.</block>
   <block id="7497c6eb5b40c317a0e3ac59d973ce6b" category="list-text">SnapCenter 관리자로 로그인해야 합니다.</block>
   <block id="55f664ebb6051a6a8020142e125c7571" category="paragraph">NetApp 라이센스 파일(NLF)을 사용하여 라이센스를 추가하는 경우 라이센스 파일의 위치를 알아야 합니다.</block>
@@ -2780,7 +2760,6 @@
   <block id="fd6d824ad448d73f9d1f6b3c5509232a" category="list-text">기존 라이센스를 교체하려는 경우 또는 라이센스가 더 이상 필요하지 않은 경우 라이센스를 삭제합니다.</block>
   <block id="ba2f4fc969f990edea2a0f9e7c17885f" category="admonition">평가판 라이센스(일련 번호가 50으로 끝나는 번호)는 SnapCenter GUI를 사용하여 삭제할 수 없습니다. 조달된 SnapCenter 표준 용량 기반 라이센스를 추가하면 평가판 라이센스가 자동으로 덮어쓰여집니다.</block>
   <block id="20788a45506cca03e1c2a88f6259baa6" category="list-text">설정 페이지에서 * 소프트웨어 * 를 클릭합니다.</block>
-  <block id="0b5bbb1f8e9316f184ffc46a55fde594" category="list-text">소프트웨어 페이지의 라이센스 섹션에서 * 추가 * (<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>)를 클릭합니다.</block>
   <block id="d72c1df6aa761e08a22ad7e68c16406d" category="list-text">SnapCenter 라이센스 추가 마법사에서 다음 방법 중 하나를 선택하여 추가할 라이센스를 가져옵니다.</block>
   <block id="a1d8662559bac2669232432df90e6db3" category="paragraph">NSS(NetApp Support Site) 로그인 자격 증명을 입력하여 라이센스를 가져옵니다</block>
   <block id="a426e2b1ae7b2ed68b622079636cb9f8" category="list-text">NSS 사용자 이름을 입력합니다.</block>
@@ -2788,10 +2767,8 @@
   <block id="d6cd0a28d068c868d81bfecd02276ee3" category="list-text">컨트롤러 기반 라이센스의 일련 번호를 입력합니다.</block>
   <block id="07cb62e97402d6f5f7ae164e960f673c" category="paragraph">NetApp 라이센스 파일</block>
   <block id="358adfd23e97ae6d9631faacdf38349f" category="list-text">라이센스 파일의 위치를 찾은 다음 선택합니다.</block>
-  <block id="31d9f23fbb53d2787e021e33f512537e" category="list-text">열기 * 를 클릭합니다.</block>
   <block id="139acbc75e1fdf242ad639e953306c0d" category="list-text">알림 페이지에서 SnapCenter에서 이메일, EMS 및 AutoSupport 알림을 보내는 용량 임계값을 입력합니다.</block>
   <block id="ca8d06ca31fa65de1d7fa189cbd9053a" category="paragraph">기본 임계값은 90%입니다.</block>
-  <block id="c5ac91f9d71868d67600ac6e3d555ce9" category="list-text">이메일 알림에 맞게 SMTP 서버를 구성하려면 * 설정 * &gt; * 글로벌 설정 * &gt; * 알림 서버 설정 * 을 클릭한 후 다음 세부 정보를 입력합니다.</block>
   <block id="fe7c6832f02e9c6d619cf94f17ad3887" category="paragraph">이메일 기본 설정</block>
   <block id="a4e7a8fc83bab6b154d5ea518f9f930c" category="paragraph">Always * 또는 * Never * 중에서 선택합니다.</block>
   <block id="0ea82c1bf7269950e927586b6dba0eac" category="paragraph">이메일 설정을 제공합니다</block>
@@ -2800,11 +2777,6 @@
   <block id="a70a5bbea3c1a0732c3b119e34ac958c" category="list-text">수신자 이메일 주소입니다</block>
   <block id="d97e109d66d82a3998e928297ea76bdc" category="list-text">선택 사항: 기본 제목 줄을 편집합니다</block>
   <block id="fb929cc1541d57b8296794b2a588840d" category="paragraph">기본 제목은 "SnapCenter 라이센스 용량 알림"입니다.</block>
-  <block id="8440ad9407c2e5813eaab7eb5fa92051" category="list-text">스토리지 시스템 syslog에 EMS(이벤트 관리 시스템) 메시지를 보내거나 스토리지 시스템에 실패한 작업을 위한 AutoSupport 메시지를 보내려면 적절한 확인란을 선택합니다.</block>
-  <block id="3327dba9ffd8c9c2d9846fc889607703" category="cell">* 모범 사례 *: 발생할 수 있는 문제를 해결하기 위해 AutoSupport를 활성화하는 것이 좋습니다.</block>
-  <block id="b15a52a99ef14861ba148ae197add182" category="section-title">SnapCenter에서 용량 사용을 계산하는 방법</block>
-  <block id="33e4a71d44495d6f1fd89da8547d2ff8" category="paragraph">SnapCenter는 Cloud Volumes ONTAP 및 관리하는 ONTAP Select 스토리지에서 매일 자정에 용량 사용량을 자동으로 계산합니다. SnapCenter를 올바르게 구성하려면 SnapCenter에서 용량을 계산하는 방법을 알고 있어야 합니다.</block>
-  <block id="b49e5091a9fa2af83579f7097033c636" category="paragraph">표준 용량 라이센스를 사용하는 경우 SnapCenter는 총 라이센스 용량에서 모든 볼륨에 사용된 용량을 추론하여 사용하지 않은 용량을 계산합니다. 사용된 용량이 라이센스 용량을 초과하면 SnapCenter 대시보드에 초과 사용 경고가 표시됩니다. SnapCenter에서 용량 임계값 및 알림을 구성한 경우 사용된 용량이 지정한 임계값에 도달하면 이메일이 전송됩니다.</block>
   <block id="318e9318f3e81f666ea14f7560451333" category="summary">SnapCenter 서버는 도메인 또는 작업 그룹에 있는 시스템에 설치할 수 있습니다. 설치에 사용되는 사용자는 작업 그룹과 도메인 모두에 대해 컴퓨터에 대한 관리자 권한을 가져야 합니다.</block>
   <block id="0322b41f8bf313240d64c3e6923b4ee4" category="doc">도메인 및 작업 그룹 요구 사항</block>
   <block id="1c55be82b0d56e1433794bc0b704c38b" category="paragraph">Windows 호스트에 SnapCenter 서버 및 SnapCenter 플러그인을 설치하려면 다음 중 하나를 사용해야 합니다.</block>
@@ -3032,37 +3004,25 @@
   <block id="b867b5a0cc0e8c022da3fb526dbf2e0d" category="list-text">FAS System Manager 또는 스토리지 클러스터 명령줄을 사용하여 AFF 또는 ONTAP 스토리지 컨트롤러에 직접 추가하여 사용 가능</block>
   <block id="c0919ecf5802c65bf773794b7af70540" category="admonition">SnapCenter 컨트롤러 기반 라이센스의 경우 SnapCenter GUI에 라이센스 정보를 입력하지 않습니다.</block>
   <block id="17449a90a0d7161db56cba83fa4f2728" category="list-text">컨트롤러의 일련 번호에 잠금 상태입니다</block>
-  <block id="20284ac6e2b70536e661c28917c1f549" category="section-title">컨트롤러 기반 라이센스를 추가하기 위한 사전 요구사항</block>
-  <block id="caaa0ad9310c0a99138c911b96b968e3" category="paragraph">컨트롤러 기반 라이센스를 추가하기 전에 SnapManager Suite 라이센스가 설치되어 있는지 확인하고, 컨트롤러에 설치된 라이센스를 식별하고, 컨트롤러의 일련 번호를 검색하고, 컨트롤러 기반 라이센스의 일련 번호를 검색해야 합니다.</block>
-  <block id="3a6c1a3709f142da8374f25ad7aabeda" category="section-title">SnapManager Suite 라이센스가 설치되어 있는지 확인합니다</block>
   <block id="b7bbc11caf1a65c77460de0469d40f7d" category="paragraph">SnapCenter GUI를 사용하면 SnapManager 제품군 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있는지 여부를 확인하고 SnapManager 제품군 라이센스가 필요할 수 있는 스토리지 시스템을 식별할 수 있습니다. SnapManager 제품군 라이센스는 AFF 및 FAS SVM이나 운영 스토리지 시스템의 클러스터에만 적용됩니다.</block>
   <block id="6aa5717c99b34de9980debfbe3c6fa76" category="admonition">컨트롤러에 SnapManager Suite 라이센스가 이미 있는 경우 SnapCenter 표준 컨트롤러 기반 라이센스 권한이 자동으로 제공됩니다. SnapManager 라이센스 및 SnapCenter 표준 컨트롤러 기반 라이센스 이름은 서로 바꿔서 사용되지만 동일한 라이센스를 나타냅니다.</block>
   <block id="9ba45610f0250c3f3d93d968194d341c" category="list-text">추가된 모든 SVM을 보려면 * ONTAP SVM * 을 선택합니다.</block>
   <block id="91fd94b5750743b0b4db66d235c0cab9" category="list-text">추가된 모든 클러스터를 보려면 * ONTAP 클러스터 * 를 선택합니다.</block>
-  <block id="784f9d2e91aebe7dc2a98209e667372a" category="paragraph">클러스터 이름을 클릭하면 클러스터에 포함된 모든 SVM이 스토리지 가상 시스템 섹션에 표시됩니다.</block>
   <block id="56ea331cb0dea9dc3bddc3e0e2f3ef88" category="paragraph">컨트롤러 라이센스 열에는 다음 상태가 표시됩니다.</block>
-  <block id="2522d4d4da08f9de2686d2c18e41a94b" category="list-text"><block ref="da9849daa2aa04218f87948a7256713b" category="inline-image-macro-rx" type="image"></block> SnapManager Suite 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있음을 나타냅니다.</block>
-  <block id="3064686d0324adfa86cb183026ea8a66" category="list-text"><block ref="355b5886443669e7ad5ff1741a77218f" category="inline-image-macro-rx" type="image"></block> SnapManager Suite 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있지 않음을 나타냅니다.</block>
   <block id="a909f2df296012a51dc7da77f9e20dc6" category="list-text">해당 없음 은 스토리지 컨트롤러가 Cloud Volumes ONTAP, ONTAP Select 또는 보조 스토리지 플랫폼에 있기 때문에 SnapManager Suite 라이센스가 적용되지 않음을 나타냅니다.</block>
-  <block id="3991b99f14bb81b2f89217b235be9e25" category="section-title">컨트롤러에 설치된 라이센스를 확인합니다</block>
   <block id="6709a231567d24784eb3e160f2720365" category="paragraph">ONTAP 명령줄을 사용하여 컨트롤러에 설치된 모든 라이센스를 볼 수 있습니다. FAS 또는 AFF 시스템에서 클러스터 관리자여야 합니다.</block>
   <block id="e7590fb47d0f1f083a0a8a323aa643a0" category="admonition">SnapCenter 표준 컨트롤러 기반 라이센스는 컨트롤러에 SnapManagerSuite 라이센스로 표시됩니다.</block>
   <block id="9865599458fea2a88fc4f94d29ab5c4e" category="list-text">license show 명령을 입력한 다음 출력을 확인하여 SnapManagerSuite 라이센스가 설치되었는지 확인합니다.</block>
   <block id="5b12cbd18ef5bbd432e4411b45e422ad" category="paragraph">이 예제에서는 SnapManagerSuite 라이센스가 설치되어 있으므로 추가 SnapCenter 라이센스 작업이 필요하지 않습니다.</block>
-  <block id="9c665690c697cc93e5a897a8a63d25c2" category="section-title">컨트롤러의 일련 번호를 검색합니다</block>
   <block id="aa9f3e3dd8188fb5cf1d9979b4a7a787" category="paragraph">컨트롤러 기반 라이센스의 일련 번호를 검색하려면 컨트롤러 일련 번호가 필요합니다. ONTAP 명령줄을 사용하여 컨트롤러 일련 번호를 검색할 수 있습니다. FAS 또는 AFF 시스템에서 클러스터 관리자여야 합니다.</block>
   <block id="ed996e97427b9382e039c0a5dde5d493" category="list-text">ONTAP 명령줄을 사용하여 컨트롤러에 로그인합니다.</block>
   <block id="1220394f5402b4332338e11150062d91" category="list-text">system show-instance 명령을 입력한 다음 출력을 검토하여 컨트롤러 일련 번호를 찾습니다.</block>
   <block id="065b83de49a875bb4bd71dbe16fad428" category="list-text">일련 번호를 기록합니다.</block>
-  <block id="8903a54a74657bc9f41f9375ea9d6adc" category="section-title">컨트롤러 기반 라이센스의 일련 번호를 검색합니다</block>
   <block id="da68fe81ae35bfda8d512b213d4ea64f" category="paragraph">FAS 또는 AFF 스토리지를 사용하는 경우 ONTAP 명령줄을 사용하여 설치하기 전에 NetApp Support 사이트에서 SnapCenter 컨트롤러 기반 라이센스를 검색할 수 있습니다.</block>
   <block id="315713e21026e04eaaa2b9a3821e4c3d" category="paragraph">유효한 자격 증명을 입력하지 않으면 검색에 대한 정보가 반환되지 않습니다.</block>
   <block id="253fa4a7008b4934e4b20001065ef254" category="list-text">컨트롤러의 일련 번호가 있어야 합니다.</block>
-  <block id="371319a0c9817abb98eea29d4567a795" category="list-text">선택 기준 영역에서 일련 번호(장치 뒷면에 있음)가 선택되었는지 확인하고 컨트롤러 일련 번호를 입력한 다음 * Go! * 를 클릭합니다.</block>
-  <block id="d9996bb23744ed1a95dc297c99d45d4d" category="image-alt">NSS 컨트롤러 라이센스 선택</block>
   <block id="b5ddaee766816307a016e7736f50313d" category="paragraph">지정된 컨트롤러의 라이센스 목록이 표시됩니다.</block>
   <block id="5da6f07d19afc1937b1b5b064152d98e" category="list-text">SnapCenter Standard 또는 SnapManagerSuite 라이센스를 찾아서 기록합니다.</block>
-  <block id="f11c7003376367fce75352e6129d04ca" category="section-title">컨트롤러 기반 라이센스를 추가합니다</block>
   <block id="9c53e7ba342b700373ad570a7701ac93" category="paragraph">ONTAP 명령줄을 사용하여 FAS 또는 AFF 시스템을 사용 중인 경우 SnapCenter 컨트롤러 기반 라이센스를 추가할 수 있으며 SnapCenter Standard 또는 SnapManagerSuite 라이센스가 있습니다.</block>
   <block id="8109f2b1a2b4fcb7f972be2b07c29c46" category="list-text">FAS 또는 AFF 시스템에서 클러스터 관리자여야 합니다.</block>
   <block id="9a935baf19dae6c50cae12b831745abd" category="list-text">SnapCenter Standard 또는 SnapManagerSuite 라이센스가 있어야 합니다.</block>
@@ -3074,7 +3034,6 @@
   <block id="f19a479c9a38f158a358148b2b6e17cc" category="paragraph">이 명령은 admin 권한 수준에서 사용할 수 있습니다.</block>
   <block id="a138b0f06f247274d2e4ba8de6e7bf8d" category="list-text">SnapManagerSuite 라이센스가 설치되었는지 확인합니다.</block>
   <block id="8822a9cc146d06e4ec77936054fb11ca" category="paragraph">'라이선스 쇼'</block>
-  <block id="a2e769316816cc255f9f37fbed415c69" category="section-title">평가판 라이센스를 제거합니다</block>
   <block id="f01f22cfc141e64ad20b64a9b3f2ac85" category="paragraph">컨트롤러 기반 SnapCenter 표준 라이센스를 사용하고 있으며 용량 기반 평가판 라이센스(일련 번호가 ""50"으로 끝나는 번호)를 제거해야 하는 경우 MySQL 명령을 사용하여 평가판 라이센스를 수동으로 제거해야 합니다. 평가판 라이센스는 SnapCenter GUI를 사용하여 삭제할 수 없습니다.</block>
   <block id="87d0fa08c99bcc9a194b85ddcbe3da26" category="admonition">SnapCenter 표준 컨트롤러 기반 라이센스를 사용하는 경우에만 평가판 라이센스를 수동으로 제거해야 합니다. SnapCenter 표준 용량 기반 라이센스를 조달하여 SnapCenter GUI에 추가하면 평가판 라이센스가 자동으로 덮어쓰여집니다.</block>
   <block id="68dae2573ac7874d6dd234af4fa4c752" category="list-text">SnapCenter 서버에서 PowerShell 창을 열어 MySQL 암호를 재설정합니다.</block>
@@ -4465,38 +4424,24 @@
   <block id="14310a3e36aca9ee4f8ae01ecce176f6" category="paragraph">관리자가 사용자에게 리소스를 할당하는 방법에 대한 자세한 내용은 SnapCenter 설치 정보를 참조하십시오.</block>
   <block id="8c47f48c6fb5493126c980bf2e721bcd" category="list-text">powershellProcessforScripts 매개 변수의 값을 web.config 파일에서 true 로 설정하여 powerpare 및 postscripts 로 PowerShell 스크립트를 실행해야 합니다.</block>
   <block id="ee2f9fb0aa9e8c0cc118a5f3a67a4b15" category="paragraph">백업 정책은 백업을 관리 및 유지하는 방법과 리소스 또는 리소스 그룹을 백업하는 빈도를 제어하는 규칙의 집합입니다. 또한 복제 및 스크립트 설정을 지정할 수 있습니다. 정책에 옵션을 지정하면 다른 리소스 그룹에 대한 정책을 다시 사용할 때 시간이 절약됩니다.</block>
-  <block id="1fbcfaad372de4aa8c4263630714d810" category="list-text">백업 유형을 선택합니다.</block>
-  <block id="881a5cadbf2af4892868c95a8925ecdd" category="paragraph">데이터베이스 파일 및 트랜잭션 로그를 백업하고 트랜잭션 로그를 잘라냅니다</block>
   <block id="18d4675bdba207949ceb7f704c54e620" category="list-text">각 스냅샷 복사본에 대해 백업해야 하는 최대 데이터베이스 수를 입력합니다.</block>
   <block id="b0c8f062df15022a6331b14e3bf5591e" category="admonition">여러 백업 작업을 동시에 실행하려면 이 값을 늘려야 합니다.</block>
-  <block id="21b100df4a632d596f4e051c57940f20" category="paragraph">데이터베이스 파일을 백업합니다</block>
   <block id="846c94f31178e6465f3c62be3f42cb3d" category="list-text">각 스냅샷 복사본에 대해 백업해야 하는 최대 데이터베이스 수를 입력합니다. 기본값은 100입니다</block>
-  <block id="fa9adcfe2bdc31067811e93485d16b7e" category="paragraph">트랜잭션 로그를 백업합니다</block>
   <block id="f16fca991ae99058ce41f2b4b1614852" category="list-text">다른 백업 응용 프로그램을 사용하여 리소스를 백업하는 경우 * 백업만 복사 * 를 선택합니다.</block>
   <block id="619da134802c3fcab97a2b7c6d14c4ec" category="paragraph">트랜잭션 로그를 그대로 유지하면 모든 백업 애플리케이션이 데이터베이스를 복구할 수 있습니다. 일반적으로 다른 상황에서는 복사 전용 옵션을 사용하지 않아야 합니다.</block>
   <block id="31bbc81dcc68057ff34be7ba42a87cf4" category="admonition">Microsoft SQL은 보조 스토리지에 대해 * 전체 백업 및 로그 백업 * 옵션과 함께 * 복사 전용 백업 * 옵션을 지원하지 않습니다.</block>
   <block id="e55dcbdf8fe92f0410aacdc7a5cf00d7" category="list-text">가용성 그룹 설정 섹션에서 다음 작업을 수행합니다.</block>
-  <block id="ed9c1af05d86fe993f785a78cddb82d4" category="paragraph">기본 백업 복제본에서만 백업합니다</block>
   <block id="6ebdb233abe23750440d3e587915a892" category="paragraph">기본 백업 복제본에서만 백업하려면 이 옵션을 선택합니다. 기본 백업 복제본은 SQL Server의 AG에 대해 구성된 백업 기본 설정에 따라 결정되며</block>
-  <block id="f5c39ada6d74538eb8f8540a5b0f8397" category="paragraph">백업할 복제본을 선택합니다</block>
   <block id="0a87197768544d35cfd757d20f1dab26" category="paragraph">운영 AG 복제본 또는 보조 AG 복제본을 백업에 선택합니다.</block>
-  <block id="e7ee0e14cb9b3655f5828c64aa7cc0e9" category="paragraph">백업 우선 순위(최소 및 최대 백업 우선 순위)</block>
   <block id="fb8750264c3bbfea89908048e10ef06c" category="paragraph">최소 백업 우선 순위 번호와 백업에 대한 AG 복제본을 결정하는 최대 백업 우선 순위 번호를 지정합니다. 예를 들어 최소 우선 순위는 10이고 최대 우선 순위는 50입니다. 이 경우 우선 순위가 10보다 큰 모든 AG 복제본이 백업에 고려됩니다.</block>
   <block id="4035686675283d0f53d4a20e3a9588f0" category="admonition">기본적으로 최소 우선 순위는 1이고 최대 우선 순위는 100입니다.</block>
   <block id="95f62fbbdd8b59bc3cdee3bd3e382046" category="admonition">클러스터 구성에서 백업은 정책에 설정된 보존 설정에 따라 클러스터의 각 노드에 유지됩니다. AG의 소유자 노드가 변경되면 보존 설정에 따라 백업이 수행되고 이전 소유자 노드의 백업은 유지됩니다. AG에 대한 보존은 노드 레벨에서만 적용할 수 있습니다.</block>
-  <block id="17c27964395af2cc0989da0544595045" category="list-text">이 정책으로 생성할 백업을 예약하려면 * On demand *, * Hourly *, * Daily *, * Weekly * 또는 * Monthly * 중 하나를 선택하여 스케줄 유형을 지정합니다.</block>
-  <block id="e6383c275762841518a895807d340c7f" category="paragraph">정책에 대해 하나의 스케줄 유형을 선택할 수 있습니다.</block>
   <block id="1947481e76eb40f4adf8f5246fa95ff6" category="admonition">리소스 그룹을 생성하는 동안 백업 작업의 스케줄(시작 날짜, 종료 날짜 및 빈도)을 지정할 수 있습니다. 이렇게 하면 동일한 정책 및 백업 빈도를 공유하는 리소스 그룹을 생성할 수 있지만 각 정책에 서로 다른 백업 스케줄을 할당할 수 있습니다.</block>
   <block id="73d1997538c5c2799ee681d5e59023ad" category="list-text">최신 복원 작업에 대한 보존 설정 섹션에서 다음 작업 중 하나를 수행합니다.</block>
-  <block id="5556fc25e3c9c42cb802a3ec13aa865f" category="paragraph">최근 &lt;number&gt;일 * 에 적용할 수 있는 로그 백업 보존 옵션을 선택하고 보존할 일 수를 지정합니다. 이 제한에 근접하면 이전 복사본을 삭제할 수 있습니다.</block>
   <block id="9bbf41d74c8f89f293d3299ea7bebf83" category="paragraph">마지막 &lt;number&gt;일간의 전체 백업 기간 * 에 적용할 수 있는 로그 백업 보존 옵션을 선택하고 로그 백업 사본을 보관할 일 수를 지정합니다.</block>
   <block id="9de90deec5302da2195d39aecfada280" category="list-text">필요 시 보존 설정에 대한 * 전체 백업 보존 설정 * 섹션에서 다음 작업을 수행합니다.</block>
-  <block id="e1282ba4f34b11ff282fb7d9970b2736" category="paragraph">유지할 총 스냅샷 복사본</block>
-  <block id="206b2713043077c94ab3e4473a9897d7" category="paragraph">유지할 스냅샷 복사본 수를 지정하려면 * 유지할 총 스냅샷 복사본 * 을 선택합니다.</block>
   <block id="a0257f49f5547a6ef191dd6c2f9b4c75" category="admonition">기본적으로 보존 횟수 값은 2로 설정됩니다. 보존 횟수를 1로 설정하면 새 스냅샷 복사본이 타겟으로 복제될 때까지 첫 번째 스냅샷 복사본이 SnapVault 관계의 참조 스냅샷 복사본이므로 보존 작업이 실패할 수 있습니다.</block>
-  <block id="890049ee281f6f438392008ad804b79b" category="paragraph">에 대한 스냅샷 복사본을 유지합니다</block>
   <block id="6d8af80369897e48f5d0073fb1d5235e" category="paragraph">스냅샷 복사본을 삭제하기 전에 보관할 일 수를 지정하려면 * 스냅샷 복사본 보관 기간 * 을 선택합니다.</block>
-  <block id="827a94fd354ba8465165672c359a430d" category="paragraph">유지할 스냅샷 복사본 수를 지정하려면 * 유지할 총 스냅샷 복사본 * 을 선택합니다. 스냅샷 복사본 수가 지정된 수를 초과하면 가장 오래된 복사본이 먼저 삭제된 후 스냅샷 복사본이 삭제됩니다.</block>
   <block id="efa04a2e0b433b54ed88de4c3b1b5a79" category="paragraph">로그 스냅샷 복사본의 보존은 기본적으로 7일로 설정됩니다. Set-SmPolicy cmdlet을 사용하여 로그 스냅샷 복사본 보존을 변경합니다.</block>
   <block id="723fe9aea6dfe1a0a822f218095c1c11" category="paragraph">이 예에서는 로그 스냅샷 복사본 보존을 2로 설정합니다.</block>
   <block id="f2d35fb96ac070e63c88b1b43cf8c70b" category="inline-link">SnapCenter은 데이터베이스의 스냅샷 복사본을 유지합니다</block>
@@ -4507,7 +4452,6 @@
   <block id="a0e2a78c6c2fd62817afcae7e0b538f5" category="admonition">보조 스토리지가 스냅샷 복사본의 최대 제한에 도달하지 않도록 ONTAP에서 SnapMirror 보존 정책을 구성해야 합니다.</block>
   <block id="369cd91c3e11b99e6fa5850b92b3090a" category="paragraph">무결성 구조를 데이터베이스의 물리적 구조로 제한(physical_only)</block>
   <block id="0de87de3224e64a78ce1093052a47d1d" category="paragraph">무결성 검사를 데이터베이스의 물리적 구조로 제한하고 데이터베이스에 영향을 미치는 찢어진 페이지, 체크섬 오류 및 일반적인 하드웨어 오류를 검색하려면 * 데이터베이스의 물리적 구조로 무결성 구조를 제한합니다(physical_only) * 를 선택합니다.</block>
-  <block id="fdfc39464fafdd6ce6b729e0738e48a3" category="paragraph">모든 정보 메시지 억제(INFOMSGS 없음)</block>
   <block id="82f15136daedc726dba1051c43c28284" category="paragraph">모든 정보 메시지를 표시하지 않으려면 * 모든 정보 메시지 억제(no_INFOMSGS) * 를 선택합니다. 기본적으로 선택되어 있습니다.</block>
   <block id="a01ae415547e2368a45ed1cc209949a9" category="paragraph">객체별 보고된 모든 오류 메시지 표시(ALL_ERRORMSGS)</block>
   <block id="afac60f293b05dc186f67c671aabe6bc" category="paragraph">객체별로 보고된 모든 오류 메시지 표시(ALL_ERRORMSGS) * 를 선택하여 객체별로 보고된 모든 오류를 표시합니다.</block>
@@ -4832,17 +4776,14 @@
   <block id="303271a6fa371310673fc55e65bf3af0" category="doc">SQL Server용 SnapCenter 플러그인 설치를 빠르게 시작합니다</block>
   <block id="e05bc1fb0d09110d2709b8329ca82a1f" category="paragraph">SnapCenter 서버 및 Microsoft SQL Server용 SnapCenter 플러그인 설치를 위한 일련의 설치 지침을 제공합니다.</block>
   <block id="67f289221dc2b8315be57c85a28e0619" category="section-title">설치 준비</block>
-  <block id="e03ce187e39230106155230cb020dfa3" category="paragraph">* 도메인 및 작업 그룹 요구 사항 *</block>
   <block id="c85265a6c5841b0f019403a50b63c44d" category="paragraph">SnapCenter 서버는 도메인 또는 작업 그룹에 있는 시스템에 설치할 수 있습니다.</block>
   <block id="43727cf7c1f0b9055bad0d2c9c2e19ea" category="paragraph">Active Directory 도메인을 사용하는 경우 로컬 관리자 권한이 있는 도메인 사용자를 사용해야 합니다. 도메인 사용자는 Windows 호스트에 있는 로컬 관리자 그룹의 구성원이어야 합니다.</block>
   <block id="2632504d1b7b1f77434679b6906040dd" category="paragraph">작업 그룹을 사용하는 경우 로컬 관리자 권한이 있는 로컬 계정을 사용해야 합니다.</block>
-  <block id="8091c23d0ce9e48e2abcbbcf443c75a5" category="paragraph">* 라이센스 요구 사항 *</block>
   <block id="d5c59f9587c1784732bff8ebcc03f9fb" category="paragraph">설치하는 라이센스 유형은 환경에 따라 다릅니다.</block>
   <block id="e561227291ef5b9583ca35f38b3d1d62" category="paragraph">SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS 또는 AFF 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려면 세일즈 담당자에게 연락하여 프리미엄 번들 평가 라이센스를 받으십시오.</block>
   <block id="bfe13921f79216b9bb6e5d536a381777" category="paragraph">Cloud Volumes ONTAP 또는 ONTAP Select 고객인 경우 SnapCenter에서 관리하는 데이터를 기준으로 TB당 용량 기반 라이센스를 구입해야 합니다. 기본적으로 SnapCenter는 90일 100TB SnapCenter 표준 용량 기반 평가판 라이센스를 기본 제공합니다. 자세한 내용은 세일즈 담당자에게 문의하십시오.</block>
   <block id="faf896433eeb20fca1eb114937251b50" category="paragraph">추가 라이센스(선택 사항)</block>
   <block id="9d09cebdc5095408e7e5f8bc09c08c42" category="paragraph">을 참조하십시오 <block ref="6de8516502145d64739d69762f4898a1" category="inline-link-macro-rx"></block>.</block>
-  <block id="89a71adc7ceff2f08a2162d1abfd9de6" category="paragraph">* 추가 요구 사항 *</block>
   <block id="918d32b75f0ab883abba3a8dc0c3ae8d" category="inline-link">상호 운용성 매트릭스 툴</block>
   <block id="8124579383e90243e4b06323d2b37f8d" category="cell">호스트</block>
   <block id="a55b17d8324fe50e023be8010d4b5474" category="cell">최소 요구 사항</block>
@@ -4868,7 +4809,6 @@
   <block id="5ae5c2db7baad917cb8389420693266d" category="paragraph">Windows용 SnapCenter 플러그인</block>
   <block id="de80df6466db891ed7d7a31d71335ae1" category="paragraph">443(HTTPS), 양방향, 80(HTTP), 양방향</block>
   <block id="228eb7fa9d28577ec427d7baedfa7ded" category="paragraph">이 포트는 SnapCenter 서버 호스트, 플러그인 호스트, SVM 또는 ONTAP 클러스터 간의 통신에 사용됩니다.</block>
-  <block id="353c85d985312d2d61ab0aeb4ee52759" category="paragraph">* Microsoft SQL Server용 SnapCenter 플러그인 요구 사항 *</block>
   <block id="4bd535cc745449316aa463a5f52133d6" category="paragraph">원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 사용자가 있어야 합니다. 클러스터 노드를 관리하는 경우 클러스터의 모든 노드에 대한 관리 권한이 있는 사용자가 필요합니다.</block>
   <block id="cf94e6be5912bb698bcc03d64c605bc4" category="paragraph">SQL Server에 대한 sysadmin 권한이 있는 사용자가 있어야 합니다. 플러그인은 Microsoft VDI 프레임워크를 사용하므로 sysadmin 액세스가 필요합니다.</block>
   <block id="72de9cea28a7cca58f8423279c68e8c6" category="list-text">에서 SnapCenter 서버 설치 패키지를 다운로드합니다<block ref="d4fdc92072f5257471f3139636068769" category="inline-link-rx"></block> 그런 다음 exe를 두 번 클릭합니다.</block>
@@ -4945,18 +4885,11 @@
   <block id="3a1dd416224e7a96b7d4be1dfc9536cf" category="list-text">다음 조건이 충족될 경우 sysadmin 액세스 없이 역할 기반 액세스 제어(RBAC) 사용자에게 자격 증명을 할당해야 합니다.</block>
   <block id="7a16850a47fecec0d6cb2c66daae6fca" category="list-text">자격 증명이 SQL 인스턴스에 할당됩니다.</block>
   <block id="6707464a5871a6aa26dcf785bea4052c" category="list-text">SQL 인스턴스 또는 호스트는 RBAC 사용자에게 할당됩니다.</block>
-  <block id="4970872b4e7e80683035b5383cddcfad" category="paragraph">사용자에게 리소스 그룹과 백업 권한이 모두 있어야 합니다</block>
   <block id="afebb28fd320ef1336620e367e1e9af9" category="list-text">새 자격 증명을 추가하려면 * New * 를 클릭합니다.</block>
-  <block id="e98129085674125eccfb10fdf1a8b903" category="paragraph">* 자격 증명 이름 *</block>
-  <block id="22a9d94cc3dd3f3f504402ee57041a90" category="paragraph">* 사용자 이름 *</block>
   <block id="2babd6364b44c08eef5ab4738c3db862" category="paragraph">SQL Server 인증에 사용되는 사용자 이름을 입력합니다.</block>
   <block id="2532aba4399cff0e09437703bc91a9d4" category="list-text">도메인 관리자 또는 관리자 그룹의 구성원은 SnapCenter 플러그인을 설치할 시스템의 도메인 관리자 또는 관리자 그룹의 구성원을 지정합니다. 사용자 이름 * 필드의 올바른 형식은 다음과 같습니다.</block>
   <block id="b2634f07b0a3a46ef7a5b2fe1993d6e2" category="list-text">로컬 관리자(작업 그룹에만 해당) 작업 그룹에 속한 시스템의 경우 SnapCenter 플러그인을 설치할 시스템에 기본 제공 로컬 관리자를 지정합니다. 사용자 계정에 상승된 권한이 있거나 호스트 시스템에서 사용자 액세스 제어 기능이 비활성화된 경우 로컬 관리자 그룹에 속하는 로컬 사용자 계정을 지정할 수 있습니다. 사용자 이름 * 필드의 올바른 형식은 _ 사용자 이름 _ 입니다</block>
-  <block id="519a06883e7db4dbb9a21eeecb16986a" category="paragraph">* 암호 *</block>
-  <block id="95d647afc6713e290a68698e8521e757" category="paragraph">* 인증 모드 *</block>
   <block id="66c5f2a1877b1e04cfa2731f1e12aa5e" category="paragraph">SQL Server 인증 모드를 선택합니다. Windows 사용자에게 SQL Server에 대한 sysadmin 권한이 있는 경우 Windows 인증을 선택할 수도 있습니다.</block>
-  <block id="34a7588e855afcffbec3ec292d335369" category="paragraph">* 호스트 *</block>
-  <block id="e1f1f62be4a53aaecc160ddb197e5ecd" category="paragraph">* SQL Server 인스턴스 *</block>
   <block id="1c6aec216640420d37199ef0555beab9" category="paragraph">SQL Server 인스턴스를 선택합니다.</block>
   <block id="a52c72cddb788a0e54ae847cfde710d9" category="list-text">확인 * 을 클릭하여 자격 증명을 추가합니다.</block>
   <block id="9cfc80fa5227a423a76220ce430d990c" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭합니다.</block>
@@ -7345,10 +7278,8 @@
   <block id="726980167284c65abff52d65b5d3232b" category="list-text">복구 유형 페이지에서 다음 단계를 수행합니다. 옵션을 선택하여 로그를 적용합니다. 복원 유형을 선택하기 전에 플러그인이 모든 로그 및 로그를 지원하는지 확인하십시오.</block>
   <block id="80cb8ef1d01a491a4a563ec56f39cedc" category="list-text">리소스 페이지에서 사용자 지정 이름을 사용하려면 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 확인란을 선택한 다음 스냅샷 복사본 이름의 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="dd4b762c191c7a235ce898c094749679" category="paragraph">호스트 추가 페이지에서 사용자 지정 플러그인 및 스토리지 플러그인을 설치할 수 있습니다.</block>
-  <block id="134848154c843b2b7ebbc0c3bf4c17a4" category="list-text">리소스 페이지에서 * 리소스 추가 * 를 클릭합니다.</block>
   <block id="d98e943b0122d016274bcbbeba1d647d" category="list-text">리소스 설정 페이지에서 리소스에 대한 사용자 지정 키 값 쌍을 제공합니다.</block>
   <block id="fc239c2b2a79ad8ee77cc5430b1803fe" category="paragraph">자격 증명 설정을 마친 후 사용자 및 액세스 페이지의 사용자 또는 사용자 그룹에 자격 증명 유지 관리를 할당할 수 있습니다.</block>
-  <block id="f316f1145e3342e626b49461ffc2ab89" category="list-text">자원 페이지에서 새 자원 그룹을 클릭합니다.</block>
   <block id="94f48d06961651ce76410fb0e6059f76" category="list-text">선택 사항: 리소스 페이지의 * 리소스 유형 * 드롭다운 목록에서 호스트 이름을 선택하고 * 리소스 유형 * 드롭다운 목록에서 리소스 유형을 선택합니다.</block>
   <block id="08b935061f93c6a0dff0b7e6979bd0d5" category="list-text">선택 사항: 응용 프로그램 설정 페이지에서 다음을 수행합니다.</block>
   <block id="3b1aa43ebee12f3a0512b18010894a41" category="list-text">설정 페이지에서 다음을 수행합니다.</block>
@@ -7872,7 +7803,6 @@
   <block id="07a646d112ec3924e97a5c5bd588d4c2" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="b7a3cb4f690df02dff49048f9cc465b2" category="inline-link-rx"></block></block>
   <block id="44dcf11fb80178db211421840242c071" category="summary">SnapCenter UI(사용자 인터페이스)를 사용하여 SnapCenter 사용자 지정 플러그인을 설치해야 합니다. 사용자 환경에서 SnapCenter UI에서 플러그 인을 원격으로 설치할 수 없는 경우 CLI(Command-Line Interface)를 사용하여 콘솔 모드 또는 자동 모드로 사용자 지정 플러그인을 설치할 수 있습니다.</block>
   <block id="f779fc9eb5facb1b4cb7f109a2d58be2" category="paragraph"><block ref="063c6867f0d5dcf21978239569098f3b" category="inline-link-rx"></block></block>
-  <block id="ed27eadf4ae8e8750cfd2fbc61ad72d7" category="paragraph">ONTAP 및 애플리케이션 플러그인 최소 요구 사항은 을 참조하십시오<block ref="c50d85e9b4db596cb2a135c4e622135b" category="inline-link-rx"></block></block>
   <block id="6128abac450b413be3b6d65797422307" category="paragraph">을 참조하십시오<block ref="c50d85e9b4db596cb2a135c4e622135b" category="inline-link-rx"></block></block>
   <block id="62daf6a07ef62b5f47d64602451886c4" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="78bb88f9abe535c4182359f981c4d0d5" category="inline-link-rx"></block>.</block>
   <block id="8b64c44e24e9cf1c59554cf2c41479bf" category="paragraph">지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오<block ref="78bb88f9abe535c4182359f981c4d0d5" category="inline-link-rx"></block>.</block>
@@ -7902,12 +7832,6 @@
   <block id="b885eb831c1b0ea66dc957240ef0bacd" category="admonition">제어 파일을 복원하는 동안 복원 프로세스를 통해 파일을 대상 위치로 복사할 수 있도록 디렉터리 구조가 있는지 또는 올바른 사용자 및 그룹 소유로 만들어야 하는지 확인합니다. 디렉토리가 없으면 복원 작업이 실패합니다.</block>
   <block id="3a6eb59ee064b09b020c1a87c5de4988" category="admonition">IBM Java는 지원되지 않습니다.</block>
   <block id="bb92d00cc055d1fa0c3023946870bfd5" category="paragraph">NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오<block ref="d20f19fe60cd205f06739b1a5caeb450" category="inline-link-rx"></block></block>
-  <block id="cf846ac585e82924ea1ad8c03b4b9bdf" category="section-title">SnapCenter 서버를 다운로드하고 설치합니다</block>
-  <block id="9575d89eee3d9cea045cdf8003c58424" category="section-title">SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다</block>
-  <block id="9859b0644d4667764577eb03a1fcda53" category="section-title">SnapCenter 용량 기반 라이센스를 추가합니다</block>
-  <block id="cc12c6014b5ec85f58b6fb31a26a66f7" category="section-title">스토리지 시스템 접속을 설정합니다</block>
-  <block id="1d765f352f6f5ec7cfa899be682026d8" category="section-title">자격 증명으로 실행 을 설정하여 Microsoft SQL Server용 플러그인을 설치합니다</block>
-  <block id="10976e15f1cbbbbb65eaf072d358489b" category="section-title">호스트를 추가하고 Microsoft SQL Server용 플러그인을 설치합니다</block>
   <block id="9756c6d75626032c8da05d425c1d0ca9" category="inline-link">인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다</block>
   <block id="462fbac4d281be78bedf063a9dbd9f61" category="paragraph">NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오<block ref="b173f6267e94bec8cf82a1d95b991ed7" category="inline-link-rx"></block>.</block>
   <block id="0cf3e7b313a6954f7aed921dae42be39" category="list-text"><block ref="36ad9b98fe40ea7db5d149de26f34551" prefix="" category="inline-code"></block></block>
@@ -8073,4 +7997,131 @@
   <block id="75b8e448161fa30feba883267dc81521" category="sidebar">UNIX 명령을 사용하여 백업합니다</block>
   <block id="de148ec1fc3c9bb7b03f1506761bed93" category="sidebar">백업을 봅니다</block>
   <block id="020a36deb114af1bb518c70d5975e940" category="sidebar">리소스 그룹을 생성합니다</block>
+  <block id="0a02bf5b6e4ef63d70216baaf241dd57" category="paragraph">사용자에게 리소스 그룹과 백업 권한이 모두 있어야 합니다.</block>
+  <block id="476db1bd23910410216ee3e35ccd94a9" category="section-title">1단계: 자격 증명을 추가 및 구성합니다</block>
+  <block id="8471bcaa60af0da808996bbee1cb49ed" category="paragraph">인증 모드</block>
+  <block id="b814c14851890120c8936eb5b4e76601" category="paragraph">SQL Server 인스턴스입니다</block>
+  <block id="57dec0d5fea8ca9066aa74005656dde3" category="section-title">2단계: 인스턴스 구성</block>
+  <block id="dddaf244cf1e3908c97cc243765422db" category="summary">Microsoft SQL Server용 SnapCenter 서버 설치에 대한 지침은 에 나와 있습니다.</block>
+  <block id="5bb995f2cea5f09b3870d6cba0a2bff4" category="doc">Microsoft SQL Server용 SnapCenter 서버를 설치합니다</block>
+  <block id="696fdc5b81985319a8afbf8c7c554de1" category="paragraph">Microsoft SQL Server용 SnapCenter Server를 설치하기 위한 일련의 설치 지침을 제공합니다.</block>
+  <block id="44d77fb23ef94aa2e99acffb06349cce" category="section-title">1단계: SnapCenter 서버 다운로드 및 설치</block>
+  <block id="182fe557d952dd099523bf0f0a12a03d" category="section-title">2단계: SnapCenter에 로그인합니다</block>
+  <block id="6dbb525493b617ed15acb54f48a1fb80" category="section-title">3단계: SnapCenter 표준 컨트롤러 기반 라이센스 추가</block>
+  <block id="1e6838af3ca39fb21a3ce673d779549e" category="section-title">4단계: SnapCenter 용량 기반 라이센스 추가</block>
+  <block id="a1e54ab14313eddc39c36f7ae4c3bdbf" category="section-title">5단계: 스토리지 시스템 접속 설정</block>
+  <block id="e7080d37366699598c6a93289cf833a8" category="summary">Microsoft SQL Server용 SnapCenter 플러그인 설치에 대한 지침은 에 나와 있습니다.</block>
+  <block id="665256d7cf5062280fa2126edee4e9ed" category="paragraph">Microsoft SQL Server용 SnapCenter 플러그인에 대한 일련의 설치 지침을 제공합니다.</block>
+  <block id="13c41a91e51556266f1446c3f3118575" category="section-title">1단계: Run as Credentials를 설치하여 Microsoft SQL Server용 플러그인을 설치합니다</block>
+  <block id="50e45622cbe6ba6b72a9cba939e77623" category="section-title">2단계: 호스트를 추가하고 Microsoft SQL Server용 플러그인을 설치합니다</block>
+  <block id="3f205e124554b1be0d5f3a4955ed598c" category="paragraph">기본값은 false 입니다.</block>
+  <block id="398199fedb54e43a278fa46313e8a350" category="section-title">1단계: 정책 이름 생성</block>
+  <block id="efb5373e3d8e2817008f63857d38a814" category="section-title">2단계: 백업 옵션 구성</block>
+  <block id="f7b8f416ca34a425d97e1cba3100233c" category="list-text">백업 유형을 선택합니다</block>
+  <block id="c4dee4ab1e265b9beacb9e140fafa516" category="open-title">전체 백업 및 로그 백업</block>
+  <block id="7e26a626a8bd9210daa716e7391b1a91" category="paragraph">데이터베이스 파일 및 트랜잭션 로그를 백업하고 트랜잭션 로그를 잘라냅니다.</block>
+  <block id="daf1071588d67be46c2b3881de2b7f3e" category="open-title">전체 백업</block>
+  <block id="a06cb63b4e5676ff4993e87c5a096590" category="paragraph">데이터베이스 파일을 백업합니다.</block>
+  <block id="4357e1f197bec05bc87b0ef0557cd533" category="open-title">로그 백업</block>
+  <block id="9bc97b084411adbb231ca53ca80640b7" category="paragraph">트랜잭션 로그를 백업합니다. . Log backup * 을 선택합니다.</block>
+  <block id="197904dc82a19f6818f66048a61e90f9" category="open-title">백업만 복사</block>
+  <block id="17d5127f9f01a5ee99467658118a5e9b" category="list-text">기본 백업 복제본에서만 백업합니다.</block>
+  <block id="c61f65bb5aa14eca9140c3d0e7ece927" category="list-text">백업할 복제본을 선택합니다.</block>
+  <block id="868b11998351ef690a54ffedfc194731" category="list-text">백업 우선 순위 선택(최소 및 최대 백업 우선 순위)</block>
+  <block id="a9e3835459894cca73ddb217d50af0db" category="list-text">이 정책의 백업 빈도를 예약합니다. On demand *, * Hourly *, * Daily *, * Weekly * 또는 * Monthly * 를 선택하여 일정 유형을 지정합니다.</block>
+  <block id="016bcd6d9710c9d2dde84a3ff020b0de" category="paragraph">정책에 대해 하나의 일정 유형만 선택할 수 있습니다.</block>
+  <block id="ef077dad77fac08deaf5fe61aced7bc3" category="section-title">3단계: 보존 설정을 구성합니다</block>
+  <block id="d8d914bba3878c80c4a43efb4e1ce72c" category="open-title">특정 사본 수</block>
+  <block id="5a0290e9f5b4a432c42379432ee6f5c8" category="paragraph">특정 수의 스냅샷 복사본만 보유합니다.</block>
+  <block id="619f22faf39c2dfe9a11af29647bb1a6" category="list-text">최근 &lt;number&gt;일 * 에 적용할 수 있는 로그 백업 보존 옵션을 선택하고 보존할 일 수를 지정합니다. 이 제한에 근접하면 이전 복사본을 삭제할 수 있습니다.</block>
+  <block id="fe9e179b8597c5b1e7f1e2ff0644a5c8" category="open-title">특정 일 수입니다</block>
+  <block id="82c2224d099110596a9863d056598afe" category="paragraph">백업 사본을 특정 기간 동안 보관합니다.</block>
+  <block id="805b73e03f8c3c7c7a8238ed9766dee3" category="list-text">유지할 총 스냅샷 복사본 수를 지정합니다</block>
+  <block id="ffe60c98392393713d4e1d365c27b6be" category="list-text">유지할 스냅샷 복사본 수를 지정하려면 * 유지할 총 스냅샷 복사본 * 을 선택합니다.</block>
+  <block id="d4f0bf88ec19106300653daff553435f" category="list-text">Snapshot 복사본 유지 시간</block>
+  <block id="7fcb4d3ce02337b7e14c71c970e6aa6e" category="list-text">유지할 스냅샷 복사본 수를 지정하려면 * 유지할 총 스냅샷 복사본 * 을 선택합니다. 스냅샷 복사본 수가 지정된 수를 초과하면 가장 오래된 복사본이 먼저 삭제된 후 스냅샷 복사본이 삭제됩니다.</block>
+  <block id="6618a5f84aa25633e669aa723e59a0cd" category="list-text">스냅샷 복사본을 삭제하기 전에 보관할 일 수를 지정하려면 * 스냅샷 복사본 보관 기간 * 을 선택합니다.</block>
+  <block id="92ac5fc0212c94ee50e6dc85913caeec" category="example-title">예제 보기</block>
+  <block id="8047dd542f0833c625160d18deaef831" category="paragraph">Set-SmPolicy-PolicyName 'newpol' - PolicyType 'Backup' - PluginPolicyType 'CSQL' - sqlbackuptype 'FullBackupAndLogBackup' - RetenionSettings@{BackupType='DATA'; ScheduleType='Hourly'; RetentionCount = 2}, @{BackupenetSnapshot'; ScheduleType = 'ScheduleReturetEnretionCount'</block>
+  <block id="b1cf83519efa64342d0b96985ded3691" category="section-title">4단계: 복제 설정을 구성합니다</block>
+  <block id="df5624cba097e4a1613f2162cfe02d72" category="open-title">SnapMirror를 업데이트합니다</block>
+  <block id="4fbf861fa73d7c46a9d919de9dba7f88" category="paragraph">로컬 스냅샷 복사본을 생성한 후 SnapMirror를 업데이트합니다.</block>
+  <block id="721dcaba6ffe06898a1264f811fd7874" category="open-title">SnapVault를 업데이트합니다</block>
+  <block id="aafae6ead4b01f0afa9e2d2dcfc5ecdd" category="paragraph">스냅샷 복사본을 생성한 후 SnapVault를 업데이트합니다.</block>
+  <block id="c174e73377b0caee145d55a594cd4122" category="open-title">보조 정책 레이블</block>
+  <block id="103ff4d651f40a22f8ac13b7d439054e" category="open-title">오류 재시도 횟수</block>
+  <block id="d9179dd8d5b7e66714a9152a60aff94d" category="section-title">5단계: 스크립트 설정을 구성합니다</block>
+  <block id="a6e367864d05c1235a3dc068e29fb052" category="section-title">6단계: 확인 설정 구성</block>
+  <block id="e11807f1f1cff5721f85802ddac261ed" category="list-text">모든 정보 메시지 표시 안 함(INFOMSGS 없음)</block>
+  <block id="79418e51dfe3ef30c9d30317f30d19e2" category="section-title">7단계: 요약 검토</block>
+  <block id="96ccca164f6b65c860546bba66a6485a" category="summary">SnapCenter 서버 및 Microsoft SQL Server용 SnapCenter 플러그인 설치 준비에 대한 지침을 제공합니다.</block>
+  <block id="bb7367ec62fb74511977df150181bc7f" category="doc">SnapCenter 서버 및 플러그인 설치 준비</block>
+  <block id="63408836354c40518fc610de2ff61aef" category="paragraph">SnapCenter 서버 및 Microsoft SQL Server용 SnapCenter 플러그인 설치를 위한 준비 지침의 요약 세트를 제공합니다.</block>
+  <block id="7527dcedb498a9e111f7eb26b4f075a6" category="section-title">라이센스 요구 사항</block>
+  <block id="7a98b5f499da77fa6e09b98a638328d7" category="section-title">호스트 및 포트 요구 사항</block>
+  <block id="1cd526ed887ba66c61f02b843ef02d9d" category="paragraph">ONTAP 및 애플리케이션 플러그인 최소 요구 사항은 을 참조하십시오<block ref="895e9fc4fedf805e54b700a772e16c16" category="inline-link-rx"></block>.</block>
+  <block id="cfcb453ff70ad933cab89769866a7ca8" category="paragraph">을 참조하십시오<block ref="895e9fc4fedf805e54b700a772e16c16" category="inline-link-rx"></block></block>
+  <block id="bc6cdf099cec9fa3dce7fb43c644e659" category="section-title">Microsoft SQL Server용 SnapCenter 플러그인 요구 사항</block>
+  <block id="aa829ddf1acbdd2a8aa6a61635c33dec" category="inline-link-macro">보관된 백업을 가져옵니다</block>
+  <block id="b06af5128852d56366a94b0a3584c1a6" category="paragraph">Microsoft SQL Server용 SnapManager를 사용하고 있고 SnapManager for Microsoft SQL Server에서 SnapCenter로 데이터를 가져오려면 를 참조하십시오 <block ref="0079f46f6850618db9fdf32f5f6051e0" category="inline-link-macro-rx"></block></block>
+  <block id="96a63fe0cf1de573b75ba5f458cbdc60" category="doc">SnapCenter에서 리소스 그룹을 생성하고 정책을 연결합니다</block>
+  <block id="3b6d3b427a92116014d4ee868e0f04ba" category="paragraph">리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다. 이 기능을 사용하면 특정 애플리케이션과 관련된 모든 데이터를 동시에 백업할 수 있으며 모든 데이터 보호 작업에 필요합니다. 또한 수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.</block>
+  <block id="0b5045b3b137ebb25cf08b5081075426" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 선택한 다음 목록에서 적절한 플러그인을 선택합니다.</block>
+  <block id="b68b243f9420806e3cfb840322caf2eb" category="list-text">자원 페이지에서 새 자원 그룹을 선택합니다.</block>
+  <block id="2ace8412659382e8d9b1bc3d644b1428" category="paragraph">참고: 리소스 그룹 이름은 250자를 초과할 수 없습니다.</block>
+  <block id="4cf0a65bb5f9d16da67277436248fba9" category="list-text">사용 가능한 리소스 * 섹션에서 리소스를 선택한 다음 오른쪽 화살표를 선택하여 * 선택한 리소스 * 섹션으로 이동합니다.</block>
+  <block id="7bc2103c2a80cd91e9a026c0f2b3f943" category="list-text">백업 화살표를 선택하여 추가 백업 옵션을 설정합니다.</block>
+  <block id="6ab7eeea8e6b1dcd3c8360b245f0e3c0" category="inline-image-macro">정합성 보장 그룹 백업 옵션(긴급, 중간 또는 여유)의 스크린샷</block>
+  <block id="072de5e2138004f9a67883cb0ff2aaa6" category="paragraph"><block ref="072de5e2138004f9a67883cb0ff2aaa6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e92d78d72bbcff05469cd98c282ac8c4" category="list-text">스크립트 화살표를 선택하고 일시 중지, 스냅샷 복사 및 일시 중지 해제 작업에 대한 사전 및 사후 명령을 입력합니다. 장애 발생 시 종료하기 전에 실행할 사전 명령을 입력할 수도 있습니다.</block>
+  <block id="3328b0dbde4c99683e19eca586842ffb" category="list-text">사용자 지정 구성 화살표를 선택하고 이 리소스를 사용하는 모든 데이터 보호 작업에 필요한 사용자 지정 키 값 쌍을 입력합니다.</block>
+  <block id="dfa18f81ec763693ffdac89624763ae3" category="list-text">스냅샷 복사본을 생성할 툴을 선택하려면 * 스냅샷 복사본 툴 * 화살표를 선택하십시오.</block>
+  <block id="7f368ffa9ab4869382c31a28f17f3a4a" category="inline-image-macro">더하기 아이콘</block>
+  <block id="f79b4ba47e778727c1290b36487ea0bc" category="admonition">* 를 선택하여 정책을 생성할 수도 있습니다<block ref="a55421dd685609006a21f2507444357f" category="inline-image-macro-rx" type="image"></block>*.</block>
+  <block id="b11a42908bee80055dfed2bb0e9a583a" category="list-text">Configure Schedules * 열에서 * 를 선택합니다<block ref="a55421dd685609006a21f2507444357f" category="inline-image-macro-rx" type="image"></block>구성할 정책에 대해 * 를 선택합니다.</block>
+  <block id="729d9de2082bbc8f839869a30daadc5d" category="list-text">policy_policy_name_name에 대한 스케줄 추가 대화 상자에서 스케줄을 구성하고 확인 을 선택합니다.</block>
+  <block id="f389a38ece1c258dbc71da8826870236" category="paragraph">여기서 policy_name은 선택한 정책의 이름입니다.</block>
+  <block id="8417b61ea6ac680285a40b7f679829a2" category="list-text">알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.</block>
+  <block id="7444cb400c788a3d3aad71fb264fbbee" category="list-text">요약을 검토한 후 * Finish * 를 선택합니다.</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">시작하기 전에</block>
+  <block id="be2d786365162f9949969e2f176ef13a" category="inline-link-macro">응용 프로그램에 대한 사용자 지정 플러그인을 만들었습니다</block>
+  <block id="86de8a90b3fba9ddc4880b8903987555" category="list-text">이(가) 있어야 합니다 <block ref="4ad0bd1144546248adc0fb1c490ceec4" category="inline-link-macro-rx"></block>.</block>
+  <block id="b828f6db4e08909e879dfbf229208eff" category="list-text">리소스 페이지에서 * 리소스 추가 * 를 선택합니다.</block>
+  <block id="20fc40c342831a6dee50cd66efb74566" category="list-text">스토리지 설치 공간 제공 페이지에서 스토리지 시스템을 선택하고 하나 이상의 볼륨, LUN 및 qtree를 선택한 다음 * 저장 * 을 선택합니다.</block>
+  <block id="1e5544d55f6c9334a30e6a4bef8c3c4a" category="inline-image-macro">더하기 아이콘</block>
+  <block id="a28f52bcf0c820558e017ed65d61bbc4" category="paragraph">선택 사항: 을 선택합니다 <block ref="0f5cf3219ae11ea795d8e8abf4dbc7f0" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 다른 스토리지 시스템에서 볼륨, LUN 및 qtree를 더 추가합니다.</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">결과</block>
+  <block id="da13ae3255e491cec106772af9fdae44" category="paragraph">용량 라이센스의 특징은 다음과 같습니다.</block>
+  <block id="f5dfa5a7bae196d1dd8c957d9f4d6ee5" category="paragraph">SnapCenter는 Cloud Volumes ONTAP 및 관리하는 ONTAP Select 스토리지에서 매일 자정에 용량 사용량을 자동으로 계산합니다. 표준 용량 라이센스를 사용하는 경우 SnapCenter는 총 라이센스 용량에서 모든 볼륨에 사용된 용량을 추론하여 사용하지 않은 용량을 계산합니다. 사용된 용량이 라이센스 용량을 초과하면 SnapCenter 대시보드에 초과 사용 경고가 표시됩니다. SnapCenter에서 용량 임계값 및 알림을 구성한 경우 사용된 용량이 지정한 임계값에 도달하면 이메일이 전송됩니다.</block>
+  <block id="2406c708606f0c3c933decdd65dc3b7d" category="section-title">1단계: 용량 요구 사항 계산</block>
+  <block id="44cdaaa6b20a4237e33563c8be0bf929" category="section-title">2단계: 용량 기반 라이센스의 일련 번호를 검색합니다</block>
+  <block id="9340114ddf8bf8ff75303afd847a3076" category="list-text">에 로그인합니다<block ref="1850de052c61829b534b07ba1a2ca402" category="inline-link-rx"></block>.</block>
+  <block id="c6faeb7fe853ef1d638674945ae59142" category="image-alt">일련 번호 및 라이센스 드롭다운 메뉴가 강조 표시된 라이센스 선택 UI의 스크린샷</block>
+  <block id="765c7784df072a40de94af7161fbb973" category="list-text">회사 이름을 입력한 다음 * Go! * 를 선택합니다.</block>
+  <block id="ef8acdd4fcda9cad2a21f3a15c796340" category="section-title">3단계: NetApp 라이센스 파일을 생성합니다</block>
+  <block id="97ccd9ecd4ac0cb4ebb4d3d991db3790" category="paragraph">SnapCenter GUI에 NetApp Support 사이트 자격 증명과 SnapCenter 라이센스 일련 번호를 입력하지 못하거나 SnapCenter에서 NetApp Support 사이트에 인터넷에 액세스할 수 없는 경우 NetApp 라이센스 파일(NLF)을 생성할 수 있습니다. 그런 다음 SnapCenter 호스트에서 액세스할 수 있는 위치에 파일을 다운로드하여 저장할 수 있습니다.</block>
+  <block id="af8501c4af7bf18d1d41ad63b494028d" category="list-text">NetApp 데이터 개인 정보 보호 정책을 읽고 동의한 다음 * 제출 * 을 선택합니다.</block>
+  <block id="a70eeba6b0a5bfca6c7904fd0edc9fd2" category="section-title">4단계: 용량 기반 라이센스 추가</block>
+  <block id="a79d31012252514c1817004ac27f6c78" category="list-text">왼쪽 탐색 창에서 * 설정 * 을 선택합니다.</block>
+  <block id="a646fca044aab578f560ca4fc105e766" category="list-text">설정 페이지에서 * 소프트웨어 * 를 선택합니다.</block>
+  <block id="494d74fe2d3b6e8b71d672a1143d6aa0" category="list-text">소프트웨어 페이지의 라이센스 섹션에서 * 추가 * (<block ref="a55421dd685609006a21f2507444357f" category="inline-image-macro-rx" type="image"></block>)를 클릭합니다.</block>
+  <block id="91dd66dbbc7bcb9ff2accc62e548e2fa" category="list-text">열기 * 를 선택합니다.</block>
+  <block id="cd9fa57ea794c74666a3c676c5f7a179" category="list-text">이메일 알림에 맞게 SMTP 서버를 구성하려면 * 설정 * &gt; * 글로벌 설정 * &gt; * 알림 서버 설정 * 을 선택한 후 다음 세부 정보를 입력합니다.</block>
+  <block id="ae309cefe1783b2d190dcaf0c63c7f17" category="list-text">스토리지 시스템 syslog에 EMS(이벤트 관리 시스템) 메시지를 보내거나 스토리지 시스템에 실패한 작업을 위한 AutoSupport 메시지를 보내려면 적절한 확인란을 선택합니다. 발생할 수 있는 문제를 해결하려면 AutoSupport를 활성화하는 것이 좋습니다.</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">다음 * 을 선택합니다.</block>
+  <block id="19a8e13fe92c770e7ed404e67e6bec99" category="section-title">1단계: SnapManager 제품군 라이센스가 설치되었는지 확인합니다</block>
+  <block id="cc9c449ada243c7f7945df60c3bb511a" category="list-text">왼쪽 탐색 창에서 * 스토리지 시스템 * 을 선택합니다.</block>
+  <block id="d232915b5e459729c2ebb05cce4351c3" category="paragraph">클러스터 이름을 선택하면 클러스터에 포함된 모든 SVM이 스토리지 가상 시스템 섹션에 표시됩니다.</block>
+  <block id="b334c2fd16b2dbb1653525b0da09940d" category="inline-image-macro">확인 아이콘</block>
+  <block id="b708e8602f17540d711c077ef6ce5bb6" category="list-text"><block ref="1b6b7d2df953b943aed63061cd428e2b" category="inline-image-macro-rx" type="image"></block> SnapManager Suite 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있음을 나타냅니다.</block>
+  <block id="8e9f59a7ba19ac78a77252b5cc8530f6" category="inline-image-macro">취소 아이콘</block>
+  <block id="72acec0d06c1d26aeb0b87907c970c31" category="list-text"><block ref="1ca20f925112adf63235e58f0e4483cd" category="inline-image-macro-rx" type="image"></block> SnapManager Suite 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있지 않음을 나타냅니다.</block>
+  <block id="778623bf565f3d8f537019c7e81b0948" category="section-title">2단계: 컨트롤러에 설치된 라이센스를 식별합니다</block>
+  <block id="587b796170a9abac4701cd8aa1bb38cb" category="example-title">예제 출력</block>
+  <block id="09bfdac33144afac4f96f313740dc959" category="section-title">3단계: 컨트롤러의 일련 번호를 검색합니다</block>
+  <block id="4fb6996a4b0fc33cbed31ac896875422" category="section-title">4단계: 컨트롤러 기반 라이센스의 일련 번호를 검색합니다</block>
+  <block id="681132950ecc3ff0338e2bc9f5253c4e" category="list-text">선택 기준 영역에서 일련 번호(장치 뒷면에 있음)가 선택되었는지 확인하고 컨트롤러 일련 번호를 입력한 다음 * Go! * 를 선택합니다.</block>
+  <block id="6c0673b42ebb5475d507b9bee432a6e1" category="image-alt">선택 기준 및 일련 번호 입력 스크린샷</block>
+  <block id="e54115ab5aedb070ef9c763b003e67f1" category="section-title">5단계: 컨트롤러 기반 라이센스 추가</block>
+  <block id="392e651b70e91641288713738f526ce0" category="section-title">6단계: 평가판 라이센스를 제거합니다</block>
 </blocks>
