@@ -17,7 +17,7 @@ summary: 리소스는 사용자가 설치한 플러그인에서 유지 관리하
 
 * SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 생성, 자격 증명 추가 및 Exchange용 플러그인 설치와 같은 작업을 이미 완료해야 합니다.
 * Single Mailbox Recovery 소프트웨어 기능을 사용하려면 Single Mailbox Recovery 소프트웨어가 설치된 Exchange Server에 활성 데이터베이스를 설치해야 합니다.
-* 데이터베이스가 VMware RDM LUN에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다. 를 클릭합니다 https://["VMware vSphere용 SnapCenter 플러그인 설명서"] 자세한 정보가 있습니다.
+* 데이터베이스가 VMware RDM LUN에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다. 를 클릭합니다 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html["VMware vSphere용 SnapCenter 플러그인 설명서"] 자세한 정보가 있습니다.
 
 
 * 이 작업에 대한 정보 *

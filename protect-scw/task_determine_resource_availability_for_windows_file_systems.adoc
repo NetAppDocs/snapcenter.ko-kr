@@ -16,7 +16,7 @@ summary: 리소스는 사용자가 설치한 플러그인에서 유지 관리하
 * 필요한 것 *
 
 * SnapCenter 서버 설치, 호스트 추가, SVM(스토리지 가상 시스템) 연결 생성, 자격 증명 추가 등과 같은 작업을 이미 완료해야 합니다.
-* 파일이 VMware RDM LUN 또는 VMDK에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다. 자세한 내용은 을 참조하십시오 https://["VMware vSphere용 SnapCenter 플러그인 설명서"^].
+* 파일이 VMware RDM LUN 또는 VMDK에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/["VMware vSphere용 SnapCenter 플러그인 설명서"^].
 
 
 * 단계 *

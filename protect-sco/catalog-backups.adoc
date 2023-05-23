@@ -1,0 +1,71 @@
+---
+permalink: protect-sco/catalog-backups.html 
+sidebar: sidebar 
+keywords: oracle databases discover 
+summary: SnapCenter가 Oracle 데이터베이스를 검색하는 방법 
+---
+= Oracle Recovery Manager를 사용하여 백업을 카탈로그로 만드는 방법
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Oracle RMAN(Recovery Manager)을 사용하여 Oracle 데이터베이스 백업의 카탈로그를 만들어 Oracle RMAN 저장소에 백업 정보를 저장할 수 있습니다.
+
+나중에 블록 레벨 복구 또는 테이블스페이스 시점 복구 작업에 카탈로그 작성된 백업을 사용할 수 있습니다. 이러한 카탈로그 작성된 백업이 필요하지 않은 경우 카탈로그 정보를 제거할 수 있습니다.
+
+카탈로그를 작성하려면 데이터베이스가 마운트됨 또는 상위 상태여야 합니다. 데이터 백업, 아카이브 로그 백업 및 전체 백업에 대한 카탈로그를 작성할 수 있습니다. 여러 데이터베이스가 있는 리소스 그룹의 백업에 대해 카탈로그 작성을 사용하는 경우 각 데이터베이스에 대해 카탈로그가 수행됩니다. Oracle RAC 데이터베이스의 경우 데이터베이스가 마운트된 상태 이상인 기본 노드에서 카탈로그가 수행됩니다.
+
+RAC 데이터베이스의 백업을 카탈로그로 만들려는 경우 해당 데이터베이스에 대해 실행 중인 다른 작업이 없는지 확인합니다. 다른 작업이 실행 중인 경우, 카탈로그 작성 작업이 대기열에 있는 것이 아니라 실패합니다.
+
+
+
+== 외부 카탈로그 데이터베이스
+
+기본적으로 대상 데이터베이스 컨트롤 파일은 카탈로그로 사용됩니다. 외부 카탈로그 데이터베이스를 추가하려면 SnapCenter 그래픽 사용자 인터페이스(GUI)의 데이터베이스 설정 마법사를 사용하여 외부 카탈로그의 자격 증명 및 TNS(투명 네트워크 기판) 이름을 지정하여 데이터베이스를 구성할 수 있습니다. 또한 CLI에서 -OracleRmanCatalogCredentialName 및 -OracleRmanCatalogTnsName 옵션과 함께 Configure-SmOracleDatabase 명령을 실행하여 외부 카탈로그 데이터베이스를 구성할 수도 있습니다.
+
+
+
+== RMAN 명령
+
+SnapCenter GUI에서 Oracle 백업 정책을 생성하는 동안 카탈로그 작성 옵션을 활성화한 경우, 백업 작업의 일부로 Oracle RMAN을 사용하여 백업 카탈로그를 작성합니다. 를 실행하여 지연된 백업 카탈로그를 수행할 수도 있습니다 `Catalog-SmBackupWithOracleRMAN` 명령.
+
+백업을 카탈로그로 작성한 후 을 실행할 수 있습니다 `Get-SmBackupDetails` 카탈로그 작성된 데이터 파일의 태그, 제어 파일 카탈로그 경로, 카탈로그 작성된 아카이브 로그 위치 등과 같은 카탈로그 작성된 백업 정보를 얻는 명령입니다.
+
+
+
+== 이름 지정 형식입니다
+
+SnapCenter 3.0에서 ASM 디스크 그룹 이름이 16자 이상인 경우 백업에 사용되는 명명 형식은 SC_HASHCODEofDISKGROUP_DBSID_BACKUPID입니다. 그러나 디스크 그룹 이름이 16자 미만인 경우 백업에 사용되는 명명 형식은 DISKGROUPNAME_DBSID_BACKUPID이며, 이는 SnapCenter 2.0에서 사용되는 것과 동일한 형식입니다.
+
+HASHCODEofDISKGROUP은 각 ASM 디스크 그룹에 대해 자동으로 생성되는 번호(2 ~ 10자리)입니다.
+
+
+
+== 크로스체크 작업
+
+교차 검사를 수행하여 리포지토리 레코드가 물리적 상태와 일치하지 않는 백업에 대한 오래된 RMAN 리포지토리 정보를 업데이트할 수 있습니다. 예를 들어, 사용자가 운영 체제 명령을 사용하여 디스크에서 아카이빙된 로그를 제거할 경우, 제어 파일은 로그가 디스크에 있음을 계속 표시합니다(실제로는 그렇지 않음).
+
+crosscheck 작업을 사용하면 제어 파일을 정보로 업데이트할 수 있습니다. Set-SmConfigSettings 명령을 실행하고 enable_crosscheck 매개 변수에 true 값을 할당하여 크로스검사를 활성화할 수 있습니다. 기본값은 false 로 설정됩니다.
+
+'sccli Set-SmConfigSettings-ConfigSettingsTypePlugin-PluginCodeSCO-ConfigSettings' key=enable_crosscheck,value=true"
+
+
+
+== 카탈로그 정보를 제거합니다
+
+Uncatalog-SmBackupWithOracleRMAN 명령을 실행하여 카탈로그 정보를 제거할 수 있습니다. SnapCenter GUI를 사용하여 카탈로그 정보를 제거할 수 없습니다. 그러나 백업을 삭제하거나 카탈로그 작성된 백업과 관련된 보존 및 리소스 그룹을 삭제하는 동안 카탈로그 작성된 백업 정보가 제거됩니다.
+
+
+NOTE: SnapCenter 호스트를 강제로 삭제하면 해당 호스트와 연결된 카탈로그 작성된 백업 정보가 제거되지 않습니다. 호스트를 강제로 삭제하기 전에 해당 호스트에 대한 모든 카탈로그 작성된 백업의 정보를 제거해야 합니다.
+
+작업 시간이 ORACLE_PLUGIN_RMAN_catalog_timeout 매개 변수에 지정된 시간 초과 값을 초과했기 때문에 카탈로그 작성 및 카탈로그 작성 취소에 실패한 경우 다음 명령을 실행하여 매개 변수 값을 수정해야 합니다.
+
+"/opt/netapp/snapcenter/spl/bin/sccli Set-SmConfigSettings-ConfigSettingsType Plugin-PluginCode SCO-ConfigSettings" key=oracle_plugin_RMAN_catalog_timeout, value=user_defined_value"
+
+매개 변수 값을 수정한 후 다음 명령을 실행하여 SnapCenter SPL(Plug-in Loader) 서비스를 다시 시작합니다.
+
+'/opt/netapp/snapcenter/spl/bin/spL 재시작'
+
+명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 를 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301["SnapCenter 소프트웨어 명령 참조 가이드"^].

@@ -112,7 +112,7 @@ NOTE: 처방자 또는 사후 스크립트 경로에는 드라이브 또는 공�
 NOTE: 이메일 알림의 경우 GUI 또는 PowerShell 명령 Set-SmtpServer를 사용하여 SMTP 서버 세부 정보를 지정해야 합니다.
 
 +
-EMS의 경우 를 참조할 수 있습니다 https://["EMS Data 수집 관리"]
+EMS의 경우 를 참조할 수 있습니다 https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html["EMS Data 수집 관리"]
 
 . 요약을 검토하고 * Finish * 를 클릭합니다.
 

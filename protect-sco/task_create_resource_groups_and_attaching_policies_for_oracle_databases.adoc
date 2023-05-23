@@ -1,8 +1,8 @@
 ---
-permalink: protect-sco/task_create_resource_groups_and_attaching_policies_for_oracle_databases.html 
+permalink: protect-sco/task_create_resource_groups_and_attach_policies_for_oracle_databases.html 
 sidebar: sidebar 
 keywords: run as 
-summary: 리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다. 
+summary: 리소스 그룹은 백업 및 보호할 리소스를 추가하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다. 
 ---
 = 리소스 그룹을 생성하고 Oracle 데이터베이스에 대한 정책을 연결합니다
 :allow-uri-read: 
@@ -11,62 +11,38 @@ summary: 리소스 그룹은 백업 및 보호할 리소스를 추가해야 하�
 
 
 [role="lead"]
-리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다.
+리소스 그룹은 백업 및 보호할 리소스를 추가하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다.
 
-* 이 작업에 대한 정보 *
+.이 작업에 대해
+Oracle DBVERIFY 유틸리티를 사용하여 백업을 확인하려면 ASM 디스크 그룹에 파일이 있는 데이터베이스가 "마운트" 또는 "열기" 상태여야 합니다.
 
-Oracle DBVERIFY 유틸리티를 사용하여 백업을 확인하려면 ASM 디스크 그룹에 파일이 있는 데이터베이스가 "mount" 또는 "open" 상태여야 합니다.
-
-수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.
+하나 이상의 정책을 리소스 그룹에 연결하여 수행할 데이터 보호 작업의 유형을 정의합니다.
 
 다음 그림에서는 데이터베이스 리소스, 리소스 그룹 및 정책 간의 관계를 보여 줍니다.
 
 image::../media/sco_resourcegroup_policy.gif[SCO 리소스 그룹 정책입니다]
 
-* 단계 *
-
-. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
+.단계
+. 왼쪽 탐색 창에서 * 리소스 * 를 선택하고 목록에서 해당 플러그인을 선택합니다.
 . 리소스 페이지에서 * 새 리소스 그룹 * 을 클릭합니다.
 . 이름 페이지에서 다음 작업을 수행합니다.
 +
-|===
-| 이 필드의 내용... | 수행할 작업... 
-
-
- a| 
-이름
- a| 
-자원 그룹의 이름을 입력합니다.
-
+.. 이름 필드에 자원 그룹의 이름을 입력합니다.
++
 
 NOTE: 리소스 그룹 이름은 250자를 초과할 수 없습니다.
 
-
-
- a| 
-태그
- a| 
-나중에 리소스 그룹을 검색하는 데 도움이 되는 하나 이상의 레이블을 입력합니다.
-
+.. 나중에 리소스 그룹을 검색할 수 있도록 태그 필드에 하나 이상의 레이블을 입력합니다.
++
 예를 들어 HR을 여러 자원 그룹에 태그로 추가하면 나중에 HR 태그와 연결된 모든 자원 그룹을 찾을 수 있습니다.
 
-
-
- a| 
-스냅샷 복사본에 대해 사용자 지정 이름 형식을 사용합니다
- a| 
-이 확인란을 선택하고 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.
-
+.. 이 확인란을 선택하고 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.
++
 예를 들어 customtext_resource group_policy_hostname 또는 resource group_hostname을 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.
 
+.. 백업하지 않을 아카이브 로그 파일의 대상을 지정합니다.
 
 
- a| 
-백업에서 아카이브 로그 대상을 제외합니다
- a| 
-백업하지 않을 아카이브 로그 파일의 대상을 지정합니다.
-
-|===
 . 리소스 페이지의 * 호스트 * 드롭다운 목록에서 Oracle 데이터베이스 호스트 이름을 선택합니다.
 +
 
@@ -82,12 +58,12 @@ NOTE: 단일 리소스 그룹의 Linux 및 AIX 호스트 모두에서 데이터�
 .. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
 +
 
-NOTE: 을 클릭하여 정책을 생성할 수도 있습니다 image:../media/add_policy_from_resourcegroup.gif[""].
+NOTE: 을 클릭하여 정책을 생성할 수도 있습니다 image:../media/add_policy_from_resourcegroup.gif["기호 추가"].
 
 +
 선택한 정책에 대한 스케줄 구성 섹션에 선택한 정책이 나열됩니다.
 
-.. 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif[""]일정을 구성하려는 정책에 대한 스케줄 구성 열의
+.. 을 클릭합니다 image:../media/add_policy_from_resourcegroup.gif["기호 추가"] 스케줄을 구성할 정책에 대한 Configure Schedules 열에서
 .. policy_policy_name_에 대한 스케줄 추가 창에서 스케줄을 구성한 다음 * 확인 * 을 클릭합니다.
 +
 여기서, _policy_name_은 선택한 정책의 이름입니다.
@@ -103,7 +79,7 @@ NOTE: 을 클릭하여 정책을 생성할 수도 있습니다 image:../media/ad
 . 확인 페이지에서 다음 단계를 수행하십시오.
 +
 .. Load locators * 를 클릭하여 SnapMirror 또는 SnapVault 볼륨을 로드하여 보조 스토리지에 대한 검증을 수행합니다.
-.. 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif[""]* 정책의 모든 스케줄 유형에 대한 검증 스케줄을 구성하기 위한 스케줄 구성 열의
+.. 을 클릭합니다 image:../media/add_policy_from_resourcegroup.gif["기호 추가"] Configure Schedules 열에서 정책의 모든 스케줄 유형에 대한 검증 스케줄을 구성합니다.
 .. Add Verification Schedules policy_name 대화 상자에서 다음 작업을 수행합니다.
 +
 |===

@@ -170,8 +170,8 @@ No recovery * 를 선택합니다.
 
 NOTE: 마운트 경로의 경로와 컨텐츠를 외부 로그 위치로 나열하기 전에 확인해야 합니다.
 
-** http://["NetApp 기술 보고서 4591: 데이터베이스 데이터 보호 백업, 복구, 복제 및 DR"^]
-** https://["ORA-00308 오류로 인해 작업이 실패합니다"^]
+** http://www.netapp.com/us/media/tr-4591.pdf["NetApp 기술 보고서 4591: 데이터베이스 데이터 보호 백업, 복구, 복제 및 DR"^]
+** https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc["ORA-00308 오류로 인해 작업이 실패합니다"^]
 
 
 |===
@@ -232,8 +232,8 @@ NOTE: 이메일 알림의 경우 GUI 또는 PowerShell 명령 Set-SmtpServer를 
 
 * 자세한 정보 *
 
-* https://["SnapCenter 작업을 수행하기 위해 Oracle RAC One Node 데이터베이스를 건너뜁니다"^]
-* https://["보조 SnapMirror 또는 SnapVault 위치에서 복원하지 못했습니다"^]
-* https://["고아 성육신의 백업에서 복원하지 못했습니다"^]
-* https://["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Oracle_RAC_One_Node_database_is_skipped_for_performing_SnapCenter_operations["SnapCenter 작업을 수행하기 위해 Oracle RAC One Node 데이터베이스를 건너뜁니다"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_from_a_secondary_SnapMirror_or_SnapVault_location["보조 SnapMirror 또는 SnapVault 위치에서 복원하지 못했습니다"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_restore_when_a_backup_of_an_orphan_incarnation_is_selected["고아 성육신의 백업에서 복원하지 못했습니다"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
 

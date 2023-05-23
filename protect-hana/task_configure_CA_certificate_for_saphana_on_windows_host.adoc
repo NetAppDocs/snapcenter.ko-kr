@@ -117,7 +117,7 @@ _keytool -keykeyasswd -alias "alias_name_in_CA_cert" -keystore keystore.jks _
 
 * 이 작업에 대한 정보 *
 
-* 관련 CA 인증서에 대한 최신 CRL 파일을 다운로드하려면 를 참조하십시오 https://["SnapCenter CA 인증서에서 인증서 해지 목록 파일을 업데이트하는 방법"].
+* 관련 CA 인증서에 대한 최신 CRL 파일을 다운로드하려면 를 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_update_certificate_revocation_list_file_in_SnapCenter_CA_Certificate["SnapCenter CA 인증서에서 인증서 해지 목록 파일을 업데이트하는 방법"].
 * SnapCenter 사용자 지정 플러그인은 사전 구성된 디렉터리에서 CRL 파일을 검색합니다.
 * SnapCenter 사용자 지정 플러그인에 대한 CRL 파일의 기본 디렉토리는 _'C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\CRL'_입니다.
 

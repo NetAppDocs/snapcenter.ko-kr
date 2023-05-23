@@ -152,7 +152,7 @@ NOTE: 처방자 또는 사후 스크립트 경로에는 드라이브 또는 공�
 NOTE: 이메일 알림의 경우 GUI 또는 PowerShell 명령 Set-SmtpServer를 사용하여 SMTP 서버 세부 정보를 지정해야 합니다.
 
 +
-EMS의 경우 를 참조할 수 있습니다 https://["EMS Data 수집 관리"]
+EMS의 경우 를 참조할 수 있습니다 https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html["EMS Data 수집 관리"]
 
 . 요약을 검토하고 * Finish * 를 클릭합니다.
 . 모니터 * > * 작업 * 을 클릭하여 작업 진행 상황을 모니터링합니다.
@@ -168,6 +168,6 @@ link:reference_back_up_sql_server_database_or_instance_or_availability_group.htm
 
 link:task_clone_backups_using_powershell_cmdlets_for_sql.html["PowerShell cmdlet을 사용하여 백업 클론 생성"]
 
-https://["클론 작업이 실패하거나 기본 TCP_TIMEOUT 값으로 완료하는 데 시간이 더 오래 걸릴 수 있습니다"]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Clone_operation_might_fail_or_take_longer_time_to_complete_with_default_TCP_TIMEOUT_value["클론 작업이 실패하거나 기본 TCP_TIMEOUT 값으로 완료하는 데 시간이 더 오래 걸릴 수 있습니다"]
 
-https://["장애 조치 클러스터 인스턴스 데이터베이스 클론에 장애가 발생합니다"]
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/The_failover_cluster_instance_database_clone_fails["장애 조치 클러스터 인스턴스 데이터베이스 클론에 장애가 발생합니다"]

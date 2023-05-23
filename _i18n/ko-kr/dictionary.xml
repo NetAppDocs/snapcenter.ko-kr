@@ -5115,9 +5115,7 @@
   <block id="5bdcda8fa398715c0e816de58d9f6f32" category="inline-image-macro">마운트 해제 아이콘</block>
   <block id="168ab792c2cf9b011ce6299d37acc0db" category="list-text">마운트된 백업을 선택한 다음 을 클릭합니다 <block ref="95ba06560c8632912f250655b94bc667" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="160c0afc78008acd5e27a47466223006" category="summary">리소스(데이터베이스) 또는 리소스 그룹의 백업을 생성할 수 있습니다.</block>
-  <block id="cb21f64b7aa1d58307ba1cfcc254fb77" category="paragraph">리소스(데이터베이스) 또는 리소스 그룹의 백업을 생성할 수 있습니다. 백업 워크플로우에는 계획, 백업용 리소스 식별, 백업 정책 생성, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다.</block>
   <block id="fb21695f6b72866357b3e3381a3dd8d4" category="image-alt">Oracle용 백업 워크플로우</block>
-  <block id="74be1413d8c1294602864c1d9e25f626" category="paragraph">그러나 이전 백업이 경고와 함께 완료된 경우 운영 잠금 파일이 삭제되지 않고 다음 백업 작업이 대기 큐로 들어갑니다. sm_lock_dbsid * 파일이 삭제되지 않으면 결국 취소될 수 있습니다. 이러한 경우 다음 단계를 수행하여 운영 잠금 파일을 수동으로 삭제해야 합니다.</block>
   <block id="3ab07b443e5100312a8428cab6f6a083" category="list-text">작동 잠금인 rm-rf.sm_lock_dbsid를 삭제합니다</block>
   <block id="23257e3404df9a371ee4e65b5f6db441" category="summary">Oracle 데이터베이스를 복제하기 전에 필수 구성 요소가 완료되었는지 확인해야 합니다.</block>
   <block id="c3f3510a6fc8f24504e19e3fa075dcd8" category="doc">Oracle 데이터베이스 클론 생성 요구 사항</block>
@@ -5178,10 +5176,7 @@
   <block id="50295902d444d01e41805e9bc1b0598e" category="list-text"><block ref="50295902d444d01e41805e9bc1b0598e" category="inline-link-rx"></block></block>
   <block id="a909d5db254f7262bb93275a07812330" category="inline-link">RHEL 7 이상의 비 다중 경로 환경에서 데이터 보호 작업이 실패합니다</block>
   <block id="637e979b90ef1f6ab2dd922a7436fbec" category="list-text"><block ref="637e979b90ef1f6ab2dd922a7436fbec" category="inline-link-rx"></block></block>
-  <block id="6b33644191204350f20a3a84f6152f47" category="summary">리소스 그룹은 백업 및 보호할 리소스를 추가해야 하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다.</block>
   <block id="a79101df6f2655709b2aa6b2ec32c488" category="doc">리소스 그룹을 생성하고 Oracle 데이터베이스에 대한 정책을 연결합니다</block>
-  <block id="e525da83465049bad6a7bf2676a73ce2" category="paragraph">Oracle DBVERIFY 유틸리티를 사용하여 백업을 확인하려면 ASM 디스크 그룹에 파일이 있는 데이터베이스가 "mount" 또는 "open" 상태여야 합니다.</block>
-  <block id="c58481c5b8cfb4b2b7162b1b1cf5c8dd" category="paragraph">수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.</block>
   <block id="c3bc5ff261b700cf2f6140bad7454c1c" category="image-alt">SCO 리소스 그룹 정책입니다</block>
   <block id="056af176267461e7d6a2a9e357208bd7" category="paragraph">백업에서 아카이브 로그 대상을 제외합니다</block>
   <block id="491a86dab4dbb4636159b9c8d91d9c09" category="paragraph">백업하지 않을 아카이브 로그 파일의 대상을 지정합니다.</block>
@@ -5190,7 +5185,6 @@
   <block id="16a4d8b6ed11330e0e6e2c8f2b58a1b0" category="admonition">단일 리소스 그룹의 Linux 및 AIX 호스트 모두에서 데이터베이스를 추가할 수 있습니다.</block>
   <block id="a263a024ecfc193325fde48303936fd7" category="list-text">확인 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="aa60fb0ff9f13cd254813c318d11d1bf" category="list-text">Load locators * 를 클릭하여 SnapMirror 또는 SnapVault 볼륨을 로드하여 보조 스토리지에 대한 검증을 수행합니다.</block>
-  <block id="52fb8cc6d977f4b0c5a28fca774e1265" category="list-text">를 클릭합니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>* 정책의 모든 스케줄 유형에 대한 검증 스케줄을 구성하기 위한 스케줄 구성 열의</block>
   <block id="5b6546a020e7d5a17b75b6f6e6be79a3" category="paragraph">Run scheduled verification * 을 선택한 다음 드롭다운 목록에서 일정 유형을 선택합니다.</block>
   <block id="8dc3eb18807f6424ec895a845ced71bb" category="list-text">2차 스토리지 시스템에서 백업을 확인하려면 * 2차 위치에서 확인 * 을 선택합니다.</block>
   <block id="158960e40cea9822bb4339b4f8995696" category="paragraph">구성된 검증 일정이 Applied Schedules 열에 나열됩니다.</block>
@@ -5227,7 +5221,6 @@
   <block id="768f623632c4bc282d735245d72f0082" category="paragraph">리소스 그룹에 여러 애플리케이션 볼륨이 있는 경우 모든 애플리케이션 볼륨에 SnapMirror 또는 SnapVault 복제 정책이 있어야 합니다.</block>
   <block id="aa937e10b9927770901c4ad133aa81f7" category="paragraph">기본적으로 일관성 그룹(CG) 백업이 생성됩니다. 볼륨 기반 백업을 생성하려면 _web.config_file에서 * EnableOracleNdvVolumeBasedBackup * 의 값을 true 로 설정해야 합니다.</block>
   <block id="0bc92cf5f202f2c741414bccdc40afa9" category="admonition">검증 작업은 애플리케이션 볼륨이 아닌 데이터베이스에 대해서만 수행됩니다.</block>
-  <block id="0b467061f52733da68bf2a4d7726c3f9" category="summary">백업 작업을 생성하기 전에 백업 전략을 정의하면 데이터베이스를 성공적으로 복원하거나 복제하는 데 필요한 백업이 있는지 확인할 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="4aad6a55b7d830fe36a2a075e0a60363" category="doc">Oracle 데이터베이스에 대한 백업 전략 정의</block>
   <block id="837133a617997f77e41ae32488daeff9" category="section-title">백업에 지원되는 Oracle 데이터베이스 구성</block>
   <block id="c099310b5ff326a16534f7447f14aa9a" category="paragraph">SnapCenter는 서로 다른 Oracle 데이터베이스 구성의 백업을 지원합니다.</block>
@@ -5323,7 +5316,6 @@
   <block id="7175c7653c984fca11c9b01879ca8386" category="paragraph">보호하려는_대상_과 이를 보호할 시기를 요일과 시간으로 정의하는 자원 그룹을 생각해 보십시오. 정책을 정의하는 _ 방법 _ 을(를) 보호하려는 것으로 생각해 보십시오.</block>
   <block id="a1252ded99561e113314773288824c6e" category="paragraph">예를 들어, 호스트의 모든 데이터베이스를 백업하는 경우 호스트에 있는 모든 데이터베이스를 포함하는 리소스 그룹을 생성할 수 있습니다. 그런 다음 리소스 그룹에 일별 정책과 시간별 정책이라는 두 가지 정책을 연결할 수 있습니다. 리소스 그룹을 생성하고 정책을 연결할 때 매일 전체 백업을 수행하고 로그 백업을 매시간 수행하는 다른 일정을 수행하도록 리소스 그룹을 구성할 수 있습니다.</block>
   <block id="8d70bdd589ad1d5053591608060dd666" category="summary">리소스는 SnapCenter에서 관리하는 호스트의 Oracle 데이터베이스입니다. 사용 가능한 데이터베이스를 발견한 후 이러한 데이터베이스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있습니다.</block>
-  <block id="b235b91c85e6ff24696d87bf417b2277" category="doc">Oracle 데이터베이스를 백업에 사용할 수 있는지 여부를 확인합니다</block>
   <block id="14391af03493ba1cebd9404bb5bda74c" category="list-text">데이터베이스가 가상 머신 디스크(VMDK) 또는 원시 디바이스 매핑(RDM)에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다.</block>
   <block id="2ab45cdd9c7a68b490dde7ff87978512" category="paragraph">자세한 내용은 을 참조하십시오<block ref="147b933388a6511d6c294a95b67dd2ec" category="inline-link-rx"></block>.</block>
   <block id="a10be0987063f62f7e76f8dcaf88d576" category="list-text">데이터베이스가 VMDK 파일 시스템에 있는 경우 vCenter에 로그인하고 * VM 옵션 * &gt; * 고급 * &gt; * 구성 편집 * 으로 이동하여 _disk.enableUUID_의 값을 VM에 대해 TRUE로 설정해야 합니다.</block>
@@ -6257,10 +6249,7 @@
   <block id="6927683b616825cb773183b147e9e3fa" category="list-text">PDB 클론(targetCDB:PDBClone)을 선택한 다음 을 클릭합니다 <block ref="097a6d0ab39a212263c3129e9214fa08" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="543eb3b9143ccc1ed273dbc9f064ffa2" category="summary">리소스 그룹은 호스트 또는 클러스터의 리소스 모음입니다. 리소스 그룹에 대한 백업 작업은 리소스 그룹에 정의된 모든 리소스에 대해 수행됩니다.</block>
   <block id="7fac35e2e64a179ee0279256e1dc195f" category="doc">Oracle 데이터베이스 리소스 그룹을 백업합니다</block>
-  <block id="ab266f443637649193c14fb7a9370e7e" category="admonition">두 개의 데이터베이스를 사용하는 통합 리소스 그룹이 있고 데이터베이스 중 하나가 비 NetApp 스토리지에서 데이터 파일을 사용하는 경우, 다른 데이터베이스가 NetApp 스토리지에 있는 경우에도 백업 작업이 중단됩니다.</block>
-  <block id="259d3ed1b70f5247f9e2fc2be475381a" category="list-text">AIX 설정에서 lkdev 명령을 사용하여 잠그고 rendev 명령을 사용하여 백업된 데이터베이스가 상주하는 디스크의 이름을 바꿀 수 있습니다.</block>
   <block id="8a1c4d8854ab495e687e6155302b5e31" category="paragraph">해당 백업을 사용하여 복원할 때 장치의 잠금 또는 이름 바꾸기는 복원 작업에 영향을 주지 않습니다.</block>
-  <block id="0c2aa1683107d10f559e2505dfb5befc" category="list-text">데이터베이스 쿼리 실행 시간이 시간 초과 값을 초과하여 백업 작업이 실패하면 Set-SmConfigSettings cmdlet을 실행하여 Oracle_SQL_QUERY_TIMEOUT 및 ORACLE_PLUGIN_SQL_QUERY_TIMEOUT 매개 변수의 값을 변경해야 합니다.</block>
   <block id="31bbfd3d5f153e5da05f4114737ea2cd" category="paragraph">매개 변수 값을 수정한 후 '/opt/netapp/snapcenter/spL/bin/spL restart' 명령을 실행하여 SnapCenter SPL(플러그인 로더) 서비스를 다시 시작합니다</block>
   <block id="14894175a6559422772ab07b7e553342" category="list-text">파일을 액세스할 수 없고 확인 프로세스 중에 마운트 지점을 사용할 수 없는 경우 오류 코드 DBV-00100 지정된 파일로 인해 작업이 실패할 수 있습니다. sco.properties 에서 verification_delay 및 verification_retry_count 매개 변수의 값을 수정해야 합니다.</block>
   <block id="4cdff21e1a3b3a11f16dc574421a1599" category="doc">Oracle 데이터베이스 클론을 분할합니다</block>
@@ -6274,8 +6263,6 @@
   <block id="bb3bb922fc2fe1b5851c8c139e13f07b" category="doc">Oracle 리소스를 백업합니다</block>
   <block id="d8e3db119b7cf9c31602a2121bfa4365" category="list-text">백업할 데이터베이스를 선택합니다.</block>
   <block id="d24902f60cccf9a4d0ef979587d1d4fd" category="paragraph">데이터베이스 보호 페이지가 표시됩니다.</block>
-  <block id="60819b0f333a60a877f3b241274ddbfd" category="list-text">을 클릭합니다 <block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block> Configure Schedules 열에서 정책의 모든 스케줄 유형에 대한 검증 스케줄을 구성합니다.</block>
-  <block id="d3fbced85b7ea3c853c32d56707ed82f" category="paragraph">Run scheduled verification * 을 선택한 다음 드롭다운 목록에서 일정 유형을 선택합니다.</block>
   <block id="014b5d6fbe7be4e31085d3f8a60c9445" category="admonition">Flex ASM 설정에서 카디널리티가 RAC 클러스터의 노드 수보다 적은 경우 Leaf 노드에서 검증 작업을 수행할 수 없습니다.</block>
   <block id="86d0a1c0a1c24b3fd3e7c61cd7b71901" category="list-text">보조 스토리지에서 백업을 확인하려면 * 2차 위치에서 확인 * 을 선택합니다.</block>
   <block id="01f2a62b214f28f5c6d9606a809ec72f" category="paragraph">Java 힙 크기를 늘리려면 스크립트 파일 _/opt/netapp/init_scripts/scvservice_를 찾습니다. 이 스크립트에서 do_start method 명령이 SnapCenter VMware 플러그인 서비스를 시작합니다. 이 명령을 'java-jar-Xmx8192M-Xms4096M'으로 업데이트합니다.</block>
@@ -7465,7 +7452,6 @@
   <block id="0ac22ed74dd628cec8a2c5e2f64bf612" category="list-text">백업 중인 데이터베이스가 큰 경우 SnapCenter 서버 호스트의 _C:\Program Files\NetApp\SMCore\SMCoreServiceHost.exe.config_file에서 RESTTimeout 값을 86400,000ms로 늘려야 합니다(TB 단위 크기).</block>
   <block id="12030a592b1dcd9007e06eda350e5904" category="list-text">특정 날짜 및 시간으로 복구하려면 * 날짜 및 시간 * 을 선택하고 날짜 및 시간과 보조 대상을 지정합니다.</block>
   <block id="740364074f07d3ca5c0b017db01d8838" category="paragraph">SnapCenter는 지정된 SCN 또는 선택한 날짜 및 시간을 기반으로 PITR을 수행하는 데 필요한 최적의 데이터 및 로그 백업 수를 식별하고 카탈로그로 작성합니다.</block>
-  <block id="46eafed7afc11552d8171b2eb6ae91d0" category="section-title">SnapCenter가 비데이터베이스 항목을 검색하지 못하도록 하는 방법</block>
   <block id="8bd0906e1408858d04adcc36035359ac" category="paragraph">SnapCenter가 oratab 파일에 추가된 비데이터베이스 항목을 검색하지 못하도록 할 수 있습니다.</block>
   <block id="a91c1695dbc901f96299c334e515e6b0" category="list-text">Oracle용 플러그인을 설치한 후 루트 사용자는 _ /var/opt/snapcenter/sSCO/etc/_ 디렉터리 아래에 * sc_oratab.config * 파일을 만들어야 합니다.</block>
   <block id="e52e8b1290260b6f01eec0c767b91bb9" category="paragraph">나중에 파일을 유지 관리할 수 있도록 Oracle 바이너리 소유자 및 그룹에 쓰기 권한을 부여합니다.</block>
@@ -7970,4 +7956,122 @@
   <block id="0f5b112cebb37022dbfe2c80e388d605" category="paragraph">을 참조하십시오 <block ref="5ec6b0ec41fc91e8184fa478c63adb14" category="inline-link-macro-rx"></block>.</block>
   <block id="a8d67928879d7cbd7d3c5d1b6d797736" category="list-text">MFA를 비활성화하고 를 사용하여 MFA를 활성화했을 때 생성된 구성 파일을 정리합니다<block ref="3f459b2c524cc44ef57664fd75d5c093" prefix=" " category="inline-code"></block> cmdlet.</block>
   <block id="6bcc192d7209e867a0f8afd8938c62eb" category="sidebar">멀티팩터 인증(MFA) 관리</block>
+  <block id="d9372adbc1bed6681e74cd02004081f0" category="summary">SnapCenter가 Oracle 데이터베이스를 검색하는 방법</block>
+  <block id="f3c021a5eae937a13601d397b792c2d2" category="paragraph">Oracle RMAN(Recovery Manager)을 사용하여 Oracle 데이터베이스 백업의 카탈로그를 만들어 Oracle RMAN 저장소에 백업 정보를 저장할 수 있습니다.</block>
+  <block id="084690c33c7b29b1780ab8f409fb8650" category="section-title">외부 카탈로그 데이터베이스</block>
+  <block id="c5c4e8f374f512a056ca1205e002a1fd" category="section-title">RMAN 명령</block>
+  <block id="f49c2881ffbdaf870ec7ed9ea88f4343" category="paragraph">SnapCenter GUI에서 Oracle 백업 정책을 생성하는 동안 카탈로그 작성 옵션을 활성화한 경우, 백업 작업의 일부로 Oracle RMAN을 사용하여 백업 카탈로그를 작성합니다. 를 실행하여 지연된 백업 카탈로그를 수행할 수도 있습니다<block ref="a0b1ab6ae251c2e9971158956eaa5c76" prefix=" " category="inline-code"></block> 명령.</block>
+  <block id="b0d14c022e51c262621e79e943a3b6d0" category="paragraph">백업을 카탈로그로 작성한 후 을 실행할 수 있습니다<block ref="c307f2fb096a201d2b32b2d18a240364" prefix=" " category="inline-code"></block> 카탈로그 작성된 데이터 파일의 태그, 제어 파일 카탈로그 경로, 카탈로그 작성된 아카이브 로그 위치 등과 같은 카탈로그 작성된 백업 정보를 얻는 명령입니다.</block>
+  <block id="5e5ff61214eb4873285663f81049ec20" category="section-title">이름 지정 형식입니다</block>
+  <block id="059297ebf3935d6b4bcb000628a9d653" category="section-title">크로스체크 작업</block>
+  <block id="8e03216fb8576194a8567507d59c56b7" category="paragraph">교차 검사를 수행하여 리포지토리 레코드가 물리적 상태와 일치하지 않는 백업에 대한 오래된 RMAN 리포지토리 정보를 업데이트할 수 있습니다. 예를 들어, 사용자가 운영 체제 명령을 사용하여 디스크에서 아카이빙된 로그를 제거할 경우, 제어 파일은 로그가 디스크에 있음을 계속 표시합니다(실제로는 그렇지 않음).</block>
+  <block id="7944aae88fbc469a9edfc7d9ae22e633" category="paragraph">crosscheck 작업을 사용하면 제어 파일을 정보로 업데이트할 수 있습니다. Set-SmConfigSettings 명령을 실행하고 enable_crosscheck 매개 변수에 true 값을 할당하여 크로스검사를 활성화할 수 있습니다. 기본값은 false 로 설정됩니다.</block>
+  <block id="14fbb4ba3858c107f2599916d3b51cbb" category="section-title">카탈로그 정보를 제거합니다</block>
+  <block id="3fc370e9504ca2ebb69ee1e9030a971f" category="paragraph">명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 를 참조할 수도 있습니다<block ref="f0a304dd5eda28bc5cad0e10ba143e0a" category="inline-link-rx"></block>.</block>
+  <block id="4c4d4c133d15d97bf3bef74ffeeeb66a" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 선택하고 목록에서 해당 플러그인을 선택합니다.</block>
+  <block id="ba4484b740822363967ef7dbb090de6a" category="inline-image-macro">필터 아이콘</block>
+  <block id="bdf18e1416fb037a66cb2e8b6bf34e50" category="list-text">을 클릭합니다 <block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block>호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
+  <block id="36fae2ba23dbe8fc737f85fdffde333e" category="paragraph">그런 다음 을 클릭할 수 있습니다 <block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="90db41db3c301da492422a8fbb244c83" category="list-text">리소스 페이지에서 다음 단계를 수행할 수 있습니다.</block>
+  <block id="00f0529a96533b63a21705811e1addce" category="list-text">확인란을 선택하고 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
+  <block id="8319f5e3f98fcec5a71bd43e8454a8fd" category="paragraph">예를 들면, 다음과 같습니다.<block ref="6d242f6ac938ffb13709f54d68cd3c4a" prefix=" " category="inline-code"></block> 또는<block ref="90ea7aa0cb61dd49e32f6dcf8afac143" prefix=" " category="inline-code"></block>. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
+  <block id="e0af3bf36c9535530ed431b3358aa176" category="inline-image-macro">기호 추가</block>
+  <block id="a2fbabd2b5fd55db991eb64739e8189a" category="admonition">을 클릭하여 정책을 생성할 수 있습니다 <block ref="494b170a0dd5e7fc7886f29293b0c5bc" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="a04dff3ca18f5d27eeb205537402b01c" category="list-text">을 클릭합니다 <block ref="494b170a0dd5e7fc7886f29293b0c5bc" category="inline-image-macro-rx" type="image"></block> 스케줄 구성 열에서 원하는 정책에 대한 스케줄을 구성합니다.</block>
+  <block id="37f44ce16715c2bf101710578d0cdd78" category="list-text">정책_정책_이름_에 대한 스케줄 추가 창에서 스케줄을 구성한 다음 을 선택합니다<block ref="e0aa021e21dddbd6d8cecec71e9cf564" prefix=" " category="inline-code"></block>.</block>
+  <block id="8152b7fd31613e401469a6547fe7ab3f" category="list-text">Load locators * 를 클릭하여 SnapMirror 또는 SnapVault 볼륨을 로드하여 보조 스토리지를 확인합니다.</block>
+  <block id="b4795af650dd450875d0affec7e81c42" category="list-text">을 클릭합니다 <block ref="494b170a0dd5e7fc7886f29293b0c5bc" category="inline-image-macro-rx" type="image"></block> Configure Schedules 열에서 정책의 모든 스케줄 유형에 대한 검증 스케줄을 구성합니다. + Add Verification Schedules_policy_name_대화 상자에서 다음 단계를 수행할 수 있습니다.</block>
+  <block id="2226a89f0e569aafd7ff5ef91e17aca2" category="list-text">Run scheduled verification * 을 선택하고 드롭다운 목록에서 일정 유형을 선택합니다.</block>
+  <block id="a40e69276b6e9ce163d85fd729a42eae" category="list-text">알림 페이지에서 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.</block>
+  <block id="d7a872f323113f381eb79316af450829" category="paragraph">보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목을 지정해야 합니다. 리소스에 대해 수행된 백업 작업의 보고서를 첨부하려면 * 작업 보고서 연결 * 을 선택합니다.</block>
+  <block id="56f30e0902c1ab371ccae5be347a631e" category="admonition">이메일 알림의 경우 GUI 또는 PowerShell 명령을 사용하여 SMTP 서버 세부 정보를 지정해야 합니다<block ref="997c102f406bdf4b18d046c49ffaa8f9" prefix=" " category="inline-code"></block>.</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">작업을 마친 후</block>
+  <block id="b27045f6d55975ea692f5ae0a715da51" category="list-text">AIX 설정에서 를 사용할 수 있습니다<block ref="9c24f53e48c98577b16ec56f199c0106" prefix=" " category="inline-code"></block> 명령을 사용하여 및 를 잠급니다<block ref="6fec2b39344b576b753af3936b8b4491" prefix=" " category="inline-code"></block> 백업한 데이터베이스가 있는 디스크의 이름을 바꾸는 명령입니다.</block>
+  <block id="407eab8241b7b3d334f9f6b403d230f9" category="list-text">데이터베이스 쿼리 실행 시간이 시간 초과 값을 초과하여 백업 작업이 실패하면 를 실행하여 Oracle_SQL_QUERY_TIMEOUT 및 ORACLE_PLUGIN_SQL_QUERY_TIMEOUT 매개 변수의 값을 변경해야 합니다<block ref="c49971dbd0f66cf4e6b62fc441967947" prefix=" " category="inline-code"></block> cmdlet:</block>
+  <block id="9c83e144e5481ac6766f4055e566594d" category="list-title">자세한 내용을 확인하십시오</block>
+  <block id="8dc85b73e2cb5020859a39480b17009c" category="list-text"><block ref="802c82c89baa4a09096a77864bb21fb2" category="inline-link-rx"></block> (로그인 필요)</block>
+  <block id="40a2df546d9e9d7c560fe96c630c6c74" category="doc">백업 절차 개요</block>
+  <block id="e5325159577ee33e354dc9b247eb5a41" category="paragraph">리소스(데이터베이스) 또는 리소스 그룹의 백업을 생성할 수 있습니다. 백업 절차에는 계획 수립, 백업을 위한 리소스 식별, 백업 정책 생성, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다.</block>
+  <block id="380f9875e9dac40e8c0bc082d654be88" category="paragraph">그러나 이전 백업이 경고와 함께 완료된 경우 운영 잠금 파일이 삭제되지 않고 다음 백업 작업이 대기 큐로 들어갑니다. sm_lock_dbsid * 파일이 삭제되지 않으면 결국 취소될 수 있습니다. 이러한 경우 다음 단계를 수행하여 운영 잠금 파일을 수동으로 삭제해야 합니다.</block>
+  <block id="bcbd15ff750a5bdd0a69b69272c96224" category="doc">백업에 사용할 수 있는 Oracle 데이터베이스에 대해 알아보십시오</block>
+  <block id="6e511cfe87a95df884e3eeb9f86e7f6c" category="paragraph">* 필요한 것 *</block>
+  <block id="43a1b5ca6be8bdd76245bbef93eb42c3" category="section-title">1단계: SnapCenter가 비데이터베이스 항목을 검색하지 못하도록 합니다</block>
+  <block id="6ff7029ca2037b63aa334483b3f6dbd1" category="section-title">2단계: 리소스를 검색합니다</block>
+  <block id="afe43493934ee712f4ff5ce8418fc255" category="paragraph">Oracle RAC(Real Application Clusters) 설정에서 SnapCenter가 백업 작업을 수행하는 데 사용하는 기본 노드를 지정할 수 있습니다. 기본 설정 노드를 지정하지 않으면 SnapCenter가 노드를 기본 설정 노드로 자동 할당하고 해당 노드에 백업이 생성됩니다.</block>
+  <block id="9cf00451682ac5fbc7ad037c5033fbe7" category="paragraph">선호하는 노드는 RAC 데이터베이스 인스턴스가 있는 클러스터 노드 중 하나 또는 모두가 될 수 있습니다. 백업 작업은 기본 설정 순서대로 이러한 기본 설정 노드에서만 트리거됩니다.</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="paragraph-title">예</block>
+  <block id="c9328c682f9cde36ed9275b8d6076776" category="paragraph">RAC 데이터베이스 cdbrac에는 node1의 cdbrac1, node2의 cdbrac2, node3의 cdbrac3 등 세 가지 인스턴스가 있습니다.</block>
+  <block id="ef86a82fdcc178a3727d5487d64da0f7" category="paragraph">노드 1과 노드 2 인스턴스는 노드 2가 첫 번째 기본 설정이고 노드 1이 두 번째 기본 설정인 기본 노드로 구성됩니다. 백업 작업을 수행할 때 노드 2가 첫 번째 기본 설정 노드이므로 이 작업이 먼저 시도됩니다.</block>
+  <block id="b9a9b52da26d376bae745caa147a52ef" category="paragraph">플러그인 에이전트가 호스트에서 실행되고 있지 않은 등의 여러 가지 이유로 인해 노드 2가 백업할 상태가 아닌 경우 호스트의 데이터베이스 인스턴스가 지정된 백업 유형에 대해 필요한 상태가 아닌 경우 또는 FlexASM 구성에서 노드 2의 데이터베이스 인스턴스를 로컬 ASM 인스턴스에서 제공하지 않으면 노드 1에서 작업을 시도합니다.</block>
+  <block id="4002c4b6b0a844b5972c38c7594c4329" category="paragraph">노드 3은 기본 노드 목록에 없으므로 백업에 사용되지 않습니다.</block>
+  <block id="b250d1148a21c87bd22c0e130bc63078" category="section-title">Flex ASM 설정</block>
+  <block id="4ea8079fa2f37d718bf02e968bee364b" category="paragraph">리소스는 SnapCenter에서 유지 관리하는 호스트의 Oracle 데이터베이스입니다. 사용 가능한 데이터베이스를 발견한 후 이러한 데이터베이스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있습니다.</block>
+  <block id="35cd5d3812d5d01441ea27f0cc23e846" category="paragraph">다음 섹션에서는 SnapCenter가 다양한 유형의 Oracle 데이터베이스를 검색하는 데 사용하는 프로세스에 대해 설명합니다.</block>
+  <block id="c3840e3ab25ce9f30ec697c152655f28" category="paragraph-title">RAC 데이터베이스</block>
+  <block id="fde91ef302aa0e3bbe841036968b5490" category="paragraph">RAC 데이터베이스는 /etc/oratab 항목을 기준으로 검색됩니다. /etc/oratab 파일에 데이터베이스 항목이 있어야 합니다.</block>
+  <block id="5c80f101108a356211fcb26b3f83eabb" category="paragraph-title">독립 실행형</block>
+  <block id="bea76d34a87d4264ca025e2d88b3350d" category="paragraph">독립 실행형 데이터베이스는 /etc/oratab 항목을 기준으로 검색됩니다.</block>
+  <block id="7ccbb03cb795734415a0b6924a8d7aed" category="paragraph-title">ASM</block>
+  <block id="10d2161a02aedfc95234b3a3456eb306" category="paragraph">ASM 인스턴스 항목은 /etc/oratab 파일에서 사용할 수 있어야 합니다.</block>
+  <block id="2e870bce056fbce1cb37f62a4e47660e" category="paragraph-title">RAC One Node</block>
+  <block id="14eaca04b4e6fa17b6fb76a780747d7b" category="paragraph">RAC One Node 데이터베이스는 /etc/oratab 항목을 기준으로 검색됩니다. 데이터베이스는 nomount, mount 또는 open 상태여야 합니다. /etc/oratab 파일에 데이터베이스 항목이 있어야 합니다.</block>
+  <block id="0490fa938898aedef2dc7269ec3361ba" category="list-text">리소스 페이지에서 RAC One Node 데이터베이스를 선택한 다음 데이터베이스 설정을 클릭합니다.</block>
+  <block id="141229b009a397273fc34bf2467990b8" category="list-text">한 노드에서 다른 노드로 데이터베이스를 재배치하고 이전 노드의 oratab 항목이 삭제되지 않은 경우 동일한 데이터베이스가 두 번 표시되지 않도록 oratab 항목을 수동으로 삭제하십시오.</block>
+  <block id="b6b2be55c51c8c3e0d58ffcc788b57d0" category="section-title">Oracle 버전 12cR2 ~ 18C의 경우</block>
+  <block id="138ac8a924ba70371a9fccc55eeffc50" category="paragraph">srvctl config 명령을 사용하여 RAC 데이터베이스를 검색할 수 있습니다. /etc/oratab 파일에 데이터베이스 항목이 있어야 합니다.</block>
+  <block id="bdc631ac0c61f623f88a03e50eb10d04" category="paragraph">독립 실행형 데이터베이스는 /etc/oratab 파일의 항목과 srvctl config 명령의 출력을 기반으로 검색됩니다.</block>
+  <block id="065a682f6e2ff04149d8f73d3a4f075e" category="paragraph">ASM 인스턴스 항목은 /etc/oratab 파일에 있을 필요가 없습니다.</block>
+  <block id="d9fa3141119141b68b1c5d32ed6a8e02" category="paragraph">srvctl config 명령만 사용하여 RAC One Node 데이터베이스를 검색할 수 있습니다. 데이터베이스는 nomount, mount 또는 open 상태여야 합니다. 데이터베이스가 이미 검색되고 백업이 데이터베이스에 연결되어 있는 경우 RAC One Node 데이터베이스 상태가 이름 변경 또는 삭제됨으로 표시됩니다.</block>
+  <block id="3d4a391fad87ee2d69bf0079369db6c0" category="paragraph">데이터베이스가 재배치되면 다음 단계를 수행해야 합니다. 리소스를 수동으로 새로 고칩니다. . 리소스 페이지에서 RAC One Node 데이터베이스를 선택한 다음 데이터베이스 설정을 클릭합니다. . 데이터베이스를 현재 데이터베이스를 호스팅하는 RAC 노드에 기본 클러스터 노드를 설정하도록 데이터베이스를 구성합니다. . SnapCenter 작업을 수행합니다.</block>
+  <block id="036a4f113c3f6512ad117bb7e1be7b43" category="summary">백업 전략을 정의하면 데이터베이스를 성공적으로 복원하거나 복제할 수 있습니다.</block>
+  <block id="6444121a0917776aa4b9274dfa1ee288" category="paragraph">데이터베이스를 성공적으로 복원하거나 복제할 수 있는 방법이 있는지 확인하기 위한 백업 전략을 정의합니다.</block>
+  <block id="6716420f42ba61453a4039a2a57b594e" category="paragraph">SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 주로 결정됩니다.</block>
+  <block id="da336ad1b4deba370d6b260076b2dcd0" category="list-text">SLA는 예상되는 서비스 수준을 정의하고 서비스의 가용성 및 성능과 같은 서비스 관련 문제를 해결합니다.</block>
+  <block id="a17429e26b7d75928370e09d647110b1" category="list-text">RTO는 서비스 중단 후 비즈니스 프로세스를 복원해야 하는 시간을 정의합니다.</block>
+  <block id="7b83aa0b7e4a5f3e6532d57158f7e601" category="list-text">RPO는 장애 후 정상적인 작업을 재개하기 위해 백업 스토리지에서 복구해야 하는 파일의 기간을 정의합니다.</block>
+  <block id="3e2d2f6a646250c8b750be0ca26e5b46" category="summary">운영 또는 보조 스토리지 볼륨을 사용하여 백업 복사본을 확인합니다.</block>
+  <block id="77536321746ee899d10dbbec054c87ce" category="doc">백업 사본을 확인할 위치</block>
+  <block id="de7c468dab6738fd4fc26a1bc2e0b578" category="doc">Oracle 데이터베이스 백업을 모니터링합니다</block>
+  <block id="65cd6f58b54a9ee1b5e15bdbfdbaa326" category="paragraph">백업 작업 및 데이터 보호 작업의 진행률을 모니터링하는 방법에 대해 알아봅니다.</block>
+  <block id="1656f43643ea92a562ccdd7e31691e03" category="summary">Oracle 데이터베이스에 지원되는 백업 유형입니다.</block>
+  <block id="92d3f2f0912d79a31442f669496dcfa5" category="list-text">데이터 파일 및 제어 파일만</block>
+  <block id="5894ddcf494ce28f1eb272ca5e723710" category="list-text">데이터 파일, 제어 파일 및 아카이브 로그 파일을 포함하는 전체 데이터베이스입니다</block>
+  <block id="2d92b3df61f86e9074ba4418a26c533e" category="paragraph">데이터베이스가 마운트되었거나 종료 상태일 때 생성된 백업을 오프라인 백업이라고 합니다. 오프라인 백업을 콜드 백업이라고도 합니다. 데이터 파일만 포함하고 오프라인 백업에는 제어 파일을 포함할 수 있습니다. 오프라인 마운트 또는 오프라인 종료 백업을 생성할 수 있습니다.</block>
+  <block id="fd9859cb151774e34b52a6d747daab3d" category="list-text">검색 상자에 리소스 그룹 이름을 입력하거나 를 클릭합니다 <block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block>을 클릭하고 태그를 선택합니다.</block>
+  <block id="6baaca80281eda4a251e4e932a39cd4b" category="paragraph">을 클릭합니다 <block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="50aa129d52e712ab3c9a0f93f956d9e2" category="list-text">리소스 그룹 페이지에서 백업할 리소스 그룹을 선택합니다.</block>
+  <block id="3ce47918d2033ed0d68d1e7c6a9b1c45" category="admonition">두 개의 데이터베이스를 사용하는 통합 리소스 그룹이 있고 그 중 하나에 타사 스토리지에 대한 데이터가 있는 경우, 다른 데이터베이스가 NetApp 스토리지에 있더라도 백업 작업이 중단됩니다.</block>
+  <block id="5655480ae4615b223f1d67d63b4ee784" category="list-text">리소스 그룹에 연결된 정책이 여러 개인 경우 * 정책 * 드롭다운 목록에서 사용할 백업 정책을 선택합니다.</block>
+  <block id="fec2251f36365f1f041be06f3809bae9" category="list-text">백업 * 을 선택합니다.</block>
+  <block id="005c73b58486c2584da03a7d43bff568" category="list-text">모니터 &gt; 작업 * 을 선택하여 진행 상황을 모니터링합니다.</block>
+  <block id="1a48e10f2aae9eca9186a1b6176fb05a" category="list-text">파일을 액세스할 수 없고 확인 프로세스 중에 마운트 지점을 사용할 수 없는 경우 오류 코드 DBV-00100 지정된 파일로 인해 작업이 실패할 수 있습니다. sco.properties 에서 verification_delay_와 verification_retry_count 매개 변수의 값을 수정해야 합니다.</block>
+  <block id="510a95fea4bba025da5889c50cbbd219" category="summary">백업 보존 옵션</block>
+  <block id="47360f25b760514cfd5222ea8efb3fca" category="list-text">ASM 독립 실행형 및 RDM(ASM RAC on Raw Device Mapping)+ ASMLib를 사용하거나 사용하지 않고 ASM의 Oracle 데이터베이스에 대해 백업, 복원 및 클론 작업을 수행할 수 있습니다.</block>
+  <block id="d9f5c0652a9a0f5a632c2b39950788b1" category="paragraph">지원되는 Oracle 버전에 대한 최신 정보는 를 참조하십시오<block ref="ad50fcde58174eb161421bebd1f28ec8" category="inline-link-rx"></block>.</block>
+  <block id="a725ff47fefe45fbde2b714b9bee12db" category="summary">리소스 그룹은 백업 및 보호할 리소스를 추가하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다.</block>
+  <block id="75d10fc733cbe6199ca2e7cebf31fe9c" category="paragraph">Oracle DBVERIFY 유틸리티를 사용하여 백업을 확인하려면 ASM 디스크 그룹에 파일이 있는 데이터베이스가 "마운트" 또는 "열기" 상태여야 합니다.</block>
+  <block id="471e47d90bffd9838cf1d00548360b40" category="paragraph">하나 이상의 정책을 리소스 그룹에 연결하여 수행할 데이터 보호 작업의 유형을 정의합니다.</block>
+  <block id="8acf498a277189bb79aa36e916139901" category="list-text">이름 필드에 자원 그룹의 이름을 입력합니다.</block>
+  <block id="47389d06ffe3699c36bdd3b61cbdf438" category="list-text">나중에 리소스 그룹을 검색할 수 있도록 태그 필드에 하나 이상의 레이블을 입력합니다.</block>
+  <block id="ff3276d4a1ffa99a43f3ee9d1c3033ae" category="admonition">을 클릭하여 정책을 생성할 수도 있습니다 <block ref="494b170a0dd5e7fc7886f29293b0c5bc" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="21a93b161e735360df0b1231bd93b5fa" category="list-text">을 클릭합니다 <block ref="494b170a0dd5e7fc7886f29293b0c5bc" category="inline-image-macro-rx" type="image"></block> 스케줄을 구성할 정책에 대한 Configure Schedules 열에서</block>
+  <block id="4fbbc0d543d28393f6ded666ac8879d5" category="list-text">을 클릭합니다 <block ref="494b170a0dd5e7fc7886f29293b0c5bc" category="inline-image-macro-rx" type="image"></block> Configure Schedules 열에서 정책의 모든 스케줄 유형에 대한 검증 스케줄을 구성합니다.</block>
+  <block id="86091b14782c404e5145daaead644698" category="sidebar">백업 개요</block>
+  <block id="af46c480ec54c1f970bfe4a7284749a5" category="sidebar">백업 구성 정보</block>
+  <block id="eb241a142f75605588c77651c591cbd7" category="sidebar">지원되는 백업 구성</block>
+  <block id="7b5fc8f40436e2a3bd39d3f81c4d938f" category="sidebar">백업 유형</block>
+  <block id="4116ef53488b8262b4f31ee9190138d3" category="sidebar">사용할 선호 노드</block>
+  <block id="43b06239a1de902160f64efacd46fd64" category="sidebar">카탈로그 백업</block>
+  <block id="8d6dff35d77be2858cb012c9525717f5" category="sidebar">미리 정의된 환경 변수</block>
+  <block id="d275b6dbfd1b9b66915ebb6018551bec" category="sidebar">백업 보존</block>
+  <block id="12e6d0dc88f359dcf5383de2e7e9270d" category="sidebar">명명 규칙</block>
+  <block id="e9dd934a8e85b48c6d3946a93f06f678" category="sidebar">백업 전략 정의</block>
+  <block id="2f914c665c66ccefda5991dcf0a8eea3" category="sidebar">백업 요구 사항을 검토합니다</block>
+  <block id="a9f304050cba6c177490ec2a73015cbe" category="sidebar">Oracle 데이터베이스 살펴보기</block>
+  <block id="0a4a3719bc7519d1162060e0f0e08f8a" category="sidebar">백업 정책을 생성합니다</block>
+  <block id="53a051ccb17163d7cd9ed3432619fb1d" category="sidebar">리소스 그룹 생성(선택 사항)</block>
+  <block id="dc99555922001c1adae2d9d4baee2217" category="sidebar">백업 진행률을 모니터링합니다</block>
+  <block id="cfe10065fd0fa721a87935a2eac20f7b" category="sidebar">기타 백업 작업</block>
+  <block id="75b8e448161fa30feba883267dc81521" category="sidebar">UNIX 명령을 사용하여 백업합니다</block>
+  <block id="de148ec1fc3c9bb7b03f1506761bed93" category="sidebar">백업을 봅니다</block>
 </blocks>

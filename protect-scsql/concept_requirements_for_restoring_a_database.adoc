@@ -31,7 +31,7 @@ Microsoft SQL Server 백업용 SnapCenter 플러그인에서 SQL Server 데이�
 * 사용자 지정 로그 디렉토리 백업을 대체 호스트로 복원하는 경우 SnapCenter 서버 및 플러그인 호스트에 동일한 SnapCenter 버전이 설치되어 있어야 합니다.
 * Microsoft 핫픽스 KB2887595를 설치해야 합니다. KB2887595에 대한 자세한 내용은 Microsoft 지원 사이트 를 참조하십시오.
 +
-https://["Microsoft 지원 문서 2887595: Windows RT 8.1, Windows 8.1, Windows Server 2012 R2 업데이트 롤업: 2013년 11월"]
+https://support.microsoft.com/kb/2887595["Microsoft 지원 문서 2887595: Windows RT 8.1, Windows 8.1, Windows Server 2012 R2 업데이트 롤업: 2013년 11월"]
 
 * 리소스 그룹 또는 데이터베이스를 백업해야 합니다.
 * 스냅샷 복사본을 미러 또는 볼트에 복제하는 경우 SnapCenter 관리자는 소스 볼륨과 타겟 볼륨 모두에 SVM(스토리지 가상 머신)을 할당해야 합니다.

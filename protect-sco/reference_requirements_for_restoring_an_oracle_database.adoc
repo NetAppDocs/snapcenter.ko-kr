@@ -23,7 +23,7 @@ Oracle 데이터베이스를 복구하기 전에 사전 요구 사항이 완료�
 * ASM_diskstring 매개 변수에서 ASMFD 또는 configure_ORCL: *_을 사용하는 경우 ASMlib를 사용하는 경우 _AFD: *_를 구성해야 합니다.
 +
 
-NOTE: ASM_diskstring 매개 변수를 편집하는 방법에 대한 자세한 내용은 을 참조하십시오 https://["ASM_diskstring에 디스크 경로를 추가하는 방법"^]
+NOTE: ASM_diskstring 매개 변수를 편집하는 방법에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Disk_paths_are_not_added_to_the_asm_diskstring_database_parameter["ASM_diskstring에 디스크 경로를 추가하는 방법"^]
 
 * 비 ASM 데이터베이스의 경우 _$oracle_home/network/admin_에서 사용할 수 있는 * listener.ora * 파일의 정적 수신기를 구성하고, Oracle 데이터베이스의 경우 OS 인증을 사용하지 않고 Oracle 데이터베이스 인증을 활성화한 경우 ASM 데이터베이스의 경우 _$grid_home/network/admin_에서 해당 데이터베이스의 데이터 파일 및 제어 파일을 복원해야 합니다.
 * 데이터베이스 크기가 테라바이트(TB)인 경우 Set-SmConfigSettings 명령을 실행하여 ScCORestoreTimeout 매개 변수의 값을 늘려야 합니다.

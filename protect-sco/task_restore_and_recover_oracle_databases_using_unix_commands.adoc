@@ -17,7 +17,7 @@ summary: 복원 및 복구 워크플로에는 계획, 복원 및 복구 작업 �
 
 다음 명령을 실행하여 SnapCenter 서버와의 연결을 설정하고, 백업을 나열하고, 해당 정보를 검색하고, 백업을 복원해야 합니다.
 
-명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://["SnapCenter 소프트웨어 명령 참조 가이드"^].
+명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885486["SnapCenter 소프트웨어 명령 참조 가이드"^].
 
 * 단계 *
 

@@ -23,7 +23,7 @@ NOTE: NetApp SnapManager 제품에서 SnapCenter으로 오고 있으며 구성�
 
 NOTE: SnapCenter는 SnapMirror와 SnapVault 볼륨(* Primary * > * Mirror * > * Vault *) 간의 계단식 관계를 지원하지 않습니다. 팬아웃 관계를 사용해야 합니다.
 
-SnapCenter는 버전에 상관없이 유연한 SnapMirror 관계의 관리를 지원합니다. 버전에 상관없이 유연한 SnapMirror 관계와 설정 방법에 대한 자세한 내용은 를 참조하십시오 http://["ONTAP 설명서"^].
+SnapCenter는 버전에 상관없이 유연한 SnapMirror 관계의 관리를 지원합니다. 버전에 상관없이 유연한 SnapMirror 관계와 설정 방법에 대한 자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.ic-base%2Fresources%2Fhome.html["ONTAP 설명서"^].
 
 
 NOTE: SnapCenter는 * SYNC_MIRROR * 복제를 지원하지 않습니다.

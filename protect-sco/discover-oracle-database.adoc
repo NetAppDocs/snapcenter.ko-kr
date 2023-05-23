@@ -1,0 +1,65 @@
+---
+permalink: protect-sco/discover-oracle-database.html 
+sidebar: sidebar 
+keywords: oracle databases discover 
+summary: SnapCenter가 Oracle 데이터베이스를 검색하는 방법 
+---
+= SnapCenter가 Oracle 데이터베이스를 검색하는 방법
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+리소스는 SnapCenter에서 유지 관리하는 호스트의 Oracle 데이터베이스입니다. 사용 가능한 데이터베이스를 발견한 후 이러한 데이터베이스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있습니다.
+
+다음 섹션에서는 SnapCenter가 다양한 유형의 Oracle 데이터베이스를 검색하는 데 사용하는 프로세스에 대해 설명합니다.
+
+
+
+== Oracle 버전 11__g_ ~ 12__c__R1
+
+.RAC 데이터베이스
+RAC 데이터베이스는 /etc/oratab 항목을 기준으로 검색됩니다. /etc/oratab 파일에 데이터베이스 항목이 있어야 합니다.
+
+.독립 실행형
+독립 실행형 데이터베이스는 /etc/oratab 항목을 기준으로 검색됩니다.
+
+.ASM
+ASM 인스턴스 항목은 /etc/oratab 파일에서 사용할 수 있어야 합니다.
+
+.RAC One Node
+RAC One Node 데이터베이스는 /etc/oratab 항목을 기준으로 검색됩니다. 데이터베이스는 nomount, mount 또는 open 상태여야 합니다. /etc/oratab 파일에 데이터베이스 항목이 있어야 합니다.
+
+데이터베이스가 이미 검색되고 백업이 데이터베이스에 연결되어 있는 경우 RAC One Node 데이터베이스 상태가 이름 변경 또는 삭제됨으로 표시됩니다.
+
+데이터베이스가 재배치되면 다음 단계를 수행해야 합니다.
+
+. 페일오버된 RAC 노드의 /etc/oratab 파일에 재배치된 데이터베이스 항목을 수동으로 추가합니다.
+. 리소스를 수동으로 새로 고칩니다.
+. 리소스 페이지에서 RAC One Node 데이터베이스를 선택한 다음 데이터베이스 설정을 클릭합니다.
+. 데이터베이스를 현재 데이터베이스를 호스팅하는 RAC 노드에 기본 클러스터 노드를 설정하도록 데이터베이스를 구성합니다.
+. SnapCenter 작업을 수행합니다.
+. 한 노드에서 다른 노드로 데이터베이스를 재배치하고 이전 노드의 oratab 항목이 삭제되지 않은 경우 동일한 데이터베이스가 두 번 표시되지 않도록 oratab 항목을 수동으로 삭제하십시오.
+
+
+
+
+== Oracle 버전 12cR2 ~ 18C의 경우
+
+.RAC 데이터베이스
+srvctl config 명령을 사용하여 RAC 데이터베이스를 검색할 수 있습니다. /etc/oratab 파일에 데이터베이스 항목이 있어야 합니다.
+
+.독립 실행형
+독립 실행형 데이터베이스는 /etc/oratab 파일의 항목과 srvctl config 명령의 출력을 기반으로 검색됩니다.
+
+.ASM
+ASM 인스턴스 항목은 /etc/oratab 파일에 있을 필요가 없습니다.
+
+.RAC One Node
+srvctl config 명령만 사용하여 RAC One Node 데이터베이스를 검색할 수 있습니다. 데이터베이스는 nomount, mount 또는 open 상태여야 합니다. 데이터베이스가 이미 검색되고 백업이 데이터베이스에 연결되어 있는 경우 RAC One Node 데이터베이스 상태가 이름 변경 또는 삭제됨으로 표시됩니다.
+
+데이터베이스가 재배치되면 다음 단계를 수행해야 합니다. 리소스를 수동으로 새로 고칩니다. . 리소스 페이지에서 RAC One Node 데이터베이스를 선택한 다음 데이터베이스 설정을 클릭합니다. . 데이터베이스를 현재 데이터베이스를 호스팅하는 RAC 노드에 기본 클러스터 노드를 설정하도록 데이터베이스를 구성합니다. . SnapCenter 작업을 수행합니다.
+
+
+NOTE: /etc/oratab 파일에 Oracle 12__c__r2 및 18__c__database 항목이 있고 동일한 데이터베이스가 srvctl config 명령에 등록되어 있는 경우 SnapCenter는 중복 데이터베이스 항목을 제거합니다. 오래된 데이터베이스 항목이 있으면 데이터베이스가 검색되지만 데이터베이스에 연결할 수 없으며 상태가 오프라인 상태가 됩니다.

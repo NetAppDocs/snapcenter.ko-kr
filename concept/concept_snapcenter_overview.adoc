@@ -55,7 +55,7 @@ ONTAP 시스템에서 실행되는 Microsoft Exchange Server, Microsoft SQL Serv
 사용자 정의 SnapCenter 플러그인을 만들 수 있는 프레임워크를 제공하여 다른 표준 또는 사용자 지정 애플리케이션 및 데이터베이스에서도 데이터 보호가 지원됩니다. 따라서 동일한 단일 창에서 다른 애플리케이션과 데이터베이스의 데이터를 보호할 수 있습니다. NetApp은 이 프레임워크를 활용하여 NetApp 자동화 스토어에서 IBM DB2, MongoDB, MySQL용 SnapCenter 맞춤형 플러그인을 출시했습니다.
 
 +
-https://["NetApp 스토리지 자동화 스토어"^]
+https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^]
 
 * 정책 기반 백업
 +
@@ -82,13 +82,13 @@ SnapCenter GUI는 하이브리드 클라우드의 모든 대상에서 리소스�
 SnapCenter에는 모든 오케스트레이션 소프트웨어와 통합할 수 있는 대부분의 기능, Windows PowerShell cmdlet 및 명령줄 인터페이스 사용을 위한 REST API가 포함되어 있습니다.
 
 +
-REST API에 대한 자세한 내용은 를 참조하십시오 https://["REST API 개요"].
+REST API에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/sc-automation/overview_rest_apis.html["REST API 개요"].
 
 +
-Windows cmdlet에 대한 자세한 내용은 을 참조하십시오 https://["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+Windows cmdlet에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 +
-UNIX 명령에 대한 자세한 내용은 을 참조하십시오 https://["SnapCenter 소프트웨어 명령 참조 가이드"^].
+UNIX 명령에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885486["SnapCenter 소프트웨어 명령 참조 가이드"^].
 
 * 중앙 집중식 데이터 보호 대시보드 및 보고
 * 보안 및 위임을 위한 역할 기반 액세스 제어(RBAC).
@@ -158,7 +158,7 @@ NOTE: UNIX용 SnapCenter 플러그인은 독립 실행형 플러그인이 아니
 
 * SnapCenter 맞춤형 플러그인
 +
-사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 있습니다 https://["NetApp 스토리지 자동화 스토어"^].
+사용자 지정 플러그인은 커뮤니티에서 지원되며 에서 다운로드할 수 있습니다 https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^].
 
 
 
@@ -265,7 +265,7 @@ Linux 또는 Windows
  a| 
 맞춤형 플러그인
  a| 
-https://["NetApp 스토리지 자동화 스토어"^]
+https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^]
  a| 
 파일 시스템 백업의 경우 Windows용 플러그인
  a| 
@@ -277,7 +277,7 @@ Linux 또는 Windows
 
 NOTE: VMware vSphere용 SnapCenter 플러그인은 가상 머신(VM), 데이터 저장소 및 가상 머신 디스크(VMDK)에 대해 충돌 시에도 정합성이 보장되고 VM 정합성이 보장되는 백업 및 복원 작업을 지원하며, SnapCenter 애플리케이션별 플러그인을 지원하여 가상화된 데이터베이스 및 파일 시스템에 대한 애플리케이션 정합성이 보장되는 백업 및 복구 작업을 보호합니다.
 
-SnapCenter 4.1.1 사용자의 경우 VMware vSphere 4.1.1 용 SnapCenter 플러그인 설명서에 가상화 데이터베이스와 파일 시스템을 보호하는 방법에 대한 정보가 나와 있습니다. SnapCenter 4.2.x 사용자, NetApp Data Broker 1.0 및 1.0.1의 경우, Linux 기반 NetApp Data Broker 가상 어플라이언스(Open Virtual Appliance 형식)에서 제공하는 VMware vSphere용 SnapCenter 플러그인을 사용하여 가상화된 데이터베이스 및 파일 시스템을 보호하는 방법에 대한 정보가 수록되어 있습니다. SnapCenter 4.3 이상을 사용하는 사용자의 경우 를 참조하십시오 https://["VMware vSphere용 SnapCenter 플러그인 설명서"^] 에는 VMware vSphere 가상 어플라이언스용 Linux 기반 SnapCenter 플러그인(오픈 가상 어플라이언스 형식)을 사용하여 가상화된 데이터베이스와 파일 시스템을 보호하는 방법에 대한 정보가 있습니다.
+SnapCenter 4.1.1 사용자의 경우 VMware vSphere 4.1.1 용 SnapCenter 플러그인 설명서에 가상화 데이터베이스와 파일 시스템을 보호하는 방법에 대한 정보가 나와 있습니다. SnapCenter 4.2.x 사용자, NetApp Data Broker 1.0 및 1.0.1의 경우, Linux 기반 NetApp Data Broker 가상 어플라이언스(Open Virtual Appliance 형식)에서 제공하는 VMware vSphere용 SnapCenter 플러그인을 사용하여 가상화된 데이터베이스 및 파일 시스템을 보호하는 방법에 대한 정보가 수록되어 있습니다. SnapCenter 4.3 이상을 사용하는 사용자의 경우 를 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html["VMware vSphere용 SnapCenter 플러그인 설명서"^] 에는 VMware vSphere 가상 어플라이언스용 Linux 기반 SnapCenter 플러그인(오픈 가상 어플라이언스 형식)을 사용하여 가상화된 데이터베이스와 파일 시스템을 보호하는 방법에 대한 정보가 있습니다.
 
 
 
@@ -348,7 +348,7 @@ SAN 디바이스에 구축된 SAN 네이티브 디바이스, 파일 시스템 �
 * Windows 환경과 Linux 환경을 모두 지원합니다. Windows 환경에서 사용자 지정 플러그인을 통한 사용자 지정 애플리케이션은 필요에 따라 Microsoft Windows용 SnapCenter 플러그인을 사용하여 파일 시스템의 일관된 백업을 수행할 수 있습니다.
 
 
-SnapCenter 소프트웨어용 MySQL, DB2 및 MongoDB 맞춤형 플러그인 샘플은 에서 다운로드할 수 있습니다 https://["NetApp 스토리지 자동화 스토어"^].
+SnapCenter 소프트웨어용 MySQL, DB2 및 MongoDB 맞춤형 플러그인 샘플은 에서 다운로드할 수 있습니다 https://automationstore.netapp.com/home.shtml["NetApp 스토리지 자동화 스토어"^].
 
 
 NOTE: MySQL, DB2 및 MongoDB 맞춤형 플러그인은 NetApp 커뮤니티를 통해서만 지원됩니다.

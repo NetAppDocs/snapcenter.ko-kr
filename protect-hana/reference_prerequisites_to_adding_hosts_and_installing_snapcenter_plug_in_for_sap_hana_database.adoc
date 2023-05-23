@@ -35,10 +35,10 @@ NOTE: IBM Java는 지원되지 않습니다.
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
 * Windows 호스트에 Java 1.8 64비트를 설치해야 합니다.
 +
-http://["모든 운영 체제에 대한 Java 다운로드"]
+http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
 
 +
-https://["NetApp 상호 운용성 매트릭스 툴"]
+https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
 
 
@@ -49,10 +49,10 @@ https://["NetApp 상호 운용성 매트릭스 툴"]
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
 * Linux 호스트에 Java 1.8 64비트를 설치해야 합니다.
 +
-http://["모든 운영 체제에 대한 Java 다운로드"]
+http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
 
 +
-https://["NetApp 상호 운용성 매트릭스 툴"]
+https://imt.netapp.com/matrix/imt.jsp?components=108391;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
 * Linux 호스트에서 실행되는 SAP HANA 데이터베이스의 경우 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인은 자동으로 설치됩니다.
 

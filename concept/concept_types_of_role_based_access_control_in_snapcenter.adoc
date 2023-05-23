@@ -67,7 +67,7 @@ SnapCenter는 자격 증명을 사용하여 권한이 있는 SnapCenter 사용�
 
 VM 일관성 있는 데이터 보호를 위해 SnapCenter VMware 플러그인을 사용하는 경우 vCenter Server는 추가 RBAC 수준을 제공합니다. SnapCenter VMware 플러그인은 vCenter Server RBAC와 Data ONTAP RBAC를 모두 지원합니다.
 
-자세한 내용은 을 참조하십시오 https://["VMware vSphere용 SnapCenter 플러그인 RBAC"^]
+자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_role_based_access_control.html["VMware vSphere용 SnapCenter 플러그인 RBAC"^]
 
 
 

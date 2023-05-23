@@ -65,4 +65,4 @@ image::../media/upgrade_workflow.png[워크플로우 업그레이드]
 IMPORTANT: 예를 들어 SnapCenter 버전 4.4.x를 사용 중인 경우 4.7로 업그레이드하려면 먼저 4.6.x로 업그레이드한 다음 4.7로 롤링 업그레이드를 수행해야 합니다.
 
 
-NOTE: VMware vSphere용 SnapCenter 플러그인 업그레이드에 대한 자세한 내용은 을 참조하십시오 https://["VMware vSphere용 SnapCenter 플러그인 업그레이드"^].
+NOTE: VMware vSphere용 SnapCenter 플러그인 업그레이드에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html["VMware vSphere용 SnapCenter 플러그인 업그레이드"^].

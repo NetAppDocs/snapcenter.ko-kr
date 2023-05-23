@@ -80,7 +80,7 @@ SnapCenter 용량 기반 라이센스 일련 번호는 주문 확인 또는 문�
 
 * 단계 *
 
-. NetApp Support 사이트 에 로그인합니다 http://["mysupport.netapp.com"^].
+. NetApp Support 사이트 에 로그인합니다 http://mysupport.netapp.com/["mysupport.netapp.com"^].
 . 시스템 * > * 소프트웨어 라이센스 * 로 이동합니다.
 . 선택 기준 영역의 모두 표시: 일련 번호 및 라이센스 드롭다운 메뉴에서 * SC_STANDARD * 를 선택합니다.
 +
@@ -108,7 +108,7 @@ SnapCenter GUI에 NetApp Support 사이트 자격 증명과 SnapCenter 라이센
 
 * 단계 *
 
-. 로 이동합니다 https://["NetApp 라이센스 파일 생성기"^].
+. 로 이동합니다 https://register.netapp.com/register/eclg.xwic["NetApp 라이센스 파일 생성기"^].
 . 필요한 정보를 입력합니다.
 . 제품 라인 필드의 풀다운 메뉴에서 * SnapCenter 표준(용량 기반) * 을 선택합니다.
 . 제품 일련 번호 필드에 SnapCenter 라이센스 일련 번호를 입력합니다

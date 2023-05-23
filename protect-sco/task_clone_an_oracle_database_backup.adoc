@@ -345,7 +345,7 @@ AIX 설정에서 lkdev 명령을 사용하여 잠그고 rendev 명령을 사용�
 
 * 자세한 정보 찾기 *
 
-* https://["ORA-00308 오류 메시지와 함께 복구 또는 클론 생성이 실패합니다"^]
-* https://["복제된 데이터베이스를 복구하지 못했습니다"^]
-* https://["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc["ORA-00308 오류 메시지와 함께 복구 또는 클론 생성이 실패합니다"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Failed_to_recover_a_cloned_database["복제된 데이터베이스를 복구하지 못했습니다"^]
+* https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/What_are_the_customizable_parameters_for_backup_restore_and_clone_operations_on_AIX_systems["AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수"^]
 

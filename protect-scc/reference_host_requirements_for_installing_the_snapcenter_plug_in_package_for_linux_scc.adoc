@@ -52,4 +52,4 @@ Java 1.8(64비트) Oracle Java 또는 OpenJDK Flavors
 Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.
 
 |===
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://["NetApp 상호 운용성 매트릭스 툴"]
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=108393;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]

@@ -1,0 +1,18 @@
+---
+permalink: protect-sco/verify-backups.html 
+sidebar: sidebar 
+keywords: oracle databases backup 
+summary: 운영 또는 보조 스토리지 볼륨을 사용하여 백업 복사본을 확인합니다. 
+---
+= 백업 사본을 확인할 위치
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+운영 스토리지 볼륨 또는 SnapMirror 또는 SnapVault 보조 스토리지 볼륨에서 백업 복사본을 확인할 수 있습니다. 보조 스토리지 볼륨을 사용하여 검증하면 운영 스토리지 볼륨의 로드가 감소합니다.
+
+운영 또는 2차 스토리지 볼륨에 있는 백업을 확인하면 모든 운영 및 2차 스냅샷 복사본이 확인됨 으로 표시됩니다.
+
+SnapMirror 및 SnapVault 2차 스토리지 볼륨의 백업 복사본을 확인하려면 SnapRestore 라이센스가 필요합니다.

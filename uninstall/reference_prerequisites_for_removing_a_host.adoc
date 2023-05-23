@@ -47,4 +47,4 @@ SnapCenter 서버에서 호스트를 제거하기 전에 사전 요구 사항을
 * SnapCenter를 RBAC 사용자로 로그인해야 합니다.
 
 
-VMware vSphere용 SnapCenter 플러그인 제거에 대한 자세한 내용은 을 참조하십시오 https://["VMware vSphere용 SnapCenter 플러그인을 제거합니다"^].
+VMware vSphere용 SnapCenter 플러그인 제거에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#remove-snapcenter-plug-in-for-vmware-vsphere["VMware vSphere용 SnapCenter 플러그인을 제거합니다"^].

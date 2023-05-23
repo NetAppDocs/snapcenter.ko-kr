@@ -24,7 +24,7 @@ image::../media/scsql_backup_workflow.png[SCSQL 백업 워크플로우]
 
 NOTE: NetApp이 아닌 LUN, 손상된 데이터베이스 또는 복원 중인 데이터베이스를 선택하면 Resources 페이지의 Backup Now, Restore, Manage Backups 및 Clone 옵션이 비활성화됩니다.
 
-PowerShell cmdlet을 수동으로 또는 스크립트에서 사용하여 백업, 복원, 복구, 확인 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://["SnapCenter 소프트웨어 cmdlet 참조 가이드"]
+PowerShell cmdlet을 수동으로 또는 스크립트에서 사용하여 백업, 복원, 복구, 확인 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"]
 
 
 

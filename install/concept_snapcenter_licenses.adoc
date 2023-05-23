@@ -106,6 +106,6 @@ NOTE: SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 
 
 Exchange용 SnapCenter 플러그인을 사용하여 Microsoft Exchange Server 데이터베이스 및 SMBR(Single Mailbox Recovery)을 관리하는 경우 사용자 메일박스를 기준으로 별도로 구입해야 하는 SMBR용 추가 라이센스가 필요합니다.
 
-1000, 5000, 15000 및 25000 사서함 번들 단위로 제공되는 SMBR 라이센스를 구입하려면 NetApp 세일즈 담당자에게 문의하십시오. SKU를 구입한 후에는 의 지침에 따라 라이센스를 얻을 수 있습니다 https://["SMBR 릴리스 노트"^].
+1000, 5000, 15000 및 25000 사서함 번들 단위로 제공되는 SMBR 라이센스를 구입하려면 NetApp 세일즈 담당자에게 문의하십시오. SKU를 구입한 후에는 의 지침에 따라 라이센스를 얻을 수 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2863893["SMBR 릴리스 노트"^].
 
 라이센스 키 요청을 제출하면 Kroll Ontrack이 50개의 메일박스 라이센스 키를 발급합니다. 귀하의 소유 권한에 따라 Kroll Ontrack은 확인 후 사서함의 라이센스를 업그레이드합니다.
