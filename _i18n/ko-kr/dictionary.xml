@@ -3057,7 +3057,6 @@
   <block id="6246f3e3294191ea51e0e29f715acfad" category="list-text">업그레이드 중에는 호스트가 예약된 작업을 실행하지 못하도록 유지 보수 모드로 자동 전환됩니다. 업그레이드 후 호스트가 자동으로 유지 보수 모드에서 해제됩니다.</block>
   <block id="a6230500cc307e0a76e575726dcf9cdd" category="list-text">업그레이드 중에 SQL 스크립트를 실행하여 NSM 데이터베이스에서 Exchange 데이터를 업데이트합니다. 그러면 DAG 및 호스트 단축 이름이 FQDN으로 변환됩니다. 이 기능은 Exchange 플러그인이 있는 SnapCenter 서버를 사용하는 경우에만 적용됩니다.</block>
   <block id="9b8f4a16b159f7670582bbc9d12e5328" category="list-text">업그레이드 작업을 시작하기 전에 호스트를 유지 관리 모드로 수동으로 배치한 경우 업그레이드 후 * 호스트 * &gt; * 스케줄 활성화 * 를 클릭하여 호스트를 유지 관리 모드에서 수동으로 해제해야 합니다.</block>
-  <block id="fef826a349ca99b933042ba1dfa73260" category="paragraph">4.4.x</block>
   <block id="4b1f6cbbab8f5d76a3e1d1b2c562722e" category="paragraph">4.5.x</block>
   <block id="d6d9056bd3ccaf6f2ea25c46f86b217c" category="list-text">NetApp Support 사이트에서 SnapCenter 서버 설치 패키지를 다운로드하십시오.</block>
   <block id="8e3a959801db0274c8bf2982a663244b" category="paragraph"><block ref="8e3a959801db0274c8bf2982a663244b" category="inline-link-rx"></block></block>
@@ -7358,7 +7357,6 @@
   <block id="8159134911a3775f77dfaeafb846c0d3" category="paragraph">Job details * 페이지에서 스크립트를 scripts_path에 복사하고 정책을 편집하여 scripts_path와 관련된 경로를 제공하는 것이 좋습니다. 클론 수명주기 작업의 경우 하위 작업 레벨에 경고 메시지가 표시됩니다.</block>
   <block id="adebd9b53fa49781be98cf46c0afc646" category="summary">에서는 SnapCenter 서버 및 플러그인을 업그레이드하는 방법과 지원되는 업그레이드 경로를 설명합니다</block>
   <block id="820341dc67dd887805f2620efabe6669" category="cell">4.7</block>
-  <block id="e581eab69cb147759b9dbeb0af1e93f2" category="admonition">예를 들어 SnapCenter 버전 4.4.x를 사용 중인 경우 4.7로 업그레이드하려면 먼저 4.6.x로 업그레이드한 다음 4.7로 롤링 업그레이드를 수행해야 합니다.</block>
   <block id="7cbf140d17e0f4c0fe27276252add63e" category="list-text">다음 형식으로 사용자 그룹 계정을 만듭니다.</block>
   <block id="780fc7bdbc05c3ae8dcfc1e6ea26a283" category="list-text">scripts_path는 플러그인 호스트의 SMCoreServiceHost.exe.Config 파일에 있는 PredefinedWindowsScriptsDirectory 키를 사용하여 정의됩니다.</block>
   <block id="487a34d280250073f86b353bd430b05b" category="paragraph">필요한 경우 이 경로를 변경하고 SMcore 서비스를 다시 시작할 수 있습니다. 보안을 위해 기본 경로를 사용하는 것이 좋습니다.</block>
@@ -8126,4 +8124,6 @@
   <block id="392e651b70e91641288713738f526ce0" category="section-title">6단계: 평가판 라이센스를 제거합니다</block>
   <block id="46d55a8aefdec15a8ce44087c8123826" category="inline-link">LUN에 대한 디바이스를 검색할 수 없어 작업이 실패합니다</block>
   <block id="24642a08e354f43168ca4f1178850f84" category="list-text">혼합 프로토콜 iSCSI 및 FC로 구성된 iGroup을 사용하여 LUN이 AIX 호스트에 매핑되지 않았는지 확인해야 합니다. 자세한 내용은 을 참조하십시오<block ref="94f247529a6b6f563b3a8d4772877431" category="inline-link-rx"></block>.</block>
+  <block id="4fb437564892944d73f87c822342e2bb" category="cell">4.8</block>
+  <block id="7d9be6a6877ece66779a3e8834d493df" category="admonition">예를 들어 SnapCenter 버전 4.5.x를 사용 중인 상태에서 4.8로 업그레이드하려면 먼저 4.6.x로 업그레이드한 다음 4.8로 롤링 업그레이드를 수행해야 합니다.</block>
 </blocks>
