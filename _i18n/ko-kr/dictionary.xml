@@ -8124,4 +8124,6 @@
   <block id="6c0673b42ebb5475d507b9bee432a6e1" category="image-alt">선택 기준 및 일련 번호 입력 스크린샷</block>
   <block id="e54115ab5aedb070ef9c763b003e67f1" category="section-title">5단계: 컨트롤러 기반 라이센스 추가</block>
   <block id="392e651b70e91641288713738f526ce0" category="section-title">6단계: 평가판 라이센스를 제거합니다</block>
+  <block id="46d55a8aefdec15a8ce44087c8123826" category="inline-link">LUN에 대한 디바이스를 검색할 수 없어 작업이 실패합니다</block>
+  <block id="24642a08e354f43168ca4f1178850f84" category="list-text">혼합 프로토콜 iSCSI 및 FC로 구성된 iGroup을 사용하여 LUN이 AIX 호스트에 매핑되지 않았는지 확인해야 합니다. 자세한 내용은 을 참조하십시오<block ref="94f247529a6b6f563b3a8d4772877431" category="inline-link-rx"></block>.</block>
 </blocks>
