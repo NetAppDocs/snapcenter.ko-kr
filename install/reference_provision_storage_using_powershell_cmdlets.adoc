@@ -15,6 +15,6 @@ SnapCenter GUI를 사용하여 호스트 프로비저닝 및 공간 재확보 �
 
 원격 플러그인 호스트에서 cmdlet을 실행하는 경우 SnapCenter Open-SMConnection cmdlet을 실행하여 SnapCenter 서버에 대한 연결을 열어야 합니다.
 
-cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 서버에서 Windows용 SnapDrive를 제거하여 SnapCenter PowerShell cmdlet이 손상된 경우 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_cmdlets_broken_when_SnapDrive_for_Windows_is_uninstalled["Windows용 SnapDrive를 제거하면 SnapCenter cmdlet이 중단됨"^].

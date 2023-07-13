@@ -11,20 +11,20 @@ summary: SnapCenter는 엄격한 보안 및 인증 기능을 사용하여 데이
 
 
 [role="lead"]
-이 항목에서는 AD FS(Active Directory Federation Service) 서버 및 SnapCenter 서버에서 MFA(Multi-Factor Authentication) 기능을 관리하는 방법에 대해 설명합니다.
+AD FS(Active Directory Federation Service) 서버 및 SnapCenter 서버에서 MFA(Multi-Factor Authentication) 기능을 관리할 수 있습니다.
 
 
 
 == 멀티팩터 인증(MFA) 활성화
 
-이 항목에서는 AD FS(Active Directory Federation Service) 서버 및 SnapCenter 서버에서 MFA 기능을 사용하도록 설정하는 방법에 대해 설명합니다.
+PowerShell 명령을 사용하여 SnapCenter Server에 MFA 기능을 사용하도록 설정할 수 있습니다.
 
 .이 작업에 대해
 * SnapCenter는 다른 애플리케이션이 동일한 AD FS에 구성되어 있을 때 SSO 기반 로그인을 지원합니다. 특정 AD FS 구성에서 SnapCenter는 AD FS 세션 지속성에 따라 보안상의 이유로 사용자 인증을 요구할 수 있습니다.
-* cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 를 실행하여 얻을 수 있습니다 `Get-Help command_name`. 또는 를 볼 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880726["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+* cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 를 실행하여 얻을 수 있습니다 `Get-Help command_name`. 또는 를 볼 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 
-.필요한 것
+.시작하기 전에
 * Windows AD FS(Active Directory Federation Service)가 해당 도메인에서 실행 중이어야 합니다.
 * Azure MFA, Cisco Duo 등과 같은 AD FS 지원 다중 요소 인증 서비스가 있어야 합니다.
 * SnapCenter 및 AD FS 서버 타임 스탬프는 시간대와 상관없이 동일해야 합니다.
@@ -53,10 +53,7 @@ CA 인증서에 대한 자세한 내용은 을 참조하십시오 link:../instal
 path 매개 변수는 SnapCenter 서버 호스트에 MFA 메타데이터 파일을 저장할 경로를 지정합니다.
 
 . 생성된 파일을 AD FS 호스트에 복사하여 SnapCenter를 클라이언트 엔터티로 구성합니다.
-. 를 사용하여 SnapCenter 서버에 대해 MFA를 활성화합니다 `Set-SmMultiFactorAuthentication -Enable -Path` cmdlet.
-+
-path 매개 변수는 3단계에서 SnapCenter 서버로 복제된 AD FS MFA 메타데이터 XML 파일의 위치를 지정합니다.
-
+. 를 사용하여 SnapCenter 서버에 대해 MFA를 활성화합니다 `Set-SmMultiFactorAuthentication` cmdlet.
 . (선택 사항) 를 사용하여 MFA 구성 상태 및 설정을 확인합니다 `Get-SmMultiFactorAuthentication` cmdlet.
 . MMC(Microsoft Management Console)로 이동하여 다음 단계를 수행하십시오.
 +
@@ -119,7 +116,7 @@ SnapCenter는 이제 제공된 표시 이름을 가진 의존자로 반영됩니
 
 SnapCenter MFA 기능은 REST API를 사용하여 활성화할 수도 있습니다.
 
-을 참조하십시오. 을 참조하십시오 link:..https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_login_in_multiple_tabs_shows_MFA_error%3A_The_SAML_message_response_(1)_doesn%E2%80%99t_match_the_expected_response_(2)["여러 탭의 SnapCenter 로그인에 MFA 오류가 표시됩니다"].
+문제 해결에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_MFA_login_error_The_SAML_message_response_1_doesnt_match_the_expected_response_2["여러 탭에서 동시 로그인 시도 시 MFA 오류가 표시됩니다"].
 
 
 
@@ -165,6 +162,6 @@ AD FS 서버에 업그레이드, CA 인증서 갱신, DR 등과 같은 수정 �
 == MFA(Multi-Factor Authentication) 비활성화
 
 .단계
-. MFA를 비활성화하고 를 사용하여 MFA를 활성화했을 때 생성된 구성 파일을 정리합니다 `Set-SmMultiFactorAuthentication -Disable` cmdlet.
+. MFA를 비활성화하고 를 사용하여 MFA를 활성화했을 때 생성된 구성 파일을 정리합니다 `Set-SmMultiFactorAuthentication` cmdlet.
 . 모든 브라우저 탭을 닫고 브라우저를 다시 열어 기존 또는 활성 세션 쿠키를 지우고 다시 로그인합니다.
 

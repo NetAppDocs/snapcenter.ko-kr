@@ -1,0 +1,56 @@
+---
+permalink: install/task_import_ca_certificate_to_windows_plugin_hosts.html 
+sidebar: sidebar 
+keywords: security,authentication, export CA certificates 
+summary: 내보낸 SnapCenter 서버 CA 인증서를 사용하려면 관련 인증서를 SnapCenter Windows 플러그인 호스트로 가져와야 합니다 
+---
+= CA(인증 기관) 인증서를 Windows 플러그인 호스트로 가져옵니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+내보낸 SnapCenter 서버 CA 인증서를 사용하려면 Microsoft 관리 콘솔(MMC)을 사용하여 관련 인증서를 SnapCenter Windows 플러그인 호스트로 가져와야 합니다.
+
+* 단계 *
+
+. MMC(Microsoft Management Console)로 이동한 다음 * 파일 * > * Snapin 추가/제거 * 를 클릭합니다.
+. 스냅인 추가/제거 창에서 * 인증서 * 를 선택한 다음 * 추가 * 를 클릭합니다.
+. 인증서 스냅인 창에서 * 컴퓨터 계정 * 옵션을 선택한 다음 * 마침 * 을 클릭합니다.
+. 콘솔 루트 * > * 인증서 - 로컬 컴퓨터 * > * 개인 * > * 인증서 * 를 클릭합니다.
+. "개인" 폴더를 마우스 오른쪽 단추로 클릭한 다음 * 모든 작업 * > * 가져오기 * 를 선택하여 가져오기 마법사를 시작합니다.
+. 마법사에서 다음 작업을 수행합니다.
+
+
+|===
+| 이 옵션의 경우... | 다음을 수행합니다. 
+
+
+ a| 
+매장 위치
+ a| 
+다음 * 을 클릭합니다.
+
+
+
+ a| 
+가져올 파일
+ a| 
+cer 확장자로 끝나는 SnapCenter 서버 인증서를 선택합니다.
+
+
+
+ a| 
+인증서 저장소
+ a| 
+다음 * 을 클릭합니다.
+
+
+
+ a| 
+인증서 내보내기 마법사를 완료합니다
+ a| 
+요약을 검토한 후 * Finish * 를 클릭하여 가져오기를 시작합니다.
+
+|===

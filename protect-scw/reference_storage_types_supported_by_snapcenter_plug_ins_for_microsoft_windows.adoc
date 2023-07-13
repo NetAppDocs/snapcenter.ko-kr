@@ -13,7 +13,8 @@ summary: SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양�
 [role="lead"]
 SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. 호스트에 대한 패키지를 설치하기 전에 스토리지 유형에 대한 지원이 가능한지 확인해야 합니다.
 
-SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 를 참조하십시오  https://imt.netapp.com/matrix/imt.jsp?components=108395;&solution=1258&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 를 참조하십시오
+https://imt.netapp.com/matrix/imt.jsp?components=112389;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
 
 |===
 | 기계 | 스토리지 유형입니다 | 를 사용하여 프로비저닝 | 지원 노트 

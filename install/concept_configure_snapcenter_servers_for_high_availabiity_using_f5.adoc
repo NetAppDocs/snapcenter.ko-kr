@@ -26,7 +26,7 @@ image::../media/sc-F5-configure-workflow.png[SC F5 워크플로우 구성]
 * Add-SmServer 를 클릭합니다
 * 제거 - SmServerCluster
 +
-자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 
 

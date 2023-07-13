@@ -1,8 +1,8 @@
 ---
 permalink: install/concept_snapcenter_standard_controller_based_licenses.html 
 sidebar: sidebar 
-keywords: controller-based licenses, standard license, SnapManager Suite license, FAS, AFF, retrieve controller serial number, controller serial number, controller-based license serial number, add controller-based license, remove trial license 
-summary: FAS 또는 AFF 스토리지 컨트롤러를 사용하는 경우 SnapCenter 표준 컨트롤러 기반 라이센스가 필요합니다. 
+keywords: 'controller-based licenses, standard license, SnapManager Suite license, FAS, AFF, All SAN Array (ASA), retrieve controller serial number, controller serial number, controller-based license serial number, add controller-based license, remove trial license' 
+summary: FAS, AFF 또는 ASA 스토리지 컨트롤러를 사용하는 경우 SnapCenter 표준 컨트롤러 기반 라이센스가 필요합니다. 
 ---
 = SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다
 :allow-uri-read: 
@@ -11,13 +11,13 @@ summary: FAS 또는 AFF 스토리지 컨트롤러를 사용하는 경우 SnapCen
 
 
 [role="lead"]
-FAS 또는 AFF 스토리지 컨트롤러를 사용하는 경우 SnapCenter 표준 컨트롤러 기반 라이센스가 필요합니다.
+FAS, AFF 또는 모든 SAN 어레이(ASA) 스토리지 컨트롤러를 사용하는 경우 SnapCenter 표준 컨트롤러 기반 라이센스가 필요합니다.
 
 컨트롤러 기반 라이센스는 다음과 같은 특성을 가지고 있습니다.
 
 * 프리미엄 또는 플래시 번들 구매 시 SnapCenter 표준 자격 포함(기본 팩 제외)
 * 무제한 저장소 사용
-* FAS System Manager 또는 스토리지 클러스터 명령줄을 사용하여 AFF 또는 ONTAP 스토리지 컨트롤러에 직접 추가하여 사용 가능
+* ONTAP 시스템 관리자 또는 스토리지 클러스터 명령줄을 사용하여 FAS, AFF 또는 ASA 스토리지 컨트롤러에 직접 추가하여 사용 가능
 +
 
 NOTE: SnapCenter 컨트롤러 기반 라이센스의 경우 SnapCenter GUI에 라이센스 정보를 입력하지 않습니다.
@@ -31,7 +31,7 @@ NOTE: SnapCenter 컨트롤러 기반 라이센스의 경우 SnapCenter GUI에 �
 
 == 1단계: SnapManager 제품군 라이센스가 설치되었는지 확인합니다
 
-SnapCenter GUI를 사용하면 SnapManager 제품군 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있는지 여부를 확인하고 SnapManager 제품군 라이센스가 필요할 수 있는 스토리지 시스템을 식별할 수 있습니다. SnapManager 제품군 라이센스는 AFF 및 FAS SVM이나 운영 스토리지 시스템의 클러스터에만 적용됩니다.
+SnapCenter GUI를 사용하면 SnapManager 제품군 라이센스가 FAS, AFF 또는 ASA 운영 스토리지 시스템에 설치되어 있는지 여부를 확인하고 SnapManager 제품군 라이센스가 필요할 수 있는 스토리지 시스템을 식별할 수 있습니다. SnapManager 제품군 라이센스는 FAS, AFF, ASA SVM 또는 운영 스토리지 시스템의 클러스터에만 적용됩니다.
 
 
 NOTE: 컨트롤러에 SnapManager Suite 라이센스가 이미 있는 경우 SnapCenter 표준 컨트롤러 기반 라이센스 권한이 자동으로 제공됩니다. SnapManager 라이센스 및 SnapCenter 표준 컨트롤러 기반 라이센스 이름은 서로 바꿔서 사용되지만 동일한 라이센스를 나타냅니다.
@@ -52,8 +52,8 @@ NOTE: 컨트롤러에 SnapManager Suite 라이센스가 이미 있는 경우 Sna
 컨트롤러 라이센스 열에는 다음 상태가 표시됩니다.
 
 +
-** image:../media/controller_licensed_icon.gif["확인 아이콘"] SnapManager Suite 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있음을 나타냅니다.
-** image:../media/controller_not_licensed_icon.gif["취소 아이콘"] SnapManager Suite 라이센스가 FAS 또는 AFF 운영 스토리지 시스템에 설치되어 있지 않음을 나타냅니다.
+** image:../media/controller_licensed_icon.gif["확인 아이콘"] SnapManager 제품군 라이센스가 FAS, AFF 또는 ASA 운영 스토리지 시스템에 설치되어 있음을 나타냅니다.
+** image:../media/controller_not_licensed_icon.gif["취소 아이콘"] SnapManager 제품군 라이센스가 FAS, AFF 또는 ASA 운영 스토리지 시스템에 설치되어 있지 않음을 나타냅니다.
 ** 해당 없음 은 스토리지 컨트롤러가 Cloud Volumes ONTAP, ONTAP Select 또는 보조 스토리지 플랫폼에 있기 때문에 SnapManager Suite 라이센스가 적용되지 않음을 나타냅니다.
 
 
@@ -63,7 +63,7 @@ NOTE: 컨트롤러에 SnapManager Suite 라이센스가 이미 있는 경우 Sna
 
 == 2단계: 컨트롤러에 설치된 라이센스를 식별합니다
 
-ONTAP 명령줄을 사용하여 컨트롤러에 설치된 모든 라이센스를 볼 수 있습니다. FAS 또는 AFF 시스템에서 클러스터 관리자여야 합니다.
+ONTAP 명령줄을 사용하여 컨트롤러에 설치된 모든 라이센스를 볼 수 있습니다. FAS, AFF 또는 ASA 시스템의 클러스터 관리자여야 합니다.
 
 
 NOTE: SnapCenter 표준 컨트롤러 기반 라이센스는 컨트롤러에 SnapManagerSuite 라이센스로 표시됩니다.
@@ -110,7 +110,7 @@ SnapManagerSuite  license  SnapManagerSuite License -
 
 == 3단계: 컨트롤러의 일련 번호를 검색합니다
 
-컨트롤러 기반 라이센스의 일련 번호를 검색하려면 컨트롤러 일련 번호가 필요합니다. ONTAP 명령줄을 사용하여 컨트롤러 일련 번호를 검색할 수 있습니다. FAS 또는 AFF 시스템에서 클러스터 관리자여야 합니다.
+컨트롤러 기반 라이센스의 일련 번호를 검색하려면 컨트롤러 일련 번호가 필요합니다. ONTAP 명령줄을 사용하여 컨트롤러 일련 번호를 검색할 수 있습니다. FAS, AFF 또는 ASA 시스템의 클러스터 관리자여야 합니다.
 
 .단계
 . ONTAP 명령줄을 사용하여 컨트롤러에 로그인합니다.
@@ -189,15 +189,15 @@ image::../media/nss_controller_license_select.gif[선택 기준 및 일련 번�
 
 == 5단계: 컨트롤러 기반 라이센스 추가
 
-ONTAP 명령줄을 사용하여 FAS 또는 AFF 시스템을 사용 중인 경우 SnapCenter 컨트롤러 기반 라이센스를 추가할 수 있으며 SnapCenter Standard 또는 SnapManagerSuite 라이센스가 있습니다.
+FAS, AFF 또는 ASA 시스템을 사용 중이고 SnapCenter Standard 또는 SnapManagerSuite 라이센스가 있는 경우 ONTAP 명령줄을 사용하여 SnapCenter 컨트롤러 기반 라이센스를 추가할 수 있습니다.
 
 .시작하기 전에
-* FAS 또는 AFF 시스템에서 클러스터 관리자여야 합니다.
+* FAS, AFF 또는 ASA 시스템의 클러스터 관리자여야 합니다.
 * SnapCenter Standard 또는 SnapManagerSuite 라이센스가 있어야 합니다.
 
 
 .이 작업에 대해
-FAS 또는 AFF 스토리지를 사용해 평가판을 SnapCenter와 함께 설치하려면 컨트롤러에 설치할 Premium 번들 평가 라이센스를 받아야 합니다.
+FAS, AFF 또는 SnapCenter ASA 스토리지를 사용해 평가판을 설치하려면 컨트롤러에 설치할 Premium 번들 평가 라이센스를 받아야 합니다.
 
 평가판을 통해 SnapCenter를 설치하려면 세일즈 담당자에게 문의하여 컨트롤러에 설치할 프리미엄 번들 평가 라이센스를 받아야 합니다.
 
@@ -231,7 +231,7 @@ NOTE: SnapCenter 표준 컨트롤러 기반 라이센스를 사용하는 경우�
 .. Open-SmConnection cmdlet을 실행하여 SnapCenter 서버에서 SnapCenterAdmin 계정에 대한 연결 세션을 시작합니다.
 .. Set-SmRepositoryPassword를 실행하여 MySQL 암호를 재설정합니다.
 +
-cmdlet에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2885482["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+cmdlet에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 
 

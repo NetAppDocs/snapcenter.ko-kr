@@ -41,9 +41,10 @@ Active Directory 도메인을 사용하는 경우 로컬 관리자 권한이 있
  a| 
 SnapCenter 표준 컨트롤러 기반
  a| 
-FAS 또는 AFF 스토리지 컨트롤러에 필요합니다
+FAS, AFF 또는 ASA(All SAN Array) 스토리지 컨트롤러에 필요합니다
 
-SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS 또는 AFF 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려면 세일즈 담당자에게 연락하여 프리미엄 번들 평가 라이센스를 받으십시오.
+SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다.
+FAS, AFF 또는 ASA 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려는 경우, 세일즈 담당자에게 문의하여 프리미엄 번들 평가 라이센스를 얻을 수 있습니다.
 
 
 
@@ -85,7 +86,7 @@ NOTE: SnapCenter 표준 라이센스를 보조 대상에 추가하는 것이 좋
 
 === 호스트 및 포트 요구 사항
 
-ONTAP 및 애플리케이션 플러그인 최소 요구 사항은 을 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=105961;&solution=1259&isHWU&src=IMT["상호 운용성 매트릭스 툴"^].
+ONTAP 및 애플리케이션 플러그인 최소 요구 사항은 을 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=112389;&solution=1259&isHWU&src=IMT["상호 운용성 매트릭스 툴"^].
 
 [cols="1,3"]
 |===

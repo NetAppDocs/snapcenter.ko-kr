@@ -1,7 +1,7 @@
 ---
 permalink: install/concept_snapcenter_licenses.html 
 sidebar: sidebar 
-keywords: licenses, FAS, AFF, SnapMirror, SnapVault, SnapRestore, FlexClone, SMBR, Single Mailbox Recovery 
+keywords: licenses, FAS, AFF, ASA, SnapMirror, SnapVault, SnapRestore, FlexClone, SMBR, Single Mailbox Recovery 
 summary: SnapCenter에서는 데이터 보호 작업을 위해 여러 개의 라이센스가 필요합니다. 설치하는 SnapCenter 라이센스 유형은 스토리지 환경과 사용하려는 기능에 따라 다릅니다. 
 ---
 = SnapCenter 라이센스
@@ -20,9 +20,9 @@ SnapCenter에는 애플리케이션, 데이터베이스, 파일 시스템 및 �
  a| 
 SnapCenter 표준 컨트롤러 기반
  a| 
-FAS 및 AFF에 필요합니다
+FAS, AFF, All SAN 어레이(ASA)에 필요
 
-SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS 또는 AFF 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려면 세일즈 담당자에게 연락하여 프리미엄 번들 평가 라이센스를 받으십시오.
+SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS, AFF 또는 ASA 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려는 경우, 세일즈 담당자에게 문의하여 프리미엄 번들 평가 라이센스를 얻을 수 있습니다.
 
 
 NOTE: SnapCenter는 데이터 보호 번들의 일부로 제공됩니다. A400 이상을 구입한 경우 데이터 보호 번들을 구입해야 합니다.
@@ -106,6 +106,6 @@ NOTE: SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 
 
 Exchange용 SnapCenter 플러그인을 사용하여 Microsoft Exchange Server 데이터베이스 및 SMBR(Single Mailbox Recovery)을 관리하는 경우 사용자 메일박스를 기준으로 별도로 구입해야 하는 SMBR용 추가 라이센스가 필요합니다.
 
-1000, 5000, 15000 및 25000 사서함 번들 단위로 제공되는 SMBR 라이센스를 구입하려면 NetApp 세일즈 담당자에게 문의하십시오. SKU를 구입한 후에는 의 지침에 따라 라이센스를 얻을 수 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2863893["SMBR 릴리스 노트"^].
+NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)로 제공됩니다. 자세한 내용은 을 참조하십시오 link:https://mysupport.netapp.com/info/communications/ECMLP2885729.html["CPC-00507"]. NetApp은 2020년 6월 24일에 출시된 마케팅 부품 번호를 통해 지원 자격 기간 동안 메일박스 용량, 유지보수, 지원을 구매한 고객을 계속 지원할 예정입니다.
 
-라이센스 키 요청을 제출하면 Kroll Ontrack이 50개의 메일박스 라이센스 키를 발급합니다. 귀하의 소유 권한에 따라 Kroll Ontrack은 확인 후 사서함의 라이센스를 업그레이드합니다.
+NetApp Single Mailbox Recovery는 Ontrack에서 제공하는 파트너 제품입니다. OnTrack PowerControls는 NetApp Single Mailbox Recovery와 유사한 기능을 제공합니다. 고객은 2023년 5월 12일 EOA 날짜 이후에 세분화된 메일박스 복구를 위해 Ontrack(licensingteam@ontrack.com 통해 Ontrack PowerControls 소프트웨어 라이센스와 Ontrack PowerControls 유지 관리 및 지원 갱신을 조달할 수 있습니다.

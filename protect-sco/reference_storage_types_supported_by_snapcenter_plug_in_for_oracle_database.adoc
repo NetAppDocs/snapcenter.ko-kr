@@ -76,4 +76,4 @@ SAN 파일 시스템 및 LVM 레이아웃에 대한 인라인 로깅을 지원�
 
 
 |===
-를 클릭합니다 https://imt.netapp.com/matrix/imt.jsp?components=108392;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"] 지원되는 버전에 대한 최신 정보를 제공합니다.
+를 클릭합니다 https://imt.netapp.com/matrix/imt.jsp?components=112391;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"] 지원되는 버전에 대한 최신 정보를 제공합니다.

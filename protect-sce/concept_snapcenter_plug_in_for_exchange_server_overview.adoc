@@ -16,3 +16,6 @@ Microsoft Exchange Server용 SnapCenter 플러그인은 Exchange 데이터베이
 Exchange용 플러그인을 설치하면 SnapCenter와 NetApp SnapMirror 기술을 함께 사용하여 다른 볼륨에 백업 세트의 미러링 복사본을 만들고 NetApp SnapVault 기술을 사용하여 표준 준수 또는 아카이브용으로 D2D 백업 복제를 수행할 수 있습니다.
 
 전체 Exchange 데이터베이스 대신 메일 또는 편지함을 복원 및 복구하려면 SMBR(Single Mailbox Recovery) 소프트웨어를 사용하십시오.
+NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)로 제공됩니다. NetApp은 2020년 6월 24일에 출시된 마케팅 부품 번호를 통해 지원 자격 기간 동안 메일박스 용량, 유지보수, 지원을 구매한 고객을 계속 지원할 예정입니다.
+
+NetApp Single Mailbox Recovery는 Ontrack에서 제공하는 파트너 제품입니다. OnTrack PowerControls는 NetApp Single Mailbox Recovery와 유사한 기능을 제공합니다. 고객은 세분화된 메일박스 복구를 위해 Ontrack PowerControls 소프트웨어 라이센스와 Ontrack PowerControls 유지보수 및 지원 갱신을 licensingteam@ontrack.com 통해 구매할 수 있습니다.

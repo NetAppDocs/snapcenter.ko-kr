@@ -1,0 +1,24 @@
+---
+permalink: install/task_enable_certificate_based_authentication.html 
+sidebar: sidebar 
+keywords: enable certificate-based authentication, certificate-based authentication 
+summary: SnapCenter 서버 및 Windows 플러그인 호스트에 대해 인증서 기반 인증을 활성화해야 합니다. 
+---
+= 인증서 기반 인증을 사용합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 서버 및 Windows 플러그인 호스트에 대한 인증서 기반 인증을 활성화하려면 다음 PowerShell cmdlet을 실행합니다.  Linux 플러그인 호스트의 경우 양방향 SSL을 활성화하면 인증서 기반 인증이 활성화됩니다.
+
+* 클라이언트 인증서 기반 인증을 사용하려면 다음을 따르십시오.
++
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName`<<hostname>>
+
+* 클라이언트 인증서 기반 인증을 사용하지 않도록 설정하려면 다음을 따르십시오.
++
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `<<hostname>>``
+
+

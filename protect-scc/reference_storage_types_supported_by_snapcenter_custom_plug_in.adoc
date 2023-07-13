@@ -18,21 +18,21 @@ SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토
 
 
  a| 
-물리적 서버 및 가상 서버(VMDK 및 RDM LUN은 지원되지 않음)
+VM 호스트의 물리적 마운트 및 NFS 직접 마운트(VMDK 및 RDM LUN은 지원되지 않음)
  a| 
 FC 연결 LUN
 
 
 
  a| 
-물리적 서버 및 가상 서버(VMDK 및 RDM LUN은 지원되지 않음)
+VM 호스트의 물리적 마운트 및 NFS 직접 마운트(VMDK 및 RDM LUN은 지원되지 않음)
  a| 
 iSCSI로 연결된 LUN
 
 
 
  a| 
-물리적 서버 및 가상 서버(VMDK 및 RDM LUN은 지원되지 않음)
+VM 호스트의 물리적 마운트 및 NFS 직접 마운트(VMDK 및 RDM LUN은 지원되지 않음)
  a| 
 NFS 연결 볼륨
 

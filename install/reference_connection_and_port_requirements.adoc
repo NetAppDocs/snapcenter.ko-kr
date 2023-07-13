@@ -43,6 +43,8 @@ SnapCenter 포트
 
 SnapCenter 클라이언트(SnapCenter 사용자)와 SnapCenter 서버 간의 통신에 사용됩니다. 플러그인 호스트에서 SnapCenter 서버로의 통신에도 사용됩니다.
 
+포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html["설치 마법사를 사용하여 SnapCenter 서버를 설치합니다."]
+
 
 
  a| 
@@ -51,6 +53,8 @@ SnapCenter SMCore 통신 포트입니다
 8145(HTTPS), 양방향, 사용자 지정 가능
 
 이 포트는 SnapCenter 서버와 SnapCenter 플러그인이 설치된 호스트 간의 통신에 사용됩니다.
+
+포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html["설치 마법사를 사용하여 SnapCenter 서버를 설치합니다."]
 
 
 
@@ -62,6 +66,8 @@ MySQL 포트
 이 포트는 SnapCenter 및 MySQL 리포지토리 데이터베이스 간의 통신에 사용됩니다.
 
 SnapCenter 서버에서 MySQL 서버로 보안 연결을 생성할 수 있습니다. link:../install/concept_configure_secured_mysql_connections_with_snapcenter_server.html["자세한 정보"]
+
+포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html["설치 마법사를 사용하여 SnapCenter 서버를 설치합니다."]
 
 
 
@@ -96,6 +102,8 @@ Windows용 SnapCenter 플러그인 패키지, Linux용 SnapCenter 플러그인 �
 
 또한 SVM 관리 LIF와 SnapCenter 서버 간에 통신 경로를 개방해야 합니다.
 
+포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html["호스트를 추가하고 Microsoft Windows용 SnapCenter 플러그인을 설치합니다"] 또는 https://docs.netapp.com/us-en/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html["호스트를 추가하고 Linux 또는 AIX용 SnapCenter 플러그인 패키지를 설치합니다."]
+
 
 
  a| 
@@ -104,6 +112,8 @@ Oracle 데이터베이스용 SnapCenter 플러그인
 27216, 사용자 지정 가능
 
 기본 JDBC 포트는 Oracle용 플러그인에서 Oracle 데이터베이스에 연결하는 데 사용됩니다.
+
+포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html["호스트를 추가하고 Linux 또는 AIX용 SnapCenter 플러그인 패키지를 설치합니다."]
 
 
 
@@ -135,6 +145,8 @@ SAP HANA 데이터베이스 vCode용 SnapCenter 플러그인 맞춤법 검사기
 MDC(멀티테넌트 데이터베이스 컨테이너) 단일 테넌트의 경우 포트 번호는 13으로 끝나며 MDC가 아닌 경우 포트 번호는 15로 끝납니다.
 
 예를 들어, 32013은 인스턴스 20의 포트 번호이고 31015는 인스턴스 10의 포트 번호입니다.
+
+포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html["호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다."]
 
 
 

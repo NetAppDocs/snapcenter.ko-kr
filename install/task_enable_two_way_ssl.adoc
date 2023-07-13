@@ -1,0 +1,72 @@
+---
+permalink: install/task_enable_two_way_ssl.html 
+sidebar: sidebar 
+keywords: security,disable two-way SSL,enable two-way SSL 
+summary: 양방향 SSL 통신을 사용하여 PowerShell 명령을 사용하여 SnapCenter 서버와 플러그인 간의 상호 통신을 보호할 수 있습니다. 
+---
+= 양방향 SSL 통신을 활성화합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+양방향 SSL 통신을 사용하여 PowerShell 명령을 사용하여 SnapCenter 서버와 플러그인 간의 상호 통신을 보호할 수 있습니다.
+
+* 시작하기 전에 *
+
+모든 플러그인 및 SMCore 에이전트에 대한 명령을 먼저 실행한 다음 서버에 대해 명령을 실행합니다.
+
+* 단계 *
+
+. 양방향 SSL 통신을 활성화하려면 플러그인, 서버 및 양방향 SSL 통신이 필요한 각 에이전트에 대해 SnapCenter 서버에서 다음 명령을 실행합니다.
++
+`> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName <Plugin_HostName>`
+
++
+`> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="true"} -HostName localhost`
+
++
+`> Set-SmConfigSettings -Server -configSettings @{"EnableTwoWaySSL"="true"}`
+
+. 다음 명령을 사용하여 IIS SnapCenter 응용 프로그램 풀 재활용 작업을 수행합니다.
+`> Restart-WebAppPool -Name "SnapCenter"`
+. Windows 플러그인의 경우 다음 PowerShell 명령을 실행하여 SMCore 서비스를 다시 시작합니다.
++
+`> Restart-Service -Name SnapManagerCoreService`
+
+
+
+
+
+== 양방향 SSL 통신을 비활성화합니다
+
+PowerShell 명령을 사용하여 양방향 SSL 통신을 사용하지 않도록 설정할 수 있습니다.
+
+* 이 작업에 대한 정보 *
+
+* 모든 플러그인 및 SMCore 에이전트에 대한 명령을 먼저 실행한 다음 서버에 대해 명령을 실행합니다.
+* 양방향 SSL 통신을 비활성화하면 CA 인증서와 해당 구성이 제거되지 않습니다.
+* SnapCenter 서버에 새 호스트를 추가하려면 모든 플러그인 호스트에 대해 양방향 SSL을 비활성화해야 합니다.
+* NLB 및 F5는 지원되지 않습니다.
+
+
+* 단계 *
+
+. 양방향 SSL 통신을 비활성화하려면 모든 플러그인 호스트 및 SnapCenter 호스트에 대해 SnapCenter 서버에서 다음 명령을 실행합니다.
++
+`> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="false"} -HostName <Agent_HostName>`
+
++
+`> Set-SmConfigSettings -Agent -configSettings @{"EnableTwoWaySSL"="false"} -HostName localhost`
+
++
+`> Set-SmConfigSettings -Server -configSettings @{"EnableTwoWaySSL"="false"}`
+
+. 다음 명령을 사용하여 IIS SnapCenter 응용 프로그램 풀 재활용 작업을 수행합니다.
+`> Restart-WebAppPool -Name "SnapCenter"`
+. Windows 플러그인의 경우 다음 PowerShell 명령을 실행하여 SMCore 서비스를 다시 시작합니다.
++
+`> Restart-Service -Name SnapManagerCoreService`
+
+
