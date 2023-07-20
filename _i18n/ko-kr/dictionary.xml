@@ -4888,7 +4888,6 @@
   <block id="03101d2d05b95aa8395d372be971ceec" category="cell">매개 변수 이름입니다</block>
   <block id="e2072f9dd36121658dfb70db997cac48" category="paragraph">log_level 을 선택합니다</block>
   <block id="27ef522d71e1457c1d75f1a9fbdffdb9" category="paragraph">지원되는 로그 수준을 표시합니다.</block>
-  <block id="9dec2839914c450a2eba38fd6ed0037d" category="paragraph">가능한 값은 Info, debug, trace, error, fatal, 경고.</block>
   <block id="54e3ff300a85eed4faafba9e929fcc68" category="paragraph">SPL_protocol(프로토콜)</block>
   <block id="7af9608cb14f57495b1335e877ee3b0e" category="paragraph">SnapCenter 플러그인 로더에서 지원하는 프로토콜을 표시합니다.</block>
   <block id="36c24cffc745e8682deaec9e2c0960f8" category="paragraph">HTTPS 프로토콜만 지원됩니다. 기본값이 없는 경우 값을 추가할 수 있습니다.</block>
@@ -8443,4 +8442,5 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="dc085c0453f245659c31e067671c65b0" category="sidebar">CA 인증서를 UNIX 호스트 플러그인으로 가져오고 SPL 신뢰 저장소에 루트 또는 중간 인증서를 구성합니다</block>
   <block id="78a044d413487b3c49b37567f8df9e4f" category="sidebar">CA 인증서를 UNIX 호스트 플러그인으로 가져옵니다</block>
   <block id="7fbe6e40125b7d1b2f5c5c05044e7526" category="sidebar">인증서 기반 인증을 사용합니다</block>
+  <block id="20c5c92c0148a7ebef737c442e93b7ec" category="paragraph">가능한 값은 추적, 디버그, 정보, 경고, 오류, 치명적입니다.</block>
 </blocks>
