@@ -13,8 +13,7 @@ summary: 리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 
 [role="lead"]
 리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 데이터베이스 및 비 데이터 볼륨입니다. 사용 가능한 SAP HANA 데이터베이스를 검색하고 나면 이러한 리소스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있습니다.
 
-* 필요한 것 *
-
+.필요한 것
 * SnapCenter 서버 설치, HDB 사용자 저장소 키 추가, 호스트 추가 및 스토리지 시스템 접속 설정과 같은 작업을 이미 완료해야 합니다.
 * Linux 호스트에서 HDB 보안 사용자 저장소 키 및 HDB SQL OS 사용자를 구성해야 합니다.
 +
@@ -24,14 +23,12 @@ summary: 리소스는 SnapCenter에서 관리하는 Linux 호스트의 SAP HANA 
 * SAP HANA 데이터베이스용 SnapCenter 플러그인은 RDM/VMDK 가상 환경에 상주하는 리소스의 자동 검색을 지원하지 않습니다. 데이터베이스를 수동으로 추가하는 동시에 가상 환경에 대한 스토리지 정보를 제공해야 합니다.
 
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 플러그인을 설치하면 해당 Linux 호스트의 모든 리소스가 자동으로 검색되어 리소스 페이지에 표시됩니다.
 
 자동으로 검색된 리소스는 수정하거나 삭제할 수 없습니다.
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 SAP HANA 데이터베이스용 플러그인을 선택합니다.
 . 자원 페이지의 보기 목록에서 자원 유형을 선택합니다.
 . (선택 사항) * 를 클릭합니다image:../media/filter_icon.gif[""]를 누른 다음 호스트 이름을 선택합니다.
@@ -55,8 +52,7 @@ NOTE: SAP HANA 데이터베이스에 HDB Secure User Store Key가 구성되어 �
 
 IMPORTANT: 데이터베이스가 SnapCenter 외부에서 이름이 변경된 경우 리소스를 새로 고쳐야 합니다.
 
-* 완료 후 *
-
+.다음 단계
 데이터베이스를 보호하거나 리소스 그룹에 추가하여 데이터 보호 작업을 수행하려면 HDB Secure User Store Key 및 HDBSQL OS User를 구성해야 합니다.
 
 link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html["SAP HANA 데이터베이스용 HDB 사용자 저장소 키 및 HDBSQL OS 사용자를 구성합니다"]

@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later.html 
 sidebar: sidebar 
-keywords:  
+keywords: gMSA 
 summary: 'Windows Server 2012 이상을 사용하면 관리되는 도메인 계정에서 자동화된 서비스 계정 암호 관리를 제공하는 그룹 GMSA\(Managed Service Account)를 만들 수 있습니다.' 
 ---
 = Windows Server 2012 이상에서 GMSA를 구성합니다

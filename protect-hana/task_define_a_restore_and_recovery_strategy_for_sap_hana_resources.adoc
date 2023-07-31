@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/task_define_a_restore_and_recovery_strategy_for_sap_hana_resources.html 
 sidebar: sidebar 
-keywords:  
+keywords: restore and recovery strategy, SAP HANA resources, snapcenter 
 summary: 복구 및 복구 작업을 성공적으로 수행하려면 데이터베이스를 복원 및 복구하기 전에 전략을 정의해야 합니다. 
 ---
 = SAP HANA 리소스에 대한 복원 및 복구 전략 정의
@@ -13,8 +13,7 @@ summary: 복구 및 복구 작업을 성공적으로 수행하려면 데이터�
 [role="lead"]
 복구 및 복구 작업을 성공적으로 수행하려면 데이터베이스를 복원 및 복구하기 전에 전략을 정의해야 합니다.
 
-* 단계 *
-
+.단계
 . 수동으로 추가한 SAP HANA 리소스에 대해 지원되는 복원 전략을 결정합니다
 . 자동 검색된 SAP HANA 데이터베이스에 대해 지원되는 복구 전략을 결정합니다
 . 수행할 복구 작업 유형을 결정합니다.

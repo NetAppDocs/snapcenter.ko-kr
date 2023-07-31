@@ -13,8 +13,7 @@ summary: 'PowerShell cmdlet을 사용하여 SAP HANA 데이터베이스를 백�
 [role="lead"]
 PowerShell cmdlet을 사용하여 SAP HANA 데이터베이스를 백업, 복원 또는 클론 복제하기 전에 SVM(Storage Virtual Machine) 연결과 자격 증명을 생성해야 합니다.
 
-* 필요한 것 *
-
+.필요한 것
 * PowerShell cmdlet을 실행할 수 있도록 PowerShell 환경을 준비해야 합니다.
 * 스토리지 접속을 생성하려면 인프라스트럭처 관리자 역할에 필요한 권한이 있어야 합니다.
 * 플러그인 설치가 진행 중이 아닌지 확인해야 합니다.
@@ -27,8 +26,7 @@ SnapCenter는 서로 다른 클러스터에서 동일한 이름의 여러 스토
 
 
 
-* 단계 *
-
+.단계
 . Open-SmConnection cmdlet을 사용하여 PowerShell 연결 세션을 시작합니다.
 +
 [listing]

@@ -13,8 +13,7 @@ summary: 'SnapCenter UI(사용자 인터페이스)를 사용하여 SAP HANA 데�
 [role="lead"]
 SnapCenter UI(사용자 인터페이스)를 사용하여 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치해야 합니다. 사용 환경에서 SnapCenter UI에서 플러그인을 원격으로 설치할 수 없는 경우 CLI(Command-Line Interface)를 사용하여 콘솔 모드 또는 자동 모드로 SAP HANA 데이터베이스용 플러그인을 설치할 수 있습니다.
 
-* 필요한 것 *
-
+.필요한 것
 * HDBSQL 클라이언트가 상주하는 각 Linux 호스트에 SAP HANA 데이터베이스용 플러그인을 설치해야 합니다.
 * SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하려는 Linux 호스트는 종속 소프트웨어, 데이터베이스 및 운영 체제 요구사항을 충족해야 합니다.
 +
@@ -26,8 +25,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=112393;&solution=1259&isHWU&src
 * SAP HANA 데이터베이스용 SnapCenter 플러그인은 Linux용 SnapCenter 플러그인 패키지의 일부입니다. Linux용 SnapCenter 플러그인 패키지를 설치하기 전에 Windows 호스트에 SnapCenter가 이미 설치되어 있어야 합니다.
 
 
-* 단계 *
-
+.단계
 . Linux용 SnapCenter 플러그인 패키지 설치 파일(snapcenter_linux_host_plugin.bin)을 C:\ProgramData\NetApp\SnapCenter\Package Repository에서 SAP HANA 데이터베이스용 플러그인을 설치하려는 호스트로 복사합니다.
 +
 SnapCenter 서버가 설치된 호스트에서 이 경로에 액세스할 수 있습니다.

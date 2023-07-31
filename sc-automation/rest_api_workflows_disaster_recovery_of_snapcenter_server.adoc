@@ -1,7 +1,7 @@
 ---
 permalink: sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html 
 sidebar: sidebar 
-keywords:  
+keywords: REST API, disaster recovery, DR 
 summary: SnapCenter 재해 복구 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. 
 ---
 = DR(재해 복구) REST API
@@ -74,14 +74,12 @@ NOTE: VM이 손상된 경우 같은 이름의 다른 VM 또는 시스템을 가�
 
 REST API를 사용하여 REST API Swagger 페이지에서 다음 작업을 수행할 수 있습니다. Swagger 페이지에 액세스하는 방법은 를 참조하십시오 link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html["swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법"].
 
-* 필요한 것 *
-
+.필요한 것
 * SnapCenter 관리자로 로그인해야 합니다.
 * DR 복원 API를 실행하려면 SnapCenter 서버가 실행 중이어야 합니다.
 
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 SnapCenter 서버 DR은 모든 플러그인을 지원합니다.
 
 |===
@@ -91,8 +89,7 @@ SnapCenter 서버 DR은 모든 플러그인을 지원합니다.
  a| 
 기존 SnapCenter 서버 DR 백업을 가져옵니다
 
-
-NOTE: DR 백업이 저장되는 타겟 경로를 제공해야 합니다.
+DR 백업이 저장되는 타겟 경로를 제공해야 합니다.
  a| 
 `/4.5/disasterrecovery/server/backup? TargetPath={path}'
  a| 
@@ -135,4 +132,5 @@ NOTE: DR 백업이 저장되는 타겟 경로를 제공해야 합니다.
 게시
 
 |===
-자세한 내용은 를 참조하십시오 https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg["재해 복구 API"^] 비디오.
+.를 참조하십시오
+를 참조하십시오 link:https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg["재해 복구 API"^] 비디오.

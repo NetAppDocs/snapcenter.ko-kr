@@ -13,8 +13,7 @@ summary: 'SnapCenter에 직접 등록된 SAP HANA 호스트의 경우 SAP HANA �
 [role="lead"]
 SnapCenter에 직접 등록된 SAP HANA 호스트의 경우 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치 또는 업그레이드하면 호스트에서 리소스를 자동으로 검색할 수 있습니다. 플러그인을 설치 또는 업그레이드한 후 플러그인 호스트에 있는 모든 MDC(멀티테넌트 데이터베이스 컨테이너) 리소스에 대해 다른 GUID 형식으로 다른 MDC 리소스가 자동으로 검색되어 SnapCenter에 등록됩니다. 새 자원은 "잠김" 상태가 됩니다.
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 예를 들어 SnapCenter 4.2에서 E90 MDC 리소스가 플러그인 호스트에 있고 수동으로 등록된 경우 SnapCenter 4.3으로 업그레이드한 후 다른 GUID를 가진 다른 E90 MDC 리소스가 SnapCenter에 검색되어 등록됩니다.
 
 
@@ -24,8 +23,7 @@ NOTE: SnapCenter 4.2 및 이전 버전의 리소스와 연결된 백업은 보�
 
 다음 단계를 수행하여 SnapCenter 4.3에서 검색된 새 리소스를 데이터 보호 작업에 사용할 수 있습니다.
 
-* 단계 *
-
+.단계
 . 리소스 페이지에서 이전 SnapCenter 릴리스에 추가된 백업이 있는 이전 MDC 리소스를 선택하고 토폴로지 페이지에서 "유지 관리 모드"로 배치합니다.
 +
 자원이 자원 그룹의 일부인 경우 자원 그룹을 "유지보수 모드"로 설정합니다.
@@ -43,8 +41,7 @@ NOTE: SnapCenter 4.2 및 이전 버전의 리소스와 연결된 백업은 보�
 
 
 
-* 자세한 정보 찾기 *
-
+.관련 정보
 link:task_configure_hdb_user_store_key_and_hdbsql_os_user_for_the_sap_hana_database.html["SAP HANA 데이터베이스용 HDB 사용자 저장소 키 및 HDBSQL OS 사용자를 구성합니다"]
 
 link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html["토폴로지 페이지에서 SAP HANA 데이터베이스 백업 및 클론 보기"]

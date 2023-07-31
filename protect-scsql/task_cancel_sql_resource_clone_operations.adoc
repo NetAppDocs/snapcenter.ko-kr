@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_cancel_sql_resource_clone_operations.html 
 sidebar: sidebar 
-keywords:  
+keywords: clone, cancel 
 summary: 대기열에 있는 클론 작업을 취소할 수 있습니다. 
 ---
 = SQL 리소스 클론 작업을 취소합니다

@@ -11,7 +11,7 @@ summary: SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 수동
 
 
 [role="lead"]
-SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 단계를 수행하여 다른 SQL 호스트로 전환하고 데이터를 복구합니다.
+SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 단계를 사용하여 다른 SQL 호스트로 전환하고 데이터를 복구합니다.
 
 .필요한 것
 * 보조 호스트의 운영 체제, 애플리케이션 및 호스트 이름은 운영 호스트와 동일해야 합니다.
