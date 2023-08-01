@@ -50,7 +50,7 @@ NOTE: SQL Server Standard Edition에 가용성 그룹 구성이 있는 경우 Sn
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
 . 리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 인스턴스 * 또는 * 가용성 그룹 * 을 선택합니다.
 +
-을 클릭합니다 image:../media/filter_icon.gif[""] 호스트 이름과 SQL Server 인스턴스를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 image:../media/filter_icon.gif[""] 를 눌러 필터 창을 닫습니다.
+을 클릭합니다 image:../media/filter_icon.png[""] 호스트 이름과 SQL Server 인스턴스를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 image:../media/filter_icon.png[""] 를 눌러 필터 창을 닫습니다.
 
 . 리소스 새로 고침 * 을 클릭합니다.
 +

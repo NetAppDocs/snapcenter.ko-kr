@@ -269,7 +269,6 @@
   <block id="665e27cacd5b140b3ca5a518bbd41724" category="doc">사용자 지정 플러그인 리소스의 리소스 그룹을 백업합니다</block>
   <block id="92ae04a417b2b1bf95cb914953f21cce" category="list-text">정책이 연결된 리소스 그룹을 만들어야 합니다.</block>
   <block id="0dd1baa389f6493ff89ba4f1d23f127b" category="list-text">보조 스토리지와 SnapMirror 관계가 있는 리소스를 백업하려면 스토리지 사용자에게 할당된 ONTAP 역할에 "'스냅샷 전체' 권한이 있어야 합니다. 그러나 "vsadmin" 역할을 사용하는 경우에는 "napmirror all" 권한이 필요하지 않습니다.</block>
-  <block id="862569d2dbddc7f68305bb1aa73accec" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 을 클릭하여 리소스 그룹을 검색할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 태그를 선택합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="44119ab6cb16491e354c029de67b6782" category="list-text">여러 정책을 리소스 그룹에 연결한 경우 * Policy * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.</block>
   <block id="b1b9720160580fd5949d50bf10097dc5" category="paragraph">필요 시 백업에 대해 선택한 정책이 백업 스케줄과 연결된 경우 스케줄 유형에 지정된 보존 설정에 따라 필요 시 백업이 유지됩니다.</block>
   <block id="96dd2bdaca6a007b13c9f42158b860a6" category="list-text">백업 * 을 클릭합니다.</block>
@@ -663,7 +662,6 @@
   <block id="d208aa08a03da9a8a8e5bd96ad0fedae" category="list-text"><block ref="ef6f1c216f28d7814323778090034017" category="inline-image-macro-rx" type="image"></block> 대기열에 있습니다</block>
   <block id="cc9dbc9fb7810be481501a3376208520" category="list-text"><block ref="c646c5e33fd3a6c1e32ebcb9f24cc88e" category="inline-image-macro-rx" type="image"></block> 취소됨</block>
   <block id="b40a6c0b08ac99c86eb676e2689c6996" category="list-text">왼쪽 탐색 창에서 * 모니터 * 를 클릭합니다.</block>
-  <block id="1bfa745c5533e2551a662571c60d9a71" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 복원 작업만 나열되도록 목록을 필터링하려면</block>
   <block id="7407325f29b504f9c8b87ec8da503815" category="list-text">시작 및 종료 날짜를 지정합니다.</block>
   <block id="72703ba150df91059707035aef45dd74" category="list-text">Type * 드롭다운 목록에서 * Restore * 를 선택합니다.</block>
   <block id="a28133afd7846d1e77aa696930846108" category="list-text">Status * (상태 *) 드롭다운 목록에서 복원 상태를 선택합니다.</block>
@@ -754,7 +752,6 @@
   <block id="4351322fd6537f248b9b6c0f176648c0" category="paragraph">이 예에서는 지정된 작업 ID에 대한 클론 보고서를 표시합니다.</block>
   <block id="18c6c7b07148849996bd7da366d6bf60" category="summary">작업 페이지를 사용하여 SnapCenter 클론 작업의 진행률을 모니터링할 수 있습니다. 작업 진행률을 확인하여 작업이 언제 완료되는지 또는 문제가 있는지 확인할 수 있습니다.</block>
   <block id="322752ebdea85a56b4a5d899f24c4325" category="doc">사용자 지정 플러그인 리소스 클론 작업을 모니터링합니다</block>
-  <block id="62db5b4d65c0cdab012121187a77e764" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 클론 작업만 나열되도록 목록을 필터링합니다.</block>
   <block id="4cfa68aad234b91494e417f8012ca40d" category="list-text">Type * 드롭다운 목록에서 * Clone * 을 선택합니다.</block>
   <block id="7c18f9fe3e82229bbf88d4133dde72bd" category="list-text">Status * (상태 *) 드롭다운 목록에서 클론 상태를 선택합니다.</block>
   <block id="33edcafc3b101b5da89793db6c9151a5" category="list-text">성공적으로 완료된 작업을 보려면 * 적용 * 을 클릭합니다.</block>
@@ -764,7 +761,6 @@
   <block id="2794927004b00b8d766ca3deca4c7096" category="paragraph">SnapCenterJobs 페이지를 사용하여 여러 백업 작업의 진행률을 모니터링할 수 있습니다. 진행 상황을 확인하여 완료 시기 또는 문제가 있는지 확인할 수 있습니다.</block>
   <block id="7944a2318d6a58176074a0d99b34c73d" category="paragraph">다음 아이콘이 작업 페이지에 나타나고 작업의 해당 상태를 나타냅니다.</block>
   <block id="c0a63413cafa6a465f587d5835701c87" category="list-text">모니터 페이지에서 * 작업 * 을 클릭합니다.</block>
-  <block id="6044156c6f0da8e8ec296448fa2d5fa5" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 백업 작업만 나열되도록 목록을 필터링합니다.</block>
   <block id="e10f73b33c1a0725b8812f08089e7788" category="list-text">Type * 드롭다운 목록에서 * Backup * 을 선택합니다.</block>
   <block id="1f8a6ebe3d4d002c37961084ee957772" category="list-text">Status * (상태 *) 드롭다운에서 백업 상태를 선택합니다.</block>
   <block id="30816945c60dc2c3f5e65b0a88f9bc19" category="list-text">작업이 성공적으로 완료되었는지 보려면 * Apply * 를 클릭합니다.</block>
@@ -879,7 +875,6 @@
   <block id="8ffa4ba0dd2df5995fd397c72a149679" category="doc">개별 맞춤형 플러그인 리소스를 백업합니다</block>
   <block id="bb9d7068e92869688b6abcc02fa7e603" category="list-text">백업 정책을 만들어야 합니다.</block>
   <block id="08c86005ddd32599a5beea4c7b9ff4ad" category="list-text">보조 스토리지와 SnapMirror 관계가 있는 리소스를 백업하려면 스토리지 사용자에게 할당된 ONTAP 역할에 "'스냅샷 전체' 권한이 있어야 합니다. 그러나 "vsadmin" 역할을 사용하는 경우에는 "napmirror all" 권한이 필요하지 않습니다.</block>
-  <block id="d9519d94a3a4c5d7cfd38a6562e76409" category="paragraph">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="085ab917326888bb9fd0378b5efb84b9" category="list-text">백업할 리소스를 클릭합니다.</block>
   <block id="8deb8aa93ea3b02fc36610daf36edad9" category="paragraph">예: _customtext_policy_hostname_or_resource_hostname_. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
   <block id="23ce0178ca7588539a792fb41d10d6d6" category="list-text">백업 * 화살표를 클릭하여 추가 백업 옵션을 설정합니다.</block>
@@ -1446,7 +1441,6 @@
   <block id="b9c7ed41d7e2f0a91ab873b63037fa09" category="paragraph">백업이 NetApp 스토리지의 액티브/패시브 데이터베이스 복사본에 대해 성공하고 NetApp이 아닌 타사 스토리지의 액티브/패시브 데이터베이스 복사본에 대해서는 백업이 실패합니다.</block>
   <block id="1aa4e724dd9a6c283aa6653b764530f0" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 * Microsoft Exchange Server 플러그인 * 을 선택합니다.</block>
   <block id="5188766c2c9e07184bb642e31a6d1193" category="list-text">리소스 페이지의 * 보기 * 목록에서 * 리소스 그룹 * 을 선택합니다.</block>
-  <block id="d9ad3509ed74d62d9925203b0b85cc8b" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 * 를 클릭하여 리소스 그룹을 검색할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 태그를 선택합니다. 그런 다음 * 를 클릭할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
   <block id="6c22568aa6116c11fda42febcf7b796a" category="list-text">리소스 그룹 페이지에서 백업할 리소스 그룹을 선택한 다음 * 지금 백업 * 을 클릭합니다.</block>
   <block id="bb43b313441613889840a70c3dde17eb" category="list-text">페이지 하단의 작업 창에서 작업을 두 번 클릭하여 작업 세부 정보 페이지를 표시하여 백업 진행 상황을 모니터링합니다.</block>
   <block id="504403a18a6f866f203ea7aac8f10d40" category="summary">리소스를 백업할 준비를 할 때 운영 및 보조 스토리지의 모든 백업을 그래픽으로 표시하는 것이 도움이 될 수 있습니다.</block>
@@ -1645,7 +1639,6 @@
   <block id="64ac2dd533361c3963118cc11fb7cac1" category="list-text">NetApp 및 비 NetApp 스토리지에 액티브/패시브 데이터베이스 복사본이 있는 데이터베이스 또는 데이터베이스 가용성 그룹의 백업을 수행하려면 정책에서 백업 작업 생성 시간 * 동안 선택할 서버의 활성 복사본 * 백업 * 또는 * 백업 복사본 * 옵션을 선택한 경우 백업 작업이 경고 상태로 전환됩니다. 백업이 NetApp 스토리지의 액티브/패시브 데이터베이스 복사본에 대해 성공하고 NetApp이 아닌 타사 스토리지의 액티브/패시브 데이터베이스 복사본에 대해서는 백업이 실패합니다.</block>
   <block id="860213bd7e47ab530bb0265db0d4d02a" category="cell">* 모범 사례: * 활성 및 수동 데이터베이스의 백업을 동시에 실행하지 마십시오. 경쟁 조건이 발생할 수 있으며 백업 중 하나가 실패할 수 있습니다.</block>
   <block id="0ad1c36a6c3e0a80135136739263c1d7" category="admonition">DAG에서 액티브 데이터베이스 복제본이 타사 스토리지에 있고 하나 이상의 패시브 데이터베이스 복제본이 NetApp 스토리지에 상주하는 경우 데이터베이스를 보호할 수 있습니다.</block>
-  <block id="f4fccf161b5e67001656d817cbe815c9" category="paragraph">를 클릭합니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 * 를 클릭할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
   <block id="bb40ccbb928b274cb38a895aef70f856" category="list-text">데이터베이스를 백업하려면 데이터베이스 이름을 클릭합니다.</block>
   <block id="8373034f279dfd1570ec179c090b858c" category="list-text">토폴로지 뷰가 표시되면 * 보호 * 를 클릭합니다.</block>
   <block id="c5f4c29439aa6c78216cfa3f9865548c" category="list-text">데이터베이스 보호 리소스 마법사가 표시되면 3단계를 계속 진행합니다.</block>
@@ -1712,7 +1705,6 @@
   <block id="5e75febf1a7f4c71f1ddfe400df30121" category="list-text">DAG(Database Availability Group)가 있는 경우 DAG에서 백업 작업을 실행하여 그룹의 모든 데이터베이스를 백업할 수 있습니다.</block>
   <block id="96b6fde24fc45821a7c8c021ba21b20b" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 리소스 페이지의 왼쪽 위 모서리에 있는 플러그인 드롭다운 목록에서 * Microsoft Exchange Server * 를 선택합니다.</block>
   <block id="322a7c54d7c7799de3e202746d568ea4" category="paragraph">모든 데이터베이스와 DAG는 DAG 또는 호스트 이름과 함께 FQDN 형식으로 표시되므로 여러 데이터베이스를 구별할 수 있습니다.</block>
-  <block id="db8c73281f0636096f5bd11fbb13289a" category="paragraph">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 호스트 이름과 Exchange Server를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="a52716605edda155f499cf4c4572c6d5" category="list-text">리소스 새로 고침 * 을 클릭합니다.</block>
   <block id="e447517e5ec13b3c9e98a7c686d29ac7" category="paragraph">새로 추가, 이름 변경 또는 삭제된 리소스가 SnapCenter 서버 인벤토리로 업데이트됩니다.</block>
   <block id="100eb6faf67bf674d493eae8a5daad8d" category="paragraph">리소스는 리소스 이름, 데이터베이스 가용성 그룹 이름, 데이터베이스가 현재 활성 상태인 서버, 복제본이 있는 서버, 마지막 백업 시간 및 전체 상태 등의 정보와 함께 표시됩니다.</block>
@@ -3224,7 +3216,6 @@
   <block id="6a9192ab011aeeddc22793310691a1e4" category="image-alt">SAP_HANA 백업 워크플로우</block>
   <block id="4580f4b818b00829ad833fee80f6f773" category="summary">리소스 그룹은 호스트의 리소스 모음입니다. 리소스 그룹에 대한 백업 작업은 리소스 그룹에 정의된 모든 리소스에 대해 수행됩니다.</block>
   <block id="dbc89dfae1c6c8ad4eb43878b9171ca6" category="doc">리소스 그룹을 백업합니다</block>
-  <block id="21364d4ce43113190e1c8a9ca29e8c66" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 을 클릭하여 리소스 그룹을 검색할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>을 클릭한 다음 태그를 선택합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="38daee81aaf3af99133cf03d753b6a86" category="list-text">여러 정책을 리소스 그룹에 연결한 경우 * Policy * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.</block>
   <block id="bb24de3098becb559d31066692208382" category="summary">SnapCenter를 사용하여 SAP HANA 데이터베이스 리소스를 백업하기 전에 백업할 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다. 백업 정책은 백업을 관리, 예약 및 유지하는 방법을 제어하는 규칙의 집합입니다.</block>
   <block id="2dad511118029c962a70a1aac4b16b52" category="doc">SAP HANA 데이터베이스에 대한 백업 정책을 생성합니다</block>
@@ -3255,8 +3246,6 @@
   <block id="19231ec7746e87de717dc81f2ffc3364" category="list-text">데이터베이스를 보호하거나 리소스 그룹에 추가하여 데이터 보호 작업을 수행하려면 HDB 보안 사용자 저장소 키 및 HDB SQL OS 사용자를 구성해야 합니다.</block>
   <block id="eebed0ac34228e0e0f38c9d860604c29" category="list-text">시스템 데이터베이스에 액세스하려면 HDB SQL OS 사용자를 구성해야 합니다. HDB SQL OS 사용자가 테넌트 데이터베이스에만 액세스하도록 구성된 경우 검색 작업이 실패합니다.</block>
   <block id="883766d38a60b014b1f295ce741d2078" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 SnapCenter Plug-in for SAP HANA Database 를 선택합니다.</block>
-  <block id="214914d9549015d63d4b86758e66e1aa" category="list-text">(선택 사항) 을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 호스트 이름을 선택합니다.</block>
-  <block id="e6b04dca8731f73a6232df543bed1168" category="paragraph">그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="39e3c69c6f9d80e017de1f541e1670ca" category="list-text">데이터베이스를 선택한 다음 * 데이터베이스 구성 * 을 클릭합니다.</block>
   <block id="41119aa704f7776e425d802cc1efdd26" category="admonition">플러그인 호스트 이름이 표시되고 HDB SQL OS 사용자가 자동으로 &lt;sid&gt; adm에 채워집니다.</block>
   <block id="8896e4ff5c38407b9b105f9412d0f746" category="doc">SAP HANA 데이터베이스용 SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템을 준비하십시오</block>
@@ -3340,8 +3329,6 @@
   <block id="93f2d6a1a85e6dc485df261b08b8eabb" category="list-text">SAP HANA 데이터베이스용 SnapCenter 플러그인은 RDM/VMDK 가상 환경에 상주하는 리소스의 자동 검색을 지원하지 않습니다. 데이터베이스를 수동으로 추가하는 동시에 가상 환경에 대한 스토리지 정보를 제공해야 합니다.</block>
   <block id="a9d0e12f10920c999cb78960286bd82a" category="paragraph">자동으로 검색된 리소스는 수정하거나 삭제할 수 없습니다.</block>
   <block id="ea6799b398e3200b6531e1aa5a544d0c" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 SAP HANA 데이터베이스용 플러그인을 선택합니다.</block>
-  <block id="275739dcbd0826cc4a0ad3c63d35359a" category="list-text">(선택 사항) * 를 클릭합니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름을 선택합니다.</block>
-  <block id="811422b4eb759583a4051504db293f64" category="paragraph">그런 다음 * 를 클릭할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
   <block id="0f034106893faef4643a4f2e45058c52" category="list-text">리소스 새로 고침 * 을 클릭하여 호스트에서 사용 가능한 리소스를 검색합니다.</block>
   <block id="eb037ec78f327455a8e36a07871d70c6" category="paragraph">리소스는 리소스 유형, 호스트 이름, 관련 리소스 그룹, 백업 유형, 정책 및 전체 상태와 같은 정보와 함께 표시됩니다.</block>
   <block id="d960a78735f8828146abd7c7f897adb9" category="list-text">데이터베이스가 NetApp 스토리지에 있고 보호되지 않는 경우 Overall Status 열에 Not protected가 표시됩니다.</block>
@@ -3622,12 +3609,8 @@
   <block id="7394e84832837e7d0dc503d85eb3f36c" category="doc">SAP HANA 데이터베이스 백업</block>
   <block id="8f0e9744b1000b3672d2bdcf50a74d27" category="list-text">스냅샷 복사본 기반 백업 작업의 경우 모든 테넌트 데이터베이스가 유효하고 활성 상태인지 확인합니다.</block>
   <block id="961e6abd0c7a72786d3641390a4dea5f" category="list-text">하나 이상의 테넌트 데이터베이스가 다운될 때 파일 기반 백업을 만들려면 HANA 속성 파일에서 'Set-SmConfigSettings' cmdlet을 사용하여 allow_file_based_backup_IFINACTIVE_Tenants_present 매개 변수를 * Yes * 로 설정합니다.</block>
-  <block id="127c10f681ffba1b9fa91c9bf92bcbc8" category="paragraph">를 클릭합니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="50ce6bc02d574c2cab1fc82a19854cf8" category="paragraph">"정합성 보장 그룹 스냅샷" 작업이 완료될 때까지 기다릴 여유가 없습니다</block>
-  <block id="35d7ec08143354023f987fa79b9fde69" category="paragraph">스냅샷 복사 작업이 완료될 때까지 대기 시간을 지정하려면 * 긴급 *, * 중간 * 또는 * 완화된 * 을 선택합니다. 긴급 = 5초, 중간 = 7초, 휴식 = 20초</block>
-  <block id="78bc1eb0c9c9c6c68e04d6b93f620e64" category="list-text">Quiesce, Snapshot copy 및 unquiesce 작업에 대한 사전 및 사후 명령을 실행하려면 * Scripts * 화살표를 클릭합니다.</block>
   <block id="419f55f97321a95d51e21f7ca2e9b02d" category="paragraph">백업 작업을 종료하기 전에 사전 명령을 실행할 수도 있습니다. 사전 스크립트 및 사후 스크립트는 SnapCenter 서버에서 실행됩니다.</block>
-  <block id="e03984f57a97abb4f741022763efa39f" category="list-text">** 사용자 정의 구성** 화살표를 클릭한 다음 이 자원을 사용하는 모든 작업에 필요한 사용자 정의 값 쌍을 입력합니다.</block>
   <block id="2ca1729f14a40401626e0eaac1397926" category="paragraph">SnapCenter 를 사용하여 스토리지 수준의 스냅샷 복사본을 생성합니다</block>
   <block id="106e549635779a49f4846a54f63000c8" category="paragraph">SnapCenter: Windows용 플러그인을 사용하여 파일 시스템을 일관된 상태로 전환한 다음 스냅샷 복사본을 생성합니다</block>
   <block id="90334c9b6a705f8c6dafb182257f149b" category="paragraph">_policy_name_은 선택한 정책의 이름입니다.</block>
@@ -4664,7 +4647,6 @@
   <block id="4b97795f8b5846a347889908642cabfb" category="paragraph">트랜잭션 로그를 잘라내지 않고 백업합니다.</block>
   <block id="768ec7bd106e7f2fd93257b2c6b114ad" category="paragraph">이 백업 유형은 일반 로그 백업의 시퀀싱에 영향을 주지 않습니다. 복사 전용 로그 백업은 온라인 복원 작업을 수행하는 데 유용합니다.</block>
   <block id="2414432c60e82c4bed04be0e4dafda65" category="doc">SQL Server 리소스 그룹을 백업합니다</block>
-  <block id="e169c75993af25a436c2276ecc3bbdda" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 * 를 클릭하여 리소스 그룹을 검색할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 태그를 선택합니다. 그런 다음 * 를 클릭할 수 있습니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
   <block id="d8a3458cd303d8d6a9529b6dbba62424" category="list-text">백업 후 * Verify * 를 선택하여 필요 시 백업을 확인합니다.</block>
   <block id="8e927494c3186b26a3de09d9578e731f" category="paragraph">정책의 * Verify * 옵션은 예약된 작업에만 적용됩니다.</block>
   <block id="35002a531b4134648eef7b46ee445a29" category="paragraph"><block ref="35002a531b4134648eef7b46ee445a29" category="inline-link-macro-rx"></block></block>
@@ -4729,7 +4711,6 @@
   <block id="3bb68819532539f48f629ba62348a6c6" category="paragraph">예를 들어, 사용자가 데이터베이스에 대한 보기 액세스 권한만 있는 경우 데이터베이스의 파일 및 속성을 식별할 수 없으므로 백업할 수 없습니다.</block>
   <block id="7d48eed4487109a3829d0196f297a492" category="admonition">SQL Server Standard Edition에 가용성 그룹 구성이 있는 경우 SnapCenter는 기본 데이터베이스만 백업할 수 있습니다.</block>
   <block id="8057ae87eee7a0579409f47c9591745e" category="list-text">리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 인스턴스 * 또는 * 가용성 그룹 * 을 선택합니다.</block>
-  <block id="c3a876612603db3849e76480edcc8121" category="paragraph">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 호스트 이름과 SQL Server 인스턴스를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="b8b5141218dbfab4fdbf5b5063dfa880" category="paragraph">리소스는 리소스 유형, 호스트 또는 클러스터 이름, 관련 리소스 그룹, 백업 유형, 정책 및 전체 상태와 같은 정보와 함께 표시됩니다.</block>
   <block id="e47a2cdbd770e8e20b9c7261dcf67926" category="list-text">데이터베이스가 비 NetApp 스토리지에 있는 경우 '백업을 사용할 수 없음'이 * Overall Status * 열에 표시됩니다.</block>
   <block id="6a0af518fc735246e3518bed22c2fa48" category="paragraph">NetApp이 아닌 스토리지에 있는 데이터베이스에는 데이터 보호 작업을 수행할 수 없습니다.</block>
@@ -5212,7 +5193,6 @@
   <block id="ea206b55c8e872afeab89e937623ab63" category="paragraph">플러그인을 설치하면 해당 호스트의 모든 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
   <block id="6987bf979aa46f2f012544689e530ba8" category="paragraph">데이터베이스가 성공적으로 검색되도록 하려면 데이터베이스가 마운트된 상태 이상이어야 합니다. Oracle RAC(Real Application Clusters) 환경에서 검색을 수행하는 호스트의 RAC 데이터베이스 인스턴스는 데이터베이스 인스턴스를 성공적으로 검색하려면 마운트 상태 이상이어야 합니다. 검색된 데이터베이스만 리소스 그룹에 추가할 수 있습니다.</block>
   <block id="719fa5cf3cf0a0fd65399dc0b9ba9597" category="paragraph">호스트에서 Oracle 데이터베이스를 삭제한 경우 SnapCenter Server는 이를 인식하지 못하고 삭제된 데이터베이스를 나열합니다. SnapCenter 리소스 목록을 업데이트하려면 리소스를 수동으로 새로 고쳐야 합니다.</block>
-  <block id="ddb5eb0de214c4f8ca63b100be025650" category="paragraph">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 를 클릭할 수 있습니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 필터 창을 닫습니다.</block>
   <block id="ffe07db18130be1419f3e22efa2b9af9" category="paragraph">RAC One Node 시나리오에서는 데이터베이스가 현재 호스팅되는 노드의 RAC 데이터베이스로 검색됩니다.</block>
   <block id="8cc1dfb0736def133fbfcac21e33e8c2" category="paragraph">데이터베이스는 데이터베이스 유형, 호스트 또는 클러스터 이름, 관련 리소스 그룹 및 정책, 상태와 같은 정보와 함께 표시됩니다.</block>
   <block id="488808c65c8210343fe174817606fae0" category="list-text">데이터베이스가 비NetApp 스토리지 시스템에 있는 경우 사용자 인터페이스에 Overall Status 열에 Not Available for Backup 메시지가 표시됩니다.</block>
@@ -5223,7 +5203,6 @@
   <block id="61112f6f5b442a356210cf4cc80ab89d" category="summary">애플리케이션 볼륨이 리소스 그룹에 속하지 않은 경우 리소스 페이지에서 애플리케이션 볼륨을 백업할 수 있습니다.</block>
   <block id="d8c3b27e33a2869282039b9ff6a23fc5" category="doc">애플리케이션 볼륨을 백업합니다</block>
   <block id="eba902edb76de30c0b6c9d32f53d05ed" category="paragraph">애플리케이션 볼륨이 리소스 그룹에 속하지 않은 경우 리소스 페이지에서 애플리케이션 볼륨을 백업할 수 있습니다.</block>
-  <block id="520f85e55e2b17285c39b1ad458556a0" category="list-text">를 클릭합니다<block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
   <block id="c6cc754896fef7ff6303bf792f45397f" category="list-text">백업할 애플리케이션 볼륨을 선택합니다.</block>
   <block id="fb532da51d82ae5118e8f3d5cb3bbd50" category="paragraph">Application volume-protect(애플리케이션 볼륨 보호) 페이지가 표시됩니다.</block>
   <block id="81e3d6d459d6185662dc1ac418aeba95" category="paragraph">이 확인란을 선택한 다음 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
@@ -5949,7 +5928,6 @@
   <block id="242cdc11ae22f217c93ae40e14e96194" category="paragraph">개별 리소스 그룹에 대한 자격 증명을 설정하고 사용자 이름에 전체 관리자 권한이 없는 경우 사용자 이름에 적어도 리소스 그룹 및 백업 권한이 있어야 합니다.</block>
   <block id="7b13621f41f0146d0ffd2434af94438a" category="paragraph">Oracle 데이터베이스 인증을 사용하도록 설정한 경우 리소스 보기에 빨간색 자물쇠 아이콘이 표시됩니다. 데이터베이스를 보호하거나 리소스 그룹에 데이터베이스 자격 증명을 추가하여 데이터 보호 작업을 수행하려면 데이터베이스 자격 증명을 구성해야 합니다.</block>
   <block id="9d84c90ce04a969ca09498823506ba1f" category="admonition">자격 증명을 생성하는 동안 잘못된 세부 정보를 지정하면 오류 메시지가 표시됩니다. 취소 * 를 클릭한 다음 다시 시도해야 합니다.</block>
-  <block id="f8cbfb3254bb5bd20533e8d1e586899c" category="list-text">을 클릭합니다 <block ref="fec415d0a77b873d1abe850650ad2d07" category="inline-image-macro-rx" type="image"></block>호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
   <block id="5de6e0a70b653c8dab85d2d2bccf04ae" category="list-text">데이터베이스를 선택한 다음 * 데이터베이스 설정 * &gt; * 데이터베이스 구성 * 을 클릭합니다.</block>
   <block id="6df18cfefa59a0d65ea120d8247b7ba8" category="list-text">데이터베이스 설정 구성 섹션의 * 기존 자격 증명 사용 * 드롭다운 목록에서 Oracle 데이터베이스에서 데이터 보호 작업을 수행하는 데 사용할 자격 증명을 선택합니다.</block>
   <block id="bc36b053b483bc3f05afdf22b15ab4cf" category="admonition">Oracle 사용자는 sysdba 권한을 가지고 있어야 합니다.</block>
@@ -6892,8 +6870,6 @@
   <block id="760e4ac18c61344254ca2b2ea3da745a" category="list-text">Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 사용하는 경우 SnapCenter 서버에서 Windows 작업 스케줄로 스케줄이 실행됩니다.</block>
   <block id="34491d7c290ea91e85fff45d101c134f" category="list-text">Oracle 데이터베이스용 SnapCenter 플러그인의 경우 SnapCenter 서버 호스트에서 실행되는 호스트 에이전트는 Linux 또는 AIX 호스트에서 실행되는 SnapCenter SPL(플러그인 로더)과 통신하여 서로 다른 데이터 보호 작업을 수행합니다.</block>
   <block id="a45f8ebdad00cd1e18e59d75c2e10a6e" category="list-text">SAP HANA 데이터베이스용 SnapCenter 플러그인 및 SnapCenter 맞춤형 플러그인의 경우 SnapCenter 서버는 호스트에서 실행되는 SCCore 에이전트를 통해 이러한 플러그인과 통신합니다.</block>
-  <block id="7f09afa1cce264e8c737c6b7357d5bd8" category="paragraph">SnapCenter 서버 및 플러그인은 HTTPS를 사용하여 호스트 에이전트와 통신합니다.</block>
-  <block id="920ebfc1b280e5aee6295e39f4823b55" category="paragraph">SnapCenter 작업에 대한 정보는 SnapCenter 저장소에 저장됩니다.</block>
   <block id="a6d093f66e362f8852d5b0ce5d1adf5a" category="section-title">SnapCenter 플러그인</block>
   <block id="e1087bd8c9bab7e111508724bff61f97" category="paragraph">각 SnapCenter 플러그인은 특정 환경, 데이터베이스 및 애플리케이션을 지원합니다.</block>
   <block id="9a8bf4c46d108a9dadf51b9b7637621f" category="cell">플러그인 이름입니다</block>
@@ -7777,8 +7753,6 @@
   <block id="14fbb4ba3858c107f2599916d3b51cbb" category="section-title">카탈로그 정보를 제거합니다</block>
   <block id="4c4d4c133d15d97bf3bef74ffeeeb66a" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 선택하고 목록에서 해당 플러그인을 선택합니다.</block>
   <block id="ba4484b740822363967ef7dbb090de6a" category="inline-image-macro">필터 아이콘</block>
-  <block id="bdf18e1416fb037a66cb2e8b6bf34e50" category="list-text">을 클릭합니다 <block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block>호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
-  <block id="36fae2ba23dbe8fc737f85fdffde333e" category="paragraph">그런 다음 을 클릭할 수 있습니다 <block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="90db41db3c301da492422a8fbb244c83" category="list-text">리소스 페이지에서 다음 단계를 수행할 수 있습니다.</block>
   <block id="00f0529a96533b63a21705811e1addce" category="list-text">확인란을 선택하고 스냅샷 복사본 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="8319f5e3f98fcec5a71bd43e8454a8fd" category="paragraph">예를 들면, 다음과 같습니다.<block ref="6d242f6ac938ffb13709f54d68cd3c4a" prefix=" " category="inline-code"></block> 또는<block ref="90ea7aa0cb61dd49e32f6dcf8afac143" prefix=" " category="inline-code"></block>. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.</block>
@@ -7844,8 +7818,6 @@
   <block id="92d3f2f0912d79a31442f669496dcfa5" category="list-text">데이터 파일 및 제어 파일만</block>
   <block id="5894ddcf494ce28f1eb272ca5e723710" category="list-text">데이터 파일, 제어 파일 및 아카이브 로그 파일을 포함하는 전체 데이터베이스입니다</block>
   <block id="2d92b3df61f86e9074ba4418a26c533e" category="paragraph">데이터베이스가 마운트되었거나 종료 상태일 때 생성된 백업을 오프라인 백업이라고 합니다. 오프라인 백업을 콜드 백업이라고도 합니다. 데이터 파일만 포함하고 오프라인 백업에는 제어 파일을 포함할 수 있습니다. 오프라인 마운트 또는 오프라인 종료 백업을 생성할 수 있습니다.</block>
-  <block id="fd9859cb151774e34b52a6d747daab3d" category="list-text">검색 상자에 리소스 그룹 이름을 입력하거나 를 클릭합니다 <block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block>을 클릭하고 태그를 선택합니다.</block>
-  <block id="6baaca80281eda4a251e4e932a39cd4b" category="paragraph">을 클릭합니다 <block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
   <block id="50aa129d52e712ab3c9a0f93f956d9e2" category="list-text">리소스 그룹 페이지에서 백업할 리소스 그룹을 선택합니다.</block>
   <block id="3ce47918d2033ed0d68d1e7c6a9b1c45" category="admonition">두 개의 데이터베이스를 사용하는 통합 리소스 그룹이 있고 그 중 하나에 타사 스토리지에 대한 데이터가 있는 경우, 다른 데이터베이스가 NetApp 스토리지에 있더라도 백업 작업이 중단됩니다.</block>
   <block id="5655480ae4615b223f1d67d63b4ee784" category="list-text">리소스 그룹에 연결된 정책이 여러 개인 경우 * 정책 * 드롭다운 목록에서 사용할 백업 정책을 선택합니다.</block>
@@ -8056,9 +8028,7 @@ FAS, AFF 또는 ASA 스토리지를 사용하여 평가판을 통해 SnapCenter�
   <block id="48462a95fd8685081e58f7c123971e5b" category="section-title">인증서 기반 인증 개요</block>
   <block id="dbb44863e91bacd01eafa49136b071d2" category="paragraph">인증서 기반 인증은 SnapCenter 플러그인 호스트에 액세스하려고 하는 각 사용자의 인증을 확인합니다. 사용자는 개인 키 없이 SnapCenter 서버 인증서를 내보내고 플러그인 호스트 신뢰할 수 있는 저장소에 가져와야 합니다. 인증서 기반 인증은 양방향 SSL 기능이 활성화된 경우에만 작동합니다.</block>
   <block id="f6ce44442588fc16e1d7cc2d3995eff2" category="list-text">ONTAP FAS, AFF 또는 ASA(All SAN Array) 운영 시스템에 있고 ONTAP FAS, AFF 또는 ASA 2차 시스템에 복제된 데이터입니다</block>
-  <block id="616472bd1da01c2fe1a46ec002e57f2b" category="list-text">ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있고 로컬 StorageGRID 오브젝트 스토리지로 보호되는 데이터(NetApp BlueXP 클라우드 백업 통합 사용)</block>
   <block id="f5c37d824040662f50cbb8a32d77182d" category="list-text">ONTAP FAS, AFF 또는 ASA 기본 시스템에 있고 Cloud Volumes ONTAP에 복제된 데이터입니다</block>
-  <block id="394619b29d62ebea0cecaad9129df0ea" category="list-text">ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있고 클라우드의 오브젝트 및 아카이브 스토리지로 보호되는 데이터(NetApp BlueXP 클라우드 백업 통합 사용)</block>
   <block id="b250098e069eb54d9e5d847baeeca541" category="paragraph">Windows cmdlet에 대한 자세한 내용은 을 참조하십시오<block ref="60f235ced4554b230bb7034fc116cf25" category="inline-link-rx"></block>.</block>
   <block id="c10c466f5857ce0ebc5a5f9e3130411a" category="paragraph">UNIX 명령에 대한 자세한 내용은 을 참조하십시오<block ref="1f7a49a613b7c2dfb834cc80b3b923ce" category="inline-link-rx"></block>.</block>
   <block id="0dfbdfeadf3f1f407a28e4f77517f070" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다<block ref="60f235ced4554b230bb7034fc116cf25" category="inline-link-rx"></block></block>
@@ -8472,4 +8442,40 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="28d224f5fce20ca21cc66cf83832a2b1" category="list-text">확인 일정을 구성할 정책을 선택한 다음 * 를 선택합니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>*.</block>
   <block id="3d1c64d2c8b1e4058225a78c3ef09fa6" category="list-text">OK * 를 선택합니다.</block>
   <block id="5477ea177e290e8ac1c03a7ee8f2a92b" category="list-text">지금 백업 * 을 선택합니다.</block>
+  <block id="e871dec81bbb55999bfb71a61279d374" category="paragraph">을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="7b467581fdc2f1a9bc98397eaf9411b4" category="list-text">을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 백업 작업만 나열되도록 목록을 필터링합니다.</block>
+  <block id="8e5cdb93ac42ad2c2b35814060435396" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 을 클릭하여 리소스 그룹을 검색할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 태그를 선택합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="748e365a5533cec3628919b992bc25fa" category="list-text">을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 복원 작업만 나열되도록 목록을 필터링하려면</block>
+  <block id="f5cb0104f9d25cac663152187398a069" category="list-text">을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 클론 작업만 나열되도록 목록을 필터링합니다.</block>
+  <block id="5968d7d6aa7eca121c1a6ecc9d1f9bd1" category="paragraph">을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 호스트 이름과 SQL Server 인스턴스를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="3f897d901d24f02777ff0994b7823d1a" category="list-text">ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있으며 로컬 StorageGRID 오브젝트 스토리지로 보호되는 데이터</block>
+  <block id="f7b38c62b0e74d318a255bc3094cf531" category="list-text">ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있고 클라우드의 오브젝트 및 아카이브 스토리지로 보호되는 데이터(BlueXP 백업 및 복구 통합 사용)</block>
+  <block id="b62cae9c23cf035ec4b43fec7f0697d6" category="paragraph">SnapCenter 서버 및 플러그인은 HTTPS를 사용하여 호스트 에이전트와 통신합니다. SnapCenter 작업에 대한 정보는 SnapCenter 저장소에 저장됩니다.</block>
+  <block id="91e3724846bcc53dbc1d1e5a3296e15f" category="inline-link">분리된 네임스페이스를 사용할 때 SnapCenter에서 리소스를 검색할 수 없습니다</block>
+  <block id="0c6faa7f360e593d37b8a98e5281e4e7" category="admonition">SnapCenter는 Windows 호스트에 대해 비결합 네임스페이스를 지원합니다. 비결합 네임스페이스를 사용할 때 문제가 발생하면 을 참조하십시오<block ref="96bf41c45768bfb194201403aea10b84" category="inline-link-rx"></block>.</block>
+  <block id="b9d10a11f62e11b503698c7bbbb76969" category="list-text">를 클릭합니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
+  <block id="c09c3cc5c352ec79b573a0262d4a9909" category="paragraph">그런 다음 * 를 클릭할 수 있습니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
+  <block id="27141c09e4c3729538eed268f4984f0a" category="paragraph">을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 를 클릭할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 아이콘을 클릭하여 필터 창을 닫습니다.</block>
+  <block id="895c7c73b51f1f88870ff5bc421d66ff" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 * 를 클릭하여 리소스 그룹을 검색할 수 있습니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 누른 다음 태그를 선택합니다. 그런 다음 * 를 클릭할 수 있습니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
+  <block id="8772efe51abd031bf2630ddf99b43a79" category="list-text">을 클릭합니다 <block ref="2df6cc2e237d722aa6244879c70fd2d2" category="inline-image-macro-rx" type="image"></block>호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
+  <block id="2120056b5c6b43acb41f77a74a912128" category="paragraph">그런 다음 을 클릭할 수 있습니다 <block ref="2df6cc2e237d722aa6244879c70fd2d2" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="456dd0163d1a1c34c74efc809cf6363b" category="list-text">을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
+  <block id="b5e4628eb9cb2cd7efab86c10d19965c" category="paragraph">그런 다음 을 클릭할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="6920404cf085bab5be2132dbc275f33b" category="paragraph">리소스 그룹은 호스트 또는 클러스터의 리소스 모음입니다. 백업 작업은 리소스 그룹에 정의된 모든 리소스에 대해 수행됩니다.</block>
+  <block id="a833804e6b707a2a653d8b6273573c9f" category="paragraph">리소스 페이지에서 필요 시 리소스 그룹을 백업할 수 있습니다. 리소스 그룹에 정책이 연결되어 있고 스케줄이 구성되어 있는 경우 스케줄에 따라 백업이 생성됩니다.</block>
+  <block id="b2ad47c7842f5e26da4387acfcdb5046" category="list-text">검색 상자에 리소스 그룹 이름을 입력하거나 를 클릭합니다 <block ref="2df6cc2e237d722aa6244879c70fd2d2" category="inline-image-macro-rx" type="image"></block>을 클릭하고 태그를 선택합니다.</block>
+  <block id="313b973ed20ae0f32242d787d703216d" category="paragraph">을 클릭합니다 <block ref="2df6cc2e237d722aa6244879c70fd2d2" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="8ec049c5812d131f3e960eb36acfe281" category="paragraph">를 클릭합니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 * 를 클릭할 수 있습니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
+  <block id="a4da2725fd201053d7a850500b404971" category="paragraph">을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 호스트 이름과 Exchange Server를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="3a16a5fe7a351d2059010bdd627dffd9" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 * 를 클릭하여 리소스 그룹을 검색할 수 있습니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 누른 다음 태그를 선택합니다. 그런 다음 * 를 클릭할 수 있습니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
+  <block id="90e14cd7255b5121e0c223d30a2cd3b7" category="list-text">(선택 사항) 을 클릭합니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 호스트 이름을 선택합니다.</block>
+  <block id="f2ae288f937b356dff24c08f0c1a6ec3" category="list-text">(선택 사항) * 를 클릭합니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 누른 다음 호스트 이름을 선택합니다.</block>
+  <block id="9eb8278143c5b25686cc1b6c525a9b8d" category="paragraph">를 선택합니다<block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>를 선택한 다음 호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 선택할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
+  <block id="45b6721b8137bd82de1f2497a525d57a" category="list-text">백업할 리소스를 선택합니다.</block>
+  <block id="0666d07a296860de6e0a6f6e4fd0425e" category="list-text">백업 * 화살표를 선택하여 추가 백업 옵션을 설정합니다.</block>
+  <block id="cd713ffb7f8ebc1fd9a44fb5ef40eefe" category="paragraph">스냅샷 복사 작업이 완료될 때까지 대기 시간을 지정하려면 * 긴급 *, * 중간 * 또는 * 완화된 * 을 선택합니다. 긴급 = 5초, 중간 = 7초, 휴식 = 20초</block>
+  <block id="8dd7963568a06d004b4a54b651ec862f" category="list-text">Quiesce, Snapshot copy 및 unquiesce 작업에 대한 사전 및 사후 명령을 실행하려면 * Scripts * 화살표를 선택합니다.</block>
+  <block id="0644babb03e5024dbc898ead17e21f90" category="list-text">사용자 정의 구성** 화살표를 선택한 다음 이 자원을 사용하는 모든 작업에 필요한 사용자 정의 값 쌍을 입력합니다.</block>
+  <block id="100eb4bb64628d6bc8890851c8173103" category="list-text">policy_policy_name_에 대한 스케줄 추가 대화 상자에서 스케줄을 구성한 다음 * OK * 를 선택합니다.</block>
+  <block id="7dd7da1b07a05d1000eeeecb05ce4ee5" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 를 선택하여 리소스 그룹을 검색할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block>을 클릭한 다음 태그를 선택합니다. 그런 다음 을 선택할 수 있습니다 <block ref="f7fe4e34c7d99a8a3a2c66cbdc7de7d8" category="inline-image-macro-rx" type="image"></block> 를 눌러 필터 창을 닫습니다.</block>
 </blocks>
