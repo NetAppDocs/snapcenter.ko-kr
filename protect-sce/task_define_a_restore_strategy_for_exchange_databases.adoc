@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_define_a_restore_strategy_for_exchange_databases.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter plug-in for Exchange Server 
 summary: Exchange Server에 대한 복원 전략을 정의하면 데이터베이스를 성공적으로 복원할 수 있습니다. 
 ---
 = Exchange 데이터베이스에 대한 복구 전략 정의

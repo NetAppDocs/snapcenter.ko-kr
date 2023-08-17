@@ -13,8 +13,7 @@ summary: SnapCenter 호스트 추가 페이지를 사용하여 Windows 호스트
 [role="lead"]
 SnapCenter 호스트 추가 페이지를 사용하여 Windows 호스트를 추가할 수 있습니다. Microsoft Windows용 SnapCenter 플러그인은 지정된 호스트에 자동으로 설치됩니다. 이는 플러그인을 설치하는 데 권장되는 방법입니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인을 설치할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * 플러그인 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자 역할)에 할당된 사용자여야 합니다.
 * Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다.
 * SnapCenter 사용자는 Windows 서버의 "서비스로 로그온" 역할에 추가해야 합니다.
@@ -25,8 +24,7 @@ link:task_configure_gMSA_on_windows_server_2012_or_later.html["Windows Server 20
 
 
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 * SnapCenter 서버를 다른 SnapCenter 서버에 플러그인 호스트로 추가할 수 없습니다.
 * Windows 플러그인
 +
@@ -51,8 +49,7 @@ E-series 스토리지에 연결된 Windows 호스트에는 Windows용 플러그�
 NOTE: 호스트가 이미 작업 그룹에 속해 있고 다른 도메인으로 변경되었거나 그 반대로 변경된 경우 SnapCenter는 동일한 호스트(플러그인 호스트)를 SnapCenter에 추가할 수 없습니다.
 동일한 호스트를 추가하려면 SnapCenter에서 호스트를 제거하고 다시 추가해야 합니다.
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 호스트 * 를 클릭합니다.
 . 맨 위에 * Managed Hosts * 가 선택되어 있는지 확인합니다.
 . 추가 * 를 클릭합니다.

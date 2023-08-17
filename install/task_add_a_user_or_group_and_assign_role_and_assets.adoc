@@ -13,8 +13,7 @@ summary: SnapCenter 사용자에 대한 역할 기반 액세스 제어를 구성
 [role="lead"]
 SnapCenter 사용자에 대한 역할 기반 액세스 제어를 구성하려면 사용자 또는 그룹을 추가하고 역할을 할당할 수 있습니다. 역할에 따라 SnapCenter 사용자가 액세스할 수 있는 옵션이 결정됩니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * "SnapCenterAdmin" 역할로 로그인해야 합니다.
 * 운영 체제 또는 데이터베이스의 Active Directory에서 사용자 또는 그룹 계정을 만들어야 합니다. SnapCenter를 사용하여 이러한 계정을 만들 수 없습니다.
 +

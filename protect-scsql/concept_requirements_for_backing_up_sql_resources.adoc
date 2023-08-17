@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_requirements_for_backing_up_sql_resources.html 
 sidebar: sidebar 
-keywords:  
+keywords: Requirements 
 summary: SQL 리소스를 백업하기 전에 몇 가지 요구 사항이 충족되었는지 확인해야 합니다. 
 ---
 = SQL 리소스 백업 요구 사항

@@ -13,15 +13,13 @@ summary: 리소스는 사용자가 설치한 플러그인에서 유지 관리하
 [role="lead"]
 리소스는 사용자가 설치한 플러그인에서 유지 관리하는 데이터베이스, Exchange 데이터베이스 가용성 그룹입니다. 이러한 리소스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있지만 먼저 사용 가능한 리소스를 확인해야 합니다. 사용 가능한 리소스를 확인하면 플러그인 설치가 성공적으로 완료되었는지 확인할 수도 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 생성, 자격 증명 추가 및 Exchange용 플러그인 설치와 같은 작업을 이미 완료해야 합니다.
 * Single Mailbox Recovery 소프트웨어 기능을 사용하려면 Single Mailbox Recovery 소프트웨어가 설치된 Exchange Server에 활성 데이터베이스를 설치해야 합니다.
 * 데이터베이스가 VMware RDM LUN에 상주하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다. 를 클릭합니다 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html["VMware vSphere용 SnapCenter 플러그인 설명서"] 자세한 정보가 있습니다.
 
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 * Details 페이지의 * Overall Status * 옵션이 Not Available for backup으로 설정되어 있으면 데이터베이스를 백업할 수 없습니다. 다음 중 하나라도 해당하면 * Overall Status *(전체 상태 *) 옵션이 Not Available(백업 불가)로 설정됩니다.
 +
 ** 데이터베이스가 NetApp LUN에 없습니다.
@@ -34,15 +32,14 @@ summary: 리소스는 사용자가 설치한 플러그인에서 유지 관리하
 * DAG(Database Availability Group)가 있는 경우 DAG에서 백업 작업을 실행하여 그룹의 모든 데이터베이스를 백업할 수 있습니다.
 
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 리소스 페이지의 왼쪽 위 모서리에 있는 플러그인 드롭다운 목록에서 * Microsoft Exchange Server * 를 선택합니다.
 . 리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 또는 * 리소스 그룹 * 을 선택합니다.
 +
 모든 데이터베이스와 DAG는 DAG 또는 호스트 이름과 함께 FQDN 형식으로 표시되므로 여러 데이터베이스를 구별할 수 있습니다.
 
 +
-을 클릭합니다 image:../media/filter_icon.png[""] 호스트 이름과 Exchange Server를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 image:../media/filter_icon.png[""] 를 눌러 필터 창을 닫습니다.
+을 클릭합니다 image:../media/filter_icon.png["필터 아이콘"] 호스트 이름과 Exchange Server를 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭할 수 있습니다 image:../media/filter_icon.png["필터 아이콘"] 를 눌러 필터 창을 닫습니다.
 
 . 리소스 새로 고침 * 을 클릭합니다.
 +

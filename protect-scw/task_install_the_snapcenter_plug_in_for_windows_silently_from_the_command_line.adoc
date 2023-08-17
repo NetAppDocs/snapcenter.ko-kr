@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/task_install_the_snapcenter_plug_in_for_windows_silently_from_the_command_line.html 
 sidebar: sidebar 
-keywords:  
+keywords: install, snapcenter 
 summary: SnapCenter GUI에서 원격으로 플러그인을 설치할 수 없는 경우 Windows 호스트에 Microsoft Windows용 SnapCenter 플러그인을 로컬로 설치할 수 있습니다. Windows 명령줄에서 Microsoft Windows 설치 프로그램용 SnapCenter 플러그인을 자동 모드로 실행할 수 있습니다. 
 ---
 = 명령줄에서 Microsoft Windows용 SnapCenter 플러그인을 자동으로 설치합니다
@@ -13,16 +13,14 @@ summary: SnapCenter GUI에서 원격으로 플러그인을 설치할 수 없는 
 [role="lead"]
 SnapCenter GUI에서 원격으로 플러그인을 설치할 수 없는 경우 Windows 호스트에 Microsoft Windows용 SnapCenter 플러그인을 로컬로 설치할 수 있습니다. Windows 명령줄에서 Microsoft Windows 설치 프로그램용 SnapCenter 플러그인을 자동 모드로 실행할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * Microsoft .Net 4.7.2 이상을 설치해야 합니다.
 * PowerShell 4.0 이상을 설치해야 합니다.
 * Windows 메시지 큐잉을 켜야 합니다.
 * 호스트의 로컬 관리자여야 합니다.
 
 
-* 단계 *
-
+.단계
 . 설치 위치에서 Microsoft Windows용 SnapCenter 플러그인을 다운로드합니다.
 +
 예를 들어 기본 설치 경로는 C:\ProgramData\NetApp\SnapCenter\Package Repository입니다.

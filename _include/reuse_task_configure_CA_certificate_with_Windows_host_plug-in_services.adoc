@@ -6,8 +6,7 @@
 
 SnapCenter 서버 및 CA 인증서가 이미 배포된 모든 플러그인 호스트에서 다음 단계를 수행합니다.
 
-* 단계 *
-
+.단계
 . 다음 명령을 실행하여 SMCore 기본 포트 8145를 사용하여 기존 인증서 바인딩을 제거합니다.
 +
 ">netsh http delete sslcert ipport=0.0.0.0:_<SMCore Port>"를 선택합니다

@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/concept_number_of_backup_jobs_needed.html 
 sidebar: sidebar 
-keywords:  
+keywords: backup jobs 
 summary: '필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)\ 등이 있습니다.' 
 ---
 = 필요한 백업 작업 수입니다

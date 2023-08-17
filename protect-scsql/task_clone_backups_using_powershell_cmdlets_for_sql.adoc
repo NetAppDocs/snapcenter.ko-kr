@@ -15,8 +15,7 @@ summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 �
 
 PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
 
-* 단계 *
-
+.단계
 . Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
 +
 [listing]

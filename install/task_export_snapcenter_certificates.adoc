@@ -60,6 +60,6 @@ Yes, export the private key * 옵션을 선택한 후 * Next * 를 클릭합니�
 |===
 
 
-* 결과 *
+결과 *
 
 인증서는 .pfx 형식으로 내보내집니다.

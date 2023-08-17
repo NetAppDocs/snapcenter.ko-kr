@@ -15,8 +15,7 @@ SnapCenter 서버 호스트 명령줄 인터페이스의 _Uninstall-SmHostPackag
 
 플러그인을 제거할 각 호스트에 대한 로컬 관리자 권한이 있는 도메인 사용자로 SnapCenter에 로그인해야 합니다.
 
-* 단계 *
-
+.단계
 . PowerShell을 실행합니다.
 . SnapCenter 서버 호스트에서:_Open-SMConnection-SMSbaseUrl\https://SNAPCENTER_SERVER_NAME/DOMAIN_NAME_ 명령을 입력한 다음 자격 증명을 입력합니다.
 . _Uninstall-SmHostPackage_cmdlet 및 필수 매개 변수를 사용하여 Windows 플러그인을 제거합니다.

@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_clone_backups_using_powershell_cmdlets.html 
 sidebar: sidebar 
-keywords:  
+keywords: clone backups 
 summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
 = PowerShell cmdlet을 사용하여 백업 클론 생성
@@ -13,14 +13,12 @@ summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 �
 [role="lead"]
 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 모니터링이 포함됩니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
 
 PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
-* 단계 *
-
+.단계
 . Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
 +
 [listing]

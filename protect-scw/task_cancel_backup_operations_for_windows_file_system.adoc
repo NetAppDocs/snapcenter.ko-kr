@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/task_cancel_backup_operations_for_windows_file_system.html 
 sidebar: sidebar 
-keywords:  
+keywords: cancel backup 
 summary: 대기열에 있는 백업 작업을 취소할 수 있습니다. 
 ---
 = 백업 작업을 취소합니다

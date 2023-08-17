@@ -1,7 +1,7 @@
 ---
 permalink: admin/task_delete_clones.html 
 sidebar: sidebar 
-keywords:  
+keywords: Delete clones 
 summary: 더 이상 필요하지 않은 클론은 삭제할 수 있습니다. 
 ---
 = 클론 삭제

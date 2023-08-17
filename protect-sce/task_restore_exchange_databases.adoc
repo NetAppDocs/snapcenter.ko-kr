@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_restore_exchange_databases.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter plug-in for Exchange Server 
 summary: SnapCenter를 사용하여 백업된 Exchange 데이터베이스를 복구할 수 있습니다. 
 ---
 = Exchange 데이터베이스를 복구합니다
@@ -13,8 +13,7 @@ summary: SnapCenter를 사용하여 백업된 Exchange 데이터베이스를 복
 [role="lead"]
 SnapCenter를 사용하여 백업된 Exchange 데이터베이스를 복구할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * 리소스 그룹, 데이터베이스 또는 DAG(데이터베이스 가용성 그룹)를 백업해야 합니다.
 * Exchange 데이터베이스가 다른 위치로 마이그레이션되면 이전 백업에서 복구 작업이 작동하지 않습니다.
 * 스냅샷 복사본을 미러 또는 볼트에 복제하는 경우 SnapCenter 관리자는 소스 볼륨과 타겟 볼륨 모두에 대해 SVM을 할당해야 합니다.
@@ -27,8 +26,7 @@ Move-ActiveMailboxDatabase 명령을 실행하여 수동 데이터베이스 복�
 
 
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 * 데이터베이스에서 복구 작업을 수행하면 데이터베이스가 동일한 호스트에 다시 마운트되고 새 볼륨이 생성되지 않습니다.
 * DAG 레벨 백업은 개별 데이터베이스에서 복구해야 합니다.
 * Exchange 데이터베이스(.edb) 파일 이외의 파일이 있는 경우 전체 디스크 복원이 지원되지 않습니다.
@@ -48,8 +46,7 @@ Get API를 사용하여 키 값을 표시할 수 있습니다. API 설정은 지
 
 
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창의 리소스 페이지 왼쪽 위에 있는 * 리소스 * 를 클릭합니다.
 . 드롭다운 목록에서 Exchange Server 플러그인을 선택합니다.
 . 리소스 페이지의 보기 목록에서 * 데이터베이스 * 를 선택합니다.

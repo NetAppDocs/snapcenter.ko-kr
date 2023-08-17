@@ -13,12 +13,10 @@ summary: 명령줄 인터페이스를 사용하여 Linux용 SnapCenter 플러그
 [role="lead"]
 명령줄 인터페이스를 사용하여 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 제거할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * 예약된 작업을 삭제했는지 확인합니다
 * 실행 중인 모든 작업이 완료되었는지 확인합니다.
 
 
-* 단계 *
-
+.단계
 설치 제거하려면 _/custom_location/NetApp/snapcenter/SPL/installation/plugins/uninstall_을 실행합니다.

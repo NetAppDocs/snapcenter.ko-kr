@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html 
 sidebar: sidebar 
-keywords: credentials 
+keywords: add hosts 
 summary: SnapCenterAdd 호스트 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다. 
 ---
 = 호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다
@@ -13,8 +13,7 @@ summary: SnapCenterAdd 호스트 페이지를 사용하여 호스트를 추가�
 [role="lead"]
 SnapCenterAdd 호스트 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * 플러그인 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자 역할)에 할당된 사용자여야 합니다.
 * 메시지 큐 서비스가 실행 중인지 확인해야 합니다.
 * 그룹 GMSA(Managed Service Account)를 사용하는 경우 관리자 권한으로 GMSA를 구성해야 합니다.
@@ -23,14 +22,12 @@ link:task_configure_gMSA_on_windows_server_2012_or_later.html["사용자 지정 
 
 
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 SnapCenter 서버를 다른 SnapCenter 서버에 플러그인 호스트로 추가할 수 없습니다.
 
 WSFC(클러스터에 플러그인)를 설치하면 클러스터의 모든 노드에 플러그인이 설치됩니다.
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 호스트 * 를 선택합니다.
 . 맨 위에 * Managed Hosts * 탭이 선택되어 있는지 확인합니다.
 . 추가 * 를 선택합니다.
@@ -110,7 +107,7 @@ NOTE: 플러그인을 수동으로 설치하고 사용자 지정 포트를 지�
 +
 선택적으로 경로를 사용자 지정할 수 있습니다.
 
-** Linux용 SnapCenter 플러그인 패키지의 경우 기본 경로는 /opt/netapp/snapcenter입니다.
+** Linux용 SnapCenter 플러그인 패키지의 경우 기본 경로는 입니다 `/opt/NetApp/snapcenter`.
 +
 선택적으로 경로를 사용자 지정할 수 있습니다.
 
@@ -121,7 +118,7 @@ NOTE: 플러그인을 수동으로 설치하고 사용자 지정 포트를 지�
 압축된 폴더에는 사용자 지정 플러그인 코드와 descriptor.xml 파일이 들어 있습니다.
 
 +
-스토리지 플러그인의 경우 _C:\ProgramData\NetApp\SnapCenter\Package Repository_로 이동하여 'Storage.zip' 폴더를 선택합니다.
+스토리지 플러그인의 경우 로 이동합니다 `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` 를 선택하고 를 선택합니다 `Storage.zip` 폴더.
 
 ... 업로드 * 를 선택합니다.
 +
@@ -176,6 +173,6 @@ NOTE: 동일한 호스트가 SnapCenter에 이전에 추가되었고 지문이 �
 
 . 설치 과정을 모니터링합니다.
 +
-설치 관련 로그 파일은 /custom_location/snapcenter/logs에 있습니다.
+설치별 로그 파일은 에 있습니다 `/custom_location/snapcenter/` 로그.
 
 

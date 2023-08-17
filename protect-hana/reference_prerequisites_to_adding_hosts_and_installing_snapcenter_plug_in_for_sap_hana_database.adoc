@@ -57,3 +57,47 @@ https://imt.netapp.com/matrix/imt.jsp?components=112393;&solution=1259&isHWU&src
 * Linux 호스트에서 실행되는 SAP HANA 데이터베이스의 경우 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인은 자동으로 설치됩니다.
 * 플러그인 설치를 위한 기본 셸은 * bash * 이어야 합니다.
 
+
+
+
+== 보조 명령
+
+SAP HANA용 SnapCenter 플러그인에서 보조 명령을 실행하려면 에 해당 명령을 포함해야 합니다 `allowed_commands.config` 파일.
+
+`allowed_commands.config` 파일은 SnapCenter Plug-in for SAP HANA 디렉토리의 "etc" 하위 디렉토리에 있습니다.
+
+.Windows 호스트
+기본값: `C:\Program Files\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
+
+사용자 지정 경로: `<Custome_Directory>\NetApp\SnapCenter\HANA\etc\allowed_commands.config`
+Windows 호스트:
+
+.Linux 호스트
+기본값: `/opt/NetApp/snapcenter/scc/etc/allowed_commands.config`
+
+사용자 지정 경로: `<Custome_Directory>/NetApp/snapcenter/scc/etc/allowed_commands.config`
+
+플러그인 호스트에서 추가 명령을 허용하려면 을 엽니다 `allowed_commands.config` 편집기의 파일. 각 명령을 별도의 줄에 입력합니다. 이름은 대소문자를 구분하지 않습니다.
+예를 들면, 다음과 같습니다.
+
+명령: mount
+
+명령: 마운트 해제
+
+정규화된 경로 이름을 지정해야 합니다. 공백이 포함된 경우, 경로 이름은 따옴표(")로 묶어야 합니다.
+예를 들면, 다음과 같습니다.
+
+명령: "C:\Program Files\NetApp\SnapCreator Commands\sdcli.exe"
+
+명령: myscript.bat
+
+를 누릅니다 `allowed_commands.config` 파일이 없거나 명령 또는 스크립트 실행이 차단되고 워크플로가 실패하고 다음 오류가 발생합니다.
+
+"[/mnt/mount -a] 실행이 허용되지 않습니다. 플러그인 호스트의 %s 파일에 명령을 추가하여 권한을 부여하십시오."
+
+명령 또는 스크립트가 에 없는 경우 `allowed_commands.config`, 명령 또는 스크립트 실행이 차단되고 워크플로가 실패하고 다음 오류가 발생합니다.
+
+"[/mnt/mount -a] 실행이 허용되지 않습니다. 플러그인 호스트의 %s 파일에 명령을 추가하여 권한을 부여하십시오."
+
+
+NOTE: 와일드카드 항목(*)을 사용하여 모든 명령을 허용해서는 안 됩니다.

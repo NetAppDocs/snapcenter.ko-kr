@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/reference_native.html 
 sidebar: sidebar 
-keywords:  
+keywords: custom plug-in 
 summary: 네이티브 스타일을 사용하여 플러그인을 개발합니다. 
 ---
 = 네이티브 스타일

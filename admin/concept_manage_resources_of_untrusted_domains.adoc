@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_manage_resources_of_untrusted_domains.html 
 sidebar: sidebar 
-keywords:  
+keywords: Manage resources 
 summary: 'AD(Active Directory) 신뢰할 수 있는 도메인의 호스트를 관리하는 것 외에도 SnapCenter는 신뢰할 수 없는 여러 AD 도메인의 호스트도 관리합니다. 신뢰할 수 없는 AD 도메인은 SnapCenter 서버에 등록되어 있어야 합니다. SnapCenter는 신뢰할 수 없는 여러 AD 도메인의 사용자 및 그룹을 지원합니다.' 
 ---
 = 신뢰할 수 없는 도메인의 리소스를 관리합니다
@@ -62,8 +62,7 @@ FQDN을 지정하고 * Resolve * 를 클릭합니다.
 
 해당 도메인과 연결된 자산을 사용하지 않으려는 경우 신뢰할 수 없는 Active Directory 도메인의 등록을 취소할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 신뢰할 수 없는 도메인과 연결된 호스트, 사용자, 그룹 및 자격 증명을 제거해야 합니다.
 
 * 이 작업에 대한 정보 *

@@ -15,8 +15,7 @@ summary: 플러그인 패키지는 SnapCenter 업그레이드의 일부로 배�
 
 업그레이드 절차에서는 Windows, Linux 또는 AIX 호스트를 "유지 관리" 모드로 전환하여 호스트가 예약된 작업을 실행하지 못하도록 합니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * Linux 시스템에 액세스할 수 있는 루트가 아닌 사용자인 경우 업그레이드 작업을 수행하기 전에 _/etc/sudoers_file을 최신 체크섬 값으로 업데이트해야 합니다.
 * 기본적으로 SnapCenter는 환경에서 java_home을 감지합니다. 고정 java_home을 사용하고 Linux 호스트에서 플러그인을 업그레이드하는 경우 _/var/opt/snapcenter/spl/etc/_에 있는 _spl.properties_ 파일에 skip_jAVAHOME_update 매개 변수를 수동으로 추가하고 값을 true 로 설정해야 합니다.
 +
@@ -28,8 +27,7 @@ SnapCenter 구성 파일의 예: SnapDriveService.exe.config, SMCoreServiceHost.
 
 
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 * 업그레이드 절차에서는 Windows, Linux 또는 AIX 호스트를 "유지 관리" 모드로 전환하여 호스트가 예약된 작업을 실행하지 못하도록 합니다.
 * Microsoft SQL Server용 SnapCenter 플러그인, Microsoft Exchange Server용 SnapCenter 플러그인 및 Microsoft Windows용 SnapCenter 플러그인의 경우 실행할 scripts_path의 최신 버전으로 서버와 플러그인 호스트를 모두 업그레이드하는 것이 좋습니다.
 +
@@ -40,8 +38,7 @@ Job details * 페이지에서 스크립트를 scripts_path에 복사하고 정�
 
 
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 호스트 * > * 관리 호스트 * 를 클릭합니다.
 . 다음 작업 중 하나를 수행하여 호스트를 업그레이드합니다.
 +

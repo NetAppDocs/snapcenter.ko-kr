@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_monitor_jobs_schedules_events_and_logs.html 
 sidebar: sidebar 
-keywords:  
+keywords: Monitor jobs, schedules, events, logs 
 summary: 작업 진행 상황을 모니터링하고, 예약된 작업에 대한 정보를 얻고, 모니터 페이지에서 이벤트 및 로그를 검토할 수 있습니다. 
 ---
 = 작업, 일정, 이벤트 및 로그를 모니터링합니다
@@ -135,6 +135,5 @@ SnapCenter에서 백업, 복원, 클론, 검증 작업 및 로그를 제거할 �
 . 작업 페이지에서 작업의 상태를 검토합니다.
 
 
-* 자세한 정보 찾기 *
-
+.관련 정보
 cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].

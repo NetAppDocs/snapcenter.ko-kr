@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_what_operations_can_be_performed_from_the_resource_page.html 
 sidebar: sidebar 
-keywords:  
+keywords: Resources page 
 summary: 리소스 페이지에서 리소스를 검색하고 데이터 보호 작업을 수행할 수 있습니다. 수행할 수 있는 작업은 리소스를 관리하는 데 사용하는 플러그인에 따라 다릅니다. 
 ---
 = 리소스 페이지에서 지원되는 작업입니다

@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_overview_of_snapcenter_reports.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter reports 
 summary: SnapCenter는 시스템 상태 및 운영 성공을 모니터링하고 관리할 수 있는 다양한 보고 옵션을 제공합니다. 
 ---
 = SnapCenter 보고 기능 개요
@@ -130,8 +130,7 @@ SnapCenter 보고서를 내보내면 다양한 대체 형식으로 보고서를 
 
 정기적으로 SnapCenter 데이터 보호 작업 업데이트를 자신 또는 다른 사람에게 보내 해당 업데이트의 상태를 모니터링하려는 경우 리소스 그룹을 만들 때 SnapCenter 보고서를 전자 메일로 보내는 옵션을 구성할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 설정의 글로벌 설정 페이지에서 SMTP 서버를 구성해야 합니다.
 
 * 단계 *

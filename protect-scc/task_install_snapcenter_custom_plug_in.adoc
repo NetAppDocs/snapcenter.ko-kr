@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_install_snapcenter_custom_plug_in.html 
 sidebar: sidebar 
-keywords: installing 
+keywords: install workflow, custom plug-in 
 summary: 사용자 지정 플러그인 리소스를 보호하려면 SnapCenter 사용자 지정 플러그인을 설치하고 설정해야 합니다. 
 ---
 = SnapCenter 맞춤형 플러그인의 설치 워크플로우
@@ -13,6 +13,6 @@ summary: 사용자 지정 플러그인 리소스를 보호하려면 SnapCenter �
 [role="lead"]
 사용자 지정 플러그인 리소스를 보호하려면 SnapCenter 사용자 지정 플러그인을 설치하고 설정해야 합니다.
 
-image::../media/scc_install_configure_workflow.png[SCC 설치 - 워크플로우를 구성합니다]
+image::../media/scc_install_configure_workflow.png[SnapCenter 사용자 지정 플러그인의 워크플로우]
 
 link:concept_develop_a_plug_in_for_your_application.html["응용 프로그램용 플러그인을 개발합니다"]

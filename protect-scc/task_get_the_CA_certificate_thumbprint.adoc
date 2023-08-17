@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/task_get_the_CA_certificate_thumbprint.html 
 sidebar: sidebar 
-keywords: SnapCenter 
+keywords: SnapCenter, CA certificate 
 summary: CA 인증서 지문을 받습니다. 
 ---
 = CA 인증서 지문을 받습니다
@@ -13,8 +13,7 @@ summary: CA 인증서 지문을 받습니다.
 [role="lead"]
 인증서 thumbprint는 인증서를 식별하는 16진수 문자열입니다. 썸프린트는 썸프린트 알고리즘을 사용하여 인증서 컨텐츠에서 계산됩니다.
 
-* 단계 *
-
+.단계
 . GUI에서 다음을 수행합니다.
 +
 .. 인증서를 두 번 클릭합니다.

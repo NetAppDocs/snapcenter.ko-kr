@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_install_the_snapcenter_plug_in_for_exchange_silently_from_the_command_line.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter plug-in for Exchange Server 
 summary: SnapCenter 사용자 인터페이스 내에서 Exchange용 플러그인을 설치해야 합니다. 그러나 어떤 이유로 인해 Windows 명령줄에서 자동 모드로 Exchange용 플러그인 설치 프로그램을 실행할 수 없습니다. 
 ---
 = 명령줄에서 Exchange용 SnapCenter 플러그인을 자동으로 설치합니다
@@ -13,8 +13,7 @@ summary: SnapCenter 사용자 인터페이스 내에서 Exchange용 플러그인
 [role="lead"]
 SnapCenter 사용자 인터페이스 내에서 Exchange용 플러그인을 설치해야 합니다. 그러나 어떤 이유로 인해 Windows 명령줄에서 자동 모드로 Exchange용 플러그인 설치 프로그램을 실행할 수 없습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * Microsoft Exchange Server 리소스를 백업해야 합니다.
 * SnapCenter 플러그인 패키지를 설치해야 합니다.
 * 설치하기 전에 Microsoft SQL Server용 SnapCenter 플러그인의 이전 릴리즈를 삭제해야 합니다.
@@ -23,8 +22,7 @@ SnapCenter 사용자 인터페이스 내에서 Exchange용 플러그인을 설�
 
 
 
-* 단계 *
-
+.단계
 . 플러그인 호스트에 _C:\temp_folder가 있고 로그인한 사용자가 이 폴더에 대한 모든 액세스 권한을 가지고 있는지 확인합니다.
 . C:\ProgramData\NetApp\SnapCenter\Package_Repository에서 Microsoft Windows용 SnapCenter 플러그인을 다운로드하십시오.
 +

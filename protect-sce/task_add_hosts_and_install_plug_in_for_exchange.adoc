@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter Plug-in for Microsoft Exchange Server 
 summary: SnapCenterAdd 호스트 페이지를 사용하여 Windows 호스트를 추가할 수 있습니다. Exchange용 플러그인은 지정된 호스트에 자동으로 설치됩니다. 이는 플러그인을 설치하는 데 권장되는 방법입니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인을 설치할 수 있습니다. 
 ---
 = 호스트를 추가하고 Exchange용 플러그인을 설치합니다
@@ -13,16 +13,14 @@ summary: SnapCenterAdd 호스트 페이지를 사용하여 Windows 호스트를 
 [role="lead"]
 SnapCenter 호스트 추가 페이지를 사용하여 Windows 호스트를 추가할 수 있습니다. Exchange용 플러그인은 지정된 호스트에 자동으로 설치됩니다. 이는 플러그인을 설치하는 데 권장되는 방법입니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인을 설치할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * 플러그인 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자)에 할당된 사용자여야 합니다
 * Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자에 속한 경우 호스트에서 UAC를 비활성화해야 합니다.
 * 메시지 큐 서비스가 실행되고 있어야 합니다.
 * 그룹 GMSA(Managed Service Account)를 사용하는 경우 관리자 권한으로 GMSA를 구성해야 합니다. 자세한 내용은 을 참조하십시오link:task_configure_gMSA_on_windows_server_2012_or_later.html["Microsoft Exchange Server에 대해 Windows Server 2012 이상에서 그룹 관리 서비스 계정을 구성합니다"^].
 
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 * SnapCenter 서버를 다른 SnapCenter 서버에 플러그인 호스트로 추가할 수 없습니다.
 * 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다.
 * Exchange 노드가 DAG의 일부인 경우 SnapCenter 서버에 하나의 노드만 추가할 수 없습니다.
@@ -53,8 +51,7 @@ Exchange용 플러그인은 Windows용 SnapCenter 플러그인 패키지에 따�
 
 Microsoft Exchange Server용 SnapManager와 Windows용 SnapDrive가 이미 설치되어 있는 경우 Exchange용 플러그인을 동일한 Exchange Server에 설치하려면 Exchange용 플러그인 및 Windows용 SnapCenter 플러그인 패키지와 함께 설치된 VSS 하드웨어 공급자와 호환되지 않으므로 Windows용 SnapDrive에서 사용하는 VSS 하드웨어 공급자를 등록 취소해야 합니다. 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_manually_register_the_Data_ONTAP_VSS_Hardware_Provider["Data ONTAP VSS 하드웨어 공급자를 수동으로 등록하는 방법"].
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 호스트 * 를 클릭합니다.
 . 맨 위에 * Managed Hosts * 가 선택되어 있는지 확인합니다.
 . 추가 * 를 클릭합니다.

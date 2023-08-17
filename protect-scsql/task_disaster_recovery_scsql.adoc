@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_disaster_recovery_scsql.html 
 sidebar: sidebar 
-keywords:  
+keywords: disaster recovery 
 summary: SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 수동 단계를 수행하여 플러그인을 복구합니다. 
 ---
 = SQL Server용 SnapCenter 플러그인의 재해 복구
@@ -13,7 +13,7 @@ summary: SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 수동
 [role="lead"]
 SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 단계를 사용하여 다른 SQL 호스트로 전환하고 데이터를 복구합니다.
 
-.필요한 것
+.시작하기 전에
 * 보조 호스트의 운영 체제, 애플리케이션 및 호스트 이름은 운영 호스트와 동일해야 합니다.
 * 호스트 추가 * 또는 * 호스트 수정 * 페이지를 사용하여 대체 호스트로 SnapCenter SQL Server용 플러그인을 푸시합니다. 을 참조하십시오 link:https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_hosts.html["호스트를 관리합니다"] 를 참조하십시오.
 
@@ -24,5 +24,5 @@ SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 단계를 사�
 . DR 백업에서 SnapCenter Plug-in for SQL Server 폴더에서 Windows 및 SQL 일정을 가져옵니다.
 
 
-.를 참조하십시오
+.관련 정보
 를 참조하십시오 link:https://www.youtube.com/watch?v=Nbr_wm9Cnd4&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg["재해 복구 API"^] 비디오.

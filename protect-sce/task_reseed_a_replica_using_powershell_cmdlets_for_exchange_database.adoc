@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_reseed_a_replica_using_powershell_cmdlets_for_exchange_database.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter plug-in for Exchange Server 
 summary: PowerShell cmdlet을 사용하여 동일한 호스트에 있는 가장 최근 복사본 또는 대체 호스트에서 가장 최근 복사본을 사용하여 상태가 불량한 복제본을 복구할 수 있습니다. 
 ---
 = Exchange 데이터베이스에 대해 PowerShell cmdlet을 사용하여 복제본을 다시 시딩했습니다
@@ -15,8 +15,7 @@ PowerShell cmdlet을 사용하여 동일한 호스트에 있는 가장 최근 �
 
 cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
-* 단계 *
-
+.단계
 . Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대해 SnapCenter Server와 연결 세션을 시작합니다.
 +
 [listing]

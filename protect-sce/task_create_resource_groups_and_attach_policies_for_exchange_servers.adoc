@@ -13,8 +13,7 @@ summary: 모든 데이터 보호 작업에는 리소스 그룹이 필요합니�
 [role="lead"]
 모든 데이터 보호 작업에는 리소스 그룹이 필요합니다. 또한 수행할 데이터 보호 작업의 유형과 보호 스케줄을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 * scripts_path는 플러그인 호스트의 SMCoreServiceHost.exe.Config 파일에 있는 PredefinedWindowsScriptsDirectory 키를 사용하여 정의됩니다.
 +
 필요한 경우 이 경로를 변경하고 SMcore 서비스를 다시 시작할 수 있습니다. 보안을 위해 기본 경로를 사용하는 것이 좋습니다.
@@ -27,8 +26,7 @@ Get API를 사용하여 키 값을 표시할 수 있습니다. API 설정은 지
 
 
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * Resources * 를 클릭한 다음 목록에서 Microsoft Exchange Server 플러그인을 선택합니다.
 . 리소스 페이지의 * 보기 * 목록에서 * 데이터베이스 * 를 선택합니다.
 +
@@ -99,7 +97,7 @@ Microsoft Exchange Server용 SnapCenter의 리소스 그룹은 스냅샷 복사�
 .. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
 +
 
-NOTE: * 를 클릭하여 정책을 생성할 수도 있습니다image:../media/add_policy_from_resourcegroup.gif[""]*.
+NOTE: * 를 클릭하여 정책을 생성할 수도 있습니다image:../media/add_policy_from_resourcegroup.gif["더하기 아이콘"]*.
 
 +
 
@@ -108,7 +106,7 @@ NOTE: 백업 작업 생성 시 선택할 서버에 대한 * 백업 복사본 * �
 +
 선택한 정책에 대한 스케줄 구성 섹션에 선택한 정책이 나열됩니다.
 
-.. 선택한 정책에 대한 일정 구성 섹션에서 * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif[""]일정을 구성하려는 정책에 대한 * 스케줄 구성 * 열에 있습니다.
+.. 선택한 정책에 대한 일정 구성 섹션에서 * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif["더하기 아이콘"]일정을 구성하려는 정책에 대한 * 스케줄 구성 * 열에 있습니다.
 .. policy_policy_name_schedules 추가 대화 상자에서 시작 날짜, 만료 날짜 및 빈도를 지정하여 스케줄을 구성한 다음 * 확인 * 을 클릭합니다.
 +
 정책에 나열된 각 빈도에 대해 이 작업을 수행해야 합니다. 구성된 스케줄은 선택한 정책에 대한 스케줄 구성 섹션의 * Applied Schedules * 열에 나열됩니다.

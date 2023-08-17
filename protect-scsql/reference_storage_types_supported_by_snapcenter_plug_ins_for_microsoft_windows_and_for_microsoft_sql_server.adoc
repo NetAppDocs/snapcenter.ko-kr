@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows_and_for_microsoft_sql_server.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter Plug-in for Microsoft SQL Server 
 summary: SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. 호스트에 대한 패키지를 설치하기 전에 스토리지 유형에 대한 지원이 가능한지 확인해야 합니다. 
 ---
 = Microsoft Windows용 SnapCenter 플러그인 및 Microsoft SQL Server용 플러그인이 지원하는 스토리지 유형입니다

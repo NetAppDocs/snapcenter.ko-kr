@@ -13,7 +13,7 @@ summary: 설치-SmHostPackage PowerShell cmdlet을 사용하여 Linux 또는 Win
 [role="lead"]
 설치-SmHostPackage PowerShell cmdlet을 사용하여 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 여러 호스트에 동시에 설치할 수 있습니다.
 
-.필요한 것
+.시작하기 전에
 플러그인 패키지를 설치할 각 호스트에 대한 로컬 관리자 권한이 있는 도메인 사용자로 SnapCenter에 로그인해야 합니다.
 
 .단계

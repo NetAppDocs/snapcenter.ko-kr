@@ -1,7 +1,7 @@
 ---
 permalink: admin/concept_manage_backups.html 
 sidebar: sidebar 
-keywords:  
+keywords: Manage backups 
 summary: 백업의 이름을 바꾸고 삭제할 수 있습니다. 여러 백업을 동시에 삭제할 수도 있습니다. 
 ---
 = 백업 관리
@@ -44,8 +44,7 @@ Oracle RMAN(Recovery Manager)을 사용하여 Oracle 데이터베이스의 백�
 
 다른 데이터 보호 작업을 위해 더 이상 백업이 필요하지 않은 경우 백업을 삭제할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 백업을 삭제하기 전에 연결된 클론을 삭제해야 합니다.
 
 

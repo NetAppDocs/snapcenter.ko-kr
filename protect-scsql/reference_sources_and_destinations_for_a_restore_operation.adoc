@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_sources_and_destinations_for_a_restore_operation.html 
 sidebar: sidebar 
-keywords:  
+keywords: restore operation 
 summary: 운영 또는 보조 스토리지의 백업 복사본에서 SQL Server 데이터베이스를 복원할 수 있습니다. 또한 데이터베이스를 원래 위치 외에 다른 대상에 복원할 수 있으므로 요구 사항을 지원하는 대상을 선택할 수 있습니다. 
 ---
 = 복구 작업의 소스 및 대상

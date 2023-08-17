@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/reference_back_up_sql_server_database_or_instance_or_availability_group.html 
 sidebar: sidebar 
-keywords:  
+keywords: Backup workflow 
 summary: 사용자 환경에 Microsoft SQL Server용 SnapCenter 플러그인을 설치하면 SnapCenter를 사용하여 SQL Server 리소스를 백업할 수 있습니다. 
 ---
 = 백업 워크플로우

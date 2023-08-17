@@ -15,8 +15,7 @@ summary: ONTAP에서 SnapCenter 스토리지에 액세스하여 데이터 보호
 
 독립 실행형 SVM이나 여러 SVM으로 구성된 클러스터를 추가할 수 있습니다. NetApp ONTAP용 Amazon FSx를 사용하는 경우 fsxadmin 계정을 사용하여 여러 SVM으로 구성된 FSx 관리 LIF를 추가하거나 SnapCenter에서 FSx SVM을 추가할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * 스토리지 접속을 생성하려면 인프라스트럭처 관리자 역할에 필요한 권한이 있어야 합니다.
 * 플러그인 설치가 진행 중이 아닌지 확인해야 합니다.
 +
@@ -111,7 +110,7 @@ SnapCenter에서 SVM을 추가한 경우 사용자는 드롭다운에서 수동�
 . 제출 * 을 클릭합니다.
 
 
-* 결과 *
+결과 *
 
 스토리지 시스템 페이지의 * 유형 * 드롭다운에서 다음 작업 중 하나를 수행합니다.
 
@@ -138,7 +137,7 @@ NOTE: FAS 또는 AFF 스토리지 시스템을 모든 SAN 어레이(ASA)로 업�
 
 클러스터 관리자는 스토리지 시스템 명령줄에서 다음 명령을 실행하여 SnapCenter가 액세스할 수 있는 모든 스토리지 시스템에서 e-메일 알림을 보내도록 각 스토리지 시스템 노드에서 AutoSupport를 설정해야 합니다.
 
-AutoSupport trigger modify -node nodename -autosupport -message client.app.info enable-notteto enable
+`autosupport trigger modify -node nodename -autosupport-message client.app.info -to enable -noteto enable`
 
 
 NOTE: SVM(스토리지 가상 시스템) 관리자는 AutoSupport에 액세스할 수 없습니다.

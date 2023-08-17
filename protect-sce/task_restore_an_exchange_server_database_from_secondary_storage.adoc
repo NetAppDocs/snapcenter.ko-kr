@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_restore_an_exchange_server_database_from_secondary_storage.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter plug-in for Exchange Server 
 summary: '보조 스토리지(미러 또는 볼트)에서 백업된 Exchange Server 데이터베이스를 복구할 수 있습니다.' 
 ---
 = 보조 스토리지에서 Exchange Server 데이터베이스를 복구합니다
@@ -15,8 +15,7 @@ summary: '보조 스토리지(미러 또는 볼트)에서 백업된 Exchange Ser
 
 기본 스토리지에서 보조 스토리지로 Snapshot 복사본을 복제해야 합니다.
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 * Microsoft Exchange Server 플러그인 * 을 선택합니다.
 . 리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 리소스 그룹 * 을 선택합니다.
 . 데이터베이스 또는 리소스 그룹을 선택합니다.

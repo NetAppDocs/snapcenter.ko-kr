@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_multiple_databases_on_the_same_volume.html 
 sidebar: sidebar 
-keywords:  
+keywords: Multiple databases 
 summary: '백업 정책에 백업당 최대 데이터베이스 수 설정 옵션이 있기 때문에 모든 데이터베이스를 동일한 볼륨에 둘 수 있습니다\(기본값은 100\).' 
 ---
 = 동일한 볼륨에 여러 개의 데이터베이스가 있습니다

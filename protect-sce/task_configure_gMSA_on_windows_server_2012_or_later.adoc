@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_configure_gMSA_on_windows_server_2012_or_later.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter plug-in for Exchange Server 
 summary: 'Windows Server 2012 이상을 사용하면 관리되는 도메인 계정에서 자동화된 서비스 계정 암호 관리를 제공하는 그룹 GMSA\(Managed Service Account)를 만들 수 있습니다.' 
 ---
 = Windows Server 2012 이상에서 GMSA를 구성합니다
@@ -13,14 +13,12 @@ summary: 'Windows Server 2012 이상을 사용하면 관리되는 도메인 계�
 [role="lead"]
 Windows Server 2012 이상을 사용하면 관리되는 도메인 계정에서 자동화된 서비스 계정 암호 관리를 제공하는 그룹 GMSA(Managed Service Account)를 만들 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * Windows Server 2012 이상의 도메인 컨트롤러가 있어야 합니다.
 * 도메인의 구성원인 Windows Server 2012 이상 호스트가 있어야 합니다.
 
 
-* 단계 *
-
+.단계
 . KDS 루트 키를 생성하여 GMSA의 각 개체에 대해 고유한 암호를 생성합니다.
 . 각 도메인에 대해 Windows 도메인 컨트롤러에서 Add-KDSRootKey-EffectiveImmediately 명령을 실행합니다
 . GMSA 생성 및 구성:

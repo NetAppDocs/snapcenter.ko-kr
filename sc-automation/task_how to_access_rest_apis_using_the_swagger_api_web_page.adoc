@@ -17,8 +17,7 @@ REST API를 실행할 SnapCenter 서버의 관리 IP 주소 또는 도메인 이
 
 REST API 클라이언트를 실행하는 데 특별한 권한이 필요하지 않습니다. 모든 사용자는 Swagger 웹 페이지에 액세스할 수 있습니다. REST API를 통해 액세스하는 객체에 대한 각 권한은 REST API에 로그인하기 위해 토큰을 생성하는 사용자를 기반으로 합니다.
 
-* 단계 *
-
+.단계
 . 브라우저에서 Swagger 웹 페이지에 액세스할 URL을 _\https://<SnapCenter_IP_address_or_name>:<SnapCenter_port>/swagger/_ 형식으로 입력합니다.
 +
 

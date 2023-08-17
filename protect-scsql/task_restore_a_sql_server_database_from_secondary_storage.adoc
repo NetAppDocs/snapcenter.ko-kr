@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_restore_a_sql_server_database_from_secondary_storage.html 
 sidebar: sidebar 
-keywords:  
+keywords: restore operation 
 summary: '보조 스토리지 시스템의 물리적 LUN\(RDM, iSCSI 또는 FCP\)에서 백업된 SQL Server 데이터베이스를 복원할 수 있습니다. 복구 기능은 보조 스토리지 시스템에 상주하는 지정된 SQL Server 백업에서 지정된 데이터베이스로 모든 데이터와 로그 페이지를 복사하는 다중 위상 프로세스입니다.' 
 ---
 = 보조 스토리지에서 SQL Server 데이터베이스를 복구합니다
@@ -13,15 +13,13 @@ summary: '보조 스토리지 시스템의 물리적 LUN\(RDM, iSCSI 또는 FCP\
 [role="lead"]
 보조 스토리지 시스템의 물리적 LUN(RDM, iSCSI 또는 FCP)에서 백업된 SQL Server 데이터베이스를 복원할 수 있습니다. 복구 기능은 보조 스토리지 시스템에 상주하는 지정된 SQL Server 백업에서 지정된 데이터베이스로 모든 데이터와 로그 페이지를 복사하는 다중 위상 프로세스입니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * 1차 스토리지 시스템에서 2차 스토리지 시스템으로 스냅샷 복사본을 복제해야 합니다.
 * SnapCenter 서버와 플러그인 호스트가 보조 스토리지 시스템에 접속할 수 있는지 확인해야 합니다.
 * 복원 마법사 페이지의 대부분의 필드는 기본 복원 프로세스에 설명되어 있습니다. 다음 정보는 지침이 필요한 일부 필드에 대해 설명합니다.
 
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 * SnapCenter Plug-in for SQL Server * 를 선택합니다.
 . 리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 리소스 그룹 * 을 선택합니다.
 . 데이터베이스 또는 리소스 그룹을 선택합니다.

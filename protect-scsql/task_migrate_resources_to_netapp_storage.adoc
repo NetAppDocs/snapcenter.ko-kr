@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_migrate_resources_to_netapp_storage.html 
 sidebar: sidebar 
-keywords:  
+keywords: migrate resources 
 summary: 'Microsoft Windows용 SnapCenter 플러그인을 사용하여 NetApp 스토리지 시스템을 프로비저닝한 후에는 SnapCenter 그래픽 사용자 인터페이스(GUI\) 또는 PowerShell cmdlet을 사용하여 리소스를 NetApp 스토리지 시스템이나 NetApp LUN 간에 마이그레이션할 수 있습니다.' 
 ---
 = 리소스를 NetApp 스토리지 시스템으로 마이그레이션
@@ -13,16 +13,14 @@ summary: 'Microsoft Windows용 SnapCenter 플러그인을 사용하여 NetApp �
 [role="lead"]
 Microsoft Windows용 SnapCenter 플러그인을 사용하여 NetApp 스토리지 시스템을 프로비저닝한 후에는 SnapCenter 그래픽 사용자 인터페이스(GUI) 또는 PowerShell cmdlet을 사용하여 리소스를 NetApp 스토리지 시스템이나 NetApp LUN 간에 마이그레이션할 수 있습니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * SnapCenter 서버에 스토리지 시스템을 추가해야 합니다.
 * SQL Server 리소스를 새로 고친(검색된) 상태여야 합니다.
 
 
 이 마법사 페이지의 대부분의 필드는 설명이 필요 없습니다. 다음 정보는 안내가 필요할 수 있는 일부 필드에 대해 설명합니다.
 
-* 단계 *
-
+.단계
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
 . 리소스 페이지의 * 보기 * 드롭다운 목록에서 * 데이터베이스 * 또는 * 인스턴스 * 를 선택합니다.
 . 목록에서 데이터베이스 또는 인스턴스를 선택하고 * migrate * 를 클릭합니다.

@@ -36,7 +36,7 @@ summary: 리소스 페이지에서 필요 시 리소스 그룹을 백업할 수 
 . Monitor * > * Jobs * 를 선택하여 작업 진행 상황을 모니터링합니다.
 
 
-.다음 단계
+.관련 정보
 link:task_create_backup_policies_for_sql_server_databases.html["SQL Server 데이터베이스에 대한 백업 정책을 생성합니다"]
 
 link:task_create_resource_groups_and_attach_policies_for_sql_server.html["리소스 그룹을 만들고 SQL Server에 대한 정책을 연결합니다"]

@@ -1,7 +1,7 @@
 ---
 permalink: protect-scw/reference_back_up_windows_file_systems.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter 
 summary: 사용자 환경에 Microsoft Windows용 SnapCenter 플러그인을 설치하면 SnapCenter를 사용하여 Windows 파일 시스템을 백업할 수 있습니다. 단일 파일 시스템 또는 여러 파일 시스템이 포함된 리소스 그룹을 백업할 수 있습니다. 필요에 따라 또는 정의된 보호 일정에 따라 백업할 수 있습니다. 
 ---
 = Windows 파일 시스템을 백업합니다

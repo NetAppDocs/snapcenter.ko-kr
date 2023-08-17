@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/task_create_backup_policies_for_sql_server_databases.html 
 sidebar: sidebar 
-keywords:  
+keywords: backup policy 
 summary: SnapCenter를 사용하여 SQL Server 리소스를 백업하기 전에 리소스 또는 리소스 그룹에 대한 백업 정책을 만들거나 리소스 그룹을 만들거나 단일 리소스를 백업할 때 백업 정책을 만들 수 있습니다. 
 ---
 = SQL Server 데이터베이스에 대한 백업 정책을 생성합니다
@@ -13,7 +13,7 @@ summary: SnapCenter를 사용하여 SQL Server 리소스를 백업하기 전에 
 [role="lead"]
 SnapCenter를 사용하여 SQL Server 리소스를 백업하기 전에 리소스 또는 리소스 그룹에 대한 백업 정책을 만들거나 리소스 그룹을 만들거나 단일 리소스를 백업할 때 백업 정책을 만들 수 있습니다.
 
-.필요한 것
+.시작하기 전에
 * 데이터 보호 전략을 정의해야 합니다.
 * SnapCenter 설치, 호스트 추가, 리소스 식별 및 스토리지 시스템 접속 생성과 같은 작업을 완료하여 데이터 보호를 위한 준비를 갖추어야 합니다.
 * 로그 백업을 위해 호스트 로그 디렉토리를 구성해야 합니다.

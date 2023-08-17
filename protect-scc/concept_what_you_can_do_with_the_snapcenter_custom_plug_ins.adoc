@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/concept_what_you_can_do_with_the_snapcenter_custom_plug_ins.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter Custom Plug-ins 
 summary: 데이터 보호 작업에 SnapCenter 맞춤형 플러그인을 사용할 수 있습니다. 
 ---
 = SnapCenter 맞춤형 플러그인 및 스토리지 플러그인으로 수행할 수 있는 작업

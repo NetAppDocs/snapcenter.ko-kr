@@ -13,8 +13,7 @@ summary: Exchange Server 데이터베이스 백업에는 SnapCenter Server와의
 [role="lead"]
 Exchange Server 데이터베이스 백업에는 SnapCenter Server와의 연결 설정, Exchange Server 데이터베이스 검색, 정책 추가, 백업 리소스 그룹 생성, 백업 및 백업 상태 보기가 포함됩니다.
 
-* 필요한 것 *
-
+.시작하기 전에
 * PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
 * 스토리지 시스템 접속을 추가하고 자격 증명을 생성해야 합니다.
 * 호스트 및 검색된 리소스를 추가해야 합니다.
@@ -23,8 +22,7 @@ Exchange Server 데이터베이스 백업에는 SnapCenter Server와의 연결 �
 
 NOTE: Exchange용 플러그인은 클론 작업을 지원하지 않으므로 Exchange용 플러그인에서는 추가 SmPolicy cmdlet의 CloneType 매개 변수가 지원되지 않습니다
 
-* 단계 *
-
+.단계
 . Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
 +
 [listing]

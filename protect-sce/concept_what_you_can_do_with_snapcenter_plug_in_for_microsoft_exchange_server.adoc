@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/concept_what_you_can_do_with_snapcenter_plug_in_for_microsoft_exchange_server.html 
 sidebar: sidebar 
-keywords:  
+keywords: SnapCenter Plug-in for Microsoft Exchange Server 
 summary: Exchange용 플러그인을 사용하여 Exchange Server 데이터베이스를 백업 및 복원할 수 있습니다. 
 ---
 = Microsoft Exchange Server용 SnapCenter 플러그인으로 수행할 수 있는 작업

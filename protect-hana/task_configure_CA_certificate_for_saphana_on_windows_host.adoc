@@ -19,8 +19,7 @@ summary: Windows 호스트에서 SnapCenter 사용자 지정 플러그인 서비
 
 == 사용자 지정 플러그인 키 저장소 및 사용 중인 CA 서명 키 쌍의 별칭에 대한 암호를 관리합니다
 
-* 단계 *
-
+.단계
 . 사용자 지정 플러그인 에이전트 속성 파일에서 사용자 지정 플러그인 키 저장소 기본 암호를 검색할 수 있습니다.
 +
 key_keystore_pass_에 해당하는 값입니다.
@@ -56,8 +55,7 @@ NOTE: 사용자 지정 플러그인 키 저장소 및 개인 키의 모든 관�
 
 사용자 지정 플러그인 트러스트 저장소에 대한 개인 키 없이 루트 또는 중간 인증서를 구성해야 합니다.
 
-* 단계 *
-
+.단계
 . 사용자 지정 플러그인 keystore_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_가 포함된 폴더로 이동합니다
 . 'keystore.jks' 파일을 찾습니다.
 . 키 저장소에 추가된 인증서를 나열합니다.
@@ -80,8 +78,7 @@ NOTE: 루트 CA 인증서와 중간 CA 인증서를 추가해야 합니다.
 
 CA 서명 키 쌍을 사용자 지정 플러그인 트러스트 저장소에 구성해야 합니다.
 
-* 단계 *
-
+.단계
 . 사용자 지정 플러그인 keystore_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_가 포함된 폴더로 이동합니다
 . _keystore.jks_ 파일을 찾습니다.
 . 키 저장소에 추가된 인증서를 나열합니다.
@@ -115,15 +112,13 @@ _keytool -keykeyasswd -alias "alias_name_in_CA_cert" -keystore keystore.jks _
 
 == SnapCenter 사용자 지정 플러그인에 대한 CRL(인증서 해지 목록)을 구성합니다
 
-* 이 작업에 대한 정보 *
-
+.이 작업에 대해
 * 관련 CA 인증서에 대한 최신 CRL 파일을 다운로드하려면 를 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_update_certificate_revocation_list_file_in_SnapCenter_CA_Certificate["SnapCenter CA 인증서에서 인증서 해지 목록 파일을 업데이트하는 방법"].
 * SnapCenter 사용자 지정 플러그인은 사전 구성된 디렉터리에서 CRL 파일을 검색합니다.
 * SnapCenter 사용자 지정 플러그인에 대한 CRL 파일의 기본 디렉토리는 _'C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\CRL'_입니다.
 
 
-* 단계 *
-
+.단계
 . _agent.properties_ 파일의 기본 디렉터리를 수정하여 CRL_path 키에 맞게 업데이트할 수 있습니다.
 . 이 디렉터리에 둘 이상의 CRL 파일을 배치할 수 있습니다.
 +

@@ -1,7 +1,7 @@
 ---
 permalink: protect-scsql/concept_backup_retention_options_for_plugin_for_sql.html 
 sidebar: sidebar 
-keywords:  
+keywords: Backup retention options 
 summary: 백업 복사본을 보존할 일 수를 선택하거나 유지할 백업 복사본 수를 최대 255개 사본의 ONTAP로 지정할 수 있습니다. 예를 들어, 조직에서 10일간 백업 복사본 또는 130개의 백업 복사본을 보존해야 할 수도 있습니다. 
 ---
 = SQL Server용 플러그인의 백업 보존 옵션

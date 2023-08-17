@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/concept_minimum_privileges_required_exchange_plug_in.html 
 sidebar: sidebar 
-keywords:  
+keywords: Minimum ONTAP privileges 
 summary: 필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중인 SnapCenter 플러그인에 따라 다릅니다. 
 ---
 = Exchange 플러그인에 필요한 최소 ONTAP 권한

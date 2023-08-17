@@ -1,7 +1,7 @@
 ---
 permalink: protect-scc/reference_java.html 
 sidebar: sidebar 
-keywords:  
+keywords: Custom plug-in 
 summary: Java 스타일을 사용하여 플러그인을 개발합니다. 
 ---
 = Java 스타일
