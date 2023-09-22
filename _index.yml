@@ -67,9 +67,9 @@ indexpage:
   - title: 더 많은 리소스
     links:
     - title: cmdlet 참조 가이드
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883300
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205
     - title: 명령 참조 가이드
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883301
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886206
     - title: 이전 버전의 SnapCenter에 대한 문서
       url: https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/#ProseArticleLinkList13
     - title: NetApp 기술 자료 - SnapCenter
