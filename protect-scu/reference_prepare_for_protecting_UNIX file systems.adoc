@@ -1,0 +1,30 @@
+---
+permalink: protect-scu/reference_prepare_for_protecting_UNIX file systems.html 
+sidebar: sidebar 
+keywords: unix file systems, preparation for protection, prerequisites 
+summary: 백업, 클론 또는 복원 작업과 같은 데이터 보호 작업을 수행하기 전에 환경을 설정해야 합니다. 
+---
+= Unix 파일 시스템 보호를 준비합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+백업, 클론 또는 복원 작업과 같은 데이터 보호 작업을 수행하기 전에 환경을 설정해야 합니다. SnapVault 서버에서 SnapMirror 및 SnapCenter 기술을 사용하도록 설정할 수도 있습니다.
+
+SnapVault 및 SnapMirror 기술을 활용하려면 스토리지 장치의 소스 볼륨과 타겟 볼륨 간의 데이터 보호 관계를 구성하고 초기화해야 합니다. NetAppSystem Manager를 사용하거나 스토리지 콘솔 명령줄을 사용하여 이러한 작업을 수행할 수 있습니다.
+
+Unix용 플러그인 파일 시스템을 사용하기 전에 SnapCenter 관리자는 SnapCenter 서버를 설치 및 구성하고 필수 작업을 수행해야 합니다.
+
+* SnapCenter 서버를 설치하고 구성합니다. link:../install/task_install_the_snapcenter_server_using_the_install_wizard.html["자세한 정보"^]
+* 스토리지 시스템 접속을 추가하여 SnapCenter 환경을 구성합니다. link:../install/task_add_storage_systems.html["자세한 정보"^]
++
+
+NOTE: SnapCenter은 서로 다른 클러스터에서 동일한 이름의 여러 SVM을 지원하지 않습니다. SVM 등록 또는 클러스터 등록을 사용하여 SnapCenter에 등록된 각 SVM은 고유해야 합니다.
+
+* 호스트를 추가하고 플러그인을 설치한 다음 리소스를 검색합니다.
+* SnapCenter Server를 사용하여 VMware RDM LUN 또는 VMDK에 상주하는 Unix 파일 시스템을 보호하는 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록해야 합니다.
+* Linux 호스트에 Java를 설치합니다.
+* 백업 복제를 원하는 경우 ONTAP에서 SnapMirror 및 SnapVault을 구성합니다.
+

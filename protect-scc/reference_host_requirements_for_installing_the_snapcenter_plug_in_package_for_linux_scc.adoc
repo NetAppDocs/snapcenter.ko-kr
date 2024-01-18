@@ -47,7 +47,7 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-Java 1.8(64비트) Oracle Java 또는 OpenJDK Flavors
+Java 1.8(64비트) Oracle Java 또는 OpenJDK
 
 Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.
 

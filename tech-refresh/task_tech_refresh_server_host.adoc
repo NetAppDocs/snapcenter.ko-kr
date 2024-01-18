@@ -1,0 +1,156 @@
+---
+permalink: tech-refresh/task_tech_refresh_server_host.html 
+sidebar: sidebar 
+keywords: tech refresh, SnapCenter Server, cmdlet, APIs, F5, rollback, decommission, disaster recovery, standalone 
+summary: 새 호스트에 동일한 버전의 SnapCenter Server를 설치한 다음 API를 실행하거나 cmdlet을 실행하여 이전 서버에서 SnapCenter를 백업하고 새 서버에서 복원합니다. 
+---
+= SnapCenter 서버 호스트의 기술 업데이트
+:allow-uri-read: 
+
+
+[role="lead"]
+SnapCenter 서버 호스트를 새로 고쳐야 하는 경우 새 호스트에 동일한 버전의 SnapCenter Server를 설치한 다음 API를 실행하여 이전 서버에서 SnapCenter를 백업하고 새 서버에서 복원할 수 있습니다.
+
+.단계
+. 새 호스트를 구축하고 다음 작업을 수행합니다.
++
+.. 동일한 버전의 SnapCenter 서버를 설치합니다.
+.. (선택 사항) CA 인증서를 구성하고 양방향 SSL을 활성화합니다. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/reference_generate_CA_certificate_CSR_file.html["CA 인증서를 구성합니다"] 및 https://docs.netapp.com/us-en/snapcenter/install/task_configure_two_way_ssl.html["양방향 SSL을 구성하고 활성화합니다"].
+.. (선택 사항) 다중 요소 인증을 구성합니다. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/enable_multifactor_authentication.html["다중 요소 인증을 사용합니다"].
+
+
+. SnapCenter 관리자로 로그인합니다.
+. 다음 API 중 하나를 사용하여 이전 호스트에서 SnapCenter 서버의 백업을 생성합니다. `/5.0/server/backup` 또는 cmdlet:_New-SmServerBackup_.
++
+
+NOTE: 백업을 수행하기 전에 예약된 모든 작업을 일시 중지하고 실행 중인 작업이 없는지 확인합니다.
+
++
+
+IMPORTANT: 새 도메인에서 실행 중인 SnapCenter 서버에서 백업을 복구하려면 백업을 수행하기 전에 이전 SnapCenter 호스트에 새 도메인 사용자를 추가하고 SnapCenter 관리자 역할을 할당해야 합니다.
+
+. 이전 호스트에서 새 호스트로 백업을 복제합니다.
+. 다음 API 중 하나를 사용하여 새 호스트에서 SnapCenter 서버의 백업을 복구합니다. `/5.0/server/restore` 또는 cmdlet:_Restore-SmServerBackup_.
++
+복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API를 사용하여 서버 URL을 별도로 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+
++
+
+NOTE: 플러그인 호스트가 서버 호스트 이름을 확인할 수 없는 경우 각 플러그인 호스트에 로그인하고 새 IP에 대한 _etc/host_entry를 <New IP> SC_Server_Name 형식으로 추가합니다.
+
++
+
+NOTE: server_etc/host_entries가 복구되지 않습니다. 이전 서버에서 수동으로 복원할 수 있습니다.
+
++
+새 도메인에서 실행 중인 SnpCenter 서버에서 백업이 복원되고 이전 도메인 사용자를 계속 사용하려면 새 SnapCenter 서버에 이전 도메인을 등록해야 합니다.
+
++
+
+NOTE: 이전 SnapCenter 호스트에서 web.config 파일을 수동으로 업데이트한 경우에는 업데이트가 새 호스트로 복사되지 않습니다. 새 호스트의 web.config 파일에 동일한 변경 사항을 수동으로 적용해야 합니다.
+
+. 복구 프로세스 중에 SnapCenter 서버 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+. 새 SnapCenter 서버의 모든 호스트에서 예약된 작업을 활성화합니다.
+
+
+
+
+== F5 클러스터의 노드를 Tech Refresh
+
+노드를 제거하고 새 노드를 추가하여 F5 클러스터의 모든 노드에 대한 기술 업데이트를 수행할 수 있습니다. 새로 고쳐야 하는 노드가 활성 상태인 경우 클러스터의 다른 노드를 활성 노드로 만든 다음 노드를 제거합니다.
+
+F5 클러스터에 노드를 추가하는 방법에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html["F5를 사용하여 고가용성을 위해 SnapCenter 서버를 구성합니다"].
+
+
+NOTE: F5 클러스터의 URL이 변경되면 API를 사용하여 모든 호스트에서 URL을 업데이트할 수 있습니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+
+
+
+== 이전 SnapCenter 서버 호스트를 사용 중지하는 중입니다
+
+새 SnapCenter 서버가 실행 중이고 모든 플러그인 호스트가 새 SnapCenter 서버 호스트와 통신할 수 있는지 확인한 후 이전 SnapCenter 서버 호스트를 제거할 수 있습니다.
+
+
+
+== 이전 SnapCenter 서버 호스트로 롤백합니다
+
+문제가 발생할 경우 API를 사용하여 모든 호스트에서 SnapCenter 서버 URL을 업데이트하여 이전 SnapCenter 서버 호스트를 되돌릴 수 있습니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+
+
+
+== 재해 복구
+
+
+
+=== 독립 실행형 SnapCenter 호스트의 재해 복구
+
+서버 백업을 새 호스트로 복구하여 재해 복구를 수행할 수 있습니다.
+
+.시작하기 전에
+이전 SnapCenter 서버의 백업이 있는지 확인합니다.
+
+.단계
+. 새 호스트를 구축하고 다음 작업을 수행합니다.
++
+.. 동일한 버전의 SnapCenter 서버를 설치합니다.
+.. CA 인증서를 구성하고 양방향 SSL을 활성화합니다. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/reference_generate_CA_certificate_CSR_file.html["CA 인증서를 구성합니다"] 및 https://docs.netapp.com/us-en/snapcenter/install/task_configure_two_way_ssl.html["양방향 SSL을 구성하고 활성화합니다"].
+
+
+. 이전 SnapCenter 서버 백업을 새 호스트에 복제합니다.
+. SnapCenter 관리자로 로그인합니다.
+. 다음 API 중 하나를 사용하여 새 호스트에서 SnapCenter 서버의 백업을 복구합니다. `/5.0/server/restore` 또는 cmdlet:_Restore-SmServerBackup_.
++
+복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API를 사용하여 서버 URL을 별도로 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+
++
+
+NOTE: 플러그인 호스트가 서버 호스트 이름을 확인할 수 없는 경우 각 플러그인 호스트에 로그인하고 새 IP에 대한 _etc/host_entry를 <New IP> SC_Server_Name 형식으로 추가합니다.
+
++
+
+NOTE: server_etc/host_entries가 복구되지 않습니다. 이전 서버에서 수동으로 복원할 수 있습니다.
+
+. 복구 프로세스 중에 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+
+
+
+
+=== SnapCenter F5 클러스터의 재해 복구
+
+서버 백업을 새 호스트로 복원한 다음 독립 실행형 호스트를 클러스터로 변환하여 재해 복구를 수행할 수 있습니다.
+
+.시작하기 전에
+이전 SnapCenter 서버의 백업이 있는지 확인합니다.
+
+.단계
+. 새 호스트를 구축하고 다음 작업을 수행합니다.
++
+.. 동일한 버전의 SnapCenter 서버를 설치합니다.
+.. CA 인증서를 구성하고 양방향 SSL을 활성화합니다. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/reference_generate_CA_certificate_CSR_file.html["CA 인증서를 구성합니다"] 및 https://docs.netapp.com/us-en/snapcenter/install/task_configure_two_way_ssl.html["양방향 SSL을 구성하고 활성화합니다"].
+
+
+. 이전 SnapCenter 서버 백업을 새 호스트에 복제합니다.
+. SnapCenter 관리자로 로그인합니다.
+. 다음 API 중 하나를 사용하여 새 호스트에서 SnapCenter 서버의 백업을 복구합니다. `/5.0/server/restore` 또는 cmdlet:_Restore-SmServerBackup_.
++
+복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API를 사용하여 서버 URL을 별도로 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+
++
+
+NOTE: 플러그인 호스트가 서버 호스트 이름을 확인할 수 없는 경우 각 플러그인 호스트에 로그인하고 새 IP에 대한 _etc/host_entry를 <New IP> SC_Server_Name 형식으로 추가합니다.
+
++
+
+NOTE: server_etc/host_entries가 복구되지 않습니다. 이전 서버에서 수동으로 복원할 수 있습니다.
+
+. 복구 프로세스 중에 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+. 독립 실행형 호스트를 F5 클러스터로 변환합니다.
++
+F5 구성 방법에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html["F5를 사용하여 고가용성을 위해 SnapCenter 서버를 구성합니다"].
+
+
+
+.관련 정보
+API에 대한 자세한 내용은 Swagger 페이지에 액세스해야 합니다. 을 참조하십시오 link:https://docs.netapp.com/us-en/snapcenter/sc-automation/task_how%20to_access_rest_apis_using_the_swagger_api_web_page.html["swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법"].
+
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].

@@ -1,0 +1,83 @@
+---
+permalink: protect-scu/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux.html 
+sidebar: sidebar 
+keywords: prerequisites, iSCSI, host requirement for Linux, sudo privileges, non-root user, credentials, authenticate, domain administrator, local administrator, workgroup, sudo, root user 
+summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. 
+---
+= Linux용 호스트 추가 및 플러그인 패키지 설치를 위한 사전 요구 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+호스트를 추가하고 Linux용 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다.
+
+* iSCSI를 사용하는 경우 iSCSI 서비스가 실행 중이어야 합니다.
+* 루트 또는 루트 이외의 사용자에 대해 암호 기반 인증을 사용하거나 SSH 키 기반 인증을 사용할 수 있습니다.
++
+Unix 파일 시스템용 SnapCenter 플러그인은 루트가 아닌 사용자가 설치할 수 있습니다. 그러나 비루트 사용자에 대한 sudo 권한을 구성하여 플러그인 프로세스를 설치하고 시작해야 합니다. 플러그인을 설치하면 프로세스가 루트가 아닌 효과적인 사용자로 실행됩니다.
+
+* 설치 사용자에 대해 인증 모드를 Linux로 사용하여 자격 증명을 생성합니다.
+* Linux 호스트에 Java 1.8.x 또는 Java 11(64비트)을 설치해야 합니다.
++
+
+NOTE: Linux 호스트에 Java 11의 인증된 버전만을 설치했는지 확인합니다.
+
++
+Java를 다운로드하는 방법에 대한 자세한 내용은 다음을 참조하십시오. http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"^]
+
+* 플러그인 설치를 위한 기본 셸은 * bash * 이어야 합니다.
+
+
+
+
+== Linux 호스트 요구 사항
+
+Linux용 SnapCenter 플러그인 패키지를 설치하기 전에 호스트가 요구 사항을 충족하는지 확인해야 합니다.
+
+|===
+| 항목 | 요구 사항 
+
+
+ a| 
+운영 체제
+ a| 
+* Red Hat Enterprise Linux
+* Oracle Linux
+* SUSE Linux Enterprise Server(SLES)
+
+
+
+
+ a| 
+호스트의 SnapCenter 플러그인에 대한 최소 RAM입니다
+ a| 
+2GB
+
+
+
+ a| 
+호스트의 SnapCenter 플러그인에 대한 최소 설치 및 로그 공간
+ a| 
+2GB
+
+
+NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 사용량을 모니터링해야 합니다. 필요한 로그 공간은 보호할 엔터티의 수와 데이터 보호 작업의 빈도에 따라 달라집니다. 디스크 공간이 충분하지 않으면 최근 실행 작업에 대한 로그가 생성되지 않습니다.
+
+
+
+ a| 
+필요한 소프트웨어 패키지
+ a| 
+* Java 1.8.x(64비트) Oracle Java 및 OpenJDK
+* Java 11(64비트) Oracle Java 및 OpenJDK
+
+
+
+NOTE: Linux 호스트에 Java 11의 인증된 버전만을 설치했는지 확인합니다.
+
+Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.
+
+|===
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=112391;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].

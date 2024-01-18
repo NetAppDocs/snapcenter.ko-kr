@@ -1,0 +1,50 @@
+---
+section: protect-scu
+title: Unix 파일 시스템 보호
+entries:
+- title: Unix 파일 시스템용 SnapCenter 플러그인 개요
+  url: "/protect-scu/concept_overview_snapcenter_plug_in_for_UNIX_file_systems.html"
+- title: Unix 파일 시스템용 SnapCenter 플러그인을 설치합니다
+  entries:
+  - title: Linux용 호스트 추가 및 플러그인 패키지 설치를 위한 사전 요구 사항
+    url: "/protect-scu/reference_prerequisites_for_adding_hosts_and_installing_snapcenter_plug_ins_package_for_linux.html"
+  - title: 호스트를 추가하고 Linux용 플러그인 패키지를 설치합니다
+    url: "/protect-scu/task_add_hosts_and_install_the_snapcenter_plug_ins_package_for_linux.html"
+  - title: SnapCenter 플러그인 로더 서비스를 구성합니다
+    url: "/protect-scu/task_configure_snapcenter_plug_in_loader_service.html"
+  - title: Linux 호스트에서 SnapCenter 플러그인 로더 서비스를 사용하여 CA 인증서를 구성합니다
+    url: "/protect-scu/task_configure_CA_certificate_with_SPL_on_Linux_host.html"
+  - title: 플러그인에 대해 CA 인증서를 활성화합니다
+    url: "/protect-scu/task_enable_ca_certificates_for_plug-ins.html"
+- title: VMware vSphere용 SnapCenter 플러그인을 설치합니다
+  url: "/protect-scu/reference_install_snapcenter_plug_in_for_vmware_vsphere.html"
+- title: Unix 파일 시스템 보호를 준비합니다
+  url: "/protect-scu/reference_prepare_for_protecting_UNIX file systems.html"
+- title: Unix 파일 시스템을 백업합니다
+  entries:
+  - title: UNIX 파일 시스템을 검색합니다
+    url: "/protect-scu/task_determine_whether_unix_file_systems_are_available_for_backup.html"
+  - title: 백업 정책을 생성합니다
+    url: "/protect-scu/task_create_backup_policies_for_unix_file_systems.html"
+  - title: 리소스 그룹을 생성합니다
+    url: "/protect-scu/task_create_resource_groups_and_attach_policies_for_unix_file_systems.html"
+  - title: UNIX 파일 시스템을 백업합니다
+    url: "/protect-scu/task_back_up_unix_file_systems.html"
+  - title: 리소스 그룹을 백업합니다
+    url: "/protect-scu/task_back_up_unix_file_systems_resource_groups.html"
+  - title: 백업 진행률을 모니터링합니다
+    url: "/protect-scu/task_monitor_unix_file_systems_backup_operations.html"
+- title: Unix 파일 시스템을 복구 및 복구합니다
+  entries:
+  - title: Unix 파일 시스템을 복구 및 복구합니다
+    url: "/protect-scu/task_restore_unix_file_systems.html"
+  - title: Unix 파일 시스템 복구 작업을 모니터링합니다
+    url: "/protect-scu/task_monitor_unix_file_systems_restore_operations.html"
+- title: Unix 파일 시스템의 클론을 생성합니다
+  entries:
+  - title: Unix 파일 시스템의 클론을 생성합니다
+    url: "/protect-scu/task_clone_unix_file_systems_backup.html"
+  - title: 클론 분할
+    url: "/protect-scu/task_split_a_clone.html"
+  - title: Unix 파일 시스템 클론 작업을 모니터링합니다
+    url: "/protect-scu/task_monitor_unix_file_systems_clone_operations.html"

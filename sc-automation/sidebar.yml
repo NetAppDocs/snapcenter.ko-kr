@@ -14,12 +14,8 @@ entries:
   url: "/sc-automation/concept_input_variables_controlling_an_api_request.html"
 - title: API 응답 해석
   url: "/sc-automation/concept_interpreting_an_api_response.html"
-- title: REST API 지원
-  entries:
-  - title: SnapCenter 서버 및 플러그인에 지원되는 REST API
-    url: "/sc-automation/reference_supported_rest_apis.html"
-  - title: SnapCenter 서버의 재해 복구에 REST API가 지원됩니다
-    url: "/sc-automation/rest_api_workflows_disaster_recovery_of_snapcenter_server.html"
+- title: SnapCenter 서버 및 플러그인에 지원되는 REST API
+  url: "/sc-automation/reference_supported_rest_apis.html"
 - title: Swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법
   url: "/sc-automation/task_how to_access_rest_apis_using_the_swagger_api_web_page.html"
 - title: REST API를 시작합니다

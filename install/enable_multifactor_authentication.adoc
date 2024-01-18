@@ -21,7 +21,7 @@ PowerShell 명령을 사용하여 SnapCenter Server에 MFA 기능을 사용하�
 
 .이 작업에 대해
 * SnapCenter는 다른 애플리케이션이 동일한 AD FS에 구성되어 있을 때 SSO 기반 로그인을 지원합니다. 특정 AD FS 구성에서 SnapCenter는 AD FS 세션 지속성에 따라 보안상의 이유로 사용자 인증을 요구할 수 있습니다.
-* cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 를 실행하여 얻을 수 있습니다 `Get-Help command_name`. 또는 를 볼 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+* cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 를 실행하여 얻을 수 있습니다 `Get-Help command_name`. 또는 를 볼 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 
 .시작하기 전에

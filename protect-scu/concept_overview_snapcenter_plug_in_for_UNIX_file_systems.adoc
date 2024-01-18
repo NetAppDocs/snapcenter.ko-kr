@@ -1,0 +1,95 @@
+---
+permalink: protect-scu/concept_overview_snapcenter_plug_in_for_UNIX_file_systems.html 
+sidebar: sidebar 
+keywords: overview, unix file system, plug-in for unix file system, backup, restore, clone 
+summary: Unix 파일 시스템용 플러그인은 TOF Unix 파일 시스템의 백업, 복원 및 복제를 지원합니다. 
+---
+= Unix 파일 시스템용 SnapCenter 플러그인으로 수행할 수 있는 작업
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unix 파일 시스템용 플러그인이 사용자 환경에 설치된 경우 SnapCenter를 사용하여 Unix 파일 시스템을 백업, 복원 및 복제할 수 있습니다. 이러한 작업을 지원하는 작업을 수행할 수도 있습니다.
+
+* 리소스를 검색합니다
+* Unix 파일 시스템을 백업합니다
+* 백업 작업을 예약합니다
+* 파일 시스템 백업을 복구합니다
+* 클론 파일 시스템 백업
+* 백업, 복원 및 클론 작업을 모니터링합니다
+
+
+
+
+== 지원되는 구성
+
+|===
+| 항목 | 지원되는 구성 
+
+
+ a| 
+확인하십시오
+ a| 
+* 물리적 서버
+* 가상 서버
+
+
+
+
+ a| 
+운영 체제
+ a| 
+* Red Hat Enterprise Linux
+* Oracle Linux
+* SUSE Linux Enterprise Server(SLES)
+
+
+
+
+ a| 
+파일 시스템
+ a| 
+* SAN:
++
+** LVM 및 비 LVM 기반 파일 시스템 모두
+** VMDK ext3, ext4 및 xfs를 통한 LVM
+
+
+* NFS: NFS v3, NFS v4.x
+
+
+
+
+ a| 
+프로토콜
+ a| 
+* FC
+* FCoE 를 참조하십시오
+* iSCSI
+* NFS 를 참조하십시오
+
+
+
+
+ a| 
+다중 경로
+ a| 
+예
+
+|===
+
+
+== 제한 사항
+
+* 볼륨 그룹에서 RDM과 가상 디스크의 혼합은 지원되지 않습니다.
+* 파일 레벨 복구는 지원되지 않습니다.
++
+그러나 백업을 클론 생성한 다음 파일을 수동으로 복사하여 파일 레벨 복원을 수동으로 수행할 수 있습니다.
+
+* NFS 및 VMFS 데이터 저장소 모두에서 제공되는 VMDK에 분산된 파일 시스템 혼합은 지원되지 않습니다.
+* NVMe는 지원되지 않습니다.
+* SnapMirror Business Continuity(SM-BC)는 지원되지 않습니다.
+* 프로비저닝은 지원되지 않습니다.
+

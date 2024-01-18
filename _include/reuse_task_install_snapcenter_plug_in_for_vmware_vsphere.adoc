@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-데이터베이스가 가상 머신(VM)에 저장되어 있거나 VM 및 데이터 저장소를 보호하려는 경우 SnapCenter Plug-in for VMware vSphere 가상 어플라이언스를 구축해야 합니다.
+데이터베이스 또는 파일 시스템이 가상 머신(VM)에 저장되어 있거나 VM 및 데이터 저장소를 보호하려는 경우 VMware vSphere 가상 어플라이언스용 SnapCenter 플러그인을 구축해야 합니다.
 
 배포에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_get_started_overview.html["구축 개요"^].
 

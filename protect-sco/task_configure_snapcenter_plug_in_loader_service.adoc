@@ -156,25 +156,40 @@ spl.properties 를 편집하거나 SnapCenter GUI 또는 cmdlet을 사용하여 
 
 . 필요에 따라 다음 작업 중 하나를 수행합니다.
 +
-** 루트 사용자로 SnapCenter 플러그인 로더 서비스를 시작합니다.
+** SnapCenter 플러그인 로더 서비스를 시작합니다.
 +
- `/custom_location/NetApp/snapcenter/spl/bin/spl start`
+*** 루트 사용자로 다음을 실행합니다. `/custom_location/NetApp/snapcenter/spl/bin/spl start`
+*** 루트가 아닌 사용자로 다음을 실행합니다. `sudo /custom_location/NetApp/snapcenter/spl/bin/spl start`
+
+
 ** SnapCenter 플러그인 로더 서비스를 중지합니다.
 +
- `/custom_location/NetApp/snapcenter/spl/bin/spl stop`
+*** 루트 사용자로 다음을 실행합니다. `/custom_location/NetApp/snapcenter/spl/bin/spl stop`
+*** 루트가 아닌 사용자로 다음을 실행합니다. `sudo /custom_location/NetApp/snapcenter/spl/bin/spl stop`
 +
 
 NOTE: stop 명령에 -force 옵션을 사용하면 SnapCenter 플러그인 로더 서비스를 강제로 중지할 수 있습니다. 그러나 기존 작업도 종료되므로 이 작업을 수행하기 전에 주의해야 합니다.
 
+
+
 ** SnapCenter 플러그인 로더 서비스를 다시 시작합니다.
 +
- `/custom_location/NetApp/snapcenter/spl/bin/spl restart`
+*** 루트 사용자로 다음을 실행합니다. `/custom_location/NetApp/snapcenter/spl/bin/spl restart`
+*** 루트가 아닌 사용자로 다음을 실행합니다. `sudo /custom_location/NetApp/snapcenter/spl/bin/spl restart`
+
+
 ** SnapCenter 플러그인 로더 서비스의 상태를 찾습니다.
 +
- `/custom_location/NetApp/snapcenter/spl/bin/spl status`
+*** 루트 사용자로 다음을 실행합니다. `/custom_location/NetApp/snapcenter/spl/bin/spl status`
+*** 루트 사용자가 아닌 경우 다음을 실행합니다. `sudo /custom_location/NetApp/snapcenter/spl/bin/spl status`
+
+
 ** SnapCenter 플러그인 로더 서비스에서 변경 사항을 찾습니다.
 +
- `/custom_location/NetApp/snapcenter/spl/bin/spl change`
+*** 루트 사용자로 다음을 실행합니다. `/custom_location/NetApp/snapcenter/spl/bin/spl change`
+*** 루트가 아닌 사용자로 다음을 실행합니다. `sudo /custom_location/NetApp/snapcenter/spl/bin/spl change`
+
+
 
 
 

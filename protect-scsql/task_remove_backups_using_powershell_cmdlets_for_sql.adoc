@@ -15,7 +15,7 @@ summary: 다른 데이터 보호 작업에 더 이상 필요하지 않은 경우
 
 PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
 
-cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
 
 .단계
 . Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
