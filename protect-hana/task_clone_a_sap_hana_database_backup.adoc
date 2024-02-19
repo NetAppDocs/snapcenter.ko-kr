@@ -32,7 +32,7 @@ NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
 
 .이 작업에 대해
 * 클론 분할 작업 제한에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["ONTAP 9 논리적 스토리지 관리 가이드"^].
-* SnapLock 사용 정책의 경우 ONTAP 9.12.1 이하 버전에서 스냅샷 복사본의 잠금 기간을 지정하면 복원 중에 변조 방지 스냅샷 복사본에서 생성된 클론이 SnapLock 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
+* ONTAP 9.12.1 이하 버전의 경우, 복원 중에 SnapLock 볼트 스냅샷 복사본에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
 
 
 .단계

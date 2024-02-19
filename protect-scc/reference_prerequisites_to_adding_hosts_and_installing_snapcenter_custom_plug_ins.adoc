@@ -88,7 +88,7 @@ SnapCenter 서버 호스트에 Windows Server 2019 또는 Windows Server 2016을
 http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
 
 +
-https://imt.netapp.com/matrix/imt.jsp?components=112392;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
 * 여러 경로에 대한 액세스를 제공하려면 비루트 사용자에 대해 sudo 권한을 구성해야 합니다. visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다.
 +

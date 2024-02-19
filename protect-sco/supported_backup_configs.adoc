@@ -44,4 +44,4 @@ PDB 마이그레이션 및 PDB 복제 작업은 지원되지 않습니다.
 
 
 
-지원되는 Oracle 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=112391;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 Oracle 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=117016;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].

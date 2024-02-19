@@ -31,7 +31,7 @@ VMware ParaVirtual SCSI 컨트롤러를 지원합니다. RDM 디스크에서 256
 
 
 
-지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=116926;&solution=1517&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
 
 
 
