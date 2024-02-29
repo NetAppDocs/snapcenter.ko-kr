@@ -58,6 +58,16 @@ indexpage:
       url: https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html
     - title: VMware vSphere용 SnapCenter 플러그인 구축
       url: https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
+  - title: Azure NetApp Files에서 실행 중인 애플리케이션을 보호합니다
+    links:
+    - title: Azure 가상 머신에 SnapCenter을 설치합니다
+      url: "/protect-azure/install-snapcenter-azure-virtual-machine.html"
+    - title: Azure NetApp Files에서 실행 중인 SAP HANA 데이터베이스를 백업합니다
+      url: "/protect-azure/backup-sap-hana-databases.html"
+    - title: Azure NetApp Files에서 실행 중인 SQL Server 데이터베이스를 백업합니다
+      url: "/protect-azure/backup-sql-server-databases.html"
+    - title: Azure NetApp Files에서 실행 중인 Oracle 데이터베이스를 백업합니다
+      url: "/protect-azure/backup-oracle-databases.html"
   - title: 블로그 커뮤니티
     links:
     - title: NetApp 블로그 - SnapCenter

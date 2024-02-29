@@ -1,0 +1,23 @@
+---
+permalink: protect-azure/configure-azure-storage-account.html 
+sidebar: sidebar 
+keywords: snapcenter, azure, azure storage account, subscription ID, azure credential, azure netapp account 
+summary: SnapCenter에서 Azure 저장소 계정을 구성합니다. 
+---
+= Azure 저장소 계정을 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter에서 Azure 저장소 계정을 구성해야 합니다.
+
+Azure 저장소 계정에는 구독 ID, Azure 자격 증명 및 Azure NetApp 계정에 대한 세부 정보가 포함되어 있습니다.
+
+.단계
+. 왼쪽 탐색 창에서 * 스토리지 시스템 * 을 클릭합니다.
+. 스토리지 시스템 페이지에서 * Azure NetApp Files * 를 선택하고 * New * 를 클릭합니다.
+. 해당 드롭다운 목록에서 자격 증명, 구독 ID 및 NetApp 계정을 선택합니다.
+. 제출 * 을 클릭합니다.
+

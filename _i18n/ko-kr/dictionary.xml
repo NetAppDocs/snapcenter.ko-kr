@@ -8840,4 +8840,210 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="f70e7af7132291b170364c37c143af5f" category="paragraph">ONTAP 9.12.1 이하 버전의 경우 SnapLock 볼트 스냅샷 복사본에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.</block>
   <block id="d24a44cebb5d893d4a6ffefcfde236ea" category="paragraph">ONTAP 및 애플리케이션 플러그인 최소 요구 사항은 을 참조하십시오<block ref="fb6518117a57311639cf7e25ef1c11e1" category="inline-link-rx"></block>.</block>
   <block id="9f15a95270d57c31e3fbf8e82eb6d5a6" category="paragraph">을 참조하십시오<block ref="fb6518117a57311639cf7e25ef1c11e1" category="inline-link-rx"></block></block>
+  <block id="9166c380efba6c6a0d61dc08bcc135ee" category="summary">백업할 리소스 또는 리소스 그룹에 대한 백업 정책을 생성합니다.</block>
+  <block id="73f45971c435fbf9828b3c34fe76a670" category="paragraph">SnapCenter를 사용하여 Oracle 데이터베이스 리소스를 백업하기 전에 백업하려는 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다.</block>
+  <block id="32005b30ff172564875bf82c9538168f" category="list-text">드롭다운 목록에서 Oracle Database 를 선택합니다.</block>
+  <block id="079151e2a65ec7ff3445310b706078c0" category="list-text">백업 유형을 온라인 또는 오프라인 백업으로 선택합니다.</block>
+  <block id="e1f4feb4c45f5316b8eb2a7570b14cec" category="list-text">예약 빈도를 지정합니다.</block>
+  <block id="35968ec44acc7cc8a13556f173c47cc3" category="list-text">아카이브 로그 삭제 설정을 지정합니다.</block>
+  <block id="8bf586bfc11638f24bb033f322fb6ce1" category="list-text">보존 페이지에서 보존 설정을 지정합니다.</block>
+  <block id="7db2a3f013bbf7ae548baa053e8f7584" category="list-text">Verification 페이지에서 검증 작업을 수행할 백업 일정을 선택하고 검증 작업 전후에 실행할 규정 또는 PS의 경로와 인수를 각각 입력합니다.</block>
+  <block id="5dac7fdec7dddd64bc366ee8bd5cd09d" category="list-text">리소스 페이지의 보기 목록에서 * 데이터베이스 * 또는 * 리소스 그룹 * 을 선택합니다.</block>
+  <block id="58b7e36fa95125edcb8d66ea2e67582f" category="list-text">복사본 관리 보기에서 운영 스토리지 시스템에서 * backups * 를 선택합니다.</block>
+  <block id="2f8a690686af1b1cda975ef6f4f1bed0" category="list-text">RAC 환경에서 데이터베이스 백업을 선택한 경우 RAC를 선택합니다.</block>
+  <block id="1399d83514b742ea6df34f461fcc4de2" category="list-text">데이터베이스 파일만 복원하려면 * 모든 데이터 파일 * 을 선택합니다.</block>
+  <block id="acdb11b54cf63e8364ce855a4985b70a" category="list-text">테이블스페이스만 복원하려면 * 테이블스페이스 * 를 선택합니다.</block>
+  <block id="e2d164854dc02140bc455818e74a5c33" category="list-text">Data Guard 대기 또는 Active Data Guard 대기 데이터베이스의 REDO 로그 파일을 복원하려면 * Redo log files * 를 선택합니다.</block>
+  <block id="03853c460c3f942eb442c5ca0ad40fad" category="list-text">플러그형 데이터베이스 * 를 선택하고 복원할 PDB를 지정합니다.</block>
+  <block id="57845f4a15c2596bee374a61bd147668" category="list-text">백업을 수행한 동일한 SQL Server로 데이터베이스를 복원하려면 * 백업을 생성한 동일한 호스트로 데이터베이스 복원 * 을 선택합니다.</block>
+  <block id="5ccb59313a41bd2c5b6739ff2b109e74" category="list-text">백업이 수행되는 동일한 호스트 또는 다른 호스트의 다른 SQL 서버로 데이터베이스를 복구하려면 * 대체 호스트로 데이터베이스 복원 * 을 선택합니다.</block>
+  <block id="d3848423ad873508b35dee4f882c93c1" category="list-text">마지막 트랜잭션으로 복구하려면 * All Logs * 를 선택합니다.</block>
+  <block id="5d5be53ceca242c265f3132067176acf" category="list-text">특정 SCN으로 복구하려면 SCN(시스템 변경 번호) * 까지 * 를 선택합니다.</block>
+  <block id="876471c99dbc13177cc4d457546d7871" category="list-text">특정 날짜 및 시간으로 복구하려면 * 날짜 및 시간 * 을 선택합니다.</block>
+  <block id="29efffe1f66a8912fca8bb27c93fc1b8" category="list-text">복구하지 않으려면 * 복구 없음 * 을 선택합니다.</block>
+  <block id="961e01d405e8a902edb16845143ab971" category="list-text">외부 아카이브 로그 파일의 위치를 지정하려면 * 외부 아카이브 로그 위치 지정 * 을 선택합니다.</block>
+  <block id="6882420907ef9d77d69021bc2b742fdf" category="list-text">Pre-Ops 및 Post Ops 페이지에서 필요한 세부 정보를 지정합니다.</block>
+  <block id="dfd5f1051da1aa9e9af8ea3369dfdb2f" category="paragraph">데이터베이스의 다른 테이블스페이스에 영향을 주지 않고 손상되거나 삭제된 테이블스페이스의 하위 집합을 복원할 수 있습니다. SnapCenter는 RMAN을 사용하여 테이블스페이스의 시점 복구(PITR)를 수행합니다.</block>
+  <block id="35e42acf13f657c4bd3843e31c6b7b55" category="list-text">단일 인스턴스(복수 점유) 유형의 데이터베이스를 선택합니다.</block>
+  <block id="9a40b04f123f9d768ad814799ac13ed6" category="list-text">카탈로그 백업을 선택한 다음 * 를 클릭합니다<block ref="401f8f248ae37b21256b9fc8e83bcaa3" category="inline-image-macro-rx" type="image"></block>*.</block>
+  <block id="f10007ef38ad8ef0be191acdb24506f2" category="list-text">RAC 환경에서 데이터베이스 백업을 선택한 경우 * RAC * 를 선택합니다.</block>
+  <block id="c319a65d4dabd1b8676673c0f51fbca4" category="list-text">PDB를 복원하려면 * 플러그형 데이터베이스(PDB) * 를 선택합니다.</block>
+  <block id="7a30df58c32f2e58ee04367dc1a289ff" category="list-text">PDB에서 테이블스페이스를 복원하려면 * 플러그형 데이터베이스(PDB) 테이블스페이스 * 를 선택합니다.</block>
+  <block id="d9c103e9b28e2bebca1491609f830d9e" category="list-text">백업 유형을 선택합니다.</block>
+  <block id="8b7749a11c408f4525e8b6cd3dbf31fa" category="list-text">데이터베이스 파일 및 트랜잭션 로그를 백업하려면 * 전체 백업 및 로그 백업 * 을 선택합니다.</block>
+  <block id="411148f58714b813c6fcff4f84e64c7e" category="list-text">데이터베이스 파일만 백업하려면 * 전체 백업 * 을 선택합니다.</block>
+  <block id="181c2702cfecfcccae058cc9bef558cf" category="list-text">트랜잭션 로그만 백업하려면 * 로그 백업 * 을 선택합니다.</block>
+  <block id="4f33ec7f0b6c5efe51b9298d732010fe" category="list-text">다른 응용 프로그램을 사용하여 리소스를 백업하려면 * 복사 전용 백업 * 을 선택합니다.</block>
+  <block id="1a97eb2e4853a1fca9bc58dd7af59b48" category="list-text">복제본에서만 백업하려면 Backup on preferred backup replica 를 선택합니다.</block>
+  <block id="9ec51e1bd21eedcf15db405459689d24" category="list-text">백업에 대한 기본 AG 복제본 또는 보조 AG 복제본을 선택합니다.</block>
+  <block id="ec3712a222adf7900d9abd47ada2d148" category="list-text">백업 우선 순위를 선택합니다.</block>
+  <block id="e392de06f36aab499d20ac2874bd6a7a" category="list-text">일정 유형을 지정합니다.</block>
+  <block id="1616215a05c2a11b9d7f8a7b0c957551" category="list-text">보존 페이지에서 선택한 백업 유형에 따라 보존 설정을 지정합니다.</block>
+  <block id="8164c29499ad21176441bff9c0dfb5a6" category="admonition">보조 스토리지로의 복제는 지원되지 않습니다.</block>
+  <block id="c9d5c0fdf2d0d7d116a31da7f7075cf2" category="list-text">모든 정보 메시지를 표시하지 않으려면 * 모든 정보 메시지 표시 안 함(NO_INFOMSGS) * 을 선택합니다.</block>
+  <block id="1ecb3b72a5b2c2c1236cd984534e09ff" category="paragraph">기본적으로 선택되어 있습니다.</block>
+  <block id="d3f2f88e0e51cd1bb2e765ff2a9329ea" category="list-text">클러스터링되지 않은 인덱스를 선택하지 않으려면 * 클러스터링되지 않은 인덱스(NOINDEX) * 를 선택합니다.</block>
+  <block id="7ce3afddd78d2c95f3288b6c71328476" category="summary">리소스 페이지에서 리소스를 백업합니다.</block>
+  <block id="cffecc178cc1b99a91effece6bd4417b" category="doc">Azure NetApp Files에서 실행 중인 SQL Server 데이터베이스를 백업합니다</block>
+  <block id="79acc61170d146040e6782f199b67161" category="list-text">리소스 페이지의 보기 드롭다운 목록에서 * 데이터베이스 *, * 인스턴스 * 또는 * 가용성 그룹 * 을 선택합니다.</block>
+  <block id="fddaa056d058e982a13036e05323d6f8" category="list-text">Microsoft SQL Server 스케줄러 사용 * 을 선택한 다음 일정 정책과 연결된 * 스케줄러 인스턴스 * 드롭다운 목록에서 스케줄러 인스턴스를 선택합니다.</block>
+  <block id="444abdb0adbf904dfeb2b6b85da3e698" category="list-text">확인 서버를 선택합니다.</block>
+  <block id="102beeaa44096cb1c4640f46b3cabe69" category="list-text">Run verification after backup * 또는 * Run scheduled verification * 을 선택합니다.</block>
+  <block id="2c7804d18e9ae000973714b450e90bee" category="list-text">여러 정책이 리소스에 연결된 경우 * Policy * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.</block>
+  <block id="51bfdba913c7ca3420c862bcfa885fba" category="list-text">백업 후 확인 * 을 선택합니다.</block>
+  <block id="1a8b5d536181d67e04a2989ce55f1471" category="summary">SnapCenter를 사용하여 백업을 복제할 수 있습니다.</block>
+  <block id="e42122c0e464caa33250257fa8321c7b" category="doc">Oracle 데이터베이스 백업의 클론을 생성합니다</block>
+  <block id="11e13a2f33d440e2a7175548ecae015f" category="list-text">데이터베이스를 선택합니다.</block>
+  <block id="f27570b9a0395e940f2b631b70c9c9f3" category="list-text">복사본 관리 보기 페이지에서 운영 스토리지 시스템의 백업을 선택합니다.</block>
+  <block id="dc1a7c9a6c9105494aa3e624b96a4a8a" category="list-text">데이터 백업을 선택한 다음 * 를 클릭합니다<block ref="11ec183c45ca833d0220ddbf2e2e1d98" category="inline-image-macro-rx" type="image"></block>*.</block>
+  <block id="e5c5d189e7dca60262ce11d4d8948a36" category="list-text">이름 페이지에서 데이터베이스(CDB 또는 비 CDB)를 복제할지 또는 PDB(플러그형 데이터베이스)를 복제할지 선택합니다.</block>
+  <block id="9b65003600b751fccc76508227fd13ab" category="list-text">위치 페이지에서 필요한 세부 정보를 지정합니다.</block>
+  <block id="b1410d725eb84bd1cd2dc5a0773800ed" category="paragraph">Oracle 데이터베이스 ANF 볼륨이 수동 QoS 용량 풀에 구성되어 있는 경우 클론 복제된 볼륨에 대한 QoS를 지정합니다.</block>
+  <block id="3cf00704aaf3ff788104ae85f809de64" category="paragraph">클론 복제된 볼륨에 QoS를 지정하지 않으면 소스 볼륨의 QoS가 사용됩니다. 자동 QoS 용량 풀을 사용하는 경우 지정된 QoS 값은 무시됩니다.</block>
+  <block id="3bac96329347bd387d3dc16e22e55c99" category="list-text">자격 증명 페이지에서 다음 중 하나를 수행합니다.</block>
+  <block id="fa4de18b260a3195ce9f3aa2275053fe" category="list-text">sys 사용자에 대한 자격 증명 이름 의 경우 클론 데이터베이스의 sys 사용자 암호를 정의하는 데 사용할 자격 증명을 선택합니다.</block>
+  <block id="21daac57ff613e2256c134d57a24b7fe" category="list-text">ASM 인스턴스 자격 증명 이름의 경우 클론 호스트의 ASM 인스턴스에 연결하기 위해 OS 인증이 활성화된 경우 * 없음 * 을 선택합니다.</block>
+  <block id="478856c905ade2c9882f8f0df0259cdc" category="paragraph">그렇지 않으면 "sys" 사용자로 구성된 Oracle ASM 자격 증명 또는 클론 호스트에 해당하는 "sysasm" 권한이 있는 사용자를 선택합니다.</block>
+  <block id="68571f7a88ba34fcf2f6bd54a8757e49" category="list-text">Pre-Ops 페이지에서 처방의 경로와 인수를 지정하고 데이터베이스 매개 변수 설정 섹션에서 데이터베이스를 초기화하는 데 사용되는 미리 채워진 데이터베이스 매개 변수의 값을 수정합니다.</block>
+  <block id="b5b8ca4c1991a55b0219f5cabf10cfcf" category="list-text">Post-Ops 페이지에서 * Recover database * 와 * until Cancel * 이 기본적으로 선택되어 복제된 데이터베이스의 복구를 수행합니다.</block>
+  <block id="f27d210631347656f8a0cd665f480ed0" category="list-text">취소 * 까지 * 를 선택하면 SnapCenter는 클론 생성을 위해 선택한 데이터 백업 이후에 끊기지 않은 아카이브 로그 시퀀스가 있는 최신 로그 백업을 마운트하여 복구를 수행합니다.</block>
+  <block id="2aac70261177d063218ac71d31d5ea6b" category="list-text">날짜 및 시간 * 을 선택하면 SnapCenter가 지정한 날짜 및 시간까지 데이터베이스를 복구합니다.</block>
+  <block id="8e177bbd95dbc94a22433e0d93d58971" category="list-text">SCN * 까지 * 를 선택하면 SnapCenter는 지정된 SCN까지 데이터베이스를 복구합니다.</block>
+  <block id="7bf7e16e76dcebbcabe537cf40e7eaa0" category="list-text">외부 아카이브 로그 위치 지정 * 을 선택한 경우 SnapCenter는 지정된 SCN 또는 선택한 날짜 및 시간을 기준으로 최적의 로그 백업 수를 식별하고 마운트합니다.</block>
+  <block id="c3117bb6d1093367c8c8311f31a140cd" category="list-text">기본적으로 * Create new DBID * (새 DBID 생성 *) 확인란이 선택되어 복제된 데이터베이스를 원본 데이터베이스와 구별하는 고유 번호(DBID)를 생성합니다.</block>
+  <block id="0b001fe4141b08084edf2ba3b8c346a0" category="list-text">복제된 데이터베이스의 기본 임시 테이블스페이스에 대한 tempfile을 생성하려면 * Create tempfile for Temporary tablespace * 확인란을 선택합니다.</block>
+  <block id="cfd2830969742a0cf37ec3c88a0c7896" category="list-text">클론이 생성될 때 적용할 SQL 항목 입력 * 에서 클론이 생성될 때 적용할 SQL 항목을 추가합니다.</block>
+  <block id="95ec4bf6dbf6754ecfda5bb09b3a8415" category="list-text">클론 작업 후 실행할 스크립트 입력 * 에서 클론 작업 후에 실행할 PS의 경로와 인수를 지정합니다.</block>
+  <block id="dcc66de93aefa3105fda8cbdb3cdc2cf" category="list-text">백업을 선택한 다음 * 를 클릭합니다<block ref="11ec183c45ca833d0220ddbf2e2e1d98" category="inline-image-macro-rx" type="image"></block>*.</block>
+  <block id="13bc47d703b82b962d33b3cf47bf64fb" category="list-text">이름 페이지에서 * PDB Clone * 을 선택하고 기타 세부 정보를 지정합니다.</block>
+  <block id="92336218cb59d91f7080fee85c60b95f" category="list-text">Post-Ops 페이지에서 * until Cancel * 이 기본적으로 선택되어 복제된 데이터베이스의 복구를 수행합니다.</block>
+  <block id="82a14f04b2bdde64af5a7a694ab98bba" category="section-title">Oracle 데이터베이스 클론을 분할합니다</block>
+  <block id="787b61c3679ebc574f4962a1f5aebb0c" category="list-text">복제된 리소스(예: 데이터베이스 또는 LUN)를 선택한 다음 * 를 클릭합니다<block ref="11ec183c45ca833d0220ddbf2e2e1d98" category="inline-image-macro-rx" type="image"></block>*.</block>
+  <block id="562ffa91cb05be38d306e7ac7ab12d9c" category="list-text">복사본 관리 보기에서 운영 스토리지 시스템에서 * 클론 * 을 선택합니다.</block>
+  <block id="62ef6c6e852eca46dfc82fdc6ad386b2" category="list-text">PDB 클론(targetCDB:PDBClone)을 선택한 다음 * 를 클릭합니다<block ref="11ec183c45ca833d0220ddbf2e2e1d98" category="inline-image-macro-rx" type="image"></block>*.</block>
+  <block id="06297b8a736154148ec90e3788831eaa" category="doc">SQL Server 데이터베이스 복구 및 복구</block>
+  <block id="b01943524a657671dfae0f3f1f0948e5" category="paragraph">SnapCenter를 사용하여 백업된 SQL Server 데이터베이스를 복원할 수 있습니다. 데이터베이스 복원은 지정된 SQL Server 백업에서 모든 데이터 및 로그 페이지를 지정된 데이터베이스로 복사하는 다단계 프로세스입니다.</block>
+  <block id="ddec2d3a4d88b9b7250ed10e6ef19f3f" category="list-text">복사본 관리 보기에서 스토리지 시스템에서 * backups * 를 선택합니다.</block>
+  <block id="6408662ebc634bb326a1dde94a44620f" category="list-text">전체 백업 후 사용 가능한 모든 로그 백업을 복원하려면 * 모든 로그 백업 * 최신 백업 복원 작업을 선택하십시오.</block>
+  <block id="aa9472a7b9cb1fc29c7cbe53b4716e81" category="summary">SnapCenter에서 Azure 저장소 계정을 구성합니다.</block>
+  <block id="118cba115d0fa759158cb2faa450d5de" category="doc">Azure 저장소 계정을 구성합니다</block>
+  <block id="fadf22d2749d2c990d51a1177ed75a3c" category="paragraph">SnapCenter에서 Azure 저장소 계정을 구성해야 합니다.</block>
+  <block id="f2a9b03c9542d4be6aef4bdb2f408f9e" category="paragraph">Azure 저장소 계정에는 구독 ID, Azure 자격 증명 및 Azure NetApp 계정에 대한 세부 정보가 포함되어 있습니다.</block>
+  <block id="8f8706f3da7c34c2111a8e25ce94e098" category="list-text">스토리지 시스템 페이지에서 * Azure NetApp Files * 를 선택하고 * New * 를 클릭합니다.</block>
+  <block id="b67933dc97bd3a16f77741efb04c9c6a" category="list-text">해당 드롭다운 목록에서 자격 증명, 구독 ID 및 NetApp 계정을 선택합니다.</block>
+  <block id="b19cf02c2424a0928eeec4a9d7a2f2f8" category="summary">Azure 가상 머신에 SnapCenter을 다운로드하고 설치합니다.</block>
+  <block id="cefcdf7a4638575f474bc5a3bda6c998" category="doc">Azure 가상 머신에 SnapCenter을 설치합니다</block>
+  <block id="4370482304eb1ca0418f2cd3fd63eb67" category="paragraph">NetApp Support 사이트에서 SnapCenter 소프트웨어를 다운로드하고 Azure 가상 머신에 소프트웨어를 설치할 수 있습니다.</block>
+  <block id="ce65cbdd1461bceb86d66ab0fad635e1" category="paragraph">Azure Windows 가상 머신이 SnapCenter 서버 설치 요구 사항을 충족하는지 확인합니다. 자세한 내용은 을 참조하십시오 <block ref="b3dec771f92c2fb9f455ad37ca093b8b" category="inline-link-macro-rx"></block>.</block>
+  <block id="70c594713d865f6147d93e740c40169b" category="list-text">에서 SnapCenter 서버 설치 패키지를 다운로드합니다<block ref="ae591c0a5c1f7ed1b2805b45c211ae4c" category="inline-link-rx"></block>.</block>
+  <block id="ba1d33ffe1922d93bdd900b985993172" category="paragraph">설치를 시작하면 모든 사전 검사가 수행되고 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다. 경고 메시지를 무시하고 설치를 진행할 수 있지만 오류를 수정해야 합니다.</block>
+  <block id="944ed313a3d76953a4897da7159e4286" category="admonition">리포지토리 데이터베이스의 사용자 지정 경로에서는 특수 문자 "%"가 지원되지 않습니다. 경로에 "%"를 포함하면 설치가 실패합니다.</block>
+  <block id="a8ba59cefefd06f7932de8d4f14fea85" category="paragraph">잘못된 값을 지정한 경우 해당 오류 메시지가 표시됩니다. 값을 다시 입력한 다음 설치를 시작해야 합니다.</block>
+  <block id="3c075b0794a69a869247bae0fa8232c3" category="summary">자격 증명을 생성하여 플러그인 호스트를 추가합니다.</block>
+  <block id="fc2036df5c2e9ad58052254d635ada38" category="doc">자격 증명을 생성하여 플러그인 호스트를 추가합니다</block>
+  <block id="ab21a8c77f03ed9714c3a24a550e2416" category="paragraph">SnapCenter는 자격 증명을 사용하여 SnapCenter 작업을 위해 사용자를 인증합니다.</block>
+  <block id="2af8c72fafd2de00780256e0886cf680" category="paragraph">SnapCenter 플러그인을 설치하기 위한 자격 증명과 데이터 보호 작업을 수행하기 위한 추가 자격 증명을 생성해야 합니다.</block>
+  <block id="2c918b288cc3e2bd0419ef617cee7af1" category="list-text">자격 증명 페이지에서 자격 증명을 만드는 데 필요한 다음 정보를 지정합니다.</block>
+  <block id="dcd46a1f9a42cb16a43e224e294b8f7a" category="paragraph">자격 증명 이름</block>
+  <block id="29a3c3b668504b90c64c2a6ed618330f" category="paragraph">드롭다운 목록에서 인증 모드를 선택합니다.</block>
+  <block id="77a89adb2bed495492c121bfa080d52c" category="paragraph">인증 유형</block>
+  <block id="5517313827872a130ab285b0e5e37dce" category="paragraph">비밀번호 기반 * 또는 * SSH 키 기반 * 를 선택합니다(Linux 호스트에만 해당).</block>
+  <block id="df8915ff8479f150e2964f44c91d2fd4" category="paragraph">사용자 이름을 지정합니다.</block>
+  <block id="fa7df0dba25d02121ff5ab3fb162be91" category="paragraph">암호 기반 인증을 선택한 경우 암호를 지정합니다.</block>
+  <block id="fab1bac8f68d0e85c7d853e7cc89dee8" category="paragraph">SSH 개인 키</block>
+  <block id="66f8dac0eed0421ac7fcaabbabc37a68" category="paragraph">SSH 키 기반 인증을 선택한 경우 개인 키를 지정합니다.</block>
+  <block id="c07c0cf4af9b314370d0665aadeaf338" category="paragraph">루트가 아닌 사용자에 대한 자격 증명을 생성하는 경우 Sudo 권한 사용 확인란을 선택합니다.</block>
+  <block id="703b449c96829cc800359f1d8ec271aa" category="admonition">이는 Linux 사용자에게만 적용됩니다.</block>
+  <block id="ad7e2b46dbd658b836afa67739728364" category="doc">Oracle 리소스 그룹을 백업합니다</block>
+  <block id="3e069730cfbdc79be14782b101342cba" category="paragraph">여러 자원으로 구성된 자원 그룹을 백업할 수 있습니다. 리소스 그룹에 대한 백업 작업은 리소스 그룹에 정의된 모든 리소스에 대해 수행됩니다.</block>
+  <block id="5aec80aae3b9f1be4549537d901f39a5" category="list-text">여러 정책이 리소스 그룹에 연결된 경우 * 정책 * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.</block>
+  <block id="a762c8a08fd8dd6ac2427dad067d141f" category="doc">리소스 그룹을 생성하고 SAP HANA 백업 정책을 연결합니다</block>
+  <block id="257763ed8a159d456a92e8b44d26aa9e" category="paragraph">리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다. 모든 데이터 보호 작업에는 리소스 그룹이 필요합니다. 또한 수행할 데이터 보호 작업의 유형을 정의하려면 하나 이상의 정책을 리소스 그룹에 연결해야 합니다.</block>
+  <block id="4b94425e098b41d12bc8e290ef43106f" category="summary">호스트를 추가한 다음 플러그인 패키지를 설치합니다.</block>
+  <block id="5a19eafc64d4b27754e1ea4fcdfa49f1" category="doc">호스트를 추가하고 Oracle 데이터베이스용 SnapCenter 플러그인을 설치합니다</block>
+  <block id="836b7a28ba9782fad01628dc33073d15" category="paragraph">호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다. 클러스터(Oracle RAC)에 플러그인을 설치하는 경우 클러스터의 모든 노드에 플러그인이 설치됩니다. Oracle RAC One Node의 경우 액티브 노드와 패시브 노드 모두에 플러그인을 설치해야 합니다.</block>
+  <block id="25df78dd01892122ff0e8b622af903f3" category="list-text">Managed Hosts * 탭이 선택되어 있는지 확인합니다.</block>
+  <block id="70d62db3cdc3b09c944b95bb46579a2d" category="list-text">호스트 유형 필드에서 호스트 유형을 선택합니다.</block>
+  <block id="aee77bbd57baf3f9ef22c7fc4d9bdef8" category="list-text">호스트 이름 필드에 호스트의 FQDN(정규화된 도메인 이름) 또는 IP 주소를 입력합니다.</block>
+  <block id="2e22c5b13053f3515b22c9c1ede2d7a8" category="list-text">자격 증명 필드에 생성한 자격 증명을 입력합니다.</block>
+  <block id="cc01060000f3f813df5ac7a397f6c747" category="list-text">(선택 사항) * 추가 옵션 * 을 클릭하고 세부 정보를 지정합니다.</block>
+  <block id="b75f291f313008e72d9ff0963164ee31" category="doc">리소스 그룹을 생성하고 SQL 백업 정책을 연결합니다</block>
+  <block id="2fd8d5ede56ca6e33060f1eb3dd0734b" category="paragraph">SnapCenter를 사용하여 SAP HANA 데이터베이스 리소스를 백업하기 전에 백업할 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다.</block>
+  <block id="e479da34c5ed7685fcd981da443e348b" category="list-text">데이터베이스의 무결성 검사를 수행하려면 * 파일 기반 백업 * 을 선택합니다.</block>
+  <block id="9b13b3a5ddf2908f3bd7c006d6b212ee" category="list-text">스냅샷 복사본 기술을 사용하여 백업을 생성하려면 * Snapshot 기반 * 을 선택합니다.</block>
+  <block id="ed5262a9aab3035c8548c5f3793c76f6" category="list-text">보존 페이지에서 선택한 백업 유형 및 스케줄 유형에 대한 보존 설정을 지정합니다.</block>
+  <block id="98950caea953c79d817eba870ba7ae48" category="summary">SnapCenter에서 Azure 자격 증명을 생성하여 Azure NetApp 계정에 액세스합니다.</block>
+  <block id="1ed01bab203e8745a0dcfe58f019c1d9" category="doc">SnapCenter에서 Azure 자격 증명을 생성합니다</block>
+  <block id="df807c6f76450e7af962b9ec2ffe867e" category="paragraph">Azure NetApp 계정에 액세스하려면 SnapCenter에서 Azure 자격 증명을 생성해야 합니다.</block>
+  <block id="c564c60262d5040cb9b4b2cb05c8532d" category="paragraph">Azure 자격 증명을 생성하기 전에 Azure에서 서비스 보안 주체를 만들었는지 확인합니다. Azure 자격 증명을 생성하려면 서비스 보안 주체와 연결된 테넌트 ID, 클라이언트 ID 및 암호 키가 필요합니다.</block>
+  <block id="aeec85b47cdcde0a1bea1e8a52e7efae" category="paragraph">드롭다운 목록에서 * Azure Credential * 을 선택합니다.</block>
+  <block id="7131a7a6bfe81200d21d5a33c64847b6" category="paragraph">테넌트 ID입니다</block>
+  <block id="797fc8989dfaa45ed85ce3b352fc0fb9" category="paragraph">테넌트 ID를 입력합니다.</block>
+  <block id="4836681379c28438ec7ff8290c2fe10d" category="paragraph">클라이언트 ID를 입력합니다.</block>
+  <block id="6c5562c545345e1e93d50451b999407b" category="paragraph">클라이언트 암호 키</block>
+  <block id="3f809529e531a829d1af35c6277c0600" category="paragraph">클라이언트 암호 키를 입력합니다.</block>
+  <block id="83a5e957cdd4905f7e78a688fa59e4a6" category="doc">SAP HANA 데이터베이스 백업의 클론을 생성합니다</block>
+  <block id="3e37c81f26466e5aef19ea7d64f141ae" category="list-text">클론 복제된 HANA 시스템을 관리하기 위해 SAP HANA 플러그인이 설치된 호스트를 선택합니다.</block>
+  <block id="e3455d720fcc40e26f0d36ee7581259f" category="paragraph">중앙 집중식 플러그인 호스트 또는 HANA 시스템 호스트가 될 수 있습니다.</block>
+  <block id="5c197ff6b8d148a9f919430a485adff2" category="list-text">기존 백업에서 클론을 생성할 SAP HANA SID를 입력합니다.</block>
+  <block id="11dae6129ac88bf8ce4b74a3f04b2931" category="list-text">SAP HANA 데이터베이스 ANF 볼륨이 수동 QoS 용량 풀에 구성되어 있는 경우 클론 복제된 볼륨에 대한 QoS를 지정합니다.</block>
+  <block id="db72f6a27d253d274b29062a99ea2856" category="paragraph">소스 HANA 시스템이 자동으로 검색되고 클론 타겟 호스트 플러그인이 SAP HANA 호스트에 설치되어 있는 경우, SnapCenter는 클론 타겟 호스트에서 기존 HANA 데이터 볼륨을 자동으로 마운트 해제하고 새로 클론 복제된 HANA 데이터 볼륨을 마운트합니다.</block>
+  <block id="42558f3e0d13c5a3ab297f0a09e3dce0" category="admonition">ANF 클론이 이미 선택한 스냅샷 복사본에서 생성된 독립 볼륨이므로 ANF 클론에 대해 클론 분할이 해제되었습니다.</block>
+  <block id="1d085da91833ced7df79bd36f6ed095f" category="doc">SQL Server 데이터베이스 백업을 복제합니다</block>
+  <block id="98649dd054e392acef8b60637dd1e4eb" category="list-text">복사본 관리 * 보기 페이지에서 운영 스토리지 시스템의 백업을 선택합니다.</block>
+  <block id="064cfc5ceb5ed3cddf1bdbcfa6887172" category="list-text">클론 옵션 * 페이지에서 필요한 모든 세부 정보를 제공합니다.</block>
+  <block id="de9209bd485fee913b85e751555d74c3" category="paragraph">SQL Server 데이터베이스 ANF 볼륨이 수동 QoS 용량 풀에 구성되어 있는 경우 복제된 볼륨에 대한 QoS를 지정합니다.</block>
+  <block id="b157956c9a5d380bfe61bbff0addd0ac" category="list-text">로그 없이 전체 백업만 복제하려면 * 없음 * 을 선택합니다.</block>
+  <block id="8079e6a754354a9a6eac9e4b8e07e1a0" category="list-text">전체 백업 이후에 사용 가능한 모든 로그 백업을 복제하려면 * 모든 로그 백업 * 을 선택합니다.</block>
+  <block id="e43d167835a003da76fd0c153beda160" category="list-text">선택한 날짜로 백업 로그까지 생성된 백업 로그를 기준으로 데이터베이스를 복제하려면 * By log backups until * 을 선택합니다.</block>
+  <block id="aff03f4a9d4bb9f6f9919a54f788b1b8" category="list-text">지정된 날짜 및 시간 이후에 트랜잭션 로그를 적용하지 않으려면 * 특정 날짜까지 * 를 선택합니다.</block>
+  <block id="337965cee791a041ec57dfa24fedd746" category="list-text">클론 작업을 수행할 빈도, 클론 스케줄이 시작될 시기, 클론 작업이 수행될 날짜, 스케줄이 만료되는 시기 및 스케줄이 만료된 후 클론을 삭제해야 하는지 여부를 결정하려면 * 스케줄 구성 * 을 선택합니다.</block>
+  <block id="f89c4239b02a9740bafee733a8c2165e" category="doc">리소스 그룹을 생성하고 Oracle 백업 정책을 연결합니다</block>
+  <block id="092f39203912611ce7a36e3e869ded6b" category="paragraph">아카이브 로그 파일 대상</block>
+  <block id="041394902f3d98321d4bfd68f857de13" category="paragraph">아카이브 로그 파일의 대상을 지정합니다.</block>
+  <block id="9563afdee3cf0b9796a53f40dab22f0c" category="list-text">확인 일정을 구성할 정책을 선택한 다음 * 를 클릭합니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="ac90f60a6a5dd000206a2912f740697f" category="doc">SAP HANA 리소스 그룹을 백업합니다</block>
+  <block id="974344da42d421b4dd34c3a98dedb9c1" category="doc">SAP HANA 데이터베이스 복원 및 복구</block>
+  <block id="2d09f159dc8f2cf742ceb30290c92ea6" category="paragraph">백업에서 데이터를 복원 및 복구할 수 있습니다.</block>
+  <block id="0d9e685a9c99b721efacde42faca34d9" category="paragraph">자동 검색된 HANA 시스템의 경우 * Complete Resource * 옵션을 선택하면 단일 파일 스냅샷 복원 기술을 사용하여 복원이 수행됩니다. 빠른 복원 * 확인란을 선택하면 볼륨 복원 기술이 사용됩니다.</block>
+  <block id="99b3dba223899e7fb94fd6d1e2ec6105" category="paragraph">수동으로 추가한 리소스의 경우 볼륨 복원 기술이 항상 사용됩니다.</block>
+  <block id="6ebabcb2ba7b30c2d0a0aa41d985c7bc" category="list-text">복원 범위 페이지에서 * 리소스 완료 * 를 선택합니다.</block>
+  <block id="17d91aa5af0e524138bf305183ffe871" category="paragraph">SAP HANA 데이터베이스에 구성된 모든 데이터 볼륨이 복원됩니다.</block>
+  <block id="d084cf7b664db6d86e5773141e47c52f" category="list-text">자동 검색된 HANA 시스템의 경우 복구 범위 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="54e194bf5cfb154480d284f314afb664" category="list-text">현재 시간에 최대한 가깝게 복구하려면 * Recover to Most Recent State * 를 선택합니다.</block>
+  <block id="c01b52c5a76f239c6646e3f7088568c6" category="list-text">지정된 시점으로 복구하려면 * Recover to point in time * 을 선택합니다.</block>
+  <block id="f2f7d2a8ee1240bdbd4b04cf378241ab" category="list-text">특정 데이터 백업으로 복구하려면 * 지정된 데이터 백업으로 복구 * 를 선택합니다.</block>
+  <block id="bf61d8f4770f97cbbd31703c6d730b3b" category="list-text">지금 복구하지 않으려면 * 복구 안 함 * 을 선택합니다.</block>
+  <block id="22b709ce565c80098fe2e4182927f525" category="list-text">로그 백업 위치를 지정합니다.</block>
+  <block id="eca17d3ca3df1d216ab9ee9a1a31fb70" category="list-text">백업 카탈로그 위치를 지정합니다.</block>
+  <block id="10ee6df71b74c57a6b9f1595f3efce16" category="doc">Azure NetApp Files에서 실행 중인 SAP HANA 데이터베이스를 백업합니다</block>
+  <block id="13c7c834f7b8414cef2ddebbd37e4d86" category="list-text">추가 백업 옵션을 설정하려면 * Backups * 화살표를 선택합니다.</block>
+  <block id="820ce0339ce64af93adc295b0695c2f8" category="list-text">사용자 정의 구성 * 화살표를 선택한 다음 이 리소스를 사용하는 모든 작업에 필요한 사용자 정의 값 쌍을 입력합니다.</block>
+  <block id="54e4bfc320112c89c44dab7ba656c966" category="list-text">스냅샷 복사본 툴 &gt; SnapCenter 파일 시스템 일관성 없음 * 을 선택하여 스냅샷 복사본을 생성합니다.</block>
+  <block id="40defed757ae2b8a311e0272f6d77f1b" category="paragraph">파일 시스템 일관성* 옵션은 Windows 호스트에서 실행되는 응용 프로그램에만 적용됩니다.</block>
+  <block id="f3d79571b40021bb0ad32b78398ef057" category="doc">Azure NetApp Files에서 실행 중인 Oracle 데이터베이스를 백업합니다</block>
+  <block id="5afb14e7449db1f35fc15f6f85899c21" category="list-text">리소스 페이지의 보기 드롭다운 목록에서 * 데이터베이스 * 를 선택합니다.</block>
+  <block id="a73fd7b4976dfcc1e3546be7ca66ef9a" category="doc">호스트를 추가하고 SQL Server 데이터베이스용 SnapCenter 플러그인을 설치합니다</block>
+  <block id="eac029c95aaaeafaf99dc2f35db06dd6" category="paragraph">SnapCenter는 Azure NetApp Files의 SMB 공유에서 SQL 인스턴스의 데이터 보호를 지원합니다. 독립 실행형 및 가용성 그룹(AG) 구성이 지원됩니다.</block>
+  <block id="d1172cfcd7a47a2529d53edd244acfc5" category="paragraph">SnapCenter 호스트 추가 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다.</block>
+  <block id="016ddebcc4c9bce19a86657e974ffb35" category="list-text">Configure log directory * 를 선택하고 Configure host log directory 페이지에서 호스트 로그 디렉토리의 SMB 경로를 입력한 후 * Save * 를 클릭합니다.</block>
+  <block id="9c03188338f33fbc98c0bedf6a655e99" category="list-text">제출 * 을 클릭하고 설치 진행 상황을 모니터링합니다.</block>
+  <block id="10033039ea407528903621059143983f" category="summary">SAP HANA 데이터베이스를 추가합니다.</block>
+  <block id="65072a18905d082d8c0ec964ee899a87" category="doc">SAP HANA 데이터베이스를 추가합니다</block>
+  <block id="983432516052147b4195eff39945656b" category="paragraph">SAP HANA 데이터베이스를 수동으로 추가해야 합니다.</block>
+  <block id="42db56a55cf7b2e7c082bec753ed991f" category="paragraph">중앙 집중식 서버에 플러그인이 설치된 경우 리소스를 수동으로 추가해야 합니다. HANA 데이터베이스 호스트에 SAP HANA 플러그인이 설치되어 있으면 HANA 시스템이 자동으로 검색됩니다.</block>
+  <block id="44ad4fb3028a44dd7e1cccf4676046cc" category="admonition">HANA 다중 호스트 구성에는 자동 검색이 지원되지 않으며 중앙 집중식 플러그인을 통해서만 추가되어야 합니다.</block>
+  <block id="027f450221ddb96bc1d081ea94a7dd4a" category="list-text">리소스 유형을 단일 컨테이너, 다중 테넌트 데이터베이스 컨테이너 또는 비데이터 볼륨 중 하나로 입력합니다.</block>
+  <block id="e898199c829d90ae41784a78cdd2d6d9" category="list-text">SAP HANA 시스템 이름을 입력합니다.</block>
+  <block id="cf253dc5a484d80a6b33ae68007e2d62" category="list-text">SID(시스템 ID)를 입력합니다.</block>
+  <block id="f9c8e114a36ca0b831ecce357d1e5abf" category="list-text">HDB 보안 사용자 저장소 키가 구성된 사용자 이름을 입력합니다.</block>
+  <block id="2b0d7d4552b59040e15317cfff8068a4" category="list-text">스토리지 설치 공간 제공 페이지에서 스토리지 유형으로 * Azure NetApp Files * 를 선택합니다.</block>
+  <block id="76a43e4fdf38d1bf2ab7cd64e1d24429" category="list-text">Azure NetApp 계정을 선택합니다.</block>
+  <block id="b2a12ed50ab788953d23c52c8962eab8" category="list-text">용량 풀 및 관련 볼륨을 선택합니다.</block>
+  <block id="ca326a551325da6560358f1a719a2589" category="doc">호스트를 추가하고 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치합니다</block>
+  <block id="60c3e5dbe50b3ac1a499a2fd4014ef1b" category="paragraph">SnapCenter 호스트 추가 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다.</block>
+  <block id="2e5a7588f1caf86b5977da7c11079d6c" category="list-text">중앙 호스트에 를 설치하는 경우 해당 호스트에 SAP HANA 클라이언트 소프트웨어가 설치되어 있는지 확인하고 HDB SQL 쿼리를 원격으로 실행할 수 있도록 SAP HANA 데이터베이스 호스트에 필요한 포트를 엽니다.</block>
+  <block id="97f2c8bf124398ba05bca9cc6fb869b1" category="list-text">1차 Azure NetApp Files(Oracle, Microsoft SQL, SAP HANA)에 있는 데이터</block>
+  <block id="3559da2fac74b3e69a2cd678efee3582" category="sidebar">Azure NetApp Files에서 실행 중인 애플리케이션을 보호합니다</block>
+  <block id="dd5c6b13be74557c3408d452b60be7a6" category="sidebar">SnapCenter를 설치하고 자격 증명을 생성합니다</block>
 </blocks>
