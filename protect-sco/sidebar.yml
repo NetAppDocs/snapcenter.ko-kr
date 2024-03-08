@@ -134,6 +134,8 @@ entries:
     url: "/protect-sco/task_delete_clone_of_a_pluggable_database.html"
 - title: 애플리케이션 볼륨 관리
   entries:
+  - title: 응용 프로그램 볼륨이란 무엇입니까
+    url: "/protect-sco/overview-application-volume.html"
   - title: 애플리케이션 볼륨 추가
     url: "/protect-sco/add-application-volume.html"
   - title: 애플리케이션 볼륨 백업

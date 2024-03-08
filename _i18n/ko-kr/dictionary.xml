@@ -6914,7 +6914,6 @@
   <block id="96c2f121719642c9bb76de237a79a8f7" category="list-text">SnapCenter의 모든 자격 증명은 AES(고급 암호화 표준) 암호화를 사용하여 보호됩니다.</block>
   <block id="f8f9feb00e019b3a4905536ed6898cbc" category="list-text">SnapCenter는 FIPS(Federal Information Processing Standard)를 준수하는 보안 알고리즘을 사용합니다.</block>
   <block id="6e48ef9c3b9eee75beadb62ef46ee1fe" category="list-text">SnapCenter는 고객이 제공한 인증 CA 인증서 사용을 지원합니다.</block>
-  <block id="4c0acb13d249f2227e8b1f1cf0ce1119" category="list-text">SnapCenter 4.1.1 이상은 ONTAP와의 TLS(전송 계층 보안) 1.2 통신을 지원합니다. 클라이언트와 서버 간에 TLS 1.2 통신을 사용할 수도 있습니다.</block>
   <block id="40739afaa7fdf9957a38216f97ce0321" category="list-text">SnapCenter는 회사의 방화벽 내부에 설치되어 SnapCenter 서버에 액세스하고 SnapCenter 서버와 플러그인 간의 통신을 지원합니다.</block>
   <block id="60b7c3e24f63b13c2f4abe5f1a7def8e" category="list-text">SnapCenter API 및 작업 액세스는 24시간 후에 만료되는 AES 암호화로 암호화된 토큰을 사용합니다.</block>
   <block id="52804460cb53f83bd632c8bb5678e86c" category="list-text">SnapCenter는 Windows Active Directory와 통합되어 로그인 및 액세스 권한을 제어하는 역할 기반 액세스 제어(RBAC)를 사용합니다.</block>
@@ -8607,7 +8606,6 @@ Windows 호스트:</block>
   <block id="ffc2be1279cc0930ef2358aa6770f7ff" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조하십시오<block ref="7fb83b6cbb928f4072ab9a7c4ce09c24" category="inline-link-rx"></block>.</block>
   <block id="43fd8846b62a01de615c215f6601836d" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업 및 복원 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="7fb83b6cbb928f4072ab9a7c4ce09c24" category="inline-link-rx"></block>.</block>
   <block id="d239ebbabeedcdb87dfeedbd548986ac" category="list-text">SnapCenter 재해 복구 기능은 REST API를 사용하여 SnapCenter 서버를 백업합니다. 을 참조하십시오 <block ref="6bd0ca01dc1606a35edfa9534e3c90d2" category="inline-link-macro-rx"></block>.</block>
-  <block id="71e2b65158ea1d86e4f878e40777dafd" category="list-text">SnapCenter 5.0은 ONTAP와의 TLS(전송 계층 보안) 1.3 통신을 지원합니다.</block>
   <block id="c53d4394b4b820e8039b31483c1dfd5e" category="paragraph">Windows cmdlet에 대한 자세한 내용은 을 참조하십시오<block ref="7fb83b6cbb928f4072ab9a7c4ce09c24" category="inline-link-rx"></block>.</block>
   <block id="9f41dc9894f346b6e32aabf91c683469" category="paragraph">UNIX 명령에 대한 자세한 내용은 을 참조하십시오<block ref="a6fc2394a8b2095d1929066d59f6fcc9" category="inline-link-rx"></block>.</block>
   <block id="e6c4248fcff66b43c157dbc37ec22080" category="paragraph">SnapLock는 WORM(Write Once, Read Many) 스토리지를 사용하여 규정 및 거버넌스 목적으로 수정되지 않은 형식으로 파일을 보존하는 조직을 위한 고성능 규정 준수 솔루션입니다.</block>
@@ -9046,4 +9044,16 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="97f2c8bf124398ba05bca9cc6fb869b1" category="list-text">1차 Azure NetApp Files(Oracle, Microsoft SQL, SAP HANA)에 있는 데이터</block>
   <block id="3559da2fac74b3e69a2cd678efee3582" category="sidebar">Azure NetApp Files에서 실행 중인 애플리케이션을 보호합니다</block>
   <block id="dd5c6b13be74557c3408d452b60be7a6" category="sidebar">SnapCenter를 설치하고 자격 증명을 생성합니다</block>
+  <block id="e353c96a332f0cabee61ee0d1183ced5" category="list-text">SnapCenter 4.1.1 이상은 ONTAP와의 통신을 위해 TLS(전송 계층 보안) 1.2를 지원합니다. 클라이언트와 서버 간 통신에 TLS 1.2를 사용할 수도 있습니다.</block>
+  <block id="35fdfe6dd04402c29d3fc6d0df727357" category="paragraph">5.0부터 SnapCenter는 ONTAP와의 통신을 위해 (TLS) 1.3을 지원합니다.</block>
+  <block id="e9d6209daed73f3a8f0578d27a8a2a85" category="summary">애플리케이션 볼륨은 Oracle 데이터베이스와 관련된 정보가 저장되는 스토리지입니다.</block>
+  <block id="daa2e304f0d45a22bbdaee82fe42256f" category="doc">응용 프로그램 볼륨이란 무엇입니까</block>
+  <block id="b9ef14bd380b22129789d2a58055fd71" category="paragraph">애플리케이션 볼륨은 구성, 설치 관리자 및 Oracle 데이터베이스와 관련된 기타 데이터 이외의 파일과 같은 정보가 저장되는 스토리지입니다.</block>
+  <block id="6a6e355317fc46c557aae7efee2616ae" category="paragraph">Oracle 데이터베이스용 SnapCenter 플러그인을 사용하면 Oracle 데이터베이스와 함께 애플리케이션 볼륨(데이터 볼륨이 아닌 볼륨)의 일관된 백업을 생성할 수 있습니다.</block>
+  <block id="23c8668967f14b47c49239015f1a75e6" category="paragraph">플러그인은 애플리케이션 볼륨의 백업 및 클론 복제를 자동화합니다.</block>
+  <block id="460056168fe8cfae225fcede48618f89" category="list-text">단일 리소스 그룹에서 Oracle 데이터베이스 볼륨과 함께 애플리케이션 볼륨을 보호합니다.</block>
+  <block id="8d4879d1f00447108f920120663f3d07" category="list-text">애플리케이션 볼륨의 백업을 생성합니다.</block>
+  <block id="af3d150952bdf0ab3693bd9da33bd032" category="list-text">애플리케이션 볼륨과 함께 Oracle 데이터베이스 백업을 생성합니다.</block>
+  <block id="39240126e5a114efbf72c14cc21a7094" category="list-text">최대 한도까지 애플리케이션 볼륨과 함께 데이터베이스의 클론을 생성합니다.</block>
+  <block id="c3f918653f9d61e3b2472e16235d9f90" category="list-text">백업 및 클론 작업에 대한 보고서를 봅니다.</block>
 </blocks>
