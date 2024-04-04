@@ -16,7 +16,7 @@ Exchange 데이터베이스 복구에는 SnapCenter 서버와의 연결 세션 �
 PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
 
 .이 작업에 대해
-ONTAP 9.12.1 이하 버전의 경우, 복원 중에 SnapLock 볼트 스냅샷 복사본에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
+ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
 
 .단계
 . Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대해 SnapCenter Server와 연결 세션을 시작합니다.

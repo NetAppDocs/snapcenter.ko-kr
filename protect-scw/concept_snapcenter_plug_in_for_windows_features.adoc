@@ -2,7 +2,7 @@
 permalink: protect-scw/concept_snapcenter_plug_in_for_windows_features.html 
 sidebar: sidebar 
 keywords: SnapCenter 
-summary: Windows용 플러그인은 스토리지 시스템의 NetApp Snapshot 복사본 기술과 통합됩니다. Windows용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다. 
+summary: Windows용 플러그인은 스토리지 시스템의 NetApp Snapshot 기술과 통합됩니다. Windows용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다. 
 ---
 = Windows용 SnapCenter 플러그인 기능
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Windows용 플러그인은 스토리지 시스템의 NetApp Snapshot �
 
 
 [role="lead"]
-Windows용 플러그인은 스토리지 시스템의 NetApp Snapshot 복사본 기술과 통합됩니다. Windows용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다.
+Windows용 플러그인은 스토리지 시스템의 NetApp Snapshot 기술과 통합됩니다. Windows용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다.
 
 Windows용 플러그인에는 다음과 같은 주요 기능이 포함되어 있습니다.
 
@@ -23,9 +23,9 @@ SnapCenter 인터페이스는 전체 플러그인과 환경에 걸쳐 표준화�
 +
 일상적인 파일 시스템 백업을 예약하고, 정책 기반 백업 보존을 구성하고, 복구 작업을 설정할 수 있습니다. 또한 e-메일 알림을 보내도록 SnapCenter를 구성하여 파일 시스템 환경을 사전 예방적으로 모니터링할 수도 있습니다.
 
-* * 무중단 NetApp 스냅샷 복사본 기술 *
+* * 무중단 NetApp 스냅샷 기술 *
 +
-Windows용 플러그인에서는 NetApp Snapshot 복사본 기술을 사용합니다. 따라서 몇 초 내에 파일 시스템을 백업하고 호스트를 오프라인으로 전환하지 않고도 신속하게 복구할 수 있습니다. 스냅샷 복사본은 최소 스토리지 공간을 사용합니다.
+Windows용 플러그인은 NetApp 스냅샷 기술을 사용합니다. 따라서 몇 초 내에 파일 시스템을 백업하고 호스트를 오프라인으로 전환하지 않고도 신속하게 복구할 수 있습니다. 스냅샷은 최소한의 스토리지 공간을 사용합니다.
 
 
 

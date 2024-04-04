@@ -96,7 +96,7 @@ SnapCenter 리포지토리를 복구하는 경우 복원 작업 중에 리포지
 C:\PS>Restore-SmRepositoryBackup -BackupName MYSQL_DS_SC_Repository_mva-x3550-s09_09-15-2016_10.32.00.4445
 ----
 +
-다음 cmdlet은 백업 파일이 iSCSI LUN에서 실수로 삭제되었을 때 SnapCenter MySQL 데이터베이스를 복원합니다. VMDK의 경우 ONTAP 스냅샷 복사본에서 백업을 수동으로 복원합니다.
+다음 cmdlet은 백업 파일이 iSCSI LUN에서 실수로 삭제되었을 때 SnapCenter MySQL 데이터베이스를 복원합니다. VMDK의 경우 ONTAP 스냅샷에서 백업을 수동으로 복구합니다.
 
 +
 [listing]

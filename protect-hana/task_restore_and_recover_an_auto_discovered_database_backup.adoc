@@ -32,7 +32,7 @@ NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
 .이 작업에 대해
 * SnapCenter에서 파일 기반 백업 복사본을 복원할 수 없습니다.
 * SnapCenter 4.3으로 업그레이드한 후 SnapCenter 4.2에서 수행된 백업을 복원할 수 있지만 복구할 수는 없습니다. SnapCenter 4.2에서 수행된 백업을 복구하려면 SnapCenter 외부에 있는 HANA Studio 또는 HANA 복구 스크립트를 사용해야 합니다.
-* ONTAP 9.12.1 이하 버전의 경우, 복원 중에 SnapLock 볼트 스냅샷 복사본에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
+* ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
 
 
 .단계
@@ -71,7 +71,7 @@ NOTE: 전체 리소스 * (볼륨 복원 * 포함 또는 제외) 또는 * 테넌�
 이 옵션은 NFS 환경의 SnapCenter 4.3에서 수행된 백업에 사용할 수 있습니다.
 
 +
-리소스에 볼륨 또는 qtree가 포함된 경우, 해당 볼륨 또는 qtree에서 복원하도록 선택된 Snapshot 복사본 이후에 생성된 스냅샷 복사본은 삭제되고 복구할 수 없습니다. 또한 동일한 볼륨 또는 qtree에서 다른 리소스가 호스트되는 경우 해당 리소스도 삭제됩니다. 이 옵션은 * 볼륨 복원 * 옵션이 있는 * 전체 리소스 * 가 복원용으로 선택된 경우에 적용됩니다.
+리소스에 볼륨 또는 qtree가 포함된 경우 해당 볼륨 또는 qtree에서 복원을 위해 선택된 스냅샷 이후에 생성된 스냅샷은 삭제되며 복구할 수 없습니다. 또한 동일한 볼륨 또는 qtree에서 다른 리소스가 호스트되는 경우 해당 리소스도 삭제됩니다. 이 옵션은 * 볼륨 복원 * 옵션이 있는 * 전체 리소스 * 가 복원용으로 선택된 경우에 적용됩니다.
 
 .. Tenant Database * 를 선택합니다.
 +
@@ -160,7 +160,7 @@ No recovery * 를 선택합니다. HANA Studio에서 수동으로 복구 작업�
 
 +
 
-NOTE: 중지, 스냅샷 복사 및 중지 해제 작업에 대한 사전 및 사후 명령의 경우 Linux의 경우 _/opt/snapcenter/scc/allowed_commands.config_path 및 Windows_C:\Program Files\NetApp\Creator\Snapcenter Plug-in\txt\lallowed_etc\centers에서 플러그인 호스트에 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
+NOTE: 중지, 스냅샷 및 중지 해제 작업에 대한 사전 및 사후 명령의 경우 Linux의 경우 _/opt/snapcenter/scc/allowed_commands.config_path 및 _C:\Program Files\NetApp\Creator\Snapcenter Plug-in\etc.
 
 . 알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.
 +

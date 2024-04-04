@@ -2,7 +2,7 @@
 permalink: protect-scsql/concept_type_of_backups_supported.html 
 sidebar: sidebar 
 keywords: Type of backups 
-summary: 'SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이터베이스를 백업하려면 데이터베이스, SQL Server 인스턴스 및 Availability Groups\(AG\)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 복사본 기술은 리소스가 상주하는 볼륨의 온라인 읽기 전용 복사본을 생성하는 데 사용됩니다.' 
+summary: 'SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이터베이스를 백업하려면 데이터베이스, SQL Server 인스턴스 및 Availability Groups\(AG\)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 기술은 리소스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성하는 데 사용됩니다.' 
 ---
 = 지원되는 백업 유형입니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이�
 
 
 [role="lead"]
-SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이터베이스를 백업하려면 데이터베이스, SQL Server 인스턴스 및 AG(가용성 그룹)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 복사본 기술은 리소스가 상주하는 볼륨의 온라인 읽기 전용 복사본을 생성하는 데 사용됩니다.
+SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이터베이스를 백업하려면 데이터베이스, SQL Server 인스턴스 및 AG(가용성 그룹)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 기술은 리소스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성하는 데 사용됩니다.
 
 복사 전용 옵션을 선택하여 SQL Server가 트랜잭션 로그를 자르지 않도록 지정할 수 있습니다. 다른 백업 응용 프로그램과 함께 SQL Server를 관리하는 경우에도 이 옵션을 사용해야 합니다. 트랜잭션 로그를 그대로 유지하면 모든 백업 애플리케이션이 시스템 데이터베이스를 복구할 수 있습니다. 복사 전용 백업은 예약된 백업의 시퀀스와 독립적이며 데이터베이스의 백업 및 복원 절차에 영향을 주지 않습니다.
 

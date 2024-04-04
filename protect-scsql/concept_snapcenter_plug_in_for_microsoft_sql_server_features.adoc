@@ -2,7 +2,7 @@
 permalink: protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_features.html 
 sidebar: sidebar 
 keywords: SnapCenter Plug-in for Microsoft SQL Server 
-summary: SQL Server용 플러그인은 Windows 호스트의 Microsoft SQL Server 및 스토리지 시스템의 NetApp Snapshot 복사본 기술과 통합됩니다. SQL Server용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다. 
+summary: SQL Server용 플러그인은 Windows 호스트의 Microsoft SQL Server 및 스토리지 시스템의 NetApp Snapshot 기술과 통합됩니다. SQL Server용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다. 
 ---
 = Microsoft SQL Server용 SnapCenter 플러그인 기능
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: SQL Server용 플러그인은 Windows 호스트의 Microsoft SQL Server
 
 
 [role="lead"]
-SQL Server용 플러그인은 Windows 호스트의 Microsoft SQL Server 및 스토리지 시스템의 NetApp Snapshot 복사본 기술과 통합됩니다. SQL Server용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다.
+SQL Server용 플러그인은 Windows 호스트의 Microsoft SQL Server 및 스토리지 시스템의 NetApp Snapshot 기술과 통합됩니다. SQL Server용 플러그인으로 작업하려면 SnapCenter 인터페이스를 사용합니다.
 
 SQL Server용 플러그인에는 다음과 같은 주요 기능이 포함되어 있습니다.
 
@@ -23,9 +23,9 @@ SnapCenter 인터페이스는 전체 플러그인과 환경에 걸쳐 표준화�
 +
 일상적인 SQL Server 백업을 예약하고, 정책 기반 백업 보존을 구성하고, 시점 및 최신 복원 작업을 설정할 수 있습니다. 또한 전자 메일 경고를 보내도록 SnapCenter를 구성하여 SQL Server 환경을 사전 예방적으로 모니터링할 수도 있습니다.
 
-* * 무중단 NetApp 스냅샷 복사본 기술 *
+* * 무중단 NetApp 스냅샷 기술 *
 +
-SQL Server용 플러그인은 NetApp Snapshot 복사본 기술을 Microsoft Windows용 SnapCenter 플러그인과 함께 사용합니다. 따라서 SQL Server를 오프라인으로 전환하지 않고도 몇 초 내에 데이터베이스를 백업하고 신속하게 복원할 수 있습니다. 스냅샷 복사본은 최소 스토리지 공간을 사용합니다.
+SQL Server용 플러그인은 Microsoft Windows용 NetApp SnapCenter 플러그인과 함께 NetApp 스냅샷 기술을 사용합니다. 따라서 SQL Server를 오프라인으로 전환하지 않고도 몇 초 내에 데이터베이스를 백업하고 신속하게 복원할 수 있습니다. 스냅샷은 최소한의 스토리지 공간을 사용합니다.
 
 
 

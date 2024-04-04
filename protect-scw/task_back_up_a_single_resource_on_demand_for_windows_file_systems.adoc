@@ -29,9 +29,9 @@ IMPORTANT: Windows 파일 시스템 컨텍스트에서 작업하는 경우 데�
 +
 리소스 그룹 생성 작업에 설명된 대로 보호 설정을 지정합니다.
 
-. 선택 사항: 마법사의 리소스 페이지에서 스냅샷 복사본에 대한 사용자 지정 이름 형식을 입력합니다.
+. 선택 사항: 마법사의 리소스 페이지에서 스냅샷의 사용자 지정 이름 형식을 입력합니다.
 +
-예를 들어 customtext_resourcegroup_policy_hostname 또는 resourcegroup_hostname을 입력합니다. 기본적으로 스냅샷 복사본 이름에 타임스탬프가 추가됩니다.
+예를 들어 customtext_resourcegroup_policy_hostname 또는 resourcegroup_hostname을 입력합니다. 기본적으로 타임스탬프는 스냅샷 이름에 추가됩니다.
 
 . 정책 페이지에서 다음 작업을 수행합니다.
 +

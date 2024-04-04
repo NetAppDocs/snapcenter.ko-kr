@@ -58,7 +58,7 @@ NOTE: 보조 스토리지로의 복제는 지원되지 않습니다.
 +
 SQL Server 데이터베이스는 DBCC(Microsoft SQL Server Database Consistency Checker)를 사용하여 데이터베이스 개체의 논리적 무결성 및 물리적 무결성을 검사합니다.
 
-... 내부 데이터베이스 Snapshot 복사본(TABLOCK) * 을 사용하여 검사를 제한하고 내부 데이터베이스 Snapshot 복사본을 사용하지 않고 잠금을 가져오는 대신 * Limit the checks and obtain the lock 을 선택합니다.
+... 내부 데이터베이스 스냅샷 복사본(TABLOCK)을 사용하는 대신 * 검사를 제한하고 잠금을 획득합니다. * 를 선택하여 내부 데이터베이스 스냅샷을 사용하는 대신 검사를 제한하고 잠금을 획득합니다.
 
 
 .. 로그 백업 * 섹션에서 * 완료 시 로그 백업 확인 * 을 선택하여 완료 시 로그 백업을 확인합니다.

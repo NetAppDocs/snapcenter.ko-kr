@@ -2,7 +2,7 @@
 permalink: protect-scsql/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_sql.html 
 sidebar: sidebar 
 keywords: backups 
-summary: Remove-SmBackup cmdlet을 사용하여 스냅샷 복사본이 없는 보조 백업의 백업 수를 정리할 수 있습니다. 복사본 관리 토폴로지에 표시된 총 스냅샷 복사본이 보조 스토리지 스냅샷 복사본 보존 설정과 일치하지 않을 때 이 cmdlet을 사용할 수 있습니다. 
+summary: Remove-SmBackup cmdlet을 사용하여 스냅샷이 없는 보조 백업의 백업 수를 정리할 수 있습니다. 복사본 관리 토폴로지에 표시된 총 스냅샷이 보조 스토리지 스냅샷 보존 설정과 일치하지 않는 경우 이 cmdlet을 사용할 수 있습니다. 
 ---
 = PowerShell cmdlet을 사용하여 보조 백업 수를 정리합니다
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: Remove-SmBackup cmdlet을 사용하여 스냅샷 복사본이 없는 �
 
 
 [role="lead"]
-Remove-SmBackup cmdlet을 사용하여 스냅샷 복사본이 없는 보조 백업의 백업 수를 정리할 수 있습니다. 복사본 관리 토폴로지에 표시된 총 스냅샷 복사본이 보조 스토리지 스냅샷 복사본 보존 설정과 일치하지 않을 때 이 cmdlet을 사용할 수 있습니다.
+Remove-SmBackup cmdlet을 사용하여 스냅샷이 없는 보조 백업의 백업 수를 정리할 수 있습니다. 복사본 관리 토폴로지에 표시된 총 스냅샷이 보조 스토리지 스냅샷 보존 설정과 일치하지 않는 경우 이 cmdlet을 사용할 수 있습니다.
 
 PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
 
@@ -26,7 +26,7 @@ Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
 ----
 . CleanupSecondaryBackups 매개 변수를 사용하여 보조 백업 수를 정리합니다.
 +
-이 예에서는 스냅샷 복사본 없이 2차 백업의 백업 수를 정리합니다.
+이 예에서는 스냅샷이 없는 보조 백업에 대한 백업 수를 정리합니다.
 
 +
 [listing]
