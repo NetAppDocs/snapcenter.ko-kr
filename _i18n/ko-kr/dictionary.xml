@@ -8298,14 +8298,6 @@ Windows 호스트:</block>
   <block id="40b141d81ebc81d0277454ddd95983be" category="paragraph">필요 시 백업 후 * Refresh * 버튼을 클릭하면 백업 또는 클론의 세부 정보가 새로 고쳐집니다.</block>
   <block id="e3eb3098d9512640ba3691ccfbed50f5" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="b70cb1971d6e57b9289aed553ef357cb" category="inline-link-rx"></block></block>
   <block id="f1472e722e81a79d38810332425a4e76" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="b70cb1971d6e57b9289aed553ef357cb" category="inline-link-rx"></block>.</block>
-  <block id="5145b2adfb55517e007962efd2a08be6" category="paragraph">Permalink: protect - SCU/task_split_a_clone.html 을 참조하십시오
-사이드바: 사이드바
-키워드: 분할 클론, SnapCenter
-요약: 'SnapCenter를 사용하여 클론 생성된 리소스를 상위 리소스에서 분할할 수 있습니다. 분할된 클론은 상위 리소스와 독립적입니다.'
---
-= 클론을 분할합니다
-:아이콘:글꼴
-: imagesdir : ../media/</block>
   <block id="e9b924bbf420ab11fb241e13f75a92c1" category="summary">Unix 파일 시스템용 플러그인을 설치하면 호스트의 파일 시스템이 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
   <block id="5f6bb3736007978d5604be7df99325f8" category="doc">백업에 사용할 수 있는 UNIX 파일 시스템을 검색합니다</block>
   <block id="c94588b5932cbd964b99829c9c53f185" category="paragraph">플러그인을 설치하면 해당 호스트의 모든 파일 시스템이 자동으로 검색되어 리소스 페이지에 표시됩니다. 이러한 파일 시스템을 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있습니다.</block>
@@ -9074,4 +9066,7 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="bf971f3c72b83a1aac6d9fe1cb39850c" category="admonition">보조 스토리지에 있는 백업의 이름을 바꾸거나 백업을 삭제할 수 없습니다. 스냅샷 삭제는 ONTAP 보존 설정에 의해 처리됩니다.</block>
   <block id="eb71c7e77b1cb5486117cdac9d378fb6" category="list-text">사용자 지정 스냅샷 이름을 지정하려면 리소스 페이지에서 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 확인란을 선택한 다음 스냅샷 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="2457e427df18c87448fa7fa796d115c7" category="paragraph">SnapCenter를 사용하여 Exchange 메일박스를 백업하려면 데이터베이스 및 DAG(데이터베이스 가용성 그룹)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 기술은 리소스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성하는 데 사용됩니다.</block>
+  <block id="495685c9e0a33087f4a235b8fe0d5e1c" category="section-title">보호를 제거합니다</block>
+  <block id="d315d492e2b430b33a4c4cd7b63eda74" category="paragraph">보호 제거 는 모든 백업을 삭제하고 모든 정책을 분리합니다. 보호를 제거하기 전에 백업이 마운트되어 있지 않고 백업과 연결된 클론이 없는지 확인해야 합니다.</block>
+  <block id="58184ed57b20efbfac17064f1bc0e4f4" category="list-text">백업을 선택하고 * 보호 제거 * 를 클릭합니다.</block>
 </blocks>
