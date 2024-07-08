@@ -5756,7 +5756,6 @@
   <block id="6347721d31864738b0e7a03f5553e69b" category="section-title">AIX 호스트 요구 사항</block>
   <block id="fed30036a3caffc826b4e66f434f67ea" category="paragraph">AIX용 SnapCenter 플러그인 패키지를 설치하기 전에 호스트가 요구 사항을 충족하는지 확인해야 합니다.</block>
   <block id="cddfaa01c32e2362546c78364751248b" category="admonition">AIX용 SnapCenter 플러그인 패키지의 일부인 UNIX용 SnapCenter 플러그인은 동시 볼륨 그룹을 지원하지 않습니다.</block>
-  <block id="895327977020e495debf0b375c7541d8" category="paragraph">AIX 6.1 이상</block>
   <block id="f805f99adc12df0c565005d33166c7bc" category="section-title">AIX 호스트에 대한 루트가 아닌 사용자에 대한 sudo 권한을 구성합니다</block>
   <block id="841774125775c871852a88e3823b3b8c" category="list-text">/home/_aix_user_/.sc_netapp/snapcenter_aix_host_plugin.bsx</block>
   <block id="c9d390513716fa3f8a5e273f77a61c88" category="list-text">AIX용 SnapCenter 플러그인 패키지를 설치할 AIX 호스트에 로그인합니다.</block>
@@ -9069,4 +9068,5 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="495685c9e0a33087f4a235b8fe0d5e1c" category="section-title">보호를 제거합니다</block>
   <block id="d315d492e2b430b33a4c4cd7b63eda74" category="paragraph">보호 제거 는 모든 백업을 삭제하고 모든 정책을 분리합니다. 보호를 제거하기 전에 백업이 마운트되어 있지 않고 백업과 연결된 클론이 없는지 확인해야 합니다.</block>
   <block id="58184ed57b20efbfac17064f1bc0e4f4" category="list-text">백업을 선택하고 * 보호 제거 * 를 클릭합니다.</block>
+  <block id="ad569cc1cca820033bb20ffe1d5bc4a5" category="paragraph">AIX 7.1 이상</block>
 </blocks>

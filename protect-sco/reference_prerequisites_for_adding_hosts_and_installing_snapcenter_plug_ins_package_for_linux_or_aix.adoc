@@ -197,7 +197,7 @@ NOTE: AIX용 SnapCenter 플러그인 패키지의 일부인 UNIX용 SnapCenter �
  a| 
 운영 체제
  a| 
-AIX 6.1 이상
+AIX 7.1 이상
 
 
 
