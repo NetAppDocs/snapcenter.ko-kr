@@ -1,0 +1,39 @@
+---
+permalink: protect-db2/storage-types-supported-by-snapcenter-plug-in-for-ibm-db2.html 
+sidebar: sidebar 
+keywords: storage types, 
+summary: 'SnapCenter는 물리적 시스템과 가상 머신(VM) 모두에서 다양한 스토리지 유형을 지원합니다. IBM DB2용 SnapCenter 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.' 
+---
+= IBM DB2용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter는 물리적 시스템과 가상 머신(VM) 모두에서 다양한 스토리지 유형을 지원합니다. IBM DB2용 SnapCenter 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.
+
+|===
+| 기계 | 스토리지 유형입니다 
+
+
+ a| 
+물리적 서버와 가상 서버
+ a| 
+FC 연결 LUN
+
+
+
+ a| 
+물리적 서버
+ a| 
+iSCSI로 연결된 LUN
+
+
+
+ a| 
+물리적 서버와 가상 서버
+ a| 
+NFS 연결 볼륨
+
+|===

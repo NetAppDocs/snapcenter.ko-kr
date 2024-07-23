@@ -34,6 +34,9 @@ Unix 파일 시스템용 플러그인이 사용자 환경에 설치된 경우 Sn
  a| 
 * 물리적 서버
 * 가상 서버
++
+NFS와 SAN 모두에서 VVOL 데이터 저장소: VVOL 데이터 저장소는 VMware vSphere용 ONTAP 툴로만 프로비저닝할 수 있습니다.
+
 
 
 
@@ -90,6 +93,5 @@ Unix 파일 시스템용 플러그인이 사용자 환경에 설치된 경우 Sn
 
 * NFS 및 VMFS 데이터 저장소 모두에서 제공되는 VMDK에 분산된 파일 시스템 혼합은 지원되지 않습니다.
 * NVMe는 지원되지 않습니다.
-* SnapMirror Business Continuity(SM-BC)는 지원되지 않습니다.
 * 프로비저닝은 지원되지 않습니다.
 

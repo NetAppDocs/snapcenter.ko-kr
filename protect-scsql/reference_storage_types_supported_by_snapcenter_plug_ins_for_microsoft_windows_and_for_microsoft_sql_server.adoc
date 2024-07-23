@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for Microsoft SQL Server 
 summary: SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. 호스트에 대한 패키지를 설치하기 전에 스토리지 유형에 대한 지원이 가능한지 확인해야 합니다. 
 ---
-= Microsoft Windows용 SnapCenter 플러그인 및 Microsoft SQL Server용 플러그인이 지원하는 스토리지 유형입니다
+= Microsoft SQL Server용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -93,6 +93,16 @@ SnapCenter GUI 또는 PowerShell cmdlet
 프로비저닝만 지원합니다.
 
 SnapCenter를 사용하여 SMB 프로토콜을 사용하는 데이터 또는 공유를 백업할 수 없습니다.
+
+
+
+ a| 
+VMware VM
+ a| 
+NFS와 SAN 모두에서 VVOL 데이터 저장소
+ a| 
+VMware vSphere용 ONTAP 툴
+ a| 
 
 
 

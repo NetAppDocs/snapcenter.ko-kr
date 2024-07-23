@@ -42,4 +42,12 @@ FlexClone 라이센스에 대한 자세한 내용은 을 참조하십시오 link
 * 파일 시스템 및 가상 시스템 디스크(VMDK)의 백업 지원
 * 물리적 인프라와 가상화 인프라 지원
 * iSCSI, Fibre Channel, FCoE, RDM(Raw Device Mapping), ALM(Asymmetric LUN Mapping), NFS 및 VMFS를 통한 VMDK 및 가상 FC 지원
+* Windows Server 2022에서 비휘발성 메모리 익스프레스(NVMe) 지원
++
+** TCP/IP를 통해 NVMe에 생성된 VMDK 레이아웃의 백업, 복원, 클론 복제 및 검증 워크플로우를 제공합니다.
+** ESX 8.0 업데이트 2부터 NVMe 펌웨어 버전 1.3을 지원하며 가상 하드웨어 버전 21이 필요합니다.
+** WSFC(Windows Server Failover Clustering)는 NVMe over TCP/IP의 VMDK 응용 프로그램에 대해 지원되지 않습니다.
+
+
+* SnapMirror 액티브 동기화(처음에 SnapMirror Business Continuity[SM-BC]로 릴리스)를 지원하므로 전체 사이트 장애 시에도 비즈니스 서비스의 운영을 지속할 수 있으며, 2차 복사본을 사용하여 애플리케이션을 투명하게 페일오버할 수 있습니다. SnapMirror 액티브 동기화로 페일오버를 트리거하는 데 수동 개입이나 추가 스크립팅이 필요하지 않습니다.
 

@@ -59,6 +59,6 @@ NOTE: 클론 사양 파일은 _/var/opt/snapcenter/sSCO/clone_spec_에서 생성
 "PL-SCO-20032: canExecute 작업이 실패하고 다음 오류가 발생할 경우: PL-SCO-30031: Redo 로그 파일 + SC_2959770772_clmdb/clmdb/redolog/redo01_01.log exists" 오류 메시지가 나타나면 _-WaitToTriggerClone_에 대해 더 높은 값을 지정하십시오.
 
 +
-UNIX 명령에 대한 자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886896["SnapCenter 소프트웨어 명령 참조 가이드"^].
+UNIX 명령에 대한 자세한 내용은 를 https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470["SnapCenter 소프트웨어 명령 참조 가이드"^]참조하십시오.
 
 

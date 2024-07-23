@@ -1,0 +1,14 @@
+---
+permalink: protect-mysql/auto-discovery-of-resources-on-linux-host.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for MySQL 
+summary: 리소스는 SnapCenter에서 관리하는 Linux 호스트의 MySQL 인스턴스입니다. MySQL용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 MySQL 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다. 
+---
+= Linux 호스트에서 리소스 자동 검색
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+리소스는 SnapCenter에서 관리하는 Linux 호스트의 MySQL 인스턴스입니다. MySQL용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 MySQL 인스턴스가 자동으로 검색되어 리소스 페이지에 표시됩니다.

@@ -34,6 +34,8 @@ entries:
     url: "/protect-scu/task_back_up_unix_file_systems_resource_groups.html"
   - title: 백업 진행률을 모니터링합니다
     url: "/protect-scu/task_monitor_unix_file_systems_backup_operations.html"
+  - title: 토폴로지 페이지에서 보호된 Unix 파일 시스템을 봅니다
+    url: "/protect-scu/view_protected_unix_file_systems_in_the_topology_page.html"
 - title: Unix 파일 시스템을 복구 및 복구합니다
   entries:
   - title: Unix 파일 시스템을 복구 및 복구합니다

@@ -1,0 +1,349 @@
+---
+permalink: protect-nsp/perl.html 
+sidebar: sidebar 
+keywords: custom plug-in 
+summary: PERL을 사용하여 플러그인을 개발합니다. 
+---
+= Perl 기반 개발
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+PERL을 사용하여 플러그인을 개발하는 동안 특정 규칙을 따라야 합니다.
+
+* 내용을 읽을 수 있어야 합니다
+* 필수 작업 setenv, quiesce 및 unquiesce를 구현해야 합니다
+* 결과를 에이전트로 다시 전달하려면 특정 구문을 사용해야 합니다
+* 콘텐츠는 <plugin_name>.pm 파일로 저장해야 합니다
+
+
+사용 가능한 작업은 입니다
+
+* 설정
+* 버전
+* 정지
+* 정지 해제
+* clone_pre, clone_post
+* restore_pre, 복구하십시오
+* 정리
+
+
+
+
+== 일반적인 플러그인 처리
+
+
+
+=== 결과 개체 사용
+
+모든 사용자 지정 플러그인 작업은 결과 개체를 정의해야 합니다. 이 개체는 메시지, 종료 코드, stdout 및 stderr를 다시 호스트 에이전트로 보냅니다.
+
+결과 개체:
+
+ my $result = {
+....
+      exit_code => 0,
+      stdout => "",
+      stderr => "",
+};
+....
+결과 객체 반환:
+
+ return $result;
+
+
+=== 데이터 일관성 유지
+
+정리 작업을 제외한 작업 간 데이터를 동일한 워크플로 실행의 일부로 보존할 수 있습니다. 이 작업은 키 값 쌍을 사용하여 수행됩니다. 데이터의 키 값 쌍은 결과 개체의 일부로 설정되며 동일한 워크플로의 후속 작업에서 사용 가능한 것으로 유지됩니다.
+
+다음 코드 샘플은 보존할 데이터를 설정합니다.
+
+....
+my $result = {
+  exit_code => 0,
+  stdout => "",
+  stderr => "",
+};
+  $result->{env}->{‘key1’} = ‘value1’;
+  $result->{env}->{‘key2’} = ‘value2’;
+  ….
+  return $result
+....
+위의 코드는 두 개의 키 값 쌍을 설정하며, 이러한 키 값 쌍은 후속 작업에서 입력으로 사용할 수 있습니다. 다음 코드를 사용하여 두 키 값 쌍에 액세스할 수 있습니다.
+
+....
+sub setENV {
+    my ($self, $config) = @_;
+    my $first_value = $config->{‘key1’};
+    my $second_value = $config->{‘key2’};
+    …
+}
+....
+ === Logging error messages
+각 작업은 콘텐츠를 표시하고 저장하는 호스트 에이전트로 메시지를 다시 보낼 수 있습니다. 메시지에는 메시지 수준, 타임스탬프 및 메시지 텍스트가 포함됩니다. 여러 줄 메시지가 지원됩니다.
+
+....
+Load the SnapCreator::Event Class:
+my $msgObj = new SnapCreator::Event();
+my @message_a = ();
+....
+msgObj 를 사용하여 Collect 메서드를 사용하여 메시지를 캡처합니다.
+
+....
+$msgObj->collect(\@message_a, INFO, "My INFO Message");
+$msgObj->collect(\@message_a, WARN, "My WARN Message");
+$msgObj->collect(\@message_a, ERROR, "My ERROR Message");
+$msgObj->collect(\@message_a, DEBUG, "My DEBUG Message");
+$msgObj->collect(\@message_a, TRACE, "My TRACE Message");
+....
+결과 객체에 메시지 적용:
+
+ $result->{message} = \@message_a;
+
+
+=== 플러그인 스텁 사용
+
+사용자 지정 플러그인은 플러그인 스텁을 노출해야 합니다. SnapCenter 서버가 워크플로에 따라 호출하는 메서드입니다.
+
+|===
+| 플러그인 스텁 | 선택 사항/필수 요소입니다 | 목적 
+
+
+ a| 
+설정
+ a| 
+필수 요소입니다
+ a| 
+이 스텁은 환경과 구성 개체를 설정합니다.
+
+모든 환경 구문 분석 또는 처리는 여기에서 수행해야 합니다. 스텁이 호출될 때마다 setenv 스텁이 바로 전에 호출됩니다. PERL 스타일 플러그인에만 필요합니다.
+
+
+
+ a| 
+버전
+ a| 
+선택 사항
+ a| 
+이 스텁은 응용 프로그램 버전을 가져오는 데 사용됩니다.
+
+
+
+ a| 
+파악
+ a| 
+선택 사항
+ a| 
+이 스텁은 에이전트나 호스트에서 호스팅되는 인스턴스 또는 데이터베이스와 같은 애플리케이션 객체를 검색하는 데 사용됩니다.
+
+플러그인은 응답의 일부로 검색된 애플리케이션 객체를 특정 형식으로 반환해야 합니다. 이 스텁은 응용 프로그램이 Unix용 SnapDrive와 통합된 경우에만 사용됩니다.
+
+
+NOTE: Linux 파일 시스템(Linux 파일 시스템)이 지원됩니다. AIX/Solaris(Unix 유형)는 지원되지 않습니다.
+
+
+
+ a| 
+discovery_complete(검색 완료
+ a| 
+선택 사항
+ a| 
+이 스텁은 에이전트나 호스트에서 호스팅되는 인스턴스 또는 데이터베이스와 같은 애플리케이션 객체를 검색하는 데 사용됩니다.
+
+플러그인은 응답의 일부로 검색된 애플리케이션 객체를 특정 형식으로 반환해야 합니다. 이 스텁은 응용 프로그램이 Unix용 SnapDrive와 통합된 경우에만 사용됩니다.
+
+
+NOTE: Linux 파일 시스템(Linux 파일 시스템)이 지원됩니다. AIX 및 Solaris(Unix 유형)는 지원되지 않습니다.
+
+
+
+ a| 
+정지
+ a| 
+필수 요소입니다
+ a| 
+이 스텁은 일시 중지를 수행합니다. 즉, 스냅샷을 생성할 수 있는 상태로 애플리케이션을 배치합니다. 이를 스냅샷 작업 이전이라고 합니다. 보존할 애플리케이션의 메타데이터는 응답의 일부로 설정되어야 하며, 이 메타데이터는 구성 매개 변수의 형태로 해당 스토리지 스냅샷의 후속 클론 또는 복원 작업 중에 반환됩니다.
+
+
+
+ a| 
+정지 해제
+ a| 
+필수 요소입니다
+ a| 
+이 스텁은 중지 해제를 수행하는 역할을 하며, 이는 애플리케이션을 정상 상태로 전환하는 것을 의미합니다. 스냅샷을 생성한 후에 이 메시지가 호출됩니다.
+
+
+
+ a| 
+Clone_pre
+ a| 
+선택 사항
+ a| 
+이 스텁은 사전 클론 작업을 수행합니다. 기본 제공 SnapCenter 서버 클론 생성 인터페이스를 사용 중이며 클론 작업을 수행할 때 트리거됩니다.
+
+
+
+ a| 
+clone_post
+ a| 
+선택 사항
+ a| 
+이 스텁은 사후 클론 작업을 수행하는 역할을 합니다. 이는 사용자가 기본 제공 SnapCenter 서버 클론 생성 인터페이스를 사용하고 있다고 가정하고 클론 작업을 수행할 때만 트리거됩니다.
+
+
+
+ a| 
+restore_pre
+ a| 
+선택 사항
+ a| 
+이 스텁은 PreRestore 작업을 수행하는 역할을 합니다. 이는 사용자가 기본 제공 SnapCenter 서버 복원 인터페이스를 사용하고 있으며 복원 작업을 수행하는 동안 트리거된다고 가정합니다.
+
+
+
+ a| 
+복원
+ a| 
+선택 사항
+ a| 
+이 스텁은 애플리케이션 복구 작업을 수행하는 역할을 합니다. 이는 사용자가 기본 제공 SnapCenter 서버 복원 인터페이스를 사용하고 있다고 가정하고 복원 작업을 수행할 때만 트리거됩니다.
+
+
+
+ a| 
+정리
+ a| 
+선택 사항
+ a| 
+이 스텁은 백업, 복구 또는 클론 작업 후 정리 작업을 수행합니다. 정리 작업은 정상적인 워크플로 실행 중 또는 워크플로 오류가 발생한 경우에 가능합니다. 백업, cloneVolAndLun 또는 fileOrVolRestore 등의 구성 매개 변수 작업을 참조하여 정리 작업이 호출되는 워크플로 이름을 유추할 수 있습니다. 구성 매개 변수 ERROR_MESSAGE는 워크플로우를 실행하는 동안 오류가 있는지 여부를 나타냅니다. ERROR_MESSAGE가 정의되어 있고 NULL이 아닌 경우 Workflow 장애 실행 중에 정리가 호출됩니다.
+
+
+
+ a| 
+APP_VERSION
+ a| 
+선택 사항
+ a| 
+이 스텁은 SnapCenter에서 플러그인으로 관리되는 애플리케이션 버전 세부 정보를 가져오는 데 사용됩니다.
+
+|===
+
+
+=== 플러그인 패키지 정보
+
+모든 플러그인에는 다음 정보가 있어야 합니다.
+
+....
+package MOCK;
+our @ISA = qw(SnapCreator::Mod);
+=head1 NAME
+MOCK - class which represents a MOCK module.
+=cut
+=head1 DESCRIPTION
+MOCK implements methods which only log requests.
+=cut
+use strict;
+use warnings;
+use diagnostics;
+use SnapCreator::Util::Generic qw ( trim isEmpty );
+use SnapCreator::Util::OS qw ( isWindows isUnix getUid
+createTmpFile );
+use SnapCreator::Event qw ( INFO ERROR WARN DEBUG COMMENT ASUP
+CMD DUMP );
+my $msgObj = new SnapCreator::Event();
+my %config_h = ();
+....
+
+
+=== 운영
+
+사용자 지정 플러그인에서 지원하는 setenv, Version, Quiesce 및 Unquiesce와 같은 다양한 작업을 코딩할 수 있습니다.
+
+
+
+==== setenv 작동
+
+PERL을 사용하여 만든 플러그인에는 setenv 작업이 필요합니다. ENV를 설정하고 플러그인 매개변수에 쉽게 액세스할 수 있습니다.
+
+....
+sub setENV {
+    my ($self, $obj) = @_;
+    %config_h = %{$obj};
+    my $result = {
+      exit_code => 0,
+      stdout => "",
+      stderr => "",
+    };
+    return $result;
+}
+....
+
+
+==== 버전 작업
+
+버전 작업은 응용 프로그램 버전 정보를 반환합니다.
+
+....
+sub version {
+  my $version_result = {
+    major => 1,
+    minor => 2,
+    patch => 1,
+    build => 0
+  };
+  my @message_a = ();
+  $msgObj->collect(\@message_a, INFO, "VOLUMES
+$config_h{'VOLUMES'}");
+  $msgObj->collect(\@message_a, INFO,
+"$config_h{'APP_NAME'}::quiesce");
+  $version_result->{message} = \@message_a;
+  return $version_result;
+}
+....
+
+
+==== 중지 작업
+
+Quiesce 작업은 resources 매개 변수에 나열된 리소스에 대해 응용 프로그램 중지 작업을 수행합니다.
+
+....
+sub quiesce {
+  my $result = {
+      exit_code => 0,
+      stdout => "",
+      stderr => "",
+  };
+  my @message_a = ();
+  $msgObj->collect(\@message_a, INFO, "VOLUMES
+$config_h{'VOLUMES'}");
+  $msgObj->collect(\@message_a, INFO,
+"$config_h{'APP_NAME'}::quiesce");
+  $result->{message} = \@message_a;
+  return $result;
+}
+....
+
+
+==== 작업 중지 해제
+
+응용 프로그램 정지 해제를 위해서는 중지 해제 작업이 필요합니다. 리소스 목록은 resources 매개 변수에서 사용할 수 있습니다.
+
+....
+sub unquiesce {
+  my $result = {
+      exit_code => 0,
+      stdout => "",
+      stderr => "",
+  };
+  my @message_a = ();
+  $msgObj->collect(\@message_a, INFO, "VOLUMES
+$config_h{'VOLUMES'}");
+  $msgObj->collect(\@message_a, INFO,
+"$config_h{'APP_NAME'}::unquiesce");
+  $result->{message} = \@message_a;
+  return $result;
+}
+....

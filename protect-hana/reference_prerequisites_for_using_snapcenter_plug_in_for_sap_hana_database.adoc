@@ -16,7 +16,7 @@ SAP HANA 데이터베이스용 SnapCenter 플러그인을 사용하려면 먼저
 * SnapCenter 서버를 설치하고 구성합니다.
 * SnapCenter 서버에 로그인합니다.
 * 스토리지 시스템 접속을 추가하고 해당하는 경우 자격 증명을 생성하여 SnapCenter 환경을 구성합니다.
-* Linux 또는 Windows 호스트에 Java 1.7 또는 Java 1.8을 설치합니다.
+* Linux 또는 Windows 호스트에 Java 11을 설치합니다.
 +
 호스트 시스템의 환경 경로 변수에서 Java 경로를 설정해야 합니다.
 

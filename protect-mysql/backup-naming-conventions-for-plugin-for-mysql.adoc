@@ -1,0 +1,33 @@
+---
+permalink: protect-mysql/backup-naming-conventions-for-plugin-for-mysql.html 
+sidebar: sidebar 
+keywords: Backup naming conventions 
+summary: 기본 스냅샷 명명 규칙을 사용하거나 사용자 지정 명명 규칙을 사용할 수 있습니다. 기본 백업 명명 규칙은 스냅샷 이름에 타임스탬프를 추가하여 복제본이 생성된 시기를 식별할 수 있도록 합니다. 
+---
+= MySQL 데이터베이스용 플러그인에 대한 백업 명명 규칙
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+기본 스냅샷 명명 규칙을 사용하거나 맞춤형 명명 규칙을 사용할 수 있습니다. 기본 백업 명명 규칙은 복사본이 생성된 시기를 식별할 수 있도록 스냅샷 이름에 타임스탬프를 추가합니다.
+
+스냅샷은 다음과 같은 기본 명명 규칙을 사용합니다.
+
+'resourcegroupname_hostname_timestamp'
+
+다음 예제와 같이 백업 리소스 그룹의 이름을 논리적으로 지정해야 합니다.
+
+[listing]
+----
+dts1_mach1x88_03-12-2015_23.17.26
+----
+이 예제에서 구문 요소는 다음과 같은 의미를 가집니다.
+
+* _dts1_은(는) 리소스 그룹 이름입니다.
+* _mach1x88_은 호스트 이름입니다.
+* _03-12-2015_23.17.26_은 날짜 및 타임스탬프입니다.
+
+
+또는 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 을 선택하여 리소스 또는 리소스 그룹을 보호하면서 스냅샷 이름 형식을 지정할 수도 있습니다. 예를 들어 customtext_resourcegroup_policy_hostname 또는 resourcegroup_hostname을 입력합니다. 기본적으로 타임스탬프 접미사가 스냅샷 이름에 추가됩니다.

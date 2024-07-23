@@ -1,0 +1,202 @@
+---
+permalink: protect-nsp/add_resources_to_netapp_supported_plugins.html 
+sidebar: sidebar 
+keywords: NetApp supported plug-in, resources, snapcenter 
+summary: 백업하거나 클론 복제할 리소스를 추가해야 합니다. 환경에 따라 백업 또는 복제할 데이터베이스 인스턴스 또는 컬렉션이 리소스가 될 수 있습니다. 
+---
+= NetApp 지원 플러그인에 리소스 추가
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+백업하거나 클론 복제할 리소스를 추가해야 합니다. 환경에 따라 백업 또는 복제할 데이터베이스 인스턴스 또는 컬렉션이 리소스가 될 수 있습니다.
+
+.시작하기 전에
+* SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 생성, 자격 증명 추가 등의 작업을 완료해야 합니다.
+* 가 있어야 link:develop_a_plug_in_for_your_application.html["응용 프로그램에 대한 사용자 지정 플러그인을 만들었습니다"]합니다.
+* SnapCenter 서버에 플러그인을 업로드해야 합니다.
+
+
+.단계
+. 왼쪽 탐색 창에서 * 리소스 * 를 선택한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 리소스 페이지에서 * 리소스 추가 * 를 선택합니다.
+. 리소스 세부 정보 제공 페이지에서 다음 작업을 수행합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+이름
+ a| 
+리소스의 이름을 입력합니다.
+
+
+
+ a| 
+호스트 이름입니다
+ a| 
+호스트를 선택합니다.
+
+
+
+ a| 
+유형
+ a| 
+유형을 선택합니다. 유형은 플러그인 설명 파일에 따라 사용자가 정의합니다. 예를 들어, 데이터베이스와 인스턴스 등이 있습니다.
+
+선택한 유형에 부모가 있는 경우 상위 항목의 세부 정보를 입력합니다. 예를 들어, 형식이 Database 이고 모체가 instance인 경우 인스턴스의 세부 정보를 입력합니다.
+
+
+
+ a| 
+자격 증명 이름입니다
+ a| 
+자격 증명을 선택하거나 새 자격 증명을 생성합니다.
+
+
+
+ a| 
+마운트 경로
+ a| 
+리소스가 마운트된 마운트 경로를 입력합니다. 이는 Windows 호스트에만 적용됩니다.
+
+|===
+. 스토리지 설치 공간 제공 페이지에서 스토리지 시스템을 선택하고 하나 이상의 볼륨, LUN 및 qtree를 선택한 다음 * 저장 * 을 선택합니다.
++
+선택 사항: 을 선택합니다 image:../media/add_policy_from_resourcegroup.gif["더하기 아이콘"] 아이콘을 클릭하여 다른 스토리지 시스템에서 볼륨, LUN 및 qtree를 더 추가합니다.
+
++
+
+NOTE: NetApp 지원 플러그인은 리소스의 자동 검색을 지원하지 않습니다. 물리적 환경과 가상 환경의 스토리지 세부 정보도 자동으로 검색되지 않습니다. 리소스를 생성하는 동안 물리적 환경과 가상 환경에 대한 스토리지 정보를 제공해야 합니다.
+
++
+image::../media/storage_footprint.gif[있습니다]
+
+. 리소스 설정 페이지에서 리소스에 대한 사용자 지정 키 값 쌍을 제공합니다.
++
+
+NOTE: 사용자 정의 키 이름이 대문자인지 확인합니다.
+
++
+image::../media/resource_settings.gif[리소스 설정]
+
++
+각 플러그인 매개변수는 을 참조하십시오 link:add_resources_to_netapp_supported_plugins.html#parameters-to-configure-the-resource["리소스를 구성하는 매개 변수입니다"]
+
+. 요약을 검토한 후 * Finish * 를 선택합니다.
+
+
+.결과
+리소스는 유형, 호스트 또는 클러스터 이름, 관련 리소스 그룹 및 정책, 전체 상태와 같은 정보와 함께 표시됩니다.
+
+
+IMPORTANT: 데이터베이스가 SnapCenter 외부에서 이름이 변경된 경우 리소스를 새로 고쳐야 합니다.
+
+.작업을 마친 후
+다른 사용자에게 자산에 대한 액세스 권한을 제공하려면 SnapCenter 관리자가 해당 사용자에게 자산을 할당해야 합니다. 따라서 사용자는 자신에게 할당된 자산에 대한 사용 권한이 있는 작업을 수행할 수 있습니다.
+
+리소스를 추가한 후 리소스 세부 정보를 수정할 수 있습니다. NetApp 지원 플러그인 리소스에 연결된 백업이 있는 경우 리소스 이름, 리소스 유형 및 호스트 이름 필드를 수정할 수 없습니다.
+
+
+
+== 리소스를 구성하는 매개 변수입니다
+
+플러그인을 수동으로 추가하는 경우 다음 매개 변수를 사용하여 리소스 설정 페이지에서 리소스를 구성할 수 있습니다.
+
+
+
+=== MongoDB용 플러그인
+
+리소스 설정:
+
+* mongodb_app_server=(공유 클러스터로서의 리소스 유형) 또는 mongodb_REPLICASET_server=(replicaset으로 사용되는 리소스 유형)
+* oplog_path = (MongoDB.propertiesfile 에서 제공된 경우 선택적 매개 변수)
+* mongodb_authentication_type = (LDAP 인증의 경우 일반, 기타 인증의 경우 없음)
+
+
+MongoDB.properties 파일을 제공해야 하는 매개 변수는 다음과 같습니다.
+
+* DISABLE_STARTING_STARTING_SERVICES=
++
+** n 플러그인에서 Start/Stop 서비스를 수행하는 경우
+** 사용자가 start/** stop 서비스를 수행하는 경우 y
+** 기본값으로서의 선택적 매개 변수는 N으로 설정됩니다
+
+
+* oplog_path_=(SnapCenter에 사용자 지정 키-값 쌍으로 이미 제공된 경우 선택적 매개 변수입니다.)
+
+
+
+
+=== MaxDB용 플러그인
+
+리소스 설정:
+
+* XUSER_ENABLE (Y|N) 데이터베이스 사용자에게 암호가 필요하지 않도록 MaxDB에 대한 xuser 사용을 활성화 또는 비활성화합니다.
+* Handle_LOGWRITER (Y|N) 일시 중지 로그라이터(N) 또는 다시 시작 로그라이터(Y) 작업을 실행합니다.
+* DBMCLICMD(PATH_TO_dbmcli_cmd)는 MaxDB dbmcli 명령의 경로를 지정합니다. 설정하지 않으면 검색 경로에 dbmcli가 사용됩니다.
+
+
+
+NOTE: Windows 환경의 경우 경로는 큰따옴표("...") 안에 있어야 합니다.
+
+* SQLCLICMD(PATH_TO_sqlcli_cmd) MaxDB sqlcli 명령의 경로를 지정합니다. 경로를 설정하지 않으면 sqlcli 가 검색 경로에 사용됩니다.
+* MAXDB_UPDATE_HIST_LOG (Y|N) 는 MaxDB 백업 프로그램이 MaxDB 이력 로그를 업데이트해야 하는지 여부를 지시합니다.
+* MAXDB_CHECK_snapshot_DIR: example, SID1: directory [, directoary...];[SID2: directoary[, directory...] Snap Creator 스냅샷 복제 작업이 성공적인지 확인하고 스냅샷이 생성되었는지 확인합니다.
++
+이는 NFS에만 적용됩니다. 디렉토리는 .snapshot 디렉토리가 포함된 위치를 가리켜야 합니다. 쉼표로 구분된 목록에 여러 디렉토리를 포함할 수 있습니다.
+
++
+MaxDB 7.8 이상 버전에서는 데이터베이스 백업 요청이 백업 기록에서 Failed(실패) 로 표시됩니다.
+
+* MAXDB_BACKUP_TEMPLATES: 각 데이터베이스에 대한 백업 템플릿을 지정합니다.
++
+템플릿이 있어야 하며 외부 유형의 백업 템플릿이어야 합니다. MaxDB 7.8 이상에 대한 스냅샷 통합을 활성화하려면 MaxDB 백그라운드 서버 기능이 있어야 하며 외부 유형의 MaxDB 백업 템플릿을 이미 구성해야 합니다.
+
+* MAXDB_BG_SERVER_PREFIX: 백그라운드 서버 이름의 접두사를 지정합니다.
++
+MAXDB_BACKUP_templates 매개 변수가 설정된 경우 MAXDB_BG_SERVER_PREFIX 매개 변수도 설정해야 합니다. 접두사를 설정하지 않으면 기본값 na_bg_가 사용됩니다.
+
+
+
+
+
+=== Sybase ASE용 플러그인
+
+리소스 설정:
+
+* SYBASE_SERVER(DATA_SERVER_NAME)는 Sybase 데이터 서버 이름( isql 명령의 -S 옵션)을 지정합니다. 예: p_test.
+* SYBASE_DATABASE_EXCLUDE(db_name)는 "ALL" 구문을 사용하는 경우 데이터베이스를 제외할 수 있도록 허용합니다.
++
+세미콜론으로 구분된 목록을 사용하여 여러 데이터베이스를 지정할 수 있습니다. 예: pubs2; test_db1.
+
+* SYBASE_USER:USER_NAME은 isql 명령을 실행할 수 있는 운영 체제 사용자를 지정합니다.
++
+UNIX에 필요합니다. 이 매개 변수는 Snap Creator Agent 시작 및 중지 명령을 실행하는 사용자(일반적으로 루트 사용자)와 isql 명령을 실행하는 사용자가 다른 경우에 필요합니다.
+
+* SYBASE_TRAN_Dump db_name:DIRECTORY_PATH 스냅샷을 생성한 후 Sybase 트랜잭션 덤프를 수행할 수 있습니다. 예를 들어 pubs2:/sybasedumps/pubs2 를 입력합니다
++
+트랜잭션 덤프가 필요한 각 데이터베이스를 지정해야 합니다.
+
+* Sybase_Tran_dump_compress (Y|N) 기본 Sybase 트랜잭션 덤프 압축을 설정하거나 해제합니다.
+* SYBASE_ISQL_CMD(예: /opt/Sybase/OCS-15_0/bin/isql)는 isql 명령의 경로를 정의합니다.
+* SYBASE_EXCLUDE_TEMpdb(Y|N)를 사용하면 사용자가 생성한 임시 데이터베이스를 자동으로 제외할 수 있습니다.
+
+
+
+
+=== Oracle 애플리케이션용 플러그인(ORASCPM)
+
+리소스 설정:
+
+* SQLPlus_CMD는 SQLPlus에 대한 경로를 지정합니다.
+* Oracle_databases는 백업할 Oracle 데이터베이스와 해당 사용자(database:user)를 나열합니다.
+* cntl_file_backup_DIR은 제어 파일 백업을 위한 디렉토리를 지정합니다.
+* Ora_TEMP는 임시 파일의 디렉터리를 지정합니다.
+* oracle_home은 Oracle 소프트웨어가 설치된 디렉토리를 지정합니다.
+* ARCHIVE_LOG_ONLY 아카이브 로그를 백업할지 여부를 지정합니다.
+* ORACLE_BACKUP_MODE는 온라인 또는 오프라인 백업을 수행할지 여부를 지정합니다.
+

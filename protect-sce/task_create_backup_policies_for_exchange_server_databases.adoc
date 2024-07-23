@@ -23,8 +23,9 @@ SnapCenter를 사용하여 Microsoft Exchange Server 리소스를 백업하기 �
 * 미러나 볼트에 스냅샷을 복제하는 경우, SnapCenter 관리자는 소스 볼륨과 타겟 볼륨 모두에 대한 SVM(스토리지 가상 머신)을 할당해야 합니다.
 * powershell 스크립트를 p규정된 ppts 및 postscripts로 실행하려면 web.config 파일에서 usePowershellProcessforScripts 매개 변수의 값을 true로 설정해야 합니다.
 +
-기본값은 false 입니다
+기본값은 false 입니다.
 
+* SnapMirror 활성 동기화에 대한 사전 요구사항 및 제한 사항을 검토하십시오. 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes["SnapMirror 활성 동기화에 대한 개체 제한"]참조하십시오.
 
 
 .이 작업에 대해
@@ -250,8 +251,7 @@ SnapLock 보존 기간은 100년 미만이어야 합니다.
 
 |===
 +
-
-NOTE: DAG 구성에서 호스트에 대한 전체 백업이 없는 로그 백업만 있는 데이터베이스가 있는 경우 로그 백업은 다음과 같은 방식으로 유지됩니다.
+DAG 구성에서 호스트에 대한 전체 백업이 없는 로그 백업만 있는 데이터베이스가 있는 경우 로그 백업은 다음과 같은 방식으로 유지됩니다.
 
 +
 *** 기본적으로 SnapCenter는 DAG의 다른 모든 호스트에서 이 데이터베이스에 대해 가장 오래된 전체 백업을 찾고 전체 백업 전에 이 호스트에서 수행된 모든 로그 백업을 삭제합니다.
@@ -273,14 +273,19 @@ NOTE: DAG 구성에서 호스트에 대한 전체 백업이 없는 로그 백업
 
  a| 
 로컬 스냅샷을 생성한 후 SnapMirror를 업데이트합니다
+ a| 
+백업 세트의 미러 복사본을 다른 볼륨(SnapMirror)에 유지하려면 이 옵션을 선택합니다.
 
 보조 복제 중에 SnapLock 만료 시간에 운영 SnapLock 만료 시간이 로드됩니다.
+
+이 옵션은 SnapMirror 액티브 동기화에 대해 활성화해야 합니다.
+
+
+IMPORTANT: Exchange ONTAP 볼륨에 SnapMirror 액티브 동기화가 설정되어 있는 경우에는 1차 전용 정책을 사용할 수 없습니다. SnapCenter에서는 이를 허용하지 않습니다. "미러" 옵션을 활성화해야 합니다.
 
 토폴로지 페이지에서 * 새로 고침 * 버튼을 클릭하면 ONTAP에서 검색된 2차 및 1차 SnapLock 만료 시간이 새로 고쳐집니다.
 
 을 참조하십시오 link:..protect-sce/task_view_exchange_backups_in_the_topology_page.html["토폴로지 페이지에서 Exchange 백업을 봅니다"].
- a| 
-백업 세트의 미러 복사본을 다른 볼륨(SnapMirror)에 유지하려면 이 옵션을 선택합니다.
 
 
 

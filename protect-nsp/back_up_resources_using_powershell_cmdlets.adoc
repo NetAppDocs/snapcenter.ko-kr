@@ -1,0 +1,102 @@
+---
+permalink: protect-nsp/back_up_resources_using_powershell_cmdlets.html 
+sidebar: sidebar 
+keywords: backup resources 
+summary: 리소스 백업에는 SnapCenter 서버와의 연결 설정, 리소스 추가, 정책 추가, 백업 리소스 그룹 생성 및 백업이 포함됩니다. 
+---
+= PowerShell cmdlet을 사용하여 리소스를 백업합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+리소스 백업에는 SnapCenter 서버와의 연결 설정, 리소스 추가, 정책 추가, 백업 리소스 그룹 생성 및 백업이 포함됩니다.
+
+.시작하기 전에
+* PowerShell cmdlet을 실행하려면 PowerShell 환경을 준비해야 합니다.
+* 스토리지 시스템 접속을 추가하고 자격 증명을 생성해야 합니다.
+
+
+.이 작업에 대해
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.
+
+.단계
+. Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
++
+[listing]
+----
+Open-smconnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146\
+----
++
+사용자 이름 및 암호 프롬프트가 표시됩니다.
+
+. Add-SmResources cmdlet을 사용하여 리소스를 추가합니다.
++
+이 예제에서는 리소스를 추가합니다.
+
++
+[listing]
+----
+Add-SmResource -HostName '10.232.206.248' -PluginCode 'DB2' -ResourceName NONREC1 -ResourceType Database -StorageFootPrint ( @
+{"VolumeName"="DB2_NONREC1DB";"LunName"="DB2_NONREC1DB";"Vserver"="vserver_scauto_secondary"}) -Instance db2inst1
+----
+. Add-SmPolicy cmdlet을 사용하여 백업 정책을 만듭니다.
++
+이 예에서는 새 백업 정책을 생성합니다.
+
++
+[listing]
+----
+Add-SMPolicy -PolicyName 'db2VolumePolicy' -PolicyType 'Backup' -PluginPolicyType DB2  -description 'VolumePolicy'
+----
+. 추가 SmResourceGroup cmdlet을 사용하여 SnapCenter에 새 리소스 그룹을 추가합니다.
++
+이 예제에서는 지정된 정책 및 리소스를 사용하여 새 리소스 그룹을 만듭니다.
+
++
+[listing]
+----
+Add-SmResourceGroup -ResourceGroupName 'Verify_ManualBackup_DatabaseLevel_MultipleVolume_unix' -Resources @(@
+{"Host"="10.232.206.248";"Uid"="db2inst2\NONREC"},@{"Host"="10.232.206.248";"Uid"="db2inst1\NONREC"}) -Policies db2ManualPolicy
+----
+. New-SmBackup cmdlet을 사용하여 새 백업 작업을 시작합니다.
++
+[listing]
+----
+New-SMBackup -DatasetName Verify_ManualBackup_DatabaseLevel_MultipleVolume_unix -Policy db2ManualPolicy
+----
+. Get-SmBackupReport cmdlet을 사용하여 백업 작업의 상태를 봅니다.
++
+이 예는 지정된 날짜에 실행된 모든 작업의 작업 요약 보고서를 표시합니다.
+
++
+[listing]
+----
+PS C:\> Get-SmBackupReport -JobId 351
+Output:
+BackedUpObjects           : {DB1}
+FailedObjects             : {}
+IsScheduled               : False
+HasMetadata               : False
+SmBackupId                : 269
+SmJobId                   : 2361
+StartDateTime             : 10/4/2016 11:20:45 PM
+EndDateTime               : 10/4/2016 11:21:32 PM
+Duration                  : 00:00:46.2536470
+CreatedDateTime           : 10/4/2016 11:21:09 PM
+Status                    : Completed
+ProtectionGroupName       : Verify_ASUP_Message_windows
+SmProtectionGroupId       : 211
+PolicyName                : test2
+SmPolicyId                : 20
+BackupName                : Verify_ASUP_Message_windows_scc54_10-04-2016_23.20.46.2758
+VerificationStatus        : NotVerified
+VerificationStatuses      :
+SmJobError                :
+BackupType                : SCC_BACKUP
+CatalogingStatus          : NotApplicable
+CatalogingStatuses        :
+ReportDataCreatedDateTime :
+----
+

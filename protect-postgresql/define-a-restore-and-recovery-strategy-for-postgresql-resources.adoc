@@ -1,0 +1,23 @@
+---
+permalink: protect-postgresql/define-a-restore-and-recovery-strategy-for-postgresql-resources.html 
+sidebar: sidebar 
+keywords: restore and recovery strategy, postgresql resources, snapcenter 
+summary: 복구 및 복구 작업을 성공적으로 수행할 수 있도록 클러스터를 복원 및 복구하기 전에 전략을 정의해야 합니다. 
+---
+= PostgreSQL 리소스에 대한 복구 및 복구 전략을 정의합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+복구 및 복구 작업을 성공적으로 수행할 수 있도록 클러스터를 복원 및 복구하기 전에 전략을 정의해야 합니다.
+
+
+NOTE: 클러스터의 수동 복구만 지원됩니다.
+
+.단계
+. 수동으로 추가한 PostgreSQL 리소스에 대해 지원되는 복구 전략을 결정합니다
+. 자동 검색된 PostgreSQL 클러스터에 대해 지원되는 복구 전략을 결정합니다
+. 수행할 복구 작업 유형을 결정합니다.
+

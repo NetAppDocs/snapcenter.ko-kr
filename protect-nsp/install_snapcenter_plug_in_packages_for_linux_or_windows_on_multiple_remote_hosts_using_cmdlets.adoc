@@ -1,0 +1,30 @@
+---
+permalink: protect-nsp/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets.html 
+sidebar: sidebar 
+keywords: install, snapcenter 
+summary: 설치-SmHostPackage PowerShell cmdlet을 사용하여 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 여러 호스트에 동시에 설치할 수 있습니다. 
+---
+= cmdlet을 사용하여 여러 원격 호스트에 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 설치합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+설치-SmHostPackage PowerShell cmdlet을 사용하여 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 여러 호스트에 동시에 설치할 수 있습니다.
+
+.시작하기 전에
+호스트를 추가하는 사용자는 호스트에 대한 관리 권한이 있어야 합니다.
+
+.단계
+. PowerShell을 실행합니다.
+. SnapCenter 서버 호스트에서 Open-SmConnection cmdlet을 사용하여 세션을 설정한 다음 자격 증명을 입력합니다.
+. Install-SmHostPackage cmdlet 및 필수 매개 변수를 사용하여 여러 호스트에 플러그인을 설치합니다.
++
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.
+
++
+플러그인을 수동으로 설치했으며 호스트가 플러그인을 설치하는 데 필요한 요구 사항을 충족하는지 확인하지 않으려는 경우 -skipprecheck 옵션을 사용할 수 있습니다.
+
+. 원격 설치를 위한 자격 증명을 입력합니다.
+

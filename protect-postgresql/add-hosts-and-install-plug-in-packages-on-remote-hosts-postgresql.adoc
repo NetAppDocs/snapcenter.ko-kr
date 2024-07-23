@@ -1,0 +1,162 @@
+---
+permalink: protect-postgresql/add-hosts-and-install-plug-in-packages-on-remote-hosts-postgresql.html 
+sidebar: sidebar 
+keywords: credentials 
+summary: SnapCenter 호스트 추가 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다. 
+---
+= 호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 호스트 추가 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 호스트를 추가하고 개별 호스트에 대한 플러그인 패키지를 설치할 수 있습니다.
+
+.시작하기 전에
+* SnapCenter 서버 호스트의 운영 체제가 Windows 2019이고 플러그인 호스트의 운영 체제가 Windows 2022인 경우 다음을 수행해야 합니다.
++
+** Windows Server 2019(OS 빌드 17763.5936) 이상으로 업그레이드합니다
+** Windows Server 2022(OS 빌드 20348.2402) 이상으로 업그레이드하십시오
+
+
+* 플러그인 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자 역할)에 할당된 사용자여야 합니다.
+* Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자에 속한 경우 호스트에서 UAC를 비활성화해야 합니다.
+* 메시지 큐 서비스가 실행 중인지 확인해야 합니다.
+* 관리 설명서에는 호스트 관리에 대한 정보가 포함되어 있습니다.
+* 그룹 GMSA(Managed Service Account)를 사용하는 경우 관리자 권한으로 GMSA를 구성해야 합니다.
++
+link:../protect-postgresql/task_configure_gMSA_on_windows_server_2012_or_later.html["PostgreSQL에 대해 Windows Server 2016 이상에서 그룹 관리 서비스 계정을 구성합니다"^]
+
+
+
+.이 작업에 대해
+* SnapCenter 서버를 다른 SnapCenter 서버에 플러그인 호스트로 추가할 수 없습니다.
+
+
+.단계
+. 왼쪽 탐색 창에서 * 호스트 * 를 클릭합니다.
+. 맨 위에 * Managed Hosts * 탭이 선택되어 있는지 확인합니다.
+. 추가 * 를 클릭합니다.
+. 호스트 페이지에서 다음 작업을 수행합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+호스트 유형
+ a| 
+호스트 유형을 선택합니다.
+
+** Windows
+** 리눅스
++
+
+NOTE: PostgreSQL용 플러그인은 PostgreSQL 클라이언트 호스트에 설치되며 이 호스트는 Windows 시스템 또는 Linux 시스템에 있을 수 있습니다.
+
+
+
+
+
+ a| 
+호스트 이름입니다
+ a| 
+통신 호스트 이름을 입력합니다. FQDN(정규화된 도메인 이름) 또는 호스트의 IP 주소를 입력합니다. SnapCenter는 DNS의 올바른 구성에 따라 달라집니다. 따라서 FQDN을 입력하는 것이 가장 좋습니다.
+
+
+
+ a| 
+자격 증명
+ a| 
+생성한 자격 증명 이름을 선택하거나 새 자격 증명을 생성합니다. 자격 증명에 원격 호스트에 대한 관리 권한이 있어야 합니다. 자세한 내용은 자격 증명 생성에 대한 정보를 참조하십시오.
+
+입력한 자격 증명 이름 위에 커서를 놓으면 자격 증명에 대한 세부 정보를 볼 수 있습니다.
+
+
+NOTE: 자격 증명 인증 모드는 호스트 추가 마법사에서 지정하는 호스트 유형에 의해 결정됩니다.
+
+|===
+. 설치할 플러그인 선택 섹션에서 설치할 플러그인을 선택합니다.
++
+REST API를 사용하여 PostgreSQL용 플러그인을 설치하는 동안 버전을 3.0으로 전달해야 합니다. 예를 들어 PostgreSQL:3.0을 입력합니다
+
+. (선택 사항) * 추가 옵션 * 을 클릭합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+포트
+ a| 
+기본 포트 번호를 유지하거나 포트 번호를 지정합니다. 기본 포트 번호는 8145입니다. SnapCenter 서버가 사용자 지정 포트에 설치된 경우 해당 포트 번호가 기본 포트로 표시됩니다.
+
+
+NOTE: 플러그인을 수동으로 설치하고 사용자 지정 포트를 지정한 경우 동일한 포트를 지정해야 합니다. 그렇지 않으면 작업이 실패합니다.
+
+
+
+ a| 
+설치 경로
+ a| 
+PostgreSQL용 플러그인은 PostgreSQL 클라이언트 호스트에 설치되며 이 호스트는 Windows 시스템 또는 Linux 시스템에 있을 수 있습니다.
+
+** Windows용 SnapCenter 플러그인 패키지의 경우 기본 경로는 C:\Program Files\NetApp\SnapCenter입니다. 선택적으로 경로를 사용자 지정할 수 있습니다.
+** Linux용 SnapCenter 플러그인 패키지의 경우 기본 경로는 /opt/netapp/snapcenter입니다. 선택적으로 경로를 사용자 지정할 수 있습니다.
+
+
+
+
+ a| 
+사전 설치 검사를 건너뜁니다
+ a| 
+플러그인이 이미 수동으로 설치되어 있고 호스트가 플러그인 설치 요구 사항을 충족하는지 확인하지 않으려면 이 확인란을 선택합니다.
+
+
+
+ a| 
+클러스터의 모든 호스트를 추가합니다
+ a| 
+모든 클러스터 노드를 추가하려면 이 확인란을 선택합니다.
+
+
+
+ a| 
+그룹 GMSA(Managed Service Account)를 사용하여 플러그인 서비스를 실행합니다
+ a| 
+Windows 호스트의 경우 그룹 GMSA(Managed Service Account)를 사용하여 플러그인 서비스를 실행하려면 이 확인란을 선택합니다.
+
+
+NOTE: GMSA 이름을 domainName\accountName$ 형식으로 제공합니다.
+
+
+NOTE: GMSA는 SnapCenter Plug-in for Windows 서비스에 대해서만 로그온 서비스 계정으로 사용됩니다.
+
+|===
+. 제출 * 을 클릭합니다.
++
+사전 검사 건너뛰기 확인란을 선택하지 않은 경우 호스트가 플러그인 설치 요구사항을 충족하는지 여부를 확인합니다. 디스크 공간, RAM, PowerShell 버전, .NET 버전, 위치(Windows 플러그인의 경우) 및 Java 버전(Linux 플러그인의 경우)은 최소 요구 사항에 따라 검증됩니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다.
+
++
+오류가 디스크 공간 또는 RAM과 관련된 경우 C:\Program Files\NetApp\SnapCenter WebApp에 있는 web.config 파일을 업데이트하여 기본값을 수정할 수 있습니다. 오류가 다른 매개변수와 관련된 경우 문제를 해결해야 합니다.
+
++
+
+NOTE: HA 설정에서 web.config 파일을 업데이트하는 경우 두 노드에서 파일을 업데이트해야 합니다.
+
+. 호스트 유형이 Linux인 경우 지문을 확인한 다음 * 확인 및 제출 * 을 클릭합니다.
++
+클러스터 설정에서 클러스터의 각 노드에 대한 지문을 확인해야 합니다.
+
++
+
+NOTE: 동일한 호스트가 SnapCenter에 이전에 추가되었고 지문이 확인되었더라도 지문 확인은 필수입니다.
+
+. 설치 과정을 모니터링합니다.
++
+** Windows 플러그인의 경우 설치 및 업그레이드 로그는 _C:\Windows\SnapCenter plugin\Install_<JOBID>\_에 있습니다
+** Linux 플러그인의 경우 설치 로그는 _/var/opt/snapcenter/logs/SnapCenter_Linux_Host_Plug-in_Install_<JOBID>.log_에 있으며 업그레이드 로그는 _/var/opt/snapcenter/logs/SnapCenter_Linux_Host_Plug-in_Upgrade_<JOBID>.log_log_에 있습니다
+
+
+

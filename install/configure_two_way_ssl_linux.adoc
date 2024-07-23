@@ -1,0 +1,82 @@
+---
+permalink: install/configure_two_way_ssl_linux.html 
+sidebar: sidebar 
+keywords: security,two-way ssl,configure two-way ssl, linux host 
+summary: Linux 호스트의 SnapCenter 서버와 플러그인 간의 상호 통신을 보호하기 위해 양방향 SSL 통신을 구성해야 합니다. 
+---
+= Linux 호스트에서 양방향 SSL 통신을 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux 호스트의 SnapCenter 서버와 플러그인 간의 상호 통신을 보호하기 위해 양방향 SSL 통신을 구성해야 합니다.
+
+.시작하기 전에
+* Linux 호스트용 CA 인증서를 구성해야 합니다.
+* 모든 플러그인 호스트와 SnapCenter 서버에서 양방향 SSL 통신을 활성화해야 합니다.
+
+
+.단계
+. certificate.pem * 을 _/etc/pki/ca-trust/source/anchors/_ 에 복사합니다.
+. Linux 호스트의 신뢰 목록에 인증서를 추가합니다.
++
+** `cp root-ca.pem /etc/pki/ca-trust/source/anchors/`
+** `cp certificate.pem /etc/pki/ca-trust/source/anchors/`
+** `update-ca-trust extract`
+
+
+. 인증서가 신뢰 목록에 추가되었는지 확인합니다.
+`trust list | grep "<CN of your certificate>"`
+. SnapCenter * nginx * 파일에서 * ssl_certificate * 및 * ssl_certificate_key * 를 업데이트하고 다시 시작합니다.
++
+** `vim /etc/nginx/conf.d/snapcenter.conf`
+** `systemctl restart nginx`
+
+
+. SnapCenter 서버 GUI 링크를 새로 고칩니다.
+. /<installation path>/NetApp/snapcenter/snapmanagerWeb_및 _/<installation path>/netapp/snapcenter/smcore_에 있는 * snapcoeServiceHost.dll.config * 에서 다음 키의 값을 업데이트합니다.
++
+** <add key="SERVICE_CERTIFICATE_PATH" value="<path of certificate.pfx>" />
+** <add key="SERVICE_CERTIFICATE_PASSWORD" value="<password>"/>
+
+
+. 다음 서비스를 다시 시작합니다.
++
+** `systemctl restart smcore.service`
+** `systemctl restart snapmanagerweb.service`
+
+
+. 인증서가 SnapManager 웹 포트에 연결되어 있는지 확인합니다.
+`openssl s_client -connect localhost:8146 -brief`
+. 인증서가 smcore 포트에 연결되어 있는지 확인합니다.
+`openssl s_client -connect localhost:8145 -brief`
+. SPL 키 저장소 및 별칭에 대한 암호를 관리합니다.
++
+.. SPL 속성 파일에서 * SPL_keystore_pass * 키에 할당된 SPL 키 저장소 기본 암호를 검색합니다.
+.. 키 저장소 암호를 변경합니다.
+`keytool -storepasswd -keystore keystore.jks`
+.. 개인 키 항목의 모든 별칭에 대한 암호를 변경합니다.
+`keytool -keypasswd -alias "<alias_name>" -keystore keystore.jks`
+.. _spl.properties_ 에서 키 * spl_keystore_pass * 에 대해 동일한 암호를 업데이트합니다.
+.. 서비스를 다시 시작합니다.
+
+
+. 플러그인 Linux 호스트에서 SPL 플러그인의 키 저장소에 루트 및 중간 인증서를 추가합니다.
++
+** `keytool -import -trustcacerts -alias <any preferred alias name> -file <path of root-ca.pem> -keystore <path of keystore.jks mentioned in spl.properties file>`
+** `keytool -importkeystore -srckeystore <path of certificate.pfx> -srcstoretype pkcs12 -destkeystore <path of keystore.jks mentioned in spl.properties file> -deststoretype JKS`
++
+... keystore.jks에서 항목을 확인합니다.
+`keytool -list -v -keystore <path to keystore.jks>`
+... 필요한 경우 별칭 이름을 바꿉니다.
+`keytool -changealias -alias "old-alias" -destalias "new-alias" -keypass keypass -keystore </path/to/keystore> -storepass storepas`
+
+
+
+
+. _spl.properties_ 파일의 * spl_certificate_alias * 값을 _keystore.jks_에 저장된 * certificate.pfx * 별칭으로 업데이트하고 SPL 서비스를 다시 시작합니다. `systemctl restart spl`
+. 인증서가 smcore 포트에 연결되어 있는지 확인합니다.
+`openssl s_client -connect localhost:8145 -brief`
+

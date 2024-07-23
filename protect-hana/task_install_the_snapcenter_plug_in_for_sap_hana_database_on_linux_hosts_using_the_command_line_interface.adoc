@@ -48,6 +48,6 @@ SnapCenter 서버가 설치된 호스트에서 이 경로에 액세스할 수 �
 . /<설치 디렉토리>/NetApp/snapcenter/SCC/etc/SC_SMS_Services.properties 파일을 편집한 다음 plugins_enabled=HANA:3.0 매개 변수를 추가합니다.
 . Add-Smhost cmdlet 및 필수 매개 변수를 사용하여 SnapCenter 서버에 호스트를 추가합니다.
 +
-명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.
 
 

@@ -1,0 +1,16 @@
+---
+permalink: protect-postgresql/how-snapcenter-plug-in-for-postgresql-uses-consistency-group-snapshot-copies.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for PostgreSQL 
+summary: 플러그인을 사용하여 리소스 그룹에 대한 정합성 보장 그룹 스냅샷을 생성할 수 있습니다. 일관성 그룹은 여러 볼륨을 포함하는 컨테이너로, 이를 단일 엔터티로 관리할 수 있습니다. 정합성 보장 그룹은 여러 볼륨의 동시 스냅샷으로, 볼륨 그룹의 정합성 보장 복제본을 제공합니다. 
+---
+= PostgreSQL용 SnapCenter 플러그인에서 정합성 보장 그룹 스냅샷을 사용하는 방법
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+플러그인을 사용하여 리소스 그룹에 대한 정합성 보장 그룹 스냅샷을 생성할 수 있습니다. 일관성 그룹은 여러 볼륨을 포함하는 컨테이너로, 이를 단일 엔터티로 관리할 수 있습니다. 정합성 보장 그룹은 여러 볼륨의 동시 스냅샷으로, 볼륨 그룹의 정합성 보장 복제본을 제공합니다.
+
+또한 스토리지 컨트롤러가 스냅샷을 일관되게 그룹화할 수 있는 대기 시간을 지정할 수도 있습니다. 사용 가능한 대기 시간 옵션은 * 긴급 *, * 보통 * 및 * 완화된 * 입니다. 정합성 보장 그룹 스냅샷 작업 중에 WAFL(Write Anywhere File Layout) 동기화를 설정하거나 해제할 수도 있습니다. WAFL 동기화는 정합성 보장 그룹 스냅샷의 성능을 향상시킵니다.

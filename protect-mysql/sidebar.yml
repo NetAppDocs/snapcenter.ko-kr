@@ -1,0 +1,148 @@
+---
+section: protect-mysql
+title: MySQL 보호
+entries:
+- title: MySQL용 SnapCenter 플러그인
+  entries:
+  - title: MySQL용 SnapCenter 플러그인 개요
+    url: "/protect-mysql/snapcenter-plug-in-for-mysql-overview.html"
+  - title: MySQL용 SnapCenter 플러그인을 사용하여 수행할 수 있는 작업
+    url: "/protect-mysql/what-you-can-do-using-the-snapcenter-plug-in-for-mysql.html"
+  - title: MySQL용 SnapCenter 플러그인 기능
+    url: "/protect-mysql/snapcenter-plug-in-for-mysql-features.html"
+  - title: MySQL용 SnapCenter 플러그인에서 지원하는 스토리지 유형
+    url: "/protect-mysql/storage-types-supported-by-snapcenter-plug-in-for-mysql.html"
+  - title: 최소 ONTAP 권한이 필요합니다
+    url: "/protect-mysql/minimum-privileges-required-for-mysql.html"
+  - title: SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템 준비
+    url: "/protect-mysql/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-mysql.html"
+  - title: MySQL의 백업 전략
+    entries:
+    - title: MySQL의 백업 전략을 정의합니다
+      url: "/protect-mysql/define-a-backup-strategy-for-mysql.html"
+    - title: Linux 호스트에서 리소스 자동 검색
+      url: "/protect-mysql/auto-discovery-of-resources-on-linux-host.html"
+    - title: 지원되는 백업 유형입니다
+      url: "/protect-mysql/type-of-backups-supported.html"
+    - title: MySQL용 SnapCenter 플러그인에서 일관성 그룹 스냅샷 복사본을 사용하는 방법
+      url: "/protect-mysql/how-snapcenter-plug-in-for-mysql-uses-consistency-group-snapshot-copies.html"
+    - title: SnapCenter이 데이터 백업 관리 방식을 관리하는 방법
+      url: "/protect-mysql/housekeeping-of-log-backups.html"
+    - title: MySQL의 백업 일정을 결정하기 위한 고려 사항
+      url: "/protect-mysql/considerations-for-determining-backup-schedules-for-mysql.html"
+    - title: MySQL에 필요한 백업 작업 수입니다
+      url: "/protect-mysql/number-of-backup-jobs-needed-for-mysql.html"
+    - title: 백업 명명 규칙
+      url: "/protect-mysql/backup-naming-conventions-for-plugin-for-mysql.html"
+  - title: MySQL의 복원 및 복구 전략
+    entries:
+    - title: MySQL 리소스에 대한 복원 및 복구 전략을 정의합니다
+      url: "/protect-mysql/define-a-restore-and-recovery-strategy-for-mysql-resources.html"
+    - title: 수동으로 추가한 MySQL 리소스에 대해 지원되는 복원 전략 유형입니다
+      url: "/protect-mysql/types-of-restore-strategies-supported-for-manually-added-mysql.html"
+    - title: 자동으로 검색된 MySQL에 대해 지원되는 복원 전략 유형
+      url: "/protect-mysql/types-of-restore-strategies-supported-for-auto-discovered-mysql.html"
+    - title: 자동 검색된 MySQL의 복원 작업 유형
+      url: "/protect-mysql/types-of-restore-performed-for-auto-discovered-mysql.html"
+- title: MySQL용 SnapCenter 플러그인 설치를 준비합니다
+  entries:
+  - title: MySQL용 SnapCenter 플러그인의 설치 워크플로
+    url: "/protect-mysql/install-snapcenter-plug-in-for-mysql.html"
+  - title: MySQL용 SnapCenter 플러그인 설치 및 호스트 추가 사전 요구 사항
+    url: "/protect-mysql/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-mysql.html"
+  - title: Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항
+    url: "/protect-mysql/host-requirements-to-install-snapcenter-plug-in-package-for-windows-mysql.html"
+  - title: Linux용 SnapCenter 플러그인 패키지 설치를 위한 호스트 요구 사항
+    url: "/protect-mysql/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html"
+  - title: MySQL용 SnapCenter 플러그인에 대한 자격 증명을 설정합니다
+    url: "/protect-mysql/set-up-credentials-for-snapcenter-plug-in-for-mysql.html"
+  - title: MySQL용 SnapCenter 플러그인을 설치합니다
+    entries:
+    - title: 호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다
+      url: "/protect-mysql/add-hosts-and-install-plug-in-packages-on-remote-hosts-mysql.html"
+    - title: cmdlet을 사용하여 여러 원격 호스트에 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 설치합니다
+      url: "/protect-mysql/install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-mysql.html"
+    - title: 명령줄 인터페이스를 사용하여 Linux 호스트에 MySQL용 SnapCenter 플러그인을 설치합니다
+      url: "/protect-mysql/install-the-snapcenter-plug-in-for-mysql-on-linux-hosts-using-the-command-line-interface.html"
+    - title: SnapCenter 플러그인 패키지 설치 상태를 모니터링합니다
+      url: "/protect-mysql/monitor-the-status-of-installing-plugin-for-mysql.html"
+  - title: CA 인증서를 구성합니다
+    entries:
+    - title: CA 인증서 CSR 파일을 생성합니다
+      url: "/protect-mysql/generate-CA-certificate-CSR-file.html"
+    - title: CA 인증서를 가져옵니다
+      url: "/protect-mysql/import-CA-certificates.html"
+    - title: CA 인증서 지문을 받습니다
+      url: "/protect-mysql/get-the-CA-certificate-thumbprint.html"
+    - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+      url: "/protect-mysql/configure-CA-certificate-with-Windows-host-plug-in-services.html"
+    - title: Linux 호스트에서 SnapCenter MySQL 플러그인 서비스에 대한 CA 인증서를 구성합니다
+      url: "/protect-mysql/configure-CA-certificate-for-mysql-on-Linux-host.html"
+    - title: Windows 호스트에서 SnapCenter MySQL 플러그인 서비스에 대한 CA 인증서를 구성합니다
+      url: "/protect-mysql/configure-CA-certificate-for-mysql-on-windows-host.html"
+    - title: 플러그인에 대해 CA 인증서를 활성화합니다
+      url: "/protect-mysql/enable-ca-certificates-for-plug-ins.html"
+- title: 데이터 보호를 준비합니다
+  entries:
+  - title: MySQL용 SnapCenter 플러그인 사용을 위한 사전 요구 사항
+    url: "/protect-mysql/prerequisites-for-using-snapcenter-plug-in-for-mysql.html"
+  - title: MySQL 보호를 위해 리소스, 리소스 그룹 및 정책을 사용하는 방법
+    url: "/protect-mysql/how-resources-resource-groups-and-policies-are-used-for-protecting-mysql.html"
+- title: MySQL 리소스를 백업합니다
+  entries:
+  - title: 워크플로를 백업합니다
+    url: "/protect-mysql/back-up-mysql-resources.html"
+  - title: 데이터베이스를 자동으로 검색합니다
+    url: "/protect-mysql/discover-the-databases-automatically.html"
+  - title: 플러그인 호스트에 수동으로 리소스를 추가합니다
+    url: "/protect-mysql/add-resources-manually-to-the-plug-in-host.html"
+  - title: MySQL에 대한 백업 정책을 생성합니다
+    url: "/protect-mysql/create-backup-policies-for-mysql.html"
+  - title: 리소스 그룹을 생성하고 정책을 연결합니다
+    url: "/protect-mysql/create-resource-groups-and-attach-policies.html"
+  - title: MySQL을 백업합니다
+    url: "/protect-mysql/back-up-mysql.html"
+  - title: 리소스 그룹을 백업합니다
+    url: "/protect-mysql/back-up-resource-groups-mysql.html"
+  - title: MySQL용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결 및 자격 증명을 생성합니다
+    url: "/protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html"
+  - title: PowerShell cmdlet을 사용하여 데이터베이스를 백업합니다
+    url: "/protect-mysql/back-up-databases-using-powershell-cmdlets-mysql.html"
+  - title: 백업 작업을 모니터링합니다
+    entries:
+    - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
+      url: "/protect-mysql/monitor-mysql-backup-operations.html"
+    - title: Activity 창에서 작업을 모니터링합니다
+      url: "/protect-mysql/monitor-dataprotection-operations-on-mysql-in-the-activity-pane.html"
+  - title: 백업 작업을 취소합니다
+    url: "/protect-mysql/cancel-backup-operations-for-mysql.html"
+  - title: 토폴로지 페이지에서 MySQL 데이터베이스 백업 및 클론을 봅니다
+    url: "/protect-mysql/view-mysql-database-backups-and-clones-in-the-topology-page.html"
+- title: MySQL을 복원합니다
+  entries:
+  - title: 워크플로를 복원합니다
+    url: "/protect-mysql/restore-mysql.html"
+  - title: 수동으로 추가한 리소스 백업을 복원 및 복구합니다
+    url: "/protect-mysql/restore-and-recover-a-manually-added-resource-backup.html"
+  - title: 자동 검색된 데이터베이스 백업을 복원 및 복구합니다
+    url: "/protect-mysql/restore-and-recover-an-auto-discovered-database-backup.html"
+  - title: PowerShell cmdlet을 사용하여 MySQL을 복원합니다
+    url: "/protect-mysql/restore-mysql-using-powershell-cmdlets.html"
+  - title: PowerShell cmdlet을 사용하여 리소스 복원
+    url: "/protect-mysql/restore-and-recover-resources-using-powershell-cmdlets-mysql.html"
+  - title: 복구 작업을 모니터링합니다
+    url: "/protect-mysql/monitor-mysql-restore-operations.html"
+- title: MySQL 리소스 백업의 클론을 생성합니다
+  entries:
+  - title: 클론 복제 워크플로우
+    url: "/protect-mysql/clone-mysql-resource-backups.html"
+  - title: MySQL 데이터베이스 백업의 클론을 생성합니다
+    url: "/protect-mysql/clone-mysql-backup.html"
+  - title: PowerShell cmdlet을 사용하여 MySQL 데이터베이스 백업의 클론을 생성합니다
+    url: "/protect-mysql/clone-mysql-backups-using-powershell-cmdlets.html"
+  - title: SnapCenter에서 클론 작업을 모니터링합니다
+    url: "/protect-mysql/monitor-mysql-clone-operations.html"
+  - title: 클론 분할
+    url: "/protect-mysql/split-a-clone-for-mysql.html"
+  - title: SnapCenter 업그레이드 후 MySQL 데이터베이스 클론을 삭제하거나 분할합니다
+    url: "/protect-mysql/delete-or-split-mysql-clones-after-upgrading-snapcenter.html"

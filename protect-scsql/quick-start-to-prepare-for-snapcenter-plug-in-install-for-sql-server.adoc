@@ -44,15 +44,6 @@ SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리�
 
 
  a| 
-SnapCenter 표준 용량 기반
- a| 
-ONTAP Select 및 Cloud Volumes ONTAP에 필요합니다
-
-Cloud Volumes ONTAP 또는 ONTAP Select 고객인 경우 SnapCenter에서 관리하는 데이터를 기준으로 TB당 용량 기반 라이센스를 구입해야 합니다. 기본적으로 SnapCenter는 90일 100TB SnapCenter 표준 용량 기반 평가판 라이센스를 기본 제공합니다. 자세한 내용은 세일즈 담당자에게 문의하십시오.
-
-
-
- a| 
 SnapMirror 또는 SnapVault
  a| 
 ONTAP
@@ -99,7 +90,7 @@ ONTAP 및 애플리케이션 플러그인 최소 요구 사항은 을 참조하�
 CPU
  a| 
 * 서버 호스트: 4코어
-* 플러그인 호스트: 1 코어
+* 플러그인 호스트: 4코어
 
 
 
@@ -108,7 +99,7 @@ CPU
 RAM
  a| 
 * 서버 호스트: 8GB
-* 플러그인 호스트: 1GB
+* 플러그인 호스트: 4 GB
 
 
 
@@ -118,8 +109,8 @@ RAM
  a| 
 서버 호스트:
 
-* SnapCenter 서버 소프트웨어 및 로그용 4GB
-* SnapCenter 리포지토리의 경우 6GB
+* SnapCenter 서버 소프트웨어 및 로그용 7 GB
+* SnapCenter 리포지토리의 경우 8 GB
 * 각 플러그인 호스트: 플러그인 설치 및 로그의 경우 2GB, 전용 호스트에 플러그인이 설치된 경우에만 필요합니다.
 
 
@@ -131,8 +122,8 @@ RAM
 SnapCenter 서버 호스트 및 플러그인 호스트에 필요:
 
 * Microsoft .NET Framework 4.7.2 이상
-* WMF(Windows Management Framework) 4.0 이상
-* PowerShell 4.0 이상
+* ASP를 참조하십시오. NET 코어 호스팅 번들(8.0.5 이상)
+* PowerShell 7.4.2 이상
 
 
 

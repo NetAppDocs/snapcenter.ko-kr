@@ -1,20 +1,19 @@
 ---
 permalink: install/task_configure_two_way_ssl.html 
 sidebar: sidebar 
-keywords: security,two-way ssl,configure two-way ssl 
-summary: SnapCenter 서버와 플러그인 간의 상호 통신을 보호하려면 양방향 SSL 통신을 구성해야 합니다.   
+keywords: security,two-way ssl,configure two-way ssl, windows host 
+summary: Windows 호스트의 SnapCenter 서버와 플러그인 간의 상호 통신을 보호하기 위해 양방향 SSL 통신을 구성해야 합니다. 
 ---
-= 양방향 SSL 통신을 구성합니다
+= Windows 호스트에서 양방향 SSL 통신을 구성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-SnapCenter 서버와 플러그인 간의 상호 통신을 보호하려면 양방향 SSL 통신을 구성해야 합니다.
+Windows 호스트의 SnapCenter 서버와 플러그인 간의 상호 통신을 보호하기 위해 양방향 SSL 통신을 구성해야 합니다.
 
-* 시작하기 전에 *
-
+.시작하기 전에
 * 지원되는 최소 키 길이가 3072인 CA 인증서 CSR 파일을 생성해야 합니다.
 * CA 인증서는 서버 인증 및 클라이언트 인증을 지원해야 합니다.
 * 개인 키와 지문 세부 정보가 포함된 CA 인증서가 있어야 합니다.
@@ -28,8 +27,7 @@ SnapCenter 서버와 플러그인 간의 상호 통신을 보호하려면 양방
 
 
 
-* 단계 *
-
+.단계
 . 포트를 바인딩하려면 SnapCenter IIS 웹 서버 포트 8146(기본값)용 SnapCenter 서버 호스트에서 다음 단계를 수행하고 PowerShell 명령을 사용하여 SMCore 포트 8145(기본값)에 대해 다시 한 번 수행합니다.
 +
 .. 다음 PowerShell 명령을 사용하여 기존 SnapCenter 자체 서명된 인증서 포트 바인딩을 제거합니다.
@@ -119,12 +117,10 @@ Windows 레지스트리 편집기에서 아래 경로로 이동합니다.
 
 PowerShell 명령을 사용하여 양방향 SSL 통신을 위해 SnapCenter Windows 플러그인을 구성해야 합니다.
 
-* 시작하기 전에 *
-
+.시작하기 전에
 CA 인증서 지문을 사용할 수 있는지 확인합니다.
 
-* 단계 *
-
+.단계
 . 포트를 바인딩하려면 Windows 플러그인 호스트에서 SMCore 포트 8145(기본값)에 대해 다음 작업을 수행합니다.
 +
 .. 다음 PowerShell 명령을 사용하여 기존 SnapCenter 자체 서명된 인증서 포트 바인딩을 제거합니다.

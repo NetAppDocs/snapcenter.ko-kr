@@ -26,7 +26,7 @@ SnapCenter를 사용하여 SQL Server 리소스를 백업하기 전에 리소스
 +
 기본값은 false 입니다.
 
-* SnapMirror Business Continuity(SM-BC)의 경우 사전 요구사항 및 제한사항에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes["SnapMirror 비즈니스 연속성에 대한 오브젝트 제한"].
+* SnapMirror 활성 동기화에 대한 사전 요구사항 및 제한 사항을 검토하십시오. 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes["SnapMirror 활성 동기화에 대한 개체 제한"]참조하십시오.
 
 
 .이 작업에 대해
@@ -273,7 +273,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/Sn
 
 . 다른 볼륨(SnapMirror)에 백업 세트의 미러 복사본을 생성하려면 이 옵션을 선택합니다.
 +
-이 옵션은 SnapMirror Business Continuity(SM-BC) 또는 SnapMirror Sync(SM-S)에 대해 활성화해야 합니다.
+이 옵션은 SnapMirror 액티브 동기화에 대해 활성화해야 합니다.
 
 +
 보조 복제 중에 SnapLock 만료 시간에 운영 SnapLock 만료 시간이 로드됩니다. 토폴로지 페이지에서 * 새로 고침 * 버튼을 클릭하면 ONTAP에서 검색된 2차 및 1차 SnapLock 만료 시간이 새로 고쳐집니다.

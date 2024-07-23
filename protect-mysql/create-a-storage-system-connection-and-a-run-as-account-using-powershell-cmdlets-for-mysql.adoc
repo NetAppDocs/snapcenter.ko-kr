@@ -1,0 +1,92 @@
+---
+permalink: protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for MySQL 
+summary: 'PowerShell cmdlet을 사용하여 MySQL 데이터베이스를 백업, 복원 또는 클론 복제하기 전에 SVM(스토리지 가상 머신) 연결과 자격 증명을 생성해야 합니다.' 
+---
+= MySQL용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결 및 자격 증명을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+PowerShell cmdlet을 사용하여 MySQL 데이터베이스를 백업, 복원 또는 클론 복제하기 전에 SVM(스토리지 가상 머신) 연결과 자격 증명을 생성해야 합니다.
+
+.시작하기 전에
+* PowerShell cmdlet을 실행할 수 있도록 PowerShell 환경을 준비해야 합니다.
+* 스토리지 접속을 생성하려면 인프라스트럭처 관리자 역할에 필요한 권한이 있어야 합니다.
+* 플러그인 설치가 진행 중이 아닌지 확인해야 합니다.
++
+호스트 캐시가 업데이트되지 않고 데이터베이스 상태가 SnapCenter GUI에 ""백업을 위해 사용할 수 없음"" 또는 ""NetApp 스토리지에 없음""으로 표시될 수 있으므로 스토리지 시스템 접속을 추가하는 동안 호스트 플러그인 설치가 진행되어서는 안 됩니다.
+
+* 스토리지 시스템 이름은 고유해야 합니다.
++
+SnapCenter는 서로 다른 클러스터에서 동일한 이름의 여러 스토리지 시스템을 지원하지 않습니다. SnapCenter에서 지원하는 각 스토리지 시스템은 고유한 이름과 고유한 데이터 LIF IP 주소를 가져야 합니다.
+
+
+
+.단계
+. Open-SmConnection cmdlet을 사용하여 PowerShell Core 연결 세션을 시작합니다.
++
+[listing]
+----
+PS C:\> Open-SmConnection
+----
+. Add-SmStorageConnection cmdlet을 사용하여 스토리지 시스템에 대한 새 접속을 생성합니다.
++
+[listing]
+----
+PS C:\> Add-SmStorageConnection -Storage test_vs1 -Protocol Https
+-Timeout 60
+----
+. Add-SmCredential cmdlet을 사용하여 새 자격 증명을 만듭니다.
++
+이 예제에서는 Windows 자격 증명을 사용하여 FinanceAdmin 이라는 새 자격 증명을 만드는 방법을 보여 줍니다.
+
++
+[listing]
+----
+PS C:> Add-SmCredential -Name FinanceAdmin -AuthMode Windows
+-Credential sddev\administrator
+----
+. SnapCenter 서버에 MySQL 통신 호스트를 추가합니다.
++
+[listing]
+----
+PS C:> Add-SmHost -HostName 10.232.204.61 -OSType Windows -RunAsName FinanceAdmin -PluginCode mysql
+----
+. 호스트에 패키지와 MySQL용 SnapCenter 플러그인을 설치합니다.
++
+Linux의 경우:
+
++
+[listing]
+----
+PS C:> Install-SmHostPackage -HostNames 10.232.204.61 -ApplicationCode mysql
+----
++
+Windows의 경우:
+
++
+[listing]
+----
+Install-SmHostPackage -HostNames 10.232.204.61 -ApplicationCode mysql -FilesystemCode scw -RunAsName FinanceAdmin
+----
+. SQLLIB에 대한 경로를 설정합니다.
++
+Windows의 경우 MySQL 플러그인은 SQLLIB 폴더의 기본 경로를 사용합니다. “C:\Program Files\IBM\SQLLIB\bin”
+
++
+기본 경로를 재정의하려면 다음 명령을 사용하십시오.
+
++
+[listing]
+----
+PS C:> Set-SmConfigSettings -Plugin -HostName 10.232.204.61 -PluginCode
+MySQL -configSettings @{“MySQL_SQLLIB_CMD” = “<custom_path>\IBM\SQLLIB\BIN”}
+
+----
+
+
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.

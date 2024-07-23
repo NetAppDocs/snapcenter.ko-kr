@@ -49,15 +49,6 @@ FAS, AFF 또는 ASA 스토리지를 사용하여 평가판을 통해 SnapCenter�
 
 
  a| 
-SnapCenter 표준 용량 기반
- a| 
-ONTAP Select 및 Cloud Volumes ONTAP에 필요합니다
-
-Cloud Volumes ONTAP 또는 ONTAP Select 고객인 경우 SnapCenter에서 관리하는 데이터를 기준으로 TB당 용량 기반 라이센스를 구입해야 합니다. 기본적으로 SnapCenter는 90일 100TB SnapCenter 표준 용량 기반 평가판 라이센스를 기본 제공합니다. 자세한 내용은 세일즈 담당자에게 문의하십시오.
-
-
-
- a| 
 SnapMirror 또는 SnapVault
  a| 
 ONTAP
@@ -113,7 +104,7 @@ CPU
 RAM
  a| 
 * 서버 호스트: 8GB
-* 플러그인 호스트: 1GB
+* 플러그인 호스트: 4 GB
 
 
 
@@ -123,10 +114,13 @@ RAM
  a| 
 서버 호스트:
 
-* SnapCenter 서버 소프트웨어 및 로그용 4GB
-* SnapCenter 리포지토리의 경우 6GB
+* SnapCenter 서버 소프트웨어 및 로그용 7 GB
+* SnapCenter 리포지토리의 경우 8 GB
 * 각 플러그인 호스트: 플러그인 설치 및 로그의 경우 2GB, 전용 호스트에 플러그인이 설치된 경우에만 필요합니다.
 
+
+
+NOTE: SnapCenter 리포지토리가 설치된 동일한 호스트에 SnapCenter 서버가 있는 경우 15GB를 사용하는 것이 좋습니다.
 
 
 
@@ -136,8 +130,8 @@ RAM
 SnapCenter 서버 호스트 및 플러그인 호스트에 필요:
 
 * Microsoft .NET Framework 4.7.2 이상
-* WMF(Windows Management Framework) 4.0 이상
-* PowerShell 4.0 이상
+* ASP를 참조하십시오. NET 코어 호스팅 번들(8.0.5 이상)
+* PowerShell 7.4.2 이상
 
 
 
@@ -262,22 +256,7 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 
 
 
-=== 4단계: SnapCenter 용량 기반 라이센스 추가
-
-. SnapCenter GUI 왼쪽 창에서 * 설정 > 소프트웨어 * 를 클릭한 다음 라이센스 섹션에서 * + * 를 클릭합니다.
-. 라이선스를 얻는 두 가지 방법 중 하나를 선택합니다.
-+
-** 라이센스를 가져오려면 NetApp Support 사이트 로그인 자격 증명을 입력하십시오.
-** NetApp 라이센스 파일의 위치로 이동하여 * Open * 을 클릭합니다.
-
-
-. 마법사의 알림 페이지에서 기본 용량 임계값인 90%를 사용합니다.
-. 마침 * 을 클릭합니다.
-
-
-
-
-=== 5단계: 스토리지 시스템 접속 설정
+=== 4단계: 스토리지 시스템 접속 설정
 
 . 왼쪽 창에서 * 스토리지 시스템 > 새로 만들기 * 를 클릭합니다.
 . 스토리지 시스템 추가 페이지에서 다음을 수행합니다.

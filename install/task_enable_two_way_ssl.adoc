@@ -1,17 +1,17 @@
 ---
 permalink: install/task_enable_two_way_ssl.html 
 sidebar: sidebar 
-keywords: security,disable two-way SSL,enable two-way SSL 
-summary: 양방향 SSL 통신을 사용하여 PowerShell 명령을 사용하여 SnapCenter 서버와 플러그인 간의 상호 통신을 보호할 수 있습니다. 
+keywords: security,disable two-way SSL,enable two-way SSL, windows host 
+summary: PowerShell 명령을 사용하여 Windows 호스트의 SnapCenter 서버와 플러그인 간의 상호 통신을 보호하기 위해 양방향 SSL 통신을 설정할 수 있습니다. 
 ---
-= 양방향 SSL 통신을 활성화합니다
+= Windows 호스트에서 양방향 SSL 통신을 활성화합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-양방향 SSL 통신을 사용하여 PowerShell 명령을 사용하여 SnapCenter 서버와 플러그인 간의 상호 통신을 보호할 수 있습니다.
+PowerShell 명령을 사용하여 Windows 호스트의 SnapCenter 서버와 플러그인 간의 상호 통신을 보호하기 위해 양방향 SSL 통신을 설정할 수 있습니다.
 
 * 시작하기 전에 *
 

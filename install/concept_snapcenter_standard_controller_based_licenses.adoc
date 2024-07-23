@@ -223,7 +223,7 @@ FAS, AFF 또는 SnapCenter ASA 스토리지를 사용해 평가판을 설치하�
 컨트롤러 기반 SnapCenter 표준 라이센스를 사용하고 있으며 용량 기반 평가판 라이센스(일련 번호가 ""50"으로 끝나는 번호)를 제거해야 하는 경우 MySQL 명령을 사용하여 평가판 라이센스를 수동으로 제거해야 합니다. 평가판 라이센스는 SnapCenter GUI를 사용하여 삭제할 수 없습니다.
 
 
-NOTE: SnapCenter 표준 컨트롤러 기반 라이센스를 사용하는 경우에만 평가판 라이센스를 수동으로 제거해야 합니다. SnapCenter 표준 용량 기반 라이센스를 조달하여 SnapCenter GUI에 추가하면 평가판 라이센스가 자동으로 덮어쓰여집니다.
+NOTE: SnapCenter 표준 컨트롤러 기반 라이센스를 사용하는 경우에만 평가판 라이센스를 수동으로 제거해야 합니다.
 
 .단계
 . SnapCenter 서버에서 PowerShell 창을 열어 MySQL 암호를 재설정합니다.
@@ -231,7 +231,7 @@ NOTE: SnapCenter 표준 컨트롤러 기반 라이센스를 사용하는 경우�
 .. Open-SmConnection cmdlet을 실행하여 SnapCenter 서버에서 SnapCenterAdmin 계정에 대한 연결 세션을 시작합니다.
 .. Set-SmRepositoryPassword를 실행하여 MySQL 암호를 재설정합니다.
 +
-cmdlet에 대한 자세한 내용은 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+cmdlet에 대한 자세한 내용은 을 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886205["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]참조하십시오.
 
 
 

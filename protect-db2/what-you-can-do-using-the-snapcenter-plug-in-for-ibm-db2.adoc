@@ -1,0 +1,23 @@
+---
+permalink: protect-db2/what-you-can-do-using-the-snapcenter-plug-in-for-ibm-db2.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for IBM Db2 
+summary: 환경에 IBM DB2용 플러그인을 설치할 때 SnapCenter를 사용하여 IBM DB2와 해당 리소스를 백업, 복구 및 복제할 수 있습니다. 이러한 작업을 지원하는 작업을 수행할 수도 있습니다. 
+---
+= IBM DB2용 SnapCenter 플러그인을 사용하여 수행할 수 있는 작업
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+환경에 IBM DB2 데이터베이스용 플러그인을 설치할 때 SnapCenter를 사용하여 IBM DB2 데이터베이스 및 해당 리소스를 백업, 복구 및 복제할 수 있습니다. 이러한 작업을 지원하는 작업을 수행할 수도 있습니다.
+
+* 데이터베이스를 추가합니다.
+* 백업을 생성합니다.
+* 백업에서 복원합니다.
+* 클론 백업.
+* 백업 작업을 예약합니다.
+* 백업, 복원 및 클론 작업을 모니터링합니다.
+* 백업, 복원 및 클론 작업에 대한 보고서를 봅니다.
+

@@ -1,0 +1,16 @@
+---
+permalink: protect-db2/housekeeping-of-log-backups.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for IBM DB2 
+summary: SnapCenter는 IBM DB2 백업 카탈로그 내에서 스토리지 시스템 및 파일 시스템 레벨에서 로그 및 데이터 백업의 관리 작업을 관리합니다. 
+---
+= SnapCenter이 데이터 백업 관리 방식을 관리하는 방법
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter는 스토리지 시스템 및 파일 시스템 레벨에서 데이터 백업의 정리 작업을 관리합니다.
+
+운영 또는 보조 스토리지의 스냅샷과 IBM DB2 카탈로그의 해당 항목은 보존 설정에 따라 삭제됩니다.

@@ -1,0 +1,91 @@
+---
+permalink: protect-mysql/restore-and-recover-a-manually-added-resource-backup.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for mysql 
+summary: SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 복원 및 복구할 수 있습니다. 
+---
+= 수동으로 추가한 리소스 백업을 복원 및 복구합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 복원 및 복구할 수 있습니다.
+
+.시작하기 전에
+* 리소스 또는 리소스 그룹을 백업해야 합니다.
+* 복원할 리소스 또는 리소스 그룹에 대해 현재 진행 중인 백업 작업을 취소해야 합니다.
+* 사전 복원, 사후 복원, 마운트 및 마운트 해제 명령의 경우 다음 경로에서 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
++
+Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+
++
+Linux의 경우: _/var/opt/snapcenter/scc/allowed_commands.config_
+
++
+
+NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
+
+
+
+.이 작업에 대해
+* ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
+
+
+.단계
+. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 리소스 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.
++
+리소스는 유형, 호스트, 관련 리소스 그룹 및 정책, 상태와 함께 표시됩니다.
+
++
+
+NOTE: 백업이 리소스 그룹에 대한 것일 수도 있지만 복원할 때 복원할 개별 리소스를 선택해야 합니다.
+
++
+자원이 보호되지 않으면 전체 상태 열에 "보호되지 않음"이 표시됩니다. 이는 리소스가 보호되지 않거나 다른 사용자가 리소스를 백업했다는 것을 의미할 수 있습니다.
+
+. 자원을 선택하거나 자원 그룹을 선택한 다음 해당 그룹에서 자원을 선택합니다.
++
+리소스 토폴로지 페이지가 표시됩니다.
+
+. 복사본 관리 보기에서 기본 또는 보조(미러링 또는 보관된) 스토리지 시스템에서 * 백업 * 을 선택합니다.
+. 기본 백업 테이블에서 복원할 백업을 선택한 다음 * 를 클릭합니다image:../media/restore_icon.gif["복원 아이콘"]*.
++
+image::../media/restoring_resource.gif[리소스 복원 중]
+
+. 복원 범위 페이지에서 * 리소스 완료 * 를 선택합니다.
++
+.. Complete Resource * 를 선택하면 MySQL 데이터베이스의 구성된 모든 데이터 볼륨이 복원됩니다.
++
+리소스에 볼륨 또는 qtree가 포함된 경우 해당 볼륨 또는 qtree에서 복원을 위해 선택된 스냅샷 이후에 생성된 스냅샷은 삭제되며 복구할 수 없습니다. 또한 동일한 볼륨 또는 qtree에서 다른 리소스가 호스트되는 경우 해당 리소스도 삭제됩니다.
+
++
+여러 LUN을 선택할 수 있습니다.
+
+
+
++
+
+NOTE: All * 을 선택하면 볼륨, Qtree 또는 LUN의 모든 파일이 복원됩니다.
+
+. 복구 작업을 수행하기 전에 Pre restore 및 unmount 명령을 Pre ops 페이지에 입력합니다.
++
+자동 검색 리소스에 대해서는 마운트 해제 명령을 사용할 수 없습니다.
+
+. 작업 게시 페이지에서 복구 작업을 수행한 후 실행할 mount 및 post restore 명령을 입력합니다.
++
+자동 검색 리소스에 대해서는 마운트 명령을 사용할 수 없습니다.
+
++
+
+NOTE: 중지, 스냅샷 및 중지 해제 작업에 대한 사전 및 사후 명령의 경우 Linux의 경우 _/opt/snapcenter/scc/allowed_commands.config_path 및 Windows_C:\Program Files\NetApp\Creator\Snapcenter\nSnapCenter_allowed 명령을 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
+
+. 알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.
++
+또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. SMTP는 * 설정 * > * 글로벌 설정 * 페이지에서도 구성해야 합니다.
+
+. 요약을 검토하고 * Finish * 를 클릭합니다.
+. 모니터 * > * 작업 * 을 클릭하여 작업 진행 상황을 모니터링합니다.
+

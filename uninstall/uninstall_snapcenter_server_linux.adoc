@@ -1,0 +1,40 @@
+---
+permalink: uninstall/uninstall_snapcenter_server_linux.html 
+sidebar: sidebar 
+keywords: uninstall, snapcenter server, linux 
+summary: 데이터 보호 작업을 관리하기 위해 SnapCenter 서버를 더 이상 사용하지 않으려면 SnapCenter 서버를 제거할 수 있습니다. 
+---
+= Linux 호스트에서 SnapCenter 서버를 제거합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+데이터 보호 작업을 관리하기 위해 SnapCenter 서버를 더 이상 사용하지 않으려면 SnapCenter 서버를 제거할 수 있습니다. SnapCenter 서버를 제거하면 해당 구성 요소가 모두 제거됩니다.
+
+.단계
+. 다음 작업 중 하나를 수행하여 SnapCenter 서버를 제거합니다.
++
+|===
+| 수행할 작업 | 수행할 작업... 
+
+
+ a| 
+비대화형 제거
+ a| 
+`$ sudo /opt/NetApp/snapcenter/SnapManagerWeb/installation/uninstall -i silent -DCONFIRM=1`
+
+예: sudo/opt/netapp/snapcenter/SnapManagerWeb/installation/uninstall
+
+
+
+ a| 
+대화형 제거
+ a| 
+`$ sudo <USER_INSTALL_DIR>/NetApp/snapcenter/SnapManagerWeb/installation/uninstall`
+
+제거를 확인하려면 확인 입력에 0 이외의 값을 입력합니다.
+
+|===
+

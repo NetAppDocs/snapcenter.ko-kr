@@ -1,0 +1,23 @@
+---
+permalink: protect-postgresql/types_of_recovery_operations_supported_for_postgresql.html 
+sidebar: sidebar 
+keywords: recovery operations 
+summary: SnapCenter를 사용하면 PostgreSQL에 대해 다양한 유형의 복구 작업을 수행할 수 있습니다. 
+---
+= PostgreSQL 클러스터에 지원되는 복구 작업의 유형입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter를 사용하면 PostgreSQL 클러스터에 대해 다양한 유형의 복구 작업을 수행할 수 있습니다.
+
+* 클러스터를 가장 최근 상태로 복구합니다
+* 특정 시점까지 클러스터를 복구합니다
++
+복구할 날짜와 시간을 지정해야 합니다.
+
+
+
+또한 SnapCenter는 PostgreSQL 클러스터에 대한 복구 안 함 옵션을 제공합니다.

@@ -1,0 +1,127 @@
+---
+permalink: protect-db2/configure-CA-certificate-for-ibm-db2-on-windows-host.html 
+sidebar: sidebar 
+keywords: SnapCenter 
+summary: Windows 호스트에서 SnapCenter 사용자 지정 플러그인 서비스에 대한 CA 인증서를 구성합니다 
+---
+= Windows 호스트에서 SnapCenter IBM DB2 플러그인 서비스에 대한 CA 인증서를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+사용자 지정 플러그인 키 저장소 및 인증서의 암호를 관리하고, CA 인증서를 구성하고, 사용자 지정 플러그인 트러스트 저장소에 대한 루트 또는 중간 인증서를 구성하고, SnapCenter 사용자 지정 플러그인 서비스를 사용하여 사용자 지정 플러그인 트러스트 저장소에 CA 서명 키 쌍을 구성하여 설치된 디지털 인증서를 활성화해야 합니다.
+
+사용자 지정 플러그인은 _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_에 있는 file_keystore.jks_를 신뢰 저장소 및 키 저장소로 사용합니다.
+
+
+
+== 사용자 지정 플러그인 키 저장소 및 사용 중인 CA 서명 키 쌍의 별칭에 대한 암호를 관리합니다
+
+.단계
+. 사용자 지정 플러그인 에이전트 속성 파일에서 사용자 지정 플러그인 키 저장소 기본 암호를 검색할 수 있습니다.
++
+key_keystore_pass_에 해당하는 값입니다.
+
+. 키 저장소 암호를 변경합니다.
++
+_keytool - storepasswd - keystore keystore.jks _
+
++
+
+NOTE: Windows 명령 프롬프트에서 "keytool" 명령을 인식할 수 없는 경우 keytool 명령을 전체 경로로 바꿉니다.
+
++
+_C:\Program Files\Java\<JDK_VERSION>\bin\keytool.exe" - storepasswd -keystore keystore .jks _
+
+. 키 저장소에 있는 개인 키 항목의 모든 별칭에 대한 암호를 키 저장소에 사용되는 동일한 암호로 변경합니다.
++
+_keytool -keypasswd -alias "alias_name_in_cert" -keystore keystore.jks _
+
++
+_agent.properties_ 파일의 keystore_pass 키에 대해서도 동일한 업데이트를 하십시오.
+
+. 암호를 변경한 후 서비스를 다시 시작합니다.
++
+
+NOTE: 사용자 지정 플러그인 키 저장소 및 개인 키의 모든 관련 별칭 암호에 대한 암호는 동일해야 합니다.
+
+
+
+
+
+== 사용자 지정 플러그인 트러스트 저장소에 루트 또는 중간 인증서를 구성합니다
+
+사용자 지정 플러그인 트러스트 저장소에 대한 개인 키 없이 루트 또는 중간 인증서를 구성해야 합니다.
+
+.단계
+. 사용자 지정 플러그인 keystore_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_가 포함된 폴더로 이동합니다
+. 'keystore.jks' 파일을 찾습니다.
+. 키 저장소에 추가된 인증서를 나열합니다.
++
+_keytool -list -v -keystore keystore.jks_
+
+. 루트 또는 중간 인증서 추가:
++
+_keytool -import -trustcacerts -alias myRootCA -file /root/USERTrustRSA_Root.cer -keystore keystore.jks _
+
+. 루트 또는 중간 인증서를 사용자 지정 플러그인 트러스트 저장소에 구성한 후 서비스를 다시 시작합니다.
+
+
+
+NOTE: 루트 CA 인증서와 중간 CA 인증서를 추가해야 합니다.
+
+
+
+== 사용자 지정 플러그인 트러스트 저장소에 CA 서명 키 쌍을 구성합니다
+
+CA 서명 키 쌍을 사용자 지정 플러그인 트러스트 저장소에 구성해야 합니다.
+
+.단계
+. 사용자 지정 플러그인 keystore_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_가 포함된 폴더로 이동합니다
+. _keystore.jks_ 파일을 찾습니다.
+. 키 저장소에 추가된 인증서를 나열합니다.
++
+_keytool -list -v -keystore keystore.jks_
+
+. 개인 키와 공개 키를 모두 사용하는 CA 인증서를 추가합니다.
++
+_keytool -importkeystore -srckeystore /root/snapcenter.ssl.test.netapp.com.pfx -srcstoretype pkcs12 -destkeystore keystore.jks -deststoretype jks _
+
+. 키 저장소에 추가된 인증서를 나열합니다.
++
+_keytool -list -v -keystore keystore.jks_
+
+. keystore에 keystore에 추가된 새 CA 인증서에 해당하는 별칭이 포함되어 있는지 확인합니다.
+. CA 인증서에 추가된 개인 키 암호를 키 저장소 암호로 변경합니다.
++
+기본 사용자 지정 플러그인 키 저장소 암호는 agent.properties 파일의 keystore_pass 키 값입니다.
+
++
+_keytool -keykeyasswd -alias "alias_name_in_CA_cert" -keystore keystore.jks _
+
+. _agent.properties_ 파일의 CA 인증서에서 별칭 이름을 구성합니다.
++
+이 값을 SCC_CERTIFICATE_ALIAS 키에 대해 업데이트합니다.
+
+. CA 서명 키 쌍을 사용자 지정 플러그인 트러스트 저장소에 구성한 후 서비스를 다시 시작합니다.
+
+
+
+
+== SnapCenter 사용자 지정 플러그인에 대한 CRL(인증서 해지 목록)을 구성합니다
+
+.이 작업에 대해
+* 관련 CA 인증서에 대한 최신 CRL 파일을 다운로드하려면 를 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_update_certificate_revocation_list_file_in_SnapCenter_CA_Certificate["SnapCenter CA 인증서에서 인증서 해지 목록 파일을 업데이트하는 방법"].
+* SnapCenter 사용자 지정 플러그인은 사전 구성된 디렉터리에서 CRL 파일을 검색합니다.
+* SnapCenter 사용자 지정 플러그인에 대한 CRL 파일의 기본 디렉토리는 _'C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\CRL'_입니다.
+
+
+.단계
+. _agent.properties_ 파일의 기본 디렉터리를 수정하여 CRL_path 키에 맞게 업데이트할 수 있습니다.
+. 이 디렉터리에 둘 이상의 CRL 파일을 배치할 수 있습니다.
++
+들어오는 인증서는 각 CRL에 대해 확인됩니다.
+
+

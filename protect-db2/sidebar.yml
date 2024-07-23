@@ -1,0 +1,148 @@
+---
+section: protect-db2
+title: IBM DB2 보호
+entries:
+- title: IBM DB2용 SnapCenter 플러그인
+  entries:
+  - title: IBM DB2용 SnapCenter 플러그인 개요
+    url: "/protect-db2/snapcenter-plug-in-for-ibm-db2-overview.html"
+  - title: IBM DB2용 SnapCenter 플러그인을 사용하여 수행할 수 있는 작업
+    url: "/protect-db2/what-you-can-do-using-the-snapcenter-plug-in-for-ibm-db2.html"
+  - title: IBM DB2용 SnapCenter 플러그인 기능
+    url: "/protect-db2/snapcenter-plug-in-for-ibm-db2-features.html"
+  - title: IBM DB2용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다
+    url: "/protect-db2/storage-types-supported-by-snapcenter-plug-in-for-ibm-db2.html"
+  - title: 최소 ONTAP 권한이 필요합니다
+    url: "/protect-db2/minimum-privileges-required-for-ibm-db2.html"
+  - title: SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템 준비
+    url: "/protect-db2/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-db2.html"
+  - title: IBM DB2에 대한 백업 전략
+    entries:
+    - title: IBM DB2에 대한 백업 전략을 정의합니다
+      url: "/protect-db2/define-a-backup-strategy-for-ibm-db2.html"
+    - title: Linux 호스트에서 리소스 자동 검색
+      url: "/protect-db2/auto-discovery-of-resources-on-linux-host.html"
+    - title: 지원되는 백업 유형입니다
+      url: "/protect-db2/type-of-backups-supported.html"
+    - title: IBM DB2용 SnapCenter 플러그인이 정합성 보장 그룹 스냅샷 복사본을 사용하는 방법
+      url: "/protect-db2/how-snapcenter-plug-in-for-ibm-db2-uses-consistency-group-snapshot-copies.html"
+    - title: SnapCenter가 로그 백업의 관리 작업을 관리하는 방법
+      url: "/protect-db2/housekeeping-of-log-backups.html"
+    - title: IBM DB2에 대한 백업 스케줄을 결정할 때 고려해야 할 사항
+      url: "/protect-db2/considerations-for-determining-backup-schedules-for-ibm-db2.html"
+    - title: IBM DB2에 필요한 백업 작업 수입니다
+      url: "/protect-db2/number-of-backup-jobs-needed-for-ibm-db2.html"
+    - title: 백업 명명 규칙
+      url: "/protect-db2/backup-naming-conventions-for-plugin-for-ibm-db2.html"
+  - title: IBM DB2에 대한 복구 및 복구 전략
+    entries:
+    - title: IBM DB2 리소스에 대한 복구 및 복구 전략을 정의합니다
+      url: "/protect-db2/define-a-restore-and-recovery-strategy-for-ibm-db2-resources.html"
+    - title: 수동으로 추가한 IBM DB2 리소스에 대해 지원되는 복구 전략 유형입니다
+      url: "/protect-db2/types-of-restore-strategies-supported-for-manually-added-ibm-db2.html"
+    - title: 자동으로 검색된 IBM DB2에 대해 지원되는 복구 전략 유형
+      url: "/protect-db2/types-of-restore-strategies-supported-for-auto-discovered-ibm-db2.html"
+    - title: 자동 검색된 IBM DB2에 대한 복구 작업 유형
+      url: "/protect-db2/types-of-restore-performed-for-auto-discovered-ibm-db2.html"
+- title: IBM DB2용 SnapCenter 플러그인 설치를 준비합니다
+  entries:
+  - title: IBM DB2용 SnapCenter 플러그인 설치 워크플로우
+    url: "/protect-db2/install-snapcenter-plug-in-for-ibm-db2.html"
+  - title: IBM DB2용 SnapCenter 플러그인 설치 및 호스트 추가 사전 요구 사항
+    url: "/protect-db2/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-ibm-db2.html"
+  - title: Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항
+    url: "/protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-windows-db2.html"
+  - title: Linux용 SnapCenter 플러그인 패키지 설치를 위한 호스트 요구 사항
+    url: "/protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html"
+  - title: IBM DB2용 SnapCenter 플러그인에 대한 자격 증명을 설정합니다
+    url: "/protect-db2/set-up-credentials-for-snapcenter-plug-in-for-ibm-db2.html"
+  - title: Windows Server 2016 이상에서 GMSA를 구성합니다
+    url: "/protect-db2/configure-gMSA-on-windows-server-2012-or-later.html"
+  - title: IBM DB2용 SnapCenter 플러그인을 설치합니다
+    entries:
+    - title: 호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다
+      url: "/protect-db2/add-hosts-and-install-plug-in-packages-on-remote-hosts-ibm-db2.html"
+    - title: cmdlet을 사용하여 여러 원격 호스트에 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 설치합니다
+      url: "/protect-db2/install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-ibm-db2.html"
+    - title: 명령줄 인터페이스를 사용하여 Linux 호스트에 IBM DB2용 SnapCenter 플러그인을 설치합니다
+      url: "/protect-db2/install-the-snapcenter-plug-in-for-ibm-db2-on-linux-hosts-using-the-command-line-interface.html"
+    - title: SnapCenter 플러그인 패키지 설치 상태를 모니터링합니다
+      url: "/protect-db2/monitor-the-status-of-installing-plugin-for-ibm-db2.html"
+  - title: CA 인증서를 구성합니다
+    entries:
+    - title: CA 인증서 CSR 파일을 생성합니다
+      url: "/protect-db2/generate-CA-certificate-CSR-file.html"
+    - title: CA 인증서를 가져옵니다
+      url: "/protect-db2/import-CA-certificates.html"
+    - title: CA 인증서 지문을 받습니다
+      url: "/protect-db2/get-the-CA-certificate-thumbprint.html"
+    - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+      url: "/protect-db2/configure-CA-certificate-with-Windows-host-plug-in-services.html"
+    - title: Linux 호스트에서 SnapCenter IBM DB2 플러그인 서비스에 대한 CA 인증서를 구성합니다
+      url: "/protect-db2/configure-CA-certificate-for-ibm-db2-on-Linux-host.html"
+    - title: Windows 호스트에서 SnapCenter IBM DB2 플러그인 서비스에 대한 CA 인증서를 구성합니다
+      url: "/protect-db2/configure-CA-certificate-for-ibm-db2-on-windows-host.html"
+    - title: 플러그인에 대해 CA 인증서를 활성화합니다
+      url: "/protect-db2/enable-ca-certificates-for-plug-ins.html"
+- title: 데이터 보호를 준비합니다
+  entries:
+  - title: IBM DB2용 SnapCenter 플러그인 사용을 위한 사전 요구 사항
+    url: "/protect-db2/prerequisites-for-using-snapcenter-plug-in-for-ibm-db2.html"
+  - title: 리소스, 리소스 그룹 및 정책을 사용하여 IBM DB2를 보호하는 방법
+    url: "/protect-db2/how-resources-resource-groups-and-policies-are-used-for-protecting-ibm-db2.html"
+- title: IBM DB2 리소스를 백업합니다
+  entries:
+  - title: 워크플로를 백업합니다
+    url: "/protect-db2/back-up-ibm-db2-resources.html"
+  - title: 데이터베이스를 자동으로 검색합니다
+    url: "/protect-db2/discover-the-databases-automatically.html"
+  - title: 플러그인 호스트에 수동으로 리소스를 추가합니다
+    url: "/protect-db2/add-resources-manually-to-the-plug-in-host.html"
+  - title: IBM DB2에 대한 백업 정책을 생성합니다
+    url: "/protect-db2/create-backup-policies-for-ibm-db2.html"
+  - title: 리소스 그룹을 생성하고 정책을 연결합니다
+    url: "/protect-db2/create-resource-groups-and-attach-policies.html"
+  - title: IBM DB2를 백업합니다
+    url: "/protect-db2/back-up-ibm-db2.html"
+  - title: 리소스 그룹을 백업합니다
+    url: "/protect-db2/back-up-resource-groups-ibm-db2.html"
+  - title: IBM DB2용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
+    url: "/protect-db2/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html"
+  - title: PowerShell cmdlet을 사용하여 데이터베이스를 백업합니다
+    url: "/protect-db2/back-up-databases-using-powershell-cmdlets-ibm-db2.html"
+  - title: 백업 작업을 모니터링합니다
+    entries:
+    - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
+      url: "/protect-db2/monitor-db2-backup-operations.html"
+    - title: Activity 창에서 작업을 모니터링합니다
+      url: "/protect-db2/monitor-dataprotection-operations-on-db2-in-the-activity-pane.html"
+  - title: 백업 작업을 취소합니다
+    url: "/protect-db2/cancel-backup-operations-for-ibm-db2.html"
+  - title: 토폴로지 페이지에서 IBM DB2 데이터베이스 백업 및 클론을 봅니다
+    url: "/protect-db2/view-ibm-db2-database-backups-and-clones-in-the-topology-page.html"
+- title: IBM DB2를 복구합니다
+  entries:
+  - title: 워크플로를 복원합니다
+    url: "/protect-db2/restore-ibm-db2.html"
+  - title: 수동으로 추가한 리소스 백업을 복원합니다
+    url: "/protect-db2/restore-manually-added-resource-backup.html"
+  - title: 자동 검색된 데이터베이스 백업을 복원합니다
+    url: "/protect-db2/restore-auto-discovered-database-backup.html"
+  - title: PowerShell cmdlet을 사용하여 IBM DB2를 복구합니다
+    url: "/protect-db2/restore-ibm-db2-database-using-powershell-cmdlets.html"
+  - title: 복구 작업을 모니터링합니다
+    url: "/protect-db2/monitor-db2-restore-operations.html"
+- title: IBM DB2 리소스 백업을 복제합니다
+  entries:
+  - title: 클론 복제 워크플로우
+    url: "/protect-db2/clone-ibm-db2-resource-backups.html"
+  - title: IBM DB2 데이터베이스 백업의 클론을 생성합니다
+    url: "/protect-db2/clone-ibm-db2-backup.html"
+  - title: PowerShell cmdlet을 사용하여 IBM DB2 데이터베이스 백업의 클론을 생성합니다
+    url: "/protect-db2/clone-ibm-db2-backups-using-powershell-cmdlets.html"
+  - title: SnapCenter에서 클론 작업을 모니터링합니다
+    url: "/protect-db2/monitor-db2-clone-operations.html"
+  - title: 클론 분할
+    url: "/protect-db2/split-a-clone-for-db2.html"
+  - title: SnapCenter 업그레이드 후 IBM DB2 데이터베이스 클론을 삭제하거나 분할합니다
+    url: "/protect-db2/delete-or-split-ibm-db2-clones-after-upgrading-snapcenter.html"

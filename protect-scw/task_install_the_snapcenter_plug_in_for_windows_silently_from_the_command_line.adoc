@@ -15,7 +15,7 @@ SnapCenter GUI에서 원격으로 플러그인을 설치할 수 없는 경우 Wi
 
 .시작하기 전에
 * Microsoft .Net 4.7.2 이상을 설치해야 합니다.
-* PowerShell 4.0 이상을 설치해야 합니다.
+* PowerShell 7.4.2 이상을 설치해야 합니다.
 * Windows 메시지 큐잉을 켜야 합니다.
 * 호스트의 로컬 관리자여야 합니다.
 

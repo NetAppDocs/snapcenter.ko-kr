@@ -1,0 +1,152 @@
+---
+section: protect-postgresql
+title: PostgreSQL 보호
+entries:
+- title: PostgreSQL용 SnapCenter 플러그인
+  entries:
+  - title: PostgreSQL용 SnapCenter 플러그인 개요
+    url: "/protect-postgresql/snapcenter-plug-in-for-postgresql-overview.html"
+  - title: PostgreSQL용 SnapCenter 플러그인을 사용하여 수행할 수 있는 작업
+    url: "/protect-postgresql/what-you-can-do-using-the-snapcenter-plug-in-for-postgresql.html"
+  - title: PostgreSQL 기능용 SnapCenter 플러그인
+    url: "/protect-postgresql/snapcenter-plug-in-for-postgresql-features.html"
+  - title: PostgreSQL용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다
+    url: "/protect-postgresql/storage-types-supported-by-snapcenter-plug-in-for-postgresql.html"
+  - title: 최소 ONTAP 권한이 필요합니다
+    url: "/protect-postgresql/minimum-privileges-required-for-postgresql.html"
+  - title: SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템 준비
+    url: "/protect-postgresql/prepare-storage-systems-for-snapmirror-and-snapvault-replication-for-plugin-for-postgresql.html"
+  - title: PostgreSQL의 백업 전략
+    entries:
+    - title: PostgreSQL에 대한 백업 전략을 정의합니다
+      url: "/protect-postgresql/define-a-backup-strategy-for-postgresql.html"
+    - title: Linux 호스트에서 리소스 자동 검색
+      url: "/protect-postgresql/auto-discovery-of-resources-on-linux-host.html"
+    - title: 지원되는 백업 유형입니다
+      url: "/protect-postgresql/type-of-backups-supported.html"
+    - title: PostgreSQL용 SnapCenter 플러그인에서 일관성 그룹 스냅샷 복사본을 사용하는 방법
+      url: "/protect-postgresql/how-snapcenter-plug-in-for-postgresql-uses-consistency-group-snapshot-copies.html"
+    - title: SnapCenter가 로그 백업의 관리 작업을 관리하는 방법
+      url: "/protect-postgresql/housekeeping-of-log-backups.html"
+    - title: PostgreSQL에 대한 백업 일정을 결정할 때 고려해야 할 사항
+      url: "/protect-postgresql/considerations-for-determining-backup-schedules-for-postgresql.html"
+    - title: PostgreSQL에 필요한 백업 작업 수입니다
+      url: "/protect-postgresql/number-of-backup-jobs-needed-for-postgresql.html"
+    - title: 백업 명명 규칙
+      url: "/protect-postgresql/backup-naming-conventions-for-plugin-for-postgresql.html"
+  - title: PostgreSQL의 복구 및 복구 전략
+    entries:
+    - title: PostgreSQL 리소스에 대한 복구 및 복구 전략을 정의합니다
+      url: "/protect-postgresql/define-a-restore-and-recovery-strategy-for-postgresql-resources.html"
+    - title: 수동으로 추가한 PostgreSQL 리소스에 지원되는 복구 전략 유형입니다
+      url: "/protect-postgresql/types-of-restore-strategies-supported-for-manually-added-postgresql.html"
+    - title: 자동으로 검색된 PostgreSQL에 지원되는 복구 전략 유형입니다
+      url: "/protect-postgresql/types-of-restore-strategies-supported-for-auto-discovered-postgresql.html"
+    - title: 자동 검색된 PostgreSQL에 대한 복구 작업 유형입니다
+      url: "/protect-postgresql/types-of-restore-performed-for-auto-discovered-postgresql.html"
+    - title: PostgreSQL에 지원되는 복구 작업 유형입니다
+      url: "/protect-postgresql/types_of_recovery_operations_supported_for_postgresql.html"
+- title: PostgreSQL용 SnapCenter 플러그인 설치를 준비합니다
+  entries:
+  - title: PostgreSQL용 SnapCenter 플러그인의 설치 워크플로우
+    url: "/protect-postgresql/install-snapcenter-plug-in-for-postgresql.html"
+  - title: 호스트 추가 및 PostgreSQL용 SnapCenter 플러그인 설치를 위한 사전 요구 사항
+    url: "/protect-postgresql/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-postgresql.html"
+  - title: Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항
+    url: "/protect-postgresql/host-requirements-to-install-snapcenter-plug-in-package-for-windows-postgresql.html"
+  - title: Linux용 SnapCenter 플러그인 패키지 설치를 위한 호스트 요구 사항
+    url: "/protect-postgresql/host-requirements-to-install-snapcenter-plug-in-package-for-linux.html"
+  - title: PostgreSQL용 SnapCenter 플러그인에 대한 자격 증명을 설정합니다
+    url: "/protect-postgresql/set-up-credentials-for-snapcenter-plug-in-for-postgresql.html"
+  - title: Windows Server 2016 이상에서 GMSA를 구성합니다
+    url: "/protect-postgresql/configure-gMSA-on-windows-server-2012-or-later.html"
+  - title: PostgreSQL용 SnapCenter 플러그인을 설치합니다
+    entries:
+    - title: 호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다
+      url: "/protect-postgresql/add-hosts-and-install-plug-in-packages-on-remote-hosts-postgresql.html"
+    - title: cmdlet을 사용하여 여러 원격 호스트에 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 설치합니다
+      url: "/protect-postgresql/install-snapcenter-plug-in-packages-for-linux-or-windows-on-multiple-remote-hosts-using-cmdlets-postgresql.html"
+    - title: 명령줄 인터페이스를 사용하여 Linux 호스트에 PostgreSQL용 SnapCenter 플러그인을 설치합니다
+      url: "/protect-postgresql/install-the-snapcenter-plug-in-for-postgresql-on-linux-hosts-using-the-command-line-interface.html"
+    - title: SnapCenter 플러그인 패키지 설치 상태를 모니터링합니다
+      url: "/protect-postgresql/monitor-the-status-of-installing-plugin-for-postgresql.html"
+  - title: CA 인증서를 구성합니다
+    entries:
+    - title: CA 인증서 CSR 파일을 생성합니다
+      url: "/protect-postgresql/generate-CA-certificate-CSR-file.html"
+    - title: CA 인증서를 가져옵니다
+      url: "/protect-postgresql/import-CA-certificates.html"
+    - title: CA 인증서 지문을 받습니다
+      url: "/protect-postgresql/get-the-CA-certificate-thumbprint.html"
+    - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+      url: "/protect-postgresql/configure-CA-certificate-with-Windows-host-plug-in-services.html"
+    - title: Linux 호스트에서 SnapCenter PostgreSQL 플러그인 서비스에 대한 CA 인증서를 구성합니다
+      url: "/protect-postgresql/configure-CA-certificate-for-postgresql-on-Linux-host.html"
+    - title: Windows 호스트에서 SnapCenter PostgreSQL 플러그인 서비스에 대한 CA 인증서를 구성합니다
+      url: "/protect-postgresql/configure-CA-certificate-for-postgresql-on-windows-host.html"
+    - title: 플러그인에 대해 CA 인증서를 활성화합니다
+      url: "/protect-postgresql/enable-ca-certificates-for-plug-ins.html"
+- title: 데이터 보호를 준비합니다
+  entries:
+  - title: PostgreSQL용 SnapCenter 플러그인 사용을 위한 사전 요구 사항
+    url: "/protect-postgresql/prerequisites-for-using-snapcenter-plug-in-for-postgresql.html"
+  - title: 리소스, 리소스 그룹 및 정책을 사용하여 PostgreSQL을 보호하는 방법
+    url: "/protect-postgresql/how-resources-resource-groups-and-policies-are-used-for-protecting-postgresql.html"
+- title: PostgreSQL 리소스를 백업합니다
+  entries:
+  - title: 워크플로를 백업합니다
+    url: "/protect-postgresql/back-up-postgresql-resources.html"
+  - title: 클러스터를 자동으로 검색합니다
+    url: "/protect-postgresql/discover-the-clusters-automatically.html"
+  - title: 플러그인 호스트에 수동으로 리소스를 추가합니다
+    url: "/protect-postgresql/add-resources-manually-to-the-plug-in-host.html"
+  - title: PostgreSQL에 대한 백업 정책을 생성합니다
+    url: "/protect-postgresql/create-backup-policies-for-postgresql.html"
+  - title: 리소스 그룹을 생성하고 정책을 연결합니다
+    url: "/protect-postgresql/create-resource-groups-and-attach-policies.html"
+  - title: PostgreSQL을 백업합니다
+    url: "/protect-postgresql/back-up-postgresql.html"
+  - title: 리소스 그룹을 백업합니다
+    url: "/protect-postgresql/back-up-resource-groups-postgresql.html"
+  - title: PostgreSQL용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
+    url: "/protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html"
+  - title: PowerShell cmdlet을 사용하여 클러스터를 백업합니다
+    url: "/protect-postgresql/back-up-clusters-using-powershell-cmdlets-postgresql.html"
+  - title: 백업 작업을 모니터링합니다
+    entries:
+    - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
+      url: "/protect-postgresql/monitor-postgresql-backup-operations.html"
+    - title: Activity 창에서 작업을 모니터링합니다
+      url: "/protect-postgresql/monitor-dataprotection-operations-on-postgresql-in-the-activity-pane.html"
+  - title: 백업 작업을 취소합니다
+    url: "/protect-postgresql/cancel-backup-operations-for-postgresql.html"
+  - title: 토폴로지 페이지에서 PostgreSQL 클러스터 백업 및 클론을 봅니다
+    url: "/protect-postgresql/view-postgresql-cluster-backups-and-clones-in-the-topology-page.html"
+- title: PostgreSQL을 복구합니다
+  entries:
+  - title: 워크플로를 복원합니다
+    url: "/protect-postgresql/restore-postgresql.html"
+  - title: 수동으로 추가한 리소스 백업을 복원 및 복구합니다
+    url: "/protect-postgresql/restore-and-recover-a-manually-added-resource-backup.html"
+  - title: 자동 검색된 클러스터 백업을 복구 및 복구합니다
+    url: "/protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html"
+  - title: PowerShell cmdlet을 사용하여 PostgreSQL을 복원합니다
+    url: "/protect-postgresql/restore-postgresql-using-powershell-cmdlets.html"
+  - title: PowerShell cmdlet을 사용하여 리소스 복원
+    url: "/protect-postgresql/restore-and-recover-resources-using-powershell-cmdlets-postgresql.html"
+  - title: 복구 작업을 모니터링합니다
+    url: "/protect-postgresql/monitor-postgresql-restore-operations.html"
+- title: PostgreSQL 리소스 백업을 복제합니다
+  entries:
+  - title: 클론 복제 워크플로우
+    url: "/protect-postgresql/clone-postgresql-resource-backups.html"
+  - title: PostgreSQL 클러스터 백업의 클론을 생성합니다
+    url: "/protect-postgresql/clone-postgresql-backup.html"
+  - title: PowerShell cmdlet을 사용하여 PostgreSQL 클러스터 백업의 클론을 생성합니다
+    url: "/protect-postgresql/clone-postgresql-backups-using-powershell-cmdlets.html"
+  - title: SnapCenter에서 클론 작업을 모니터링합니다
+    url: "/protect-postgresql/monitor-postgresql-clone-operations.html"
+  - title: 클론 분할
+    url: "/protect-postgresql/split-a-clone-for-postgresql.html"
+  - title: SnapCenter를 업그레이드한 후 PostgreSQL 클러스터 클론을 삭제하거나 분할합니다
+    url: "/protect-postgresql/delete-or-split-postgresql-clones-after-upgrading-snapcenter.html"

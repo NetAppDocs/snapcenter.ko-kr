@@ -1,0 +1,22 @@
+---
+permalink: protect-db2/define-a-restore-and-recovery-strategy-for-ibm-db2-resources.html 
+sidebar: sidebar 
+keywords: restore and recovery strategy, IBM Db2 resources, snapcenter 
+summary: 복구 및 복구 작업을 성공적으로 수행하려면 데이터베이스를 복원 및 복구하기 전에 전략을 정의해야 합니다. 
+---
+= IBM DB2 리소스에 대한 복구 및 복구 전략을 정의합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+복구 및 복구 작업을 성공적으로 수행하려면 데이터베이스를 복원 및 복구하기 전에 전략을 정의해야 합니다.
+
+
+NOTE: 데이터베이스의 수동 복구만 지원됩니다.
+
+.단계
+. 수동으로 추가한 IBM DB2 리소스에 대해 지원되는 복구 전략을 결정합니다
+. 자동 검색된 IBM DB2 데이터베이스에 대해 지원되는 복구 전략을 결정합니다
+

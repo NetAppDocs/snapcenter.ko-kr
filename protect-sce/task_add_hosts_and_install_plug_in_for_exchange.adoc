@@ -1,7 +1,7 @@
 ---
 permalink: protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html 
 sidebar: sidebar 
-keywords: SnapCenter Plug-in for Microsoft Exchange Server 
+keywords: SnapCenter Plug-in for Microsoft Exchange Server, NET TCP 
 summary: SnapCenterAdd 호스트 페이지를 사용하여 Windows 호스트를 추가할 수 있습니다. Exchange용 플러그인은 지정된 호스트에 자동으로 설치됩니다. 이는 플러그인을 설치하는 데 권장되는 방법입니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인을 설치할 수 있습니다. 
 ---
 = 호스트를 추가하고 Exchange용 플러그인을 설치합니다
@@ -14,10 +14,16 @@ summary: SnapCenterAdd 호스트 페이지를 사용하여 Windows 호스트를 
 SnapCenter 호스트 추가 페이지를 사용하여 Windows 호스트를 추가할 수 있습니다. Exchange용 플러그인은 지정된 호스트에 자동으로 설치됩니다. 이는 플러그인을 설치하는 데 권장되는 방법입니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인을 설치할 수 있습니다.
 
 .시작하기 전에
+* SnapCenter 서버 호스트의 운영 체제가 Windows 2019이고 플러그인 호스트의 운영 체제가 Windows 2022인 경우 다음을 수행해야 합니다.
++
+** Windows Server 2019(OS 빌드 17763.5936) 이상으로 업그레이드합니다
+** Windows Server 2022(OS 빌드 20348.2402) 이상으로 업그레이드하십시오
+
+
 * 플러그인 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자)에 할당된 사용자여야 합니다
 * Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자에 속한 경우 호스트에서 UAC를 비활성화해야 합니다.
 * 메시지 큐 서비스가 실행되고 있어야 합니다.
-* 그룹 GMSA(Managed Service Account)를 사용하는 경우 관리자 권한으로 GMSA를 구성해야 합니다. 자세한 내용은 을 참조하십시오link:task_configure_gMSA_on_windows_server_2012_or_later.html["Microsoft Exchange Server에 대해 Windows Server 2012 이상에서 그룹 관리 서비스 계정을 구성합니다"^].
+* 그룹 GMSA(Managed Service Account)를 사용하는 경우 관리자 권한으로 GMSA를 구성해야 합니다. 자세한 내용은 을 link:task_configure_gMSA_on_windows_server_2012_or_later.html["Microsoft Exchange Server에 대해 Windows Server 2016 이상에서 그룹 관리 서비스 계정을 구성합니다"^]참조하십시오.
 
 
 .이 작업에 대해
@@ -184,4 +190,28 @@ NOTE: GMSA는 SnapCenter Plug-in for Windows 서비스에 대해서만 로그온
 NOTE: HA 설정에서 web.config 파일을 업데이트하는 경우 두 노드에서 파일을 업데이트해야 합니다.
 
 . 설치 과정을 모니터링합니다.
+
+
+
+
+== NET TCP 통신을 위한 사용자 지정 포트를 구성합니다
+
+기본적으로 SnapCenter 6.0 릴리스에서 Windows용 SnapCenter 플러그인은 네트워크 TCP 통신에 포트 909를 사용합니다. 포트 909가 사용 중인 경우 네트워크 TCP 통신을 위해 다른 포트를 구성할 수 있습니다.
+
+.단계
+. _C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\vssproviders\navsprv.exe.config_에 있는 _NetTCPPort_키의 값을 필요한 포트 번호로 수정합니다.
+`<add key="NetTCPPort" value="new_port_number" />`
+. _C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\SnapDriveService.dll.config_에 있는 _NetTCPPort_key의 값을 필요한 포트 번호로 수정합니다.
+`<add key="NetTCPPort" value="new_port_number" />`
+. 아래 명령을 실행하여 _Data ONTAP VSS 하드웨어 공급자_서비스 등록을 취소합니다.
+`"C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\navssprv.exe" -r service -u`
++
+서비스가 _services.msc_의 서비스 목록에 표시되지 않는지 확인합니다.
+
+. 아래 명령을 실행하여 _Data ONTAP VSS Hardware Provider_service를 등록합니다.
+`"C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in for Microsoft Windows\vssproviders\navssprv.exe" -r service -a ".\LocalSystem"``
++
+서비스가 _services.msc_의 서비스 목록에 표시되는지 확인합니다.
+
+. Windows_service용 플러그인 을 다시 시작합니다.
 

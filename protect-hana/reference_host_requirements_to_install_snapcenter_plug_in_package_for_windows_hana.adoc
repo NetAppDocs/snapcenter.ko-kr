@@ -46,9 +46,9 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-* Microsoft .NET Framework 4.7.2 이상
-* WMF(Windows Management Framework) 4.0 이상
-* PowerShell 4.0 이상
+* .. 순수 코어 8.0.5
+* PowerShell 코어 7.4.2
+* Java 11 Oracle Java 및 OpenJDK
 
 
 지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=117007;&solution=1258&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].

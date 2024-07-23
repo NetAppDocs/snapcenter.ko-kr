@@ -1,0 +1,24 @@
+---
+permalink: protect-postgresql/prerequisites-for-using-snapcenter-plug-in-for-postgresql.html 
+sidebar: sidebar 
+keywords: Credentials,SnapCenter Plug-in for postgresql 
+summary: PostgreSQL용 SnapCenter 플러그인을 사용하려면 먼저 SnapCenter 관리자가 SnapCenter 서버를 설치 및 구성하고 필수 작업을 수행해야 합니다. 
+---
+= PostgreSQL용 SnapCenter 플러그인 사용을 위한 사전 요구 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+PostgreSQL용 SnapCenter 플러그인을 사용하려면 먼저 SnapCenter 관리자가 SnapCenter 서버를 설치 및 구성하고 필수 작업을 수행해야 합니다.
+
+* SnapCenter 서버를 설치하고 구성합니다.
+* SnapCenter 서버에 로그인합니다.
+* 스토리지 시스템 접속을 추가하고 해당하는 경우 자격 증명을 생성하여 SnapCenter 환경을 구성합니다.
+* Linux 또는 Windows 호스트에 Java 11을 설치합니다.
++
+호스트 시스템의 환경 경로 변수에서 Java 경로를 설정해야 합니다.
+
+* 백업 복제를 원하는 경우 SnapMirror 및 SnapVault를 설정합니다.
+

@@ -1,0 +1,73 @@
+---
+permalink: protect-db2/configure-gMSA-on-windows-server-2012-or-later.html 
+sidebar: sidebar 
+keywords:  
+summary: 'Windows Server 2016 이상을 사용하면 관리되는 도메인 계정에서 자동화된 서비스 계정 암호 관리를 제공하는 그룹 GMSA\(Managed Service Account)를 만들 수 있습니다.' 
+---
+= Windows Server 2016 이상에서 GMSA를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Windows Server 2016 이상을 사용하면 관리되는 도메인 계정에서 자동화된 서비스 계정 암호 관리를 제공하는 그룹 GMSA(Managed Service Account)를 만들 수 있습니다.
+
+.시작하기 전에
+* Windows Server 2016 이상의 도메인 컨트롤러가 있어야 합니다.
+* 도메인의 구성원인 Windows Server 2016 이상 호스트가 있어야 합니다.
+
+
+.단계
+. KDS 루트 키를 생성하여 GMSA의 각 개체에 대해 고유한 암호를 생성합니다.
+. 각 도메인에 대해 Windows 도메인 컨트롤러에서 Add-KDSRootKey-EffectiveImmediately 명령을 실행합니다
+. GMSA 생성 및 구성:
++
+.. 다음 형식으로 사용자 그룹 계정을 만듭니다.
++
+ domainName\accountName$
+.. 그룹에 컴퓨터 개체를 추가합니다.
+.. 방금 생성한 사용자 그룹을 사용하여 GMSA를 생성합니다.
++
+예를 들면, 다음과 같습니다.
+
++
+ New-ADServiceAccount -name <ServiceAccountName> -DNSHostName <fqdn> -PrincipalsAllowedToRetrieveManagedPassword <group> -ServicePrincipalNames <SPN1,SPN2,…>
+.. Get-ADServiceAccount 명령을 실행하여 서비스 계정을 확인한다.
+
+
+. 호스트에서 GMSA를 구성합니다.
++
+.. GMSA 계정을 사용할 호스트에서 Windows PowerShell용 Active Directory 모듈을 활성화합니다.
++
+이렇게 하려면 PowerShell에서 다음 명령을 실행합니다.
+
++
+[listing]
+----
+PS C:\> Get-WindowsFeature AD-Domain-Services
+
+Display Name                           Name                Install State
+------------                           ----                -------------
+[ ] Active Directory Domain Services   AD-Domain-Services  Available
+
+
+PS C:\> Install-WindowsFeature AD-DOMAIN-SERVICES
+
+Success Restart Needed Exit Code      Feature Result
+------- -------------- ---------      --------------
+True    No             Success        {Active Directory Domain Services, Active ...
+WARNING: Windows automatic updating is not enabled. To ensure that your newly-installed role or feature is
+automatically updated, turn on Windows Update.
+----
+.. 호스트를 다시 시작합니다.
+.. PowerShell 명령 프롬프트에서 'Install-AdServiceAccount<GMSA>'를 실행하여 호스트에 GMSA를 설치합니다
+.. 'Test-AdServiceAccount <GMSA>' 명령을 실행하여 GMSA 계정을 확인합니다
+
+
+. 호스트에서 구성된 GMSA에 관리 권한을 할당합니다.
+. SnapCenter 서버에서 구성된 GMSA 계정을 지정하여 Windows 호스트를 추가합니다.
++
+SnapCenter 서버는 선택한 플러그인을 호스트에 설치하고 지정된 GMSA는 플러그인 설치 중에 서비스 로그온 계정으로 사용됩니다.
+
+

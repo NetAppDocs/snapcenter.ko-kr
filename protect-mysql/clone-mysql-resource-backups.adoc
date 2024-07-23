@@ -1,0 +1,31 @@
+---
+permalink: protect-mysql/clone-mysql-resource-backups.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for MySQL 
+summary: 클론 워크플로우에는 클론 작업 수행 및 작업 모니터링이 포함됩니다. 
+---
+= 클론 복제 워크플로우
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+클론 워크플로우에는 클론 작업 수행 및 작업 모니터링이 포함됩니다.
+
+.이 작업에 대해
+* 소스 MySQL 서버에서 클론을 생성할 수 있습니다.
+* 다음과 같은 이유로 리소스 백업을 복제할 수 있습니다.
++
+** 응용 프로그램 개발 주기 동안 현재 리소스 구조 및 콘텐츠를 사용하여 구현해야 하는 기능을 테스트합니다
+** 데이터 웨어하우스를 채울 때 데이터 추출 및 조작 도구를 위한 것입니다
+** 실수로 삭제 또는 변경된 데이터를 복구합니다
+
+
+
+
+다음 워크플로에서는 클론 작업을 수행해야 하는 순서를 보여 줍니다.
+
+image::../media/sco_scc_wfs_clone_workflow.png[클론 복제 워크플로우]
+
+PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 및 cmdlet 참조 정보에는 PowerShell cmdlet에 대한 자세한 정보가 포함되어 있습니다.

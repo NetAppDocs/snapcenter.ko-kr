@@ -25,6 +25,8 @@ summary: 모든 데이터 보호 작업에는 리소스 그룹이 필요합니�
 Get API를 사용하여 키 값을 표시할 수 있습니다. API 설정은 지원되지 않습니다.
 
 * ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
+* SnapMirror 활성 동기화가 없는 기존 리소스 그룹에 SnapMirror 활성 동기화가 없는 새 데이터베이스를 추가하는 것은 지원되지 않습니다.
+* SnapMirror 활성 동기화의 페일오버 모드에서 기존 리소스 그룹에 새 데이터베이스를 추가할 수 없습니다. 리소스를 일반 또는 페일백 상태에서만 리소스 그룹에 추가할 수 있습니다.
 
 
 .단계
@@ -125,7 +127,7 @@ NOTE: 백업 작업 생성 시 선택할 서버에 대한 * 백업 복사본 * �
 이메일 알림의 경우, GUI 또는 PowerShell 명령 'Set-SmtpServer'를 사용하여 SMTP 서버 세부 정보를 지정해야 합니다.
 
 +
-cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886895["SnapCenter 소프트웨어 cmdlet 참조 가이드"^].
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 소프트웨어 Cmdlet 참조 가이드 를 참조할 수도 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.htmlnapCenter[] 있습니다.
 
 . 요약을 검토하고 * Finish * 를 클릭합니다.
 

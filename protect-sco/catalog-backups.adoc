@@ -68,4 +68,4 @@ NOTE: SnapCenter 호스트를 강제로 삭제하면 해당 호스트와 연결�
 
 '/opt/netapp/snapcenter/spl/bin/spL 재시작'
 
-명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 를 참조할 수도 있습니다 https://library.netapp.com/ecm/ecm_download_file/ECMLP2886896["SnapCenter 소프트웨어 명령 참조 가이드"^].
+명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 을 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470["SnapCenter 소프트웨어 명령 참조 가이드"^].

@@ -19,3 +19,7 @@ Exchange용 플러그인을 설치하면 SnapCenter와 NetApp SnapMirror 기술�
 NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)로 제공됩니다. NetApp은 2020년 6월 24일에 출시된 마케팅 부품 번호를 통해 지원 자격 기간 동안 메일박스 용량, 유지보수, 지원을 구매한 고객을 계속 지원할 예정입니다.
 
 NetApp Single Mailbox Recovery는 Ontrack에서 제공하는 파트너 제품입니다. OnTrack PowerControls는 NetApp Single Mailbox Recovery와 유사한 기능을 제공합니다. 고객은 세분화된 메일박스 복구를 위해 Ontrack PowerControls 소프트웨어 라이센스와 Ontrack PowerControls 유지보수 및 지원 갱신을 licensingteam@ontrack.com 통해 구매할 수 있습니다.
+
+Exchange용 플러그인은 SnapMirror 액티브 동기화(처음에는 SnapMirror Business Continuity[SM-BC]로 릴리스)를 지원하므로 전체 사이트 장애가 발생하더라도 비즈니스 서비스를 계속 운영할 수 있으며, 2차 복사본을 사용하여 애플리케이션을 투명하게 페일오버할 수 있습니다. SnapMirror 액티브 동기화로 페일오버를 트리거하는 데 수동 개입이나 추가 스크립팅이 필요하지 않습니다.
+
+SnapMirror Active Sync의 비대칭, 페일오버 또는 비이중 모드를 지원합니다. 최적화된 경로가 운영 측 LUN 소유 노드에서만 제공되는 솔루션을 의미합니다. 보조 클러스터 경로에서 발생하는 모든 입출력은 운영 클러스터로 프록시에 의해 처리됩니다. 동기식 복제는 운영 환경에서 2차 복제 방향으로 단방향입니다.

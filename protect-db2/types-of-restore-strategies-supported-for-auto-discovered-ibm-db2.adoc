@@ -1,0 +1,16 @@
+---
+permalink: protect-db2/types-of-restore-strategies-supported-for-auto-discovered-ibm-db2.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for IBM Db2 
+summary: SnapCenter를 사용하여 복원 작업을 성공적으로 수행하려면 먼저 전략을 정의해야 합니다. 자동으로 검색된 IBM DB2 데이터베이스에 대한 복구 전략에는 두 가지 유형이 있습니다. 
+---
+= 자동으로 검색된 IBM DB2에 대해 지원되는 복구 전략 유형입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter를 사용하여 복원 작업을 성공적으로 수행하려면 먼저 전략을 정의해야 합니다.
+
+전체 리소스 복구는 자동으로 검색된 IBM DB2 데이터베이스에 대해 지원되는 복구 전략입니다. 이렇게 하면 리소스의 모든 볼륨, qtree 및 LUN이 복원됩니다.

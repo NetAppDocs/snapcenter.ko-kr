@@ -58,7 +58,7 @@ entries:
     url: "/protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_linux.html"
   - title: SAP HANA 데이터베이스용 SnapCenter 플러그인에 대한 자격 증명 설정
     url: "/protect-hana/task_set_up_credentials_for_snapcenter_plug_in_for_sap_hana_database.html"
-  - title: Windows Server 2012 이상에서 GMSA를 구성합니다
+  - title: Windows Server 2016 이상에서 GMSA를 구성합니다
     url: "/protect-hana/task_configure_gMSA_on_windows_server_2012_or_later.html"
   - title: SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치합니다
     entries:

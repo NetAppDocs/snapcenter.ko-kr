@@ -1,0 +1,24 @@
+---
+permalink: protect-db2/monitor-dataprotection-operations-on-db2-in-the-activity-pane.html 
+sidebar: sidebar 
+keywords: SnapCenter Server 
+summary: 작업 창에는 가장 최근에 수행한 작업 5개가 표시됩니다. 작업 창은 작업이 시작된 시점과 작업의 상태도 표시합니다. 
+---
+= Activity 창에서 IBM DB2 데이터베이스의 데이터 보호 작업을 모니터링합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+작업 창에는 가장 최근에 수행한 작업 5개가 표시됩니다. 작업 창은 작업이 시작된 시점과 작업의 상태도 표시합니다.
+
+작업 창에는 백업, 복원, 클론 및 예약된 백업 작업에 대한 정보가 표시됩니다.
+
+.단계
+. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 을 클릭합니다 image:../media/activity_pane_icon.gif[""] 를 클릭하여 가장 최근 작업 5개를 확인합니다.
++
+작업 중 하나를 클릭하면 작업 세부 정보가 * 작업 세부 정보 * 페이지에 나열됩니다.
+
+

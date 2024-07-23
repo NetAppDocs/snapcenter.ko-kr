@@ -1,0 +1,30 @@
+---
+permalink: protect-postgresql/types-of-restore-performed-for-auto-discovered-postgresql.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for postgresql 
+summary: 'SnapCenter는 자동으로 검색된 PostgreSQL 클러스터에 대해 볼륨 기반 SnapRestore\(VBSR\), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.' 
+---
+= 자동 검색된 PostgreSQL에 대한 복구 작업 유형입니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+PostgreSQL용 SnapCenter 플러그인은 자동으로 검색된 PostgreSQL 클러스터에 대한 단일 파일 SnapRestore 및 연결 및 복제 복구 유형을 지원합니다.
+
+
+
+== 단일 파일 SnapRestore는 NFS 환경에서 다음 시나리오에 대해 수행됩니다.
+
+* Complete Resource * 옵션만 선택한 경우
+* SnapMirror 또는 SnapVault 보조 위치에서 백업을 선택하고 * Complete Resource * 옵션을 선택한 경우
+
+
+
+
+== 단일 파일 SnapRestore는 SAN 환경에서 다음 시나리오에 대해 수행됩니다.
+
+* Complete Resource * 옵션만 선택한 경우
+* SnapMirror 또는 SnapVault 보조 위치에서 백업을 선택하고 * Complete Resource * 옵션을 선택하면
+

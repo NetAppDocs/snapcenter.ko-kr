@@ -1,0 +1,42 @@
+---
+permalink: protect-db2/enable-ca-certificates-for-plug-ins.html 
+sidebar: sidebar 
+keywords: SnapCenter 
+summary: CA 인증서를 구성하고 SnapCenter 서버 및 해당 플러그인 호스트에 CA 인증서를 배포해야 합니다. 
+---
+= 플러그인에 대해 CA 인증서를 활성화합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+CA 인증서를 구성하고 SnapCenter 서버 및 해당 플러그인 호스트에 CA 인증서를 배포해야 합니다. 플러그인에 대해 CA 인증서 유효성 검사를 활성화해야 합니다.
+
+.시작하기 전에
+* run_Set-SmCertificateSettings_cmdlet을 사용하여 CA 인증서를 활성화하거나 비활성화할 수 있습니다.
+* _get-SmCertificateSettings_를 사용하여 플러그인의 인증서 상태를 표시할 수 있습니다.
+
+
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.
+
+.단계
+. 왼쪽 탐색 창에서 * 호스트 * 를 클릭합니다.
+. 호스트 페이지에서 * 관리되는 호스트 * 를 클릭합니다.
+. 단일 또는 여러 플러그인 호스트를 선택합니다.
+. 추가 옵션 * 을 클릭합니다.
+. 인증서 유효성 검사 사용 * 을 선택합니다.
+
+
+.작업을 마친 후
+관리 호스트 탭 호스트에는 자물쇠가 표시되고 자물쇠 색상은 SnapCenter 서버와 플러그인 호스트 간의 연결 상태를 나타냅니다.
+
+* *image:../media/enable_ca_issues_icon.png["CA 인증서가 사용 또는 플러그인 호스트 아이콘에 할당되지 않았습니다"]* 는 CA 인증서가 활성화되지 않았으며 플러그인 호스트에 할당되지 않았음을 나타냅니다.
+* *image:../media/enable_ca_good_icon.png["CA 인증서의 유효성을 성공적으로 확인했습니다. 아이콘"]* CA 인증서의 유효성을 확인했음을 나타냅니다.
+* *image:../media/enable_ca_failed_icon.png["CA 인증서를 확인할 수 없습니다 아이콘"]* CA 인증서의 유효성을 확인할 수 없음을 나타냅니다.
+* *image:../media/enable_ca_undefined_icon.png["연결 정보를 검색할 수 없습니다 아이콘"]* 연결 정보를 검색할 수 없음을 나타냅니다.
++
+
+NOTE: 상태가 노란색 또는 녹색이면 데이터 보호 작업이 성공적으로 완료된 것입니다.
+
+

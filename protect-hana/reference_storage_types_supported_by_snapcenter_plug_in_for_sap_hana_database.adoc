@@ -18,13 +18,6 @@ SnapCenter는 물리적 시스템과 가상 머신(VM) 모두에서 다양한 �
 
 
  a| 
-물리적 서버와 가상 서버
- a| 
-FC 연결 LUN
-
-
-
- a| 
 물리적 서버
  a| 
 iSCSI로 연결된 LUN
@@ -34,6 +27,17 @@ iSCSI로 연결된 LUN
  a| 
 물리적 서버와 가상 서버
  a| 
-NFS 연결 볼륨
+* FC 연결 LUN
+* NFS 연결 볼륨
+
+
+
+
+ a| 
+VMware ESXi
+ a| 
+NFS와 SAN 모두에서 VVOL 데이터 저장소
+
+VVOL 데이터 저장소는 VMware vSphere용 ONTAP 툴로만 프로비저닝할 수 있습니다.
 
 |===

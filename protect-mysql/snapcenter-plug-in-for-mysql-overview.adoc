@@ -1,0 +1,24 @@
+---
+permalink: protect-mysql/snapcenter-plug-in-for-mysql-overview.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for MySQL 
+summary: MySQL용 SnapCenter 플러그인은 MySQL 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트측 구성 요소입니다. MySQL 데이터베이스용 플러그인은 SnapCenter 환경에서 MySQL 데이터베이스의 백업, 복원 및 복제를 자동화합니다. 
+---
+= MySQL용 SnapCenter 플러그인 개요
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+MySQL 데이터베이스용 SnapCenter 플러그인은 MySQL 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트 측 구성 요소입니다. MySQL 데이터베이스용 플러그인은 SnapCenter 환경에서 MySQL 데이터베이스의 백업, 복원 및 복제를 자동화합니다.
+
+SnapCenter는 단일 인스턴스 MySQL 설정을 지원합니다. Linux 및 Windows 환경 모두에서 MySQL 데이터베이스용 플러그인을 사용할 수 있습니다. Windows 환경에서 MySQL은 수동 리소스로 지원됩니다.
+
+MySQL 데이터베이스용 플러그인이 설치된 경우 SnapCenter와 NetApp SnapMirror 기술을 함께 사용하여 다른 볼륨에 있는 백업 세트의 미러 복사본을 생성할 수 있습니다. 또한 NetApp SnapVault 기술의 플러그인을 사용하여 표준 준수를 위한 D2D 백업 복제를 수행할 수 있습니다.
+
+MySQL용 SnapCenter 플러그인은 ONTAP 기반 NFS 및 SAN 및 Azure NetApp 파일 스토리지 레이아웃을 지원합니다.
+
+VMDK 또는 가상 스토리지 레이아웃이 지원됩니다.
+
+심볼 링크는 지원되지 않습니다.

@@ -59,9 +59,20 @@ SnapCenter SMCore 통신 포트입니다
 
 
  a| 
+스케줄러 서비스 포트
+ a| 
+8154(HTTPS),
+
+이 포트는 SnapCenter 서버 호스트 내의 모든 관리형 플러그인에 대한 SnapCenter 스케줄러 워크플로우를 중앙 집중식으로 조정하는 데 사용됩니다.
+
+포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html["설치 마법사를 사용하여 SnapCenter 서버를 설치합니다."]
+
+
+
+ a| 
 MySQL 포트
  a| 
-3306(HTTPS), 양방향
+3306(HTTPS), 양방향, 사용자 지정 가능
 
 이 포트는 SnapCenter 및 MySQL 리포지토리 데이터베이스 간의 통신에 사용됩니다.
 
@@ -118,7 +129,18 @@ Oracle 데이터베이스용 SnapCenter 플러그인
 
 
  a| 
-SnapCenter용 맞춤형 플러그인
+Exchange 데이터베이스용 SnapCenter 플러그인
+ a| 
+909, 사용자 지정 가능
+
+기본 네트입니다. TCP 포트는 Windows용 플러그인에서 Exchange VSS 콜백에 연결하는 데 사용됩니다.
+
+포트를 사용자 지정하려면 을 참조하십시오 link:../protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html["호스트를 추가하고 Exchange용 플러그인을 설치합니다"].
+
+
+
+ a| 
+SnapCenter에 대해 NetApp 지원 플러그인
  a| 
 9090(HTTPS), 고정
 

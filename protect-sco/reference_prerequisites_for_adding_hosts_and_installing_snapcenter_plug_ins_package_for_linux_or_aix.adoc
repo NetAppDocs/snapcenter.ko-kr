@@ -23,7 +23,7 @@ Oracle 데이터베이스용 SnapCenter 플러그인은 루트가 아닌 사용�
 AIX용 SnapCenter 플러그인 패키지는 파일 레벨 심볼 링크를 자동으로 확인하지만 java_home 절대 경로를 얻기 위한 디렉토리 레벨 심볼 링크는 확인하지는 않습니다.
 
 * 설치 사용자에 대해 인증 모드를 Linux 또는 AIX로 사용하여 자격 증명을 작성합니다.
-* Linux 또는 AIX 호스트에 Java 1.8.x 또는 Java 11, 64비트를 설치해야 합니다.
+* Linux 또는 AIX 호스트에 Java 11을 설치해야 합니다.
 +
 
 NOTE: Linux 호스트에 Java 11의 인증된 버전만을 설치했는지 확인합니다.
@@ -94,9 +94,7 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-* Java 1.8.x(64비트) Oracle Java 및 OpenJDK
-* Java 11(64비트) Oracle Java 및 OpenJDK
-
+Java 11 Oracle Java 및 OpenJDK
 
 
 NOTE: Linux 호스트에 Java 11의 인증된 버전만을 설치했는지 확인합니다.
@@ -115,6 +113,7 @@ SnapCenter 2.0 이상 버전에서는 루트가 아닌 사용자가 Linux용 Sna
 * 필요한 것 *
 
 * sudo 버전 1.8.7 이상
+* 루트가 아닌 사용자의 경우 루트가 아닌 사용자 및 사용자 그룹의 이름이 동일해야 합니다.
 * MAC HMAC-SHA2-256 및 MAC HMAC-SHA2-512의 메시지 인증 코드 알고리즘을 구성하려면 _/etc/ssh/sshd_config_file을 편집합니다.
 +
 구성 파일을 업데이트한 후 sshd 서비스를 다시 시작합니다.
@@ -174,9 +173,11 @@ _/etc/oracle/OLR.loc_file에서 _CRS_HOME_ 값을 가져올 수 있습니다.
 
 _linux_user_는 사용자가 생성한 루트가 아닌 사용자의 이름입니다.
 
-_C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * Oracle_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.
+다음 위치에 있는 * SC_UNIX_plugins_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.
 
-사용자 지정 위치를 지정한 경우 위치는 _CUSTOM_PATH\NetApp\SnapCenter\Package Repository_입니다.
+* _C:\ProgramData\NetApp\SnapCenter\Package Repository\SC_UNIX_plugins_checksum.txt_SnapCenter 서버가 Windows 호스트에 설치된 경우
+* _/opt/netapp/snapcenter/SnapManagerWeb/Repository/sc_unix_plugins_checksum.txt_if SnapCenter 서버가 Linux 호스트에 설치되어 있는 경우.
+
 
 
 IMPORTANT: 이 예제는 고유한 데이터를 만들기 위한 참조로만 사용해야 합니다.
@@ -221,9 +222,7 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-* Java 1.8.x(64비트) IBM Java
-* Java 11(64비트) IBM Java
-
+자바 11 IBM 자바
 
 Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.
 
@@ -298,9 +297,11 @@ _/etc/oracle/OLR.loc_file에서 _CRS_HOME_ 값을 가져올 수 있습니다.
 
 _AIX_USER_는 사용자가 작성한 루트가 아닌 사용자의 이름입니다.
 
-_C:\ProgramData\NetApp\SnapCenter\Package Repository_에 있는 * Oracle_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.
+다음 위치에 있는 * SC_UNIX_plugins_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.
 
-사용자 지정 위치를 지정한 경우 위치는 _CUSTOM_PATH\NetApp\SnapCenter\Package Repository_입니다.
+* _C:\ProgramData\NetApp\SnapCenter\Package Repository\SC_UNIX_plugins_checksum.txt_SnapCenter 서버가 Windows 호스트에 설치된 경우
+* _/opt/netapp/snapcenter/SnapManagerWeb/Repository/sc_unix_plugins_checksum.txt_if SnapCenter 서버가 Linux 호스트에 설치되어 있는 경우.
+
 
 
 IMPORTANT: 이 예제는 고유한 데이터를 만들기 위한 참조로만 사용해야 합니다.

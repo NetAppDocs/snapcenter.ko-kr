@@ -1,0 +1,73 @@
+---
+permalink: install/configure_ca_certificate_linux_host.html 
+sidebar: sidebar 
+keywords: SnapCenter, configure, CA certificate, linux, linux host 
+summary: Linux 호스트에서 SnapCenter 서버를 사용하여 CA 인증서를 구성해야 합니다. 
+---
+= Linux 호스트에 대한 CA 인증서를 구성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux에 SnapCenter 서버를 설치하면 설치 프로그램이 자체 서명된 인증서를 생성합니다. CA 인증서를 사용하려면 nginx 역방향 프록시, 감사 로깅 및 SnapCenter 서비스에 대한 인증서를 구성해야 합니다.
+
+
+
+== nginx 인증서를 구성합니다
+
+.단계
+. _/etc/nginx/conf.d_: `cd /etc/nginx/conf.d`
+. vi 또는 텍스트 편집기를 사용하여 * snapcenter.conf * 를 엽니다.
+. 구성 파일에서 서버 섹션으로 이동합니다.
+. CA 인증서를 가리키도록 _ssl_certificate_and_ssl_certificate_key_ 경로를 수정합니다.
+. 파일을 저장하고 닫습니다.
+. nginx 다시 로드: `$nginx -s reload`
+
+
+
+
+== 감사 로그 인증서를 구성합니다
+
+.단계
+. vi 또는 텍스트 편집기를 사용하여 _install_DIR/netapp/snapcenter/SnapManagerWeb/SnapManager.Web.UI.dll.config_를 엽니다.
++
+_INSTALL_DIR_의 기본값은 _/OPT_입니다.
+
+. AUDILOG_CERTIFICATE_PATH * 및 * AUDILOG_CERTIFICATE_PASSWORD * 키를 편집하여 각각 CA 인증서 경로와 암호를 포함시키십시오.
++
+감사 로그 인증서에는 _.pfx_format만 지원됩니다.
+
+. 파일을 저장하고 닫습니다.
+. snapmanagerweb * 서비스를 다시 시작합니다. `$ systemctl restart snapmanagerweb`
+
+
+
+
+== SnapCenter 서비스 인증서를 구성합니다
+
+.단계
+. vi 또는 텍스트 편집기를 사용하여 다음 구성 파일을 엽니다.
++
+** _install_DIR/netapp/snapcenter/SnapManagerWeb/SnapManager.Web.UI.dll.config_
+** _install_DIR/netapp/snapcenter/SMCore/SMCoreServiceHost.dll.config_
+** _install_DIR/netapp/snapcenter/Scheduler/Scheduler.api.dll.config_
++
+_INSTALL_DIR_의 기본값은 _/OPT_입니다.
+
+
+
+. CA 인증서 경로와 암호를 각각 포함하도록 * service_certificate_path * 및 * service_certificate_password * 키를 편집합니다.
++
+SnapCenter 서비스 인증서에는 _.pfx_format만 지원됩니다.
+
+. 파일을 저장하고 닫습니다.
+. 모든 서비스를 다시 시작합니다.
++
+** `$ systemctl restart snapmanagerweb`
+** `$ systemctl restart smcore`
+** `$ systemctl restart scheduler`
+
+
+

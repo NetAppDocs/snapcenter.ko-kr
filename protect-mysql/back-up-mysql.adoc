@@ -1,0 +1,153 @@
+---
+permalink: protect-mysql/back-up-mysql.html 
+sidebar: sidebar 
+keywords: SnapCenter Plug-in for MySQL 
+summary: 자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이지에서 자원을 백업할 수 있습니다. 
+---
+= MySQL을 백업합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이지에서 자원을 백업할 수 있습니다.
+
+.시작하기 전에
+* 백업 정책을 만들어야 합니다.
+* 보조 스토리지와 SnapMirror 관계가 있는 리소스를 백업하려면 스토리지 사용자에게 할당된 ONTAP 역할에 "'스냅샷 전체' 권한이 있어야 합니다. 그러나 "vsadmin" 역할을 사용하는 경우에는 "napmirror all" 권한이 필요하지 않습니다.
+* 스냅샷 복제 기반 백업 작업의 경우 모든 테넌트 데이터베이스가 유효하고 활성 상태인지 확인합니다.
+* 중지, 스냅샷 및 중지 해제 작업에 대한 사전 및 사후 명령의 경우 플러그인 호스트에서 사용할 수 있는 명령 목록에 다음 경로에서 명령이 있는지 확인해야 합니다.
++
+Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
+
++
+Linux의 경우: _/var/opt/snapcenter/SCC/allowed_commands_list.txt_
+
+
+
+
+NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
+
+.단계
+. 왼쪽 탐색 창에서 * 리소스 * 를 선택한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 리소스 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.
++
+를 선택합니다image:../media/filter_icon.png[""]를 선택한 다음 호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 선택할 수 있습니다 image:../media/filter_icon.png[""] 를 눌러 필터 창을 닫습니다.
+
+. 백업할 리소스를 선택합니다.
+. 리소스 페이지에서 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 을 선택한 다음 스냅샷 이름에 사용할 사용자 지정 이름 형식을 입력합니다.
++
+예: _customtext_policy_hostname_or_resource_hostname_. 기본적으로 타임스탬프는 스냅샷 이름에 추가됩니다.
+
+. 응용 프로그램 설정 페이지에서 다음을 실행합니다.
++
+** 백업 * 화살표를 선택하여 추가 백업 옵션을 설정합니다.
++
+필요한 경우 정합성 보장 그룹 백업을 설정하고 다음 작업을 수행합니다.
+
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+"정합성 보장 그룹 스냅샷" 작업이 완료될 때까지 기다릴 여유가 없습니다
+ a| 
+스냅샷 작업이 완료될 때까지 대기할 시간을 지정하려면 * 긴급 *, * 보통 * 또는 * 느림 * 을 선택합니다. 긴급 = 5초, 중간 = 7초, 휴식 = 20초
+
+
+
+ a| 
+WAFL 동기화를 비활성화합니다
+ a| 
+WAFL 정합성 보장 지점을 강제로 사용하지 않으려면 이 옵션을 선택합니다.
+
+|===
+** 정지, 스냅샷 및 정지 해제 작업에 대해 사전 및 사후 명령을 실행하려면 스크립트 * 화살표를 선택합니다.
++
+백업 작업을 종료하기 전에 사전 명령을 실행할 수도 있습니다. 사전 스크립트 및 사후 스크립트는 SnapCenter 서버에서 실행됩니다.
+
+** 사용자 정의 구성** 화살표를 선택한 다음 이 자원을 사용하는 모든 작업에 필요한 사용자 정의 값 쌍을 입력합니다.
+** 스냅샷 복사 도구 * 화살표를 선택하여 스냅샷을 생성할 도구를 선택합니다.
++
+|===
+| 원하는 작업 | 그러면... 
+
+
+ a| 
+SnapCenter 를 눌러 스토리지 레벨의 스냅샷을 생성합니다
+ a| 
+파일 시스템 일관성 없이 SnapCenter * 를 선택합니다.
+
+
+
+ a| 
+SnapCenter - Windows용 플러그인을 사용하여 파일 시스템을 일관된 상태로 설정한 다음 스냅샷을 생성합니다
+ a| 
+파일 시스템 정합성 보장 * 이 있는 SnapCenter를 선택합니다.
+
+
+
+ a| 
+명령을 입력하여 스냅샷을 생성합니다
+ a| 
+기타 * 를 선택한 다음 명령을 입력하여 스냅샷을 생성합니다.
+
+|===
++
+image:../media/application_settings.gif[""]
+
+
+
+. 정책 페이지에서 다음 단계를 수행합니다.
++
+.. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
++
+
+NOTE: * 를 클릭하여 정책을 생성할 수도 있습니다image:../media/add_policy_from_resourcegroup.gif[""]*.
+
++
+선택한 정책에 대한 스케줄 구성 섹션에 선택한 정책이 나열됩니다.
+
+.. 를 선택합니다image:../media/add_policy_from_resourcegroup.gif[""]일정을 구성하려는 정책에 대한 스케줄 구성 열의
+.. policy_policy_name_에 대한 스케줄 추가 대화 상자에서 스케줄을 구성한 다음 * OK * 를 선택합니다.
++
+_policy_name_은 선택한 정책의 이름입니다.
+
++
+구성된 일정이 Applied Schedules 열에 나열됩니다.
+
+
+
+. 알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.
++
+또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. SMTP는 * 설정 * > * 글로벌 설정 * 에서도 구성해야 합니다.
+
+. 요약을 검토한 후 * Finish * 를 선택합니다.
++
+리소스 토폴로지 페이지가 표시됩니다.
+
+. 지금 백업 * 을 선택합니다.
+. 백업 페이지에서 다음 단계를 수행하십시오.
++
+.. 리소스에 여러 정책을 적용한 경우 * 정책 * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.
++
+필요 시 백업에 대해 선택한 정책이 백업 스케줄과 연결된 경우 스케줄 유형에 지정된 보존 설정에 따라 필요 시 백업이 유지됩니다.
+
+.. 백업 * 을 선택합니다.
+
+
+. 모니터 * > * 작업 * 을 클릭하여 작업 진행 상황을 모니터링합니다.
++
+** MetroCluster 구성에서 SnapCenter는 페일오버 후 보호 관계를 감지하지 못할 수 있습니다.
++
+자세한 내용은 다음을 참조하십시오. https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["MetroCluster 페일오버 후 SnapMirror 또는 SnapVault 관계를 감지할 수 없습니다"^]
+
+** VMDK에서 애플리케이션 데이터를 백업하고 VMware vSphere용 SnapCenter 플러그인의 Java 힙 크기가 충분히 크지 않으면 백업이 실패할 수 있습니다.
++
+Java 힙 크기를 늘리려면 스크립트 파일 _/opt/netapp/init_scripts/scvservice_를 찾습니다. 이 스크립트에서 _do_start method_command는 SnapCenter VMware 플러그인 서비스를 시작합니다. 이 명령을 _java-jar-Xmx8192M-Xms4096M_로 업데이트합니다
+
+
+
+

@@ -12,8 +12,7 @@ entries:
     url: "/protect-scsql/concept_snapcenter_plug_in_for_microsoft_sql_server_features.html"
   - title: Windows 클러스터에서 비대칭 LUN 매핑 지원
     url: "/protect-scsql/concept_support_for_asymmetric_lun_mapping_alm_in_windows_clusters.html"
-  - title: Microsoft Windows용 SnapCenter 플러그인 및 Microsoft SQL Server용 플러그인이 지원하는 스토리지
-      유형입니다
+  - title: Microsoft SQL Server용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다
     url: "/protect-scsql/reference_storage_types_supported_by_snapcenter_plug_ins_for_microsoft_windows_and_for_microsoft_sql_server.html"
   - title: Microsoft SQL Server용 SnapCenter 플러그인의 스토리지 레이아웃 권장 사항
     url: "/protect-scsql/reference_storage_layout_recommendations_for_snapcenter_plug_in_for_microsoft_sql_server.html"
@@ -75,7 +74,7 @@ entries:
     url: "/protect-scsql/task_set_up_credentials_for_snapcenter_plug_ins_package_for_windows.html"
   - title: 개별 SQL Server 리소스에 대한 자격 증명을 구성합니다
     url: "/protect-scsql/task_configure_credentials_for_an_individual_sql_server_resource.html"
-  - title: Windows Server 2012 이상에서 GMSA를 구성합니다
+  - title: Windows Server 2016 이상에서 GMSA를 구성합니다
     url: "/protect-scsql/task_configure_gMSA_on_windows_server_2012_or_later.html"
   - title: Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다
     entries:

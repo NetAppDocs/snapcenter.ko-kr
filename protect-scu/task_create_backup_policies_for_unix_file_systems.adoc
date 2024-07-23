@@ -16,6 +16,7 @@ SnapCenter를 사용하여 Unix 파일 시스템을 백업하기 전에 백업�
 .시작하기 전에
 * SnapCenter 설치, 호스트 추가, 파일 시스템 검색, 스토리지 시스템 연결 생성 등의 작업을 완료하여 데이터 보호를 준비해야 합니다.
 * 미러 또는 소산 2차 스토리지에 스냅샷을 복제하는 경우, SnapCenter 관리자가 소스 볼륨과 타겟 볼륨 모두에 대해 SVM을 할당해야 합니다.
+* SnapMirror 활성 동기화에 대한 사전 요구사항 및 제한 사항을 검토하십시오. 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/smbc/considerations-limits.html#volumes["SnapMirror 활성 동기화에 대한 개체 제한"]참조하십시오.
 
 
 .단계
@@ -68,6 +69,8 @@ NOTE: 백업의 일부로 아카이브 로그 파일을 선택한 경우에만 �
 로컬 스냅샷 복사본을 생성한 후 SnapMirror를 업데이트합니다
  a| 
 다른 볼륨에 백업 세트의 미러 복사본을 생성하려면 이 필드를 선택합니다(SnapMirror 복제).
+
+이 옵션은 SnapMirror 액티브 동기화에 대해 활성화해야 합니다.
 
 
 
