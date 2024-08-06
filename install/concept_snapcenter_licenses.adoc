@@ -87,7 +87,7 @@ NOTE: SnapCenter 표준 라이센스를 보조 대상에 추가하는 것이 좋
 
 |===
 
-NOTE: SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다. 용량 기반 라이센스는 더 이상 Amazon FSx for NetApp ONTAP 및 Cloud Volumes ONTAP에 필요하지 않습니다.
+NOTE: SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다. 용량 기반 라이센스는 더 이상 Amazon FSx for NetApp ONTAP 및 Cloud Volumes ONTAP에 필요하지 않습니다. Azure NetApp Files에는 표준 라이센스와 용량 기반 라이센스가 필요하지 않습니다.
 
 하나 이상의 SnapCenter 라이센스를 설치해야 합니다. 라이센스를 추가하는 방법에 대한 자세한 내용은 을 link:../install/concept_snapcenter_standard_controller_based_licenses.html["SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다"]참조하십시오.
 

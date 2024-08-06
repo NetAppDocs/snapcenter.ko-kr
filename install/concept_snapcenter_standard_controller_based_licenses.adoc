@@ -54,7 +54,7 @@ NOTE: 컨트롤러에 SnapManager Suite 라이센스가 이미 있는 경우 Sna
 +
 ** image:../media/controller_licensed_icon.gif["확인 아이콘"] SnapManager 제품군 라이센스가 FAS, AFF 또는 ASA 운영 스토리지 시스템에 설치되어 있음을 나타냅니다.
 ** image:../media/controller_not_licensed_icon.gif["취소 아이콘"] SnapManager 제품군 라이센스가 FAS, AFF 또는 ASA 운영 스토리지 시스템에 설치되어 있지 않음을 나타냅니다.
-** 해당 없음 은 스토리지 컨트롤러가 Cloud Volumes ONTAP, ONTAP Select 또는 보조 스토리지 플랫폼에 있기 때문에 SnapManager Suite 라이센스가 적용되지 않음을 나타냅니다.
+** 해당 없음 은 스토리지 컨트롤러가 Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, ONTAP Select 또는 보조 스토리지 플랫폼에 있으므로 SnapManager 제품군 라이센스가 적용되지 않음을 나타냅니다.
 
 
 

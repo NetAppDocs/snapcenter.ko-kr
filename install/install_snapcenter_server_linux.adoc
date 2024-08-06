@@ -130,7 +130,7 @@ SnapCenter 서버 설치를 위해 전달할 매개 변수:
 * SELinux status_가 "enabled"이고 _current mode_가 "enforcing"이면 * nginx * 서비스가 시작되지 않습니다. 다음 명령을 실행해야 합니다.
 +
 .. 홈 디렉토리로 이동합니다.
-.. 다음 명령을 실행합니다 `jorunalctl -x|grep nginx`.
+.. 다음 명령을 실행합니다 `journalctl -x|grep nginx`.
 .. WebApp 내부 포트(8147)가 수신 대기할 수 없는 경우 다음 명령을 실행합니다.
 +
 *** `ausearch -c 'nginx' --raw | audit2allow -M my-nginx`

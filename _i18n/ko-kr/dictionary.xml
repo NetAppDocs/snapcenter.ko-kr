@@ -2756,7 +2756,6 @@
   <block id="9ba45610f0250c3f3d93d968194d341c" category="list-text">추가된 모든 SVM을 보려면 * ONTAP SVM * 을 선택합니다.</block>
   <block id="91fd94b5750743b0b4db66d235c0cab9" category="list-text">추가된 모든 클러스터를 보려면 * ONTAP 클러스터 * 를 선택합니다.</block>
   <block id="56ea331cb0dea9dc3bddc3e0e2f3ef88" category="paragraph">컨트롤러 라이센스 열에는 다음 상태가 표시됩니다.</block>
-  <block id="a909f2df296012a51dc7da77f9e20dc6" category="list-text">해당 없음 은 스토리지 컨트롤러가 Cloud Volumes ONTAP, ONTAP Select 또는 보조 스토리지 플랫폼에 있기 때문에 SnapManager Suite 라이센스가 적용되지 않음을 나타냅니다.</block>
   <block id="e7590fb47d0f1f083a0a8a323aa643a0" category="admonition">SnapCenter 표준 컨트롤러 기반 라이센스는 컨트롤러에 SnapManagerSuite 라이센스로 표시됩니다.</block>
   <block id="9865599458fea2a88fc4f94d29ab5c4e" category="list-text">license show 명령을 입력한 다음 출력을 확인하여 SnapManagerSuite 라이센스가 설치되었는지 확인합니다.</block>
   <block id="5b12cbd18ef5bbd432e4411b45e422ad" category="paragraph">이 예제에서는 SnapManagerSuite 라이센스가 설치되어 있으므로 추가 SnapCenter 라이센스 작업이 필요하지 않습니다.</block>
@@ -8790,7 +8789,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="15d048e327e80031abf5c8b2302df43b" category="paragraph">SnapCenter는 SnapCenter 리포지토리 데이터베이스로 MySQL Server 8.0.37 이상을 지원합니다. 이전 버전의 MySQL Server를 이전 버전의 SnapCenter와 함께 사용하는 경우 SnapCenter 업그레이드 중에 MySQL Server가 8.0.37 이상으로 업그레이드됩니다.</block>
   <block id="1dc4cb439c92e9e74deaa08a6206fd89" category="admonition">SnapCenter는 AWS ELB(Elastic Load Balancing) 및 Azure 로드 밸런싱도 지원합니다.</block>
   <block id="e9782ad9d0230912b51a2e508d0dd653" category="paragraph">자세한 내용은 을<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="953ceaee3fd51554dfa1935fc3bed9c7" category="admonition">SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다. 용량 기반 라이센스는 더 이상 Amazon FSx for NetApp ONTAP 및 Cloud Volumes ONTAP에 필요하지 않습니다.</block>
   <block id="c11dc4986aae3f449b65e2cc978cb5da" category="paragraph">하나 이상의 SnapCenter 라이센스를 설치해야 합니다. 라이센스를 추가하는 방법에 대한 자세한 내용은 을 <block ref="978050eb868e07441781781da059ebc5" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="b69cd8afc7ba47f5300e7eb1864b6e2f" category="admonition">SnapCenter 표준 컨트롤러 기반 라이센스를 사용하는 경우에만 평가판 라이센스를 수동으로 제거해야 합니다.</block>
   <block id="de07b96d6e0726ed58c0b7506fed6a37" category="paragraph">cmdlet에 대한 자세한 내용은 을<block ref="60f235ced4554b230bb7034fc116cf25" category="inline-link-rx"></block>참조하십시오.</block>
@@ -8953,7 +8951,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="list-title">다음 단계</block>
   <block id="eafc328b587e3beef3dbe108a3dedcf8" category="list-text">SELinux status_가 "enabled"이고 _current mode_가 "enforcing"이면 * nginx * 서비스가 시작되지 않습니다. 다음 명령을 실행해야 합니다.</block>
   <block id="9c7abc376e895129105e281972c9f24c" category="list-text">홈 디렉토리로 이동합니다.</block>
-  <block id="fffce54e1b9446cd2fa32f9d3350c088" category="list-text">다음 명령을 실행합니다<block ref="4a8e78821c4854328b05bdd52e9bee4b" prefix=" " category="inline-code"></block>.</block>
   <block id="dbc1e96eaa4b3649ea27aa8dc172aef0" category="list-text">WebApp 내부 포트(8147)가 수신 대기할 수 없는 경우 다음 명령을 실행합니다.</block>
   <block id="d8febff31d9105c404a858b1d61e0262" category="list-text"><block ref="d59b1175be1c68f2945ba0ad1856a015" prefix="" category="inline-code"></block></block>
   <block id="f1c7a9d24546d515c477f616b931f8fe" category="list-text"><block ref="d772e354c2fa82d230ec267576cbcac4" prefix="" category="inline-code"></block></block>
@@ -9875,4 +9872,8 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="57318c547ffe570761f4a3f4b7899d67" category="sidebar">PowerShell cmdlet을 사용하여 PostgreSQL을 복원합니다</block>
   <block id="480aaec5aa69b781016a62284565640a" category="sidebar">PostgreSQL 리소스 백업을 복제합니다</block>
   <block id="680c5ccf46f4a728694c590785dc9cda" category="sidebar">PostgreSQL 클러스터 백업의 클론을 생성합니다</block>
+  <block id="881cbdbe2345b7472ef428b8c524734a" category="admonition">SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다. 용량 기반 라이센스는 더 이상 Amazon FSx for NetApp ONTAP 및 Cloud Volumes ONTAP에 필요하지 않습니다. Azure NetApp Files에는 표준 라이센스와 용량 기반 라이센스가 필요하지 않습니다.</block>
+  <block id="eba5bfa2c0dc8d9f24998cf70fa891a6" category="list-text">해당 없음 은 스토리지 컨트롤러가 Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, ONTAP Select 또는 보조 스토리지 플랫폼에 있으므로 SnapManager 제품군 라이센스가 적용되지 않음을 나타냅니다.</block>
+  <block id="4e07c38c016a099592ed905ac7e037f7" category="list-text">다음 명령을 실행합니다<block ref="1031a5113d1c9ac03f4fa3db4c69d3a4" prefix=" " category="inline-code"></block>.</block>
+  <block id="a2706d1c365c79f6f2378228b67eb95a" category="admonition">Azure NetApp Files에는 표준 라이센스와 용량 기반 라이센스가 필요하지 않습니다.</block>
 </blocks>

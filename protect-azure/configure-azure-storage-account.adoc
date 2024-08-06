@@ -15,6 +15,9 @@ SnapCenter에서 Azure 저장소 계정을 구성해야 합니다.
 
 Azure 저장소 계정에는 구독 ID, Azure 자격 증명 및 Azure NetApp 계정에 대한 세부 정보가 포함되어 있습니다.
 
+
+NOTE: Azure NetApp Files에는 표준 라이센스와 용량 기반 라이센스가 필요하지 않습니다.
+
 .단계
 . 왼쪽 탐색 창에서 * 스토리지 시스템 * 을 클릭합니다.
 . 스토리지 시스템 페이지에서 * Azure NetApp Files * 를 선택하고 * New * 를 클릭합니다.
