@@ -176,7 +176,7 @@ No recovery * 를 선택합니다.
 
 NOTE: 마운트 경로의 경로와 컨텐츠를 외부 로그 위치로 나열하기 전에 확인해야 합니다.
 
-** http://www.netapp.com/us/media/tr-4591.pdf["NetApp 기술 보고서 4591: 데이터베이스 데이터 보호 백업, 복구, 복제 및 DR"^]
+** https://docs.netapp.com/us-en/ontap-apps-dbs/oracle/oracle-dp-overview.html["ONTAP을 사용한 Oracle 데이터 보호"^]
 ** https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/ORA-00308%3A_cannot_open_archived_log_ORA_LOG_arch1_123_456789012.arc["ORA-00308 오류로 인해 작업이 실패합니다"^]
 
 

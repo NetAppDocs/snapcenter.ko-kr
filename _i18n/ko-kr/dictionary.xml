@@ -5057,8 +5057,6 @@
   <block id="835be123689a0c878d2a9b458e5bf334" category="paragraph">데이터베이스가 ARCHIVELOG 모드에서 실행 중인 경우 SnapCenter는 지정된 SCN, 선택한 날짜 및 시간 또는 모든 로그 옵션을 기반으로 최적의 로그 백업 수를 식별하고 마운트합니다.</block>
   <block id="f99510060ae91e89fdabd39c0e222578" category="paragraph">외부 아카이브 로그 파일의 위치를 계속 지정하려면 * 외부 아카이브 로그 위치 지정 * 을 선택합니다.</block>
   <block id="5207ebbbc32a1a4bd295b43498ad0913" category="paragraph">아카이브 로그가 백업의 일부로 정리되고 필요한 아카이브 로그 백업을 수동으로 마운트한 경우 마운트된 백업 경로를 복구를 위한 외부 아카이브 로그 위치로 지정해야 합니다.</block>
-  <block id="58fa648380c73e758318652a30ff424d" category="inline-link">NetApp 기술 보고서 4591: 데이터베이스 데이터 보호 백업, 복구, 복제 및 DR</block>
-  <block id="5e8af025f634ab1bdb43a04eac96f1c3" category="list-text"><block ref="5e8af025f634ab1bdb43a04eac96f1c3" category="inline-link-rx"></block></block>
   <block id="d4242c48bd0d5641374fbc107c7d9f14" category="inline-link">ORA-00308 오류로 인해 작업이 실패합니다</block>
   <block id="79ca58af823b457a1798d606cfd6d6ae" category="list-text"><block ref="79ca58af823b457a1798d606cfd6d6ae" category="inline-link-rx"></block></block>
   <block id="73ee3801ba5f54ed62d44865741a046d" category="paragraph">아카이브 로그 볼륨이 보호되지 않지만 데이터 볼륨이 보호되는 경우 보조 백업에서 복구하여 복구를 수행할 수 없습니다. 복구 없음 * 을 선택하여 복원할 수 있습니다.</block>
@@ -9876,4 +9874,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="eba5bfa2c0dc8d9f24998cf70fa891a6" category="list-text">해당 없음 은 스토리지 컨트롤러가 Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP, ONTAP Select 또는 보조 스토리지 플랫폼에 있으므로 SnapManager 제품군 라이센스가 적용되지 않음을 나타냅니다.</block>
   <block id="4e07c38c016a099592ed905ac7e037f7" category="list-text">다음 명령을 실행합니다<block ref="1031a5113d1c9ac03f4fa3db4c69d3a4" prefix=" " category="inline-code"></block>.</block>
   <block id="a2706d1c365c79f6f2378228b67eb95a" category="admonition">Azure NetApp Files에는 표준 라이센스와 용량 기반 라이센스가 필요하지 않습니다.</block>
+  <block id="9e19caeb431a5e29a1a63e3cee4b36c9" category="inline-link">ONTAP을 사용한 Oracle 데이터 보호</block>
+  <block id="d118010bb2b3542007c6749bfd237123" category="list-text"><block ref="d118010bb2b3542007c6749bfd237123" category="inline-link-rx"></block></block>
 </blocks>
