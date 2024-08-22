@@ -26,7 +26,7 @@ NetApp ONTAP용 Amazon FSx에 대한 자세한 내용은 를 참조하십시오 
 
 * SnapCenter는 다양한 애플리케이션 및 데이터베이스의 보호를 지원합니다.
 +
-지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=116859;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
+지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^].
 
 * SnapCenter 4.9 P1 이상은 AWS(Amazon Web Services) 기반 VMware Cloud 환경에서 Oracle 및 Microsoft SQL 워크로드 보호를 지원합니다.
 +

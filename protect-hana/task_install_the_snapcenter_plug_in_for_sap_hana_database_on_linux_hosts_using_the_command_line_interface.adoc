@@ -20,7 +20,7 @@ SnapCenter UI(사용자 인터페이스)를 사용하여 SAP HANA 데이터베�
 상호 운용성 매트릭스 툴(IMT): 지원되는 구성에 대한 최신 정보를 제공합니다.
 
 +
-https://imt.netapp.com/matrix/imt.jsp?components=117015;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
+https://imt.netapp.com/matrix/imt.jsp?components=121029;&solution=1259&isHWU&src=IMT[]
 
 * SAP HANA 데이터베이스용 SnapCenter 플러그인은 Linux용 SnapCenter 플러그인 패키지의 일부입니다. Linux용 SnapCenter 플러그인 패키지를 설치하기 전에 Windows 호스트에 SnapCenter가 이미 설치되어 있어야 합니다.
 
