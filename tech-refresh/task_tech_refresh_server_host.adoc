@@ -20,7 +20,7 @@ SnapCenter 서버 호스트를 새로 고쳐야 하는 경우 새 호스트에 �
 
 
 . SnapCenter 관리자로 로그인합니다.
-. 다음 API 중 하나를 사용하여 이전 호스트에서 SnapCenter 서버의 백업을 생성합니다. `/5.0/server/backup` 또는 cmdlet:_New-SmServerBackup_.
+. API: 또는 cmdlet:_New-SmServerBackup _ 을(를) 사용하여 이전 호스트에서 SnapCenter 서버의 백업을 만듭니다 `/<snapcenter_version>/server/backup` .
 +
 
 NOTE: 백업을 수행하기 전에 예약된 모든 작업을 일시 중지하고 실행 중인 작업이 없는지 확인합니다.
@@ -30,9 +30,9 @@ NOTE: 백업을 수행하기 전에 예약된 모든 작업을 일시 중지하�
 IMPORTANT: 새 도메인에서 실행 중인 SnapCenter 서버에서 백업을 복구하려면 백업을 수행하기 전에 이전 SnapCenter 호스트에 새 도메인 사용자를 추가하고 SnapCenter 관리자 역할을 할당해야 합니다.
 
 . 이전 호스트에서 새 호스트로 백업을 복제합니다.
-. 다음 API 중 하나를 사용하여 새 호스트에서 SnapCenter 서버의 백업을 복구합니다. `/5.0/server/restore` 또는 cmdlet:_Restore-SmServerBackup_.
+. API: 또는 cmdlet:_Restore-SmServerBackup _ 을(를) 사용하여 새 호스트에서 SnapCenter 서버의 백업을 `/<snapcenter_version>/server/restore` 복원합니다.
 +
-복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API를 사용하여 서버 URL을 별도로 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API: 또는 cmdlet:_Set-SmServerConfig_를 사용하여 서버 URL을 별도로 업데이트하십시오 `/<snapcenter_version>/server/configureurl` .
 
 +
 
@@ -49,7 +49,7 @@ NOTE: server_etc/host_entries가 복구되지 않습니다. 이전 서버에서 
 
 NOTE: 이전 SnapCenter 호스트에서 web.config 파일을 수동으로 업데이트한 경우에는 업데이트가 새 호스트로 복사되지 않습니다. 새 호스트의 web.config 파일에 동일한 변경 사항을 수동으로 적용해야 합니다.
 
-. 복구 프로세스 중에 SnapCenter 서버 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+. 복원 프로세스 중에 SnapCenter 서버 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API: 또는 cmdlet:_Set-SmServerConfig_ 를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트하십시오 `/<snapcenter_version>/server/configureurl` .
 . 새 SnapCenter 서버의 모든 호스트에서 예약된 작업을 활성화합니다.
 
 
@@ -62,7 +62,7 @@ NOTE: 이전 SnapCenter 호스트에서 web.config 파일을 수동으로 업데
 F5 클러스터에 노드를 추가하는 방법에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html["F5를 사용하여 고가용성을 위해 SnapCenter 서버를 구성합니다"].
 
 
-NOTE: F5 클러스터의 URL이 변경되면 API를 사용하여 모든 호스트에서 URL을 업데이트할 수 있습니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+NOTE: F5 클러스터의 URL이 변경되면 API: 또는 cmdlet:_Set-SmServerConfig_를 사용하여 모든 호스트에서 URL을 업데이트할 수 `/<snapcenter_version>/server/configureurl` 있습니다.
 
 
 
@@ -74,7 +74,7 @@ NOTE: F5 클러스터의 URL이 변경되면 API를 사용하여 모든 호스�
 
 == 이전 SnapCenter 서버 호스트로 롤백합니다
 
-문제가 발생할 경우 API를 사용하여 모든 호스트에서 SnapCenter 서버 URL을 업데이트하여 이전 SnapCenter 서버 호스트를 되돌릴 수 있습니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+문제가 발생할 경우 API: 또는 cmdlet:_Set-SmServerConfig_를 사용하여 모든 호스트에서 SnapCenter 서버 URL을 업데이트하여 이전 SnapCenter 서버 호스트를 되돌릴 수 `/<snapcenter_version>/server/configureurl` 있습니다.
 
 
 
@@ -98,9 +98,9 @@ NOTE: F5 클러스터의 URL이 변경되면 API를 사용하여 모든 호스�
 
 . 이전 SnapCenter 서버 백업을 새 호스트에 복제합니다.
 . SnapCenter 관리자로 로그인합니다.
-. 다음 API 중 하나를 사용하여 새 호스트에서 SnapCenter 서버의 백업을 복구합니다. `/5.0/server/restore` 또는 cmdlet:_Restore-SmServerBackup_.
+. API: 또는 cmdlet:_Restore-SmServerBackup _ 을(를) 사용하여 새 호스트에서 SnapCenter 서버의 백업을 `/<snapcenter_version>/server/restore` 복원합니다.
 +
-복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API를 사용하여 서버 URL을 별도로 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API: 또는 cmdlet:_Set-ServerSmConfig_를 사용하여 서버 URL을 별도로 업데이트하십시오 `/<snapcenter_version>/server/configureurl` .
 
 +
 
@@ -110,7 +110,7 @@ NOTE: 플러그인 호스트가 서버 호스트 이름을 확인할 수 없는 
 
 NOTE: server_etc/host_entries가 복구되지 않습니다. 이전 서버에서 수동으로 복원할 수 있습니다.
 
-. 복구 프로세스 중에 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+. 복원 프로세스 중에 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API: 또는 cmdlet:_Set-SmServerConfig_를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트하십시오 `/<snapcenter_version>/server/configureurl` .
 
 
 
@@ -131,9 +131,9 @@ NOTE: server_etc/host_entries가 복구되지 않습니다. 이전 서버에서 
 
 . 이전 SnapCenter 서버 백업을 새 호스트에 복제합니다.
 . SnapCenter 관리자로 로그인합니다.
-. 다음 API 중 하나를 사용하여 새 호스트에서 SnapCenter 서버의 백업을 복구합니다. `/5.0/server/restore` 또는 cmdlet:_Restore-SmServerBackup_.
+. API: 또는 cmdlet:_Restore-SmServerBackup _ 을(를) 사용하여 새 호스트에서 SnapCenter 서버의 백업을 `/<snapcenter_version>/server/restore` 복원합니다.
 +
-복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API를 사용하여 서버 URL을 별도로 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+복원은 기본적으로 모든 호스트의 새 SnapCenter 서버 URL을 업데이트합니다. 업데이트를 건너뛰려면 _-SkipSMSURLInHosts_attribute를 사용하고 API: 또는 cmdlet:_Set-ServerSmConfig_를 사용하여 서버 URL을 별도로 업데이트하십시오 `/<snapcenter_version>/server/configureurl` .
 
 +
 
@@ -143,7 +143,7 @@ NOTE: 플러그인 호스트가 서버 호스트 이름을 확인할 수 없는 
 
 NOTE: server_etc/host_entries가 복구되지 않습니다. 이전 서버에서 수동으로 복원할 수 있습니다.
 
-. 복구 프로세스 중에 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트합니다. `/5.0/server/configureurl` 또는 cmdlet:_Set-SmServerConfig_.
+. 복원 프로세스 중에 URL 업데이트를 건너뛰었거나 호스트가 다운된 경우 API: 또는 cmdlet:_Set-SmServerConfig_를 사용하여 SnapCenter에서 관리하는 모든 호스트 또는 지정된 호스트에서 새 서버 이름을 업데이트하십시오 `/<snapcenter_version>/server/configureurl` .
 . 독립 실행형 호스트를 F5 클러스터로 변환합니다.
 +
 F5 구성 방법에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html["F5를 사용하여 고가용성을 위해 SnapCenter 서버를 구성합니다"].
