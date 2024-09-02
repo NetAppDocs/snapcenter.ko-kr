@@ -13,7 +13,7 @@ summary: SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양�
 [role="lead"]
 SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. 호스트에 대한 패키지를 설치하기 전에 스토리지 유형에 대한 지원이 가능한지 확인해야 합니다.
 
-SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT[]정보는 [NetApp 상호 운용성 매트릭스 도구] 를 참조하십시오.
+SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 를 https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^]참조하십시오.
 
 |===
 | 기계 | 스토리지 유형입니다 | 를 사용하여 프로비저닝 | 지원 노트 
@@ -47,8 +47,6 @@ SnapCenter GUI 또는 PowerShell cmdlet
 SnapCenter GUI 또는 PowerShell cmdlet
  a| 
 프로비저닝만 지원합니다.
-
-SnapCenter를 사용하여 SMB 프로토콜을 사용하는 데이터 또는 공유를 백업할 수 없습니다.
 
 
 
@@ -90,8 +88,6 @@ SVM에 상주하는 SMB3 공유에 연결된 게스트 시스템입니다
 SnapCenter GUI 또는 PowerShell cmdlet
  a| 
 프로비저닝만 지원합니다.
-
-SnapCenter를 사용하여 SMB 프로토콜을 사용하는 데이터 또는 공유를 백업할 수 없습니다.
 
 
 
@@ -139,8 +135,6 @@ SVM에 상주하는 SMB3 공유에 연결된 게스트 시스템입니다
 SnapCenter GUI 또는 PowerShell cmdlet
  a| 
 프로비저닝만 지원합니다.
-
-SnapCenter를 사용하여 SMB 프로토콜을 사용하는 데이터 또는 공유를 백업할 수 없습니다.
 
 
 NOTE: NetApp 스토리지에 프로비저닝된 Hyper-V는 디스크를 통과하고 VHD(x)에서 데이터베이스를 백업하는 것은 지원되지 않습니다.

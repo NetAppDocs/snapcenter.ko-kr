@@ -2026,9 +2026,6 @@
   <block id="42c3a197506df634d37106aa12e94817" category="paragraph">다음 예제에서는 my.ini 파일의 [client] 섹션에서 업데이트된 경로를 보여 줍니다.</block>
   <block id="7bbf719310f30342c522d3414da61277" category="list-text">인터넷 정보 서버(IIS)에서 SnapCenter 서버 웹 응용 프로그램을 중지합니다.</block>
   <block id="b93c543a0f96a9413f8f7281e2b85709" category="list-text">MySQL 서비스를 다시 시작합니다.</block>
-  <block id="20990864d085d9bb1f322b2df271bdec" category="list-text">web.config 파일에서 MySQLProtocol 키 값을 업데이트합니다.</block>
-  <block id="4828d55a2fe6e484512c9947b0fd06ef" category="paragraph">다음 예제에서는 web.config 파일에서 업데이트된 MySQLProtocol 키의 값을 보여 줍니다.</block>
-  <block id="67882348f76a80bca6ec205f6d47a382" category="list-text">my.ini 파일의 [client] 섹션에 제공된 경로로 web.config 파일을 업데이트합니다.</block>
   <block id="6217c9a70228dfb942cee33273650127" category="list-text">IIS에서 SnapCenter 서버 웹 응용 프로그램을 시작합니다.</block>
   <block id="7f2254a19dcb8d48356527ff8514efab" category="section-title">HA 구성을 위한 보안 MySQL 연결을 구성합니다</block>
   <block id="887dc7045f93986f64fbe50a55983beb" category="paragraph">SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려면 고가용성(HA) 노드 모두에 대해 SSL(Secure Sockets Layer) 인증서와 키 파일을 생성할 수 있습니다. MySQL 서버 및 HA 노드에서 인증서와 키 파일을 구성해야 합니다.</block>
@@ -2048,9 +2045,6 @@
   <block id="89093a295da7b5b9812cf7cccb724876" category="paragraph">서버 인증서의 일반 이름으로 서버 FQDN을 사용하는 것이 좋습니다.</block>
   <block id="4f3f310802411b7b71c042c2d0a84b55" category="list-text">두 HA 노드의 IIS(인터넷 정보 서버)에서 SnapCenter 서버 웹 응용 프로그램을 중지합니다.</block>
   <block id="ceac3af00f29021cbec639a39d8bf71f" category="list-text">두 HA 노드에서 MySQL 서비스를 다시 시작합니다.</block>
-  <block id="dc4e66eba3a59e87b1bbedb41d37736c" category="list-text">두 HA 노드에 대해 web.config 파일에서 MySQLProtocol 키의 값을 업데이트합니다.</block>
-  <block id="bc8fe1879d43dbf3a3bb5cbbeedf0de0" category="paragraph">다음 예제에서는 web.config 파일에서 업데이트된 MySQLProtocol 키 값을 보여 줍니다.</block>
-  <block id="7e5a31df8ef045a4de9b8f57aa6c423f" category="list-text">두 HA 노드에 대해 my.ini 파일의 [client] 섹션에 지정한 경로로 web.config 파일을 업데이트합니다.</block>
   <block id="ca74309e5786b1bad64702fbd15c6437" category="paragraph">다음 예제에서는 my.ini 파일의 [client] 섹션에서 업데이트된 경로를 보여 줍니다.</block>
   <block id="3c3e0111222e44f64ad4670abe8d6923" category="list-text">두 HA 노드의 IIS에서 SnapCenter 서버 웹 응용 프로그램을 시작합니다.</block>
   <block id="38c6db21335904565d9a647706a7ba00" category="list-text">HA 노드 중 하나에서 -Force 옵션과 함께 Set-SmrepositoryConfig-RebuildSlave-Force PowerShell cmdlet을 사용하여 두 HA 노드 모두에 안전한 MySQL 복제를 설정합니다.</block>
@@ -2925,7 +2919,6 @@
   <block id="14325c3b3bc84c32c71da1616c8c5fe7" category="paragraph">설치 제거하려면 _/custom_location/NetApp/snapcenter/SPL/installation/plugins/uninstall_을 실행합니다.</block>
   <block id="0b0c2887a236e9135995566b39c6a69e" category="paragraph">스토리지 가상 시스템(SVM)에 상주하는 SMB3(CIFS) 공유</block>
   <block id="ac8951fb8900c75e1b47b9440e783d24" category="paragraph">프로비저닝만 지원합니다.</block>
-  <block id="23fb16c1c9b83befc8a21b31b0a433d2" category="paragraph">SnapCenter를 사용하여 SMB 프로토콜을 사용하는 데이터 또는 공유를 백업할 수 없습니다.</block>
   <block id="bc52382a2b038e05ecba07a8b5754946" category="paragraph">VMFS(Virtual Machine File Systems) 또는 NFS 데이터 저장소</block>
   <block id="8887a9a417a1629326acdb917d224337" category="paragraph">VMware vSphere를 참조하십시오</block>
   <block id="414ff662e83e18f999457703c274be4b" category="paragraph">SVM에 상주하는 SMB3 공유에 연결된 게스트 시스템입니다</block>
@@ -9845,7 +9838,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="26d0f7d5ea2b87e82f98d6e622ecf6a0" category="admonition">5.0부터는 SVM admin 사용자만 REST API를 사용할 수 있습니다. 가상 서버 관리자가 아닌 다른 관리자를 사용하여 역할을 생성하려면 ZAPI를 사용해야 합니다.</block>
   <block id="3955db71dd681bf23ceee85c567a0129" category="admonition">SnapCenter 5.0에서는 클러스터 관리자가 REST API를 사용하는 경우에만 지원됩니다. 비 클러스터 관리자를 사용하여 역할을 생성하려면 ZAPI를 사용해야 합니다.</block>
   <block id="3fd57bbce38ee807b2553fd56f562c3a" category="paragraph">지원되는 버전에 대한 최신 정보는 를<block ref="734369dbdcbe00444fc7be843d617a6c" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="785127eaa67d3c056c9086f5c305587c" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 <block ref="e3393440e41cc60e26745e63c4eef2dd" category="inline-link-rx"></block>정보는 [NetApp 상호 운용성 매트릭스 도구] 를 참조하십시오.</block>
   <block id="e688fd8ff964975e518ba6e9fff48630" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>.</block>
   <block id="580a1e1b3bc67640f27785bacfdba10c" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오 <block ref="fd691abce396db29ca9081f79eea36a4" category="inline-link-rx"></block>.</block>
   <block id="f773b518874c315e0079bcc43b41dafb" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오 <block ref="7e664c06fb213184870ee71fe5278749" category="inline-link-rx"></block>.</block>
@@ -9884,4 +9876,11 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="cc0cce77e1e28838ab6e9078eb7da114" category="list-text">저장소 세부 정보를 확인한 후 _IsDryRun_attribute를 False로 설정하고 저장소 새로 고침 API:<block ref="84d2bad3561662612c0f19102d8af171" prefix=" " category="inline-code"></block> 또는 cmdlet:_Invoke-SmTechRefreshPrimaryStorage _ 를 실행합니다.</block>
   <block id="c81b0a7466aafc83de0beda501358cdd" category="list-text">(선택 사항) 모든 스냅샷이 이전 운영 스토리지에서 새 운영 스토리지로 이동되지 않으면 다음 API를<block ref="6e088a1a2676abbb3b6434c32a05fa0c" prefix=" " category="inline-code"></block> 실행하거나 Cmdlet_Invoke-SmPrimaryBackupsExistenceCheck _ 를 실행하십시오.</block>
   <block id="da838fd656a52206a5571426cdea502d" category="list-text">호스트에 있는 모든 리소스의 백업을 성공적으로 생성한 후 보조 스토리지 새로 고침 API:<block ref="519c39228e07d21e137e72515657a3cf" prefix=" " category="inline-code"></block> 또는 cmdlet:_Invoke-SmTechRefreshSecondaryStorage _ 를 실행합니다.</block>
+  <block id="4f76be6e3e78147f069df76d367c9608" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 를 <block ref="1b8aeeaa3467913188c00052ded68716" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="e41c493e675bae82cb792b14a41ea23d" category="list-text">SnapManager.Web.UI.dll.config 파일에서 MySQLProtocol 키 값을 업데이트합니다.</block>
+  <block id="195748e3bf5f1bb6db5e627914555154" category="paragraph">다음 예제에서는 SnapManager.Web.UI.dll.config 파일에서 업데이트된 MySQLProtocol 키의 값을 보여 줍니다.</block>
+  <block id="fc8660e632799d14ef937c4ca79726ab" category="list-text">SnapManager.Web.UI.dll.config 파일을 my.ini 파일의 [client] 섹션에 제공된 경로로 업데이트합니다.</block>
+  <block id="0512eab1623a615d3740da31907b5d7c" category="list-text">두 HA 노드에 대해 SnapManager.Web.UI.dll.config 파일에서 MySQLProtocol 키 값을 업데이트합니다.</block>
+  <block id="e20a4407f4a132523f0ff53a11de8ea9" category="paragraph">다음 예제에서는 SnapManager.Web.UI.dll.config 파일에서 업데이트된 MySQLProtocol 키의 값을 보여 줍니다.</block>
+  <block id="282f609628cc0aa1febc1031254fda4e" category="list-text">SnapManager.Web.UI.dll.config 파일을 두 HA 노드에 대해 my.ini 파일의 [client] 섹션에서 지정한 경로로 업데이트합니다.</block>
 </blocks>
