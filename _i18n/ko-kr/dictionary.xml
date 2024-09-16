@@ -2639,12 +2639,6 @@
   <block id="a6e94fec2cfcadd0e75ac025786feb7f" category="list-text">*<block ref="ce7f8fe6cf825357e942960470acb5bc" category="inline-image-macro-rx" type="image"></block>* 는 활성화된 CA 인증서가 없거나 플러그인 호스트에 할당되어 있지 않음을 나타냅니다.</block>
   <block id="14c90652b0a2e523d6e8630706107e75" category="summary">SnapCenter 소프트웨어는 여러 브라우저에서 사용할 수 있습니다.</block>
   <block id="6d84e3718084e0db779da4ff8791a2f2" category="doc">지원되는 브라우저</block>
-  <block id="ebe4f447bd3316e4f81ab2a6d2f26810" category="list-text">Internet Explorer 를 참조하십시오</block>
-  <block id="74e84f9442fdb7717385ee092400869a" category="paragraph">IE 10 또는 이전 버전을 사용하는 경우 SnapCenter UI가 제대로 로드되지 않습니다. IE 11로 업그레이드해야 합니다.</block>
-  <block id="8b45fc0c82a493bebd2ae705881299e0" category="list-text">기본 수준 보안만 지원됩니다.</block>
-  <block id="8c39fdaac8e8c7ec5824fd1acda14c9a" category="paragraph">Internet Explorer 보안 설정을 변경하면 상당한 브라우저 표시 문제가 발생합니다.</block>
-  <block id="c5c74f2a0046f37ca93f6d8e3c775364" category="list-text">Internet Explorer 호환성 보기를 비활성화해야 합니다.</block>
-  <block id="a5c41f715c1b8a880253846c025624e9" category="list-text">Microsoft Edge를 참조하십시오</block>
   <block id="dc21700cbaa8624c2d6a070d54c558d6" category="summary">이니시에이터 그룹(igroup)을 생성하여 스토리지 시스템에서 특정 LUN에 액세스할 수 있는 호스트를 지정합니다. SnapCenter를 사용하여 Windows 호스트에서 igroup을 생성, 이름 바꾸기, 수정 또는 삭제할 수 있습니다.</block>
   <block id="9d8cd3d6c4d32d67237a696ecf4924be" category="doc">Igroup 생성 및 관리</block>
   <block id="d8ad6fc6096c88d41f98b91f0043eebe" category="section-title">igroup 작성</block>
@@ -7459,7 +7453,6 @@
   <block id="46d55a8aefdec15a8ce44087c8123826" category="inline-link">LUN에 대한 디바이스를 검색할 수 없어 작업이 실패합니다</block>
   <block id="24642a08e354f43168ca4f1178850f84" category="list-text">혼합 프로토콜 iSCSI 및 FC로 구성된 iGroup을 사용하여 LUN이 AIX 호스트에 매핑되지 않았는지 확인해야 합니다. 자세한 내용은 을 참조하십시오<block ref="94f247529a6b6f563b3a8d4772877431" category="inline-link-rx"></block>.</block>
   <block id="4fb437564892944d73f87c822342e2bb" category="cell">4.8</block>
-  <block id="028a3c414b2f36abce9baa1df750ef89" category="admonition">CA 인증서 RSA 키 길이는 최소 3072비트여야 합니다.</block>
   <block id="36fecb1daf18c8eeaacbcc8cdc70f4a6" category="paragraph">ONTAP Primary 및 Secondary는 ONTAP FAS, AFF, ASA(All SAN Array), Select 또는 Cloud ONTAP가 될 수 있습니다.</block>
   <block id="d21fbb2a5ce79a2a4ef0780b73023b2e" category="paragraph">VM 호스트의 물리적 마운트 및 NFS 직접 마운트(VMDK 및 RDM LUN은 지원되지 않음)</block>
   <block id="f2688d5a483bee7fcbd80a4e666fc088" category="inline-link">호스트 유틸리티 설명서</block>
@@ -8924,7 +8917,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="cf46417d06a0356fc053eba2626759a2" category="list-text">청구 공급자를 선택합니다.</block>
   <block id="98d7dda5167a79acadd993f0ad819512" category="list-text">20자리 SnapCenter 인스턴스 ID를 입력하십시오.</block>
   <block id="a22e3c4898555ed30acf91192f3c301a" category="paragraph">스케줄러 서비스 포트</block>
-  <block id="f494773247b901f17fbe90691d43594a" category="paragraph">8154(HTTPS),</block>
   <block id="0703d446ecd330b75f76dab17472df37" category="paragraph">이 포트는 SnapCenter 서버 호스트 내의 모든 관리형 플러그인에 대한 SnapCenter 스케줄러 워크플로우를 중앙 집중식으로 조정하는 데 사용됩니다.</block>
   <block id="e029a63ec5a2d5331a40bbf8a483cc16" category="paragraph">3306(HTTPS), 양방향, 사용자 지정 가능</block>
   <block id="10dbf6dc6b3b30fd58efded1253516d8" category="paragraph">Exchange 데이터베이스용 SnapCenter 플러그인</block>
@@ -9883,4 +9875,10 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="0512eab1623a615d3740da31907b5d7c" category="list-text">두 HA 노드에 대해 SnapManager.Web.UI.dll.config 파일에서 MySQLProtocol 키 값을 업데이트합니다.</block>
   <block id="e20a4407f4a132523f0ff53a11de8ea9" category="paragraph">다음 예제에서는 SnapManager.Web.UI.dll.config 파일에서 업데이트된 MySQLProtocol 키의 값을 보여 줍니다.</block>
   <block id="282f609628cc0aa1febc1031254fda4e" category="list-text">SnapManager.Web.UI.dll.config 파일을 두 HA 노드에 대해 my.ini 파일의 [client] 섹션에서 지정한 경로로 업데이트합니다.</block>
+  <block id="be9f9eca92a7b91f5cf9f485b92f2f33" category="admonition">CA 인증서 RSA 키 길이는 최소 3072비트여야 합니다.</block>
+  <block id="76f30afe00c2fd9de2c57b507789aa7c" category="paragraph">8154(HTTPS)</block>
+  <block id="064270f4c1b637c782011391ccc057cb" category="paragraph">RabbitMQ 포트</block>
+  <block id="310b8da14055c2cf4702264e02854d3d" category="paragraph">5672(TCP)</block>
+  <block id="c55a170d16570920e099a9e43d38db67" category="paragraph">RabbitMQ가 수신 대기하는 기본 포트이며 스케줄러 서비스와 SnapCenter 간의 게시자-가입자 모델 통신에 사용됩니다.</block>
+  <block id="f5a551e6a3161ca6d9ee33d926d734d5" category="list-text">Microsoft Edge 110.0.1587.17 이상</block>
 </blocks>
