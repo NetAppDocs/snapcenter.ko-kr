@@ -26,6 +26,10 @@ summary: 데이터베이스가 리소스 그룹에 속하지 않은 경우 리�
 |===
 
 
+[role="tabbed-block"]
+====
+.SnapCenter UI
+--
 .단계
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 * Microsoft Exchange Server 플러그인 * 을 선택합니다.
 . 리소스 페이지의 * 보기 * 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 을 선택합니다.
@@ -115,3 +119,105 @@ Java 힙 크기를 늘리려면 스크립트 파일 _/opt/netapp/init_scripts/sc
 
 
 
+
+--
+.PowerShell cmdlet
+--
+.단계
+. Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
++
+[listing]
+----
+Open-smconnection  -SMSbaseurl  https://snapctr.demo.netapp.com:8146/
+----
++
+사용자 이름 및 암호 프롬프트가 표시됩니다.
+
+. Add-SmPolicy cmdlet을 사용하여 백업 정책을 만듭니다.
++
+이 예에서는 전체 백업 및 로그 백업을 사용하여 새 백업 정책을 생성합니다. Exchange 백업 유형:
+
++
+[listing]
+----
+C:\PS> Add-SmPolicy -PolicyName SCE_w2k12_Full_Log_bkp_Policy -PolicyType Backup -PluginPolicytype SCE -SceBackupType FullBackupAndLogBackup -BackupActiveCopies
+----
++
+이 예에서는 시간별 전체 백업 및 로그 백업을 사용하여 새 백업 정책을 생성합니다. Exchange 백업 유형:
+
++
+[listing]
+----
+C:\PS> Add-SmPolicy -PolicyName SCE_w2k12_Hourly_Full_Log_bkp_Policy -PolicyType Backup -PluginPolicytype SCE -SceBackupType FullBackupAndLogBackup -BackupActiveCopies -ScheduleType Hourly -RetentionSettings @{'BackupType'='DATA';'ScheduleType'='Hourly';'RetentionCount'='10'}
+----
++
+이 예에서는 Exchange 로그만 백업하기 위한 새 백업 정책을 생성합니다.
+
++
+[listing]
+----
+Add-SmPolicy -PolicyName SCE_w2k12_Log_bkp_Policy -PolicyType Backup -PluginPolicytype SCE -SceBackupType LogBackup -BackupActiveCopies
+----
+. Get-SmResources cmdlet을 사용하여 호스트 리소스를 검색합니다.
++
+이 예제에서는 지정된 호스트에서 Microsoft Exchange Server 플러그인에 대한 리소스를 검색합니다.
+
++
+[listing]
+----
+C:\PS> Get-SmResources -HostName vise-f6.sddev.mycompany.com -PluginCode SCE
+----
+. 추가 SmResourceGroup cmdlet을 사용하여 SnapCenter에 새 리소스 그룹을 추가합니다.
++
+이 예에서는 지정된 정책 및 리소스를 사용하여 새 Exchange Server 데이터베이스 백업 리소스 그룹을 생성합니다.
+
++
+[listing]
+----
+C:\PS> Add-SmResourceGroup -ResourceGroupName SCE_w2k12_bkp_RG -Description 'Backup ResourceGroup with Full and Log backup policy' -PluginCode SCE -Policies SCE_w2k12_Full_bkp_Policy,SCE_w2k12_Full_Log_bkp_Policy,SCE_w2k12_Log_bkp_Policy -Resources @{'Host'='sce-w2k12-exch';'Type'='Exchange Database';'Names'='sce-w2k12-exch.sceqa.com\sce-w2k12-exch_DB_1,sce-w2k12-exch.sceqa.com\sce-w2k12-exch_DB_2'}
+----
++
+이 예에서는 지정된 정책 및 리소스를 사용하여 새 Exchange DAG(Database Availability Group) 백업 리소스 그룹을 생성합니다.
+
++
+[listing]
+----
+Add-SmResourceGroup -ResourceGroupName SCE_w2k12_bkp_RG -Description 'Backup ResourceGroup with Full and Log backup policy' -PluginCode SCE -Policies SCE_w2k12_Full_bkp_Policy,SCE_w2k12_Full_Log_bkp_Policy,SCE_w2k12_Log_bkp_Policy -Resources @{"Host"="DAGSCE0102";"Type"="Database Availability Group";"Names"="DAGSCE0102"}
+----
+. New-SmBackup cmdlet을 사용하여 새 백업 작업을 시작합니다.
++
+[listing]
+----
+C:\PS> New-SmBackup -ResourceGroupName SCE_w2k12_bkp_RG -Policy SCE_w2k12_Full_Log_bkp_Policy
+----
++
+이 예에서는 보조 스토리지에 새 백업을 생성합니다.
+
++
+[listing]
+----
+New-SMBackup -DatasetName ResourceGroup1 -Policy Secondary_Backup_Policy4
+----
+. Get-SmBackupReport cmdlet을 사용하여 백업 작업의 상태를 봅니다.
++
+이 예는 지정된 날짜에 실행된 모든 작업의 작업 요약 보고서를 표시합니다.
+
++
+[listing]
+----
+C:\PS> Get-SmJobSummaryReport -Date ?1/27/2018?
+----
++
+이 예는 특정 작업 ID에 대한 작업 요약 보고서를 표시합니다.
+
++
+[listing]
+----
+C:\PS> Get-SmJobSummaryReport -JobId 168
+----
+
+
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 소프트웨어 Cmdlet 참조 가이드 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.htmlnapCenter[] .
+
+--
+====

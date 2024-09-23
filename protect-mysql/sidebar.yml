@@ -106,8 +106,6 @@ entries:
     url: "/protect-mysql/back-up-resource-groups-mysql.html"
   - title: MySQL용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결 및 자격 증명을 생성합니다
     url: "/protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html"
-  - title: PowerShell cmdlet을 사용하여 데이터베이스를 백업합니다
-    url: "/protect-mysql/back-up-databases-using-powershell-cmdlets-mysql.html"
   - title: 백업 작업을 모니터링합니다
     entries:
     - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
@@ -126,8 +124,6 @@ entries:
     url: "/protect-mysql/restore-and-recover-a-manually-added-resource-backup.html"
   - title: 자동 검색된 데이터베이스 백업을 복원 및 복구합니다
     url: "/protect-mysql/restore-and-recover-an-auto-discovered-database-backup.html"
-  - title: PowerShell cmdlet을 사용하여 MySQL을 복원합니다
-    url: "/protect-mysql/restore-mysql-using-powershell-cmdlets.html"
   - title: PowerShell cmdlet을 사용하여 리소스 복원
     url: "/protect-mysql/restore-and-recover-resources-using-powershell-cmdlets-mysql.html"
   - title: 복구 작업을 모니터링합니다
@@ -138,8 +134,6 @@ entries:
     url: "/protect-mysql/clone-mysql-resource-backups.html"
   - title: MySQL 데이터베이스 백업의 클론을 생성합니다
     url: "/protect-mysql/clone-mysql-backup.html"
-  - title: PowerShell cmdlet을 사용하여 MySQL 데이터베이스 백업의 클론을 생성합니다
-    url: "/protect-mysql/clone-mysql-backups-using-powershell-cmdlets.html"
   - title: SnapCenter에서 클론 작업을 모니터링합니다
     url: "/protect-mysql/monitor-mysql-clone-operations.html"
   - title: 클론 분할

@@ -118,8 +118,6 @@ entries:
     url: "/protect-hana/task_back_up_resource_groups_sap_hana.html"
   - title: SAP HANA 데이터베이스용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
     url: "/protect-hana/task_create_a_storage_system_connection_and_a_run_as_account_using_powershell_cmdlets_for_sap_hana_database.html"
-  - title: PowerShell cmdlet을 사용하여 데이터베이스를 백업합니다
-    url: "/protect-hana/task_back_up_databases_using_powershell_cmdlets_sap_hana.html"
   - title: 백업 작업을 모니터링합니다
     entries:
     - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
@@ -138,8 +136,6 @@ entries:
     url: "/protect-hana/task_restore_and_recover_a_manually_added_resource_backup.html"
   - title: 자동 검색된 데이터베이스 백업을 복원 및 복구합니다
     url: "/protect-hana/task_restore_and_recover_an_auto_discovered_database_backup.html"
-  - title: PowerShell cmdlet을 사용하여 SAP HANA 데이터베이스를 복원합니다
-    url: "/protect-hana/task_restore_sap_hana_database_using_powershell_cmdlets.html"
   - title: PowerShell cmdlet을 사용하여 리소스 복원
     url: "/protect-hana/task_restore_and_recover_resources_using_powershell_cmdlets_hana.html"
   - title: 복구 작업을 모니터링합니다
@@ -150,8 +146,6 @@ entries:
     url: "/protect-hana/task_clone_sap_hana_resource_backups.html"
   - title: SAP HANA 데이터베이스 백업의 클론을 생성합니다
     url: "/protect-hana/task_clone_a_sap_hana_database_backup.html"
-  - title: PowerShell cmdlet을 사용하여 SAP HANA 데이터베이스 백업 클론 생성
-    url: "/protect-hana/task_clone_sap_hana_database_backups_using_powershell_cmdlets.html"
   - title: SnapCenter에서 클론 작업을 모니터링합니다
     url: "/protect-hana/task_monitor_hana_database_clone_operations.html"
   - title: 클론 분할

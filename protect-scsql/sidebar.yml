@@ -140,8 +140,6 @@ entries:
       url: "/protect-scsql/task_monitor_dataprotection_operations_on_sql_resources_in_the_activity_pane.html"
   - title: PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
     url: "/protect-scsql/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_sql.html"
-  - title: PowerShell cmdlet을 사용하여 리소스를 백업합니다
-    url: "/protect-scsql/task_back_up_resources_using_powershell_cmdlets_for_sql.html"
   - title: Microsoft SQL Server 백업 작업에 대한 SnapCenter 플러그인을 취소합니다
     url: "/protect-scsql/task_cancel_the_snapcenter_plug_in_for_sql_server_operations.html"
   - title: 토폴로지 페이지에서 SQL Server 백업 및 클론 보기
@@ -160,10 +158,10 @@ entries:
     url: "/protect-scsql/task_restore_sql_server_database_backups.html"
   - title: 보조 스토리지에서 SQL Server 데이터베이스를 복구합니다
     url: "/protect-scsql/task_restore_a_sql_server_database_from_secondary_storage.html"
+  - title: PowerShell cmdlet을 사용하여 리소스 복원
+    url: "/protect-scsql/task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html"
   - title: 가용성 그룹 데이터베이스를 다시 시딩합니다
     url: "/protect-scsql/task_reseed_availability_group_databases.html"
-  - title: PowerShell cmdlet을 사용하여 리소스 복원 및 복구
-    url: "/protect-scsql/task_restore_and_recover_resources_using_powershell_cmdlets_for_sql.html"
   - title: 복구 작업을 모니터링합니다
     url: "/protect-scsql/task_monitor_sql_resources_restore_operations.html"
   - title: 복원 작업을 취소합니다
@@ -174,8 +172,6 @@ entries:
     url: "/protect-scsql/reference_clone_sql_server_database_resources.html"
   - title: SQL Server 데이터베이스 백업에서 복제합니다
     url: "/protect-scsql/task_clone_from_a_sql_server_database_backup.html"
-  - title: PowerShell cmdlet을 사용하여 백업 클론 생성
-    url: "/protect-scsql/task_clone_backups_using_powershell_cmdlets_for_sql.html"
   - title: 클론 수명주기 수행
     url: "/protect-scsql/task_perform_clone_lifecycle_management.html"
   - title: SnapCenter에서 클론 작업을 모니터링합니다

@@ -67,8 +67,6 @@ entries:
     url: "/protect-scw/task_back_up_resource_groups_for_windows_file_systems.html"
   - title: PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
     url: "/protect-scw/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_windows.html"
-  - title: PowerShell cmdlet을 사용하여 리소스를 백업합니다
-    url: "/protect-scw/task_back_up_resources_using_powershell_cmdlets_for_windows.html"
   - title: 백업 작업을 모니터링합니다
     url: "/protect-scw/task_monitor_backup_operations.html"
   - title: 백업 작업을 취소합니다
@@ -83,7 +81,7 @@ entries:
   entries:
   - title: Windows 파일 시스템 백업을 복구합니다
     url: "/protect-scw/task_restore_windows_file_system_backups.html"
-  - title: PowerShell cmdlet을 사용하여 리소스 복원 및 복구
+  - title: PowerShell cmdlet을 사용하여 리소스 복원
     url: "/protect-scw/task_restore_and_recover_resources_using_powershell_cmdlets_for_windows.html"
   - title: 복구 작업을 모니터링합니다
     url: "/protect-scw/task_monitor_restore_operations.html"
@@ -93,8 +91,6 @@ entries:
   entries:
   - title: Windows 파일 시스템 백업에서 클론을 생성합니다
     url: "/protect-scw/task_clone_from_a_windows_file_system_backup.html"
-  - title: PowerShell cmdlet을 사용하여 백업 클론 생성
-    url: "/protect-scw/task_clone_backups_using_powershell_cmdlets_for_windows.html"
   - title: 클론 작업을 모니터링합니다
     url: "/protect-scw/task_monitor_clone_operations.html"
   - title: 클론 작업을 취소합니다

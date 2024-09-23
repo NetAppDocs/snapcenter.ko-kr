@@ -33,6 +33,10 @@ NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
 * ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
 
 
+[role="tabbed-block"]
+====
+.SnapCenter UI
+--
 .단계
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
 . 리소스 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.
@@ -86,3 +90,97 @@ NOTE: 중지, 스냅샷 및 중지 해제 작업에 대한 사전 및 사후 명
 
 .작업을 마친 후
 롤포워드 상태가 "DB Pending" 상태인 경우에만 복구가 가능합니다. 이 상태는 아카이브 로깅이 활성화된 DB2 데이터베이스에 적용됩니다.
+
+--
+.PowerShell cmdlet
+--
+.단계
+. Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
++
+[listing]
+----
+PS C:\> Open-SmConnection
+----
+. Get-SmBackup 및 Get-SmBackupReport cmdlet을 사용하여 복원할 백업을 식별합니다.
++
+이 예에서는 복구에 사용할 수 있는 두 개의 백업이 있음을 보여 줍니다.
+
++
+[listing]
+----
+ PS C:\> Get-SmBackup -AppObjectId cn24.sccore.test.com\DB2\db2inst1\Library
+
+        BackupId    BackupName                    BackupTime            BackupType
+        --------    ----------                    ----------            ----------
+         1          Payroll Dataset_vise-f6_08... 8/4/2015 11:02:32 AM  Full Backup
+         2          Payroll Dataset_vise-f6_08... 8/4/2015 11:23:17 AM
+----
++
+이 예는 2015년 1월 29일부터 2015년 2월 3일까지 백업에 대한 자세한 정보를 표시합니다.
+
++
+[listing]
+----
+PS C:\> Get-SmBackupReport -FromDateTime "1/29/2015" -ToDateTime "2/3/2015"
+
+SmBackupId           : 113
+   SmJobId              : 2032
+   StartDateTime        : 2/2/2015 6:57:03 AM
+   EndDateTime          : 2/2/2015 6:57:11 AM
+   Duration             : 00:00:07.3060000
+   CreatedDateTime      : 2/2/2015 6:57:23 AM
+   Status               : Completed
+   ProtectionGroupName  : Clone
+   SmProtectionGroupId  : 34
+   PolicyName           : Vault
+   SmPolicyId           : 18
+   BackupName           : Clone_SCSPR0019366001_02-02-2015_06.57.08
+   VerificationStatus   : NotVerified
+
+   SmBackupId           : 114
+   SmJobId              : 2183
+   StartDateTime        : 2/2/2015 1:02:41 PM
+   EndDateTime          : 2/2/2015 1:02:38 PM
+   Duration             : -00:00:03.2300000
+   CreatedDateTime      : 2/2/2015 1:02:53 PM
+   Status               : Completed
+   ProtectionGroupName  : Clone
+   SmProtectionGroupId  : 34
+   PolicyName           : Vault
+   SmPolicyId           : 18
+   BackupName           : Clone_SCSPR0019366001_02-02-2015_13.02.45
+   VerificationStatus   : NotVerified
+----
+. Restore-SmBackup cmdlet을 사용하여 백업에서 데이터를 복원합니다.
++
+
+NOTE: AppObjectId는 "Host\Plugin\UID"입니다. 여기서 UID=<instance_name>는 수동으로 검색된 DB2 인스턴스 리소스용이고 UID=<instance_name>\<databse_name>는 IBM DB2 데이터베이스 리소스용입니다. get-smResources cmdlet에서 ResourceID를 가져올 수 있습니다.
+
++
+[listing]
+----
+Get-smResources  -HostName cn24.sccore.test.com  -PluginCode DB2
+----
++
+이 예에서는 운영 스토리지에서 데이터베이스를 복구하는 방법을 보여 줍니다.
+
++
+[listing]
+----
+Restore-SmBackup -PluginCode DB2 -AppObjectId cn24.sccore.test.com\DB2\db2inst1\DB01 -BackupId 3
+----
++
+이 예에서는 보조 스토리지에서 데이터베이스를 복구하는 방법을 보여 줍니다.
+
++
+[listing]
+----
+Restore-SmBackup -PluginCode 'DB2' -AppObjectId cn24.sccore.test.com\DB2\db2inst1\DB01 -BackupId 399 -Confirm:$false  -Archive @( @{"Primary"="<Primary Vserver>:<PrimaryVolume>";"Secondary"="<Secondary Vserver>:<SecondaryVolume>"})
+----
++
+cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.
+
+
+
+--
+====

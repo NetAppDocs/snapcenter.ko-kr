@@ -73,8 +73,6 @@ entries:
     url: "/protect-sce/task_back_up_exchange_resources_groups.html"
   - title: Exchange Server용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
     url: "/protect-sce/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_exchange_database.html"
-  - title: PowerShell cmdlet을 사용하여 Exchange 리소스를 백업합니다
-    url: "/protect-sce/task_back_up_exchange_resources_using_powershell_cmdlets.html"
   - title: 백업 작업을 모니터링합니다
     url: "/protect-sce/task_monitor_backup_operations.html"
   - title: Exchange 데이터베이스에 대한 백업 작업을 취소합니다
@@ -95,8 +93,6 @@ entries:
     url: "/protect-sce/reference_granular_recovery_of_mails_and_mailbox.html"
   - title: 보조 스토리지에서 Exchange Server 데이터베이스를 복구합니다
     url: "/protect-sce/task_restore_an_exchange_server_database_from_secondary_storage.html"
-  - title: PowerShell cmdlet을 사용하여 Exchange 리소스를 복원합니다
-    url: "/protect-sce/task_restore_exchange_resources_using_powershell_cmdlets.html"
   - title: 패시브 Exchange 노드 복제본을 다시 시딩했습니다
     url: "/protect-sce/task_reseed_a_passive_exchange_node_replica.html"
   - title: Exchange 데이터베이스에 대해 PowerShell cmdlet을 사용하여 복제본을 다시 시딩했습니다

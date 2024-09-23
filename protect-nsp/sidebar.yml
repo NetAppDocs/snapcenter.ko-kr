@@ -100,8 +100,6 @@ entries:
     url: "/protect-nsp/back_up_resource_groups_of_netapp_supported_plugins_resources.html"
   - title: PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
     url: "/protect-nsp/create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets.html"
-  - title: PowerShell cmdlet을 사용하여 리소스를 백업합니다
-    url: "/protect-nsp/back_up_resources_using_powershell_cmdlets.html"
   - title: 백업 작업을 모니터링합니다
     url: "/protect-nsp/monitor_resources_backup_operations.html"
   - title: 백업 작업을 취소합니다
@@ -124,7 +122,5 @@ entries:
     url: "/protect-nsp/clone_netapp_supported_plugins_resource_backups.html"
   - title: 백업에서 복제합니다
     url: "/protect-nsp/clone_from_a_backup.html"
-  - title: PowerShell cmdlet을 사용하여 백업 클론 생성
-    url: "/protect-nsp/clone_backups_using_powershell_cmdlets.html"
   - title: SnapCenter에서 클론 작업을 모니터링합니다
     url: "/protect-nsp/monitor_resource_clone_operations.html"

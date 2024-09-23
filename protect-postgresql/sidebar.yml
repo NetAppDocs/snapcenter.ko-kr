@@ -110,8 +110,6 @@ entries:
     url: "/protect-postgresql/back-up-resource-groups-postgresql.html"
   - title: PostgreSQL용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
     url: "/protect-postgresql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-postgresql.html"
-  - title: PowerShell cmdlet을 사용하여 클러스터를 백업합니다
-    url: "/protect-postgresql/back-up-clusters-using-powershell-cmdlets-postgresql.html"
   - title: 백업 작업을 모니터링합니다
     entries:
     - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
@@ -130,8 +128,6 @@ entries:
     url: "/protect-postgresql/restore-and-recover-a-manually-added-resource-backup.html"
   - title: 자동 검색된 클러스터 백업을 복구 및 복구합니다
     url: "/protect-postgresql/restore-and-recover-an-auto-discovered-cluster-backup.html"
-  - title: PowerShell cmdlet을 사용하여 PostgreSQL을 복원합니다
-    url: "/protect-postgresql/restore-postgresql-using-powershell-cmdlets.html"
   - title: PowerShell cmdlet을 사용하여 리소스 복원
     url: "/protect-postgresql/restore-and-recover-resources-using-powershell-cmdlets-postgresql.html"
   - title: 복구 작업을 모니터링합니다
@@ -142,8 +138,6 @@ entries:
     url: "/protect-postgresql/clone-postgresql-resource-backups.html"
   - title: PostgreSQL 클러스터 백업의 클론을 생성합니다
     url: "/protect-postgresql/clone-postgresql-backup.html"
-  - title: PowerShell cmdlet을 사용하여 PostgreSQL 클러스터 백업의 클론을 생성합니다
-    url: "/protect-postgresql/clone-postgresql-backups-using-powershell-cmdlets.html"
   - title: SnapCenter에서 클론 작업을 모니터링합니다
     url: "/protect-postgresql/monitor-postgresql-clone-operations.html"
   - title: 클론 분할
