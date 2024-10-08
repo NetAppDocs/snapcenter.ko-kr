@@ -67,18 +67,16 @@ entries:
     url: "/protect-sce/task_create_backup_policies_for_exchange_server_databases.html"
   - title: 리소스 그룹을 생성하고 Exchange Server에 대한 정책을 연결합니다
     url: "/protect-sce/task_create_resource_groups_and_attach_policies_for_exchange_servers.html"
+  - title: Exchange Server용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
+    url: "/protect-sce/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_exchange_database.html"
   - title: Exchange 데이터베이스를 백업합니다
     url: "/protect-sce/task_back_up_exchange_databases.html"
   - title: Exchange 리소스 그룹을 백업합니다
     url: "/protect-sce/task_back_up_exchange_resources_groups.html"
-  - title: Exchange Server용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
-    url: "/protect-sce/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_exchange_database.html"
   - title: 백업 작업을 모니터링합니다
     url: "/protect-sce/task_monitor_backup_operations.html"
   - title: Exchange 데이터베이스에 대한 백업 작업을 취소합니다
     url: "/protect-sce/task_cancel_backup_operations_for_exchange_database.html"
-  - title: PowerShell cmdlet을 사용하여 Exchange 백업을 제거합니다
-    url: "/protect-sce/task_remove_exchange_backups_using_powershell_cmdlets.html"
   - title: 토폴로지 페이지에서 Exchange 백업을 봅니다
     url: "/protect-sce/task_view_exchange_backups_in_the_topology_page.html"
 - title: Exchange 리소스를 복구합니다

@@ -100,18 +100,14 @@ entries:
     url: "/protect-mysql/create-backup-policies-for-mysql.html"
   - title: 리소스 그룹을 생성하고 정책을 연결합니다
     url: "/protect-mysql/create-resource-groups-and-attach-policies.html"
+  - title: MySQL용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결 및 자격 증명을 생성합니다
+    url: "/protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html"
   - title: MySQL을 백업합니다
     url: "/protect-mysql/back-up-mysql.html"
   - title: 리소스 그룹을 백업합니다
     url: "/protect-mysql/back-up-resource-groups-mysql.html"
-  - title: MySQL용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결 및 자격 증명을 생성합니다
-    url: "/protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html"
-  - title: 백업 작업을 모니터링합니다
-    entries:
-    - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
-      url: "/protect-mysql/monitor-mysql-backup-operations.html"
-    - title: Activity 창에서 작업을 모니터링합니다
-      url: "/protect-mysql/monitor-dataprotection-operations-on-mysql-in-the-activity-pane.html"
+  - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
+    url: "/protect-mysql/monitor-mysql-backup-operations.html"
   - title: 백업 작업을 취소합니다
     url: "/protect-mysql/cancel-backup-operations-for-mysql.html"
   - title: 토폴로지 페이지에서 MySQL 데이터베이스 백업 및 클론을 봅니다

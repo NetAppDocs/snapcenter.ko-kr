@@ -54,14 +54,6 @@ entries:
       url: "/protect-scsql/reference_types_of_restore_operations.html"
   - title: SQL Server에 대한 클론 생성 전략을 정의합니다
     url: "/protect-scsql/task_define_a_clone_strategy_for_sql_server.html"
-- title: Microsoft SQL Server용 SnapCenter 플러그인 설치를 빠르게 시작합니다
-  entries:
-  - title: SnapCenter 서버 및 플러그인 설치 준비
-    url: "/protect-scsql/quick-start-to-prepare-for-snapcenter-plug-in-install-for-sql-server.html"
-  - title: Microsoft SQL Server용 SnapCenter 서버를 설치합니다
-    url: "/protect-scsql/task-install-snapcenter-server-for-sql-server.html"
-  - title: Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다
-    url: "/protect-scsql/task-install-snapcenter-plug-in-for-sql-server.html"
 - title: Microsoft SQL Server용 SnapCenter 플러그인 설치를 준비합니다
   entries:
   - title: Microsoft SQL Server용 SnapCenter 플러그인 설치 워크플로
@@ -128,24 +120,18 @@ entries:
     url: "/protect-scsql/task_create_resource_groups_and_attach_policies_for_sql_server.html"
   - title: SQL 리소스 백업 요구 사항
     url: "/protect-scsql/concept_requirements_for_backing_up_sql_resources.html"
+  - title: PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
+    url: "/protect-scsql/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_sql.html"
   - title: SQL 리소스를 백업합니다
     url: "/protect-scsql/task_back_up_sql_resources.html"
   - title: SQL Server 리소스 그룹을 백업합니다
     url: "/protect-scsql/task_back_up_sql_server_resource_groups.html"
-  - title: 백업 작업을 모니터링합니다
-    entries:
-    - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
-      url: "/protect-scsql/task_monitor_sql_resources_backup_operations.html"
-    - title: Activity 창에서 작업을 모니터링합니다
-      url: "/protect-scsql/task_monitor_dataprotection_operations_on_sql_resources_in_the_activity_pane.html"
-  - title: PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
-    url: "/protect-scsql/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_for_sql.html"
+  - title: SnapCenter 작업 페이지에서 백업 작업을 모니터링합니다
+    url: "/protect-scsql/task_monitor_sql_resources_backup_operations.html"
   - title: Microsoft SQL Server 백업 작업에 대한 SnapCenter 플러그인을 취소합니다
     url: "/protect-scsql/task_cancel_the_snapcenter_plug_in_for_sql_server_operations.html"
   - title: 토폴로지 페이지에서 SQL Server 백업 및 클론 보기
     url: "/protect-scsql/task_view_sql_server_backups_and_clones_in_the_topology_page.html"
-  - title: PowerShell cmdlet을 사용하여 백업을 제거합니다
-    url: "/protect-scsql/task_remove_backups_using_powershell_cmdlets_for_sql.html"
   - title: PowerShell cmdlet을 사용하여 보조 백업 수를 정리합니다
     url: "/protect-scsql/task_clean_up_the_secondary_backup_count_using_powershell_cmdlets_for_sql.html"
 - title: SQL Server 리소스를 복구합니다
