@@ -668,7 +668,6 @@
   <block id="1f8a6ebe3d4d002c37961084ee957772" category="list-text">Status * (상태 *) 드롭다운에서 백업 상태를 선택합니다.</block>
   <block id="30816945c60dc2c3f5e65b0a88f9bc19" category="list-text">작업이 성공적으로 완료되었는지 보려면 * Apply * 를 클릭합니다.</block>
   <block id="5f31a909a716e6e46492a1095c0444d8" category="list-text">백업 작업을 선택한 다음 * 세부 정보 * 를 클릭하여 작업 세부 정보를 봅니다.</block>
-  <block id="f4d8f263741562ac4c8e18153f44e752" category="admonition">백업 작업 상태가 표시됩니다<block ref="718fe53e11bbf4bb30ca7e885db5e6f5" category="inline-image-macro-rx" type="image"></block>작업 세부 정보를 클릭하면 백업 작업의 일부 하위 작업이 아직 진행 중이거나 경고 기호로 표시되어 있는 것을 볼 수 있습니다.</block>
   <block id="56e9f299379f1f27ee946b3cc5197ca7" category="summary">Windows 호스트에서 SnapCenter 사용자 지정 플러그인 서비스에 대한 CA 인증서를 구성합니다</block>
   <block id="51a29df7437c4fa534c9d8e3649160c0" category="paragraph">사용자 지정 플러그인 키 저장소 및 인증서의 암호를 관리하고, CA 인증서를 구성하고, 사용자 지정 플러그인 트러스트 저장소에 대한 루트 또는 중간 인증서를 구성하고, SnapCenter 사용자 지정 플러그인 서비스를 사용하여 사용자 지정 플러그인 트러스트 저장소에 CA 서명 키 쌍을 구성하여 설치된 디지털 인증서를 활성화해야 합니다.</block>
   <block id="1b212b031e5ee4eaf1c77f008a7bd0b9" category="paragraph">사용자 지정 플러그인은 _C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc_에 있는 file_keystore.jks_를 신뢰 저장소 및 키 저장소로 사용합니다.</block>
@@ -1528,10 +1527,6 @@
   <block id="937579085613107358fec70acf7e5303" category="paragraph">모니터 * &gt; * 작업 * 페이지를 사용하여 복원 프로세스를 모니터링해야 합니다.</block>
   <block id="c5394e0a25e8d57564f1756db7179dc8" category="paragraph">백업에서 활성 데이터베이스를 복구할 때 복제본과 액티브 데이터베이스 사이에 지연이 있는 경우 수동 데이터베이스가 일시 중단 또는 실패 상태가 될 수 있습니다.</block>
   <block id="57401f2a0bdec87b775b756a5b2946fa" category="paragraph">활성 데이터베이스의 로그 체인이 포크되고 복제를 중단시킬 새 분기가 시작될 때 상태 변경이 발생할 수 있습니다. Exchange Server에서 복제본을 수정하려고 시도하지만 복구할 수 없는 경우 복구 후 새 백업을 생성한 다음 복제본을 다시 시드해야 합니다.</block>
-  <block id="c542c48c5883f05c53ef29a5ecb69599" category="summary">다른 데이터 보호 작업에 Exchange 백업이 더 이상 필요하지 않은 경우 Remove-SmBackup cmdlet을 사용하여 Exchange 백업을 삭제할 수 있습니다.</block>
-  <block id="c67cf2b105f14a1f28e583dd29d713ba" category="doc">PowerShell cmdlet을 사용하여 Exchange 백업을 제거합니다</block>
-  <block id="dd120ab3ab1d158cb796d4df28443c51" category="list-text">Remove-SmBackup cmdlet을 사용하여 하나 이상의 백업을 삭제합니다.</block>
-  <block id="ea2acdbc1a4fb35cdfb9da7003b18901" category="paragraph">이 예에서는 백업 ID를 사용하여 두 개의 백업을 삭제합니다.</block>
   <block id="aa54e3e73a9b0c893308e2731bb904d7" category="summary">리소스는 사용자가 설치한 플러그인에서 유지 관리하는 데이터베이스, Exchange 데이터베이스 가용성 그룹입니다. 이러한 리소스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있지만 먼저 사용 가능한 리소스를 확인해야 합니다. 사용 가능한 리소스를 확인하면 플러그인 설치가 성공적으로 완료되었는지 확인할 수도 있습니다.</block>
   <block id="064d0323e24a5aa6dbad2233994ca3e4" category="doc">Exchange 리소스를 백업에 사용할 수 있는지 여부를 확인합니다</block>
   <block id="d64b6e4b086601c6f6c8605111fbb99a" category="list-text">SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 생성, 자격 증명 추가 및 Exchange용 플러그인 설치와 같은 작업을 이미 완료해야 합니다.</block>
@@ -2068,7 +2063,6 @@
   <block id="794df3791a8c800841516007427a2aa3" category="cell">라이센스</block>
   <block id="b428bd66304bced88a8f85c2e42e2a8d" category="cell">필요한 경우</block>
   <block id="932a86c21601cea5fd4dd8e8496f1347" category="paragraph">SnapCenter 표준 컨트롤러 기반</block>
-  <block id="d170a0ae7cce61c29600d85d29b948ca" category="paragraph">FAS 또는 AFF 스토리지 컨트롤러에 필요합니다</block>
   <block id="54e6e66bc0a69ef86d9bb0b63900793e" category="admonition">SnapCenter는 데이터 보호 번들의 일부로 제공됩니다. A400 이상을 구입한 경우 데이터 보호 번들을 구입해야 합니다.</block>
   <block id="06bfcdba3ea733216950ad2dd53126d5" category="paragraph">SnapMirror 또는 SnapVault</block>
   <block id="253b40ae359ba25b56231803430c4873" category="paragraph">ONTAP</block>
@@ -2593,7 +2587,6 @@
   <block id="c69cfd47967e253717494d2c7047647d" category="paragraph">8145(HTTPS), 양방향, 사용자 지정 가능</block>
   <block id="4f5e4136027ec0a3e4043eb5412b3ba4" category="paragraph">이 포트는 SnapCenter 서버와 SnapCenter 플러그인이 설치된 호스트 간의 통신에 사용됩니다.</block>
   <block id="91ca015b30de2a05aff2f16ec93231dd" category="paragraph">MySQL 포트</block>
-  <block id="ced7e40a06bd114bdd410398e025c7bd" category="paragraph">3306(HTTPS), 양방향</block>
   <block id="efe50212c612e0d762535b54fd67befd" category="paragraph">이 포트는 SnapCenter 및 MySQL 리포지토리 데이터베이스 간의 통신에 사용됩니다.</block>
   <block id="4abc501abe98e95144eba2c4d17174ad" category="paragraph">Windows 플러그인 호스트</block>
   <block id="0d1c7f3b029cde2163a99c08de7fc3c3" category="paragraph">135, 445(TCP)</block>
@@ -2944,8 +2937,6 @@
   <block id="949ad980c1552a4a514f54656c5e4e1e" category="paragraph">백업, 복원 또는 다른 클론 분할이 진행 중인 경우 클론 분할 시작 작업이 실패합니다. 실행 중인 작업이 완료된 후에만 클론 분할 작업을 다시 시작해야 합니다.</block>
   <block id="c890d8869922996dfd86a523bb9d74d4" category="inline-link">Aggregate가 존재하지 않으면 SnapCenter 클론 또는 검증에 실패합니다</block>
   <block id="c4d1b109542fdbc8eef8e3b4cac85e00" category="paragraph"><block ref="c4d1b109542fdbc8eef8e3b4cac85e00" category="inline-link-rx"></block></block>
-  <block id="5a4e7986bae0a2c894ba99a3277fcf98" category="paragraph">다른 데이터 보호 작업에 더 이상 필요하지 않은 경우 Remove-SmBackup cmdlet을 사용하여 백업을 삭제할 수 있습니다.</block>
-  <block id="a9961b834480ea5a82aff5c0e9cf0da8" category="list-text">Remove-SmBackup cmdlet을 사용하여 하나 이상의 백업을 삭제합니다.</block>
   <block id="5d365fedd8db2449d52b5be4a9205fb5" category="list-text">CleanupSecondaryBackups 매개 변수를 사용하여 보조 백업 수를 정리합니다.</block>
   <block id="0b42d90235dd8ef6ec97a9268c77b113" category="doc">SAP HANA 데이터베이스용 SnapCenter 플러그인이 지원하는 스토리지 유형입니다</block>
   <block id="478593976233dfc3e57256f78404f939" category="paragraph">SnapCenter는 물리적 시스템과 가상 머신(VM) 모두에서 다양한 스토리지 유형을 지원합니다. SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.</block>
@@ -4372,41 +4363,9 @@
   <block id="05830c8246821e218b0397b0d819691f" category="list-text">데이터베이스가 NetApp 스토리지 시스템에 있으며 보호되고 있고 데이터베이스에 대해 백업이 트리거되는 경우 사용자 인터페이스에 * Overall Status * 열에 "Backup Succeeded" 메시지가 표시됩니다.</block>
   <block id="bc28bb88d79b659789c035dc50b62131" category="admonition">자격 증명을 설정하는 동안 SQL 인증을 활성화한 경우 검색된 인스턴스 또는 데이터베이스에 빨간색 자물쇠 아이콘이 표시됩니다. 자물쇠 아이콘이 나타나면 인스턴스 또는 데이터베이스 자격 증명을 지정하여 인스턴스 또는 데이터베이스를 리소스 그룹에 성공적으로 추가해야 합니다.</block>
   <block id="082aaa75fb7adaf7a6d039461347c2b0" category="paragraph">SnapCenter 관리자가 RBAC 사용자에게 리소스를 할당한 후에는 RBAC 사용자가 로그인하여 * 자원 새로 고침 * 을 클릭하여 리소스의 최신 * 전체 상태 * 를 확인해야 합니다.</block>
-  <block id="3d18a8ecd9e4c9d6e8109fc7dc46902c" category="summary">SnapCenter 서버 및 Microsoft SQL Server용 SnapCenter 플러그인 설치에 대한 지침은 에 나와 있습니다.</block>
-  <block id="303271a6fa371310673fc55e65bf3af0" category="doc">SQL Server용 SnapCenter 플러그인 설치를 빠르게 시작합니다</block>
-  <block id="e05bc1fb0d09110d2709b8329ca82a1f" category="paragraph">SnapCenter 서버 및 Microsoft SQL Server용 SnapCenter 플러그인 설치를 위한 일련의 설치 지침을 제공합니다.</block>
-  <block id="67f289221dc2b8315be57c85a28e0619" category="section-title">설치 준비</block>
-  <block id="c85265a6c5841b0f019403a50b63c44d" category="paragraph">SnapCenter 서버는 도메인 또는 작업 그룹에 있는 시스템에 설치할 수 있습니다.</block>
-  <block id="43727cf7c1f0b9055bad0d2c9c2e19ea" category="paragraph">Active Directory 도메인을 사용하는 경우 로컬 관리자 권한이 있는 도메인 사용자를 사용해야 합니다. 도메인 사용자는 Windows 호스트에 있는 로컬 관리자 그룹의 구성원이어야 합니다.</block>
-  <block id="2632504d1b7b1f77434679b6906040dd" category="paragraph">작업 그룹을 사용하는 경우 로컬 관리자 권한이 있는 로컬 계정을 사용해야 합니다.</block>
-  <block id="d5c59f9587c1784732bff8ebcc03f9fb" category="paragraph">설치하는 라이센스 유형은 환경에 따라 다릅니다.</block>
-  <block id="e561227291ef5b9583ca35f38b3d1d62" category="paragraph">SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS 또는 AFF 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려면 세일즈 담당자에게 연락하여 프리미엄 번들 평가 라이센스를 받으십시오.</block>
-  <block id="faf896433eeb20fca1eb114937251b50" category="paragraph">추가 라이센스(선택 사항)</block>
-  <block id="9d09cebdc5095408e7e5f8bc09c08c42" category="paragraph">을 참조하십시오 <block ref="6de8516502145d64739d69762f4898a1" category="inline-link-macro-rx"></block>.</block>
   <block id="918d32b75f0ab883abba3a8dc0c3ae8d" category="inline-link">상호 운용성 매트릭스 툴</block>
   <block id="8124579383e90243e4b06323d2b37f8d" category="cell">호스트</block>
-  <block id="a55b17d8324fe50e023be8010d4b5474" category="cell">최소 요구 사항</block>
-  <block id="a0315547f70da02dc3ae867b333d7a34" category="paragraph">운영 체제(64비트)</block>
-  <block id="2b55387dd066c5bac646ac61543d152d" category="paragraph">CPU</block>
-  <block id="0e6a971ec5306b612f39cb5f57db7161" category="list-text">서버 호스트: 4코어</block>
-  <block id="30a4532a5bee2de6dedd7d0dd519c56c" category="list-text">플러그인 호스트: 1 코어</block>
-  <block id="e53619c1fe611a51eeeb8d148ba6e532" category="paragraph">RAM</block>
-  <block id="cd8d1469016f031f922bb333a970cfd3" category="list-text">서버 호스트: 8GB</block>
-  <block id="98e13d99df22e8a0a2bae6e969834be4" category="paragraph">하드 드라이브 공간</block>
-  <block id="21dce67a57cd833547ff3fd4e9e03823" category="paragraph">서버 호스트:</block>
-  <block id="96e96c23ced7f362fb4cc50d9e3d4bfa" category="list-text">각 플러그인 호스트: 플러그인 설치 및 로그의 경우 2GB, 전용 호스트에 플러그인이 설치된 경우에만 필요합니다.</block>
-  <block id="8aba88ca961faed346aac654b3d29bdb" category="paragraph">타사 라이브러리</block>
-  <block id="20a50fb41923e75d6b62c157ac6f1a69" category="paragraph">SnapCenter 서버 호스트 및 플러그인 호스트에 필요:</block>
-  <block id="e30a7ddbf46e9a12a9d9cfebd31fe25a" category="paragraph">브라우저</block>
-  <block id="f4c498441e8fe15aea27e35f1b2876a6" category="paragraph">Chrome, Internet Explorer 및 Microsoft Edge</block>
-  <block id="182aeb116dd563a6020ec9b2d5b6595e" category="cell">포트 유형입니다</block>
-  <block id="7d9d926d5125803fd97000a20abb897d" category="paragraph">리포지토리 데이터베이스</block>
-  <block id="507c0c7f0b8b0e908ce3263a2104c06c" category="paragraph">지원되는 동적 포트 범위에 대한 자세한 내용은 을 참조하십시오<block ref="efe4b06a0c17ae7a9dfd8e1ef1ea50a2" category="inline-link-rx"></block>.</block>
   <block id="5ae5c2db7baad917cb8389420693266d" category="paragraph">Windows용 SnapCenter 플러그인</block>
-  <block id="de80df6466db891ed7d7a31d71335ae1" category="paragraph">443(HTTPS), 양방향, 80(HTTP), 양방향</block>
-  <block id="228eb7fa9d28577ec427d7baedfa7ded" category="paragraph">이 포트는 SnapCenter 서버 호스트, 플러그인 호스트, SVM 또는 ONTAP 클러스터 간의 통신에 사용됩니다.</block>
-  <block id="4bd535cc745449316aa463a5f52133d6" category="paragraph">원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 사용자가 있어야 합니다. 클러스터 노드를 관리하는 경우 클러스터의 모든 노드에 대한 관리 권한이 있는 사용자가 필요합니다.</block>
-  <block id="cf94e6be5912bb698bcc03d64c605bc4" category="paragraph">SQL Server에 대한 sysadmin 권한이 있는 사용자가 있어야 합니다. 플러그인은 Microsoft VDI 프레임워크를 사용하므로 sysadmin 액세스가 필요합니다.</block>
   <block id="72de9cea28a7cca58f8423279c68e8c6" category="list-text">에서 SnapCenter 서버 설치 패키지를 다운로드합니다<block ref="d4fdc92072f5257471f3139636068769" category="inline-link-rx"></block> 그런 다음 exe를 두 번 클릭합니다.</block>
   <block id="f3202cac117dff2d56e44da0f9a51af3" category="paragraph">설치를 시작한 후 모든 사전 점검을 수행하고 최소 요구사항을 충족하지 못할 경우 적절한 오류 또는 경고 메시지가 표시됩니다. 경고 메시지를 무시하고 설치를 진행할 수 있지만 오류를 수정해야 합니다.</block>
   <block id="e33036e6b56fd2a33a6a10030cb94299" category="admonition">특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원되지 않습니다. 경로에 "%"를 포함하면 설치가 실패합니다.</block>
@@ -4423,7 +4382,6 @@
   <block id="2384730978fb31977e9e4d8d6cd269a1" category="list-text">스토리지 시스템의 이름 또는 IP 주소를 입력합니다.</block>
   <block id="cc264bb31c32343deef41c8d3130ed2c" category="list-text">스토리지 시스템을 액세스하는 데 사용되는 자격 증명을 입력합니다.</block>
   <block id="270527cce60385f686064c6eef36e8dd" category="list-text">확인란을 선택하여 EMS(이벤트 관리 시스템) 및 AutoSupport를 활성화합니다.</block>
-  <block id="1b536db2490e46d75b679a68d1866ff2" category="section-title">Microsoft SQL Server용 플러그인을 설치합니다</block>
   <block id="edb3f96af88f92a47b3be973152729fe" category="list-text">왼쪽 창에서 * 설정 &gt; 자격 증명 &gt; 새로 만들기 * 를 클릭합니다.</block>
   <block id="585cc1564f4cb6953e8c9f28c1437b7a" category="list-text">SnapCenter GUI 왼쪽 창에서 * 호스트 &gt; 관리 호스트 &gt; 추가 * 를 클릭합니다.</block>
   <block id="7200cb512c65b6adfa2cab18de8e420d" category="list-text">호스트 유형: Windows 호스트 유형을 선택합니다.</block>
@@ -4482,7 +4440,6 @@
   <block id="1c6aec216640420d37199ef0555beab9" category="paragraph">SQL Server 인스턴스를 선택합니다.</block>
   <block id="5479732a2e06d6b7a50f564e8fe27e30" category="paragraph">SnapCenter 서버에 로그인한 사용자가 Microsoft SQL Server용 SnapCenter 플러그인에 액세스할 수 없는 경우 사용자는 자격 증명을 구성해야 합니다.</block>
   <block id="8cfd48e3d0704f372da00b7de212f299" category="admonition">자격 증명 옵션은 데이터베이스 및 가용성 그룹에는 적용되지 않습니다.</block>
-  <block id="c7abd5797dbf501112fdb42c49a4df92" category="doc">PowerShell cmdlet을 사용하여 백업을 제거합니다</block>
   <block id="98d00f0950d49399aca5b7e5b8865719" category="summary">Microsoft SQL Server용 SnapCenter 플러그인에는 최신 복원 작업을 수행하기 위한 트랜잭션 로그 백업이 필요합니다. 이 작업은 데이터베이스를 두 개의 전체 백업 사이의 시간으로 복원합니다.</block>
   <block id="fdc4a4ab9ed4ec8a0e816124044ffbb2" category="doc">소스 스토리지 시스템에서 트랜잭션 로그 백업을 유지하는 데 걸리는 시간</block>
   <block id="fd97a5c736cbe90079f5f9ad13506469" category="paragraph">예를 들어 SQL Server용 플러그인이 오전 8시에 전체 백업을 수행하는 경우 또한 오후 5시에 최신 트랜잭션 로그 백업을 사용하여 오전 8시 사이에 언제든지 데이터베이스를 복원할 수 있습니다 오후 5시까지 운영됩니다 트랜잭션 로그를 사용할 수 없는 경우 SQL Server용 플러그인은 시점 복원 작업만 수행할 수 있습니다. 그러면 SQL Server용 플러그인이 전체 백업을 완료한 시점으로 데이터베이스를 복원합니다.</block>
@@ -6602,7 +6559,6 @@
   <block id="4cbefe74fbcdea5cde822de543a2b616" category="sidebar">SQL Server 리소스에 대한 백업 전략</block>
   <block id="8e321b2da713147d628c56fbb4185404" category="sidebar">운영 또는 2차 스토리지 볼륨을 사용하여 백업 복사본 검증</block>
   <block id="c839588253fb91ab7c3ffd7dbc89ef20" category="sidebar">SQL Server의 복원 전략</block>
-  <block id="2dbf352013e90b28f510baa76c1423f6" category="sidebar">Microsoft SQL Server용 SnapCenter 플러그인 설치를 빠르게 시작합니다</block>
   <block id="25bf2c62056fbb603e50ca9faa296f05" category="sidebar">Microsoft SQL Server용 SnapCenter 플러그인 설치를 준비합니다</block>
   <block id="a637f97603ba27f9233ebf52eb975336" category="sidebar">Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다</block>
   <block id="32011135d9979489b3395d0006de49b3" category="sidebar">CA 인증서를 가져옵니다</block>
@@ -7361,7 +7317,6 @@
   <block id="daf1071588d67be46c2b3881de2b7f3e" category="open-title">전체 백업</block>
   <block id="a06cb63b4e5676ff4993e87c5a096590" category="paragraph">데이터베이스 파일을 백업합니다.</block>
   <block id="4357e1f197bec05bc87b0ef0557cd533" category="open-title">로그 백업</block>
-  <block id="9bc97b084411adbb231ca53ca80640b7" category="paragraph">트랜잭션 로그를 백업합니다. . Log backup * 을 선택합니다.</block>
   <block id="197904dc82a19f6818f66048a61e90f9" category="open-title">백업만 복사</block>
   <block id="17d5127f9f01a5ee99467658118a5e9b" category="list-text">기본 백업 복제본에서만 백업합니다.</block>
   <block id="c61f65bb5aa14eca9140c3d0e7ece927" category="list-text">백업할 복제본을 선택합니다.</block>
@@ -7386,14 +7341,6 @@
   <block id="a6e367864d05c1235a3dc068e29fb052" category="section-title">6단계: 확인 설정 구성</block>
   <block id="e11807f1f1cff5721f85802ddac261ed" category="list-text">모든 정보 메시지 표시 안 함(INFOMSGS 없음)</block>
   <block id="79418e51dfe3ef30c9d30317f30d19e2" category="section-title">7단계: 요약 검토</block>
-  <block id="96ccca164f6b65c860546bba66a6485a" category="summary">SnapCenter 서버 및 Microsoft SQL Server용 SnapCenter 플러그인 설치 준비에 대한 지침을 제공합니다.</block>
-  <block id="bb7367ec62fb74511977df150181bc7f" category="doc">SnapCenter 서버 및 플러그인 설치 준비</block>
-  <block id="63408836354c40518fc610de2ff61aef" category="paragraph">SnapCenter 서버 및 Microsoft SQL Server용 SnapCenter 플러그인 설치를 위한 준비 지침의 요약 세트를 제공합니다.</block>
-  <block id="7527dcedb498a9e111f7eb26b4f075a6" category="section-title">라이센스 요구 사항</block>
-  <block id="7a98b5f499da77fa6e09b98a638328d7" category="section-title">호스트 및 포트 요구 사항</block>
-  <block id="bc6cdf099cec9fa3dce7fb43c644e659" category="section-title">Microsoft SQL Server용 SnapCenter 플러그인 요구 사항</block>
-  <block id="aa829ddf1acbdd2a8aa6a61635c33dec" category="inline-link-macro">보관된 백업을 가져옵니다</block>
-  <block id="b06af5128852d56366a94b0a3584c1a6" category="paragraph">Microsoft SQL Server용 SnapManager를 사용하고 있고 SnapManager for Microsoft SQL Server에서 SnapCenter로 데이터를 가져오려면 를 참조하십시오 <block ref="0079f46f6850618db9fdf32f5f6051e0" category="inline-link-macro-rx"></block></block>
   <block id="0b5045b3b137ebb25cf08b5081075426" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 선택한 다음 목록에서 적절한 플러그인을 선택합니다.</block>
   <block id="b68b243f9420806e3cfb840322caf2eb" category="list-text">자원 페이지에서 새 자원 그룹을 선택합니다.</block>
   <block id="2ace8412659382e8d9b1bc3d644b1428" category="paragraph">참고: 리소스 그룹 이름은 250자를 초과할 수 없습니다.</block>
@@ -7437,9 +7384,6 @@
   <block id="d21fbb2a5ce79a2a4ef0780b73023b2e" category="paragraph">VM 호스트의 물리적 마운트 및 NFS 직접 마운트(VMDK 및 RDM LUN은 지원되지 않음)</block>
   <block id="f2688d5a483bee7fcbd80a4e666fc088" category="inline-link">호스트 유틸리티 설명서</block>
   <block id="8fefbd4e8dfd1fb79f89bc04af5e8001" category="paragraph">자세한 내용은 을 참조하십시오<block ref="ab48d7186c8a78dfaf0e19af923f0daf" category="inline-link-rx"></block>.</block>
-  <block id="08bb62da8c2fc3e9658022558d277993" category="paragraph">FAS, AFF 또는 ASA(All SAN Array) 스토리지 컨트롤러에 필요합니다</block>
-  <block id="f0d7edda487dadb54e43cde1120715ec" category="paragraph">SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다.
-FAS, AFF 또는 ASA 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려는 경우, 세일즈 담당자에게 문의하여 프리미엄 번들 평가 라이센스를 얻을 수 있습니다.</block>
   <block id="855469e68aebe957582edeb7405529e1" category="section-title">양방향 SSL 통신</block>
   <block id="b4cbac9ded897ac6c04027b59ec07fad" category="paragraph">양방향 SSL 통신은 SnapCenter 서버와 플러그인 간의 상호 통신을 보호합니다.</block>
   <block id="48462a95fd8685081e58f7c123971e5b" category="section-title">인증서 기반 인증 개요</block>
@@ -7807,7 +7751,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="7d37ee39b4ee19fcd30604efdc61fb89" category="inline-image-macro">작업 창 아이콘</block>
   <block id="ae7d57fd9ca74c48255817041aead2f3" category="list-text">백업 작업을 시작한 후 을 선택합니다 <block ref="64eace402f8f00b7a999e38fb6d87e55" category="inline-image-macro-rx" type="image"></block> 를 클릭하여 가장 최근 작업 5개를 확인합니다.</block>
   <block id="8467b6fc978e958889122b3f0f4500ef" category="list-text">작업 세부 정보 페이지에서 * 작업 취소 * 를 선택합니다.</block>
-  <block id="7adb9efc9727efcae1dc90797b6d14b7" category="paragraph">검색 상자에 리소스 그룹 이름을 입력하거나 * 를 선택하여 리소스 그룹을 검색할 수 있습니다<block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block>를 누른 다음 태그를 선택합니다. 그런 다음 * 를 선택할 수 있습니다<block ref="5daa1c5d91da80c848b68dcd336ec220" category="inline-image-macro-rx" type="image"></block>를 눌러 필터 창을 닫습니다.</block>
   <block id="8689f97c3da81b19465f71f756e66bdf" category="list-text">리소스 그룹 페이지에서 백업할 리소스 그룹을 선택한 다음 * 지금 백업 * 을 선택합니다.</block>
   <block id="527845dfb36351f269fc0788cbb25f31" category="list-text">설정 페이지에서 * 정책 * 을 선택합니다.</block>
   <block id="35f738c979f3c37836b8abb8e955fca3" category="list-text">New * 를 선택합니다.</block>
@@ -7958,7 +7901,6 @@ Windows 호스트:</block>
   <block id="0e549e42000cf1cd2bd13dc132e61448" category="paragraph">SnapLock 보존 기간은 100년 미만이어야 합니다.</block>
   <block id="e7c020bcc5fc6c46eea0af3b48696115" category="paragraph">SnapLock 보존 기간은 100년 미만이어야 합니다.</block>
   <block id="59affd7f6a76b1148ee2481cf98f64e1" category="paragraph">보조 복제 중에 SnapLock 만료 시간에 운영 SnapLock 만료 시간이 로드됩니다. 토폴로지 페이지에서 * 새로 고침 * 버튼을 클릭하면 ONTAP에서 검색된 2차 및 1차 SnapLock 만료 시간이 새로 고쳐집니다.</block>
-  <block id="302f938ad12e73e12a79f805c2ae6a91" category="paragraph">을 참조하십시오 <block ref="3a3486a8a9b3aade0b0240c2dd89bad5" category="inline-link-macro-rx"></block>.</block>
   <block id="7389de2f41b1c6eb64e4d894ab05e286" category="paragraph">SnapLock가 SnapLock 볼트라고 하는 ONTAP의 보조 버전에서만 구성된 경우 토폴로지 페이지에서 * 새로 고침 * 버튼을 클릭하면 ONTAP에서 검색된 보조 시스템의 잠금 기간이 새로 고쳐집니다.</block>
   <block id="d5d1fb88800eaa5cdf83e2dae3c93633" category="inline-link">볼트 대상에서 WORM에 스냅샷 복사본을 커밋합니다</block>
   <block id="64c2ad2359ef41b8550053e63b4db5d2" category="paragraph">SnapLock 볼트에 대한 자세한 내용은 을 참조하십시오<block ref="8b200d34c0f23901ee8d0559f7380d4b" category="inline-link-rx"></block></block>
@@ -9660,11 +9602,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="22f7ff572d6ec6105866924667182634" category="list-text">TCP/IP를 통해 NVMe에 생성된 VMDK 레이아웃의 백업, 복원, 클론 복제 및 검증 워크플로우를 제공합니다.</block>
   <block id="0a599a35acba23887835fd51e75dd12a" category="list-text">ESX 8.0 업데이트 2부터 NVMe 펌웨어 버전 1.3을 지원하며 가상 하드웨어 버전 21이 필요합니다.</block>
   <block id="780798273c2d1e3e471299921fabdac4" category="list-text">WSFC(Windows Server Failover Clustering)는 NVMe over TCP/IP의 VMDK 응용 프로그램에 대해 지원되지 않습니다.</block>
-  <block id="a4dde000123474f5f78b64627780eba4" category="list-text">플러그인 호스트: 4코어</block>
-  <block id="2ee9a06a2f3e6e2ca52cee448cb93f0d" category="list-text">플러그인 호스트: 4 GB</block>
-  <block id="068a44bd0181cde83ae2d162ab70836c" category="list-text">SnapCenter 서버 소프트웨어 및 로그용 7 GB</block>
-  <block id="d167c06085657bbc05a48ca527f73219" category="list-text">SnapCenter 리포지토리의 경우 8 GB</block>
-  <block id="d202821014e7daf2d865aeb8539d7cdf" category="admonition">SnapCenter 리포지토리가 설치된 동일한 호스트에 SnapCenter 서버가 있는 경우 15GB를 사용하는 것이 좋습니다.</block>
   <block id="ed04342b9541f163902926f71be8548c" category="section-title">4단계: 스토리지 시스템 접속 설정</block>
   <block id="8d815f55ddec2cbd3a8fb998077c1279" category="paragraph">PowerShell cmdlet을 수동으로 또는 스크립트에서 사용하여 백업, 복원, 복구, 확인 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="b1f5996558dd020cdfc2747708228767" category="inline-link-rx"></block></block>
   <block id="17fda5906f3ef489052c49a5f378a389" category="doc">Microsoft SQL Server용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다</block>
@@ -9809,8 +9746,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="93c316672b17211820e2eaed5f45f68f" category="paragraph">지원되는 버전에 대한 최신 정보는 를<block ref="b02065f5fe9f591a1587fb1e13c5796e" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="b394be29329a30bfde3ff6670085b4f8" category="paragraph">에는<block ref="df4d48b0823cb16de0f94c0dcd83ea6f" category="inline-link-rx"></block> 지원되는 버전에 대한 최신 정보가 포함되어 있습니다.</block>
   <block id="54634901ea136d581a907da437231faa" category="paragraph">지원되는 Oracle 버전에 대한 최신 정보는 를 참조하십시오<block ref="f921a84bb94ef2f856de2002022c7838" category="inline-link-rx"></block>.</block>
-  <block id="266df807c209259b6527f0402eec5ecc" category="paragraph">ONTAP 및 응용 프로그램 플러그인의 최소 요구 사항은<block ref="da65d29edc3443bf674cd57705cb58f7" category="inline-link-rx"></block> [상호 운용성 매트릭스 도구] 를 참조하십시오.</block>
-  <block id="0d9aba31602daa8aa7c78b179f23a57a" category="paragraph">을 참조하십시오<block ref="5ef8c586cada32cf8eb7b081f126f3ff" category="inline-link-rx"></block></block>
   <block id="f4c1fea93a54108320484de7aa75a48a" category="paragraph">지원되는 버전에 대한 최신<block ref="a174ad87a36b51cae5fdf2582f4fe3d8" category="inline-link-rx"></block> 정보는 [NetApp 상호 운용성 매트릭스 도구] 를 참조하십시오.</block>
   <block id="f726f8fd5eef7b55d41228aa71d0a7e9" category="list-text">호스트 새로 고침 API:<block ref="b37cd34fbbf7b073a1b5c2fd52ee92dd" prefix=" " category="inline-code"></block> 또는 cmdlet:_Invoke-SmTechRefreshHost _ 를 실행합니다.</block>
   <block id="875d7a3460c60f3568be1f2abe89a635" category="list-text">API: 또는 cmdlet:_New-SmServerBackup _ 을(를) 사용하여 이전 호스트에서 SnapCenter 서버의 백업을 만듭니다<block ref="88422de128aef85dbcc043bb5e99d727" prefix=" " category="inline-code"></block> .</block>
@@ -9842,4 +9777,9 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="3d64c1dca7f60c2f025bc4b68e25eaec" category="doc">DB2 데이터베이스를 백업합니다</block>
   <block id="fc25be62e75052437e6fa7b8d1571f48" category="open-title">SnapCenter UI</block>
   <block id="41269337bd4507838c6bb1bd7b2141c3" category="sidebar">DB2 데이터베이스를 백업합니다</block>
+  <block id="e8bec8246398463ed040582acbbd61f4" category="admonition">백업 작업 상태가 표시되지만 <block ref="718fe53e11bbf4bb30ca7e885db5e6f5" category="inline-image-macro-rx" type="image"></block>작업 세부 정보를 클릭하면 백업 작업의 일부 하위 작업이 아직 진행 중이거나 경고 기호로 표시된 것을 볼 수 있습니다.</block>
+  <block id="e12e035acf67bf5c7809b2d4af7617f9" category="paragraph">검색 상자에 자원 그룹 이름을 입력하거나 * * 를 선택한 다음 태그를 선택하여 자원 그룹을 검색할 수<block ref="2df6cc2e237d722aa6244879c70fd2d2" category="inline-image-macro-rx" type="image"></block>있습니다. 그런 다음 * * 를 선택하여 필터 창을 닫을 수<block ref="2df6cc2e237d722aa6244879c70fd2d2" category="inline-image-macro-rx" type="image"></block>있습니다.</block>
+  <block id="c1c536a43dbea753ec89b25093b7fcbb" category="list-text">트랜잭션 로그를 백업합니다.</block>
+  <block id="fd4d4171b69bc5fa698b2dffd93c146c" category="paragraph"><block ref="fd4d4171b69bc5fa698b2dffd93c146c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0ce7c545aa7f6a4537f968c22eef3d36" category="paragraph">을 <block ref="49d20c76ef6152c5513f45f2a8001fad" category="inline-link-macro-rx"></block>참조하십시오.</block>
 </blocks>
