@@ -21,7 +21,7 @@ settings:
     url: "/snapcenter-46"
   - version-number: '4.5'
     url: "/snapcenter-45"
-  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
+  langs: ko-kr,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
   - title: SnapCenter 소프트웨어 6.0 문서
