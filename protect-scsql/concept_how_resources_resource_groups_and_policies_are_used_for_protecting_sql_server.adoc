@@ -31,4 +31,4 @@ SnapCenter를 사용하기 전에 수행할 백업, 클론 및 복원 작업과 
 
 다음 그림에서는 데이터베이스 리소스, 리소스 그룹 및 정책 간의 관계를 보여 줍니다.
 
-image::../media/scsql_resourcegroup_policy.gif[scsql resourcegroup 정책입니다]
+image::../media/scsql_resourcegroup_policy.gif[리소스 그룹 정책입니다]

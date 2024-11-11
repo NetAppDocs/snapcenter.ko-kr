@@ -285,7 +285,7 @@ IMPORTANT: Exchange ONTAP 볼륨에 SnapMirror 액티브 동기화가 설정되�
 
 토폴로지 페이지에서 * 새로 고침 * 버튼을 클릭하면 ONTAP에서 검색된 2차 및 1차 SnapLock 만료 시간이 새로 고쳐집니다.
 
-을 참조하십시오 link:..protect-sce/task_view_exchange_backups_in_the_topology_page.html["토폴로지 페이지에서 Exchange 백업을 봅니다"].
+을 link:../protect-sce/task_view_exchange_backups_in_the_topology_page.html["토폴로지 페이지에서 Exchange 백업을 봅니다"]참조하십시오.
 
 
 

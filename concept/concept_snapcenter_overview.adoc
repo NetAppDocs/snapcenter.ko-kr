@@ -56,7 +56,7 @@ SnapCenter에는 다음과 같은 주요 기능이 포함되어 있습니다.
 사용자 정의 SnapCenter 플러그인을 만들 수 있는 프레임워크를 제공하여 다른 표준 또는 사용자 지정 애플리케이션 및 데이터베이스에서도 데이터 보호가 지원됩니다. 따라서 동일한 단일 창에서 다른 애플리케이션과 데이터베이스의 데이터를 보호할 수 있습니다. NetApp은 이 프레임워크를 활용하여 SnapCenter MongoDB, MySQL, PostgreSQL, 스토리지, MaxDB 및 Sybase ASE, ORASCPM, MongoDB 및 DPGlue 이 외에도 개발자 가이드를 사용하여 자신만의 플러그인을 만들 수 있습니다.
 
 +
-link:concept_develop_a_plug_in_for_your_application.html["응용 프로그램용 플러그인을 개발합니다"]
+link:../protect-nsp/develop_a_plug_in_for_your_application.html["응용 프로그램용 플러그인을 개발합니다"]
 
 * 정책 기반 백업
 +

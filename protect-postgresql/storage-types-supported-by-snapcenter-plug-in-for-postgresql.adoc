@@ -18,22 +18,30 @@ SnapCenter는 물리적 시스템과 가상 머신(VM) 모두에서 다양한 �
 
 
  a| 
-물리적 서버와 가상 서버
- a| 
-FC 연결 LUN
-
-
-
- a| 
 물리적 서버
  a| 
-iSCSI로 연결된 LUN
+* FC 연결 LUN
+* iSCSI로 연결된 LUN
+* NFS 연결 볼륨
+
 
 
 
  a| 
-물리적 서버와 가상 서버
+VMware ESXi
  a| 
-NFS 연결 볼륨
+* FC 또는 iSCSI ESXi HBA(호스트 버스 어댑터)에 의해 연결된 RDM LUN SnapCenter는 호스트에 있는 모든 호스트 버스 어댑터를 검사하므로 완료하는 데 시간이 오래 걸릴 수 있습니다.
++
+hba_driver_names에 나열된 HBA만 재검색하려면 _/opt/netapp/snapcenter/spL/plugins/SCU/scucore/modules/SCU/Config _ 에 있는 * LinuxConfig.pm * 파일을 편집하여 * scsi_hosts_optimized_rescan * 매개 변수의 값을 1로 설정합니다.
+
+* iSCSI 이니시에이터가 게스트 시스템에 직접 접속된 iSCSI LUN
+* NFS 데이터 저장소에 있는 VMDK입니다
+* VMFS의 VMDK입니다
+* 게스트 시스템에 직접 연결된 NFS 볼륨입니다
+* NFS와 SAN 모두에서 VVOL 데이터 저장소
++
+VVOL 데이터 저장소는 VMware vSphere용 ONTAP 툴로만 프로비저닝할 수 있습니다.
+
+
 
 |===

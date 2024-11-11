@@ -18,16 +18,14 @@ SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 복원 및
 * 복원할 리소스 또는 리소스 그룹에 대해 현재 진행 중인 백업 작업을 취소해야 합니다.
 * 사전 복원, 사후 복원, 마운트 및 마운트 해제 명령의 경우 다음 경로에서 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
 +
-Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+** Windows 호스트의 기본 위치:_C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in Creator\etc\allowed_commands.config_
+** Linux 호스트의 기본 위치: _/opt/NetApp/SnapCenter/scc/etc/allowed_commands.config_
 
-+
-Linux의 경우: _/var/opt/snapcenter/scc/allowed_commands.config_
 
-+
+
+
 
 NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
-
-
 
 .이 작업에 대해
 * SnapCenter에서 파일 기반 백업 복사본을 복원할 수 없습니다.
@@ -108,10 +106,6 @@ NOTE: PostgreSQL용 SnapCenter 플러그인은 수동 복구를 지원하기 위
 . 작업 게시 페이지에서 복구 작업을 수행한 후 실행할 mount 및 post restore 명령을 입력합니다.
 +
 자동 검색 리소스에 대해서는 마운트 명령을 사용할 수 없습니다.
-
-+
-
-NOTE: 중지, 스냅샷 및 중지 해제 작업에 대한 사전 및 사후 명령의 경우 Linux의 경우 _/opt/snapcenter/scc/allowed_commands.config_path 및 Windows_C:\Program Files\NetApp\Creator\Snapcenter\nSnapCenter_allowed 명령을 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
 
 . 알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.
 +

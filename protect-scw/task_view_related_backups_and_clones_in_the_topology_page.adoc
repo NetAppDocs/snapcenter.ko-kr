@@ -35,9 +35,9 @@ NOTE: 미러 볼트 유형 볼륨에 있는 버전에 유연한 미러 백업의
 
 2차 관계가 SnapMirror 액티브 동기화(처음에 SnapMirror Business Continuity[SM-BC]로 릴리스)로 설정된 경우 다음과 같은 추가 아이콘을 볼 수 있습니다.
 
-* image:../media/topology_replica_site_up.png["복제 사이트가 작동 중입니다"] 는 복제 사이트가 작동 중임을 의미합니다.
-* image:../media/topology_replica_site_down.png["복제 사이트가 다운되었습니다"]  는 복제 사이트가 다운되었음을 의미합니다.
-* image:../media/topology_reestablished.png["관계가 재설정됩니다"] 2차 미러 또는 볼트 관계가 다시 설정되지 않았음을 의미합니다.
+* image:../media/topology_replica_site_up.png["복제 사이트가 작동 중입니다"] 복제 사이트가 작동 중입니다.
+* image:../media/topology_replica_site_down.png["복제 사이트가 다운되었습니다"] 복제 사이트가 다운되었습니다.
+* image:../media/topology_reestablished.png["관계가 재설정됩니다"] 2차 미러 또는 볼트 관계가 다시 설정되지 않았습니다.
 
 
 .단계

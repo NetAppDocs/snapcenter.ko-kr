@@ -30,10 +30,9 @@ cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 g
 
 * 중지, 스냅샷 및 중지 해제 작업에 대한 사전 및 사후 명령의 경우 플러그인 호스트에서 사용할 수 있는 명령 목록에 다음 경로에서 명령이 있는지 확인해야 합니다.
 +
-Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
+** Windows 호스트의 기본 위치:_C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in Creator\etc\allowed_commands.config_
+** Linux 호스트의 기본 위치: _/opt/NetApp/SnapCenter/scc/etc/allowed_commands.config_
 
-+
-Linux의 경우: _/var/opt/snapcenter/SCC/allowed_commands_list.txt_
 
 
 
@@ -48,7 +47,7 @@ NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
 . 왼쪽 탐색 창에서 * 리소스 * 를 선택한 다음 목록에서 적절한 플러그인을 선택합니다.
 . 리소스 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.
 +
-를 선택합니다image:../media/filter_icon.png[""]를 선택한 다음 호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 선택할 수 있습니다 image:../media/filter_icon.png[""] 를 눌러 필터 창을 닫습니다.
+을 image:../media/filter_icon.png["필터 아이콘"]선택한 다음 호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 선택하여 필터 창을 닫을 수 image:../media/filter_icon.png["필터 아이콘"] 있습니다.
 
 . 백업할 리소스를 선택합니다.
 . 리소스 페이지에서 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 을 선택한 다음 스냅샷 이름에 사용할 사용자 지정 이름 형식을 입력합니다.
@@ -111,7 +110,7 @@ SnapCenter - Windows용 플러그인을 사용하여 파일 시스템을 일관�
 
 |===
 +
-image:../media/application_settings.gif[""]
+image:../media/application_settings.gif["응용 프로그램 설정"]
 
 
 

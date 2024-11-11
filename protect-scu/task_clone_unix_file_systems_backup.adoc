@@ -57,7 +57,7 @@ SnapCenter를 사용하여 파일 시스템 백업을 사용하여 Unix 파일 �
 .. 클론 작업 전후에 각각 실행해야 하는 사전 클론 또는 사후 클론 명령을 입력합니다.
 +
 
-NOTE: 플러그인 호스트에서 사용할 수 있는 명령 목록에 _/opt/netapp/snapcenter/scc/allowed_commands.config_path의 명령이 있는지 확인해야 합니다.
+NOTE: 플러그인 호스트에서 사용할 수 있는 명령 목록에 _/opt/netapp/snapcenter/scc/etc/allowed_commands.config_path의 명령이 있는지 확인해야 합니다.
 
 
 

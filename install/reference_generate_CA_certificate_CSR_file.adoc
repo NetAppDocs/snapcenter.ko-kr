@@ -7,7 +7,7 @@ summary: 'CSR(인증서 서명 요청)을 생성하고 생성된 CSR을 사용�
 = CA 인증서 CSR 파일을 생성합니다
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media
+:imagesdir: ../media/
 
 
 [role="lead"]

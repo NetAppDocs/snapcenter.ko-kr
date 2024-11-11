@@ -44,7 +44,7 @@ summary: 데이터가 손실되는 경우 SnapCenter를 사용하여 데이터�
 . PostOps 페이지에서 복원 작업을 수행한 후 실행할 사후 복원 명령을 입력합니다.
 +
 
-NOTE: 플러그인 호스트에서 사용할 수 있는 명령 목록에 _/opt/netapp/snapcenter/scc/etc/allowed_commands.config_path의 명령이 있는지 확인해야 합니다.
+NOTE: 플러그인 호스트의 위치 _/opt/NetApp/SnapCenter/scc/etc/allowed_commands.config_path에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
 
 . 알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일 알림을 보낼 시나리오를 선택합니다.
 +

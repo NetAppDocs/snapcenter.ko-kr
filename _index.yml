@@ -1,8 +1,11 @@
 ---
 indexpage:
+  title: SnapCenter 소프트웨어 설명서
+  keywords: snapcenter server, plug-in, data protection, applications, databases,
+    host file systems, VmWare, backup, restore, clone
   lead: SnapCenter 소프트웨어는 하이브리드 클라우드 어디서나 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일
     시스템 및 VM에 대해 애플리케이션 정합성을 보장하는 데이터 보호를 제공하는 단순하고 확장 가능한 중앙 집중식 플랫폼입니다. 이 설명서 라이브러리에는
-    버전 6.0에 대한 정보가 포함되어 있습니다.
+    버전 6.0 및 6.0.1에 대한 정보가 포함되어 있습니다.
   tiles:
   - title: 시작하십시오
     links:
@@ -10,8 +13,6 @@ indexpage:
       url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3323468
     - title: SnapCenter에 대해 자세히 알아보십시오
       url: "/concept/concept_snapcenter_overview.html"
-    - title: SQL Server 데이터베이스 보호를 위한 빠른 참조입니다
-      url: "/protect-scsql/quick_start_to_install_snapcenter_plug-in_for_sql_server.html"
     - title: SnapCenter 서버 및 SnapCenter 플러그인 업그레이드
       url: "/upgrade/upgrade_workflow.html"
   - title: SnapCenter 서버를 설치합니다

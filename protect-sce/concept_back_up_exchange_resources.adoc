@@ -17,4 +17,4 @@ summary: 사용자 환경에 Microsoft Exchange Server용 SnapCenter 플러그�
 
 다음 워크플로에서는 백업 작업을 수행해야 하는 순서를 보여 줍니다.
 
-image:../media/sce_backup_workflow.gif[""]
+image:../media/sce_backup_workflow.gif["Exchange 데이터베이스 백업 워크플로우"]

@@ -46,7 +46,7 @@ SnapCenter 서버 설치 프로그램을 사용하면 설치하는 동안 중앙
 
 SnapCenter 서버 및 해당 플러그인을 설치한 후 CA 인증서를 배포해야 합니다. 자세한 내용은 을 참조하십시오 link:../install/reference_generate_CA_certificate_CSR_file.html["CA 인증서 CSR 파일을 생성합니다"].
 
-VMware vSphere용 SnapCenter 플러그인용 CA 인증서를 구축할 수도 있습니다. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#create-and-import-certificates["인증서를 만들고 가져옵니다"^].
+VMware vSphere용 SnapCenter 플러그인용 CA 인증서를 구축할 수도 있습니다. 자세한 내용은 을 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_and_import_certificates.html["인증서를 만들고 가져옵니다"^]참조하십시오.
 
 
 

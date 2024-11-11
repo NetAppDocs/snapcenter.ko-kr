@@ -20,10 +20,9 @@ SnapCenter를 사용하여 백업을 복제할 수 있습니다. 기본 또는 �
 * 타겟 클론 서버에는 타겟 클론 SID 필드에 제공되는 것과 동일한 SAP HANA 인스턴스 SID가 있어야 합니다.
 * 사전 클론 생성 또는 사후 클론 명령의 경우 플러그인 호스트에서 사용할 수 있는 명령 목록에 다음 경로의 명령이 있는지 확인해야 합니다.
 +
-Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands_list.txt_
+** Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+** Linux의 경우: _/opt/netapp/snapcenter/scc/etc/allowed_commands.config_
 
-+
-Linux의 경우: _/var/opt/snapcenter/SCC/allowed_commands_list.txt_
 
 
 
@@ -118,13 +117,7 @@ NOTE: 이 스크립트는 플러그인 호스트에서 실행됩니다.
 Linux 시스템의 볼륨 또는 qtree에 대한 마운트 명령:
 
 +
-NFS의 예:
-
-+
- mount VSERVER_DATA_IP:%VOLUME_NAME_Clone /mnt
-+
-
-NOTE: 중지, 스냅샷 및 중지 해제 작업에 대한 사전 및 사후 명령의 경우 Linux의 경우 _/opt/snapcenter/scc/allowed_commands.config_path 및 _C:\Program Files\NetApp\Creator\Snapcenter Plug-in\etc.
+NFS의 예: `mount VSERVER_DATA_IP:%VOLUME_NAME_Clone /mnt`
 
 
 

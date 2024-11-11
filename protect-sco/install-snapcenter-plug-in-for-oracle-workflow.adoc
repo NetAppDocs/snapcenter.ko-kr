@@ -13,4 +13,4 @@ summary: Oracle 데이터베이스를 보호하려면 Oracle 데이터베이스�
 [role="lead"]
 Oracle 데이터베이스를 보호하려면 Oracle 데이터베이스용 SnapCenter 플러그인을 설치하고 설정해야 합니다.
 
-image::../media/sco_install_configure_workflow.png[SCO 설치 워크플로우 구성]
+image::../media/sco_install_configure_workflow.png[Oracle 플러그인 설치 워크플로우]

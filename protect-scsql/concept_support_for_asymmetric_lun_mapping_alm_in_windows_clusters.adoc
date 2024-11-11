@@ -21,7 +21,7 @@ ALM 구성은 운영 데이터 센터에 하나 이상의 노드와 재해 복�
 * 재해 복구 사이트에서 독립 실행형 인스턴스를 사용하여 재해 복구를 위한 로컬 HA(고가용성) 및 AG(가용성 그룹)용 FCI
 
 
-image::../media/asymmetric_lun_mapping_diagram.gif[비대칭 LUN 매핑 다이어그램]
+image::../media/asymmetric_lun_mapping_diagram.gif[LUN 매핑]
 
 운영 데이터 센터의 스토리지는 운영 데이터 센터에 있는 FCI 노드 간에 공유됩니다. 재해 복구 데이터 센터의 스토리지는 재해 복구 데이터 센터에 있는 FCI 노드 간에 공유됩니다.
 

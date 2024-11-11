@@ -18,16 +18,14 @@ SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 복원 및
 * 복원할 리소스 또는 리소스 그룹에 대해 현재 진행 중인 백업 작업을 취소해야 합니다.
 * 사전 복원, 사후 복원, 마운트 및 마운트 해제 명령의 경우 다음 경로에서 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
 +
-Windows의 경우:_C:\Program Files\NetApp\SnapCenter\Snapcenter Plug-in Creator\etc\allowed_commands.config_
+** Windows 호스트의 기본 위치:_C:\Program Files\NetApp\SnapCenter\SnapCenter Plug-in Creator\etc\allowed_commands.config_
+** Linux 호스트의 기본 위치: _/opt/NetApp/SnapCenter/scc/etc/allowed_commands.config_
 
-+
-Linux의 경우: _/opt/netapp/snapcenter/scc/etc/allowed_commands.config_
 
-+
+
+
 
 NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다.
-
-
 
 .이 작업에 대해
 * ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
@@ -76,10 +74,6 @@ NOTE: All * 을 선택하면 볼륨, Qtree 또는 LUN의 모든 파일이 복원
 
 . 복구 작업을 수행하기 전에 Pre restore 및 unmount 명령을 Pre ops 페이지에 입력합니다.
 . 작업 게시 페이지에서 복구 작업을 수행한 후 실행할 mount 및 post restore 명령을 입력합니다.
-+
-
-NOTE: 중지, 스냅샷 및 중지 해제 작업에 대한 사전 및 사후 명령의 경우 Linux의 경우 _/opt/snapcenter/scc/allowed_commands.config_path 및 Windows_C:\Program Files\NetApp\Creator\Snapcenter\nSnapCenter_allowed 명령을 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
-
 . 알림 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.
 +
 또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. SMTP는 * 설정 * > * 글로벌 설정 * 페이지에서도 구성해야 합니다.

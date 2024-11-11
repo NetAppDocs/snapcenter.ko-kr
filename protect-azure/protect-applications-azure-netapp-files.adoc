@@ -1,0 +1,28 @@
+---
+permalink: protect-azure/protect-applications-azure-netapp-files.html 
+sidebar: sidebar 
+keywords: azure netapp files, ANF, back up, restore, clone, ANF backup, Azure Blob storage 
+summary: Azure NetApp Files에서 실행 중인 애플리케이션을 백업, 복원 및 복제할 수 있습니다. 
+---
+= Azure NetApp Files에서 실행 중인 애플리케이션을 보호합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter은 Azure NetApp Files에 상주하는 Oracle, SQL, SAP HANA와 같은 애플리케이션의 보호를 지원합니다. 6.0.1 릴리스부터 SnapCenter는 장기적인 복구, 아카이브 및 규정 준수를 위한 완전 관리형 백업 솔루션을 제공하여 Azure NetApp Files의 데이터 보호 기능을 확장하는 Azure NetApp Files 백업 기능을 지원합니다.
+
+Azure NetApp Files는 장기 백업 보존에 비용이 많이 드는 프리미엄 스토리지 솔루션입니다. 비용을 최적화하기 위해 Azure NetApp Files 스토리지에서 Azure 오브젝트 저장소로 백업을 이동할 수 있습니다. SnapCenter 6.0.1부터 Azure NetApp Files에 있는 애플리케이션을 Azure Blob 스토리지(오브젝트 저장소)에 백업하고 클론 복제할 수 있습니다. 단기 복구를 위해 Azure NetApp Files 스토리지에 볼륨 스냅샷 복사본 2개와 장기 복구를 위해 Azure Blob 스토리지에 또 다른 복사본을 유지할 수 있습니다.
+
+Azure NetApp Files 백업 정책이 활성화되고 리소스에 연결된 경우 SnapCenter에서는 볼륨 스냅샷 생성과 Azure Blob Storage로의 백업을 처리합니다. SnapCenter가 백업 볼트를 생성하고 볼륨에 대한 백업을 활성화합니다. 볼륨에 대한 백업을 활성화한 경우 SnapCenter는 기존 볼트를 사용합니다.
+
+
+
+== 제한 사항
+
+* FAS 또는 AFF ONTAP 및 FSxN 스토리지 시스템에 대한 오브젝트 스토리지 기능은 지원되지 않습니다.
+* Oracle 및 SAP HANA 마운트 및 카탈로그 워크플로는 지원되지 않습니다.
+* 오브젝트 스토리지의 백업 검증, REST API 지원, 오브젝트 스토리지의 클론 라이프사이클 관리 및 오브젝트 스토리지 백업에 대한 보고 기능은 지원되지 않습니다.
+* Azure Blob 스토리지의 백업에서 Azure NetApp Files로 복원하는 것은 지원되지 않습니다. 또는 클론 옵션을 사용할 수 있습니다.
+

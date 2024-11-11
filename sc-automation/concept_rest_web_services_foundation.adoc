@@ -7,7 +7,7 @@ summary: REST는 분산 웹 응용 프로그램을 만드는 스타일입니다.
 = REST 웹 서비스 기반
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

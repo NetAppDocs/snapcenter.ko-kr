@@ -157,7 +157,7 @@ ONTAP의 보호 관계가 미러 및 볼트 유형이고 이 옵션만 선택하
 
 토폴로지 페이지에서 * 새로 고침 * 버튼을 클릭하면 ONTAP에서 검색된 2차 및 1차 SnapLock 만료 시간이 새로 고쳐집니다.
 
-을 참조하십시오 link:..protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html["토폴로지 페이지에서 SAP HANA 데이터베이스 백업 및 클론 보기"].
+을 link:../protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html["토폴로지 페이지에서 SAP HANA 데이터베이스 백업 및 클론 보기"]참조하십시오.
 
 
 
@@ -172,7 +172,7 @@ SnapLock가 SnapLock 볼트라고 하는 ONTAP의 보조 버전에서만 구성�
 
 SnapLock 볼트에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/snaplock/commit-snapshot-copies-worm-concept.html["볼트 대상에서 WORM에 스냅샷 복사본을 커밋합니다"]
 
-을 참조하십시오 link:..protect-hana/task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html["토폴로지 페이지에서 SAP HANA 데이터베이스 백업 및 클론 보기"].
+을 link:task_view_sap_hana_database_backups_and_clones_in_the_topology_page_sap_hana.html["토폴로지 페이지에서 SAP HANA 데이터베이스 백업 및 클론 보기"]참조하십시오.
 
 
 

@@ -7,10 +7,10 @@ summary: 해결된 문제, 알려진 문제, 주의 및 제한 사항을 포함�
 = 릴리스 정보
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
 해결된 문제, 알려진 문제, 주의 및 제한 사항을 포함하여 SnapCenter 서버 및 SnapCenter 플러그인 패키지의 이 릴리스에 대한 중요 정보를 제공합니다.
 
-자세한 내용은 를 https://library.netapp.com/ecm/ecm_download_file/ECMLP3323468["SnapCenter 소프트웨어 6.0 릴리스 정보"^]참조하십시오.
+자세한 내용은 를 https://library.netapp.com/ecm/ecm_download_file/ECMLP3323468["SnapCenter 소프트웨어 6.0 및 6.0.1 릴리스 정보"^]참조하십시오.

@@ -22,7 +22,9 @@ SnapCenter 표준 컨트롤러 기반
  a| 
 FAS, AFF, All SAN 어레이(ASA)에 필요
 
-SnapCenter 표준 라이센스는 컨트롤러 기반 라이센스이며 프리미엄 번들의 일부로 포함됩니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS, AFF 또는 ASA 스토리지를 사용하여 평가판을 통해 SnapCenter를 설치하려는 경우, 세일즈 담당자에게 문의하여 프리미엄 번들 평가 라이센스를 얻을 수 있습니다.
+SnapCenter Standard 라이센스는 컨트롤러 기반 라이센스로, ONTAP One에 포함되어 있습니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS, AFF 또는 ASA 스토리지를 사용하여 SnapCenter를 평가판으로 설치하려면 영업 담당자에게 문의하여 ONTAP One 평가판 라이센스를 받을 수 있습니다.
+
+ONTAP One에 포함된 라이센스에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["ONTAP One에 포함된 라이선스"]참조하십시오.
 
 
 NOTE: SnapCenter는 데이터 보호 번들의 일부로 제공됩니다. A400 이상을 구입한 경우 데이터 보호 번들을 구입해야 합니다.
@@ -87,7 +89,7 @@ NOTE: SnapCenter 표준 라이센스를 보조 대상에 추가하는 것이 좋
 
 |===
 
-NOTE: SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다. 용량 기반 라이센스는 더 이상 Amazon FSx for NetApp ONTAP 및 Cloud Volumes ONTAP에 필요하지 않습니다. Azure NetApp Files에는 표준 라이센스와 용량 기반 라이센스가 필요하지 않습니다.
+NOTE: SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다. Amazon FSx for NetApp ONTAP, ONTAP Select, Cloud Volumes ONTAP 및 Azure NetApp Files에는 표준 라이센스 및 용량 기반 라이센스가 더 이상 필요하지 않습니다.
 
 하나 이상의 SnapCenter 라이센스를 설치해야 합니다. 라이센스를 추가하는 방법에 대한 자세한 내용은 을 link:../install/concept_snapcenter_standard_controller_based_licenses.html["SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다"]참조하십시오.
 

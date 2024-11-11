@@ -2,6 +2,8 @@
 section: protect-azure
 title: Azure NetApp Files에서 실행 중인 애플리케이션을 보호합니다
 entries:
+- title: Azure NetApp Files에서 실행 중인 애플리케이션을 보호합니다
+  url: "/protect-azure/protect-applications-azure-netapp-files.html"
 - title: SnapCenter를 설치하고 자격 증명을 생성합니다
   entries:
   - title: Azure 가상 머신에 SnapCenter을 설치합니다

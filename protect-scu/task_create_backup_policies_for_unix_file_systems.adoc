@@ -106,7 +106,7 @@ NOTE: 보조 스토리지의 최대 스냅샷 한도에 도달하지 않도록 O
 . 스크립트 페이지에서 백업 작업 전후에 실행할 처방인 또는 PS의 경로와 인수를 각각 입력합니다.
 +
 
-NOTE: 플러그인 호스트에서 사용할 수 있는 명령 목록에 _/opt/netapp/snapcenter/scc/etc/allowed_commands.config_path의 명령이 있는지 확인해야 합니다.
+NOTE: _/opt/NetApp/SnapCenter/scc/etc/allowed_commands.config_path에서 플러그인 호스트에서 사용할 수 있는 명령 목록에 명령이 있는지 확인해야 합니다.
 
 +
 스크립트 시간 초과 값을 지정할 수도 있습니다. 기본값은 60초입니다.

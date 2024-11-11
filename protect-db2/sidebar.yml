@@ -48,7 +48,7 @@ entries:
   entries:
   - title: IBM DB2용 SnapCenter 플러그인 설치 워크플로우
     url: "/protect-db2/install-snapcenter-plug-in-for-ibm-db2.html"
-  - title: IBM DB2용 SnapCenter 플러그인 설치 및 호스트 추가 사전 요구 사항
+  - title: Windows, Linux 또는 AIX용 호스트 추가 및 플러그인 패키지 설치를 위한 사전 요구 사항
     url: "/protect-db2/prerequisites-to-adding-hosts-and-installing-snapcenter-plug-in-for-ibm-db2.html"
   - title: Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항
     url: "/protect-db2/host-requirements-to-install-snapcenter-plug-in-package-for-windows-db2.html"

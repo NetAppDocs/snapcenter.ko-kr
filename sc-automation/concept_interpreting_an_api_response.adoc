@@ -7,7 +7,7 @@ summary: 각 API 요청은 클라이언트에 대한 응답을 다시 생성합�
 = API 응답 해석
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

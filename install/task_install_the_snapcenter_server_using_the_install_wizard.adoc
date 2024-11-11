@@ -13,7 +13,7 @@ summary: SnapCenter 서버 설치 관리자 실행 파일을 실행하여 SnapCe
 [role="lead"]
 SnapCenter 서버 설치 관리자 실행 파일을 실행하여 SnapCenter 서버를 설치할 수 있습니다.
 
-필요에 따라 PowerShell cmdlet을 사용하여 몇 가지 설치 및 구성 절차를 수행할 수 있습니다.
+필요에 따라 PowerShell cmdlet을 사용하여 몇 가지 설치 및 구성 절차를 수행할 수 있습니다. PowerShell 7.4.2 이상을 사용해야 합니다.
 
 
 NOTE: 명령줄에서 SnapCenter 서버를 자동 설치하는 것은 지원되지 않습니다.

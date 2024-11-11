@@ -7,7 +7,7 @@ summary: HTTP 요청에 설정된 매개 변수와 변수를 통해 API 호출�
 = API 요청을 제어하는 입력 변수입니다
 :allow-uri-read: 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
