@@ -1,7 +1,7 @@
 ---
-permalink: protect-nsp/add_hosts_and_install_plug_in_packages_on_remote_hosts.html 
+permalink: protect-scc/add_hosts_and_install_plug_in_packages_on_remote_hosts.html 
 sidebar: sidebar 
-keywords: add hostsNetApp supported plug-ins, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in 
+keywords: add hosts, custom plug-in 
 summary: SnapCenterAdd 호스트 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다. 
 ---
 = 호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다
@@ -11,7 +11,7 @@ summary: SnapCenterAdd 호스트 페이지를 사용하여 호스트를 추가�
 
 
 [role="lead"]
-SnapCenter 호스트 추가 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다.
+SnapCenterAdd 호스트 페이지를 사용하여 호스트를 추가한 다음 플러그인 패키지를 설치해야 합니다. 플러그인은 원격 호스트에 자동으로 설치됩니다. 호스트를 추가하고 개별 호스트 또는 클러스터에 대한 플러그인 패키지를 설치할 수 있습니다.
 
 .시작하기 전에
 * 플러그인 설치 및 제거 권한이 있는 역할(예: SnapCenter 관리자 역할)에 할당된 사용자여야 합니다.
@@ -20,13 +20,12 @@ SnapCenter 호스트 추가 페이지를 사용하여 호스트를 추가한 다
 +
 link:configure_gMSA_on_windows_server_2012_or_later.html["사용자 지정 응용 프로그램에 대해 Windows Server 2016 이상에서 그룹 관리 서비스 계정을 구성합니다"]
 
-* Windows 호스트의 경우 SnapCenter Plug-in for Windows를 선택해야 합니다.
 
 
 .이 작업에 대해
-* SnapCenter 서버를 다른 SnapCenter 서버에 플러그인 호스트로 추가할 수 없습니다.
-* WSFC(클러스터에 플러그인)를 설치하면 클러스터의 모든 노드에 플러그인이 설치됩니다.
+SnapCenter 서버를 다른 SnapCenter 서버에 플러그인 호스트로 추가할 수 없습니다.
 
+WSFC(클러스터에 플러그인)를 설치하면 클러스터의 모든 노드에 플러그인이 설치됩니다.
 
 .단계
 . 왼쪽 탐색 창에서 * 호스트 * 를 선택합니다.
@@ -45,14 +44,10 @@ link:configure_gMSA_on_windows_server_2012_or_later.html["사용자 지정 응�
 
 ** Windows
 ** 리눅스
-** AIX
 
 
 
-NOTE: NetApp 지원 플러그인은 Windows, Linux 및 AIX 환경에서 사용할 수 있습니다.
-
-
-NOTE: 스토리지 및 Oracle 애플리케이션은 AIX에서 지원됩니다.
+NOTE: 사용자 지정 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다.
 
 
 
@@ -85,17 +80,6 @@ NOTE: 자격 증명 인증 모드는 호스트 추가 마법사에서 지정하�
 
 |===
 . 설치할 플러그인 선택 * 섹션에서 설치할 플러그인을 선택합니다.
-+
-목록에서 다음 플러그인을 설치할 수 있습니다.
-
-+
-** MongoDB
-** ORASCPM(Oracle Applications로 표시됨)
-** SAP ASE를 참조하십시오
-** SAP MaxDB입니다
-** 스토리지
-
-
 . (선택 사항) * 추가 옵션 * 을 선택하여 다른 플러그인을 설치합니다.
 +
 |===
@@ -117,15 +101,33 @@ NOTE: 플러그인을 수동으로 설치하고 사용자 지정 포트를 지�
  a| 
 설치 경로
  a| 
-NetApp 지원 플러그인은 Windows 시스템 또는 Linux 시스템에 설치할 수 있습니다.
+SnapCenter 사용자 지정 플러그인은 Windows 시스템 또는 Linux 시스템에 설치할 수 있습니다.
 
 ** Windows용 SnapCenter 플러그인 패키지의 경우 기본 경로는 C:\Program Files\NetApp\SnapCenter입니다.
 +
 선택적으로 경로를 사용자 지정할 수 있습니다.
 
-** Linux용 SnapCenter 플러그인 패키지 및 AIX용 SnapCenter 플러그인 패키지의 경우 기본 경로는 입니다 `/opt/NetApp/snapcenter`.
+** Linux용 SnapCenter 플러그인 패키지의 경우 기본 경로는 입니다 `/opt/NetApp/snapcenter`.
 +
 선택적으로 경로를 사용자 지정할 수 있습니다.
+
+** SnapCenter 맞춤형 플러그인:
++
+... 사용자 지정 플러그인 섹션에서 * 찾아보기 * 를 선택하고 압축된 사용자 지정 플러그인 폴더를 선택합니다.
++
+압축된 폴더에는 사용자 지정 플러그인 코드와 descriptor.xml 파일이 들어 있습니다.
+
++
+스토리지 플러그인의 경우 로 이동합니다 `_C:\ProgramData\NetApp\SnapCenter\Package Repository_` 를 선택하고 를 선택합니다 `Storage.zip` 폴더.
+
+... 업로드 * 를 선택합니다.
++
+압축된 사용자 지정 플러그인 폴더의 descriptor.xml 파일은 패키지를 업로드하기 전에 유효성을 검사합니다.
+
++
+SnapCenter 서버에 업로드되는 사용자 지정 플러그인이 나열됩니다.
+
+
 
 
 
@@ -155,17 +157,11 @@ NOTE: GMSA는 SnapCenter Plug-in for Windows 서비스에 대해서만 로그온
 Skip Prech사전 검사 * 확인란을 선택하지 않은 경우 호스트가 플러그인 설치 요구 사항을 충족하는지 여부를 확인합니다. 디스크 공간, RAM, PowerShell 버전, .NET 버전, 위치(Windows 플러그인의 경우) 및 Java 버전(Linux 플러그인의 경우)은 최소 요구 사항에 따라 검증됩니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다.
 
 +
-오류가 디스크 공간 또는 RAM과 관련된 경우 에 있는 web.config 파일을 업데이트하여 기본값을 수정할 수 `C:\Program Files\NetApp\SnapCenter WebApp` 있습니다. 오류가 다른 매개변수와 관련된 경우 문제를 해결해야 합니다.
+오류가 디스크 공간 또는 RAM과 관련된 경우 C:\Program Files\NetApp\SnapCenter WebApp에 있는 web.config 파일을 업데이트하여 기본값을 수정할 수 있습니다. 오류가 다른 매개변수와 관련된 경우 문제를 해결해야 합니다.
 
 +
 
-NOTE: HA 설정에서 SnapManager.Web.UI.dll.config를 업데이트하는 경우 두 노드에서 파일을 업데이트하고 SnapCenter 앱 풀을 다시 시작해야 합니다.
-
-+
-Windows 기본 경로는 입니다 `C:\Program Files\NetApp\SnapCenter WebApp\SnapManager.Web.UI.dll.config`
-
-+
-Linux 기본 경로는 입니다 `/opt/NetApp/snapcenter/SnapManagerWeb/SnapManager.Web.UI.dll.config`
+NOTE: HA 설정에서 web.config 파일을 업데이트하는 경우 두 노드에서 파일을 업데이트해야 합니다.
 
 . 호스트 유형이 Linux인 경우 지문을 확인한 다음 * 확인 및 제출 * 을 선택합니다.
 +

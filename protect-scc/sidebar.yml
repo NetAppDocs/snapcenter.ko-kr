@@ -5,126 +5,122 @@ entries:
 - title: SnapCenter 맞춤형 플러그인
   entries:
   - title: SnapCenter 맞춤형 플러그인 개요
-    url: "/protect-scc/concept_snapcenter_custom_plug_ins_overview.html"
+    url: "/protect-scc/snapcenter_custom_plug_ins_overview.html"
   - title: SnapCenter 사용자 지정 플러그인으로 수행할 수 있는 작업
-    url: "/protect-scc/concept_what_you_can_do_with_the_snapcenter_custom_plug_ins.html"
+    url: "/protect-scc/what_you_can_do_with_custom_plugins.html"
   - title: SnapCenter 맞춤형 플러그인 기능
-    url: "/protect-scc/concept_snapcenter_custom_plug_ins_features.html"
+    url: "/protect-scc/snapcenter_custom_plug_ins_features.html"
   - title: SnapCenter 사용자 지정 플러그인에서 지원하는 스토리지 유형입니다
-    url: "/protect-scc/reference_storage_types_supported_by_snapcenter_custom_plug_in.html"
+    url: "/protect-scc/storage_types_supported_by_custom_plugins.html"
   - title: 사용자 지정 플러그인에 필요한 최소 ONTAP 권한
-    url: "/protect-scc/reference_minimum_ontap_privileges_required_for_custom_plug_in.html"
+    url: "/protect-scc/minimum_ontap_privileges_required_for_custom_plugins.html"
   - title: SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템 준비
-    url: "/protect-scc/reference_prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_plugin_for_scc.html"
+    url: "/protect-scc/prepare_storage_systems_for_snapmirror_and_snapvault_replication_for_custom_plugins.html"
   - title: 백업 전략 정의
-    url: "/protect-scc/task_define_a_backup_strategy.html"
+    url: "/protect-scc/define_a_backup_strategy.html"
   - title: 맞춤형 플러그인의 백업 전략
     entries:
     - title: 사용자 지정 플러그인 리소스의 백업 스케줄입니다
-      url: "/protect-scc/reference_backup_schedules_of_custom_plug_in_resources.html"
+      url: "/protect-scc/backup_schedules_of_custom_plug_in_resources.html"
     - title: 필요한 백업 작업 수입니다
-      url: "/protect-scc/concept_number_of_backup_jobs_needed.html"
+      url: "/protect-scc/number_of_backup_jobs_needed.html"
   - title: 수동으로 추가한 사용자 지정 플러그인 리소스에 대해 지원되는 복원 전략 유형입니다
-    url: "/protect-scc/reference_types_of_restore_strategies_supported_for_manually_added_custom_plugin_resources.html"
+    url: "/protect-scc/types_of_restore_strategies_supported_for_manually_added_custom_plugin_resources.html"
 - title: 응용 프로그램용 플러그인을 개발합니다
   entries:
   - title: 개요
-    url: "/protect-scc/concept_develop_a_plug_in_for_your_application.html"
+    url: "/protect-scc/develop_a_plug_in_for_your_application.html"
   - title: Perl 기반 개발
-    url: "/protect-scc/reference_perl.html"
+    url: "/protect-scc/perl.html"
   - title: 네이티브 스타일
-    url: "/protect-scc/reference_native.html"
+    url: "/protect-scc/native.html"
   - title: Java 스타일
-    url: "/protect-scc/reference_java.html"
+    url: "/protect-scc/java.html"
   - title: SnapCenter의 사용자 지정 플러그인
-    url: "/protect-scc/reference_custom_plugin_in_snapcenter.html"
+    url: "/protect-scc/custom_plugins_in_snapcenter.html"
 - title: SnapCenter 사용자 지정 플러그인 설치를 준비합니다
   entries:
   - title: SnapCenter 맞춤형 플러그인의 설치 워크플로우
-    url: "/protect-scc/task_install_snapcenter_custom_plug_in.html"
+    url: "/protect-scc/install_snapcenter_custom_plug_in.html"
   - title: 호스트 추가 및 SnapCenter 사용자 지정 플러그인 설치를 위한 사전 요구 사항
-    url: "/protect-scc/reference_prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html"
+    url: "/protect-scc/prerequisites_to_adding_hosts_and_installing_snapcenter_custom_plug_ins.html"
   - title: Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항
-    url: "/protect-scc/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_scc.html"
+    url: "/protect-scc/host_requirements_to_install_snapcenter_plug_in_package_for_windows.html"
   - title: Linux용 SnapCenter 플러그인 패키지 설치를 위한 호스트 요구 사항
-    url: "/protect-scc/reference_host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux_scc.html"
+    url: "/protect-scc/host_requirements_for_installing_the_snapcenter_plug_in_package_for_linux.html"
   - title: SnapCenter 사용자 지정 플러그인에 대한 자격 증명을 설정합니다
-    url: "/protect-scc/task_set_up_credentials_for_snapcenter_custom_plug_in.html"
-  - title: Windows Server 2012 이상에서 GMSA를 구성합니다
-    url: "/protect-scc/task_configure_gMSA_on_windows_server_2012_or_later.html"
+    url: "/protect-scc/set_up_credentials_for_snapcenter_custom_plug_in.html"
+  - title: Windows Server 2016 이상에서 GMSA를 구성합니다
+    url: "/protect-scc/configure_gMSA_on_windows_server_2012_or_later.html"
   - title: SnapCenter 사용자 지정 플러그인을 설치합니다
     entries:
     - title: 호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다
-      url: "/protect-scc/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_scc.html"
+      url: "/protect-scc/add_hosts_and_install_plug_in_packages_on_remote_hosts.html"
     - title: cmdlet을 사용하여 여러 원격 호스트에 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 설치합니다
-      url: "/protect-scc/task_install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets_scc.html"
+      url: "/protect-scc/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets.html"
     - title: 명령줄 인터페이스를 사용하여 Linux 호스트에 SnapCenter 사용자 지정 플러그인을 설치합니다
-      url: "/protect-scc/task_install_the_snapcenter_custom_plug_ins_on_linux_hosts_using_the_command_line_interface.html"
+      url: "/protect-scc/install_the_custom_plug_ins_on_linux_hosts_using_the_command_line_interface.html"
     - title: SnapCenter 플러그인 패키지 설치 상태를 모니터링합니다
-      url: "/protect-scc/task_monitor_the_status_of_installing_plugin_for_scc.html"
+      url: "/protect-scc/monitor_the_status_of_installing_plugin.html"
   - title: CA 인증서를 구성합니다
     entries:
     - title: CA 인증서 CSR 파일을 생성합니다
-      url: "/protect-scc/reference_generate_CA_certificate_CSR_file.html"
+      url: "/protect-scc/generate_CA_certificate_CSR_file.html"
     - title: CA 인증서를 가져옵니다
-      url: "/protect-scc/task_import_CA_certificates.html"
+      url: "/protect-scc/import_CA_certificates.html"
     - title: CA 인증서 지문을 받습니다
-      url: "/protect-scc/task_get_the_CA_certificate_thumbprint.html"
+      url: "/protect-scc/get_the_CA_certificate_thumbprint.html"
     - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
-      url: "/protect-scc/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
+      url: "/protect-scc/configure_CA_certificate_with_Windows_host_plug-in_services.html"
     - title: Linux 호스트에서 SnapCenter 사용자 지정 플러그인 서비스에 대한 CA 인증서를 구성합니다
-      url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_Linux_host.html"
+      url: "/protect-scc/configure_CA_certificate_on_Linux_host.html"
     - title: Windows 호스트에서 SnapCenter 사용자 지정 플러그인 서비스에 대한 CA 인증서를 구성합니다
-      url: "/protect-scc/task_configure_CA_certificate_for_SCC_on_windows_host.html"
+      url: "/protect-scc/configure_CA_certificate_on_windows_host.html"
     - title: 플러그인에 대해 CA 인증서를 활성화합니다
-      url: "/protect-scc/task_enable_ca_certificates_for_plug-ins.html"
+      url: "/protect-scc/enable_ca_certificates_for_plug-ins.html"
 - title: 데이터 보호를 준비합니다
   entries:
   - title: SnapCenter 사용자 지정 플러그인 사용을 위한 사전 요구 사항
-    url: "/protect-scc/reference_prerequisites_for_using_snapcenter_custom_plug_ins.html"
+    url: "/protect-scc/prerequisites_for_using_custom_plugins.html"
   - title: 리소스, 리소스 그룹 및 정책을 사용하여 맞춤형 플러그인 리소스를 보호하는 방법
-    url: "/protect-scc/concept_how_resources_resource_groups_and_policies_are_used_for_protecting_custom_plug_in_resources.html"
+    url: "/protect-scc/how_resources_resource_groups_policies_used_for_protecting_custom_plugins_resources.html"
 - title: 사용자 지정 플러그인 리소스를 백업합니다
   entries:
   - title: 워크플로를 백업합니다
-    url: "/protect-scc/task_back_up_custom_plug_in_resources.html"
+    url: "/protect-scc/back_up_custom_plugins_resources.html"
   - title: SnapCenter 사용자 지정 플러그인에 리소스를 추가합니다
-    url: "/protect-scc/task_add_resources_to_snapcenter_custom_plug_ins.html"
+    url: "/protect-scc/add_resources_to_snapcenter_custom_plug_ins.html"
   - title: 사용자 지정 플러그인 리소스에 대한 정책을 생성합니다
-    url: "/protect-scc/task_create_policies_for_custom_plug_in_resources.html"
+    url: "/protect-scc/create_policies_for_custom_plug_in_resources.html"
   - title: 리소스 그룹을 생성하고 정책을 연결합니다
-    url: "/protect-scc/task_create_resource_groups_and_attach_policies.html"
+    url: "/protect-scc/create_resource_groups_and_attach_policies.html"
   - title: 개별 맞춤형 플러그인 리소스를 백업합니다
-    url: "/protect-scc/task_back_up_individual_custom_plug_in_resources.html"
+    url: "/protect-scc/back_up_individual_custom_plugins_resources.html"
   - title: 사용자 지정 플러그인 리소스의 리소스 그룹을 백업합니다
-    url: "/protect-scc/task_back_up_resource_groups_of_custom_plug_in_resources.html"
+    url: "/protect-scc/back_up_resource_groups_of_custom_plug_in_resources.html"
   - title: PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
-    url: "/protect-scc/task_create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets_scc.html"
-  - title: PowerShell cmdlet을 사용하여 리소스를 백업합니다
-    url: "/protect-scc/task_back_up_resources_using_powershell_cmdlets.html"
+    url: "/protect-scc/create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets.html"
   - title: 백업 작업을 모니터링합니다
-    url: "/protect-scc/task_monitor_scc_resources_backup_operations.html"
+    url: "/protect-scc/monitor_resources_backup_operations.html"
   - title: 백업 작업을 취소합니다
-    url: "/protect-scc/task_cancel_backup_operations_for_scc.html"
+    url: "/protect-scc/cancel_backup_operations.html"
   - title: Topology 페이지에서 사용자 지정 플러그인 리소스 관련 백업 및 클론을 봅니다
-    url: "/protect-scc/task_view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html"
+    url: "/protect-scc/view_custom_plug_in_resource_backups_and_clones_in_the_topology_page.html"
 - title: 사용자 지정 플러그인 리소스를 복원합니다
   entries:
   - title: 워크플로를 복원합니다
-    url: "/protect-scc/task_restore_custom_plug_in_resources.html"
+    url: "/protect-scc/restore_custom_plug_in_resources.html"
   - title: 리소스 백업을 복원합니다
-    url: "/protect-scc/task_restore_a_resource_backup.html"
+    url: "/protect-scc/restore_a_resource_backup.html"
   - title: PowerShell cmdlet을 사용하여 리소스 복원
-    url: "/protect-scc/task_restore_and_recover_resources_using_powershell_cmdlets_scc.html"
+    url: "/protect-scc/restore_and_recover_resources_using_powershell_cmdlets.html"
   - title: 복구 작업을 모니터링합니다
-    url: "/protect-scc/task_monitor_scc_resources_restore_operations.html"
+    url: "/protect-scc/monitor_resources_restore_operations.html"
 - title: 사용자 지정 플러그인 리소스 백업의 클론을 생성합니다
   entries:
   - title: 클론 복제 워크플로우
-    url: "/protect-scc/task_clone_custom_plug_in_resource_backups.html"
+    url: "/protect-scc/clone_custom_plug_in_resource_backups.html"
   - title: 백업에서 복제합니다
-    url: "/protect-scc/task_clone_from_a_backup.html"
-  - title: PowerShell cmdlet을 사용하여 백업 클론 생성
-    url: "/protect-scc/task_clone_backups_using_powershell_cmdlets.html"
+    url: "/protect-scc/clone_from_a_backup.html"
   - title: SnapCenter에서 클론 작업을 모니터링합니다
-    url: "/protect-scc/task_monitor_scc_resource_clone_operations.html"
+    url: "/protect-scc/monitor_resource_clone_operations.html"

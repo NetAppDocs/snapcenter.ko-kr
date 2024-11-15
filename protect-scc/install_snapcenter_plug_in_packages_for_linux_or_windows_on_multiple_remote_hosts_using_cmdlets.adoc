@@ -1,23 +1,20 @@
 ---
-permalink: protect-nsp/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets.html 
+permalink: protect-scc/install_snapcenter_plug_in_packages_for_linux_or_windows_on_multiple_remote_hosts_using_cmdlets.html 
 sidebar: sidebar 
 keywords: install, snapcenter 
 summary: 설치-SmHostPackage PowerShell cmdlet을 사용하여 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 여러 호스트에 동시에 설치할 수 있습니다. 
 ---
-= cmdlet을 사용하여 여러 원격 호스트에 Linux, Windows 또는 AIX용 SnapCenter 플러그인 패키지를 설치합니다
+= cmdlet을 사용하여 여러 원격 호스트에 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 설치합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-Install-SmHostPackage PowerShell cmdlet을 사용하여 여러 호스트에 Linux, Windows 또는 AIX용 SnapCenter 플러그인 패키지를 동시에 설치할 수 있습니다.
+설치-SmHostPackage PowerShell cmdlet을 사용하여 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 여러 호스트에 동시에 설치할 수 있습니다.
 
 .시작하기 전에
 호스트를 추가하는 사용자는 호스트에 대한 관리 권한이 있어야 합니다.
-
-
-NOTE: 스토리지 및 Oracle 애플리케이션은 AIX에서 지원됩니다.
 
 .단계
 . PowerShell을 실행합니다.

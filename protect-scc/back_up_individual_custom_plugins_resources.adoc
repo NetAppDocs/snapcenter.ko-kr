@@ -1,17 +1,17 @@
 ---
-permalink: protect-nsp/back_up_individual_netapp_supported_plugins_resources.html 
+permalink: protect-scc/back_up_individual_custom_plugins_resources.html 
 sidebar: sidebar 
-keywords: backup, NetApp supported plug-ins, NetApp supported plug-ins, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in 
-summary: 개별 NetApp 지원 플러그인 리소스가 리소스 그룹의 일부가 아닌 경우 리소스 페이지에서 리소스를 백업할 수 있습니다. 필요에 따라 리소스를 백업하거나 리소스에 정책이 연결되어 있고 스케줄이 구성된 경우 스케줄에 따라 백업이 자동으로 수행됩니다. 
+keywords: backup, custom plug-in 
+summary: 개별 SnapCenter 사용자 지정 플러그인 리소스가 리소스 그룹에 속하지 않는 경우 리소스 페이지에서 리소스를 백업할 수 있습니다. 필요에 따라 리소스를 백업하거나 리소스에 정책이 연결되어 있고 스케줄이 구성된 경우 스케줄에 따라 백업이 자동으로 수행됩니다. 
 ---
-= NetApp에서 지원하는 개별 플러그인 리소스를 백업합니다
+= 개별 SnapCenter 사용자 지정 플러그인 리소스를 백업합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-개별 NetApp 지원 플러그인 리소스가 리소스 그룹의 일부가 아닌 경우 리소스 페이지에서 리소스를 백업할 수 있습니다. 필요에 따라 리소스를 백업하거나 리소스에 정책이 연결되어 있고 스케줄이 구성된 경우 스케줄에 따라 백업이 자동으로 수행됩니다.
+개별 사용자 지정 플러그인 리소스가 리소스 그룹의 일부가 아닌 경우 리소스 페이지에서 리소스를 백업할 수 있습니다. 필요에 따라 리소스를 백업하거나 리소스에 정책이 연결되어 있고 스케줄이 구성된 경우 스케줄에 따라 백업이 자동으로 수행됩니다.
 
 .시작하기 전에
 * 백업 정책을 만들어야 합니다.
@@ -26,7 +26,7 @@ summary: 개별 NetApp 지원 플러그인 리소스가 리소스 그룹의 일�
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
 . 리소스 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.
 +
-를 클릭한 image:../media/filter_icon.png["필터 아이콘"]다음 호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭하여 필터 창을 닫을 수 image:../media/filter_icon.png["필터 아이콘"] 있습니다.
+를 클릭한 image:../media/filter_icon.png[""]다음 호스트 이름과 리소스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭하여 필터 창을 닫을 수 image:../media/filter_icon.png["필터 아이콘"] 있습니다.
 
 . 백업할 리소스를 클릭합니다.
 . 사용자 지정 이름을 사용하려면 리소스 페이지에서 * 스냅샷 복사본에 사용자 지정 이름 형식 사용 * 확인란을 선택한 다음 스냅샷 이름에 대한 사용자 지정 이름 형식을 입력합니다.
@@ -156,7 +156,8 @@ Open-smconnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146\
 +
 [listing]
 ----
-Add-SmResource -HostName 'scc55.sccore.test.com' -PluginCode 'DummyPlugin' -ResourceName QDBVOL1 -ResourceType Database -StorageFootPrint ( @{"VolumeName"="qtree_vol1_scc55_sccore_test_com";"QTREENAME"="qtreeVol1";"StorageSystem"="vserver_scauto_primary"}) -Instance QTREE1
+Add-SmResource -HostName '10.232.206.248' -PluginCode 'DB2' -ResourceName NONREC1 -ResourceType Database -StorageFootPrint ( @
+{"VolumeName"="DB2_NONREC1DB";"LunName"="DB2_NONREC1DB";"Vserver"="vserver_scauto_secondary"}) -Instance db2inst1
 ----
 . Add-SmPolicy cmdlet을 사용하여 백업 정책을 만듭니다.
 +
@@ -165,7 +166,7 @@ Add-SmResource -HostName 'scc55.sccore.test.com' -PluginCode 'DummyPlugin' -Reso
 +
 [listing]
 ----
-Add-SMPolicy -PolicyName 'test2' -PolicyType 'Backup' -PluginPolicyType DummyPlugin  -description 'testPolicy'
+Add-SMPolicy -PolicyName 'db2VolumePolicy' -PolicyType 'Backup' -PluginPolicyType DB2  -description 'VolumePolicy'
 ----
 . 추가 SmResourceGroup cmdlet을 사용하여 SnapCenter에 새 리소스 그룹을 추가합니다.
 +
@@ -174,13 +175,14 @@ Add-SMPolicy -PolicyName 'test2' -PolicyType 'Backup' -PluginPolicyType DummyPlu
 +
 [listing]
 ----
-Add-SmResourceGroup -ResourceGroupName 'Verify_Backup_on_Multiple_Qtree_different_vserver_windows' -Resources @(@{"Host"="scc55.sccore.test.com";"Uid"="QTREE2";"PluginName"="DummyPlugin"},@{"Host"="scc55.sccore.test.com";"Uid"="QTREE";"PluginName"="DummyPlugin"}) -Policies test2 -plugincode 'DummyPlugin' -usesnapcenterwithoutfilesystemconsistency
+Add-SmResourceGroup -ResourceGroupName 'Verify_ManualBackup_DatabaseLevel_MultipleVolume_unix' -Resources @(@
+{"Host"="10.232.206.248";"Uid"="db2inst2\NONREC"},@{"Host"="10.232.206.248";"Uid"="db2inst1\NONREC"}) -Policies db2ManualPolicy
 ----
 . New-SmBackup cmdlet을 사용하여 새 백업 작업을 시작합니다.
 +
 [listing]
 ----
-New-SMBackup -DatasetName Verify_Backup_on_Multiple_Qtree_different_vserver_windows -Policy test2
+New-SMBackup -DatasetName Verify_ManualBackup_DatabaseLevel_MultipleVolume_unix -Policy db2ManualPolicy
 ----
 . Get-SmBackupReport cmdlet을 사용하여 백업 작업의 상태를 봅니다.
 +
@@ -189,36 +191,31 @@ New-SMBackup -DatasetName Verify_Backup_on_Multiple_Qtree_different_vserver_wind
 +
 [listing]
 ----
-Get-SmBackupReport -JobId 149
-
-BackedUpObjects           : {QTREE2, QTREE}
+PS C:\> Get-SmBackupReport -JobId 351
+Output:
+BackedUpObjects           : {DB1}
 FailedObjects             : {}
 IsScheduled               : False
 HasMetadata               : False
-SmBackupId                : 1
-SmJobId                   : 149
-StartDateTime             : 1/15/2024 1:35:17 AM
-EndDateTime               : 1/15/2024 1:36:19 AM
-Duration                  : 00:01:02.4265750
-CreatedDateTime           : 1/15/2024 1:35:51 AM
+SmBackupId                : 269
+SmJobId                   : 2361
+StartDateTime             : 10/4/2016 11:20:45 PM
+EndDateTime               : 10/4/2016 11:21:32 PM
+Duration                  : 00:00:46.2536470
+CreatedDateTime           : 10/4/2016 11:21:09 PM
 Status                    : Completed
-ProtectionGroupName       : Verify_Backup_on_Multiple_Qtree_different_vserver_windows
-SmProtectionGroupId       : 1
+ProtectionGroupName       : Verify_ASUP_Message_windows
+SmProtectionGroupId       : 211
 PolicyName                : test2
-SmPolicyId                : 4
-BackupName                : Verify_Backup_on_Multiple_Qtree_different_vserver_windows_scc55_01-15-2024_01.35.17.4467
-VerificationStatus        : NotApplicable
+SmPolicyId                : 20
+BackupName                : Verify_ASUP_Message_windows_scc54_10-04-2016_23.20.46.2758
+VerificationStatus        : NotVerified
 VerificationStatuses      :
 SmJobError                :
 BackupType                : SCC_BACKUP
 CatalogingStatus          : NotApplicable
 CatalogingStatuses        :
 ReportDataCreatedDateTime :
-PluginCode                : SCC
-PluginName                : DummyPlugin
-PluginDisplayName         : DummyPlugin
-JobTypeId                 :
-JobHost                   : scc55.sccore.test.com
 ----
 
 

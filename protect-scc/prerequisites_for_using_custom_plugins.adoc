@@ -1,0 +1,32 @@
+---
+permalink: protect-scc/prerequisites_for_using_custom_plugins.html 
+sidebar: sidebar 
+keywords: Credentials 
+summary: SnapCenter 사용자 지정 플러그인을 사용하려면 먼저 SnapCenter 관리자가 SnapCenter 서버를 설치 및 구성하고 필수 작업을 수행해야 합니다. 
+---
+= SnapCenter 사용자 지정 플러그인 사용을 위한 사전 요구 사항
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 사용자 지정 플러그인을 사용하려면 먼저 SnapCenter 관리자가 SnapCenter 서버를 설치 및 구성하고 필수 작업을 수행해야 합니다.
+
+* SnapCenter 서버를 설치하고 구성합니다.
+* SnapCenter 서버에 로그인합니다.
+* 스토리지 시스템 접속을 추가하고 해당하는 경우 자격 증명을 생성하여 SnapCenter 환경을 구성합니다.
+* 호스트를 추가하고 플러그인을 설치 및 업로드합니다.
+* 해당하는 경우 플러그인 호스트에 Java 11을 설치합니다.
+* 여러 데이터 경로(LIF) 또는 dNFS 구성이 있는 경우 데이터베이스 호스트에서 SnapCenter CLI를 사용하여 다음을 수행할 수 있습니다.
++
+** 기본적으로 데이터베이스 호스트의 모든 IP 주소가 클론 복제된 볼륨에 대한 SVM(Storage Virtual Machine)의 NFS 스토리지 엑스포트 정책에 추가됩니다. 특정 IP 주소를 사용하거나 IP 주소의 하위 집합으로 제한하려면 Set-PreferredHostIPsInStorageExportPolicy CLI를 실행합니다.
+** SVM에 여러 데이터 경로(LIF)가 있을 경우 SnapCenter은 NFS 클론 복제된 볼륨을 마운트하기 위해 적절한 데이터 경로(LIF)를 선택합니다. 그러나 특정 데이터 경로(LIF)를 지정하려면 Set-SvmPreferredDataPath CLI를 실행해야 합니다. 명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도 https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470["SnapCenter 소프트웨어 명령 참조 가이드"^]있습니다.
+
+
+* 백업 복제를 원하는 경우 SnapMirror 및 SnapVault를 설정합니다.
+* 호스트의 다른 애플리케이션에서 포트 9090을 사용하지 않는지 확인합니다.
++
+포트 9090은 SnapCenter에 필요한 다른 포트 외에 사용자 지정 플러그인에서 사용하도록 예약해야 합니다.
+
+

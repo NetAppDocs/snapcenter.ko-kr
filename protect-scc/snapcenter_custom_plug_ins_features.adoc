@@ -1,17 +1,17 @@
 ---
-permalink: protect-nsp/netapp_supported_plugins_features.html 
+permalink: protect-scc/snapcenter_custom_plug_ins_features.html 
 sidebar: sidebar 
-keywords: NetApp supported plug-ins features, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in 
-summary: SnapCenter는 플러그인 애플리케이션 및 스토리지 시스템의 NetApp 기술과 통합됩니다. NetApp 지원 플러그인으로 작업하려면 SnapCenter 그래픽 사용자 인터페이스를 사용합니다. 
+keywords: custom plug-ins features 
+summary: SnapCenter는 플러그인 애플리케이션 및 스토리지 시스템의 NetApp 기술과 통합됩니다. 사용자 지정 플러그인으로 작업하려면 SnapCenter 그래픽 사용자 인터페이스를 사용합니다. 
 ---
-= NetApp에서 지원하는 플러그인 기능
+= SnapCenter 맞춤형 플러그인 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-SnapCenter는 플러그인 애플리케이션 및 스토리지 시스템의 NetApp 기술과 통합됩니다. MongoDB, ORASCPM(Oracle Applications), SAP ASE, SAP MaxDB 및 스토리지 플러그인과 같은 NetApp 지원 플러그인을 사용하려면 SnapCenter 그래픽 사용자 인터페이스를 사용해야 합니다.
+SnapCenter는 플러그인 애플리케이션 및 스토리지 시스템의 NetApp 기술과 통합됩니다. 사용자 지정 플러그인으로 작업하려면 SnapCenter 그래픽 사용자 인터페이스를 사용합니다.
 
 * * 통합 그래픽 사용자 인터페이스 *
 +
@@ -23,11 +23,11 @@ SnapCenter 인터페이스는 플러그인과 환경 전반에서 표준화와 �
 
 * * 무중단 NetApp 스냅샷 기술 *
 +
-SnapCenter는 NetApp Snapshot 기술을 NetApp 지원 플러그인과 함께 사용하여 리소스를 백업합니다. 스냅샷은 최소한의 스토리지 공간을 사용합니다.
+SnapCenter은 NetApp Snapshot 기술을 맞춤형 플러그인과 함께 사용하여 리소스를 백업합니다. 스냅샷은 최소한의 스토리지 공간을 사용합니다.
 
 
 
-NetApp 지원 플러그인은 다음과 같은 이점을 제공합니다.
+맞춤형 플러그인 기능을 사용하면 다음과 같은 이점도 얻을 수 있습니다.
 
 * 백업, 복원 및 클론 워크플로우 지원
 * RBAC 지원 보안 및 중앙 집중식 역할 위임

@@ -26,18 +26,6 @@ entries:
       url: "/protect-nsp/number_of_backup_jobs_needed.html"
   - title: 수동으로 추가한 NetApp 지원 플러그인 리소스에 지원되는 복구 전략 유형
     url: "/protect-nsp/types_of_restore_strategies_supported_for_manually_added_netapp_supported_plugins_resources.html"
-- title: 응용 프로그램용 플러그인을 개발합니다
-  entries:
-  - title: 개요
-    url: "/protect-nsp/develop_a_plug_in_for_your_application.html"
-  - title: Perl 기반 개발
-    url: "/protect-nsp/perl.html"
-  - title: 네이티브 스타일
-    url: "/protect-nsp/native.html"
-  - title: Java 스타일
-    url: "/protect-nsp/java.html"
-  - title: SnapCenter의 맞춤형 플러그인
-    url: "/protect-nsp/custom_plugins_in_snapcenter.html"
 - title: NetApp 지원 플러그인 설치 준비
   entries:
   - title: NetApp 지원 플러그인의 설치 워크플로우
@@ -112,8 +100,6 @@ entries:
     url: "/protect-nsp/restore_netapp_supported_plugins_resources.html"
   - title: 리소스 백업을 복원합니다
     url: "/protect-nsp/restore_a_resource_backup.html"
-  - title: PowerShell cmdlet을 사용하여 리소스 복원
-    url: "/protect-nsp/restore_and_recover_resources_using_powershell_cmdlets.html"
   - title: 복구 작업을 모니터링합니다
     url: "/protect-nsp/monitor_resources_restore_operations.html"
 - title: 클론 NetApp 지원 플러그인 리소스 백업

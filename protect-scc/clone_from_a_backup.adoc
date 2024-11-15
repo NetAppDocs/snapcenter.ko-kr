@@ -1,0 +1,281 @@
+---
+permalink: protect-scc/clone_from_a_backup.html 
+sidebar: sidebar 
+keywords: clone 
+summary: SnapCenter를 사용하여 백업을 복제할 수 있습니다. 기본 또는 보조 백업에서 클론을 생성할 수 있습니다. 클론 작업의 기능은 사용하는 플러그인에 따라 다릅니다. 
+---
+= 백업에서 복제합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter를 사용하여 백업을 복제할 수 있습니다. 기본 또는 보조 백업에서 클론을 생성할 수 있습니다. 클론 작업의 기능은 사용하는 플러그인에 따라 다릅니다.
+
+.시작하기 전에
+* 리소스 또는 리소스 그룹을 백업해야 합니다.
+* 기본 클론 작업에서는 스토리지 오브젝트만 복제합니다. 애플리케이션 레벨에서 클론 작업은 맞춤형 플러그인이 해당 기능을 제공하는 경우에만 수행할 수 있습니다.
+* 볼륨을 호스팅하는 애그리게이트는 SVM(스토리지 가상 머신)의 할당된 애그리게이트 목록에 있어야 합니다.
+
+
+.이 작업에 대해
+ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
+
+[role="tabbed-block"]
+====
+.SnapCenter UI
+--
+.단계
+. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 리소스 * 페이지의 * 보기 * 드롭다운 목록에서 리소스 유형에 따라 리소스를 필터링합니다.
++
+리소스는 유형, 호스트 또는 클러스터 이름, 관련 리소스 그룹 및 정책, 상태와 같은 정보와 함께 표시됩니다.
+
+. 자원 또는 자원 그룹을 선택합니다.
++
+자원 그룹을 선택한 경우 자원을 선택해야 합니다.
+
++
+리소스 또는 리소스 그룹 토폴로지 페이지가 표시됩니다.
+
+. 복사본 관리 보기에서 기본 또는 보조(미러링 또는 보관된) 스토리지 시스템에서 * 백업 * 을 선택합니다.
+. 테이블에서 데이터 백업을 선택한 다음 을 클릭합니다 image:../media/clone_icon.gif["클론 아이콘을 클릭합니다"].
+. 위치 페이지에서 다음을 수행합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+클론 서버
+ a| 
+기본적으로 소스 호스트는 채워집니다.
+
+다른 호스트를 지정하려면 클론을 마운트해야 하는 호스트를 선택하고 플러그인이 설치된 호스트를 선택합니다.
+
+
+
+ a| 
+접미사 복제
+ a| 
+클론 대상이 소스와 동일한 경우 이 작업은 필수입니다.
+
+새로 복제된 리소스 이름에 추가할 접미사를 입력합니다. 접미사는 클론된 리소스가 호스트에서 고유하도록 보장합니다.
+
+예: RS1_clone. 원래 리소스와 동일한 호스트에 클론 생성 중인 경우 클론된 리소스를 원래 리소스와 구분할 수 있도록 접미사를 제공해야 합니다. 그렇지 않으면 작업이 실패합니다.
+
+|===
++
+선택한 리소스가 LUN이고 2차 백업에서 클론을 생성하는 경우 타겟 볼륨이 나열됩니다. 단일 소스에 여러 대상 볼륨이 있을 수 있습니다.
+
+. 설정 * 페이지에서 다음을 수행합니다.
++
+|===
+| 이 필드의 내용... | 수행할 작업... 
+
+
+ a| 
+이니시에이터 이름입니다
+ a| 
+호스트 이니시에이터 이름, 즉 IQDN 또는 WWPN을 입력합니다.
+
+
+
+ a| 
+Igroup 프로토콜
+ a| 
+Igroup 프로토콜을 선택합니다.
+
+|===
++
+
+NOTE: 설정 페이지는 스토리지 유형이 LUN인 경우에만 표시됩니다.
+
+. 스크립트 페이지에서 클론 작업 전후에 각각 실행해야 하는 사전 클론 또는 사후 클론 명령을 입력합니다. mount 명령을 입력하여 호스트에 파일 시스템을 마운트합니다.
++
+예를 들면 다음과 같습니다.
+
++
+** Pre clone 명령: 이름이 같은 기존 데이터베이스를 삭제합니다
+** 사후 복제 명령: 데이터베이스를 확인하거나 데이터베이스를 시작합니다.
++
+Linux 시스템의 볼륨 또는 qtree에 대한 마운트 명령: mount <vserver_name>: %<volume_name_Clone/mnt>
+
+
+
+. 알림 * 페이지의 * 이메일 기본 설정 * 드롭다운 목록에서 이메일을 보낼 시나리오를 선택합니다.
++
+또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다.
+
+. 요약을 검토하고 * Finish * 를 클릭합니다.
+. 모니터 * > * 작업 * 을 클릭하여 작업 진행 상황을 모니터링합니다.
+
+
+--
+.PowerShell cmdlet
+--
+.단계
+. Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대한 SnapCenter Server 연결 세션을 시작합니다.
++
+[listing]
+----
+Open-SmConnection  -SMSbaseurl  https:\\snapctr.demo.netapp.com:8146/
+----
+. Get-SmBackup 또는 Get-SmResourceGroup cmdlet을 사용하여 클론을 생성할 수 있는 백업을 나열합니다.
++
+이 예에서는 사용 가능한 모든 백업에 대한 정보를 표시합니다.
+
++
+[listing]
+----
+ C:\PS>PS C:\> Get-SmBackup
+
+BackupId                      BackupName                    BackupTime                    BackupType
+--------                      ----------                    ----------                    ----------
+   1              Payroll Dataset_vise-f6_08... 8/4/2015    11:02:32 AM                   Full Backup
+   2              Payroll Dataset_vise-f6_08... 8/4/2015    11:23:17 AM
+----
++
+다음 예제에서는 지정된 리소스 그룹에 대한 정보를 표시합니다.
+
++
+[listing]
+----
+PS C:\> Get-SmResourceGroup
+
+    Description                 :
+    CreationTime                : 10/10/2016 4:45:53 PM
+    ModificationTime            : 10/10/2016 4:45:53 PM
+    EnableEmail                 : False
+    EmailSMTPServer             :
+    EmailFrom                   :
+    EmailTo                     :
+    EmailSubject                :
+    EnableSysLog                : False
+    ProtectionGroupType         : Backup
+    EnableAsupOnFailure         : False
+    Policies                    : {}
+    HostResourceMaping          : {}
+    Configuration               : SMCoreContracts.SmCloneConfiguration
+    LastBackupStatus            : Completed
+    VerificationServer          :
+    EmailBody                   :
+    EmailNotificationPreference : Never
+    VerificationServerInfo      :
+    SchedulerSQLInstance        :
+    CustomText                  :
+    CustomSnapshotFormat        :
+    SearchResources             : False
+    ByPassCredential            : False
+    IsCustomSnapshot            :
+    MaintenanceStatus           : Production
+    PluginProtectionGroupTypes  : {SMSQL}
+    Tag                         :
+    IsInternal                  : False
+    EnableEmailAttachment       : False
+    VerificationSettings        : {}
+    Name                        : NFS_DB
+    Type                        : Group
+    Id                          : 2
+    Host                        :
+    UserName                    :
+    Passphrase                  :
+    Deleted                     : False
+    Auth                        : SMCoreContracts.SmAuth
+    IsClone                     : False
+    CloneLevel                  : 0
+    Hosts                       :
+    StorageName                 :
+    ResourceGroupNames          :
+    PolicyNames                 :
+
+    Description                 :
+    CreationTime                : 10/10/2016 4:51:36 PM
+    ModificationTime            : 10/10/2016 5:27:57 PM
+    EnableEmail                 : False
+    EmailSMTPServer             :
+    EmailFrom                   :
+    EmailTo                     :
+    EmailSubject                :
+    EnableSysLog                : False
+    ProtectionGroupType         : Backup
+    EnableAsupOnFailure         : False
+    Policies                    : {}
+    HostResourceMaping          : {}
+    Configuration               : SMCoreContracts.SmCloneConfiguration
+    LastBackupStatus            : Failed
+    VerificationServer          :
+    EmailBody                   :
+    EmailNotificationPreference : Never
+    VerificationServerInfo      :
+    SchedulerSQLInstance        :
+    CustomText                  :
+    CustomSnapshotFormat        :
+    SearchResources             : False
+    ByPassRunAs                 : False
+    IsCustomSnapshot            :
+    MaintenanceStatus           : Production
+    PluginProtectionGroupTypes  : {SMSQL}
+    Tag                         :
+    IsInternal                  : False
+    EnableEmailAttachment       : False
+    VerificationSettings        : {}
+    Name                        : Test
+    Type                        : Group
+    Id                          : 3
+    Host                        :
+    UserName                    :
+    Passphrase                  :
+    Deleted                     : False
+    Auth                        : SMCoreContracts.SmAuth
+    IsClone                     : False
+    CloneLevel                  : 0
+    Hosts                       :
+    StorageName                 :
+    ResourceGroupNames          :
+    PolicyNames                 :
+----
+. New-SmClone cmdlet을 사용하여 클론 리소스 그룹 또는 기존 백업에서 클론 작업을 시작합니다.
++
+이 예에서는 모든 로그를 사용하여 지정된 백업에서 클론을 생성합니다.
+
++
+[listing]
+----
+New-SmClone -BackupName Verify_delete_clone_on_qtree_windows_scc54_10-04-2016_19.05.48.0886 -Resources @{"Host"="scc54.sccore.test.com";"Uid"="QTREE1"}  -
+CloneToInstance scc54.sccore.test.com -Suffix '_QtreeCloneWin9'  -AutoAssignMountPoint -AppPluginCode 'DummyPlugin' -initiatorname 'iqn.1991-
+05.com.microsoft:scc54.sccore.test.com' -igroupprotocol 'mixed'
+----
+. Get-SmCloneReport cmdlet을 사용하여 클론 작업의 상태를 봅니다.
++
+이 예에서는 지정된 작업 ID에 대한 클론 보고서를 표시합니다.
+
++
+[listing]
+----
+PS C:\> Get-SmCloneReport -JobId 186
+
+    SmCloneId           : 1
+    SmJobId             : 186
+    StartDateTime       : 8/3/2015 2:43:02 PM
+    EndDateTime         : 8/3/2015 2:44:08 PM
+    Duration            : 00:01:06.6760000
+    Status              : Completed
+    ProtectionGroupName : Draper
+    SmProtectionGroupId : 4
+    PolicyName          : OnDemand_Clone
+    SmPolicyId          : 4
+    BackupPolicyName    : OnDemand_Full_Log
+    SmBackupPolicyId    : 1
+    CloneHostName       : SCSPR0054212005.mycompany.com
+    CloneHostId         : 4
+    CloneName           : Draper__clone__08-03-2015_14.43.53
+    SourceResources     : {Don, Betty, Bobby, Sally}
+    ClonedResources     : {Don_DRAPER, Betty_DRAPER, Bobby_DRAPER, Sally_DRAPER}
+    SmJobError          :
+----
+
+
+--
+====

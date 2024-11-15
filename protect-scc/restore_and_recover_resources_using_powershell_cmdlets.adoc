@@ -1,5 +1,5 @@
 ---
-permalink: protect-nsp/restore_and_recover_resources_using_powershell_cmdlets.html 
+permalink: protect-scc/restore_and_recover_resources_using_powershell_cmdlets.html 
 sidebar: sidebar 
 keywords: restore resources 
 summary: 리소스 백업 복원에는 SnapCenter 서버와의 연결 세션 시작, 백업 목록 표시 및 백업 정보 검색, 백업 복구가 포함됩니다. 

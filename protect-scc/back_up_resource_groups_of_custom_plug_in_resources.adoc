@@ -1,0 +1,46 @@
+---
+permalink: protect-scc/back_up_resource_groups_of_custom_plug_in_resources.html 
+sidebar: sidebar 
+keywords: backup, custom plug-in 
+summary: 리소스 페이지에서 필요 시 리소스 그룹을 백업할 수 있습니다. 리소스 그룹에 정책이 연결되어 있고 스케줄이 구성되어 있는 경우 스케줄에 따라 백업이 자동으로 수행됩니다. 
+---
+= 사용자 지정 플러그인 리소스의 리소스 그룹을 백업합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+리소스 페이지에서 필요 시 리소스 그룹을 백업할 수 있습니다. 리소스 그룹에 정책이 연결되어 있고 스케줄이 구성되어 있는 경우 스케줄에 따라 백업이 자동으로 수행됩니다.
+
+.시작하기 전에
+* 정책이 연결된 리소스 그룹을 만들어야 합니다.
+* 보조 스토리지와 SnapMirror 관계가 있는 리소스를 백업하려면 스토리지 사용자에게 할당된 ONTAP 역할에 "'스냅샷 전체' 권한이 있어야 합니다. 그러나 "vsadmin" 역할을 사용하는 경우에는 "napmirror all" 권한이 필요하지 않습니다.
+
+
+.단계
+. 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
+. 리소스 페이지의 * 보기 * 목록에서 * 리소스 그룹 * 을 선택합니다.
++
+검색 상자에 리소스 그룹 이름을 입력하거나 을 클릭하여 리소스 그룹을 검색할 수 있습니다 image:../media/filter_icon.png["필터 아이콘"] 태그를 선택합니다. 그런 다음 을 클릭할 수 있습니다 image:../media/filter_icon.png["필터 아이콘"] 를 눌러 필터 창을 닫습니다.
+
+. 리소스 그룹 페이지에서 백업할 리소스 그룹을 선택한 다음 * 지금 백업 * 을 클릭합니다.
+. 백업 페이지에서 다음 단계를 수행하십시오.
++
+.. 여러 정책을 리소스 그룹에 연결한 경우 * Policy * 드롭다운 목록에서 백업에 사용할 정책을 선택합니다.
++
+필요 시 백업에 대해 선택한 정책이 백업 스케줄과 연결된 경우 스케줄 유형에 지정된 보존 설정에 따라 필요 시 백업이 유지됩니다.
+
+.. 백업 * 을 클릭합니다.
+
+
+. 모니터 * > * 작업 * 을 클릭하여 작업 진행 상황을 모니터링합니다.
++
+** MetroCluster 구성에서 SnapCenter는 페일오버 후 보호 관계를 감지하지 못할 수 있습니다.
++
+https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["MetroCluster 페일오버 후 SnapMirror 또는 SnapVault 관계를 감지할 수 없습니다"]
+
+** VMDK에서 애플리케이션 데이터를 백업하고 VMware vSphere용 SnapCenter 플러그인의 Java 힙 크기가 충분히 크지 않으면 백업이 실패할 수 있습니다. Java 힙 크기를 늘리려면 스크립트 파일 /opt/netapp/init_scripts/scvservice를 찾습니다. 이 스크립트에서 do_start method 명령이 SnapCenter VMware 플러그인 서비스를 시작합니다. 이 명령을 'java-jar-Xmx8192M-Xms4096M'으로 업데이트합니다.
+
+
+

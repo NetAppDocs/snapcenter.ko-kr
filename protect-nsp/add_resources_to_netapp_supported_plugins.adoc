@@ -1,7 +1,7 @@
 ---
 permalink: protect-nsp/add_resources_to_netapp_supported_plugins.html 
 sidebar: sidebar 
-keywords: NetApp supported plug-in, resources, snapcenter 
+keywords: NetApp supported plug-in, resources, NetApp supported plug-ins, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in 
 summary: 백업하거나 클론 복제할 리소스를 추가해야 합니다. 환경에 따라 백업 또는 복제할 데이터베이스 인스턴스 또는 컬렉션이 리소스가 될 수 있습니다. 
 ---
 = NetApp 지원 플러그인에 리소스 추가
@@ -15,7 +15,6 @@ summary: 백업하거나 클론 복제할 리소스를 추가해야 합니다. �
 
 .시작하기 전에
 * SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 생성, 자격 증명 추가 등의 작업을 완료해야 합니다.
-* 가 있어야 link:develop_a_plug_in_for_your_application.html["응용 프로그램에 대한 사용자 지정 플러그인을 만들었습니다"]합니다.
 * SnapCenter 서버에 플러그인을 업로드해야 합니다.
 
 
@@ -73,7 +72,7 @@ summary: 백업하거나 클론 복제할 리소스를 추가해야 합니다. �
 NOTE: NetApp 지원 플러그인은 리소스의 자동 검색을 지원하지 않습니다. 물리적 환경과 가상 환경의 스토리지 세부 정보도 자동으로 검색되지 않습니다. 리소스를 생성하는 동안 물리적 환경과 가상 환경에 대한 스토리지 정보를 제공해야 합니다.
 
 +
-image::../media/storage_footprint.gif[있습니다]
+image::../media/storage_footprint.png[있습니다]
 
 . 리소스 설정 페이지에서 리소스에 대한 사용자 지정 키 값 쌍을 제공합니다.
 +
@@ -164,7 +163,7 @@ MAXDB_BACKUP_templates 매개 변수가 설정된 경우 MAXDB_BG_SERVER_PREFIX 
 
 
 
-=== Sybase ASE용 플러그인
+=== SAP ASE용 플러그인
 
 리소스 설정:
 
