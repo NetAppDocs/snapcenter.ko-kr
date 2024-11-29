@@ -81,7 +81,7 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-* .. 순수 코어 8.0.5
+* 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 .NET Core
 * PowerShell 코어 7.4.2
 * Java 11 Oracle Java 및 OpenJDK
 
@@ -165,7 +165,7 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-* .. 순수 코어 8.0.5
+* 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 .NET Core
 * PowerShell 코어 7.4.2
 * Java 11 Oracle Java 및 OpenJDK
 

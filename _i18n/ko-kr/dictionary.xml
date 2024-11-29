@@ -8141,10 +8141,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="dcc66de93aefa3105fda8cbdb3cdc2cf" category="list-text">백업을 선택한 다음 * 를 클릭합니다<block ref="11ec183c45ca833d0220ddbf2e2e1d98" category="inline-image-macro-rx" type="image"></block>*.</block>
   <block id="13bc47d703b82b962d33b3cf47bf64fb" category="list-text">이름 페이지에서 * PDB Clone * 을 선택하고 기타 세부 정보를 지정합니다.</block>
   <block id="92336218cb59d91f7080fee85c60b95f" category="list-text">Post-Ops 페이지에서 * until Cancel * 이 기본적으로 선택되어 복제된 데이터베이스의 복구를 수행합니다.</block>
-  <block id="82a14f04b2bdde64af5a7a694ab98bba" category="section-title">Oracle 데이터베이스 클론을 분할합니다</block>
-  <block id="787b61c3679ebc574f4962a1f5aebb0c" category="list-text">복제된 리소스(예: 데이터베이스 또는 LUN)를 선택한 다음 * 를 클릭합니다<block ref="11ec183c45ca833d0220ddbf2e2e1d98" category="inline-image-macro-rx" type="image"></block>*.</block>
-  <block id="562ffa91cb05be38d306e7ac7ab12d9c" category="list-text">복사본 관리 보기에서 운영 스토리지 시스템에서 * 클론 * 을 선택합니다.</block>
-  <block id="62ef6c6e852eca46dfc82fdc6ad386b2" category="list-text">PDB 클론(targetCDB:PDBClone)을 선택한 다음 * 를 클릭합니다<block ref="11ec183c45ca833d0220ddbf2e2e1d98" category="inline-image-macro-rx" type="image"></block>*.</block>
   <block id="06297b8a736154148ec90e3788831eaa" category="doc">SQL Server 데이터베이스 복구 및 복구</block>
   <block id="b01943524a657671dfae0f3f1f0948e5" category="paragraph">SnapCenter를 사용하여 백업된 SQL Server 데이터베이스를 복원할 수 있습니다. 데이터베이스 복원은 지정된 SQL Server 백업에서 모든 데이터 및 로그 페이지를 지정된 데이터베이스로 복사하는 다단계 프로세스입니다.</block>
   <block id="ddec2d3a4d88b9b7250ed10e6ef19f3f" category="list-text">복사본 관리 보기에서 스토리지 시스템에서 * backups * 를 선택합니다.</block>
@@ -8480,7 +8476,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="58184ed57b20efbfac17064f1bc0e4f4" category="list-text">백업을 선택하고 * 보호 제거 * 를 클릭합니다.</block>
   <block id="ad569cc1cca820033bb20ffe1d5bc4a5" category="paragraph">AIX 7.1 이상</block>
   <block id="6b139c8a52407032a30a5d0cbb7c1438" category="list-text">볼륨 스냅샷 수정 - SnapLock-expiry-time</block>
-  <block id="ce67e9a5c3006b689a5f150a9c30d732" category="list-text">.. 순수 코어 8.0.5</block>
   <block id="4a58751c57809081912e30803a16d52e" category="list-text">PowerShell 코어 7.4.2</block>
   <block id="b7ccd7f577996dd33bde8070db971b93" category="list-text">Java 11 Oracle Java 및 OpenJDK</block>
   <block id="9b722cfab4d80b751e95d2565746573a" category="paragraph">NFS와 SAN 모두에서 VVOL 데이터 저장소</block>
@@ -8628,7 +8623,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="2ac5f63d0bb2ab4a9898d18445391caf" category="list-text">RabbitMQ입니다</block>
   <block id="62e0b5b350c9e3d2c19aa801d9442ba9" category="list-text">Nginx</block>
   <block id="f7e853158b776246c53345b938159cc1" category="list-text">에를랑</block>
-  <block id="4b895fbdf0b21e04dc01c9b2f52bd5ee" category="list-text">NET Framework 8.0.5</block>
   <block id="21624173efc06090951170116cd13563" category="list-text">PAM-devel의 약어입니다</block>
   <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="list-text">PowerShell을 사용합니다</block>
   <block id="6e3da1e6c4de3ddc55b5442f3d8fbf10" category="summary">SnapCenter 서버는 Linux 호스트에 설치할 수 있습니다.</block>
@@ -8714,9 +8708,7 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="b0ca30368b247fa738c8bdba36dd4d73" category="paragraph">기본 네트입니다. TCP 포트는 Windows용 플러그인에서 Exchange VSS 콜백에 연결하는 데 사용됩니다.</block>
   <block id="accc958f08cd768c04d4e40292acd632" category="paragraph">포트를 사용자 지정하려면 을 참조하십시오 <block ref="db95a9150e60a9ea9da8200975d83e74" category="inline-link-macro-rx"></block>.</block>
   <block id="cc0974b8a511f2e4b4d021cda6e5e820" category="paragraph">SnapCenter에 대해 NetApp 지원 플러그인</block>
-  <block id="77e6d1d743590f1944df090df04f64fb" category="list-text">ASP를 참조하십시오. NET 코어 호스팅 번들(8.0.5 이상)</block>
   <block id="628b02e3b9750945ce37b6d84682cd2b" category="paragraph">NET Framework 8.0.5 기능+</block>
-  <block id="aaf9b73d8f0e71b5b8ed41944e56091d" category="list-text">ASP.NET 8.0.5</block>
   <block id="7eaa993723e57b3bfc99923c196e2e17" category="list-text">RabbitMQ입니다</block>
   <block id="6905661e5d7f8f3e6a4faffbbab0f627" category="cell">Windows 호스트 요구 사항</block>
   <block id="e7074f744b12e993cbdc6c77ee980b3e" category="list-text">Red Hat Enterprise Linux(RHEL) 8 및 9</block>
@@ -8726,7 +8718,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="9f101c0e6e5929a04c9e7663fdf91eda" category="paragraph">15 GB</block>
   <block id="d6874413f4fac004d1cb83f02eccc33c" category="admonition">참고: SnapCenter 저장소가 설치된 동일한 드라이브에 SnapCenter 서버가 있는 경우 15 GB를 사용하는 것이 좋습니다.</block>
   <block id="4c6ec01f6ae03e08c146fe6865423a4b" category="list-text">PowerShell 7.4.2 이상</block>
-  <block id="43e185b7580feec0acd79569efc4e099" category="list-text">ASP를 참조하십시오. NET Core Runtime 8.0.5 이상</block>
   <block id="149d1be25c7d76696b875863179ac66d" category="list-text">Nginx는 역방향 프록시로 사용할 수 있는 웹 서버입니다</block>
   <block id="6d4ed4face9b51c5caae12208e47fa1e" category="paragraph">PAM(Pluggable Authentication Modules)은 시스템 관리자가 인증을 수행하는 프로그램을 다시 컴파일하지 않고도 인증 정책을 설정할 수 있는 시스템 보안 도구입니다.</block>
   <block id="e49b0f86241cddbd59f6488d104741df" category="list-text">Chrome 버전 125 이상</block>
@@ -8786,7 +8777,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="7e5dacddaaa8672290ea4564cf1c41ad" category="paragraph">Skip prechecks 확인란을 선택하지 않은 경우 호스트는 호스트가 플러그인 설치 요구 사항을 충족하는지 확인합니다. 디스크 공간, RAM, PowerShell 버전, NET 버전, 위치(Windows 플러그인의 경우) 및 Java 11(Windows 및 Linux 플러그인의 경우)은 최소 요구 사항에 따라 검증됩니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다.</block>
   <block id="0fcc0f3a2dace0457cd9db71bb8bfef8" category="list-text">Windows 플러그인의 경우 설치 및 업그레이드 로그는 _C:\Windows\SnapCenter plugin\Install_&lt;JOBID&gt;\에 있습니다</block>
   <block id="4921a99bb14e7c74ffbcbc45df56f359" category="list-text">Linux 플러그인의 경우 설치 로그는 _/var/opt/snapcenter/logs/SnapCenter_Linux_Host_Plug-in_Install_&lt;JOBID&gt;.log에 있으며 업그레이드 로그는 _/var/opt/snapcenter/logs/SnapCenter_Linux_Host_Plug-in_Upgrade_&lt;JOBID&gt;.log에 있습니다</block>
-  <block id="0a14114e3ff4a5d760adcf058a9a4579" category="paragraph">SnapCenter 6.0 버전으로 업그레이드하려는 경우 원격 플러그인 서버에서 기존 DB2용 PERL 기반 플러그인이 제거됩니다.</block>
   <block id="f55d81a07e6e0581f3e19eff0a932069" category="summary">특정 DB2 인스턴스에 대해서는 자동 검색이 지원되지 않습니다. 이러한 리소스를 수동으로 추가해야 합니다.</block>
   <block id="48f6b76a211d0c32945a6f4c2a082f3c" category="paragraph">Windows 호스트에서는 자동 검색이 지원되지 않습니다. DB2 인스턴스 및 데이터베이스 리소스를 수동으로 추가해야 합니다.</block>
   <block id="66fe54fa4e213e520e33fab0de4829f3" category="list-text">SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 설정 등의 작업을 완료해야 합니다.</block>
@@ -9049,7 +9039,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="5960f7331fcbdec5c21642b1d51cc972" category="list-text">MySQL용 SnapCenter 플러그인은 RDM/VMDK 가상 환경에 상주하는 리소스의 자동 검색을 지원하지 않습니다. 데이터베이스를 수동으로 추가하는 동시에 가상 환경에 대한 스토리지 정보를 제공해야 합니다.</block>
   <block id="d6e5affbef5f3cc4e984ce8bcf594a94" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 MySQL용 플러그인을 선택합니다.</block>
   <block id="f09ef27e0279c131a669a6a13b1cbb6a" category="admonition">인스턴스 이름을 SnapCenter 외부에서 바꾸면 리소스를 새로 고쳐야 합니다.</block>
-  <block id="533bfd13df04fd1382b86a2d79550e09" category="list-text">DotNet 코어 8.0.5</block>
   <block id="abb388d4926d485f81269db2a3f0891f" category="summary">SnapCenter는 스토리지 시스템 및 파일 시스템 수준과 MySQL 백업 카탈로그 내에서 로그 및 데이터 백업의 관리 작업을 관리합니다.</block>
   <block id="62fded2795270fcd11011954ceeb813b" category="doc">SnapCenter가 로그 백업의 관리 작업을 관리하는 방법</block>
   <block id="a44bea300ebfa8b4240129a005791668" category="doc">MySQL 보호를 위해 리소스, 리소스 그룹 및 정책을 사용하는 방법</block>
@@ -9803,7 +9792,6 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="31152c60a83a3da780e5073389e4b747" category="inline-image-macro">리소스 그룹에서 정책을 추가합니다</block>
   <block id="80594268749f867035de9885db91d7c7" category="list-text">선택한 정책에 대한 스케줄 구성 섹션에서 스케줄을 구성할 정책에 대한 스케줄 구성 열을 클릭합니다 <block ref="fb07bcf88c7c1b46f6236382e5e0ff22" category="inline-image-macro-rx" type="image"></block> .</block>
   <block id="583e42a8940ae8003094ff152460e62b" category="inline-link">SnapCenter 소프트웨어 6.0 및 6.0.1 릴리스 정보</block>
-  <block id="5c515af353439e417dd1d3ff4a8a8714" category="paragraph">자세한 내용은 를<block ref="96c6a9ad961cdb98d787b7b13bc5a289" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="4d6b1749d463347a1b3df01a9e8b0ea5" category="list-text">업그레이드 작업을 시작하기 전에 수동으로 서버 호스트를 유지 관리 모드로 설정한 경우 업그레이드 후 * Hosts * &gt; * Activate Schedule * 을 클릭하여 수동으로 서버 호스트를 유지 관리 모드에서 해제해야 합니다.</block>
   <block id="490e9071957ca8b80f7019e9cb2a8b99" category="list-text">서버 호스트에서 리소스를 새로 검색해야 합니다.</block>
   <block id="06eee3caed57cb295b8ae731bc4b8dce" category="paragraph">서버 호스트의 상태가 중지됨으로 표시되면 잠시 기다렸다가 새 검색을 수행할 수 있습니다. HostRefreshInterval* 매개 변수 값(기본값은 3600초)을 10분 이상의 값으로 변경할 수도 있습니다.</block>
@@ -9944,4 +9932,67 @@ SnapLock 설정은 ONTAP에서 관리합니다.</block>
   <block id="33e8da2f20646df222fc0acf35201fe4" category="sidebar">사용자 지정 플러그인 리소스를 백업합니다</block>
   <block id="8ffa4ba0dd2df5995fd397c72a149679" category="sidebar">개별 맞춤형 플러그인 리소스를 백업합니다</block>
   <block id="e734e6e2e702d38ebab6ed3c050a5e72" category="sidebar">사용자 지정 플러그인 리소스 백업의 클론을 생성합니다</block>
+  <block id="305e2d6826371134136661ce4869e554" category="list-text">버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 .NET Core</block>
+  <block id="52498505b3fc927f491c9b006eecae92" category="list-text">버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 .NET Framework</block>
+  <block id="76ab71a79937e997e9cf1c7dc354e025" category="list-text">버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 ASP.NET 코어 호스팅 번들</block>
+  <block id="3728d48973e3d053d0a862af7bf6c785" category="list-text">ASP.NET 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함합니다</block>
+  <block id="c1de3dacba751659ff9e6c8833e5f903" category="list-text">ASP.NET Core Runtime 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함합니다</block>
+  <block id="881a29d62175189b1872a856fce933da" category="paragraph">SnapCenter를 사용하여 데이터베이스 백업을 사용하여 Oracle 데이터베이스를 복제할 수 있습니다. 생성된 클론은 일반 클론이며 상위 용량 풀에 생성됩니다.</block>
+  <block id="57507899dd312cf4de9c076e90990d6a" category="paragraph">SnapCenter를 사용하여 데이터베이스 백업을 사용하여 SAP HANA 데이터베이스의 클론을 생성할 수 있습니다. 생성된 클론은 일반 클론이며 상위 용량 풀에 생성됩니다.</block>
+  <block id="73c291e6ad930a577bf1c1d0267ecd80" category="paragraph">SnapCenter를 사용하여 데이터베이스 백업을 사용하여 SQL 데이터베이스를 복제할 수 있습니다. 생성된 클론은 일반 클론이며 상위 용량 풀에 생성됩니다.</block>
+  <block id="c606038e9f060e87fd33c813592804d3" category="list-text">클론 분할은 지원되지 않습니다.</block>
+  <block id="30d32a0f164bac6778a1be0b6bbad3d1" category="paragraph">생성한 자격 증명 이름을 선택하거나 새 자격 증명을 생성합니다. 자격 증명에 원격 호스트에 대한 관리 권한이 있어야 합니다. 자세한 내용은 자격 증명 생성에 대한 정보를 참조하십시오.</block>
+  <block id="0d09fd1c49f1d2d9fdc72b9e6af179ff" category="paragraph">SnapCenter 6.0 이상으로 업그레이드하려는 경우 원격 플러그인 서버에서 기존 DB2용 PERL 기반 플러그인이 제거됩니다.</block>
+  <block id="8bd5c68a1ade9c22f98424902eb6b969" category="admonition">DB2 pureScale 환경 및 DB2 DPF(다중 노드) 시스템은 지원되지 않습니다.</block>
+  <block id="2d2b303d961d395bd777f5532d182df1" category="list-text">버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함한 dotNet Core</block>
+  <block id="d26271179537201ce6d4270b088e3629" category="paragraph">SnapCenter 6.0 및 6.0.1에서 사용할 수 있는 새로운 기능과 향상된 기능에 대해 알아봅니다.</block>
+  <block id="e26065304cca26ac94a12ba286943668" category="inline-link-macro">SnapCenter 6.0.1의 새로운 기능</block>
+  <block id="1389d6b3bba6a06a7cec4120c31b52b7" category="inline-link-macro">SnapCenter 6.0의 새로운 기능</block>
+  <block id="a63ea5d9f72525ae37d941e9bc5ecbc7" category="paragraph">새로운 기능과 향상된 기능의 전체 목록은  및 를 참조하십시오<block ref="2b7c5d00a49e44d91d9f881dc992a4a5" category="inline-link-macro-rx"></block><block ref="e9409363ebf38833c42f0fa2ec48a387" category="inline-link-macro-rx"></block>.</block>
+  <block id="e9d4ea3f0c1b4cd9e879f1519fb60c79" category="paragraph">알려진 문제점, 제한 사항, 해결된 문제, 새로운 명령 및 변경된 명령에 대한 자세한 내용은 를 참조하십시오<block ref="96c6a9ad961cdb98d787b7b13bc5a289" category="inline-link-rx"></block>. 릴리스 정보에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
+  <block id="89f4d38108821acdbf6cd6b780454397" category="summary">SnapCenter에 지원되는 업그레이드 경로입니다.</block>
+  <block id="5097f966477870c178d6885558d88ef0" category="doc">SnapCenter에 대해 지원되는 업그레이드 경로</block>
+  <block id="917e552e8290664f15e1332b2d723ec0" category="paragraph">업그레이드 경로를 통해 최신 버전의 SnapCenter로 업그레이드할 수 있는 모든 이전 버전의 SnapCenter와 지원되는 플러그인 버전을 파악할 수 있습니다.</block>
+  <block id="ab3e1b5fbcd7c46009ad34f096e65d30" category="admonition">예를 들어, SnapCenter 버전 4.9를 사용 중이고 6.0.1로 업그레이드하려면 먼저 5.0으로 업그레이드한 다음 6.0.1로 롤링 업그레이드를 수행해야 합니다.</block>
+  <block id="430bb58f6ef28c742787a646394cc85d" category="summary">SnapCenter 소프트웨어의 6.0 릴리스에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
+  <block id="c93a09afa54abf05ddd4770e3b2343a1" category="doc">SnapCenter 소프트웨어 6.0의 새로운 기능</block>
+  <block id="5864c825e06c8214939d2a9d0894bf16" category="inline-link-macro">NetApp가 지원되는 엔터프라이즈 워크로드 플러그인 지원</block>
+  <block id="b378547eb64b7be3e2ffe67d84149895" category="cell"><block ref="b378547eb64b7be3e2ffe67d84149895" category="inline-link-macro-rx"></block></block>
+  <block id="3be8c0bcb79f27206e60c05521a2483c" category="paragraph">SnapCenter는 PostgreSQL, MySQL, IBM DB2와 같은 워크로드를 관리하는 플러그인을 제공합니다. 워크로드를 자동으로 검색, 백업, 복원, 마운트 및 복제할 수 있습니다.</block>
+  <block id="1fa76ac55ad0967716ac4dfee12b4407" category="paragraph">또한, SnapCenter은 SAP ASE, SAP MaxDB, MongoDB, Oracle Applications, ONTAP 스토리지와 같은 워크로드를 관리하는 플러그인을 제공합니다. 사용자는 워크로드를 백업, 복원 및 클론 복제할 수 있습니다.</block>
+  <block id="2e267d83f08284f9047134b3c074b19b" category="inline-link-macro">클라우드 및 사내 워크로드를 모두 지원하는 SnapCenter의 Linux 버전 지원</block>
+  <block id="ca5b1ab4090623818a4fec6b963d13f9" category="cell"><block ref="ca5b1ab4090623818a4fec6b963d13f9" category="inline-link-macro-rx"></block></block>
+  <block id="7daff1874dce5a11aba2586028b0c18f" category="list-text">Azure NetApp Files, Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP 및 ONTAP 스토리지를 지원합니다.</block>
+  <block id="762100fcdd1477c85af12beef8cd62c3" category="list-text">RHEL(Red Hat Enterprise Linux), Oracle Linux, SLES(SUSE Linux Enterprise Server)와 같은 Linux 버전을 위한 별도의 바이너리</block>
+  <block id="13600e1a28d7c26b057fc84f30416618" category="list-text">SAP HANA, Oracle, IBM DB2, SAP ASE, SAP MaxDB와 같은 기존 데이터베이스를 지원합니다.</block>
+  <block id="1dbcbbe14ef1a2328b3e7e8b86a02d30" category="list-text">PostgreSQL, MySQL, MongoDB와 같은 최신 워크로드를 지원합니다.</block>
+  <block id="42e9bb4040dfb564c8bc793490bd7ba6" category="list-text">지원되지 않거나 자체 개발한 애플리케이션을 보호하기 위해 ONTAP 볼륨 및 Linux 파일 시스템용 플러그인을 지원합니다.</block>
+  <block id="95c6ebe4e9f4b874b3476bd9c75d257b" category="inline-link-macro">SnapMirror Active Sync 지원</block>
+  <block id="8440547858789da7c3b2feb37f16cb25" category="cell"><block ref="8440547858789da7c3b2feb37f16cb25" category="inline-link-macro-rx"></block></block>
+  <block id="d318b0578f25b54d744e21d30b035e8a" category="paragraph">투명한 애플리케이션 페일오버 및 비즈니스 연속성을 위해 구성된 SAN 워크로드(데이터베이스 및 VMware VM)를 원활하게 백업, 복원 및 클론 복제할 수 있습니다.</block>
+  <block id="e030f85ea3742a8498cd3f4ce5f26a2f" category="inline-link-macro">SMB3에서 Microsoft SQL Server 지원</block>
+  <block id="c550e496e988fba14212cef600247fed" category="cell"><block ref="c550e496e988fba14212cef600247fed" category="inline-link-macro-rx"></block></block>
+  <block id="661984b66e3a7f72fbbda59c35c7aa92" category="paragraph">ONTAP, Azure NetApp Files, Amazon FSx for NetApp ONTAP 및 ONTAP Cloud Volumes의 SMB3 프로토콜에 배포된 Microsoft SQL Server 데이터베이스는 이제 SnapCenter를 사용하여 보호할 수 있습니다.</block>
+  <block id="534b29f3d774d1d19d1dc1030cdc4b3d" category="inline-link-macro">NVMe/TCP 지원</block>
+  <block id="98d7af4aa50fe1e0cd7013f44cc2cebc" category="cell"><block ref="98d7af4aa50fe1e0cd7013f44cc2cebc" category="inline-link-macro-rx"></block></block>
+  <block id="6b4fa7a607a45ee2985d38d057ed95a1" category="paragraph">성능 향상을 위해 중요 워크로드를 NVMe/TCP로 마이그레이션할 경우 SnapCenter를 사용하여 애플리케이션 및 파일 시스템을 백업 및 복구할 수 있습니다.</block>
+  <block id="64727e12025200ba369f3ba7c0682081" category="cell">VMware VVOL 지원</block>
+  <block id="8717c0ac7cfbe6d918d19dd574d63e73" category="paragraph">데이터베이스와 파일 시스템을 VMware VVOL에 구축한 경우, SnapCenter를 사용하여 보호할 수 있습니다.</block>
+  <block id="180a2e8c671bfb57b670570970b59480" category="summary">SnapCenter 소프트웨어의 6.0.1 릴리스에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
+  <block id="f5db6e0b0a7608b32dd00dbb85353e53" category="doc">SnapCenter 소프트웨어 6.0.1의 새로운 기능</block>
+  <block id="0ee351a583abf7baa869129519adaddb" category="inline-link-macro">Azure NetApp Files 백업 지원</block>
+  <block id="62c2d7366772786ca345ac877bf79c4a" category="cell"><block ref="62c2d7366772786ca345ac877bf79c4a" category="inline-link-macro-rx"></block></block>
+  <block id="4cc6d2996939fe7970c652728017b3e9" category="paragraph">SnapCenter는 장기 복구, 아카이브 및 규정 준수를 위한 완전 관리형 백업 솔루션을 제공하여 Azure NetApp Files의 데이터 보호 기능을 확장하는 Azure NetApp Files 백업 기능을 지원합니다.</block>
+  <block id="f47390dbd7bff67c8e4d16001f8c4395" category="inline-link-macro">Linux에서 실행되는 SnapCenter의 고가용성 지원</block>
+  <block id="fa7aa08aceadadc58383fc01281330d1" category="cell"><block ref="fa7aa08aceadadc58383fc01281330d1" category="inline-link-macro-rx"></block></block>
+  <block id="8951fc15a429c65f620e89da09c5240e" category="paragraph">F5 로드 밸런서, Microsoft NLB(네트워크 로드 밸런싱), AWS(Amazon Web Services) ELB(Elastic Load Balancing) 또는 Azure 로드 밸런서를 사용하여 Windows 또는 Linux에서 실행되는 SnapCenter의 고가용성을 구성합니다.</block>
+  <block id="1810fc343d328f63ca20580898910abc" category="inline-link-macro">예약된 백업 작업 관리 지원</block>
+  <block id="a9e5aa37b3dc50c95040bd19f911000b" category="cell"><block ref="a9e5aa37b3dc50c95040bd19f911000b" category="inline-link-macro-rx"></block></block>
+  <block id="6775f2c837a6e0d211c88415495a3ca3" category="paragraph">지정된 시간에 실행할 수 있는 예약된 작업 수에 대한 임계값을 설정할 수 있습니다. 이렇게 하면 시스템 하드웨어 구성에 따라 실행할 백업 수를 제어할 수 있습니다.</block>
+  <block id="6c1303e3667436380323a8f91aeeb3b1" category="inline-link-macro">오래된 작업 관리 지원</block>
+  <block id="0f16714fed95f3a4b2ef5ba9724d3658" category="cell"><block ref="0f16714fed95f3a4b2ef5ba9724d3658" category="inline-link-macro-rx"></block></block>
+  <block id="4b6d2450b6badef80cca9ba40b34bd88" category="paragraph">72시간 이상 중단된 오래된 작업을 정리할 수 있습니다.</block>
+  <block id="70e43ac38d4ee9a77d2476513c883d81" category="cell">AIX에서 IBM DB2, Oracle Application 및 스토리지 플러그인 지원</block>
+  <block id="9b37c223b27baf9481210cc34272107f" category="paragraph">AIX에서 IBM DB2, Oracle Application 및 스토리지 플러그인의 데이터 보호를 지원합니다</block>
+  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">릴리즈 노트</block>
 </blocks>

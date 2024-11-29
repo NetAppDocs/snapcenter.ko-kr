@@ -16,7 +16,7 @@ SnapCenter 서버는 아래 소프트웨어 패키지를 설치합니다. 이러
 * RabbitMQ입니다
 * Nginx
 * 에를랑
-* NET Framework 8.0.5
+* 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 .NET Framework
 * PAM-devel의 약어입니다
 * PowerShell을 사용합니다
 
