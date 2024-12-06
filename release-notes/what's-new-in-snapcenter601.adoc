@@ -17,22 +17,22 @@ SnapCenter 소프트웨어의 6.0.1 릴리스에는 몇 가지 새로운 기능�
 | 업데이트 | 설명 
 
 
-| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/protect-azure/protect-applications-azure-netapp-files.html["Azure NetApp Files 백업 지원"]  a| 
+| link:https://docs.netapp.com/us-en/snapcenter/protect-azure/protect-applications-azure-netapp-files.html["Azure NetApp Files 백업 지원"]  a| 
 SnapCenter는 장기 복구, 아카이브 및 규정 준수를 위한 완전 관리형 백업 솔루션을 제공하여 Azure NetApp Files의 데이터 보호 기능을 확장하는 Azure NetApp Files 백업 기능을 지원합니다.
 
 
 
-| link:hhttps://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html["Linux에서 실행되는 SnapCenter의 고가용성 지원"]  a| 
+| link:https://docs.netapp.com/us-en/snapcenter/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html["Linux에서 실행되는 SnapCenter의 고가용성 지원"]  a| 
 F5 로드 밸런서, Microsoft NLB(네트워크 로드 밸런싱), AWS(Amazon Web Services) ELB(Elastic Load Balancing) 또는 Azure 로드 밸런서를 사용하여 Windows 또는 Linux에서 실행되는 SnapCenter의 고가용성을 구성합니다.
 
 
 
-| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-scheduled-backup-jobs["예약된 백업 작업 관리 지원"]  a| 
+| link:https://docs.netapp.com/us-en/snapcenter/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-scheduled-backup-jobs["예약된 백업 작업 관리 지원"]  a| 
 지정된 시간에 실행할 수 있는 예약된 작업 수에 대한 임계값을 설정할 수 있습니다. 이렇게 하면 시스템 하드웨어 구성에 따라 실행할 백업 수를 제어할 수 있습니다.
 
 
 
-| link:https://review.docs.netapp.com/us-en/snapcenter_sc601_oct2024_releasebranch/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-stale-jobs["오래된 작업 관리 지원"]  a| 
+| link:https://docs.netapp.com/us-en/snapcenter/admin/concept_monitor_jobs_schedules_events_and_logs.html#manage-stale-jobs["오래된 작업 관리 지원"]  a| 
 72시간 이상 중단된 오래된 작업을 정리할 수 있습니다.
 
 
