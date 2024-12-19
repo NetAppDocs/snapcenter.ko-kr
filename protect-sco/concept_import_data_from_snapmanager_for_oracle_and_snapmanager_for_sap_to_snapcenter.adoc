@@ -252,11 +252,11 @@ NOTE: 호스트의 각 프로필에 대해 SMO 자격 증명 세트 명령을 �
 *** 'msap credential set -repository -dbname repository_database_name -host host_name -port_number -login -username user_name_for_repository_database'
 *** 'smsap profile sync-repository-dbname repository_database_name-host host_name-port_number-login-username host_user_name_for_repository_database'를 참조하십시오
 *** 'msap 자격 증명 set-profile-name profile_name'입니다
-
-
 +
 
 NOTE: 호스트의 각 프로필에 대해 smsap 자격 증명 집합 명령을 실행해야 합니다.
+
+
 
 
 

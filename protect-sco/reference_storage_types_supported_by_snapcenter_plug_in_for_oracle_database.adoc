@@ -32,7 +32,7 @@ SnapCenter는 Linux 및 AIX용 스토리지 프로비저닝을 지원하지 않�
 * iSCSI로 연결된 LUN
 * NFS 연결 볼륨
 * NVMe-FC를 지원합니다
-* NVMe-TCP
+* NVMe/TCP
 
 
 
@@ -46,7 +46,7 @@ hba_driver_names에 나열된 HBA만 재검색하려면 _/opt/netapp/snapcenter/
 
 * iSCSI 이니시에이터가 게스트 시스템에 직접 접속된 iSCSI LUN
 * NFS 데이터 저장소에 있는 VMDK입니다
-* NVMe-TCP를 통해 생성되는 VMFS의 VMDK
+* NVMe/TCP를 통해 생성되는 VMFS의 VMDK
 +
 
 NOTE: RAC는 공유 VMDK를 지원하는 ESX 8.0U2에서 지원됩니다

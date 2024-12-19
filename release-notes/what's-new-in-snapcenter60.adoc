@@ -25,6 +25,8 @@ SnapCenter는 PostgreSQL, MySQL, IBM DB2와 같은 워크로드를 관리하는 
 
 
 | link:https://docs.netapp.com/us-en/snapcenter/install/install_snapcenter_server_linux.html["클라우드 및 사내 워크로드를 모두 지원하는 SnapCenter의 Linux 버전 지원"]  a| 
+이제 RHEL(Red Hat Enterprise Linux), Oracle Linux, SLES(SUSE Linux Enterprise Server)와 같은 Linux 버전에 대해 별도의 SnapCenter 바이너리를 사용할 수 있습니다.
+
 * Azure NetApp Files, Amazon FSx for NetApp ONTAP, Cloud Volumes ONTAP 및 ONTAP 스토리지를 지원합니다.
 * RHEL(Red Hat Enterprise Linux), Oracle Linux, SLES(SUSE Linux Enterprise Server)와 같은 Linux 버전을 위한 별도의 바이너리
 * SAP HANA, Oracle, IBM DB2, SAP ASE, SAP MaxDB와 같은 기존 데이터베이스를 지원합니다.
@@ -34,22 +36,22 @@ SnapCenter는 PostgreSQL, MySQL, IBM DB2와 같은 워크로드를 관리하는 
 
 
 
-| link:https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["SnapMirror Active Sync 지원"]  a| 
-투명한 애플리케이션 페일오버 및 비즈니스 연속성을 위해 구성된 SAN 워크로드(데이터베이스 및 VMware VM)를 원활하게 백업, 복원 및 클론 복제할 수 있습니다.
+| link:https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["SnapMirror 활성 동기화를 지원합니다"]  a| 
+이제 SnapCenter를 사용하여 SnapMirror 액티브 동기화 기능을 구성하고 데이터베이스 및 VMware VM에 대한 SAN 워크로드를 효과적으로 백업, 복원 및 복제할 수 있습니다. 이를 통해 투명한 애플리케이션 페일오버 및 무중단 업무 운영을 보장할 수 있습니다.
 
 
 
 | link:https://docs.netapp.com/us-en/snapcenter/install/concept_create_and_manage_smb_shares.html["SMB3에서 Microsoft SQL Server 지원"]  a| 
-ONTAP, Azure NetApp Files, Amazon FSx for NetApp ONTAP 및 ONTAP Cloud Volumes의 SMB3 프로토콜에 배포된 Microsoft SQL Server 데이터베이스는 이제 SnapCenter를 사용하여 보호할 수 있습니다.
+이제 SnapCenter를 사용하여 ONTAP, Azure NetApp Files, Amazon FSx for NetApp ONTAP 및 Cloud Volumes ONTAP의 SMB3 프로토콜에 배포된 Microsoft SQL Server 데이터베이스를 보호할 수 있습니다.
 
 
 
 | link:https://docs.netapp.com/us-en/snapcenter/protect-sco/reference_storage_types_supported_by_snapcenter_plug_in_for_oracle_database.html#storage-types-supported-on-linux["NVMe/TCP 지원"]  a| 
-성능 향상을 위해 중요 워크로드를 NVMe/TCP로 마이그레이션할 경우 SnapCenter를 사용하여 애플리케이션 및 파일 시스템을 백업 및 복구할 수 있습니다.
+이제 SnapCenter는 TCP 프로토콜을 통한 NVMe를 지원하여 애플리케이션과 파일 시스템을 백업 및 복구합니다.
 
 
 
-| VMware VVOL 지원  a| 
-데이터베이스와 파일 시스템을 VMware VVOL에 구축한 경우, SnapCenter를 사용하여 보호할 수 있습니다.
+| VVOL(VMware vSphere 가상 볼륨) 지원  a| 
+이제 SnapCenter를 사용하여 VVOL에 배포된 데이터베이스와 파일 시스템을 보호할 수 있습니다.
 
 |===
