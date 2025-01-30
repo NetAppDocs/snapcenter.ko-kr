@@ -13,4 +13,4 @@ summary: 데이터베이스 파일이 아닌 Windows 파일을 보호하려면 M
 [role="lead"]
 데이터베이스 파일이 아닌 Windows 파일을 보호하려면 Microsoft Windows용 SnapCenter 플러그인을 설치하고 설정해야 합니다.
 
-image::../media/scw_workflow_for_installing.png[워크플로를 설치합니다]
+image::../media/scw_workflow_for_installing.gif[워크플로를 설치합니다]

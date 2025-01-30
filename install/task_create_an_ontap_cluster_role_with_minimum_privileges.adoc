@@ -39,9 +39,6 @@ NOTE: 각 권한에 대해 이 명령을 반복해야 합니다.
 
 클러스터 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령을 실행해야 합니다.
 
-
-NOTE: SnapCenter 5.0부터는 클러스터 관리자가 REST API를 사용하는 경우에만 지원됩니다. 비 클러스터 관리자를 사용하여 역할을 생성하려면 ZAPI를 사용해야 합니다.
-
 * `security login role create -vserver Cluster_name or cluster_name -role Role_Name -cmddirname "metrocluster show" -access readonly`
 * `security login role create -vserver Cluster_name or cluster_name -role Role_Name -cmddirname "cluster identity modify" -access all`
 * `security login role create -vserver Cluster_name -role Role_Name -cmddirname "cluster identity show" -access all`
@@ -78,6 +75,17 @@ NOTE: SnapCenter 5.0부터는 클러스터 관리자가 REST API를 사용하는
 * 'Security login role create - vserver Cluster_name - role Role_Name - cmddirname "network interface delete" - access readonly'
 * 'Security login role create - vserver Cluster_name - role Role_Name - cmddirname "network interface modify" - access readonly
 * 'Security login role create - vserver Cluster_name - role Role_Name - cmddirname' network interface show "-access readonly
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem map" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem host" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem controller" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme subsystem show" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme namespace create" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme namespace delete" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme namespace modify" -access all`
+* `security login role create -vserver Cluster_name -role Role_Name -cmddirname "nvme namespace show" -access all`
 * 'Security login role create - vserver Cluster_name - role Role_Name - cmddirname "security login" - access readonly'
 * 'Security login role create - role_Name - cmddirname "SnapMirror create" - vserver Cluster_name - access all'
 * 'Security login role create - role_Name - cmddirname "SnapMirror list-destinations" - vserver Cluster_name - access all'

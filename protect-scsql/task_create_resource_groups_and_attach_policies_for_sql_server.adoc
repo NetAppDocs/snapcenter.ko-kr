@@ -78,12 +78,12 @@ NOTE: 최근에 추가한 자원은 자원 목록을 새로 고친 후에만 사
 .. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
 +
 
-NOTE: * 를 클릭하여 정책을 생성할 수도 있습니다image:../media/add_policy_from_resourcegroup.gif[""]*.
+NOTE: * * 를 클릭하여 정책을 만들 수도image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"]있습니다.
 
 +
 선택한 정책에 대한 스케줄 구성 섹션에 선택한 정책이 나열됩니다.
 
-.. 선택한 정책에 대한 일정 구성 섹션에서 * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif[""]일정을 구성하려는 정책에 대한 스케줄 구성 열의
+.. 선택한 정책에 대한 스케줄 구성 섹션에서 스케줄을 구성할 정책에 대한 스케줄 구성 열에 있는 * * * * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"].
 .. policy_policy_name_schedules 추가 대화 상자에서 시작 날짜, 만료 날짜 및 빈도를 지정하여 스케줄을 구성한 다음 * 확인 * 을 클릭합니다.
 +
 정책에 나열된 각 빈도에 대해 이 작업을 수행해야 합니다. 구성된 스케줄은 * 선택한 정책에 대한 스케줄 구성 * 섹션의 적용된 스케줄 열에 나열됩니다.
@@ -111,7 +111,7 @@ Microsoft SQL Server 스케줄러를 선택하지 않으면 기본값은 Microso
 NOTE: 검증 서버 버전은 기본 데이터베이스를 호스팅하는 SQL Server의 버전 및 버전과 일치해야 합니다.
 
 .. Load locators * 를 클릭하여 SnapMirror 및 SnapVault 볼륨을 로드하여 보조 스토리지에 대한 검증을 수행합니다.
-.. 확인 일정을 구성할 정책을 선택한 다음 * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif[""]*.
+.. 확인 일정을 구성할 정책을 선택한 다음 * * * * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"].
 .. Add Verification Schedules policy_name 대화 상자에서 다음 작업을 수행합니다.
 +
 |===

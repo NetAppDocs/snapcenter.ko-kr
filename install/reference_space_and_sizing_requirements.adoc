@@ -82,14 +82,13 @@ NOTE: 참고: SnapCenter 저장소가 설치된 동일한 드라이브에 SnapCe
  a| 
 필요한 소프트웨어 패키지
  a| 
-* Microsoft .NET Framework 4.7.2 이상
-* 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 ASP.NET 코어 호스팅 번들
+* ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
 * PowerShell 7.4.2 이상
 
 
 NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다"^].
  a| 
-* ASP.NET Core Runtime 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함합니다
+* .NET Framework 8.0.12(및 이후의 모든 8.0.x 패치)
 * PowerShell 7.4.2 이상
 * Nginx는 역방향 프록시로 사용할 수 있는 웹 서버입니다
 * PAM-devel의 약어입니다
@@ -99,3 +98,5 @@ PAM(Pluggable Authentication Modules)은 시스템 관리자가 인증을 수행
 
 
 |===
+
+NOTE: ASP.NET Core는 Windows의 SnapCenter 서버에 있는 임시 파일 시스템에 액세스하려면 IIS_IUSRS가 필요합니다.

@@ -22,4 +22,4 @@ summary: 클론 워크플로우에는 계획, 클론 작업 수행 및 작업 �
 
 다음 워크플로에서는 클론 작업을 수행해야 하는 순서를 보여 줍니다.
 
-image::../media/sco_scc_wfs_clone_workflow.png[클론 복제 워크플로우]
+image::../media/sco_scc_wfs_clone_workflow.gif[클론 복제 워크플로우]

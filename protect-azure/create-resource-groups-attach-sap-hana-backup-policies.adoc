@@ -49,7 +49,7 @@ summary: 리소스 그룹은 백업 및 보호할 리소스를 추가해야 하�
 . 정책 페이지에서 다음 단계를 수행합니다.
 +
 .. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
-.. Configure Schedules 열에서 * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif[""]구성할 정책에 대해 * 를 선택합니다.
+.. Configure Schedules 열에서 구성할 정책에 대해 * * * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"].
 .. policy_policy_name_에 대한 일정 추가 대화 상자에서 일정을 구성한 다음 * 확인 * 을 클릭합니다.
 
 

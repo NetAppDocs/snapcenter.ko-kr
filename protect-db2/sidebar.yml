@@ -102,6 +102,8 @@ entries:
     url: "/protect-db2/create-backup-policies-for-ibm-db2.html"
   - title: 리소스 그룹을 생성하고 정책을 연결합니다
     url: "/protect-db2/create-resource-groups-and-attach-policies.html"
+  - title: 리소스 그룹을 생성하고 ASA R2 시스템에서 IBM DB2 리소스에 대한 보조 보호 기능을 설정합니다
+    url: "/protect-db2/create-resource-groups-secondary-protection-for-asa-r2-db2-resources.html"
   - title: IBM DB2용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
     url: "/protect-db2/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-ibm-db2.html"
   - title: DB2 데이터베이스를 백업합니다

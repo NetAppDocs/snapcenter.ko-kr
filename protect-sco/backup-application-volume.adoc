@@ -21,9 +21,9 @@ summary: 애플리케이션 볼륨이 리소스 그룹에 속하지 않은 경�
 
 . 왼쪽 탐색 창에서 * Resources * 를 클릭한 다음 목록에서 Oracle Database 플러그인을 선택합니다.
 . 리소스 페이지의 * 보기 * 목록에서 * 응용 프로그램 볼륨 * 을 선택합니다.
-. 를 클릭한 image:../media/filter_icon.png["필터 아이콘"]다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.
+. * 를image:../media/filter_icon.gif["필터 아이콘"]클릭한 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.
 +
-그런 다음 을 클릭하여 필터 창을 닫을 수 image:../media/filter_icon.png["필터 아이콘"] 있습니다.
+그런 다음 * * 를 클릭하여 필터 창을 닫을 수image:../media/filter_icon.gif["필터 아이콘"]있습니다.
 
 . 백업할 애플리케이션 볼륨을 선택합니다.
 +
@@ -55,7 +55,7 @@ Application volume-protect(애플리케이션 볼륨 보호) 페이지가 표시
 .. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
 +
 
-NOTE: 을 클릭하여 정책을 만들 수도 image:../media/add_policy_from_resourcegroup.gif["정책을 추가합니다"]있습니다.
+NOTE: * * 를 클릭하여 정책을 만들 수도image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"]있습니다.
 
 
 
@@ -63,7 +63,7 @@ NOTE: 을 클릭하여 정책을 만들 수도 image:../media/add_policy_from_re
 선택한 정책에 대한 스케줄 구성 섹션에 선택한 정책이 나열됩니다.
 
 +
-.. 일정을 구성할 정책에 대한 Configure Schedules 열을 클릭합니다 image:../media/add_policy_from_resourcegroup.gif["정책을 추가합니다"] .
+.. 일정을 구성할 정책에 대한 Configure Schedules 열을 클릭합니다 image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"] .
 .. policy_policy_name_에 대한 스케줄 추가 창에서 스케줄을 구성한 다음 * 확인 * 을 클릭합니다.
 +
 _policy_name_은 선택한 정책의 이름입니다.

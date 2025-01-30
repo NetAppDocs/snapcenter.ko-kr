@@ -29,6 +29,7 @@ SnapCenter는 다음과 같은 방법으로 구축할 수 있습니다.
 ** ONTAP FAS, AFF 또는 ASA(All SAN Array) 운영 시스템에 있고 ONTAP FAS, AFF 또는 ASA 2차 시스템에 복제된 데이터입니다
 ** ONTAP Select 운영 시스템에 있는 데이터
 ** ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있으며 로컬 StorageGRID 오브젝트 스토리지로 보호되는 데이터
+** ONTAP ASA R2 운영 및 2차 시스템에 있는 데이터입니다
 
 
 * 하이브리드 클라우드의 사내 로 다음을 보호:
@@ -89,7 +90,7 @@ REST API에 대한 자세한 내용은 를 참조하십시오 https://docs.netap
 Windows cmdlet에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]참조하십시오.
 
 +
-UNIX 명령에 대한 자세한 내용은 을 https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470["SnapCenter 소프트웨어 명령 참조 가이드"^]참조하십시오.
+UNIX 명령에 대한 자세한 내용은 을 https://library.netapp.com/ecm/ecm_download_file/ECMLP3337666["SnapCenter 소프트웨어 명령 참조 가이드"^]참조하십시오.
 
 * 중앙 집중식 데이터 보호 대시보드 및 보고
 * 보안 및 위임을 위한 역할 기반 액세스 제어(RBAC).
@@ -111,10 +112,10 @@ SnapCenter의 고가용성은 외부 로드 밸런서(F5)를 사용하여 설정
 
 * SnapLock
 +
-SnapLock는 WORM(Write Once, Read Many) 스토리지를 사용하여 규정 및 거버넌스 목적으로 수정되지 않은 형식으로 파일을 보존하는 조직을 위한 고성능 규정 준수 솔루션입니다.
+SnapLock는 WORM(Write Once, Read Many) 스토리지를 사용하여 규정 및 거버넌스 목적으로 수정되지 않은 형식으로 파일을 보존하는 조직을 위한 고성능 규정 준수 솔루션입니다. SnapLock에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/snaplock/["SnapLock란"]참조하십시오.
 
 +
-SnapLock에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/snaplock/["SnapLock란"]
+스냅샷을 잠그면 실수로 또는 악의적으로 삭제할 수 없습니다. SnapCenter 운영 스냅샷과 보조 스냅샷의 잠금 기간을 지정할 수 있습니다.
 
 * SnapMirror 액티브 동기화(처음에는 SnapMirror Business Continuity[SM-BC]로 릴리즈)
 +

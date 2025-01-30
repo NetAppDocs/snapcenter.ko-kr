@@ -1,7 +1,7 @@
 ---
 permalink: install/task_add_storage_systems.html 
 sidebar: sidebar 
-keywords: add, storage system, SVM 
+keywords: add, storage system, SVM, ASA r2 systems 
 summary: ONTAP에서 SnapCenter 스토리지에 액세스하여 데이터 보호 및 프로비저닝 작업을 수행할 수 있도록 스토리지 시스템을 설정해야 합니다. 독립 실행형 SVM이나 여러 SVM으로 구성된 클러스터를 추가할 수 있습니다. 
 ---
 = 스토리지 시스템을 추가합니다
@@ -11,7 +11,7 @@ summary: ONTAP에서 SnapCenter 스토리지에 액세스하여 데이터 보호
 
 
 [role="lead"]
-데이터 보호 및 프로비저닝 작업을 수행하려면 SnapCenter 스토리지에 대한 ONTAP 액세스 권한을 제공하는 스토리지 시스템이나 NetApp ONTAP용 Amazon FSx를 설정해야 합니다.
+데이터 보호 및 프로비저닝 작업을 수행할 수 있도록 ONTAP 스토리지, ASA R2 시스템 또는 Amazon FSx for NetApp ONTAP에 대한 SnapCenter 액세스를 제공하는 스토리지 시스템을 설정해야 합니다.
 
 독립 실행형 SVM이나 여러 SVM으로 구성된 클러스터를 추가할 수 있습니다. NetApp ONTAP용 Amazon FSx를 사용하는 경우 fsxadmin 계정을 사용하여 여러 SVM으로 구성된 FSx 관리 LIF를 추가하거나 SnapCenter에서 FSx SVM을 추가할 수 있습니다.
 

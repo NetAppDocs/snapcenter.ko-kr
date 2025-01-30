@@ -40,7 +40,7 @@ NOTE: SnapCenter은 서로 다른 클러스터에서 동일한 이름의 여러 
 
 * SAN 환경에 Oracle 데이터베이스가 있는 경우 다음 가이드에 설명된 권장 사항에 따라 SAN 환경을 구성해야 합니다.
 +
-** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547957["Linux Unified Host Utilities의 권장 호스트 설정"^]
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2547958["ONTAP 스토리지에 Linux 호스트 사용"^]
 ** https://library.netapp.com/ecm/ecm_download_file/ECMP1119218["AIX 호스트 유틸리티의 영향을 받는 호스트 설정"^]
 
 

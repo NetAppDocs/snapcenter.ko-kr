@@ -33,47 +33,61 @@ SnapCenter 서버 및 응용 프로그램 또는 데이터베이스 플러그인
 다음 표에는 여러 포트와 해당 기본값이 나와 있습니다.
 
 |===
-| 포트의 유형입니다 | 기본 포트입니다 
+| 포트 이름 | 포트 번호 | 프로토콜 | 방향 | 설명 
 
 
  a| 
 SnapCenter 포트
  a| 
-8146(HTTPS), 양방향, 사용자 지정 가능(URL_\https://server:8146_)
+8146
+ a| 
+HTTPS
+ a| 
+양방향
+ a| 
+이 포트는 SnapCenter 클라이언트(SnapCenter 사용자)와 SnapCenter 서버 간의 통신에 사용되며 플러그인 호스트에서 SnapCenter 서버로의 통신에도 사용됩니다.
 
-SnapCenter 클라이언트(SnapCenter 사용자)와 SnapCenter 서버 간의 통신에 사용됩니다. 플러그인 호스트에서 SnapCenter 서버로의 통신에도 사용됩니다.
-
-포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html["설치 마법사를 사용하여 SnapCenter 서버를 설치합니다."]
+포트 번호를 사용자 지정할 수 있습니다.
 
 
 
  a| 
 SnapCenter SMCore 통신 포트입니다
  a| 
-8145(HTTPS), 양방향, 사용자 지정 가능
-
+8145
+ a| 
+HTTPS
+ a| 
+양방향
+ a| 
 이 포트는 SnapCenter 서버와 SnapCenter 플러그인이 설치된 호스트 간의 통신에 사용됩니다.
 
-포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html["설치 마법사를 사용하여 SnapCenter 서버를 설치합니다."]
+포트 번호를 사용자 지정할 수 있습니다.
 
 
 
  a| 
 스케줄러 서비스 포트
  a| 
-8154(HTTPS)
-
+8154
+ a| 
+HTTPS
+ a| 
+ a| 
 이 포트는 SnapCenter 서버 호스트 내의 모든 관리형 플러그인에 대한 SnapCenter 스케줄러 워크플로우를 중앙 집중식으로 조정하는 데 사용됩니다.
 
-포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html["설치 마법사를 사용하여 SnapCenter 서버를 설치합니다."]
+포트 번호를 사용자 지정할 수 있습니다.
 
 
 
  a| 
 RabbitMQ 포트
  a| 
-5672(TCP)
-
+5672
+ a| 
+TCP
+ a| 
+ a| 
 RabbitMQ가 수신 대기하는 기본 포트이며 스케줄러 서비스와 SnapCenter 간의 게시자-가입자 모델 통신에 사용됩니다.
 
 
@@ -81,78 +95,85 @@ RabbitMQ가 수신 대기하는 기본 포트이며 스케줄러 서비스와 Sn
  a| 
 MySQL 포트
  a| 
-3306(HTTPS), 양방향, 사용자 지정 가능
-
-이 포트는 SnapCenter 및 MySQL 리포지토리 데이터베이스 간의 통신에 사용됩니다.
-
-SnapCenter 서버에서 MySQL 서버로 보안 연결을 생성할 수 있습니다. link:../install/concept_configure_secured_mysql_connections_with_snapcenter_server.html["자세한 정보"]
-
-포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/install/task_install_the_snapcenter_server_using_the_install_wizard.html["설치 마법사를 사용하여 SnapCenter 서버를 설치합니다."]
+3306
+ a| 
+HTTPS
+ a| 
+ a| 
+이 포트는 SnapCenter 리포지토리 데이터베이스와 통신하는 데 사용됩니다. SnapCenter 서버에서 MySQL 서버로의 보안 연결을 만들 수 있습니다. link:../install/concept_configure_secured_mysql_connections_with_snapcenter_server.html["자세한 정보"]
 
 
 
  a| 
 Windows 플러그인 호스트
  a| 
-135, 445(TCP)
-
-135번 및 445번 포트 외에도 Microsoft에서 지정한 동적 포트 범위도 열려 있어야 합니다. 원격 설치 작업은 이 포트 범위를 동적으로 검색하는 WMI(Windows Management Instrumentation) 서비스를 사용합니다.
-
-지원되는 동적 포트 범위에 대한 자세한 내용은 을 참조하십시오 https://support.microsoft.com/kb/832017["Windows에 대한 서비스 개요 및 네트워크 포트 요구 사항"^]
-
-이 포트는 SnapCenter 서버와 플러그인이 설치되는 호스트 간의 통신에 사용됩니다. 플러그인 패키지 바이너리를 Windows 플러그인 호스트에 푸시하려면 포트가 플러그인 호스트에서만 열려 있어야 하며 설치 후 닫을 수 있습니다.
+135, 445
+ a| 
+TCP
+ a| 
+ a| 
+이 포트는 SnapCenter 서버와 플러그인이 설치되고 있는 호스트 간의 통신에 사용됩니다. Microsoft에서 지정한 추가 동적 포트 범위도 열려 있어야 합니다.
 
 
 
  a| 
 Linux 또는 AIX 플러그인 호스트
  a| 
-22(SSH)
-
-포트는 SnapCenter 서버와 플러그인이 설치되는 호스트 간의 통신에 사용됩니다. 이 포트는 SnapCenter에서 플러그인 패키지 바이너리를 Linux 또는 AIX 플러그인 호스트에 복사하는 데 사용되며 방화벽 또는 iptables에서 열거나 제외해야 합니다.
+22
+ a| 
+SSH를 클릭합니다
+ a| 
+단방향
+ a| 
+이 포트는 서버에서 클라이언트 호스트로 초기화된 SnapCenter 서버와 호스트 간의 통신에 사용됩니다.
 
 
 
  a| 
-Windows용 SnapCenter 플러그인 패키지, Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지
+Windows, Linux 또는 AIX용 SnapCenter 플러그인 패키지
  a| 
-8145(HTTPS), 양방향, 사용자 지정 가능
+8145
+ a| 
+HTTPS
+ a| 
+양방향
+ a| 
+이 포트는 플러그인 패키지가 설치된 SMCore와 호스트 간의 통신에 사용됩니다. 사용자 정의 가능.
 
-이 포트는 플러그인 패키지가 설치된 SMCore와 호스트 간의 통신에 사용됩니다.
-
-또한 SVM 관리 LIF와 SnapCenter 서버 간에 통신 경로를 개방해야 합니다.
-
-포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/protect-scw/task_add_hosts_and_install_snapcenter_plug_in_for_microsoft_windows.html["호스트를 추가하고 Microsoft Windows용 SnapCenter 플러그인을 설치합니다"] 또는 https://docs.netapp.com/us-en/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html["호스트를 추가하고 Linux 또는 AIX용 SnapCenter 플러그인 패키지를 설치합니다."]
+포트 번호를 사용자 지정할 수 있습니다.
 
 
 
  a| 
 Oracle 데이터베이스용 SnapCenter 플러그인
  a| 
-27216, 사용자 지정 가능
-
+27216
+ a| 
+ a| 
+ a| 
 기본 JDBC 포트는 Oracle용 플러그인에서 Oracle 데이터베이스에 연결하는 데 사용됩니다.
-
-포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/protect-sco/task_add_hosts_and_installing_the_snapcenter_plug_ins_package_for_linux_or_aix.html["호스트를 추가하고 Linux 또는 AIX용 SnapCenter 플러그인 패키지를 설치합니다."]
 
 
 
  a| 
 Exchange 데이터베이스용 SnapCenter 플러그인
  a| 
-909, 사용자 지정 가능
-
+909
+ a| 
+ a| 
+ a| 
 기본 네트입니다. TCP 포트는 Windows용 플러그인에서 Exchange VSS 콜백에 연결하는 데 사용됩니다.
-
-포트를 사용자 지정하려면 을 참조하십시오 link:../protect-sce/task_add_hosts_and_install_plug_in_for_exchange.html["호스트를 추가하고 Exchange용 플러그인을 설치합니다"].
 
 
 
  a| 
 SnapCenter에 대해 NetApp 지원 플러그인
  a| 
-9090(HTTPS), 고정
-
+9090
+ a| 
+HTTPS
+ a| 
+ a| 
 사용자 지정 플러그인 호스트에서만 사용되는 내부 포트입니다. 방화벽 예외가 필요하지 않습니다.
 
 SnapCenter 서버와 사용자 지정 플러그인 간의 통신은 포트 8145를 통해 라우팅됩니다.
@@ -162,31 +183,49 @@ SnapCenter 서버와 사용자 지정 플러그인 간의 통신은 포트 8145�
  a| 
 ONTAP 클러스터 또는 SVM 통신 포트
  a| 
-443(HTTPS), 양방향 80(HTTP), 양방향
+* 443(HTTPS)
+* 80(HTTP)
 
+ a| 
+* HTTPS
+* HTTP
+
+ a| 
+양방향
+ a| 
 이 포트는 SnapCenter Server를 실행하는 호스트와 SVM 간 통신에 SAL(Storage Abstraction Layer)에서 사용됩니다. 이 포트는 현재 SnapCenter 플러그인 호스트와 SVM 간 통신에 SnapCenter의 SAL에서 사용됩니다.
 
 
 
  a| 
-SAP HANA 데이터베이스 vCode용 SnapCenter 플러그인 맞춤법 검사기
+SAP HANA 데이터베이스용 SnapCenter 플러그인
  a| 
-3instance_number13 또는 3instance_number15, HTTP 또는 HTTPS, 양방향 및 사용자 지정 가능
+* 3instance_number13를 참조하십시오
+* 3instance_number15를 참조하십시오
 
+ a| 
+* HTTPS
+* HTTP
+
+ a| 
+양방향
+ a| 
 MDC(멀티테넌트 데이터베이스 컨테이너) 단일 테넌트의 경우 포트 번호는 13으로 끝나며 MDC가 아닌 경우 포트 번호는 15로 끝납니다.
 
-예를 들어, 32013은 인스턴스 20의 포트 번호이고 31015는 인스턴스 10의 포트 번호입니다.
-
-포트를 사용자 정의하려면 를 참조하십시오 https://docs.netapp.com/us-en/snapcenter/protect-hana/task_add_hosts_and_install_plug_in_packages_on_remote_hosts_sap_hana.html["호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다."]
+포트 번호를 사용자 지정할 수 있습니다.
 
 
 
  a| 
-도메인 컨트롤러 통신 포트입니다
+PostgreSQL용 SnapCenter 플러그인
  a| 
-인증이 제대로 작동하기 위해 도메인 컨트롤러의 방화벽에서 열어야 하는 포트를 확인하려면 Microsoft 설명서를 참조하십시오.
+5432
+ a| 
+ a| 
+ a| 
+이 포트는 PostgreSQL용 플러그인에서 PostgreSQL 클러스터로의 통신에 사용되는 기본 PostgreSQL 포트입니다.
 
-SnapCenter 서버, 플러그인 호스트 또는 다른 Windows 클라이언트가 사용자를 인증할 수 있도록 도메인 컨트롤러에서 Microsoft 필수 포트를 열어야 합니다.
+포트 번호를 사용자 지정할 수 있습니다.
 
 |===
 포트 세부 정보를 수정하려면 을 참조하십시오 link:../admin/concept_manage_hosts.html#modify-plug-in-hosts["플러그인 호스트를 수정합니다"].

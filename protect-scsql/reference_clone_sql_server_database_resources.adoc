@@ -17,7 +17,7 @@ summary: 백업에서 데이터베이스 리소스를 클론 복제하기 전에
 
 다음 워크플로에서는 클론 생성 작업을 수행해야 하는 순서를 보여 줍니다.
 
-image::../media/scsql_clone_workflow.png[클론 워크플로우 다이어그램]
+image::../media/scsql_clone_workflow.gif[클론 워크플로우 다이어그램]
 
 PowerShell cmdlet을 수동으로 또는 스크립트에서 사용하여 백업, 복원, 복구, 확인 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"]
 

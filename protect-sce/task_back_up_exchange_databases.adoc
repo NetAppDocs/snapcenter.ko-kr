@@ -34,14 +34,14 @@ summary: 데이터베이스가 리소스 그룹에 속하지 않은 경우 리�
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 * Microsoft Exchange Server 플러그인 * 을 선택합니다.
 . 리소스 페이지의 * 보기 * 목록에서 * 데이터베이스 * 또는 * 데이터베이스 가용성 그룹 * 을 선택합니다.
 +
-리소스 페이지에서 image:../media/not_supported_icon.png["지원되지 않는 저장소입니다"] 아이콘은 데이터베이스가 NetApp이 아닌 스토리지에 있음을 나타냅니다.
+리소스 페이지에서 image:../media/not_supported_icon.gif["지원되지 않는 아이콘입니다"] 아이콘은 데이터베이스가 NetApp이 아닌 스토리지에 있음을 나타냅니다.
 
 +
 
 NOTE: DAG에서 액티브 데이터베이스 복제본이 타사 스토리지에 있고 하나 이상의 패시브 데이터베이스 복제본이 NetApp 스토리지에 상주하는 경우 데이터베이스를 보호할 수 있습니다.
 
 +
-를 클릭합니다image:../media/filter_icon.png[""]를 누른 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 * 를 클릭할 수 있습니다image:../media/filter_icon.png[""]를 눌러 필터 창을 닫습니다.
+* 를image:../media/filter_icon.gif["필터 아이콘"]클릭한 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 * * 를 클릭하여 필터 창을 닫을 수image:../media/filter_icon.gif["필터 아이콘"]있습니다.
 
 +
 ** 데이터베이스를 백업하려면 데이터베이스 이름을 클릭합니다.
@@ -62,7 +62,7 @@ NOTE: DAG에서 액티브 데이터베이스 복제본이 타사 스토리지에
 .. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
 +
 
-NOTE: * 를 클릭하여 정책을 생성할 수도 있습니다image:../media/add_policy_from_resourcegroup.gif[""]*.
+NOTE: * * 를 클릭하여 정책을 만들 수도image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"]있습니다.
 
 +
 
@@ -74,7 +74,7 @@ NOTE: 백업 작업 생성 시 선택할 서버에 대한 * 백업 복사본 * �
 선택한 정책에 대한 스케줄 구성 섹션에 선택한 정책이 나열됩니다.
 
 +
-.. 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif[""]일정을 구성하려는 정책에 대한 스케줄 구성 열의
+.. 일정을 구성하려는 정책의 스케줄 구성 열에서 * * * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"].
 .. policy_policy_name_에 대한 스케줄 추가 창에서 스케줄을 구성한 다음 * 확인 * 을 클릭합니다.
 +
 여기서, _policy_name_은 선택한 정책의 이름입니다.

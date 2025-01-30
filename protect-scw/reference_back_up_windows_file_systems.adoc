@@ -17,6 +17,8 @@ summary: 사용자 환경에 Microsoft Windows용 SnapCenter 플러그인을 설
 
 다음 워크플로에서는 백업 작업을 수행해야 하는 순서를 보여 줍니다.
 
+image::../media/sce_backup_workflow.gif[백업 워크플로우]
+
 image::../media/sce_backup_workflow.gif[Exchange 데이터베이스의 백업 워크플로우입니다]
 
 PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말 또는 에 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^] 나와 있습니다.

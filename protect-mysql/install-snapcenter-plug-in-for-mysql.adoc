@@ -13,4 +13,4 @@ summary: MySQL을 보호하려면 MySQL용 SnapCenter 플러그인을 설치하�
 [role="lead"]
 MySQL 데이터베이스를 보호하려면 MySQL용 SnapCenter 플러그인을 설치하고 설정해야 합니다.
 
-image::../media/sap_hana_install_configure_workflow.png[워크플로를 설치하고 구성합니다]
+image::../media/sap_hana_install_configure_workflow.gif[워크플로를 설치하고 구성합니다]

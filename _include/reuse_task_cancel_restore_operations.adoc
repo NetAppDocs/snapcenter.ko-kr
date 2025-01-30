@@ -33,7 +33,7 @@
  a| 
 작업 창
  a| 
-. 복구 작업을 시작한 후 image:../media/activity_pane_icon.gif["작업 창의 아이콘"] Activity(작업) 창을 클릭하여 5개의 가장 최근의 작업을 봅니다.
+. 복구 작업을 시작한 후 image:../media/activity_pane_icon.gif["작업 창 아이콘"] Activity(작업) 창을 클릭하여 5개의 가장 최근의 작업을 봅니다.
 . 작업을 선택합니다.
 . 작업 세부 정보 페이지에서 * 작업 취소 * 를 클릭합니다.
 

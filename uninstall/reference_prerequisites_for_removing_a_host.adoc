@@ -46,3 +46,5 @@ SnapCenter 서버에서 호스트를 제거하기 전에 사전 요구 사항을
 * RBAC 사용자를 호스트, Microsoft SQL Server용 SnapCenter 플러그인, 자격 증명, 클론 라이프사이클 리소스 그룹 및 스토리지 시스템에 할당해야 합니다.
 * SnapCenter를 RBAC 사용자로 로그인해야 합니다.
 
+
+VMware vSphere용 SnapCenter 플러그인 제거에 대한 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html["VMware vSphere용 SnapCenter 플러그인을 제거합니다"^].

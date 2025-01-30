@@ -82,6 +82,8 @@ entries:
     url: "/protect-nsp/create_policies_for_netapp_supported_plugins_resources.html"
   - title: 리소스 그룹을 생성하고 정책을 연결합니다
     url: "/protect-nsp/create_resource_groups_and_attach_policies.html"
+  - title: 리소스 그룹을 생성하고 ASA R2 시스템의 리소스에 대한 보조 보호를 설정합니다
+    url: "/protect-nsp/create-resource-groups-secondary-protection-for-asa-r2-resources.html"
   - title: PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다
     url: "/protect-nsp/create_a_storage_system_connection_and_a_credential_using_powershell_cmdlets.html"
   - title: NetApp에서 지원하는 개별 플러그인 리소스를 백업합니다

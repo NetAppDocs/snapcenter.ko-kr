@@ -15,7 +15,7 @@ summary: '리소스(데이터베이스) 또는 리소스 그룹의 백업을 생
 
 다음 워크플로에서는 백업 작업을 수행해야 하는 순서를 보여 줍니다.
 
-image::../media/sco_backup_workflow.png[Oracle용 백업 워크플로우]
+image::../media/sco_backup_workflow.gif[Oracle용 백업 워크플로우]
 
 Oracle 데이터베이스에 대한 백업을 생성하는 동안 데이터베이스에서 여러 작업이 실행되지 않도록 Oracle 데이터베이스 호스트의 _/var/opt/snapcenter/sSCO/lock_directory에 운영 잠금 파일(_.sm_lock_dbsid_)이 생성됩니다. 데이터베이스가 백업되면 운영 잠금 파일이 자동으로 제거됩니다.
 

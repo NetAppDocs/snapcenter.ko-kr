@@ -13,4 +13,4 @@ summary: NetApp 지원 플러그인 리소스를 보호하려면 SnapCenter NetA
 [role="lead"]
 NetApp 지원 플러그인 리소스를 보호하려면 SnapCenter NetApp 지원 플러그인을 설치하고 설정해야 합니다.
 
-image::../media/sap_hana_install_configure_workflow.png[] [SnapCenter NetApp 지원 플러그인의 워크플로우]
+image::../media/scc_install_configure_workflow.gif[SnapCenter NetApp 지원 플러그인의 워크플로우]

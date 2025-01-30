@@ -81,9 +81,12 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-* 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 .NET Core
+* ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
 * PowerShell 코어 7.4.2
 * Java 11 Oracle Java 및 OpenJDK
++
+Java 11 Oracle Java 및 OpenJDK는 SAP HANA, IBM DB2, PostgreSQL, MySQL, NetApp 지원 플러그인 및 Windows 호스트에 설치할 수 있는 기타 사용자 지정 애플리케이션에만 필요합니다.
+
 
 
 지원되는 버전에 대한 최신 정보는 를 https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^]참조하십시오.
@@ -165,9 +168,12 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
  a| 
 필요한 소프트웨어 패키지
  a| 
-* 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 .NET Core
+* ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
 * PowerShell 코어 7.4.2
 * Java 11 Oracle Java 및 OpenJDK
++
+Java 11 Oracle Java 및 OpenJDK는 SAP HANA, IBM DB2, PostgreSQL, MySQL, NetApp 지원 플러그인 및 Windows 호스트에 설치할 수 있는 기타 사용자 지정 애플리케이션에만 필요합니다.
+
 
 
 지원되는 버전에 대한 최신 정보는 를 https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^]참조하십시오.

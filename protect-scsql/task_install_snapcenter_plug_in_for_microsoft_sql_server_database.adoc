@@ -13,4 +13,4 @@ summary: SQL Server 데이터베이스를 보호하려면 Microsoft SQL Server�
 [role="lead"]
 SQL Server 데이터베이스를 보호하려면 Microsoft SQL Server용 SnapCenter 플러그인을 설치하고 설정해야 합니다.
 
-image::../media/scsql_install_configure_workflow.png[SQL 워크플로우]
+image::../media/scsql_install_configure_workflow.gif[SQL 워크플로우의 워크플로우를 설치합니다]

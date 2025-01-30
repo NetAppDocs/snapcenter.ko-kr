@@ -13,7 +13,7 @@ summary: F5, 네트워크 로드 밸런싱 또는 Amazon Web Services를 사용�
 [role="lead"]
 Windows 또는 Linux에서 실행되는 SnapCenter에서 HA(고가용성)를 지원하려면 F5 로드 밸런서를 설치할 수 있습니다. F5를 사용하면 SnapCenter 서버가 동일한 위치에 있는 최대 2개의 호스트에서 액티브-패시브 구성을 지원할 수 있습니다. SnapCenter에서 F5 로드 밸런서를 사용하려면 SnapCenter 서버를 구성하고 F5 로드 밸런서를 구성해야 합니다.
 
-또한 Microsoft NLB(네트워크 부하 분산)를 구성하여 SnapCenter 고가용성을 설정할 수도 있습니다. 고가용성을 위해 SnapCenter 설치 외부에서 NLB를 수동으로 구성해야 합니다.
+NLB(네트워크 부하 분산)를 구성하여 SnapCenter 고가용성을 설정할 수도 있습니다. 고가용성을 위해 SnapCenter 설치 외부에서 NLB를 수동으로 구성해야 합니다.
 
 클라우드 환경의 경우 AWS(Amazon Web Services) ELB(Elastic Load Balancing) 및 Azure 로드 밸런서를 사용하여 고가용성을 구성할 수 있습니다.
 
@@ -23,7 +23,7 @@ Windows 또는 Linux에서 실행되는 SnapCenter에서 HA(고가용성)를 지
 --
 워크플로 이미지에는 F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 단계가 나와 있습니다. 자세한 지침은 을 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer["F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 방법"^]참조하십시오.
 
-image::../media/sc-F5-configure-workflow.png[F5를 사용한 HA 구성]
+image::../media/sc-F5-configure-workflow.gif[F5 구성 워크플로우]
 
 다음 cmdlet을 사용하여 F5 클러스터를 추가 및 제거하려면 SnapCenter Server의 로컬 관리자 그룹 구성원이어야 합니다(스냅센터 관리자 역할에 할당되는 것 외에).
 
@@ -47,7 +47,7 @@ image::../media/sc-F5-configure-workflow.png[F5를 사용한 HA 구성]
 --
 .NLB(Network Load Balancing)를 사용하여 고가용성 구성
 --
-Microsoft NLB(네트워크 로드 밸런싱)를 구성하여 SnapCenter 고가용성을 설정할 수 있습니다. 고가용성을 위해 SnapCenter 설치 외부에서 NLB를 수동으로 구성해야 합니다.
+NLB(네트워크 부하 분산)를 구성하여 SnapCenter 고가용성을 설정할 수 있습니다. 고가용성을 위해 SnapCenter 설치 외부에서 NLB를 수동으로 구성해야 합니다.
 
 SnapCenter를 사용하여 NLB(네트워크 로드 밸런싱)를 구성하는 방법에 대한 자세한 내용은 을 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_NLB_and_ARR_with_SnapCenter["SnapCenter를 사용하여 NLB를 구성하는 방법"^]참조하십시오.
 

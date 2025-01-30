@@ -14,6 +14,7 @@ summary: 자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이
 자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이지에서 자원을 백업할 수 있습니다.
 
 .이 작업에 대해
+* 백업 작업을 최적화하려면 DNS 서버에 Windows 클러스터 이름 및 IP 주소의 역방향 조회 레코드를 만들어야 합니다.
 * Windows 자격 증명 인증의 경우 플러그인을 설치하기 전에 자격 증명을 설정해야 합니다.
 * SQL Server 인스턴스 인증의 경우 플러그인을 설치한 후 자격 증명을 추가해야 합니다.
 * GMSA 인증의 경우, GMSA를 활성화 및 사용하려면 SnapCenter에 호스트를 등록하는 동안 * 호스트 추가 * 또는 * 호스트 수정 * 페이지에서 GMSA를 설정해야 합니다.
@@ -51,12 +52,12 @@ summary: 자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이
 +
 .. 정책 섹션의 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
 +
-* 를 선택하여 정책을 생성할 수 있습니다image:../media/add_policy_from_resourcegroup.gif[""]를 눌러 정책 마법사를 시작합니다.
+* * 를 선택하여 정책 마법사를 시작하여 정책을 생성할 수image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"]있습니다.
 
 +
 선택한 정책에 대한 일정 구성 * 섹션에 선택한 정책이 나열됩니다.
 
-.. 를 선택합니다image:../media/add_policy_from_resourcegroup.gif[""]일정을 구성하려는 정책에 대한 스케줄 구성 열의
+.. 일정을 구성하려는 정책에 대한 스케줄 구성 열에서 * * * 를 선택합니다image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"].
 .. 에 정책 * 에 대한 스케줄 추가 * 가 있습니다 `policy_name` 대화 상자에서 스케줄을 구성한 다음 * OK * 를 선택합니다.
 +
 여기서 policy_name은 선택한 정책의 이름입니다.
@@ -78,7 +79,7 @@ summary: 자원이 아직 자원 그룹에 속하지 않은 경우 자원 페이
 NOTE: 검증 서버 버전은 기본 데이터베이스를 호스팅하는 SQL Server 버전의 버전과 같거나 그 이상이어야 합니다.
 
 .. 보조 스토리지 시스템의 백업을 확인하려면 * 보조 로케이터 로드 * 를 선택합니다.
-.. 확인 일정을 구성할 정책을 선택한 다음 * 를 선택합니다image:../media/add_policy_from_resourcegroup.gif[""]*.
+.. 확인 일정을 구성할 정책을 선택한 다음 * * * 를image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"]선택합니다.
 .. Add Verification Schedules_policy_name_대화 상자에서 다음 작업을 수행합니다.
 +
 |===

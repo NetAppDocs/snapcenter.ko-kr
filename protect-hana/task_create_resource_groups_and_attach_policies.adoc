@@ -186,12 +186,12 @@ SnapCenter를 사용하여 스토리지 레벨 스냅샷을 생성합니다
 .. 드롭다운 목록에서 하나 이상의 정책을 선택합니다.
 +
 
-NOTE: * 를 클릭하여 정책을 생성할 수도 있습니다image:../media/add_policy_from_resourcegroup.gif[""]*.
+NOTE: * * 를 클릭하여 정책을 만들 수도image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"]있습니다.
 
 +
 선택한 정책에 대한 스케줄 구성 섹션에 정책이 나열됩니다.
 
-.. Configure Schedules 열에서 * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif[""]구성할 정책에 대해 * 를 선택합니다.
+.. Configure Schedules 열에서 구성할 정책에 대해 * * * 를 클릭합니다image:../media/add_policy_from_resourcegroup.gif["리소스 그룹 양식 정책 추가"].
 .. policy_policy_name_에 대한 일정 추가 대화 상자에서 일정을 구성한 다음 * 확인 * 을 클릭합니다.
 +
 여기서 policy_name은 선택한 정책의 이름입니다.

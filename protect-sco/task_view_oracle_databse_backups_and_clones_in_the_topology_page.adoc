@@ -80,11 +80,11 @@ NOTE: 보조 스토리지에 있는 백업의 이름을 바꾸거나 백업을 �
 ** Oracle RMAN(Recovery Manager)을 사용하여 백업 카탈로그를 작성한 경우에는 이러한 카탈로그 작성된 백업의 이름을 바꿀 수 없습니다.
 
 
-. 클론을 삭제하려면 표에서 클론을 선택한 다음 을 클릭합니다 image:../media/delete_icon.gif[""].
+. 클론을 삭제하려면 표에서 클론을 선택한 다음 을 클릭합니다 image:../media/delete_icon.gif["삭제 아이콘"].
 
 
 Snap미러orStatusUpdateWaitTime 에 할당된 값이 적으면 데이터 및 로그 볼륨이 성공적으로 보호되더라도 미러 및 볼트 백업 복사본이 토폴로지 페이지에 나열되지 않습니다. _Set-SmConfigSettings_PowerShell cmdlet을 사용하여 Snap미러또는 StatusUpdateWaitTime에 할당된 값을 늘려야 합니다.
 
 명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다.
 
-또는 또는 을 참조할 수도 https://library.netapp.com/ecm/ecm_download_file/ECMLP3323470["SnapCenter 소프트웨어 명령 참조 가이드"^] https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.
+또는 또는 을 참조할 수도 https://library.netapp.com/ecm/ecm_download_file/ECMLP3337666["SnapCenter 소프트웨어 명령 참조 가이드"^] https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.

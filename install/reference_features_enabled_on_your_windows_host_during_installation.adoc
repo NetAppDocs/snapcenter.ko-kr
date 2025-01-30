@@ -63,7 +63,7 @@ SnapCenter 서버 설치 프로그램을 사용하면 설치 중에 Windows 호�
 +
 ** NET 확장성 4.5
 ** 응용 프로그램 초기화
-** 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 ASP.NET 코어 호스팅 번들
+** ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
 ** 서버 측 포함
 ** WebSocket 프로토콜
 
@@ -87,10 +87,9 @@ IIS 관리 스크립트 및 도구
 
 
  a| 
-NET Framework 8.0.5 기능+
+NET Framework 8.0.12 기능+
  a| 
-* 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함하는 .NET Framework
-* ASP.NET 버전 8.0.5부터 시작하여 이후의 모든 .NET 8 패치를 포함합니다
+* ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
 * WCF(Windows Communication Foundation) HTTP Activation45
 +
 ** TCP 활성화

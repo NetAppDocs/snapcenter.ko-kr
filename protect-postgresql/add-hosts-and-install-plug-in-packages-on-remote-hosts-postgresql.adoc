@@ -26,7 +26,7 @@ SnapCenter 호스트 추가 페이지를 사용하여 호스트를 추가한 다
 * 관리 설명서에는 호스트 관리에 대한 정보가 포함되어 있습니다.
 * 그룹 GMSA(Managed Service Account)를 사용하는 경우 관리자 권한으로 GMSA를 구성해야 합니다.
 +
-link:../protect-postgresql/configure-gMSA-on-windows-server-2012-or-later.html["PostgreSQL에 대해 Windows Server 2016 이상에서 그룹 관리 서비스 계정을 구성합니다"^]
+link:../protect-postgresql/configure-gMSA-on-windows-server-2012-or-later.html["PostgreSQL에 대해 Windows Server 2016 이상에서 그룹 관리 서비스 계정을 구성합니다"]
 
 
 

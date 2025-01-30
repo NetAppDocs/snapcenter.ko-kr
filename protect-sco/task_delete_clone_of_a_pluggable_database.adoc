@@ -23,6 +23,6 @@ NOTE: PDB 클론은 인벤토리 또는 리소스 보기에 표시되지 않습�
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.
 . 리소스 또는 리소스 그룹 보기에서 소스 컨테이너 데이터베이스(CDB)를 선택합니다.
 . Manage Copies 뷰에서 운영 또는 2차(미러링 또는 복제) 스토리지 시스템에서 * Clones * 를 선택합니다.
-. PDB 클론(targetCDB:PDBClone)을 선택한 다음 을 클릭합니다 image:../media/delete_icon.gif[""].
+. PDB 클론(targetCDB:PDBClone)을 선택한 다음 을 클릭합니다 image:../media/delete_icon.gif["삭제 아이콘"].
 . 확인 * 을 클릭합니다.
 

@@ -25,6 +25,6 @@ SnapCenter 4.3으로 업그레이드한 후 더 이상 클론이 표시되지 �
 리소스 토폴로지 페이지가 표시됩니다.
 
 . Manage Copies 보기의 운영 또는 2차(미러링 또는 복제) 스토리지 시스템에서 클론을 선택합니다.
-. 클론을 선택한 다음 을 image:../media/delete_icon.gif["삭제"] 클릭하여 클론을 삭제하거나 을 image:../media/split_cone.gif["분할"] 클릭하여 클론을 분할합니다.
+. 클론을 선택한 다음 을 image:../media/delete_icon.gif["삭제 아이콘"] 클릭하여 클론을 삭제하거나 을 image:../media/split_clone.gif["클론을 분할합니다"] 클릭하여 클론을 분할합니다.
 . 확인 * 을 클릭합니다.
 

@@ -15,4 +15,4 @@ summary: 복원 워크플로에는 계획, 복원 작업 수행 및 작업 모�
 
 다음 워크플로에서는 복원 작업을 수행해야 하는 순서를 보여 줍니다.
 
-image::../media/all_plug_ins_restore_workflow.png[all_plug-ins_restore_workflow를 참조하십시오]
+image::../media/all_plug_ins_restore_workflow.gif[all_plug-ins_restore_workflow를 참조하십시오]

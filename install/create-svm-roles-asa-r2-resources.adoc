@@ -1,0 +1,137 @@
+---
+permalink: install/create-svm-roles-asa-r2-resources.html 
+sidebar: sidebar 
+keywords: svm role, privileges, asa r2 systems 
+summary: ASA R2 시스템에서 SanpCenter와 함께 사용할 SVM을 구성하고 vsadmin 역할을 사용하지 않으려는 경우 SVM 역할을 생성해야 합니다. 
+---
+= ASA R2 시스템에 대한 SVM 역할을 생성합니다
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA R2 시스템에서 새 SVM 사용자의 역할을 생성하려면 몇 가지 ONTAP CLI 명령을 실행해야 합니다. 이 역할은 ASA R2 시스템에서 SnapCenter와 함께 사용할 SVM을 구성하고 vsadmin 역할을 사용하지 않으려는 경우에 필요합니다.
+
+* 단계 *
+
+. 스토리지 시스템에서 역할을 생성하고 역할에 모든 권한을 할당합니다.
++
+'보안 로그인 역할 생성 – vserver <svm_name\> - role <SVM_Role_Name\> - cmddirname <permission\>'
+
++
+
+NOTE: 각 권한에 대해 이 명령을 반복해야 합니다.
+
+. 사용자를 생성하고 해당 사용자에게 역할을 할당합니다.
++
+`security login create -user <user_name\> -vserver <svm_name\> -application http -authmethod password -role <SVM_Role_Name\>`
+
+. 사용자 잠금을 해제합니다.
++
+'보안 로그인 잠금 해제 - 사용자 <user_name\> - vserver <svm_name\>'
+
+
+
+
+
+== SVM 역할 생성 및 권한 할당을 위한 ONTAP CLI 명령
+
+SVM 역할을 생성하고 권한을 할당하려면 몇 가지 ONTAP CLI 명령을 실행해야 합니다.
+
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "snapmirror list-destinations" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "event generate-autosupport-log" -access all`
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "job history show" - access all'
+* `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "job show" -access all`
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "job stop" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "lun" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun delete" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup add" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup delete" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup rename" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun igroup show" - access all'을 선택합니다
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping add-reporting-nodes" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "lun mapping create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping delete" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping remove-reporting-nodes" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun mapping show" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun modify" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun move-in-volume" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun offline" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun online" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun resize" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun serial" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "lun show" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "network interface" - access readonly'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror policy add-rule" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "snapmirror policy modify -rule" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror policy remove-rule" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror policy show" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror restore" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "snapmirror show" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "snapmirror show-history" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "SnapMirror update" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "snapmirror update-ls-set" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "version" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume clone create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume clone show" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume clone split start" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume clone split stop" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume destroy" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume file clone create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume file show -disk-usage" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume modify" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume offline" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume online" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume qtree create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume qtree delete" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume qtree modify" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume qtree show" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume restrict" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume show" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume snapshot create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume snapshot delete" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume snapshot modify" - access all'
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "volume snapshot modify-snaplock-expiry-time" -access all`
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume snapshot rename" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume snapshot restore" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume snapshot restore-file" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume snapshot show" - access all'
+* `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "volume snapshot show-delta" -access all`
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "volume unmount" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver cifs share create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver cifs share delete" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver cifs share show" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver cifs show" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy create" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy delete" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy rule create" - access all'
+* '보안 로그인 역할 생성 - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy rule show" - access all'을 선택합니다
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy show" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "vserver iscsi connection show" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver" - access readonly'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver export-policy" - access all'
+* 'Security login role create - vserver SVM_name - role SVM_Role_Name - cmddirname "vserver iscsi" - access all'
+* 'Security login role create - vserver SVM_Name - role SVM_Role_Name - cmddirname "volume clone split status" - access all'
+* `security login role create -vserver SVM_name -role SVM_Role_Name -cmddirname "volume managed-feature" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme subsystem map" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme subsystem create" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme subsystem delete" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme subsystem modify" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme subsystem host" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme subsystem controller" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme subsystem show" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme namespace create" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme namespace delete" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme namespace modify" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "nvme namespace show" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "storage-unit show" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "consistency-group" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "snapmirror protect" -access all`
+* `security login role create -vserver SVM_Name -role SVM_Role_Name -cmddirname "volume delete" -access all`
+* `security login create -user-or-group-name user_name -application http -authentication-method password -role SVM_Role_Name -vserver SVM_Name`
+* `security login create -user-or-group-name user_name -application ssh -authentication-method password -role SVM_Role_Name -vserver SVM_Name`
+

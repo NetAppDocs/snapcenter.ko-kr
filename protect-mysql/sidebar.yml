@@ -100,6 +100,8 @@ entries:
     url: "/protect-mysql/create-backup-policies-for-mysql.html"
   - title: 리소스 그룹을 생성하고 정책을 연결합니다
     url: "/protect-mysql/create-resource-groups-and-attach-policies.html"
+  - title: 리소스 그룹을 생성하고 ASA R2 시스템에서 MySQL 리소스에 대한 2차 보호를 활성화합니다
+    url: "/protect-mysql/create-resource-groups-secondary-protection-for-asa-r2-mysql-resources.html"
   - title: MySQL용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결 및 자격 증명을 생성합니다
     url: "/protect-mysql/create-a-storage-system-connection-and-a-run-as-account-using-powershell-cmdlets-for-mysql.html"
   - title: MySQL을 백업합니다

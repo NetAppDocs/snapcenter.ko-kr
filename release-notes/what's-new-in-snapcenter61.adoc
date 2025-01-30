@@ -1,0 +1,28 @@
+---
+permalink: 'release-notes/what"s-new-in-snapcenter61.html' 
+sidebar: sidebar 
+keywords: what is new, features, enhancements, 6.1 
+summary: SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. 
+---
+= SnapCenter 소프트웨어 6.1의 새로운 기능
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.
+
+|===
+| 업데이트 | 설명 
+
+
+| link:../install/learn-about-supporting-asa-r2-in-snapcenter.html["ASA R2 시스템 지원"]  a| 
+이제 SnapCenter는 SAN 전용 고객의 요구 사항에 따라 간소화된 환경을 제공하는 ASA R2 시스템을 지원합니다.
+
+
+
+| 2차 변조 방지 스냅샷 지원  a| 
+SnapCenter 보조 스냅샷의 잠금 기간을 지정할 수 있습니다.
+
+|===

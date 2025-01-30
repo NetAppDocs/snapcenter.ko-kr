@@ -21,7 +21,7 @@ NOTE: 플러그인을 설치할 호스트에 * OpenSSL 1.0.2g * 가 설치되어
 다음 명령을 실행하여 바이너리 패키지의 서명을 확인합니다.
 
 * Linux 호스트의 경우: `openssl dgst -sha256 -verify snapcenter_public_key.pub -signature snapcenter_linux_host_plugin.bin.sig snapcenter_linux_host_plugin.bin`
-* AIX 호스트의 경우: `openssl dgst -sha256 -verify snapcenter_public_key.pub -signature snapcenter_linux_host_plugin.bsx.sig snapcenter_linux_host_plugin.bsx`
+* AIX 호스트의 경우: `openssl dgst -sha256 -verify snapcenter_public_key.pub -signature snapcenter_aix_host_plugin.bsx.sig snapcenter_aix_host_plugin.bsx`
 
 
 

@@ -19,7 +19,7 @@ PowerShell 명령을 사용하여 Linux 호스트의 SnapCenter 서버와 플러
 .. SnapCenter GUI에 로그인합니다.
 .. 설정 * > * 글로벌 설정 * 을 클릭하고 * SnapCenter Server에서 인증서 검증 활성화 * 를 선택합니다.
 .. Hosts * > * Managed Hosts * 를 클릭하고 단방향 SSL을 활성화할 플러그인 호스트를 선택합니다.
-.. 을 클릭한 image:../media/more_icon.gif["추가 아이콘"]다음 * 인증서 유효성 검사 활성화 * 를 클릭합니다.
+.. 아이콘을 클릭한 image:../media/more_icon.gif["추가 아이콘"] 다음 * 인증서 유효성 검사 활성화 * 를 클릭합니다.
 
 
 . SnapCenter 서버 Linux 호스트에서 양방향 SSL 통신을 활성화합니다.
