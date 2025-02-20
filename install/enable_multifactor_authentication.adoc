@@ -116,7 +116,7 @@ SnapCenter는 이제 제공된 표시 이름을 가진 의존자로 반영됩니
 
 SnapCenter MFA 기능은 REST API를 사용하여 활성화할 수도 있습니다.
 
-문제 해결에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_MFA_login_error_The_SAML_message_response_1_doesnt_match_the_expected_response_2["여러 탭에서 동시 로그인 시도 시 MFA 오류가 표시됩니다"].
+문제 해결 정보는 을 https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_MFA_login_error_The_SAML_message_response_1_doesnt_match_the_expected_response_2["여러 탭에서 동시 로그인 시도 시 MFA 오류가 표시됩니다"]참조하십시오.
 
 
 
@@ -143,8 +143,8 @@ AD FS 서버에 업그레이드, CA 인증서 갱신, DR 등과 같은 수정 �
 .단계
 . AD FS 호스트에서 AD FS 관리 마법사를 열고 다음 단계를 수행합니다.
 +
-.. 사용 당사자 신뢰 * 를 클릭합니다.
-.. SnapCenter에 대해 만든 기반 당사자 신뢰를 마우스 오른쪽 단추로 클릭하고 * 삭제 * 를 클릭합니다.
+.. 신뢰 당사자 신뢰 * 를 선택합니다.
+.. SnapCenter용으로 생성된 신뢰 당사자 신뢰를 마우스 오른쪽 버튼으로 클릭하고 * 삭제 * 를 선택합니다.
 +
 신뢰할 수 있는 사용자의 사용자 정의 이름이 표시됩니다.
 
