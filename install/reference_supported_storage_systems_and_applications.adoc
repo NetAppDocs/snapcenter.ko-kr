@@ -14,9 +14,9 @@ summary: 지원되는 스토리지 시스템, 애플리케이션 및 데이터�
 지원되는 스토리지 시스템, 애플리케이션 및 데이터베이스를 알아야 합니다.
 
 * SnapCenter는 데이터를 보호하기 위해 ONTAP 9.12.1 이상을 지원합니다.
-* SnapCenter 6.1은 ONTAP 9.16.1을 실행하는 NetApp ASA R2 시스템(ASA A1K, ASA A70, ASA A90)을 지원합니다.
+* SnapCenter 6.1은 ONTAP 9.16.1을 실행하는 NetApp ASA R2 시스템을 지원합니다.
 +
-ASA R2 시스템은 All-Flash 플랫폼을 기반으로 구축된 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 통합 솔루션을 제공합니다. ASA R2 시스템은 스토리지 계층 구현 시 다른 ONTAP 시스템(ASA, AFF 및 FAS)과 다르며 지원되는 프로토콜 및 ONTAP 성격 구현 시 서로 다릅니다.
+ASA R2 시스템은 All-Flash 플랫폼을 기반으로 구축된 SAN 전용 환경을 위한 하드웨어 및 소프트웨어 통합 솔루션을 제공합니다.
 
 +
 ASA R2 시스템에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/asa-r2/index.html["ASA r2 설명서"^]참조하십시오.
