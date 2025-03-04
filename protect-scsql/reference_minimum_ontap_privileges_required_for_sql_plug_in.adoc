@@ -13,7 +13,7 @@ summary: 필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중�
 [role="lead"]
 필요한 최소 ONTAP 권한은 데이터 보호를 위해 사용 중인 SnapCenter 플러그인에 따라 다릅니다.
 
-* All-access 명령: ONTAP 8.3.0 이상에 필요한 최소 권한
+* All-access 명령: ONTAP 9.12.1 이상에 필요한 최소 권한
 +
 ** event generate-autosupport-log입니다
 ** 작업 기록이 표시됩니다

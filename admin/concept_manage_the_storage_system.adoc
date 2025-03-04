@@ -99,3 +99,38 @@ NOTE: 클러스터의 일부인 SVM은 선택할 수 없습니다.
 NOTE: ONTAP GUI를 사용하여 ONTAP 클러스터에서 SVM을 삭제한 경우, SnapCenter GUI에서 * 재발견 * 을 클릭하여 SVM 목록을 업데이트하십시오.
 
 
+
+
+
+== REST API 지원
+
+ONTAP 및 ASA R2 스토리지 시스템에 대한 모든 스토리지 접속은 기본적으로 ZAPI를 거칩니다. 일부 ONTAP 버전에 대해 REST API를 활성화할 수 있습니다.
+
+다음 구성 파일에서 구성 키를 수정할 수 있습니다.
+
+* IsRestEnabledForStorageConnection 을 참조하십시오
++
+기본값은 false 입니다.
+
+* MinOntapVersionToUseREST 를 참조하십시오
++
+기본값은 9.13.1입니다.
+
+
+
+.REST API를 통한 연결 활성화
+. IsRestEnabledForStorageConnection 을 true 로 설정합니다.
+. 서버와 Windows 플러그인 호스트 모두에서 SMCoreServiceHost.dll.config 및 SnapDriveService.dll.config에 키를 추가합니다.
++
+_<add key="IsRestEnabledForStorageConnection" value="true" />_
+
+
+
+.REST API를 통한 연결을 특정 버전의 ONTAP로 제한합니다
+. 구성 매개 변수 MinOntapVersionToUseREST 를 true 로 설정합니다.
+. 서버와 Windows 플러그인 호스트 모두에서 SMCoreServiceHost.dll.config 및 SnapDriveService.dll.config에 키를 추가합니다.
++
+_<add key="MinOntapVersionToUseREST" value="9.13.1" />_
+
+. 서버의 SmCore 서비스 및 플러그인 컴퓨터의 플러그인 및 SnapDrive 서비스를 다시 시작합니다.
+

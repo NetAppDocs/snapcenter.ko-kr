@@ -26,7 +26,7 @@ SnapCenter는 다음과 같은 방법으로 구축할 수 있습니다.
 
 * 다음을 보호하기 위한 온프레미스:
 +
-** ONTAP FAS, AFF 또는 ASA(All SAN Array) 운영 시스템에 있고 ONTAP FAS, AFF 또는 ASA 2차 시스템에 복제된 데이터입니다
+** ONTAP FAS, AFF 또는 ASA 기본 시스템에 있으며 ONTAP FAS, AFF 또는 ASA 2차 시스템에 복제된 데이터
 ** ONTAP Select 운영 시스템에 있는 데이터
 ** ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있으며 로컬 StorageGRID 오브젝트 스토리지로 보호되는 데이터
 ** ONTAP ASA R2 운영 및 2차 시스템에 있는 데이터입니다

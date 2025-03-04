@@ -29,7 +29,7 @@ NOTE: 명령이 명령 목록에 없으면 작업이 실패합니다. *MySQL 5.7
 
 .이 작업에 대해
 * 복제된 MySQL 인스턴스는 보호할 수 없습니다.
-* 클론 분할 작업 제한에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/home.html["ONTAP 9 논리적 스토리지 관리 가이드"^].
+* FlexClone 볼륨 분할 작업에 대한 자세한 내용은 을 참조하십시오https://docs.netapp.com/us-en/ontap/volumes/split-flexclone-from-parent-task.html["상위 볼륨에서 FlexClone 볼륨을 분할합니다"].
 * ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.
 
 

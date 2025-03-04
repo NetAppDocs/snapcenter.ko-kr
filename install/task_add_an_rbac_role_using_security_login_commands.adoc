@@ -1,17 +1,17 @@
 ---
 permalink: install/task_add_an_rbac_role_using_security_login_commands.html 
 sidebar: sidebar 
-keywords: RBAC roles, add, ONTAP RBAC role 
-summary: 스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가할 수 있습니다. 
+keywords: RBAC roles, add, NetApp ONTAP RBAC role 
+summary: 스토리지 시스템에서 clustered NetApp ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 NetApp ONTAP RBAC 역할을 추가할 수 있습니다. 
 ---
-= 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가합니다
+= 보안 로그인 명령을 사용하여 NetApp ONTAP RBAC 역할을 추가합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가할 수 있습니다.
+스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 NetApp ONTAP RBAC 역할을 추가할 수 있습니다.
 
 .시작하기 전에
 * Clustered ONTAP을 실행 중인 스토리지 시스템에 대해 ONTAP RBAC 역할을 생성하기 전에 다음을 확인해야 합니다.
@@ -37,12 +37,12 @@ summary: 스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 �
 
 * 이 작업에 대한 정보 *
 
-스토리지 시스템에서 이러한 역할을 간단히 구성하기 위해 NetApp 커뮤니티 포럼에 게시된 RBAC 사용자 작성자 for Data ONTAP 툴을 사용할 수 있습니다.
+스토리지 시스템에서 이러한 역할을 간단하게 구성하려면 NetApp 커뮤니티 포럼에 게시된 RBAC User Creator for NetApp ONTAP 툴을 사용하면 됩니다.
 
-이 도구는 자동으로 ONTAP 권한 설정을 올바르게 처리합니다. 예를 들어, RBAC Data ONTAP용 사용자 작성 도구 는 모든 액세스 권한이 먼저 나타나도록 올바른 순서로 권한을 자동으로 추가합니다. 읽기 전용 권한을 먼저 추가한 다음 모든 액세스 권한을 추가하면 ONTAP에서 모든 액세스 권한을 중복으로 표시하고 무시합니다.
+이 도구는 자동으로 ONTAP 권한 설정을 올바르게 처리합니다. 예를 들어 RBAC NetApp ONTAP용 사용자 작성기 도구는 모든 액세스 권한 Privileges가 먼저 표시되도록 Privileges를 올바른 순서로 자동으로 추가합니다. 읽기 전용 권한을 먼저 추가한 다음 모든 액세스 권한을 추가하면 ONTAP에서 모든 액세스 권한을 중복으로 표시하고 무시합니다.
 
 
-NOTE: 나중에 SnapCenter 또는 ONTAP를 업그레이드할 경우 RBAC 사용자 생성기 for Data ONTAP 도구를 다시 실행하여 이전에 만든 사용자 역할을 업데이트해야 합니다. 이전 버전의 SnapCenter 또는 ONTAP에 대해 만든 사용자 역할은 업그레이드된 버전에서 제대로 작동하지 않습니다. 이 도구를 다시 실행하면 자동으로 업그레이드를 처리합니다. 역할을 다시 생성할 필요는 없습니다.
+NOTE: 나중에 SnapCenter 또는 ONTAP를 업그레이드할 경우 NetApp ONTAP용 RBAC 사용자 작성기 도구를 다시 실행하여 이전에 만든 사용자 역할을 업데이트해야 합니다. 이전 버전의 SnapCenter 또는 ONTAP에 대해 만든 사용자 역할은 업그레이드된 버전에서 제대로 작동하지 않습니다. 이 도구를 다시 실행하면 자동으로 업그레이드를 처리합니다. 역할을 다시 생성할 필요는 없습니다.
 
 ONTAP RBAC 역할 설정에 대한 자세한 내용은 을 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-adm-auth-rbac/home.html["ONTAP 9 관리자 인증 및 RBAC 전원 가이드"^].
 

@@ -22,8 +22,7 @@ NOTE: 데이터 수집 작업이 진행 중인 경우 시스템 CPU 사용률이
 
 EMS 데이터 수집은 기본적으로 활성화되어 있으며 설치 날짜로부터 7일마다 실행됩니다. PowerShell cmdlet_Disable-SmDataCollectionEMS_를 사용하여 언제든지 데이터 수집을 비활성화할 수 있습니다.
 
-* 단계 *
-
+.단계
 . PowerShell 명령줄에서 _Open-SmConnection_ 을 입력하여 SnapCenter와 세션을 설정합니다.
 . Disable-SmDataCollectionEms_를 입력하여 EMS 데이터 수집을 비활성화합니다.
 
@@ -34,10 +33,9 @@ EMS 데이터 수집은 기본적으로 활성화되어 있으며 설치 날짜�
 
 EMS 데이터 수집은 기본적으로 활성화되어 있으며 설치 날짜로부터 7일마다 실행되도록 예약되어 있습니다. 이 기능을 사용하지 않도록 설정한 경우 _Enable-SmDataCollectionEMS_cmdlet을 사용하여 EMS 데이터 수집을 다시 시작할 수 있습니다.
 
-Data ONTAP 이벤트 generate-autosupport-log 권한은 SVM(스토리지 가상 시스템) 사용자에게 부여되었습니다.
+NetApp ONTAP 이벤트 generate-AutoSupport-log 권한이 SVM(스토리지 가상 머신) 사용자에게 부여되었습니다.
 
-* 단계 *
-
+.단계
 . PowerShell 명령줄에서 _Open-SmConnection_ 을 입력하여 SnapCenter와 세션을 설정합니다.
 . Enable-SmDataCollectionEMS_를 입력하여 EMS 데이터 수집을 활성화합니다.
 
@@ -48,8 +46,7 @@ Data ONTAP 이벤트 generate-autosupport-log 권한은 SVM(스토리지 가상 
 
 PowerShell cmdlet을 사용하여 EMS 데이터 수집 스케줄 또는 대상 SVM(Storage Virtual Machine)을 변경할 수 있습니다.
 
-* 단계 *
-
+.단계
 . PowerShell 명령줄에서 SnapCenter를 사용하여 세션을 설정하려면 _Open-SmConnection_cmdlet을 입력합니다.
 . EMS 데이터 수집 대상을 변경하려면 _Set-SmDataCollectionEmsTarget_cmdlet을 입력합니다.
 . EMS 데이터 수집 스케줄을 변경하려면 _Set-SmDataCollectionEmsSchedule_cmdlet을 입력합니다.
@@ -61,8 +58,7 @@ PowerShell cmdlet을 사용하여 EMS 데이터 수집 스케줄 또는 대상 S
 
 여러 개의 PowerShell cmdlet을 사용하여 EMS 데이터 수집 상태를 모니터링할 수 있습니다. 일정, SVM(스토리지 가상 시스템) 타겟 및 상태에 대한 정보를 얻을 수 있습니다.
 
-* 단계 *
-
+.단계
 . PowerShell 명령줄에서 _Open-SmConnection_ 을 입력하여 SnapCenter와 세션을 설정합니다.
 . get-SmDataCollectionEmsSchedule_을 입력하여 EMS 데이터 수집 스케줄에 대한 정보를 검색합니다.
 . _get-SmDataCollectionEmsStatus_를 입력하여 EMS 데이터 수집 상태에 대한 정보를 조회한다.

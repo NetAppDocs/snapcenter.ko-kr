@@ -20,11 +20,11 @@ SnapCenter에는 애플리케이션, 데이터베이스, 파일 시스템 및 �
  a| 
 SnapCenter 표준 컨트롤러 기반
  a| 
-FAS, AFF, All SAN 어레이(ASA)에 필요
+FAS, AFF, ASA에 필요합니다
 
-SnapCenter Standard 라이센스는 컨트롤러 기반 라이센스로, ONTAP One에 포함되어 있습니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS, AFF 또는 ASA 스토리지를 사용하여 SnapCenter를 평가판으로 설치하려면 영업 담당자에게 문의하여 ONTAP One 평가판 라이센스를 받을 수 있습니다.
+SnapCenter Standard 라이센스는 컨트롤러 기반 라이센스로, NetApp ONTAP One에 포함되어 있습니다. SnapManager 제품군 라이센스가 있는 경우 SnapCenter 표준 라이센스 사용 권한도 제공됩니다. FAS, AFF 또는 ASA 스토리지를 사용하여 SnapCenter를 평가판으로 설치하려면 영업 담당자에게 문의하여 NetApp ONTAP One 평가판 라이센스를 받을 수 있습니다.
 
-ONTAP One에 포함된 라이센스에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["ONTAP One에 포함된 라이선스"]참조하십시오.
+NetApp ONTAP One에 포함된 라이센스에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/system-admin/manage-licenses-concept.html#licenses-included-with-ontap-one["NetApp ONTAP One에 포함된 라이선스"]참조하십시오.
 
 
 NOTE: SnapCenter는 데이터 보호 번들의 일부로 제공됩니다. A400 이상을 구입한 경우 데이터 보호 번들을 구입해야 합니다.

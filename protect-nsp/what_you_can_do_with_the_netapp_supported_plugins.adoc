@@ -31,7 +31,7 @@ ONTAP 볼륨, LUN 또는 Qtree를 백업할 수 있습니다.
 
 * SnapCenter 정책을 사용하여 기존 복제 관계(SnapVault/SnapMirror/통합 복제)를 활용하여 운영 환경에서 생성된 스냅샷을 ONTAP 2차 스토리지로 업데이트합니다
 +
-ONTAP Primary 및 Secondary는 ONTAP FAS, AFF, ASA(All SAN Array), Select 또는 Cloud ONTAP가 될 수 있습니다.
+ONTAP Primary 및 Secondary는 ONTAP FAS, AFF, ASA, ONTAP Select 또는 Cloud Volumes ONTAP입니다.
 
 * 전체 ONTAP 볼륨, LUN 또는 파일을 복구합니다.
 +
