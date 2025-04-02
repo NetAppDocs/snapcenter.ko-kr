@@ -1294,7 +1294,6 @@
   <block id="f367d650e57088caf7b808e01235016d" category="inline-link">SnapCenter를 사용하여 SMBR의 보조 스토리지에서 복원하는 방법</block>
   <block id="41b4c689a8b0e3ba8bfecb2a1e608e46" category="list-text"><block ref="41b4c689a8b0e3ba8bfecb2a1e608e46" category="inline-link-rx"></block></block>
   <block id="f004280f6db6ea5f9302c9851388d751" category="inline-link">SMBR을 사용하여 SnapVault에서 Microsoft Exchange Mail 복구</block>
-  <block id="1b0fb59a5bc951f7dc82cb43fe362145" category="list-text"><block ref="00a76af185a73b84e54e96058031aef5" category="inline-link-rx"></block></block>
   <block id="dbb2f85d414fd9fb3f4adf345f19a99c" category="summary">PowerShell cmdlet을 사용하여 동일한 호스트에 있는 가장 최근 복사본 또는 대체 호스트에서 가장 최근 복사본을 사용하여 상태가 불량한 복제본을 복구할 수 있습니다.</block>
   <block id="b472988863abcfb897af4f291e7a410f" category="doc">Exchange 데이터베이스에 대해 PowerShell cmdlet을 사용하여 복제본을 다시 시딩했습니다</block>
   <block id="e8b2bea378ae2d61944327f562235bbe" category="list-text">Open-SmConnection cmdlet을 사용하여 지정된 사용자에 대해 SnapCenter Server와 연결 세션을 시작합니다.</block>
@@ -6976,7 +6975,6 @@
   <block id="a8d03bc12fa704a66e02c6802c0766f8" category="summary">SQL Server용 SnapCenter 플러그인이 다운된 경우 다음 수동 단계를 수행하여 플러그인을 복구합니다.</block>
   <block id="112fa4c1243fe1af31b4cf57c26ced23" category="list-text">호스트 추가 * 또는 * 호스트 수정 * 페이지를 사용하여 대체 호스트로 SnapCenter SQL Server용 플러그인을 푸시합니다. 을 참조하십시오 <block ref="fc11fadbfb2b2b87f8c260a133d75ad2" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">단계</block>
-  <block id="ab9238ca6f628634f6f6f2cf63502cdb" category="paragraph">를 참조하십시오 <block ref="44de5c9fafab2e4e76e19e3717abc2e2" category="inline-link-macro-rx"></block> 비디오.</block>
   <block id="94c4200231b3891f27561beda5d4e31f" category="doc">SnapCenter 재해 복구</block>
   <block id="1da5a00a663269fc81a2098b0d91e4d6" category="paragraph">SnapCenter 재해 복구(DR) 기능을 사용하여 리소스 손상 또는 서버 충돌과 같은 재해 발생 시 SnapCenter 서버를 복구할 수 있습니다. SnapCenter 리포지토리, 서버 일정 및 서버 구성 요소를 복구할 수 있습니다. SQL Server용 SnapCenter 플러그인 및 SQL Server용 SnapCenter 플러그인을 복구할 수도 있습니다.</block>
   <block id="68e856b5be6554a8e4ee8b393b327b0b" category="paragraph">이 섹션에서는 SnapCenter의 두 가지 DR(재해 복구) 유형에 대해 설명합니다.</block>
@@ -10076,4 +10074,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="ee69fc7e193d5b369d8bd7792465c781" category="list-text">클라이언트 비밀 키는 비밀 값이라고도 합니다. Entra ID 아래의 * 앱 등록 * 으로 이동하여 Azure Portal에서 이 클라이언트 암호를 생성할 수 있습니다. 생성한 엔터프라이즈 앱을 선택한 후 * 인증서 및 비밀 * 과 * 새 클라이언트 비밀 * 으로 이동합니다.</block>
   <block id="732f79401041a0ecc8df586c30756a84" category="admonition">암호 값은 만들 때만 액세스할 수 있습니다. 나중에 액세스할 수 없습니다.</block>
   <block id="f221207f0adcd828979d33693cf006d5" category="list-text">서비스 담당자에게 사용 권한을 부여해야 합니다. Contributor의 역할은 서비스 책임자가 Azure에서 필요한 작업을 수행할 수 있도록 허용합니다. 이 권한은 구독 페이지의 IAM(액세스 제어) 페이지에서 부여할 수 있습니다.</block>
+  <block id="c23d56866a5b11fd0d8dc189fcf21298" category="list-text"><block ref="341e3fddad4b27511133b6917a75bb8a" category="inline-link-rx"></block></block>
+  <block id="57cf9c4ee485623172a5c60cbee423a4" category="paragraph"><block ref="96716f545c5cf1a209bf10c1a798ce38" category="inline-link-macro-rx"></block>비디오를 참조하십시오.</block>
 </blocks>

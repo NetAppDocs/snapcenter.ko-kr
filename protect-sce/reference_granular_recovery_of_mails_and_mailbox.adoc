@@ -19,5 +19,5 @@ SMBR에 대한 자세한 내용은 다음을 참조하십시오.
 
 * https://kb.netapp.com/Legacy/SMBR/How_to_manually_restore_a_single_item_with_SMBR["SMBR(Ontrack Power Control 복원에도 적용 가능)을 사용하여 단일 항목을 수동으로 복원하는 방법"]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Single_Mailbox_Recovery_(SMBR)/How_to_restore_from_secondary_storage_in_SMBR_with_SnapCenter["SnapCenter를 사용하여 SMBR의 보조 스토리지에서 복원하는 방법"^]
-* https://www.youtube.com/watch?v=fOMuaaXrreI&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg&index=3["SMBR을 사용하여 SnapVault에서 Microsoft Exchange Mail 복구"^]
+* https://www.youtube.com/watch?v=wMSo049rREY&list=PLdXI3bZJEw7nofM6lN44eOe4aOSoryckg&index=3["SMBR을 사용하여 SnapVault에서 Microsoft Exchange Mail 복구"^]
 
