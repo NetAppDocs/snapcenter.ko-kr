@@ -19,6 +19,6 @@ MySQL 데이터베이스용 플러그인이 설치된 경우 SnapCenter와 NetAp
 
 MySQL용 SnapCenter 플러그인은 ONTAP 기반 NFS 및 SAN 및 Azure NetApp 파일 스토리지 레이아웃을 지원합니다.
 
-VMDK 또는 가상 스토리지 레이아웃이 지원됩니다.
+VMDK, VVOL 및 RDM 가상 스토리지 레이아웃이 지원됩니다.
 
 심볼 링크는 지원되지 않습니다.

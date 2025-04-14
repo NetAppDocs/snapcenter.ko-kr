@@ -8768,7 +8768,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="bed33f0d8ca7a361d2db96468ec4530a" category="paragraph">SnapCenter는 단일 인스턴스 및 다중 인스턴스 DB2 설정을 지원합니다. Linux 및 Windows 환경 모두에서 IBM DB2 데이터베이스용 플러그인을 사용할 수 있습니다. Windows 환경에서 DB2는 수동 리소스로 지원됩니다.</block>
   <block id="c3395454ca09d74ac87021eb3fc9f403" category="paragraph">IBM DB2 데이터베이스용 플러그인을 설치하면 SnapCenter와 NetApp SnapMirror 기술을 함께 사용하여 다른 볼륨에 있는 백업 세트의 미러 복사본을 생성할 수 있습니다. 또한 NetApp SnapVault 기술의 플러그인을 사용하여 표준 준수를 위한 D2D 백업 복제를 수행할 수 있습니다.</block>
   <block id="ee9977908b8afee30488e8caec66d0fb" category="paragraph">DB2용 SnapCenter 플러그인은 ONTAP 및 Azure NetApp 파일 스토리지 레이아웃에서 NFS 및 SAN을 지원합니다.</block>
-  <block id="d63a091b1a9135cd24b47b631680f297" category="paragraph">VMDK 또는 가상 스토리지 레이아웃은 지원되지 않습니다.</block>
   <block id="f36fcdaf30a6f579eb56856f5e83318d" category="summary">SnapCenter는 물리적 시스템과 가상 머신(VM) 모두에서 다양한 스토리지 유형을 지원합니다. IBM DB2용 SnapCenter 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.</block>
   <block id="6426213ce16798143b0b51f16c7f4f53" category="doc">IBM DB2용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다</block>
   <block id="571cf05bca5a2c1b66a39de8869e3134" category="summary">백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 IBM DB2 데이터베이스에 대해 스냅샷 복제 기반 백업 유형을 지원합니다.</block>
@@ -8907,7 +8906,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="7f30d362b46650080b9026ef95dfe5f2" category="paragraph">SnapCenter는 단일 인스턴스 MySQL 설정을 지원합니다. Linux 및 Windows 환경 모두에서 MySQL 데이터베이스용 플러그인을 사용할 수 있습니다. Windows 환경에서 MySQL은 수동 리소스로 지원됩니다.</block>
   <block id="e417b7c5210d9ffe922c02319c459751" category="paragraph">MySQL 데이터베이스용 플러그인이 설치된 경우 SnapCenter와 NetApp SnapMirror 기술을 함께 사용하여 다른 볼륨에 있는 백업 세트의 미러 복사본을 생성할 수 있습니다. 또한 NetApp SnapVault 기술의 플러그인을 사용하여 표준 준수를 위한 D2D 백업 복제를 수행할 수 있습니다.</block>
   <block id="8a1b03bf3dea7ac1c1925685477e35ea" category="paragraph">MySQL용 SnapCenter 플러그인은 ONTAP 기반 NFS 및 SAN 및 Azure NetApp 파일 스토리지 레이아웃을 지원합니다.</block>
-  <block id="72f4f1f1ebc26a28eb085ea04d34b5db" category="paragraph">VMDK 또는 가상 스토리지 레이아웃이 지원됩니다.</block>
   <block id="aeb9838805bc067b8277d80da271966d" category="paragraph">심볼 링크는 지원되지 않습니다.</block>
   <block id="3a16a89981eac15a65e1d123f0f768f0" category="summary">SnapCenter는 물리적 시스템과 가상 머신(VM) 모두에서 다양한 스토리지 유형을 지원합니다. MySQL용 SnapCenter 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.</block>
   <block id="a8e3ba965f3e160532b9d3ee582e1c53" category="doc">MySQL용 SnapCenter 플러그인에서 지원하는 스토리지 유형</block>
@@ -10076,4 +10074,5 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="f221207f0adcd828979d33693cf006d5" category="list-text">서비스 담당자에게 사용 권한을 부여해야 합니다. Contributor의 역할은 서비스 책임자가 Azure에서 필요한 작업을 수행할 수 있도록 허용합니다. 이 권한은 구독 페이지의 IAM(액세스 제어) 페이지에서 부여할 수 있습니다.</block>
   <block id="c23d56866a5b11fd0d8dc189fcf21298" category="list-text"><block ref="341e3fddad4b27511133b6917a75bb8a" category="inline-link-rx"></block></block>
   <block id="57cf9c4ee485623172a5c60cbee423a4" category="paragraph"><block ref="96716f545c5cf1a209bf10c1a798ce38" category="inline-link-macro-rx"></block>비디오를 참조하십시오.</block>
+  <block id="5c8b8bc332cb41802ffbe6c5cda258ab" category="paragraph">VMDK, VVOL 및 RDM 가상 스토리지 레이아웃이 지원됩니다.</block>
 </blocks>

@@ -26,4 +26,4 @@ IBM DB2 데이터베이스용 플러그인을 설치하면 SnapCenter와 NetApp 
 
 DB2용 SnapCenter 플러그인은 ONTAP 및 Azure NetApp 파일 스토리지 레이아웃에서 NFS 및 SAN을 지원합니다.
 
-VMDK 또는 가상 스토리지 레이아웃은 지원되지 않습니다.
+VMDK, VVOL 및 RDM 가상 스토리지 레이아웃이 지원됩니다.
