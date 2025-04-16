@@ -2546,7 +2546,6 @@
   <block id="07d333070d0435446600383ad0be9b41" category="list-text">Set-SmCertificateSettings cmdlet을 사용하여 CA 인증서를 활성화하거나 비활성화할 수 있습니다.</block>
   <block id="1962fbbcfa72e74639e8c071188af514" category="list-text">Get-SmCertificateSettings cmdlet을 사용하여 SnapCenter 서버의 인증서 상태를 표시할 수 있습니다.</block>
   <block id="1240073aadeb78a3e72b1cedfb5cec2f" category="list-text">설정 페이지에서 * 설정 * &gt; * 글로벌 설정 * &gt; * CA 인증서 설정 * 으로 이동합니다.</block>
-  <block id="14c90652b0a2e523d6e8630706107e75" category="summary">SnapCenter 소프트웨어는 여러 브라우저에서 사용할 수 있습니다.</block>
   <block id="6d84e3718084e0db779da4ff8791a2f2" category="doc">지원되는 브라우저</block>
   <block id="dc21700cbaa8624c2d6a070d54c558d6" category="summary">이니시에이터 그룹(igroup)을 생성하여 스토리지 시스템에서 특정 LUN에 액세스할 수 있는 호스트를 지정합니다. SnapCenter를 사용하여 Windows 호스트에서 igroup을 생성, 이름 바꾸기, 수정 또는 삭제할 수 있습니다.</block>
   <block id="9d8cd3d6c4d32d67237a696ecf4924be" category="doc">Igroup 생성 및 관리</block>
@@ -3220,7 +3219,6 @@
   <block id="0f2988f218fcef3499e2c75fddafd96e" category="list-text">SnapCenter 서버는 SAP HANA 데이터베이스 호스트용 플러그인의 8145 또는 맞춤형 포트에 액세스할 수 있어야 합니다.</block>
   <block id="19651d78354411794cd21f4636d9840b" category="list-text">Windows 호스트에 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 Microsoft Windows용 SnapCenter 플러그인이 자동으로 설치됩니다.</block>
   <block id="f551df54591f7eef7409f694b7b0cc08" category="list-text">Linux 호스트에서 실행되는 SAP HANA 데이터베이스의 경우 SAP HANA 데이터베이스용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인은 자동으로 설치됩니다.</block>
-  <block id="7608e75619cff3eeb4e8bce40481b456" category="doc">SnapCenter 소프트웨어 설명서</block>
   <block id="3832ada16290657361dd0278cab769e6" category="summary">백업의 이름을 바꾸고 삭제할 수 있습니다. 여러 백업을 동시에 삭제할 수도 있습니다.</block>
   <block id="65d964d49665477bbec39032d9f3ca8a" category="doc">백업 관리</block>
   <block id="b6821d00a7bc4a6fcfe3d073cec911ab" category="section-title">백업 이름을 바꿉니다</block>
@@ -6198,7 +6196,6 @@
   <block id="0d73a80a294d9fcca263cef71862af94" category="paragraph">전체 볼륨 복원</block>
   <block id="df44602e169cb1f9dbb6288c7e86985e" category="paragraph">백업 및 클론 뷰어 역할에는 모든 권한에 대한 읽기 전용 보기가 있습니다. 또한 이 역할에는 대시보드 검색, 보고 및 액세스에 대한 사용 권한이 설정되어 있습니다.</block>
   <block id="969d7fda8acd2ab121789be3a975bbb4" category="paragraph">인프라 관리자 역할에는 호스트 관리, 스토리지 관리, 프로비저닝, 리소스 그룹, 원격 설치 보고서, 대시보드에 액세스합니다.</block>
-  <block id="0344fda8fff2d8c5a125ffa5ba5f19a7" category="summary">SnapCenter 소프트웨어는 하이브리드 클라우드 어디서나 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대해 애플리케이션 정합성을 보장하는 데이터 보호 기능을 제공하는 단순하고 확장 가능한 중앙 집중식 플랫폼입니다.</block>
   <block id="6309043436d4e7e5bad9a81c89ff15e4" category="doc">SnapCenter 개요</block>
   <block id="edaafea0543ae64ebb79a2ed2e7a055b" category="paragraph">SnapCenter는 NetApp Snapshot, SnapRestore, FlexClone, SnapMirror 및 SnapVault 기술을 활용하여 다음을 제공합니다.</block>
   <block id="6d02db19251dfec578c356202bfb1bdc" category="list-text">빠르고 공간 효율적이며 애플리케이션 정합성이 보장되는 디스크 기반 백업</block>
@@ -9996,8 +9993,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="4a3f09c73e2dacacbebddfd96cac1948" category="inline-link">SnapCenter 소프트웨어 6.1 릴리스 정보</block>
   <block id="77400fe4524142ac29310162939726cb" category="paragraph">알려진 문제점, 제한 사항, 해결된 문제, 새로운 명령 및 변경된 명령에 대한 자세한 내용은 를 참조하십시오<block ref="5c68c6454568b27710c4196bb910da4f" category="inline-link-rx"></block>. 릴리스 정보에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
   <block id="d6eb82c324cab2f36e345863fad95090" category="cell">6.1</block>
-  <block id="e62d168588d6c1af2fbd37668a7343da" category="summary">SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
-  <block id="0220307da5eec95fc03c435ffbbc2bfa" category="doc">SnapCenter 소프트웨어 6.1의 새로운 기능</block>
   <block id="1e095c69621645fccc8f12cd7f35f6fc" category="inline-link-macro">ASA R2 시스템 지원</block>
   <block id="cf1b0e66e5b65c6a3b32f92fdc6552c4" category="cell"><block ref="cf1b0e66e5b65c6a3b32f92fdc6552c4" category="inline-link-macro-rx"></block></block>
   <block id="cc753d144910e12701641281c8cb88ed" category="paragraph">이제 SnapCenter는 SAN 전용 고객의 요구 사항에 따라 간소화된 환경을 제공하는 ASA R2 시스템을 지원합니다.</block>
@@ -10006,8 +10001,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="92d37724657724129ae0451584c728aa" category="inline-link">VMware vSphere용 SnapCenter 플러그인을 제거합니다</block>
   <block id="79cfb9f00fa8ea603f631e679e453fad" category="paragraph">VMware vSphere용 SnapCenter 플러그인 제거에 대한 자세한 내용은 을 참조하십시오<block ref="cae8a6db54fa4da6d80207fee61e78d1" category="inline-link-rx"></block>.</block>
   <block id="9792c7ba1a8a833a1c75e11c4a7b46c3" category="list-text">여러 호스트를 업그레이드하려면 모든 호스트를 선택하고 를 클릭한 다음 * Upgrade * &gt; * OK * 를 <block ref="725f4bf2ffc300942027282d0182533f" category="inline-image-macro-rx" type="image"></block>클릭합니다.</block>
-  <block id="eafbda6a16d2997896c70ba8ded3db33" category="sidebar">SnapCenter 소프트웨어는 하이브리드 클라우드 어디서나 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대해 애플리케이션 정합성을 보장하는 데이터 보호를 제공하는 단순하고 확장 가능한 중앙 집중식 플랫폼입니다. 이 설명서 라이브러리에는 버전 6.1에 대한 정보가 포함되어 있습니다.</block>
-  <block id="888e5b40ea166427f96db1a9c08af7fc" category="sidebar">SnapCenter 소프트웨어 6.1 문서</block>
   <block id="fc8e535c7339f77157a0f93f32cb1f80" category="list-text">Oracle 및 SAP HANA 마운트 및 카탈로그 워크플로는 오브젝트 스토리지 백업용으로 지원되지 않지만 스냅샷에는 지원됩니다.</block>
   <block id="2128757ca4207f5d5000cd4894d8c58f" category="list-text">Oracle PDB 클론은 오브젝트 스토리지 백업에는 지원되지 않지만 스냅샷에는 지원됩니다.</block>
   <block id="6eec14240810faadbd60c3ec98b543e7" category="paragraph">Windows용 플러그인을 사용하여 공유 디스크가 생성되지 않습니다. 공유 LUN을 생성한 다음 클러스터의 각 가상 머신에 추가해야 합니다. 자세한 내용은 을<block ref="0564b16166a6e24aa234d21e5bcdc18a" category="inline-link-rx"></block>참조하십시오.</block>
@@ -10075,4 +10068,11 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="c23d56866a5b11fd0d8dc189fcf21298" category="list-text"><block ref="341e3fddad4b27511133b6917a75bb8a" category="inline-link-rx"></block></block>
   <block id="57cf9c4ee485623172a5c60cbee423a4" category="paragraph"><block ref="96716f545c5cf1a209bf10c1a798ce38" category="inline-link-macro-rx"></block>비디오를 참조하십시오.</block>
   <block id="5c8b8bc332cb41802ffbe6c5cda258ab" category="paragraph">VMDK, VVOL 및 RDM 가상 스토리지 레이아웃이 지원됩니다.</block>
+  <block id="e5385a9de21528bfedd644f4c0331eb1" category="summary">SnapCenter 소프트웨어는 간단하고 확장 가능한 중앙 집중식 플랫폼으로, 하이브리드 클라우드의 모든 위치에서 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대한 애플리케이션 정합성이 보장된 데이터 보호를 제공합니다.</block>
+  <block id="0d391616b89aaac354c13202aaccb4ba" category="summary">SnapCenter 소프트웨어는 여러 브라우저에서 사용할 수 있습니다.</block>
+  <block id="68578ccfcf5117ca8a9a2d7d884e320f" category="summary">SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다.</block>
+  <block id="600ede45d5c4a07242a73e3a5a885e15" category="doc">SnapCenter 소프트웨어 6.1의 새로운 기능</block>
+  <block id="8f13c7650e8ef95e186d64196ea879a5" category="sidebar">SnapCenter 소프트웨어는 간단하고 확장 가능한 중앙 집중식 플랫폼으로, 하이브리드 클라우드의 모든 위치에서 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대한 애플리케이션 정합성 보장 데이터 보호를 제공합니다. 이 설명서 라이브러리에는 버전 6.1에 대한 정보가 포함되어 있습니다.</block>
+  <block id="8127605cde4cee83a23b35f1207c7572" category="sidebar">SnapCenter 소프트웨어 설명서</block>
+  <block id="f3e84c2e19a0aa80c716ba1fc7f07e0e" category="sidebar">SnapCenter 소프트웨어 6.1 문서</block>
 </blocks>

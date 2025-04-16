@@ -2,7 +2,7 @@
 permalink: 'release-notes/what"s-new-in-snapcenter61.html' 
 sidebar: sidebar 
 keywords: what is new, features, enhancements, 6.1 
-summary: SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. 
+summary: SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다. 
 ---
 = SnapCenter 소프트웨어 6.1의 새로운 기능
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 
 
 
 [role="lead"]
-SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.
+SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다.
 
 |===
 | 업데이트 | 설명 
