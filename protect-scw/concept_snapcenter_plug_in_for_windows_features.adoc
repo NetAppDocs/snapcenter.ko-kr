@@ -35,7 +35,7 @@ Windows용 플러그인은 NetApp 스냅샷 기술을 사용합니다. 따라서
 * RBAC 지원 보안 및 중앙 집중식 역할 위임
 * NetApp FlexClone 기술을 사용하여 테스트 또는 데이터 추출을 위한 공간 효율적인 운영 파일 시스템 복사본 생성
 +
-FlexClone 라이센스에 대한 자세한 내용은 을 참조하십시오 link:../install/concept_snapcenter_licenses.html["SnapCenter 라이센스"^].
+FlexClone 라이센스에 대한 내용은 를 참조하십시오 link:../get-started/concept_snapcenter_licenses.html["SnapCenter 라이센스"^].
 
 * 여러 서버에서 동시에 여러 백업을 실행할 수 있습니다
 * 백업, 복원 및 클론 작업의 스크립팅을 위한 PowerShell cmdlet

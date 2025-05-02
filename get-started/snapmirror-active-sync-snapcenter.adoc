@@ -1,0 +1,29 @@
+---
+permalink: get-started/snapmirror-active-sync-snapcenter.html 
+sidebar: sidebar 
+keywords: snapmirror active sync 
+summary: SnapCenter 재해 복구 기능을 사용하여 리소스 손상 또는 서버 충돌과 같은 재해 발생 시 SnapCenter 서버를 복구할 수 있습니다. 
+---
+= SnapCenter에서 SnapMirror 활성 동기화
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapMirror 액티브 동기화를 사용하면 전체 사이트 장애가 발생하더라도 비즈니스 서비스를 계속 운영할 수 있으므로 보조 복사본을 사용하여 애플리케이션을 투명하게 페일오버할 수 있습니다. SnapMirror 액티브 동기화로 페일오버를 트리거하는 데 수동 개입이나 추가 스크립팅이 필요하지 않습니다.
+
+SnapMirror 활성 동기화에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/ontap/smbc/index.html["SnapMirror Active Sync 개요"]참조하십시오.
+
+SnapMirror Active Sync의 경우 다양한 하드웨어, 소프트웨어 및 시스템 구성 요구 사항을 충족하는지 확인하십시오. 자세한 내용은 을 참조하십시오 https://docs.netapp.com/us-en/ontap/smbc/smbc_plan_prerequisites.html["필수 구성 요소"]
+
+이 기능에서 지원되는 플러그인은 SQL Server용 SnapCenter 플러그인, Windows용 SnapCenter 플러그인, Oracle 데이터베이스용 SnapCenter 플러그인, SAP HANA 데이터베이스용 SnapCenter 플러그인, Microsoft Exchange Server용 SnapCenter 플러그인, Unix용 SnapCenter 플러그인입니다.
+
+
+NOTE: SnapCenter에서 호스트 이니시에이터 근접성을 지원하려면 소스 또는 대상 값을 ONTAP에서 설정해야 합니다.
+
+SnapCenter에서 지원되지 않는 사용 사례:
+
+* ONTAP의 SnapMirror 액티브 동기화 관계에 대한 정책을 _automatedfailover_에서 _automatedfailoverduplex_로 변경하여 기존 비대칭 SnapMirror 액티브 동기화 워크로드를 대칭으로 변환하는 경우 SnapCenter에서도 동일한 기능이 지원되지 않습니다.
+* 리소스 그룹(SnapCenter에서 이미 보호됨)이 백업되고 ONTAP의 _automatedfailover_에서 _automatedfailover_to_automatedfailoverduplex_로 SnapMirror 활성 동기화 관계에서 스토리지 정책이 변경되는 경우 SnapCenter에서는 동일한 정책이 지원되지 않습니다.
+

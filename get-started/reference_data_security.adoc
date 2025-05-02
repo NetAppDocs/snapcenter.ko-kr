@@ -1,10 +1,10 @@
 ---
-permalink: concept/reference_data_security.html 
+permalink: get-started/reference_data_security.html 
 sidebar: sidebar 
-keywords: security,authentication, CA certificates 
+keywords: security, authentication, CA certificates, FIPS, SSL, AES, TLS, RBAC, MFA, multi-factor authentication 
 summary: SnapCenter는 엄격한 보안 및 인증 기능을 사용하여 데이터를 안전하게 보호합니다. 
 ---
-= 보안 기능
+= SnapCenter의 보안 기능
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,23 +17,20 @@ SnapCenter에는 다음과 같은 보안 기능이 포함되어 있습니다.
 
 * SnapCenter에 대한 모든 통신은 HTTP over SSL(HTTPS)을 사용합니다.
 * SnapCenter의 모든 자격 증명은 AES(고급 암호화 표준) 암호화를 사용하여 보호됩니다.
-* SnapCenter는 FIPS(Federal Information Processing Standard)를 준수하는 보안 알고리즘을 사용합니다.
-* SnapCenter는 고객이 제공한 인증 CA 인증서 사용을 지원합니다.
-* SnapCenter 4.1.1 이상은 ONTAP와의 통신을 위해 TLS(전송 계층 보안) 1.2를 지원합니다. 클라이언트와 서버 간 통신에 TLS 1.2를 사용할 수도 있습니다.
-+
-5.0부터 SnapCenter는 ONTAP와의 통신을 위해 (TLS) 1.3을 지원합니다.
-
-* SnapCenter는 특정 SSL 암호화 제품군을 지원하여 네트워크 통신 전반에 보안을 제공합니다.
-+
-자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_the_supported_SSL_Cipher_Suite["지원되는 SSL 암호화 제품군을 구성하는 방법"].
-
+* FIPS(Federal Information Processing Standard)를 준수하는 보안 알고리즘을 지원합니다.
+* 에서는 고객이 제공한 공인 CA 인증서 사용을 지원합니다.
+* ONTAP와의 통신을 위해 TLS(Transport Layer Security) 1.3을 지원합니다. 클라이언트와 서버 간 통신에 TLS 1.2를 사용할 수도 있습니다.
+* 네트워크 통신을 통해 보안을 제공하는 특정 SSL 암호화 제품군을 지원합니다. https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_the_supported_SSL_Cipher_Suite["자세한 정보"]..
 * SnapCenter는 회사의 방화벽 내부에 설치되어 SnapCenter 서버에 액세스하고 SnapCenter 서버와 플러그인 간의 통신을 지원합니다.
 * SnapCenter API 및 작업 액세스는 24시간 후에 만료되는 AES 암호화로 암호화된 토큰을 사용합니다.
 * SnapCenter는 Windows Active Directory와 통합되어 로그인 및 액세스 권한을 제어하는 역할 기반 액세스 제어(RBAC)를 사용합니다.
 * IPsec은 Windows 및 Linux 호스트 시스템용 ONTAP의 SnapCenter에서 지원됩니다. https://docs.netapp.com/us-en/ontap/networking/configure_ip_security_@ipsec@_over_wire_encryption.html#use-ipsec-identities["자세한 정보"].
 * SnapCenter PowerShell cmdlet은 세션 보안입니다.
-* 기본 15분 동안 비활성 상태가 지속되면 SnapCenter에서 5분 후에 로그아웃된다는 경고 메시지를 표시합니다. 20분 동안 사용하지 않으면 SnapCenter에서 로그아웃하고 다시 로그인해야 합니다. 로그아웃 기간을 수정할 수 있습니다.
-* 5회 이상의 잘못된 로그인 시도 후에 로그인이 일시적으로 비활성화됩니다.
+* 기본 15분 동안 비활성 상태가 지속되면 SnapCenter에서 5분 후에 로그아웃된다는 경고 메시지를 표시합니다.
++
+20분 동안 사용하지 않으면 SnapCenter에서 로그아웃하고 다시 로그인해야 합니다. 로그아웃 기간을 수정할 수 있습니다.
+
+* 로그인을 5번 잘못 시도하면 로그인이 일시적으로 비활성화됩니다.
 * SnapCenter 서버와 ONTAP 간의 CA 인증서 인증을 지원합니다. https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_securely_connect_SnapCenter_with_ONTAP_using_CA_certificate["자세한 정보"].
 * 무결성 검증 도구는 SnapCenter 서버 및 플러그인에 추가되며 새로 설치 및 업그레이드 작업을 수행하는 동안 제공된 모든 바이너리의 유효성을 검사합니다.
 

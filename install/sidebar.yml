@@ -2,32 +2,12 @@
 section: install
 title: SnapCenter 서버 설치
 entries:
-- title: 설치 워크플로우
-  url: "/install/install_workflow.html"
 - title: SnapCenter 서버 설치를 준비합니다
   entries:
-  - title: 도메인 및 작업 그룹 요구 사항
-    url: "/install/reference_domain_and_workgroup_requirements.html"
-  - title: 요구사항을 충족해야 합니다
-    url: "/install/reference_space_and_sizing_requirements.html"
-  - title: SAN 호스트 요구 사항
-    url: "/install/reference_san_host_requirements.html"
-  - title: 지원되는 스토리지 시스템 및 애플리케이션
-    url: "/install/reference_supported_storage_systems_and_applications.html"
-  - title: SnapCenter에서 ASA R2 시스템을 지원하는 방법에 대해 알아보십시오
-    url: "/install/learn-about-supporting-asa-r2-in-snapcenter.html"
-  - title: 지원되는 브라우저
-    url: "/install/reference_supported_browsers.html"
-  - title: 연결 및 포트 요구 사항
-    url: "/install/reference_connection_and_port_requirements.html"
-  - title: SnapCenter 라이센스
-    url: "/install/concept_snapcenter_licenses.html"
-  - title: SnapCenter 소프트웨어에 액세스하려면 등록하십시오
+  - title: 요구 사항
+    url: "/install/requirements-to-install-snapcenter-server.html"
+  - title: NetApp Support 사이트에 등록하십시오
     url: "/install/register_enable_software_access.html"
-  - title: 자격 증명에 대한 인증 방법입니다
-    url: "/install/concept_authentication_methods_for_your_credentials.html"
-  - title: 스토리지 가상 머신 접속 및 자격 증명
-    url: "/install/concept_svm_connections_and_credentials.html"
   - title: 멀티팩터 인증(MFA)
     entries:
     - title: 멀티팩터 인증(MFA) 관리
@@ -37,12 +17,22 @@ entries:
       url: "/install/enable_multifactor_authentication_using_RestAPI_PowerShell_SCCLI.html"
     - title: SnapCenter 서버에서 PowerShell, SCCLI 및 REST API를 사용하여 MFA를 구성합니다
       url: "/install/configure_mfa_using_powershell_sccli_restapi.html"
-- title: Windows 호스트에 SnapCenter 서버를 설치합니다
-  url: "/install/task_install_the_snapcenter_server_using_the_install_wizard.html"
-- title: Linux 호스트에 SnapCenter 서버를 설치합니다
-  url: "/install/install_snapcenter_server_linux.html"
-- title: SnapCenter에 로그인합니다
-  url: "/install/task_log_in_to_snapcenter.html"
+- title: SnapCenter 서버를 설치합니다
+  entries:
+  - title: Windows 호스트에 SnapCenter 서버를 설치합니다
+    url: "/install/task_install_the_snapcenter_server_using_the_install_wizard.html"
+  - title: Linux 호스트에 SnapCenter 서버를 설치합니다
+    url: "/install/install_snapcenter_server_linux.html"
+  - title: SnapCenter을 등록합니다
+    url: "/install/register-snapcenter-software.html"
+  - title: SnapCenter에 로그인합니다
+    url: "/install/task_log_in_to_snapcenter.html"
+  - title: 설치 중에 Windows 호스트에서 활성화된 기능입니다
+    url: "/install/reference_features_enabled_on_your_windows_host_during_installation.html"
+  - title: 설치 중에 Linux 호스트에서 활성화된 기능
+    url: "/install/features_enabled_on_linux_host.html"
+- title: 인증서 기반 인증을 구성합니다
+  url: "/install/configure_certificate_based_authentication.html"
 - title: Windows 호스트용 CA 인증서를 구성합니다
   entries:
   - title: CA 인증서 CSR 파일을 생성합니다
@@ -71,22 +61,6 @@ entries:
     url: "/install/configure_two_way_ssl_linux.html"
   - title: Linux 호스트에서 SSL 통신을 활성화합니다
     url: "/install/enable_two_way_ssl_linux.html"
-- title: 인증서 기반 인증을 구성합니다
-  entries:
-  - title: SnapCenter 서버에서 CA(인증 기관) 인증서를 내보냅니다
-    url: "/install/task_export_ca_certificates_from_snapcenter_server.html"
-  - title: CA 인증서를 Windows 호스트 플러그인으로 가져옵니다
-    url: "/install/task_import_ca_certificate_to_windows_plugin_hosts.html"
-  - title: CA 인증서를 UNIX 호스트 플러그인으로 가져오고 SPL 신뢰 저장소에 루트 또는 중간 인증서를 구성합니다
-    entries:
-    - title: CA 인증서를 UNIX 호스트 플러그인으로 가져옵니다
-      url: "/install/task_import_ca_certificate_to_unix_plugin_hosts.html"
-    - title: SPL 신뢰 저장소에 루트 또는 중간 인증서를 구성합니다
-      url: "/install/task_configure_root_or_intermediate_certificates_to_trust_store.html"
-  - title: 인증서 기반 인증을 사용합니다
-    url: "/install/task_enable_certificate_based_authentication.html"
-  - title: SnapCenter 인증서를 내보냅니다
-    url: "/install/task_export_snapcenter_certificates.html"
 - title: Active Directory, LDAP 및 LDAPS를 구성합니다
   entries:
   - title: 신뢰할 수 없는 Active Directory 도메인을 등록합니다
@@ -121,6 +95,8 @@ entries:
   url: "/install/task_configure_audit_log_settings.html"
 - title: 스토리지 시스템을 추가합니다
   url: "/install/task_add_storage_systems.html"
+- title: 스토리지 가상 머신 접속 및 자격 증명
+  url: "/install/concept_svm_connections_and_credentials.html"
 - title: SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다
   url: "/install/concept_snapcenter_standard_controller_based_licenses.html"
 - title: 스토리지 시스템을 프로비저닝합니다
@@ -143,7 +119,3 @@ entries:
     url: "/install/concept_provision_storage_in_vmware_environments.html"
 - title: SnapCenter 서버로 보안 MySQL 연결을 구성합니다
   url: "/install/concept_configure_secured_mysql_connections_with_snapcenter_server.html"
-- title: 설치 중에 Windows 호스트에서 활성화된 기능입니다
-  url: "/install/reference_features_enabled_on_your_windows_host_during_installation.html"
-- title: 설치 중에 Linux 호스트에서 활성화된 기능
-  url: "/install/features_enabled_on_linux_host.html"

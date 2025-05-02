@@ -23,3 +23,7 @@ NetApp Single Mailbox Recovery는 Ontrack에서 제공하는 파트너 제품입
 Exchange용 플러그인은 SnapMirror 액티브 동기화(처음에는 SnapMirror Business Continuity[SM-BC]로 릴리스)를 지원하므로 전체 사이트 장애가 발생하더라도 비즈니스 서비스를 계속 운영할 수 있으며, 2차 복사본을 사용하여 애플리케이션을 투명하게 페일오버할 수 있습니다. SnapMirror 액티브 동기화로 페일오버를 트리거하는 데 수동 개입이나 추가 스크립팅이 필요하지 않습니다.
 
 SnapMirror Active Sync의 비대칭, 페일오버 또는 비이중 모드를 지원합니다. 최적화된 경로가 운영 측 LUN 소유 노드에서만 제공되는 솔루션을 의미합니다. 보조 클러스터 경로에서 발생하는 모든 입출력은 운영 클러스터로 프록시에 의해 처리됩니다. 동기식 복제는 운영 환경에서 2차 복제 방향으로 단방향입니다.
+
+* SnapCenter 환경에서 Microsoft Exchange Server 데이터베이스 및 DAG(데이터베이스 가용성 그룹)에 대한 애플리케이션 인식 백업 및 복원 작업을 자동화합니다
+* VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록할 때 RDM LUN에서 가상화된 Exchange Server를 지원합니다.
+

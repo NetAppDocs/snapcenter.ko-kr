@@ -95,3 +95,18 @@ NFS와 SAN 모두에서 VVOL 데이터 저장소: VVOL 데이터 저장소는 VM
 * NVMe는 지원되지 않습니다.
 * 프로비저닝은 지원되지 않습니다.
 
+
+
+
+== 피처
+
+* Linux 또는 AIX 시스템에서 기본 호스트 스토리지 스택을 처리함으로써 Oracle 데이터베이스용 플러그인이 Oracle 데이터베이스에서 데이터 보호 작업을 수행할 수 있습니다
+* ONTAP를 실행하는 스토리지 시스템에서 NFS(Network File System) 및 SAN(Storage Area Network) 프로토콜을 지원합니다.
+* Linux 시스템의 경우 VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록하면 VMDK 및 RDM LUN의 Oracle 데이터베이스가 지원됩니다.
+* SAN 파일 시스템 및 LVM 레이아웃에서 AIX용 Mount Guard를 지원합니다.
+* SAN 파일 시스템에 대한 인라인 로깅과 AIX 시스템에 대한 LVM 레이아웃으로 JFS2(Enhanced Journaled File System)를 지원합니다.
++
+SAN 디바이스에 구축된 SAN 네이티브 디바이스, 파일 시스템 및 LVM 레이아웃이 지원됩니다.
+
+* SnapCenter 환경에서 UNIX 파일 시스템에 대한 애플리케이션 인식 백업, 복원 및 클론 작업을 자동화합니다
+

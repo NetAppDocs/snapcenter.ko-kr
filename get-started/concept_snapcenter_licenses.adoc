@@ -1,10 +1,10 @@
 ---
-permalink: install/concept_snapcenter_licenses.html 
+permalink: get-started/concept_snapcenter_licenses.html 
 sidebar: sidebar 
 keywords: licenses, FAS, AFF, ASA, SnapMirror, SnapVault, SnapRestore, FlexClone, SMBR, Single Mailbox Recovery 
 summary: SnapCenter에서는 데이터 보호 작업을 위해 여러 개의 라이센스가 필요합니다. 설치하는 SnapCenter 라이센스 유형은 스토리지 환경과 사용하려는 기능에 따라 다릅니다. 
 ---
-= SnapCenter 라이센스
+= SnapCenter에 필요한 라이센스
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -67,7 +67,7 @@ SnapRestore
 
 
  a| 
-프로토콜
+프로토콜 라이센스
  a| 
 * LUN에 대한 iSCSI 또는 FC 라이센스
 * SMB 공유용 CIFS 라이센스
@@ -87,18 +87,19 @@ SnapCenter 표준 라이센스(선택 사항)
 
 NOTE: SnapCenter 표준 라이센스를 보조 대상에 추가하는 것이 좋지만 필수는 아닙니다. 보조 대상에서 SnapCenter 표준 라이센스가 활성화되어 있지 않으면 페일오버 작업을 수행한 후 SnapCenter를 사용하여 보조 대상의 리소스를 백업할 수 없습니다. 그러나 복제 및 검증 작업을 수행하려면 보조 대상에 FlexClone 라이센스가 필요합니다.
 
-|===
-
-NOTE: SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다. Amazon FSx for NetApp ONTAP, ONTAP Select, Cloud Volumes ONTAP 및 Azure NetApp Files에는 표준 라이센스 및 용량 기반 라이센스가 더 이상 필요하지 않습니다.
-
-하나 이상의 SnapCenter 라이센스를 설치해야 합니다. 라이센스를 추가하는 방법에 대한 자세한 내용은 을 link:../install/concept_snapcenter_standard_controller_based_licenses.html["SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다"]참조하십시오.
 
 
-
-== SMBR(Single Mailbox Recovery) 라이센스
-
+ a| 
+SMBR(Single Mailbox Recovery) 라이센스
+ a| 
 Exchange용 SnapCenter 플러그인을 사용하여 Microsoft Exchange Server 데이터베이스 및 SMBR(Single Mailbox Recovery)을 관리하는 경우 사용자 메일박스를 기준으로 별도로 구입해야 하는 SMBR용 추가 라이센스가 필요합니다.
 
 NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)로 제공됩니다. 자세한 내용은 을 참조하십시오 link:https://mysupport.netapp.com/info/communications/ECMLP2885729.html["CPC-00507"]. NetApp은 2020년 6월 24일에 출시된 마케팅 부품 번호를 통해 지원 자격 기간 동안 메일박스 용량, 유지보수, 지원을 구매한 고객을 계속 지원할 예정입니다.
 
 NetApp Single Mailbox Recovery는 Ontrack에서 제공하는 파트너 제품입니다. OnTrack PowerControls는 NetApp Single Mailbox Recovery와 유사한 기능을 제공합니다. 고객은 2023년 5월 12일 EOA 날짜 이후에 세분화된 메일박스 복구를 위해 Ontrack(licensingteam@ontrack.com 통해 Ontrack PowerControls 소프트웨어 라이센스와 Ontrack PowerControls 유지 관리 및 지원 갱신을 조달할 수 있습니다.
+
+|===
+
+NOTE: SnapCenter 고급 및 SnapCenter NAS 파일 서비스 라이센스는 더 이상 사용되지 않으며 더 이상 사용할 수 없습니다. Amazon FSx for NetApp ONTAP, ONTAP Select, Cloud Volumes ONTAP 및 Azure NetApp Files에는 표준 라이센스 및 용량 기반 라이센스가 더 이상 필요하지 않습니다.
+
+하나 이상의 SnapCenter 라이센스를 설치해야 합니다. 라이센스를 추가하는 방법에 대한 자세한 내용은 을 link:../install/concept_snapcenter_standard_controller_based_licenses.html["SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다"]참조하십시오.

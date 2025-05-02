@@ -14,8 +14,8 @@ summary: Azure 가상 머신에 SnapCenter을 다운로드하고 설치합니다
 NetApp Support 사이트에서 SnapCenter 소프트웨어를 다운로드하고 Azure 가상 머신에 소프트웨어를 설치할 수 있습니다.
 
 .시작하기 전에
-* Azure Windows 가상 머신이 SnapCenter 서버 설치 요구 사항을 충족하는지 확인합니다. 자세한 내용은 을 참조하십시오 link:../install/reference_domain_and_workgroup_requirements.html["SnapCenter 서버 설치를 준비합니다"].
-* Azure NetApp Files를 처음 사용하는 경우 기존 NetApp 계정이 없는 경우 SnapCenter 소프트웨어에 액세스할 수 있도록 등록해야 합니다.
+* Azure Windows 가상 머신이 SnapCenter 서버 설치 요구 사항을 충족하는지 확인합니다. 자세한 내용은 을 link:../install/requirements-to-install-snapcenter-server.html["SnapCenter 서버 설치 요구 사항"]참조하십시오.
+* Azure NetApp Files를 처음 사용하는 경우 기존 NetApp 계정이 없는 경우 SnapCenter 소프트웨어에 액세스할 수 있도록 등록해야 합니다. 자세한 내용은 을 참조하십시오link:../install/register_enable_software_access.html["SnapCenter 소프트웨어에 액세스하려면 등록하십시오"].
 
 
 .단계

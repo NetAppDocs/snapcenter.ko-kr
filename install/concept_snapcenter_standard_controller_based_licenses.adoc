@@ -25,7 +25,7 @@ NOTE: SnapCenter 컨트롤러 기반 라이센스의 경우 SnapCenter GUI에 �
 * 컨트롤러의 일련 번호에 잠금 상태입니다
 
 
-필요한 라이센스에 대한 자세한 내용은 를 참조하십시오 link:../install/concept_snapcenter_licenses.html["SnapCenter 라이센스"^].
+필요한 라이센스에 대한 자세한 내용은 을 link:../get-started/concept_snapcenter_licenses.html["SnapCenter 라이센스"]참조하십시오.
 
 
 

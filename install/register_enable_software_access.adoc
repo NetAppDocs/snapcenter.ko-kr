@@ -1,7 +1,7 @@
 ---
 permalink: install/register_enable_software_access.html 
 sidebar: sidebar 
-keywords: install, snapcenter software, install, register, new customer, NetApp account, enable 
+keywords: install, snapcenter software, install, register, new customer, NetApp account, enable, Amazon FSx for NetApp ONTAP, Azure NetApp Files 
 summary: 기존 NetApp 계정이 없는 경우 다음 단계에 따라 소프트웨어 액세스를 등록해야 합니다. 
 ---
 = SnapCenter 소프트웨어에 액세스하려면 등록하십시오
@@ -9,7 +9,7 @@ summary: 기존 NetApp 계정이 없는 경우 다음 단계에 따라 소프트
 
 
 [role="lead"]
-Amazon FSx for NetApp ONTAP 또는 Azure NetApp Files를 처음 사용하며 기존 NetApp 계정이 없는 경우 SnapCenter 소프트웨어에 액세스할 수 있습니다.
+Amazon FSx for NetApp ONTAP 또는 Azure NetApp Files를 처음 사용하고 기존 NetApp 계정이 없는 경우 SnapCenter 소프트웨어에 액세스하려면 등록해야 합니다.
 
 .시작하기 전에
 * 회사 이메일 ID에 액세스할 수 있어야 합니다.
@@ -18,21 +18,16 @@ Amazon FSx for NetApp ONTAP 또는 Azure NetApp Files를 처음 사용하며 기
 
 
 .이 작업에 대해
-귀하의 등록은 정보 검증의 적용을 받으며, 새로운 NetApp 지원 사이트(NSS) 계정을 확인하고 "게스트" 액세스에서 "전체" 액세스로 업그레이드하는 데 최대 하루가 걸릴 수 있습니다.
+등록에는 정보 확인이 필요하며, 새로운 NetApp 지원 사이트(NSS) 계정을 확인하고 * guest * access에서 * full * access로 업그레이드하는 데 최대 하루가 걸릴 수 있습니다.
 
 .단계
 . 등록하려면 을 https://mysupport.netapp.com/site/user/registration[] 클릭하십시오.
-. 회사 이메일 ID를 입력하고 Captcha를 완료한 후 NetApp의 개인 정보 보호 정책에 동의하고 * Submit * 를 클릭합니다.
+. 회사 이메일 ID를 입력하고 Captcha를 작성하고 NetApp의 개인정보 보호정책에 동의한 후 * 제출 * 을 클릭합니다.
 . 이메일 ID로 전송된 OTP를 입력하고 * 계속 * 을 클릭하여 등록을 인증합니다.
 . 등록 완료 페이지에서 다음 세부 정보를 입력하여 등록을 완료합니다.
 +
 .. NetApp 고객/최종 사용자 * 를 선택합니다.
-.. 일련 번호 필드에 다음 중 하나를 입력합니다.
-+
-*** Azure NetApp Files를 사용하는 경우 Azure 구독 ID입니다.
-*** Amazon FSx for NetApp ONTAP를 사용하는 경우 파일 시스템 ID입니다.
-
-
+.. Azure NetApp Files를 사용하는 경우 일련 번호 필드에 Azure 구독 ID를 입력하고 Amazon FSx for NetApp ONTAP를 사용하는 경우 파일 시스템 ID를 입력합니다.
 
 
 
