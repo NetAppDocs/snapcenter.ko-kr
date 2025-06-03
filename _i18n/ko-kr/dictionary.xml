@@ -1669,8 +1669,6 @@
   <block id="00bfc6d5134a1b1da3cee96b35262d82" category="list-text">SVM의 공유 목록에서 삭제할 공유를 선택하고 * 삭제 * 를 클릭합니다.</block>
   <block id="0e2512a370e5e94220f1e12e7b6323ec" category="list-text">공유 삭제 대화 상자에서 * 확인 * 을 클릭합니다.</block>
   <block id="90151f3434b36edf515d9e6630d279d9" category="paragraph">SnapCenter는 SVM에서 SMB 공유를 삭제합니다.</block>
-  <block id="b6ac2f945924adc12a6cced3f4732d89" category="summary">SnapCenter 서버 설치 프로그램을 사용하면 설치 중에 Windows 호스트에서 Windows 기능 및 역할을 사용할 수 있습니다. 이는 문제 해결 및 호스트 시스템 유지 관리 목적으로 활용할 수 있습니다.</block>
-  <block id="03b777e98e70f41a1b91fc53f61e82ae" category="doc">설치 중에 Windows 호스트에서 활성화된 기능입니다</block>
   <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">범주</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">피처</block>
   <block id="3e197446d1794d1838e3734e66b2162c" category="paragraph">웹 서버</block>
@@ -1890,15 +1888,10 @@
   <block id="e4f2c1a090559162f10c4470255c0329" category="section-title">RMAN 카탈로그 인증</block>
   <block id="96ae1fb9380ea3c1b68bff5ff0805725" category="paragraph">RMAN 카탈로그 인증 방법은 Oracle RMAN(Recovery Manager) 카탈로그 데이터베이스에 대해 인증합니다. 외부 카탈로그 메커니즘을 구성하고 데이터베이스를 카탈로그 데이터베이스에 등록한 경우 RMAN 카탈로그 인증을 추가해야 합니다.</block>
   <block id="a69e754efca1b9623b6b0f65a2d8dc73" category="doc">보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가합니다</block>
-  <block id="474d9e4d882e646ea038c1c3f1057d2e" category="list-text">Clustered ONTAP을 실행 중인 스토리지 시스템에 대해 ONTAP RBAC 역할을 생성하기 전에 다음을 확인해야 합니다.</block>
-  <block id="ebe591ae9d43ae4398d95940e9fd9562" category="list-text">수행할 작업(또는 작업)입니다</block>
-  <block id="7a0abee5eccc23660191580add8cd728" category="list-text">이러한 작업을 수행하는 데 필요한 권한입니다</block>
-  <block id="f8d5d5371173552fd813059761bfc086" category="list-text">RBAC 역할을 구성하려면 다음 작업을 수행해야 합니다.</block>
   <block id="1559a0574adcf52bb6e38eec37381b49" category="list-text">명령 및/또는 명령 디렉터리에 권한을 부여합니다.</block>
   <block id="875c5aedd735db244786063faf6da722" category="paragraph">명령 /command 디렉토리에는 모두 액세스 및 읽기 전용이라는 두 가지 액세스 레벨이 있습니다.</block>
   <block id="dee6c2623edcbb8e68bfe81ea75668fa" category="paragraph">항상 먼저 모든 액세스 권한을 할당해야 합니다.</block>
   <block id="1deb5fee27bfdda7d20d4c10f6e8f273" category="list-text">사용자에게 역할을 할당합니다.</block>
-  <block id="407e9947315902e28583d3951a4332d4" category="list-text">SnapCenter 플러그인이 전체 클러스터의 클러스터 관리자 IP에 연결되어 있는지, 아니면 클러스터 내의 SVM에 직접 연결되어 있는지 여부에 따라 구성을 다양하게 변경할 수 있습니다.</block>
   <block id="9dc5053bca32e6394932747f3adab2c4" category="inline-link">ONTAP 9 관리자 인증 및 RBAC 전원 가이드</block>
   <block id="cf450319b4b50a20dcf243d6273acbf4" category="paragraph">ONTAP RBAC 역할 설정에 대한 자세한 내용은 을 참조하십시오<block ref="4054a3747c1ed1604c443c75434e693a" category="inline-link-rx"></block>.</block>
   <block id="eaa07c06fe679751494bfd4b2951b580" category="list-text">스토리지 시스템에서 다음 명령을 입력하여 새 역할을 생성합니다.</block>
@@ -2231,17 +2224,11 @@
   <block id="4bd794aa3bb945bb77d57623586a610c" category="paragraph">drive_path 는 LUN에 매핑된 드라이브 경로입니다.</block>
   <block id="e0b8c0081a448231b99fbbd92c77468c" category="summary">데이터 보호 작업을 수행하기 전에 스토리지 접속을 설정하고 SnapCenter 서버 및 SnapCenter 플러그인에서 사용할 자격 증명을 추가해야 합니다.</block>
   <block id="1dd26f6fcf67127f078a9bb0e9318802" category="doc">스토리지 접속 및 자격 증명</block>
-  <block id="6a57d2f6137b4e66b867cbd6a5c2622a" category="list-text">* 스토리지 연결 *</block>
   <block id="96da08df10311c05ab070820f34934cd" category="paragraph">스토리지 접속을 통해 SnapCenter 서버 및 SnapCenter 플러그인이 ONTAP 스토리지를 액세스할 수 있습니다. 이러한 연결을 설정하려면 AutoSupport 및 이벤트 관리 시스템(EMS) 기능도 구성해야 합니다.</block>
-  <block id="3a8e375f86c81e7b283b9ee0db531e4d" category="list-text">자격 증명 *</block>
   <block id="d85f921b47758996b8653f3b79ea9ec4" category="list-text">_사용자 이름@UPN_</block>
   <block id="3d6fa605604b40d3883d094bc10103f4" category="paragraph">작업 그룹에 속한 시스템의 경우 SnapCenter 플러그인을 설치할 시스템에 기본 제공 로컬 관리자를 지정합니다. 사용자 계정에 상승된 권한이 있거나 호스트 시스템에서 사용자 액세스 제어 기능이 비활성화된 경우 로컬 관리자 그룹에 속하는 로컬 사용자 계정을 지정할 수 있습니다.</block>
   <block id="a8e47e30e292005e707c23a6a28b0aec" category="paragraph">사용자 이름 필드의 올바른 형식은 _ 사용자 이름 _ 입니다</block>
   <block id="9f6646eb9b386a7a86a555c41e817a65" category="list-text">개별 리소스 그룹에 대한 자격 증명</block>
-  <block id="248724fdb43c06d73682eae495a17c67" category="summary">SnapCenter를 사용하여 FC 연결 또는 iSCSI 연결 LUN을 구성할 수 있습니다. SnapCenter를 사용하여 기존 LUN을 Windows 호스트에 연결할 수도 있습니다.</block>
-  <block id="30837f98cbd95f5a4cd8f19178a695e8" category="doc">LUN 스토리지를 구성합니다</block>
-  <block id="9660abd0b48a5f9635c3e498547f1163" category="inline-link">ONTAP 9 SAN 구성 가이드</block>
-  <block id="e44dc355289fca4137269dc7b5607927" category="paragraph">LUN은 SAN 구성의 기본 스토리지 단위입니다. Windows 호스트는 시스템의 LUN을 가상 디스크로 인식합니다. 자세한 내용은 을 참조하십시오<block ref="9216224738613ab52bfe8b66b8e2b039" category="inline-link-rx"></block>.</block>
   <block id="ad5caf46af1da5ea3bb28f96c57941f2" category="section-title">iSCSI 세션을 설정합니다</block>
   <block id="5702420822d09ff123dca89121a7edb1" category="paragraph">iSCSI를 사용하여 LUN에 연결하는 경우 통신을 설정하기 위해 LUN을 생성하기 전에 iSCSI 세션을 설정해야 합니다.</block>
   <block id="17e2d63e3b45ecbfe13bcc32fec929d0" category="paragraph">* 시작하기 전에 *</block>
@@ -2271,11 +2258,6 @@
   <block id="e56e6eb9f96878a5d909655ad543a59d" category="list-text">입력한 내용에 만족하면 * 연결 * 을 클릭합니다.</block>
   <block id="8103ea1f974b6fe78b3263b7a1107692" category="paragraph">SnapCenter가 iSCSI 세션을 설정합니다.</block>
   <block id="d92abf366bd9060c59bb86c051a977d0" category="list-text">이 절차를 반복하여 각 타겟에 대한 세션을 설정합니다.</block>
-  <block id="4abe930f7ed4aa8557d64ff364aa1be7" category="section-title">iSCSI 세션 연결을 해제합니다</block>
-  <block id="cbb23b8d6f2ddac05adf3b8df4d48c63" category="paragraph">경우에 따라 여러 세션이 있는 대상에서 iSCSI 세션의 연결을 끊어야 할 수 있습니다.</block>
-  <block id="8604cb873c825c8a47d73b5809f9ece3" category="list-text">iSCSI 세션 목록에서 연결을 끊을 세션을 선택하고 * 세션 연결 끊기 * 를 클릭합니다.</block>
-  <block id="404198fd96b17670e542d194555e13b5" category="list-text">세션 연결 끊기 대화 상자에서 * 확인 * 을 클릭합니다.</block>
-  <block id="690d3c16f8977d088a13175ac12ac454" category="paragraph">SnapCenter는 iSCSI 세션의 연결을 끊습니다.</block>
   <block id="3375e2b7dd26ec739f41b8bcc986e140" category="summary">SnapCenter에서 작업을 수행하기 위해 ONTAP 관리자 역할을 사용할 필요가 없도록 최소 권한으로 ONTAP 클러스터 역할을 생성해야 합니다.</block>
   <block id="822239f41b07c86cff067dac38fab7f4" category="doc">최소 권한으로 ONTAP 클러스터 역할을 생성합니다</block>
   <block id="f0f84683ce75bc63984c13f94c8f8c3d" category="paragraph">SnapCenter에서 작업을 수행하기 위해 ONTAP 관리자 역할을 사용할 필요가 없도록 최소 권한으로 ONTAP 클러스터 역할을 생성해야 합니다. 여러 ONTAP CLI 명령을 실행하여 ONTAP 클러스터 역할을 생성하고 최소 권한을 할당할 수 있습니다.</block>
@@ -2571,7 +2553,6 @@
   <block id="736f3871653c42d5fc23c7b63472291d" category="paragraph">"SnapCenterAdmin" 역할로 로그인해야 합니다.</block>
   <block id="b65c1e59593548dad4a7a0a8af00e702" category="list-text">설정 페이지에서 * 역할 * 을 클릭합니다.</block>
   <block id="009dc93979222b8650a313a069bc7b26" category="list-text">을 클릭합니다 <block ref="db9d5f6f137b990473b3ea783cd913f5" category="inline-image-macro-rx" type="image"></block>.</block>
-  <block id="5c53e4d8c07d4cd65ccef16c0c161e93" category="list-text">역할 추가 페이지에서 새 역할의 이름과 설명을 지정합니다.</block>
   <block id="6796f46044b1e944ba537cec849ce2dc" category="list-text">이 역할의 모든 구성원은 다른 구성원의 개체를 볼 수 있습니다 * 를 선택하여 역할의 다른 구성원이 리소스 목록을 새로 고친 후 볼륨 및 호스트와 같은 리소스를 볼 수 있도록 합니다.</block>
   <block id="bdc510da052289a87e1a226330d7f96c" category="paragraph">이 역할의 구성원이 다른 구성원이 할당된 개체를 보지 못하도록 하려면 이 옵션을 선택 취소해야 합니다.</block>
   <block id="ded362adb32c7d3904226c777c650579" category="admonition">이 옵션을 사용하면 개체 또는 리소스를 만든 사용자와 동일한 역할에 속한 사용자는 개체 또는 리소스에 대한 사용자 액세스를 할당할 필요가 없습니다.</block>
@@ -5653,7 +5634,6 @@
   <block id="f0eee44a5ea73e8e986af8ed4ae99c75" category="doc">복원 작업을 취소합니다</block>
   <block id="7372096d67d7a00d21e644f03bd6b3f6" category="summary">SnapCenter GUI에서 원격으로 플러그인을 설치할 수 없는 경우 Windows 호스트에 Microsoft Windows용 SnapCenter 플러그인을 로컬로 설치할 수 있습니다. Windows 명령줄에서 Microsoft Windows 설치 프로그램용 SnapCenter 플러그인을 자동 모드로 실행할 수 있습니다.</block>
   <block id="3065bc79c85488f5e9c34540aa589dee" category="doc">명령줄에서 Microsoft Windows용 SnapCenter 플러그인을 자동으로 설치합니다</block>
-  <block id="45305b0c2be46c68805c14c7667e37d1" category="list-text">Windows 메시지 큐잉을 켜야 합니다.</block>
   <block id="3f9e658ebdc571b944cc7a6bb94fa2fc" category="list-text">호스트의 로컬 관리자여야 합니다.</block>
   <block id="012cef6769a01d5c95c3bd84a1587de6" category="list-text">설치 위치에서 Microsoft Windows용 SnapCenter 플러그인을 다운로드합니다.</block>
   <block id="e0080a28dd770f19702e65fb9e7b8c86" category="paragraph">예를 들어 기본 설치 경로는 C:\ProgramData\NetApp\SnapCenter\Package Repository입니다.</block>
@@ -6212,15 +6192,12 @@
   <block id="409bf5fec45b4fdc568b8daf282ddbde" category="sidebar">Microsoft Exchange Server용 SnapCenter 플러그인 개념</block>
   <block id="16a46d711b809ec337c7f5488089048a" category="sidebar">Exchange 리소스를 백업합니다</block>
   <block id="e846bcfd3a099fef65a4bf829013b44e" category="sidebar">Exchange 리소스를 복구합니다</block>
-  <block id="ab5f4e39159ac71e7f3f1e7080905a20" category="sidebar">SnapCenter 서버 설치</block>
   <block id="f514139bd8bb4cc318cbbff458dd2226" category="sidebar">SnapCenter 서버 설치를 준비합니다</block>
-  <block id="bb8e9cdba9e13f92c0ca73c3ae3f6c05" category="sidebar">스토리지 가상 머신 접속 및 자격 증명</block>
   <block id="d816b0b5150b290e2a4a44bdb570d328" category="sidebar">CA 인증서를 가져옵니다</block>
   <block id="d15484ff4ea42a9f2e2b7d78bd97103b" category="sidebar">SnapCenter 서버에 대해 CA 인증서를 활성화합니다</block>
   <block id="0095bd100c1750fd3bff002bda60502e" category="sidebar">Active Directory, LDAP 및 LDAPS를 구성합니다</block>
   <block id="055367d73c719054881d2c3df6cfb418" category="sidebar">고가용성을 구성합니다</block>
   <block id="66533c4e3134a6b220ad1336cd288c49" category="sidebar">역할 기반 액세스 제어(RBAC) 구성</block>
-  <block id="5d4caff07857398d579cdda92ce3f34f" category="sidebar">스토리지 시스템을 프로비저닝합니다</block>
   <block id="0daccd45abdac281e7508c5de0fa492c" category="sidebar">Windows 호스트에서 스토리지 용량 할당</block>
   <block id="fdcd3d6f45be97e0e24b4e793a81fac0" category="sidebar">SnapCenter 서버 및 플러그인 업그레이드</block>
   <block id="8693aef17f2d371968a29ad0e0dff726" category="sidebar">워크플로 업그레이드</block>
@@ -6701,7 +6678,6 @@
   <block id="59080c688ea671f9f0cc2eed3afb7bf8" category="paragraph">암호에 큰따옴표(") 또는 백틱(')을 사용하지 마십시오. 보다 작음(&lt;) 및 느낌표(!)를 사용해서는 안 됩니다. 암호를 사용한 기호. 예를 들어 LessThan &lt;!10, Lessthan10 &lt;!, backtick'12.</block>
   <block id="0352418be0d30e5f0f0b3f664c74e1aa" category="admonition">플러그인의 페일오버 또는 페일백 중에는 플러그인 전체 상태가 즉시 업데이트되지 않습니다. 호스트 및 플러그인의 전체 상태는 후속 호스트 새로 고침 작업 중에 업데이트됩니다.</block>
   <block id="db73b4bff7f9b92f00d36e2a3fa01152" category="paragraph">보조 SnapCenter 서버는 운영 SnapCenter 서버와 동일한 설치 디렉토리 및 포트에 설치해야 합니다.</block>
-  <block id="74fec6bb431ffa93b327d4933607ec3f" category="admonition">일관성을 위해 SnapCenter 문서는 사용 권한을 사용하는 역할을 나타냅니다. OnCommand 시스템 관리자 GUI는 _privilege_ 대신 _attribute_라는 용어를 사용합니다. ONTAP RBAC 역할을 설정할 때 이 두 용어는 모두 동일합니다.</block>
   <block id="654c0ff0573689496c47502d09cfe7a8" category="list-text">소스 데이터베이스 매개 변수 파일에서 exclude_seed_cdb_view의 값을 false로 설정하여 12_c_database의 백업 복제를 위한 시드 PDB 관련 정보를 검색해야 합니다.</block>
   <block id="dfb3e8f24407538f95c7f42d27411d1b" category="admonition">12_c_database를 백업하기 전에 값을 설정해야 합니다.</block>
   <block id="0d51371cbb850772d2130a36f4368df4" category="list-text">MetroCluster 쇼</block>
@@ -8220,14 +8196,10 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="d980d1319cdc2e847ec81791913617aa" category="list-text"><block ref="20c46755c96f02dde2f4eed87e68d5d1" prefix="" category="inline-code"></block></block>
   <block id="c9d5338c9cdd07e93595b944d815cb6b" category="list-text"><block ref="eaba2b789999def4688a2d7d4052792b" prefix="" category="inline-code"></block></block>
   <block id="e37068689bf336f6598b2d7e4c655d04" category="list-text"><block ref="eca0518c19e4265640a4cff88fbe761b" prefix="" category="inline-code"></block></block>
-  <block id="e2d84dceaeb159e34341cf9ed5c25d5b" category="summary">SnapCenter 서버 설치 프로그램을 사용하면 설치 중에 Linux 호스트에서 Linux 기능 및 역할을 사용할 수 있습니다. 이는 문제 해결 및 호스트 시스템 유지 관리 목적으로 활용할 수 있습니다.</block>
   <block id="0615d0e2ee2ca176a2602bdbb3cbf96e" category="doc">설치 중에 Linux 호스트에서 활성화된 기능</block>
-  <block id="bff6720248dd6aaffe2e42a4d70ef683" category="paragraph">SnapCenter 서버는 아래 소프트웨어 패키지를 설치합니다. 이러한 패키지는 문제 해결 및 호스트 시스템 유지 관리 목적으로 사용될 수 있습니다.</block>
   <block id="2ac5f63d0bb2ab4a9898d18445391caf" category="list-text">RabbitMQ입니다</block>
-  <block id="62e0b5b350c9e3d2c19aa801d9442ba9" category="list-text">Nginx</block>
   <block id="f7e853158b776246c53345b938159cc1" category="list-text">에를랑</block>
   <block id="21624173efc06090951170116cd13563" category="list-text">PAM-devel의 약어입니다</block>
-  <block id="3d265b4e1eeef0ddf17881fa003b18cc" category="list-text">PowerShell을 사용합니다</block>
   <block id="6e3da1e6c4de3ddc55b5442f3d8fbf10" category="summary">SnapCenter 서버는 Linux 호스트에 설치할 수 있습니다.</block>
   <block id="a5133039db74945642b3f4bbb769135d" category="doc">Linux 호스트에 SnapCenter 서버를 설치합니다</block>
   <block id="1f4157da0a0359b1f842a4aae6fa96a5" category="list-text">SnapCenter를 설치할 수 있는 권한이 없는 루트가 아닌 사용자를 사용하여 SnapCenter 서버를 설치하려면 NetApp 지원 사이트에서 sudoers 체크섬 파일을 가져옵니다. Linux 버전에 따라 적절한 체크섬 파일을 사용해야 합니다.</block>
@@ -9495,7 +9467,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="8c4149a5e3a16e71c373cac16eab56eb" category="list-text"><block ref="8031b6dd89dc17bc568c9124170bb66a" prefix="" category="inline-code"></block></block>
   <block id="1f46b6eec6f3def165a94aea4fbd2de8" category="list-text"><block ref="d873942b6f54bbecd97eb915c6e95c45" prefix="" category="inline-code"></block></block>
   <block id="73c050ddeaec2b5e5a856c81666f8026" category="list-text">아이콘을 클릭한 <block ref="725f4bf2ffc300942027282d0182533f" category="inline-image-macro-rx" type="image"></block> 다음 * 인증서 유효성 검사 활성화 * 를 클릭합니다.</block>
-  <block id="920adb74812a2a6ff8228ec39336b73d" category="list-text">NET Runtime 8.0.12(및 이후의 모든 8.0.x 패치)</block>
   <block id="233125590fad11d81c05c1b0279c56f1" category="admonition">SnapCenter는 ASA R2 시스템에서 VMware VMFS(가상 머신 파일 시스템)만 지원합니다.</block>
   <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">ASA R2 시스템에 대해 자세히 알아보십시오</block>
   <block id="b3c78f6e772922673e6d35ae6df26cbd" category="list-text">VMDK를 통해 애플리케이션의 기본 백업을 생성합니다</block>
@@ -9776,7 +9747,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="9efdf202df78f9a33e298564c835e4ba" category="summary">스토리지 시스템에서 clustered NetApp ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 NetApp ONTAP RBAC 역할을 추가할 수 있습니다.</block>
   <block id="2ad5f6ef1c47048e237f2fafae87313a" category="doc">보안 로그인 명령을 사용하여 NetApp ONTAP RBAC 역할을 추가합니다</block>
   <block id="e1be0500812e131476a1a2d9b7429541" category="paragraph">스토리지 시스템에서 clustered ONTAP을 실행 중인 경우 보안 로그인 명령을 사용하여 NetApp ONTAP RBAC 역할을 추가할 수 있습니다.</block>
-  <block id="34a087679e427c81dd4b62602fb6e759" category="paragraph">스토리지 시스템에서 이러한 역할을 간단하게 구성하려면 NetApp 커뮤니티 포럼에 게시된 RBAC User Creator for NetApp ONTAP 툴을 사용하면 됩니다.</block>
   <block id="cd63f10378363da86bcf8672b918512a" category="paragraph">이 도구는 자동으로 ONTAP 권한 설정을 올바르게 처리합니다. 예를 들어 RBAC NetApp ONTAP용 사용자 작성기 도구는 모든 액세스 권한 Privileges가 먼저 표시되도록 Privileges를 올바른 순서로 자동으로 추가합니다. 읽기 전용 권한을 먼저 추가한 다음 모든 액세스 권한을 추가하면 ONTAP에서 모든 액세스 권한을 중복으로 표시하고 무시합니다.</block>
   <block id="0715b20c4e81f0c852f66480ef00c667" category="admonition">나중에 SnapCenter 또는 ONTAP를 업그레이드할 경우 NetApp ONTAP용 RBAC 사용자 작성기 도구를 다시 실행하여 이전에 만든 사용자 역할을 업데이트해야 합니다. 이전 버전의 SnapCenter 또는 ONTAP에 대해 만든 사용자 역할은 업그레이드된 버전에서 제대로 작동하지 않습니다. 이 도구를 다시 실행하면 자동으로 업그레이드를 처리합니다. 역할을 다시 생성할 필요는 없습니다.</block>
   <block id="30962a20671f7b70a267e94343e24484" category="list-text">FAS, ASA 또는 AFF ONTAP, Amazon FSx for NetApp ONTAP 스토리지 시스템에 대한 오브젝트 스토리지 기능은 지원되지 않습니다.</block>
@@ -9995,4 +9965,19 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="2eadd26d0e5aeb8538a0e0d8cf0e68bf" category="sidebar">인증 방법</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">빠른 시작</block>
   <block id="a9246bf3c3eb55a8aee642477b14a8f7" category="sidebar">NetApp Support 사이트에 등록하십시오</block>
+  <block id="f8f43715a5fc1f86f8da231ed019b0c6" category="section-title">저장소 연결</block>
+  <block id="596fc94bf8faf17d4f6a3ec6fc53437f" category="paragraph">SnapCenter 서버는 호스트 시스템의 문제 해결 및 유지 관리에 도움이 되는 아래 소프트웨어 패키지를 설치합니다.</block>
+  <block id="74b83e8446b3a82f3063984fb362fc4a" category="paragraph">SnapCenter GUI를 사용하여 호스트 프로비저닝 및 공간 회수 작업을 수행하고 싶지 않은 경우 PowerShell cmdlet을 사용할 수 있습니다. cmdlet을 직접 사용하거나 스크립트에 추가할 수 있습니다.</block>
+  <block id="63865c4d9ae769f19103f3ee2d977184" category="list-text">수행하고자 하는 작업(들)과 해당 작업을 수행하는 데 필요한 권한을 확인하세요.</block>
+  <block id="d7d6797642e09c2dc77b50ef5e78df62" category="list-text">SnapCenter 플러그인이 전체 클러스터의 클러스터 관리자 IP에 연결되어 있는지 아니면 클러스터 내의 SVM에 직접 연결되어 있는지에 따라 구성을 식별합니다.</block>
+  <block id="02db4b32d20778ef679bcd2da9e5e94a" category="paragraph">스토리지 시스템에서 이러한 역할의 구성을 간소화하려면 NetApp 커뮤니티 포럼에 게시된 NetApp ONTAP 도구용 RBAC 사용자 생성기를 사용하면 됩니다.</block>
+  <block id="edb8104325c03cc5ddc6550b87275741" category="paragraph">자신의 역할을 생성하려면 "SnapCenterAdmin" 역할로 로그인해야 합니다.</block>
+  <block id="8116454de7e5e8911f5a289d793b43d9" category="list-text">새 역할에 대한 이름과 설명을 지정합니다.</block>
+  <block id="0d27cfd920c0e17d1df5689d46baa774" category="admonition">사용자 이름과 그룹 이름에는 공백( ), 하이픈(-), 밑줄(_), 콜론(:) 등의 특수 문자만 사용할 수 있습니다.</block>
+  <block id="28dbcf5fe30fd921ce51a9e1c3a6c30f" category="section-title">설치 중 Windows 호스트에서 활성화된 기능</block>
+  <block id="83e7de52a01e78e22c88a405e22e660a" category="paragraph">SnapCenter 서버 설치 프로그램을 사용하면 설치 중에 Windows 호스트에서 Windows 기능 및 역할을 사용할 수 있습니다. 이러한 정보는 호스트 시스템의 문제 해결 및 유지 관리에 도움이 될 수 있습니다.</block>
+  <block id="76335228f2ee14e5df4e858ae5e7684c" category="sidebar">SnapCenter 서버 설치 및 구성</block>
+  <block id="d39d360863f3fda3c5d615dc978e14ae" category="sidebar">SnapCenter 서버를 설치합니다</block>
+  <block id="3199d4d0758d0f4f53db9a8f36670c18" category="sidebar">SnapCenter 서버 구성</block>
+  <block id="4c975961e88401702aa6aac167300031" category="sidebar">스토리지 시스템 추가 및 프로비저닝</block>
 </blocks>

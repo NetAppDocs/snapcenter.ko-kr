@@ -1,7 +1,7 @@
 ---
 permalink: install/task_reclaim_space_on_the_storage_system.html 
 sidebar: sidebar 
-keywords: space 
+keywords: space, storage system, reclaim 
 summary: NTFS는 파일이 삭제되거나 수정될 때 LUN에서 사용 가능한 공간을 추적하지만 새 정보를 스토리지 시스템에 보고하지 않습니다. Windows 호스트용 플러그인에서 공간 재확보 PowerShell cmdlet을 실행하여 새로 확보된 블록이 스토리지에서 사용 가능으로 표시되는지 확인할 수 있습니다. 
 ---
 = 스토리지 시스템의 공간을 재확보할 수 있습니다

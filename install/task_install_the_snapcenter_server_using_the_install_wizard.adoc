@@ -1,7 +1,7 @@
 ---
 permalink: install/task_install_the_snapcenter_server_using_the_install_wizard.html 
 sidebar: sidebar 
-keywords: install, snapcenter software, install wizard 
+keywords: install, snapcenter software, install wizard, features enabled 
 summary: SnapCenter 서버 설치 관리자 실행 파일을 실행하여 SnapCenter 서버를 설치할 수 있습니다. 
 ---
 = Windows 호스트에 SnapCenter 서버를 설치합니다
@@ -63,3 +63,127 @@ NOTE: Cancel * 버튼을 클릭하면 실행 중인 단계가 완료된 후 롤�
 로그 파일은 항상 관리자 사용자의 %temp% 폴더에 (가장 오래된 파일 먼저) 나열됩니다. 로그 위치를 리디렉션하려면 명령 프롬프트에서 "'C:\installer_location\installer_name.exe /log "C:\""를 실행하여 SnapCenter 서버 설치를 시작합니다
 
 
+
+
+
+== 설치 중 Windows 호스트에서 활성화된 기능
+
+SnapCenter 서버 설치 프로그램을 사용하면 설치 중에 Windows 호스트에서 Windows 기능 및 역할을 사용할 수 있습니다. 이러한 정보는 호스트 시스템의 문제 해결 및 유지 관리에 도움이 될 수 있습니다.
+
+|===
+| 범주 | 피처 
+
+
+ a| 
+웹 서버
+ a| 
+* 인터넷 정보 서비스
+* 월드 와이드 웹 서비스
+* 공통 HTTP 기능
++
+** 기본 문서
+** 디렉터리 검색
+** HTTP 오류
+** HTTP 리디렉션
+** 정적 콘텐츠
+** WebDAV 게시
+
+
+* 상태 및 진단
++
+** 사용자 지정 로깅
+** HTTP 로깅
+** 로깅 도구
+** 모니터 요청
+** 추적
+
+
+* 성능 기능
++
+** 정적 콘텐츠 압축
+
+
+* 보안
++
+** IP 보안
+** 기본 인증
+** 중앙 집중식 SSL 인증서 지원
+** 클라이언트 인증서 매핑 인증
+** IIS 클라이언트 인증서 매핑 인증
+** IP 및 도메인 제한
+** 요청 필터링
+** URL 권한 부여
+** Windows 인증
+
+
+* 응용 프로그램 개발 기능
++
+** NET 확장성 4.5
+** 응용 프로그램 초기화
+** ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
+** 서버 측 포함
+** WebSocket 프로토콜
+
+
+* 관리 도구
++
+** IIS 관리 콘솔
+
+
+
+
+
+
+ a| 
+IIS 관리 스크립트 및 도구
+ a| 
+* IIS 관리 서비스
+* 웹 관리 도구
+
+
+
+
+ a| 
+NET Framework 8.0.12 기능+
+ a| 
+* ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
+* WCF(Windows Communication Foundation) HTTP Activation45
++
+** TCP 활성화
+** HTTP 활성화
+
+
+
+
+NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_upgrade_or_install_fails_with_%22This_KB_is_not_related_to_the_OS%22["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다"^].
+
+
+
+ a| 
+메시지 큐
+ a| 
+* 메시지 큐 서비스
++
+
+NOTE: SnapCenter가 만들고 관리하는 MSMQ 서비스를 사용하는 다른 응용 프로그램이 없는지 확인합니다.
+
+* RabbitMQ입니다
+* 에를랑
+
+
+
+
+ a| 
+Windows 프로세스 활성화 서비스
+ a| 
+* 프로세스 모델
+
+
+
+
+ a| 
+구성 API
+ a| 
+모두
+
+|===
