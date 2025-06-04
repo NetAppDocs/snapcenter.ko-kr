@@ -197,5 +197,6 @@ UNIX에 필요합니다. 이 매개 변수는 Snap Creator Agent 시작 및 중�
 * Ora_TEMP는 임시 파일의 디렉터리를 지정합니다.
 * oracle_home은 Oracle 소프트웨어가 설치된 디렉토리를 지정합니다.
 * ARCHIVE_LOG_ONLY 아카이브 로그를 백업할지 여부를 지정합니다.
-* ORACLE_BACKUP_MODE는 온라인 또는 오프라인 백업을 수행할지 여부를 지정합니다.
+* ORACLE_BACKUPMODE는 온라인 백업을 수행할지, 오프라인 백업을 수행할지 지정합니다.
+* ORACLE_EXPORT_PARAMETERS는 _bin/su_ 실행 중 환경 변수를 내보낼 수 있는지 여부를 지정합니다. ORACLE_EXPORT_PARAMETERS 값은 *y*로 설정해야 합니다.
 

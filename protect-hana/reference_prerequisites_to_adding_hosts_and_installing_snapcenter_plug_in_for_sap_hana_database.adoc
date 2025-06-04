@@ -16,7 +16,7 @@ summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에
 * 호스트에 Java 11을 설치해야 합니다.
 +
 
-NOTE: IBM Java는 지원되지 않습니다.
+NOTE: IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.
 
 * 호스트에 SAP HANA 데이터베이스 대화형 터미널(HDBSQL 클라이언트)을 설치해야 합니다.
 * Windows의 경우 플러그인 생성 서비스는 ""LocalSystem"" Windows 사용자를 사용하여 실행해야 합니다. 이는 SAP HANA 데이터베이스용 플러그인이 도메인 관리자로 설치된 경우 기본 동작입니다.
@@ -35,7 +35,7 @@ NOTE: IBM Java는 지원되지 않습니다.
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
 * Windows 호스트에 Java 11을 설치해야 합니다.
 +
-http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
+http://www.java.com/en/download/manual.jsp["모든 운영 체제용 JAVA 다운로드"]
 
 +
 https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
@@ -49,7 +49,7 @@ https://imt.netapp.com/matrix/imt.jsp?components=121074;&solution=1257&isHWU&src
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
 * Linux 호스트에 Java 11을 설치해야 합니다.
 +
-http://www.java.com/en/download/manual.jsp["모든 운영 체제에 대한 Java 다운로드"]
+http://www.java.com/en/download/manual.jsp["모든 운영 체제용 JAVA 다운로드"]
 
 +
 https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]

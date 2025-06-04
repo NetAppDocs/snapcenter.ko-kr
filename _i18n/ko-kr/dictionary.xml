@@ -6767,7 +6767,6 @@
   <block id="04f76259e3406e39f106d09b85354906" category="inline-link">Exchange 백업용 SnapCenter는 볼트 대상 로그 볼륨에 스냅샷의 절반만 유지합니다</block>
   <block id="67e1d332319e6fe55fd35967c2ec989e" category="admonition">Exchange 볼륨(LUN)을 처리할 때 로그 및 데이터베이스에 대해 별도의 볼트 정책을 생성하고 동일한 레이블을 사용하여 로그 정책의 유지(보존)를 데이터베이스 정책으로 각 레이블에 대해 두 배로 설정합니다. 자세한 내용은 다음을 참조하십시오.<block ref="069d987d34ba2a5b3f4862b42bb7f849" category="inline-link-rx"></block></block>
   <block id="b885eb831c1b0ea66dc957240ef0bacd" category="admonition">제어 파일을 복원하는 동안 복원 프로세스를 통해 파일을 대상 위치로 복사할 수 있도록 디렉터리 구조가 있는지 또는 올바른 사용자 및 그룹 소유로 만들어야 하는지 확인합니다. 디렉토리가 없으면 복원 작업이 실패합니다.</block>
-  <block id="3a6eb59ee064b09b020c1a87c5de4988" category="admonition">IBM Java는 지원되지 않습니다.</block>
   <block id="bb92d00cc055d1fa0c3023946870bfd5" category="paragraph">NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오<block ref="d20f19fe60cd205f06739b1a5caeb450" category="inline-link-rx"></block></block>
   <block id="9756c6d75626032c8da05d425c1d0ca9" category="inline-link">인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다</block>
   <block id="462fbac4d281be78bedf063a9dbd9f61" category="paragraph">NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오<block ref="b173f6267e94bec8cf82a1d95b991ed7" category="inline-link-rx"></block>.</block>
@@ -8723,7 +8722,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="0b12a00876503fb1813afee6ad9b0a76" category="list-text">Ora_TEMP는 임시 파일의 디렉터리를 지정합니다.</block>
   <block id="e1ab4aa639aa539548c7d55759dc7004" category="list-text">oracle_home은 Oracle 소프트웨어가 설치된 디렉토리를 지정합니다.</block>
   <block id="57808f9033b6670d0e1ff1ecc8197488" category="list-text">ARCHIVE_LOG_ONLY 아카이브 로그를 백업할지 여부를 지정합니다.</block>
-  <block id="6d6058c414d1170875e11ce8a19484f0" category="list-text">ORACLE_BACKUP_MODE는 온라인 또는 오프라인 백업을 수행할지 여부를 지정합니다.</block>
   <block id="c4e433903376436b2e77e2cfdc6f5913" category="summary">개별 NetApp 지원 플러그인 리소스가 리소스 그룹의 일부가 아닌 경우 리소스 페이지에서 리소스를 백업할 수 있습니다. 필요에 따라 리소스를 백업하거나 리소스에 정책이 연결되어 있고 스케줄이 구성된 경우 스케줄에 따라 백업이 자동으로 수행됩니다.</block>
   <block id="6ce5278b296a0a5a39af4a4d0cbd927c" category="doc">NetApp에서 지원하는 개별 플러그인 리소스를 백업합니다</block>
   <block id="37a077fe53864717026a312c9cfed412" category="doc">NetApp에서 지원하는 플러그인 리소스를 백업합니다</block>
@@ -9980,4 +9978,16 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="d39d360863f3fda3c5d615dc978e14ae" category="sidebar">SnapCenter 서버를 설치합니다</block>
   <block id="3199d4d0758d0f4f53db9a8f36670c18" category="sidebar">SnapCenter 서버 구성</block>
   <block id="4c975961e88401702aa6aac167300031" category="sidebar">스토리지 시스템 추가 및 프로비저닝</block>
+  <block id="81f9b64ab1987ed2d00f4d52a80ca52b" category="paragraph">지원되는 버전에 대한 최신 정보는 를<block ref="315018c067f16596ddc2e2de507c24d0" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="0885e9f12d8cb35b0f02655c34c87004" category="admonition">IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.</block>
+  <block id="48c9a1bf5de7bf57f1efa648f3bc8d17" category="inline-link">Windows용 JAVA 다운로드</block>
+  <block id="a4560fe71d10d98deabf55fdf50b90f0" category="paragraph"><block ref="a4560fe71d10d98deabf55fdf50b90f0" category="inline-link-rx"></block></block>
+  <block id="25827211b51e5a08cc74ddb2f845f386" category="inline-link">Linux용 JAVA 다운로드</block>
+  <block id="0632a773655c14c1b1e9ced88bc550ed" category="paragraph"><block ref="0632a773655c14c1b1e9ced88bc550ed" category="inline-link-rx"></block></block>
+  <block id="ffef625a5852f63e8c97e120b261e871" category="inline-link">AIX용 JAVA 다운로드</block>
+  <block id="1cf0cff6e7cd05dac4238e50abe74627" category="paragraph"><block ref="1cf0cff6e7cd05dac4238e50abe74627" category="inline-link-rx"></block></block>
+  <block id="67366bdaf9086e6015fe527a27beb845" category="inline-link">모든 운영 체제용 JAVA 다운로드</block>
+  <block id="230f7d0fc162c3a559cd8b29556f41f4" category="paragraph"><block ref="230f7d0fc162c3a559cd8b29556f41f4" category="inline-link-rx"></block></block>
+  <block id="17103b09b3247a2b39032b11b995b325" category="list-text">ORACLE_BACKUPMODE는 온라인 백업을 수행할지, 오프라인 백업을 수행할지 지정합니다.</block>
+  <block id="849d9298ad9d6def4918273148b3d4bf" category="list-text">ORACLE_EXPORT_PARAMETERS는 _bin/su_ 실행 중 환경 변수를 내보낼 수 있는지 여부를 지정합니다. ORACLE_EXPORT_PARAMETERS 값은 *y*로 설정해야 합니다.</block>
 </blocks>
