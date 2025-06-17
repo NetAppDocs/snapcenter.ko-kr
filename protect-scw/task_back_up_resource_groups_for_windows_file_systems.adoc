@@ -23,7 +23,7 @@ summary: 리소스 그룹은 호스트 또는 클러스터의 리소스 모음�
 NOTE: 파일 시스템을 백업할 때 SnapCenter는 백업되는 파일 시스템의 볼륨 마운트 지점(VMP)에 마운트된 LUN을 백업하지 않습니다.
 
 
-IMPORTANT: Windows 파일 시스템 컨텍스트에서 작업하는 경우 데이터베이스 파일을 백업하지 마십시오. 이렇게 하면 일관되지 않은 백업이 생성되고 복원할 때 데이터가 손실될 수 있습니다. 데이터베이스 파일을 보호하려면 데이터베이스에 적합한 SnapCenter 플러그인(예: Microsoft SQL Server용 SnapCenter 플러그인, Microsoft Exchange Server용 SnapCenter 플러그인 또는 데이터베이스 파일용 사용자 지정 플러그인)을 사용해야 합니다.
+IMPORTANT: Windows 파일 시스템 컨텍스트에서 작업하는 경우 데이터베이스 파일을 백업하지 마십시오. 이렇게 하면 일관되지 않은 백업이 생성되고 복원할 때 데이터가 손실될 수 있습니다. 데이터베이스 파일을 보호하려면 데이터베이스에 적합한 SnapCenter 플러그인을 사용해야 합니다(예: Microsoft SQL Server용 SnapCenter 플러그인 또는 Microsoft Exchange Server용 SnapCenter 플러그인).
 
 .단계
 . 왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 적절한 플러그인을 선택합니다.

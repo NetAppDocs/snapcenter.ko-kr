@@ -38,7 +38,6 @@ link:task_configure_gMSA_on_windows_server_2012_or_later.html["Windows Server 20
 ** Microsoft Exchange Server를 참조하십시오
 ** Microsoft SQL Server를 참조하십시오
 ** SAP HANA를 참조하십시오
-** 맞춤형 플러그인
 
 
 * 클러스터에 플러그인 설치

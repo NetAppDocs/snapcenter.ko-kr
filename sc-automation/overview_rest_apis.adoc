@@ -17,7 +17,6 @@ REST API를 지원하는 플러그인은 다음과 같습니다.
 
 * Microsoft SQL Server용 플러그인
 * SAP HANA 데이터베이스용 플러그인
-* 맞춤형 플러그인
 * Oracle 데이터베이스용 플러그인
 
 

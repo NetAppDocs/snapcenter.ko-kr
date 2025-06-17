@@ -13,6 +13,8 @@ indexpage:
       url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3337665
     - title: SnapCenter에 대해 자세히 알아보십시오
       url: "/get-started/concept_snapcenter_overview.html"
+    - title: ASA r2 시스템에 지원되는 SnapCenter 작업
+      url: "/get-started/learn-about-snapcenter-support-for-asa-r2-systems.html"
     - title: SnapCenter 소프트웨어의 빠른 시작
       url: "/get-started/quick-start-snapcenter.html"
     - title: SnapCenter 서버 및 SnapCenter 플러그인 업그레이드

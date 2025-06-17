@@ -1,7 +1,7 @@
 ---
 permalink: protect-hana/reference_host_requirements_to_install_snapcenter_plug_in_package_for_windows_hana.html 
 sidebar: sidebar 
-keywords: SAP HANA,Custom plug-ins 
+keywords: SAP HANA, plug-ins 
 summary: Windows용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 기본적인 호스트 시스템 공간 요구 사항 및 사이징 요구 사항을 숙지해야 합니다. 
 ---
 = Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항

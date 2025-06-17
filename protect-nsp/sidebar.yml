@@ -60,9 +60,9 @@ entries:
       url: "/protect-nsp/get_the_CA_certificate_thumbprint.html"
     - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
       url: "/protect-nsp/configure_CA_certificate_with_Windows_host_plug-in_services.html"
-    - title: Linux 호스트에서 SnapCenter 사용자 지정 플러그인 서비스에 대한 CA 인증서를 구성합니다
+    - title: Linux 호스트에서 SnapCenter 플러그인 서비스에 대한 CA 인증서 구성
       url: "/protect-nsp/configure_CA_certificate_on_Linux_host.html"
-    - title: Windows 호스트에서 SnapCenter 사용자 지정 플러그인 서비스에 대한 CA 인증서를 구성합니다
+    - title: Windows 호스트에서 SnapCenter 플러그인 서비스에 대한 CA 인증서 구성
       url: "/protect-nsp/configure_CA_certificate_on_windows_host.html"
     - title: 플러그인에 대해 CA 인증서를 활성화합니다
       url: "/protect-nsp/enable_ca_certificates_for_plug-ins.html"

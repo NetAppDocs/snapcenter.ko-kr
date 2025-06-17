@@ -1,0 +1,58 @@
+---
+permalink: get-started/learn-about-snapcenter-support-for-asa-r2-systems.html 
+sidebar: sidebar 
+keywords: storage system, ONTAP version, ASA r2 systems 
+summary: 지원되는 스토리지 시스템, 애플리케이션 및 데이터베이스를 알고 있어야 합니다. 
+---
+= ASA r2 시스템에 지원되는 SnapCenter 작업
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ASA r2 스토리지 시스템은 SnapCenter 6.1부터 지원됩니다.  https://docs.netapp.com/us-en/asa-r2/get-started/learn-about.html["ASA R2 시스템에 대해 자세히 알아보십시오"]
+
+SnapCenter는 ZAPI를 지원하지 않는 ASA r2 시스템에서 모든 작업을 수행하기 위해 REST API를 활용합니다.
+
+*ASA r2 시스템용 SnapCenter에서 지원하는 작업*
+
+* VMDK를 통해 애플리케이션의 기본 백업을 생성합니다
+* 정합성 보장 그룹 스냅샷을 보조 스토리지 시스템으로 전송합니다
+* 기본 및 보조 스토리지 시스템의 백업을 원래 호스트 또는 대체 호스트로 복원합니다.
++
+** VMware vMotion을 사용하여 기본 및 보조 스토리지 시스템 모두에서 제자리 복원
+** 1차 및 2차 스토리지 시스템 모두에서 연결 및 복사 복원
+
+
+* 백업을 원래 호스트 또는 대체 호스트로 복제
+
+
+SnapCenter는 ONTAP 일관성 그룹을 검색하거나 생성할 수 있습니다. 또한 보조 보호를 위해 대상 클러스터에 대한 SnapMirror 관계를 프로비저닝하고 초기화할 수 있습니다.
+
+애플리케이션에 대한 ASA r2 시스템의 보조 보호 활성화에 대한 자세한 내용은 다음을 참조하세요.
+
+* https://docs.netapp.com/us-en/snapcenter/protect-scsql/create-resource-groups-secondary-protection-for-asa-r2-mssql-resources.html["Microsoft SQL Server 리소스에 대한 보조 보호 활성화"]
+* https://docs.netapp.com/us-en/snapcenter/protect-hana/create-resource-groups-secondary-protection-for-asa-r2-hana-resources.html["SAP HANA 리소스에 대한 보조 보호 활성화"]
+* https://docs.netapp.com/us-en/snapcenter/protect-sco/create-resource-groups-secondary-protection-for-asa-r2-oracle-resources.html["Oracle 리소스에 대한 보조 보호 활성화"]
+* https://docs.netapp.com/us-en/snapcenter/protect-scw/create-resource-groups-secondary-protection-for-asa-r2-windows-file-systems.html["Windows 파일 시스템에 대한 보조 보호 활성화"]
+* https://docs.netapp.com/us-en/snapcenter/protect-db2/create-resource-groups-secondary-protection-for-asa-r2-db2-resources.html["IBM Db2 리소스에 대한 보조 보호 활성화"]
+* https://docs.netapp.com/us-en/snapcenter/protect-postgresql/create-resource-groups-secondary-protection-for-asa-r2-postgresql-resources.html["PostgreSQL 리소스에 대한 보조 보호 활성화"]
+* https://docs.netapp.com/us-en/snapcenter/protect-mysql/create-resource-groups-secondary-protection-for-asa-r2-mysql-resources.html["MySQL 리소스에 대한 보조 보호 활성화"]
+* https://docs.netapp.com/us-en/snapcenter/protect-scu/create-resource-groups-secondary-protection-for-asa-r2-unix-resources.html["Unix 파일 시스템에 대한 보조 보호 활성화"]
+
+
+*ASA r2 시스템용 SnapCenter에서 지원하지 않는 작업*
+
+* RDM(Raw Device Mapping)
+* Oracle용 애플리케이션 볼륨
+* SAP HANA NDV
+* LockVault 를 클릭합니다
+* 변조 방지 스냅샷
+* FlexGroup 볼륨
+* 계층적 일관성 그룹
+* ASA, AFF 또는 FAS 스토리지 시스템에서 ASA r2 스토리지 시스템으로 마이그레이션
+* ASA, AFF 또는 FAS 리소스와 ASA r2 리소스가 혼합된 데이터베이스 보호
+* 스냅샷 이름 바꾸기
+* SQL 플러그인 호스트의 로그 디렉토리의 2차 프로비저닝
+

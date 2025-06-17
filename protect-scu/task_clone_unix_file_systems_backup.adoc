@@ -15,7 +15,7 @@ SnapCenter를 사용하여 파일 시스템 백업을 사용하여 Unix 파일 �
 
 .시작하기 전에
 * _opt/netapp/snapcenter/scc/etc_에 있는 _agent.properties_ 파일에서 _skip_fstab_update_를 * true * 로 설정하여 fstab 파일 업데이트를 건너뛸 수 있습니다.
-* _/opt/netapp/snapcenter/scc/etc_에 위치한 _agent.properties_ 파일에서 _use_custom_clone_volume_name_format_to * true * 로 값을 설정하여 정적 클론 볼륨 이름과 접합 경로를 지정할 수 있습니다. 파일을 업데이트한 후 다음 명령을 실행하여 사용자 지정 플러그인 서비스에 대한 SnapCenter를 다시 시작해야 합니다. `/opt/NetApp/snapcenter/scc/bin/scc restart`.
+* _/opt/netapp/snapcenter/scc/etc_에 위치한 _agent.properties_ 파일에서 _use_custom_clone_volume_name_format_to * true * 로 값을 설정하여 정적 클론 볼륨 이름과 접합 경로를 지정할 수 있습니다. 파일을 업데이트한 후 다음 명령을 실행하여 SnapCenter 플러그인 생성 서비스를 다시 시작해야 합니다.  `/opt/NetApp/snapcenter/scc/bin/scc restart` .
 +
 예: 이 속성을 사용하지 않으면 클론 볼륨 이름 및 접합 경로가 <Source_volume_name>_Clone_<Timestamp>와 같지만 지금은 <Source_volume_name>_Clone_<Clone_Name>이 됩니다
 

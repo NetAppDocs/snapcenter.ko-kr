@@ -55,10 +55,7 @@ SnapCenter는 다음과 같은 주요 기능을 제공합니다.
 
 * 다양한 애플리케이션의 애플리케이션 정합성이 보장되는 중앙 집중식 데이터 보호
 +
-데이터 보호는 ONTAP 시스템에서 실행되는 Microsoft Exchange Server, Microsoft SQL Server, Linux 또는 AIX의 Oracle 데이터베이스, SAP HANA 데이터베이스, IBM DB2, PostgreSQL, MySQL 및 Windows 호스트 파일 시스템에 대해 지원됩니다.
-
-+
-사용자 정의 SnapCenter 플러그인을 만들 수 있는 프레임워크를 제공하여 다른 표준 또는 사용자 지정 애플리케이션 및 데이터베이스에서도 데이터 보호가 지원됩니다. 따라서 동일한 단일 창에서 다른 애플리케이션과 데이터베이스의 데이터를 보호할 수 있습니다. NetApp은 이 프레임워크를 활용하여 MongoDB, Storage, MaxDB, Sybase ASE, ORASCPM용 SnapCenter 플러그인을 출시했습니다. 개발자 가이드를 사용하여 자신만의 플러그인을 만들 수도 있습니다.
+데이터 보호는 ONTAP 시스템에서 실행되는 Microsoft Exchange Server, Microsoft SQL Server, Linux 또는 AIX의 Oracle 데이터베이스, SAP HANA 데이터베이스, IBM DB2, PostgreSQL, MySQL 및 Windows 호스트 파일 시스템에 대해 지원됩니다. SnapCenter는 MongoDB, Storage, MaxDB, Sybase ASE, ORASCPM과 같은 애플리케이션의 보호도 지원합니다.
 
 * 정책 기반 백업
 +
@@ -182,19 +179,6 @@ Linux용 플러그인 패키지 및 Windows용 플러그인 패키지
 UNIX용 플러그인 또는 Windows용 플러그인
  a| 
 HDBSQL 클라이언트 호스트입니다
- a| 
-Linux 또는 Windows
-
-
-
- a| 
-SnapCenter 맞춤형 플러그인
- a| 
-Linux용 플러그인 패키지 및 Windows용 플러그인 패키지
- a| 
-파일 시스템 백업의 경우 Windows용 플러그인
- a| 
-사용자 지정 애플리케이션 호스트입니다
  a| 
 Linux 또는 Windows
 

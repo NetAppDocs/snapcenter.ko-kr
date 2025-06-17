@@ -18,11 +18,11 @@ NetApp 지원 플러그인을 설치하면 SnapCenter와 NetApp SnapMirror 기�
 
 NOTE: SnapCenterCLI는 NetApp에서 지원되는 플러그인 명령을 지원하지 않습니다.
 
-NetApp은 SnapCenter에 내장된 맞춤형 플러그인 프레임워크를 사용하여 ONTAP 스토리지에서 데이터 볼륨의 데이터 보호 작업을 수행할 수 있는 스토리지 플러그인을 제공합니다.
+NetApp은 SnapCenter에 내장된 플러그인 프레임워크를 사용하여 ONTAP 스토리지의 데이터 볼륨에 대한 데이터 보호 작업을 수행하는 스토리지 플러그인을 제공합니다.
 
 호스트 추가 페이지에서 NetApp 지원 플러그인을 설치할 수 있습니다.
 
 link:add_hosts_and_install_plug_in_packages_on_remote_hosts.html["호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다."^]
 
 
-NOTE: SnapCenter 지원 정책은 SnapCenter 맞춤형 플러그인 프레임워크, 핵심 엔진 및 관련 API에 대한 지원을 포함합니다. 지원 서비스는 플러그인 소스 코드와 사용자 지정 플러그인 프레임워크에 구축된 관련 스크립트를 지원하지 않습니다.
+NOTE: SnapCenter 지원 정책은 플러그인 프레임워크, 코어 엔진 및 관련 API에 대한 지원을 포함합니다. 플러그인 소스 코드 및 플러그인 프레임워크를 기반으로 작성된 관련 스크립트는 지원되지 않습니다.
