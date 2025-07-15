@@ -8760,7 +8760,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="83e606e7229254f977fc3348f76ce3d4" category="doc">고가용성을 위해 SnapCenter 서버를 구성합니다</block>
   <block id="3f885fa4441e45ab56f7266ba93b9290" category="paragraph">Windows 또는 Linux에서 실행되는 SnapCenter에서 HA(고가용성)를 지원하려면 F5 로드 밸런서를 설치할 수 있습니다. F5를 사용하면 SnapCenter 서버가 동일한 위치에 있는 최대 2개의 호스트에서 액티브-패시브 구성을 지원할 수 있습니다. SnapCenter에서 F5 로드 밸런서를 사용하려면 SnapCenter 서버를 구성하고 F5 로드 밸런서를 구성해야 합니다.</block>
   <block id="08966309e9619d374846ea7cc8ead3ed" category="paragraph">클라우드 환경의 경우 AWS(Amazon Web Services) ELB(Elastic Load Balancing) 및 Azure 로드 밸런서를 사용하여 고가용성을 구성할 수 있습니다.</block>
-  <block id="026c74cf033fccdbeac6574d083691f5" category="paragraph">워크플로 이미지에는 F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 단계가 나와 있습니다. 자세한 지침은 을<block ref="4d4c1b07c3f7cab3f346d17a2617da56" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="43279440aa73faeb0bd5bf72d7a0b48c" category="paragraph">자세한 내용은 을<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="0f68b904e33d9ac04605aecc958bcf52" category="paragraph">추가 정보</block>
   <block id="5d8d9a5294b7f49c7e6eda95dc97aa5e" category="list-text">로드 밸런서 설정(NLB 또는 F5)에서 NLB 또는 F5 호스트에 의해 부분적으로 확인된 호스트를 추가하고 SnapCenter 호스트가 이 호스트에 도달할 수 없는 경우 SnapCenter 호스트 페이지는 호스트 중단 및 실행 중 상태로 자주 전환합니다. 이 문제를 해결하려면 두 SnapCenter 호스트가 모두 NLB 또는 F5 호스트에서 호스트를 해결할 수 있는지 확인해야 합니다.</block>
@@ -8979,7 +8978,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="6e13f804ad8be111cf6ad70744afe388" category="list-text">ONTAP ASA R2 운영 및 2차 시스템에 있는 데이터입니다</block>
   <block id="651f8f48e0ff0ede39a3224558b4b516" category="paragraph">2차보호</block>
   <block id="f9c655f2d65a07a71b2deab50b74ffae" category="paragraph">NLB(네트워크 부하 분산)를 구성하여 SnapCenter 고가용성을 설정할 수도 있습니다. 고가용성을 위해 SnapCenter 설치 외부에서 NLB를 수동으로 구성해야 합니다.</block>
-  <block id="0a0bca773054c9a47b687411e5ff20e8" category="image-alt">F5 구성 워크플로우</block>
   <block id="27c157ca432e76f965ac30465e4a7d94" category="paragraph">NLB(네트워크 부하 분산)를 구성하여 SnapCenter 고가용성을 설정할 수 있습니다. 고가용성을 위해 SnapCenter 설치 외부에서 NLB를 수동으로 구성해야 합니다.</block>
   <block id="731ac89bec4a57f1e740c167b65c6f53" category="summary">SnapCenter에서 작업을 수행할 때 ONTAP admin 역할을 사용할 필요가 없도록 ASA R2 시스템에 대한 ONTAP 클러스터 역할을 생성해야 합니다.</block>
   <block id="abdbfb1150ad2e22831c6bdbf7bac8d8" category="doc">ASA R2 시스템에 대한 ONTAP 클러스터 역할을 생성합니다</block>
@@ -9586,4 +9584,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="a537fd276cd3fe8ae075cca47114fd6a" category="admonition">Windows 파일 시스템 컨텍스트에서 작업하는 경우 데이터베이스 파일을 백업하지 마십시오. 이렇게 하면 일관되지 않은 백업이 생성되고 복원할 때 데이터가 손실될 수 있습니다. 데이터베이스 파일을 보호하려면 데이터베이스에 적합한 SnapCenter 플러그인을 사용해야 합니다(예: Microsoft SQL Server용 SnapCenter 플러그인 또는 Microsoft Exchange Server용 SnapCenter 플러그인).</block>
   <block id="6fea498808c5d97bb251d0bdbc3943eb" category="sidebar">Linux 호스트에서 SnapCenter 플러그인 서비스에 대한 CA 인증서 구성</block>
   <block id="5c1418af1ce8eeaeb3745b659e1fcfe8" category="sidebar">Windows 호스트에서 SnapCenter 플러그인 서비스에 대한 CA 인증서 구성</block>
+  <block id="f890e4e7d1398542e6dfe99fa9cf5732" category="paragraph">F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 방법에 대한 지침은 다음을 참조하세요. <block ref="4d4c1b07c3f7cab3f346d17a2617da56" category="inline-link-rx"></block> .</block>
+  <block id="78805a221a988e79ef3f42d7c5bfd418" category="paragraph">이미지</block>
 </blocks>
