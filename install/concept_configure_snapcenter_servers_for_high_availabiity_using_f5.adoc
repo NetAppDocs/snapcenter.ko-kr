@@ -23,8 +23,6 @@ NLB(네트워크 부하 분산)를 구성하여 SnapCenter 고가용성을 설�
 --
 F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 방법에 대한 지침은 다음을 참조하세요.  https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_SnapCenter_Servers_for_high_availability_using_F5_Load_Balancer["F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 방법"^] .
 
-이미지
-
 다음 cmdlet을 사용하여 F5 클러스터를 추가 및 제거하려면 SnapCenter Server의 로컬 관리자 그룹 구성원이어야 합니다(스냅센터 관리자 역할에 할당되는 것 외에).
 
 * Add-SmServerCluster를 선택합니다
