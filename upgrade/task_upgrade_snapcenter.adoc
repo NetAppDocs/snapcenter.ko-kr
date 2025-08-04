@@ -11,25 +11,34 @@ summary: SnapCenter 서버 설치 관리자 실행 파일을 사용하여 SnapCe
 
 
 [role="lead"]
-SnapCenter 서버 설치 관리자 실행 파일을 사용하여 SnapCenter 서버를 업그레이드할 수 있습니다.
+최신 버전에서 제공되는 최신 기능과 향상된 기능을 사용하려면 SnapCenter 서버를 업그레이드해야 합니다.
 
 .시작하기 전에
-* SnapCenter 서버 호스트는 Windows 업데이트와 함께 최신 버전이어야 하며, 보류 중인 시스템 재시작이 없어야 합니다.
-* 업그레이드 작업을 시작하기 전에 실행 중인 다른 작업이 없는지 확인해야 합니다.
-* ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들 및 PowerShell 7.4.2 이상을 설치해야 합니다.
-* 실행 중인 작업이 없는지 확인한 후 SnapCenter 리포지토리(MySQL) 데이터베이스를 백업해야 합니다. SnapCenter 서버 및 Exchange 플러그인을 업그레이드하기 전에 이 방법을 권장합니다.
+* SnapCenter 서버 호스트를 최신 Windows 업데이트로 업데이트하고 보류 중인 시스템 재시작이 없는지 확인하세요.
+* 업그레이드를 시작하기 전에 다른 작업이 실행되고 있지 않은지 확인하세요.
+* ASP.NET Core Runtime 8.0.12(및 모든 후속 8.0.x 패치) 호스팅 번들과 PowerShell 7.4.2 이상을 설치합니다.
+* 작업이 실행되고 있지 않은지 확인한 후 SnapCenter 저장소(MySQL) 데이터베이스를 백업합니다. SnapCenter Server와 Exchange 플러그인을 업그레이드하기 전에 이 작업을 수행하는 것이 좋습니다.
 +
 자세한 내용은 을 참조하십시오 link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository["SnapCenter 리포지토리를 백업합니다"^].
 
-* SnapCenter 서버 호스트 또는 플러그인 호스트에서 수정한 모든 SnapCenter 구성 파일을 백업해야 합니다.
+* SnapCenter 서버 호스트나 플러그인 호스트에서 수정한 모든 SnapCenter 구성 파일을 백업하세요.
 +
 SnapCenter 구성 파일의 예: SnapDriveService.exe.config, SMCoreServiceHost.exe.config 등
+
+* SnapCenter 5.0에 여러 버전의 사용자 지정 플러그인을 설치한 경우 6.0 이상으로 업그레이드하기 전에 PowerShell cmdlet을 실행하여 SnapCenter 저장소(NSM 데이터베이스)에서 최신 버전을 제외한 모든 이전 버전의 사용자 지정 플러그인을 제거해야 합니다.
++
+** 달리다 `Open-SmConnection` SnapCenterAdmin 역할 자격 증명을 사용하여 로그인합니다.
+** 달리다 `Remove-SmPluginPackage -PluginName M<plug-in name> -PluginVersion <version number>`
++
+자세한 내용은 다음을 참조하세요.  https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SnapCenter_6.0_upgrade_fails_in_nsm_repository_upgrade_SQL_script_8["SnapCenter 6.0 이상으로 업그레이드가 실패합니다."] .
+
+
 
 
 
 .이 작업에 대해
-* 업그레이드 중에 SQL 스크립트를 실행하여 NSM 데이터베이스에서 Exchange 데이터를 업데이트합니다. 그러면 DAG 및 호스트 단축 이름이 FQDN으로 변환됩니다. 이 기능은 Exchange 플러그인이 있는 SnapCenter 서버를 사용하는 경우에만 적용됩니다.
-* 업그레이드 작업을 시작하기 전에 수동으로 서버 호스트를 유지 관리 모드로 설정한 경우 업그레이드 후 * Hosts * > * Activate Schedule * 을 클릭하여 수동으로 서버 호스트를 유지 관리 모드에서 해제해야 합니다.
+* 업그레이드하는 동안 SnapCenter SQL 스크립트를 실행하여 NSM 데이터베이스의 Exchange 데이터를 업데이트하고 DAG 및 호스트 약어를 FQDN으로 변환합니다. 이는 Exchange 플러그인과 함께 SnapCenter Server를 사용하는 경우에만 적용됩니다.
+* 서버 호스트를 수동으로 유지 관리 모드로 전환한 경우 업그레이드 후 *호스트* > *일정 활성화*를 선택하여 서버 호스트를 유지 관리 모드에서 해제합니다.
 * 정책에서 predpts 및 postscript가 활성화된 기존 백업 및 검증 스케줄의 경우 업그레이드 후에도 백업 작업이 계속 작동합니다.
 +
 Job details * 페이지에서 스크립트를 scripts_path에 복사하고 정책을 편집하여 scripts_path와 관련된 경로를 제공하는 것이 좋습니다. 클론 수명주기 작업의 경우 하위 작업 레벨에 경고 메시지가 표시됩니다.
@@ -42,7 +51,7 @@ Job details * 페이지에서 스크립트를 scripts_path에 복사하고 정�
 https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab[]
 
 . C:\Program Files\NetApp\SnapCenter WebApp에 있는 web.config의 복사본을 생성합니다.
-. Windows 작업 스케줄에서 플러그인 호스트와 관련된 SnapCenter 스케줄을 내보내면 업그레이드에 실패할 경우 이를 사용하여 스케줄을 복구할 수 있습니다.
+. 업그레이드에 실패할 경우 Windows 작업 스케줄러에서 SnapCenter 플러그인 호스트 일정을 내보내 복원할 수 있습니다.
 +
 md:\\SCBackup's chtasks/query/xml/TN TASKNAME>>"D:\SCBackup\TASKNAME.xml"
 
@@ -55,30 +64,27 @@ md:\\SCBackup 'mysqldump -- all-databases -- single-transaction -- add-drop-data
 
 . 다운로드한 .exe 파일을 두 번 클릭하여 SnapCenter 서버 업그레이드를 시작합니다.
 +
-업그레이드를 시작하면 모든 사전 점검을 수행하고, 최소 요구사항을 충족하지 않을 경우 적절한 오류 또는 경고 메시지가 표시됩니다. 경고 메시지를 무시하고 설치를 계속할 수 있습니다. 그러나 오류는 수정해야 합니다.
+업그레이드를 시작하면 SnapCenter 사전 검사를 실행합니다. 시스템이 최소 요구 사항을 충족하지 못하면 SnapCenter 오류 또는 경고 메시지가 표시됩니다. 경고를 무시하고 설치를 계속할 수 있지만, 오류는 반드시 수정해야 합니다.
 
 +
 
-NOTE: SnapCenter는 이전 버전의 SnapCenter Server 설치 중에 제공된 기존 MySQL Server 리포지토리 데이터베이스 암호를 계속 사용합니다.
+NOTE: SnapCenter 이전 버전의 SnapCenter Server를 설치하는 동안 제공된 기존 MySQL Server 저장소 데이터베이스 비밀번호를 계속 사용합니다.
 
-. 업그레이드 * 를 클릭합니다.
+. *업그레이드*를 선택하세요.
 +
-어느 단계에서든 * 취소 * 버튼을 클릭하면 업그레이드 워크플로우가 취소됩니다. SnapCenter 서버를 이전 상태로 롤백하지 않습니다.
+어느 단계에서든 *취소*를 선택하면 SnapCenter 업그레이드를 중지합니다. SnapCenter 서버를 이전 상태로 롤백하지 않습니다.
 
 +
-|===
+*모범 사례:* 로그아웃했다가 다시 로그인하거나 새 브라우저를 열어 SnapCenter 사용자 인터페이스에 액세스하세요.
 
-
-| *모범 사례:* 로그아웃한 다음 SnapCenter에 로그인하거나, 닫은 다음 새 브라우저를 열어 SnapCenter GUI에 액세스해야 합니다. 
-|===
 
 
 .작업을 마친 후
 * sudo 사용자를 사용하여 플러그인을 설치하는 경우 _C:\ProgramData\NetApp\SnapCenter\Package Repository\SC_UNIX_plugins_checksum.txt_에서 사용 가능한 sha224 키를 복사하여 _ /etc/sudoers_파일을 업데이트해야 합니다.
 * 서버 호스트에서 리소스를 새로 검색해야 합니다.
 +
-서버 호스트의 상태가 중지됨으로 표시되면 잠시 기다렸다가 새 검색을 수행할 수 있습니다. HostRefreshInterval* 매개 변수 값(기본값은 3600초)을 10분 이상의 값으로 변경할 수도 있습니다.
+SnapCenter 서버 호스트 상태가 중지됨으로 표시되면 잠시 기다렸다가 새로 검색을 수행합니다. *HostRefreshInterval* 매개변수 값(기본값은 3600초)을 10분 이상의 값으로 변경할 수도 있습니다.
 
-* 업그레이드에 실패하면 실패한 설치를 정리하여 이전 버전의 SnapCenter를 다시 설치한 다음 NSM 데이터베이스를 이전 상태로 복원해야 합니다.
+* 업그레이드가 실패하면 실패한 설치를 정리하고 이전 버전의 SnapCenter 다시 설치하고 NSM 데이터베이스를 이전 상태로 복원합니다.
 * 서버 호스트를 업그레이드한 후에는 스토리지 시스템을 추가하기 전에 플러그인도 업그레이드해야 합니다.
 

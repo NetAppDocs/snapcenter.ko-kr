@@ -2289,29 +2289,17 @@
   <block id="4507e0d1a42287b926181e4cb9fda1cf" category="summary">해결된 문제, 알려진 문제, 주의 및 제한 사항을 포함하여 SnapCenter 서버 및 SnapCenter 플러그인 패키지의 이 릴리스에 대한 중요 정보를 제공합니다.</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">릴리스 정보</block>
   <block id="c589a9c8b3b9ae7adc1d5609288b15f4" category="summary">SnapCenter 서버 설치 관리자 실행 파일을 사용하여 SnapCenter 서버를 업그레이드할 수 있습니다.</block>
-  <block id="5ddb71adbd6daab9bc17e4749bc281f8" category="list-text">SnapCenter 서버 호스트는 Windows 업데이트와 함께 최신 버전이어야 하며, 보류 중인 시스템 재시작이 없어야 합니다.</block>
-  <block id="b8c9089814c2cbd7d1cee812b814e743" category="list-text">업그레이드 작업을 시작하기 전에 실행 중인 다른 작업이 없는지 확인해야 합니다.</block>
-  <block id="a679759c30b6a98b50a9a2e53167f15b" category="list-text">실행 중인 작업이 없는지 확인한 후 SnapCenter 리포지토리(MySQL) 데이터베이스를 백업해야 합니다. SnapCenter 서버 및 Exchange 플러그인을 업그레이드하기 전에 이 방법을 권장합니다.</block>
   <block id="236f3838bf3097da34ea64631cb10786" category="inline-link-macro">SnapCenter 리포지토리를 백업합니다</block>
   <block id="7a705c8931c016f06134daebf36e80fe" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="e8b16a01919e198d9e965cee62b54323" category="inline-link-macro-rx"></block>.</block>
-  <block id="93e063301f68e16961686672bfe6208e" category="list-text">SnapCenter 서버 호스트 또는 플러그인 호스트에서 수정한 모든 SnapCenter 구성 파일을 백업해야 합니다.</block>
   <block id="77b44cc84c18e6f68f7831889cfc9abd" category="paragraph">SnapCenter 구성 파일의 예: SnapDriveService.exe.config, SMCoreServiceHost.exe.config 등</block>
-  <block id="a6230500cc307e0a76e575726dcf9cdd" category="list-text">업그레이드 중에 SQL 스크립트를 실행하여 NSM 데이터베이스에서 Exchange 데이터를 업데이트합니다. 그러면 DAG 및 호스트 단축 이름이 FQDN으로 변환됩니다. 이 기능은 Exchange 플러그인이 있는 SnapCenter 서버를 사용하는 경우에만 적용됩니다.</block>
   <block id="d6d9056bd3ccaf6f2ea25c46f86b217c" category="list-text">NetApp Support 사이트에서 SnapCenter 서버 설치 패키지를 다운로드하십시오.</block>
   <block id="8e3a959801db0274c8bf2982a663244b" category="paragraph"><block ref="8e3a959801db0274c8bf2982a663244b" category="inline-link-rx"></block></block>
   <block id="b74248c6cef601e9db35af2dd0a5b036" category="list-text">C:\Program Files\NetApp\SnapCenter WebApp에 있는 web.config의 복사본을 생성합니다.</block>
-  <block id="5c2a71118d4b6f36cf346a5f00cf560b" category="list-text">Windows 작업 스케줄에서 플러그인 호스트와 관련된 SnapCenter 스케줄을 내보내면 업그레이드에 실패할 경우 이를 사용하여 스케줄을 복구할 수 있습니다.</block>
   <block id="7e6c836a82252a29bd95ec48739979b0" category="paragraph">md:\\SCBackup's chtasks/query/xml/TN TASKNAME&gt;&gt;"D:\SCBackup\TASKNAME.xml"</block>
   <block id="873d8e42b0c7d55896b02efe6ca3e73c" category="list-text">리포지토리 백업이 구성되지 않은 경우 SnapCenter MySQL 데이터베이스 덤프를 생성합니다.</block>
   <block id="fd143985bfb19ac69751205ce500692d" category="paragraph">md:\\SCBackup 'mysqldump -- all-databases -- single-transaction -- add-drop-database -- triggers -- routines -- events -u root -p &gt; D:\SCBackup\ScrepoBackup.dmp'</block>
   <block id="b5dc8ae18451c8407650044643e43811" category="paragraph">메시지가 표시되면 암호를 입력합니다.</block>
-  <block id="715be68c1d183df2f2605537fa205329" category="list-text">다운로드한 .exe 파일을 두 번 클릭하여 SnapCenter 서버 업그레이드를 시작합니다.</block>
-  <block id="782c158d0db07bc3333c092b1cf2e891" category="paragraph">업그레이드를 시작하면 모든 사전 점검을 수행하고, 최소 요구사항을 충족하지 않을 경우 적절한 오류 또는 경고 메시지가 표시됩니다. 경고 메시지를 무시하고 설치를 계속할 수 있습니다. 그러나 오류는 수정해야 합니다.</block>
-  <block id="e34a8d49d9566ab396f31c7424226785" category="admonition">SnapCenter는 이전 버전의 SnapCenter Server 설치 중에 제공된 기존 MySQL Server 리포지토리 데이터베이스 암호를 계속 사용합니다.</block>
   <block id="f6e8db7e26c18ff77395c70107114b81" category="list-text">업그레이드 * 를 클릭합니다.</block>
-  <block id="b783d3e004ffabe67253f1b39595280f" category="paragraph">어느 단계에서든 * 취소 * 버튼을 클릭하면 업그레이드 워크플로우가 취소됩니다. SnapCenter 서버를 이전 상태로 롤백하지 않습니다.</block>
-  <block id="01d8aef1693c1ab37693630fe558d8cc" category="cell">*모범 사례:* 로그아웃한 다음 SnapCenter에 로그인하거나, 닫은 다음 새 브라우저를 열어 SnapCenter GUI에 액세스해야 합니다.</block>
-  <block id="075ef73eccc4174ca2b3625b875d44d4" category="list-text">업그레이드에 실패하면 실패한 설치를 정리하여 이전 버전의 SnapCenter를 다시 설치한 다음 NSM 데이터베이스를 이전 상태로 복원해야 합니다.</block>
   <block id="bd4996c43fa463bf9a4df1c1fbc6a660" category="summary">플러그인 패키지는 SnapCenter 업그레이드의 일부로 배포됩니다.</block>
   <block id="3ddc921ba3599c9da9d32f036cfcb5ca" category="doc">플러그인 패키지를 업그레이드합니다</block>
   <block id="5045fb7fa597d081bf2426b83c9cdd64" category="list-text">Linux 시스템에 액세스할 수 있는 루트가 아닌 사용자인 경우 업그레이드 작업을 수행하기 전에 _/etc/sudoers_file을 최신 체크섬 값으로 업데이트해야 합니다.</block>
@@ -8885,9 +8873,7 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="82b5f56e4e495a0f42039a0e31754afa" category="image-alt">워크플로를 설치합니다</block>
   <block id="91da037872518a1a728ddd088fba0a5e" category="image-alt">Exchange 데이터베이스의 백업 워크플로우입니다</block>
   <block id="ac4db59a3117eb625954347693361d30" category="inline-image-macro">리소스 그룹 양식 정책 추가</block>
-  <block id="4d6b1749d463347a1b3df01a9e8b0ea5" category="list-text">업그레이드 작업을 시작하기 전에 수동으로 서버 호스트를 유지 관리 모드로 설정한 경우 업그레이드 후 * Hosts * &gt; * Activate Schedule * 을 클릭하여 수동으로 서버 호스트를 유지 관리 모드에서 해제해야 합니다.</block>
   <block id="490e9071957ca8b80f7019e9cb2a8b99" category="list-text">서버 호스트에서 리소스를 새로 검색해야 합니다.</block>
-  <block id="06eee3caed57cb295b8ae731bc4b8dce" category="paragraph">서버 호스트의 상태가 중지됨으로 표시되면 잠시 기다렸다가 새 검색을 수행할 수 있습니다. HostRefreshInterval* 매개 변수 값(기본값은 3600초)을 10분 이상의 값으로 변경할 수도 있습니다.</block>
   <block id="86b796a66464051399647b9c6f8c917f" category="list-text">서버 호스트를 업그레이드한 후에는 스토리지 시스템을 추가하기 전에 플러그인도 업그레이드해야 합니다.</block>
   <block id="c58e9b1492d681b897440ca05419e132" category="paragraph">업그레이드 절차를 수행하면 Windows, Linux 또는 AIX 플러그인 호스트가 유지보수 모드로 전환되므로 유지보수 모드로 업그레이드하려는 각 플러그인 호스트를 수동으로 전환할 필요가 없습니다. 유지 관리 모드에서는 업그레이드 중에 플러그인 호스트에서 예약된 작업이 실행되지 않습니다.</block>
   <block id="5e8cc9f28d33dd253f7204b7723e45b6" category="list-text">전체 상태 열에 플러그인 호스트 중 하나에 대해 "업그레이드 사용 가능"이 표시되면 플러그인 호스트 이름을 클릭하고 다음을 수행합니다.</block>
@@ -9247,7 +9233,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="744d48cfa6032e04d109166f7ff6aeaf" category="paragraph">문제 해결 정보는 을<block ref="361c774ee5cb22be42ef8ea152ed45ad" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="a141599a0eec0e6d9aea907fc97ea039" category="list-text">신뢰 당사자 신뢰 * 를 선택합니다.</block>
   <block id="458f1b484cf2f93e8e2f35b3f5a3b94a" category="list-text">SnapCenter용으로 생성된 신뢰 당사자 신뢰를 마우스 오른쪽 버튼으로 클릭하고 * 삭제 * 를 선택합니다.</block>
-  <block id="c6cd54ad2b3bca5fe6357919d1ec62e7" category="list-text">ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들 및 PowerShell 7.4.2 이상을 설치해야 합니다.</block>
   <block id="9044893459e9f46e1e17047570a05298" category="list-text">All-access 명령: ONTAP 9.12.1 이상에 필요한 최소 권한</block>
   <block id="a70835f5bcf15a6863468bb82abc19de" category="inline-link">상위 볼륨에서 FlexClone 볼륨을 분할합니다</block>
   <block id="fc3cc01cd9612e6f3077d4a6505ead8a" category="list-text">FlexClone 볼륨 분할 작업에 대한 자세한 내용은 을 참조하십시오<block ref="5db08c189f8e967bc5a82064aa92c31e" category="inline-link-rx"></block>.</block>
@@ -9586,4 +9571,26 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="5c1418af1ce8eeaeb3745b659e1fcfe8" category="sidebar">Windows 호스트에서 SnapCenter 플러그인 서비스에 대한 CA 인증서 구성</block>
   <block id="f890e4e7d1398542e6dfe99fa9cf5732" category="paragraph">F5 로드 밸런서를 사용하여 고가용성을 위해 SnapCenter 서버를 구성하는 방법에 대한 지침은 다음을 참조하세요. <block ref="4d4c1b07c3f7cab3f346d17a2617da56" category="inline-link-rx"></block> .</block>
   <block id="c0f10ba70433b3a51c779845827cf459" category="paragraph">Windows 클러스터 설정을 사용하는 경우 Windows 원격 관리(WinRM)도 설치하고 구성해야 합니다.</block>
+  <block id="d3ad73cb89e8cd3b7bc0a7c93d5208e7" category="paragraph">최신 버전에서 제공되는 최신 기능과 향상된 기능을 사용하려면 SnapCenter 서버를 업그레이드해야 합니다.</block>
+  <block id="f8a11972986bab5fab5be38e24515d0e" category="list-text">SnapCenter 서버 호스트를 최신 Windows 업데이트로 업데이트하고 보류 중인 시스템 재시작이 없는지 확인하세요.</block>
+  <block id="00145f040529d6d617e2736bd1dc62af" category="list-text">업그레이드를 시작하기 전에 다른 작업이 실행되고 있지 않은지 확인하세요.</block>
+  <block id="ef1705c72306ba832d5e22c24121c7e2" category="list-text">ASP.NET Core Runtime 8.0.12(및 모든 후속 8.0.x 패치) 호스팅 번들과 PowerShell 7.4.2 이상을 설치합니다.</block>
+  <block id="db24b3a162cda240ba12e6bf377ad275" category="list-text">작업이 실행되고 있지 않은지 확인한 후 SnapCenter 저장소(MySQL) 데이터베이스를 백업합니다. SnapCenter Server와 Exchange 플러그인을 업그레이드하기 전에 이 작업을 수행하는 것이 좋습니다.</block>
+  <block id="89befeb3776cdd11052fa85b6e4f4928" category="list-text">SnapCenter 서버 호스트나 플러그인 호스트에서 수정한 모든 SnapCenter 구성 파일을 백업하세요.</block>
+  <block id="aaac04103c1097d63b5a7be06269c7d9" category="list-text">SnapCenter 5.0에 여러 버전의 사용자 지정 플러그인을 설치한 경우 6.0 이상으로 업그레이드하기 전에 PowerShell cmdlet을 실행하여 SnapCenter 저장소(NSM 데이터베이스)에서 최신 버전을 제외한 모든 이전 버전의 사용자 지정 플러그인을 제거해야 합니다.</block>
+  <block id="b81129baefdfc97f130bbcee1da98ce6" category="list-text">달리다<block ref="5127bb5818426c9a226f86808b688df6" prefix=" " category="inline-code"></block> SnapCenterAdmin 역할 자격 증명을 사용하여 로그인합니다.</block>
+  <block id="e11a306a86d86aaffa2d69ff55fb9302" category="list-text">달리다<block ref="4c7adb4c09f9d1c7b33d1cf906860d34" prefix=" " category="inline-code"></block></block>
+  <block id="922142e2126839c9c17b4801781905c0" category="inline-link">SnapCenter 6.0 이상으로 업그레이드가 실패합니다.</block>
+  <block id="b644e2b1fd194b2e530e570c13e0336d" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="2f58e6674e7cd1d2be8dd8a7ec9f27f2" category="inline-link-rx"></block> .</block>
+  <block id="9593a30d4190c278ff6dcb05dd8f4490" category="list-text">업그레이드하는 동안 SnapCenter SQL 스크립트를 실행하여 NSM 데이터베이스의 Exchange 데이터를 업데이트하고 DAG 및 호스트 약어를 FQDN으로 변환합니다. 이는 Exchange 플러그인과 함께 SnapCenter Server를 사용하는 경우에만 적용됩니다.</block>
+  <block id="8aa9742ec42a665e29a75ccfb11e5a6b" category="list-text">서버 호스트를 수동으로 유지 관리 모드로 전환한 경우 업그레이드 후 *호스트* &gt; *일정 활성화*를 선택하여 서버 호스트를 유지 관리 모드에서 해제합니다.</block>
+  <block id="99f490d55db332fcfd40fadd27ccf8ec" category="list-text">업그레이드에 실패할 경우 Windows 작업 스케줄러에서 SnapCenter 플러그인 호스트 일정을 내보내 복원할 수 있습니다.</block>
+  <block id="33265f62f6c00a1c3380415625af38b6" category="list-text">다운로드한 .exe 파일을 두 번 클릭하여 SnapCenter 서버 업그레이드를 시작합니다.</block>
+  <block id="7655051254116dbc8146da8395c9c450" category="paragraph">업그레이드를 시작하면 SnapCenter 사전 검사를 실행합니다. 시스템이 최소 요구 사항을 충족하지 못하면 SnapCenter 오류 또는 경고 메시지가 표시됩니다. 경고를 무시하고 설치를 계속할 수 있지만, 오류는 반드시 수정해야 합니다.</block>
+  <block id="39f4e3c8612af14950612dcb1a3682d0" category="admonition">SnapCenter 이전 버전의 SnapCenter Server를 설치하는 동안 제공된 기존 MySQL Server 저장소 데이터베이스 비밀번호를 계속 사용합니다.</block>
+  <block id="3210c75ca343f7bd2eddfaaef1a24817" category="list-text">*업그레이드*를 선택하세요.</block>
+  <block id="81b95d1db157f5935ef43124b0c7ecf5" category="paragraph">어느 단계에서든 *취소*를 선택하면 SnapCenter 업그레이드를 중지합니다. SnapCenter 서버를 이전 상태로 롤백하지 않습니다.</block>
+  <block id="401632ff9d010db44abc6611b886a1fb" category="paragraph">*모범 사례:* 로그아웃했다가 다시 로그인하거나 새 브라우저를 열어 SnapCenter 사용자 인터페이스에 액세스하세요.</block>
+  <block id="2894135a685829401e009e2fb1bc8cfe" category="paragraph">SnapCenter 서버 호스트 상태가 중지됨으로 표시되면 잠시 기다렸다가 새로 검색을 수행합니다. *HostRefreshInterval* 매개변수 값(기본값은 3600초)을 10분 이상의 값으로 변경할 수도 있습니다.</block>
+  <block id="91e42bb62d5ea6816d03c5a5de9ccfad" category="list-text">업그레이드가 실패하면 실패한 설치를 정리하고 이전 버전의 SnapCenter 다시 설치하고 NSM 데이터베이스를 이전 상태로 복원합니다.</block>
 </blocks>
