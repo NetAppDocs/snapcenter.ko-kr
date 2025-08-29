@@ -11,20 +11,20 @@ summary: SnapCenter 소프트웨어는 간단하고 확장 가능한 중앙 집�
 
 
 [role="lead"]
-SnapCenter 소프트웨어는 하이브리드 클라우드에서 실행되는 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대한 애플리케이션 정합성이 보장된 데이터 보호를 제공하는 간단하고 확장 가능한 중앙 집중식 플랫폼입니다.
+SnapCenter software 애플리케이션과 일관된 데이터 보호를 위한 간단하고 중앙 집중화되고 확장 가능한 플랫폼입니다.  하이브리드 클라우드의 ONTAP 시스템에서 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM을 보호합니다.
 
-SnapCenter는 NetApp Snapshot, SnapRestore, FlexClone, SnapMirror 및 SnapVault 기술을 활용하여 다음을 제공합니다.
+SnapCenter NetApp Snapshot, SnapRestore, FlexClone, SnapMirror 및 SnapVault 기술을 사용하여 다음을 제공합니다.
 
 * 빠르고 공간 효율적이며 애플리케이션 정합성이 보장되는 디스크 기반 백업
-* 신속하고 세부적인 복원 및 애플리케이션 정합성 보장 복구
+* 빠르고 세부적인 복원 및 애플리케이션 일관성 복구
 * 빠르고 공간 효율적인 클론 복제
 
 
-SnapCenter에는 SnapCenter 서버와 개별 경량 플러그인이 모두 포함되어 있습니다. 원격 애플리케이션 호스트에 대한 플러그인 배포를 자동화하고 백업, 검증 및 클론 복제 작업을 예약하며 모든 데이터 보호 작업을 모니터링할 수 있습니다.
+SnapCenter 에는 SnapCenter Server와 가벼운 플러그인이 포함되어 있습니다.  원격 애플리케이션 호스트에 대한 플러그인 배포를 자동화하고, 백업, 검증 및 복제 작업을 예약하고, 데이터 보호 작업을 모니터링할 수 있습니다.
 
-SnapCenter는 온프레미스 또는 퍼블릭 클라우드에 설치하여 데이터를 보호할 수 있습니다.
+SnapCenter 온프레미스나 퍼블릭 클라우드에 설치하여 데이터를 보호할 수 있습니다.
 
-* 다음을 보호하기 위한 온프레미스:
+* 다음 사항을 보호하기 위해 사내에서 조치합니다.
 +
 ** ONTAP FAS, AFF 또는 ASA 기본 시스템에 있으며 ONTAP FAS, AFF 또는 ASA 2차 시스템에 복제된 데이터
 ** ONTAP Select 운영 시스템에 있는 데이터
@@ -32,7 +32,7 @@ SnapCenter는 온프레미스 또는 퍼블릭 클라우드에 설치하여 데�
 ** ONTAP ASA R2 운영 및 2차 시스템에 있는 데이터입니다
 
 
-* 하이브리드 클라우드의 사내 로 다음을 보호:
+* 하이브리드 클라우드의 온프레미스를 통해 다음을 보호하세요.
 +
 ** ONTAP FAS, AFF 또는 ASA 기본 시스템에 있고 Cloud Volumes ONTAP에 복제된 데이터입니다
 ** ONTAP FAS, AFF 또는 ASA 운영 및 2차 시스템에 있고 클라우드의 오브젝트 및 아카이브 스토리지로 보호되는 데이터(BlueXP 백업 및 복구 통합 사용)
@@ -59,11 +59,11 @@ SnapCenter는 다음과 같은 주요 기능을 제공합니다.
 
 * 정책 기반 백업
 +
-정책 기반 백업은 NetApp Snapshot 기술을 활용하여 빠르고 공간 효율적인 애플리케이션 정합성이 보장된 디스크 기반 백업을 생성합니다. 필요에 따라 기존 보호 관계를 업데이트하여 보조 스토리지에 대한 이러한 백업을 자동으로 보호할 수 있습니다.
+정책 기반 백업은 NetApp Snapshot 기술을 활용하여 빠르고 공간 효율적이며 애플리케이션 일관성이 있는 디스크 기반 백업을 생성합니다.  기존 보호 관계를 업데이트하여 보조 저장소에 대한 백업의 자동 보호를 설정할 수도 있습니다.
 
-* 여러 리소스를 백업합니다
+* 여러 리소스에 대한 백업
 +
-SnapCenter 리소스 그룹을 사용하여 동일한 유형의 여러 리소스(애플리케이션, 데이터베이스 또는 호스트 파일 시스템)를 동시에 백업할 수 있습니다.
+SnapCenter 리소스 그룹을 사용하면 동일한 유형의 여러 리소스(애플리케이션, 데이터베이스 또는 호스트 파일 시스템)를 한 번에 백업할 수 있습니다.
 
 * 복원 및 복구
 +
@@ -71,11 +71,11 @@ SnapCenter는 백업 및 애플리케이션 정합성이 보장되는 시간 기
 
 * 클론 복제
 +
-SnapCenter는 빠르고 공간 효율적이며 애플리케이션 정합성이 보장되는 클론 복제를 제공하여 소프트웨어를 신속하게 개발할 수 있도록 지원합니다. 하이브리드 클라우드의 모든 대상에서 복제할 수 있습니다.
+SnapCenter 빠르고 공간 효율적이며 애플리케이션에 일관된 복제 기능을 제공합니다.  하이브리드 클라우드의 모든 대상에 복제할 수 있습니다.
 
-* 단일 사용자 관리 그래픽 사용자 인터페이스(GUI)
+* 단일 사용자 관리 그래픽 사용자 인터페이스
 +
-SnapCenter는 하이브리드 클라우드의 모든 대상에 있는 리소스의 백업 및 클론을 관리할 수 있는 단일 인터페이스에서 GUI를 제공합니다.
+SnapCenter 모든 하이브리드 클라우드 대상에서 백업과 복제를 관리할 수 있는 단일 인터페이스를 제공합니다.
 
 * REST API, Windows cmdlet, UNIX 명령
 +
@@ -96,7 +96,7 @@ SnapCenter는 모든 오케스트레이션 소프트웨어와의 통합 및 Wind
 
 == SnapCenter 아키텍처 및 구성 요소
 
-SnapCenter 플랫폼은 중앙 집중식 관리 서버와 플러그인 호스트를 포함하는 다중 계층 아키텍처를 기반으로 합니다. SnapCenter는 멀티 사이트 데이터 센터를 지원합니다. SnapCenter 서버 호스트와 플러그인 호스트는 서로 다른 지리적 위치에 있을 수 있습니다.
+SnapCenter 중앙 관리 서버와 플러그인 호스트를 갖춘 계층형 디자인을 사용합니다.  서버와 플러그인 호스트는 서로 다른 위치에 있을 수 있습니다.
 
 image::../media/saphana-br-scs-image6.png[입력/출력 대화 상자 또는 작성된 내용을 표시하는 그림]
 
@@ -108,7 +108,7 @@ SnapCenter에는 SnapCenter 서버, Windows용 SnapCenter 플러그인 패키지
 
 SnapCenter 서버는 Microsoft Windows 및 Linux(RHEL 8.x, RHEL 9.x, SLES 15 SP5) 운영 체제를 지원합니다. SnapCenter 서버에는 웹 서버, 중앙 집중식 HTML5 기반 사용자 인터페이스, PowerShell cmdlet, REST API 및 SnapCenter 저장소가 포함됩니다.
 
-SnapCenter 서버 및 플러그인은 HTTPS를 사용하여 호스트 에이전트와 통신합니다. SnapCenter 작업에 대한 정보는 SnapCenter 저장소에 저장됩니다.
+SnapCenter SnapCenter 저장소에 작업 정보를 저장합니다.
 
 
 
@@ -287,9 +287,9 @@ UNIX용 플러그인 또는 Windows용 플러그인
 Linux 또는 Windows
 
 |===
-VMware vSphere용 SnapCenter 플러그인은 가상 머신(VM), 데이터 저장소 및 가상 머신 디스크(VMDK)에 대해 충돌 시에도 정합성이 보장되고 VM 정합성이 보장되는 백업 및 복원 작업을 지원하며, SnapCenter 애플리케이션별 플러그인을 지원하여 가상화된 데이터베이스 및 파일 시스템에 대한 애플리케이션 정합성이 보장되는 백업 및 복구 작업을 보호합니다.
+SnapCenter Plug-in for VMware vSphere 가상 머신(VM), 데이터 저장소 및 가상 머신 디스크(VMDK)에 대한 충돌 일관성 및 VM 일관성 백업 및 복원 작업을 지원합니다.  또한 가상화된 데이터베이스와 파일 시스템에 대한 애플리케이션 일관성 백업 및 복원 작업도 지원합니다.
 
-데이터베이스 또는 파일 시스템이 VM에 저장되어 있거나 VM 및 데이터 저장소를 보호하려는 경우 VMware vSphere 가상 어플라이언스용 SnapCenter 플러그인을 구축해야 합니다. 자세한 내용은 을 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html["VMware vSphere용 SnapCenter 플러그인 설명서"^]참조하십시오.
+데이터베이스, 파일 시스템, VM 또는 VM의 데이터 저장소를 보호하려면 SnapCenter Plug-in for VMware vSphere 배포하세요.  자세한 내용은 다음을 참조하세요. https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html["VMware vSphere용 SnapCenter 플러그인 설명서"^] .
 
 
 
@@ -297,9 +297,9 @@ VMware vSphere용 SnapCenter 플러그인은 가상 머신(VM), 데이터 저장
 
 NSM 데이터베이스라고도 하는 SnapCenter 저장소는 모든 SnapCenter 작업에 대한 정보와 메타데이터를 저장합니다.
 
-SnapCenter 서버를 설치할 때 MySQL Server 리포지토리 데이터베이스가 기본적으로 설치됩니다. MySQL Server가 이미 설치되어 있고 SnapCenter Server를 새로 설치하는 경우 MySQL Server를 제거해야 합니다.
+SnapCenter 서버를 설치하면 기본적으로 MySQL 서버 저장소 데이터베이스가 설치됩니다.  이미 MySQL 서버를 설치했고 SnapCenter 서버를 새로 설치하려면 MySQL 서버를 제거해야 합니다.
 
-SnapCenter는 SnapCenter 리포지토리 데이터베이스로 MySQL Server 8.0.37 이상을 지원합니다. 이전 버전의 MySQL Server를 이전 버전의 SnapCenter와 함께 사용하는 경우 SnapCenter 업그레이드 중에 MySQL Server가 8.0.37 이상으로 업그레이드됩니다.
+SnapCenter SnapCenter 저장소 데이터베이스로 MySQL Server 8.0.37 이상을 지원합니다.  이전 버전의 SnapCenter 와 함께 이전 버전의 MySQL Server를 사용하는 경우 SnapCenter 업그레이드 프로세스를 통해 MySQL Server가 8.0.37 이상 버전으로 업그레이드됩니다.
 
 SnapCenter 리포지토리는 다음 정보와 메타데이터를 저장합니다.
 
