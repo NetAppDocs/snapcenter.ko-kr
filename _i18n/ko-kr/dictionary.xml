@@ -893,7 +893,6 @@
   <block id="993129239b6168608f9de64f4e71982a" category="paragraph">백업 세트의 미러 복사본을 다른 볼륨(SnapMirror)에 유지하려면 이 옵션을 선택합니다.</block>
   <block id="5599318ff76ac470ccc995aab6f33577" category="paragraph">로컬 스냅샷 복사본을 생성한 후 SnapVault를 업데이트합니다</block>
   <block id="74634d46f4094928b9a2dbffb638ae7f" category="paragraph">디스크 간 백업 복제를 수행하려면 이 옵션을 선택합니다.</block>
-  <block id="58d70fc926069f010ab51ffa86e123d8" category="paragraph">보조 정책 레이블입니다</block>
   <block id="e64e99351ad3ec8079ffd2d91fbd7f12" category="paragraph">오류 재시도 횟수입니다</block>
   <block id="39007747bb71ef47183e492e75b22469" category="paragraph">프로세스가 중지되기 전에 수행해야 하는 복제 시도 횟수를 입력합니다.</block>
   <block id="959ee61833678423ed8659abb1b27012" category="list-text">Prescript 백업 인수에는 ""$Database" 및 ""$ServerInstance" 가 포함됩니다.</block>
@@ -3529,8 +3528,6 @@
   <block id="95f62fbbdd8b59bc3cdee3bd3e382046" category="admonition">클러스터 구성에서 백업은 정책에 설정된 보존 설정에 따라 클러스터의 각 노드에 유지됩니다. AG의 소유자 노드가 변경되면 보존 설정에 따라 백업이 수행되고 이전 소유자 노드의 백업은 유지됩니다. AG에 대한 보존은 노드 레벨에서만 적용할 수 있습니다.</block>
   <block id="1947481e76eb40f4adf8f5246fa95ff6" category="admonition">리소스 그룹을 생성하는 동안 백업 작업의 스케줄(시작 날짜, 종료 날짜 및 빈도)을 지정할 수 있습니다. 이렇게 하면 동일한 정책 및 백업 빈도를 공유하는 리소스 그룹을 생성할 수 있지만 각 정책에 서로 다른 백업 스케줄을 할당할 수 있습니다.</block>
   <block id="9bbf41d74c8f89f293d3299ea7bebf83" category="paragraph">마지막 &lt;number&gt;일간의 전체 백업 기간 * 에 적용할 수 있는 로그 백업 보존 옵션을 선택하고 로그 백업 사본을 보관할 일 수를 지정합니다.</block>
-  <block id="f2d35fb96ac070e63c88b1b43cf8c70b" category="inline-link">SnapCenter은 데이터베이스의 스냅샷 복사본을 유지합니다</block>
-  <block id="96df6a4d32e4546cfd055ffa3e9a7097" category="paragraph"><block ref="96df6a4d32e4546cfd055ffa3e9a7097" category="inline-link-rx"></block></block>
   <block id="b62913a5294dae473801568644e4e8a8" category="paragraph">다른 볼륨(SnapMirror)에 백업 세트의 미러 복사본을 생성하려면 이 옵션을 선택합니다.</block>
   <block id="289c48679623091e500c33f4b820d032" category="paragraph">스냅샷 복사본을 생성한 후 SnapVault를 업데이트합니다</block>
   <block id="1701175190dfd6dd06812a1b97af8f95" category="paragraph">예를 들어 스크립트를 실행하여 SNMP 트랩을 업데이트하고, 경고를 자동화하고, 로그를 보낼 수 있습니다.</block>
@@ -5124,7 +5121,6 @@
   <block id="57af7cc9669227d9ac6afec5db802561" category="paragraph">모든 대상에서 * 아카이브 로그 삭제 * 를 선택합니다.</block>
   <block id="be859d432cb8f72f5fb9b4c1622d56b1" category="paragraph">백업의 일부인 로그 대상에서 아카이브 로그를 삭제합니다</block>
   <block id="3330083979ff2e07d7e4609ee2228f08" category="paragraph">백업에 포함된 대상에서 * 아카이브 로그 삭제 * 를 선택합니다.</block>
-  <block id="9696f79f02f1b72ee2751fa3ac8cee1b" category="admonition">백업의 일부로 아카이브 로그 파일을 선택한 경우에만 아카이브 로그 백업을 보존할 수 있습니다.</block>
   <block id="92690dd16a9c4d48908bc7f3eaf042ac" category="list-text">스크립트 페이지에서 백업 작업 전후에 실행할 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
   <block id="ffb3ae9f69a62e97d1deccf8e6b8f1ff" category="paragraph">처방과 소인을 _ /var/opt/snapcenter/spl/scripts_ 또는 이 경로 내의 폴더에 저장해야 합니다. 기본적으로 _/var/opt/snapcenter/SPL/scripts_path가 채워집니다. 스크립트를 저장하기 위해 이 경로 내에 폴더를 만든 경우 경로에 해당 폴더를 지정해야 합니다.</block>
   <block id="2a42686c7770b2abb82f8585c1d619f6" category="paragraph">SnapCenter에서는 처방과 PS를 실행할 때 미리 정의된 환경 변수를 사용할 수 있습니다. <block ref="19ee13ac908508518644ae05560b35e5" category="inline-link-macro-rx"></block></block>
@@ -6551,8 +6547,6 @@
   <block id="619f22faf39c2dfe9a11af29647bb1a6" category="list-text">최근 &lt;number&gt;일 * 에 적용할 수 있는 로그 백업 보존 옵션을 선택하고 보존할 일 수를 지정합니다. 이 제한에 근접하면 이전 복사본을 삭제할 수 있습니다.</block>
   <block id="fe9e179b8597c5b1e7f1e2ff0644a5c8" category="open-title">특정 일 수입니다</block>
   <block id="82c2224d099110596a9863d056598afe" category="paragraph">백업 사본을 특정 기간 동안 보관합니다.</block>
-  <block id="92ac5fc0212c94ee50e6dc85913caeec" category="example-title">예제 보기</block>
-  <block id="8047dd542f0833c625160d18deaef831" category="paragraph">Set-SmPolicy-PolicyName 'newpol' - PolicyType 'Backup' - PluginPolicyType 'CSQL' - sqlbackuptype 'FullBackupAndLogBackup' - RetenionSettings@{BackupType='DATA'; ScheduleType='Hourly'; RetentionCount = 2}, @{BackupenetSnapshot'; ScheduleType = 'ScheduleReturetEnretionCount'</block>
   <block id="df5624cba097e4a1613f2162cfe02d72" category="open-title">SnapMirror를 업데이트합니다</block>
   <block id="4fbf861fa73d7c46a9d919de9dba7f88" category="paragraph">로컬 스냅샷 복사본을 생성한 후 SnapMirror를 업데이트합니다.</block>
   <block id="721dcaba6ffe06898a1264f811fd7874" category="open-title">SnapVault를 업데이트합니다</block>
@@ -7035,7 +7029,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="7389de2f41b1c6eb64e4d894ab05e286" category="paragraph">SnapLock가 SnapLock 볼트라고 하는 ONTAP의 보조 버전에서만 구성된 경우 토폴로지 페이지에서 * 새로 고침 * 버튼을 클릭하면 ONTAP에서 검색된 보조 시스템의 잠금 기간이 새로 고쳐집니다.</block>
   <block id="d5d1fb88800eaa5cdf83e2dae3c93633" category="inline-link">볼트 대상에서 WORM에 스냅샷 복사본을 커밋합니다</block>
   <block id="64c2ad2359ef41b8550053e63b4db5d2" category="paragraph">SnapLock 볼트에 대한 자세한 내용은 을 참조하십시오<block ref="8b200d34c0f23901ee8d0559f7380d4b" category="inline-link-rx"></block></block>
-  <block id="86b78accb82bf0596de946657114e7dd" category="paragraph">스냅샷 복사본 잠금 기간을 선택하고 일, 개월 또는 연도를 선택합니다.</block>
   <block id="cad9d181a2b84fefcf0bef1326b5660c" category="paragraph">보조 복제 중에 SnapLock 만료 시간에 운영 SnapLock 만료 시간이 로드됩니다.</block>
   <block id="08ec8ae585abf03648f1d4e2cb173c27" category="paragraph">토폴로지 페이지에서 * 새로 고침 * 버튼을 클릭하면 ONTAP에서 검색된 2차 및 1차 SnapLock 만료 시간이 새로 고쳐집니다.</block>
   <block id="40b141d81ebc81d0277454ddd95983be" category="paragraph">필요 시 백업 후 * Refresh * 버튼을 클릭하면 백업 또는 클론의 세부 정보가 새로 고쳐집니다.</block>
@@ -7506,12 +7499,9 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="4fcec4fe97075a54e91b04a9e79f56ff" category="list-text">스냅샷 잠금 기간을 지정하면 보존 기간이 만료될 때까지 스냅샷이 삭제되지 않습니다. 이로 인해 정책에 지정된 개수보다 많은 수의 스냅샷이 보존될 수 있습니다.</block>
   <block id="f2c85d871e7c5ae1520349e8a3869fea" category="list-text">ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.</block>
   <block id="cee00ab879a477aea09f4b1f404b14fc" category="paragraph">특정 수의 스냅샷을 유지합니다</block>
-  <block id="b19465911649130b0ad9e7ed87b43f2f" category="paragraph">유지할 스냅샷 복사본 합계 * 를 선택한 다음 보관할 스냅샷 수를 지정합니다.</block>
   <block id="7537e0d42ad63b5bae18964aee575640" category="paragraph">스냅샷 수가 지정된 수를 초과하면 가장 오래된 복제본이 먼저 삭제되고 스냅샷이 삭제됩니다.</block>
   <block id="95dfd611f9419ea2abdea4d84377aeab" category="admonition">SnapVault 복제를 설정하려면 보존 수를 2 이상으로 설정해야 합니다. 보존 횟수를 1로 설정하면 새 스냅샷이 타겟으로 복제될 때까지 첫 번째 스냅샷이 SnapVault 관계에 대한 참조 스냅샷이기 때문에 보존 작업이 실패할 수 있습니다.</block>
   <block id="298d4bea409e146b0187ec130a39fb72" category="paragraph">스냅샷을 특정 기간 동안 보관합니다</block>
-  <block id="e736f4106d35f31cff1a51f091e56c06" category="paragraph">스냅샷 복사본 유지 * 를 선택한 다음 스냅샷을 삭제하기 전에 보존할 일 수를 지정합니다.</block>
-  <block id="7cd1d77689881addd5facf23970563df" category="paragraph">Snapshot locking period(스냅샷 잠금 기간) 를 선택하고 일, 월 또는 년을 선택합니다.</block>
   <block id="7630e21f8142849489483b7354d0643a" category="paragraph">ONTAP의 보호 관계가 미러 및 볼트 유형이고 이 옵션만 선택하는 경우, 기본 볼륨에서 생성된 스냅샷은 대상으로 전송되지 않고 대상에 나열됩니다. 복원 작업을 수행하기 위해 대상에서 이 스냅샷을 선택하면 다음 오류 메시지가 표시됩니다. 선택한 볼트 백업/미러링된 백업에 대해 보조 위치를 사용할 수 없습니다.</block>
   <block id="d2f577cb0769d7c31f2785dd590b9f27" category="paragraph">SnapLock 볼트에 대한 자세한 내용은 볼트에서 WORM에 스냅샷 커밋 을 참조하십시오
 목적지</block>
@@ -7566,7 +7556,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="40e1269ad4c969b2e34a183b8fe9f42e" category="list-text">각 스냅샷에 대해 백업해야 하는 최대 데이터베이스 수를 입력합니다.
 기본값은 100입니다</block>
   <block id="8822b1db0297028652e02db3e4af760f" category="paragraph">특정 수의 스냅샷만 보존합니다.</block>
-  <block id="149450cb3a9e3ecae5eaba7a4573516f" category="paragraph">선택한 스냅샷 레이블에 따라 ONTAP은 해당 레이블과 일치하는 보조 스냅샷 보존 정책을 적용합니다.</block>
   <block id="dccc8011e6f51f002aae83ff00479c7d" category="admonition">ONTAP에서 SnapMirror 보존 정책을 구성하여 보조 스토리지가 스냅샷의 최대 제한에 도달하지 않도록 해야 합니다.</block>
   <block id="610559e33fd2c1c02990a8421918d746" category="list-text">내부 데이터베이스 스냅샷(TABLOCK)을 사용하는 대신 검사를 제한하고 잠금을 가져옵니다.</block>
   <block id="3ec8d83deb8081e2273aae284a9a87c1" category="list-text">내부 데이터베이스 스냅샷 복사본(TABLOCK)을 사용하는 대신 * 검사를 제한하고 잠금을 획득합니다. * 를 선택하여 내부 데이터베이스 스냅샷을 사용하는 대신 검사를 제한하고 잠금을 획득합니다.</block>
@@ -7582,7 +7571,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="0bfdfbd1ef58fc826a8deec759820453" category="summary">SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이터베이스를 백업하려면 데이터베이스, SQL Server 인스턴스 및 Availability Groups\(AG\)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 기술은 리소스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성하는 데 사용됩니다.</block>
   <block id="b4d3eba987f9528647b8ea2102ac055f" category="paragraph">SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이터베이스를 백업하려면 데이터베이스, SQL Server 인스턴스 및 AG(가용성 그룹)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 기술은 리소스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성하는 데 사용됩니다.</block>
   <block id="37467ff0195d6765df22bdc34e035d04" category="list-text">미러 또는 소산 2차 스토리지에 스냅샷을 복제하는 경우, SnapCenter 관리자가 소스 볼륨과 타겟 볼륨 모두에 대해 SVM을 할당해야 합니다.</block>
-  <block id="099321e862ba2170dc1c3e6b1f02ef72" category="paragraph">ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅샷에서 생성된 클론은 SnapLock 볼트 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후 클론을 수동으로 정리해야 합니다.</block>
   <block id="1635764350a12c1ff0349008881e57dd" category="paragraph">스냅샷 잠금 기간</block>
   <block id="3c2828ba75d966a57611ae076f53de62" category="paragraph">로컬 스냅샷을 생성한 후 SnapMirror를 업데이트합니다</block>
   <block id="d515aa4634219e7d2319e5e18234ff1a" category="paragraph">로컬 스냅샷을 생성한 후 SnapVault를 업데이트합니다</block>
@@ -9039,8 +9027,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="51c4ef6c91626ee6bcba80f0f3a8fd59" category="list-text">스냅샷 및 복제 페이지에서 다음 작업을 수행합니다.</block>
   <block id="e70a56107961334e45231ff9d5f1bda8" category="list-text">스냅샷 설정 섹션에서 다음 작업을 수행합니다.</block>
   <block id="d21b6c7742082098834aa7ac817fc423" category="paragraph">복제본 유지 기간 * 을 선택한 다음 스냅샷을 삭제하기 전에 보존할 일 수를 지정합니다.</block>
-  <block id="a37760bcf65acb1e666f7880b234b107" category="paragraph">운영 스냅샷 복사본 잠금 기간</block>
-  <block id="8c4df87df7072888db58abdf493c82ba" category="paragraph">기본 스냅샷 잠금 기간을 지정하려면 스냅샷 복사본 잠금 기간을 선택하고 일, 월 또는 연도를 선택합니다.</block>
   <block id="37f001fbef310181d8f4577b4c03a798" category="paragraph">보조 스냅샷 잠금 기간입니다</block>
   <block id="2e37f31a39b30876eff1858ef3d01783" category="paragraph">Secondary snapshot copy locking period * 를 선택하고 일, 월 또는 연도를 선택합니다.</block>
   <block id="49d10f32e6045f6eb1e87608c6663036" category="list-text">Select secondary replication options 섹션에서 다음 보조 복제 옵션 중 하나 또는 둘 다를 선택합니다.</block>
@@ -9062,13 +9048,11 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="8945d91112d6305825278287a12463cf" category="list-text">스냅샷 및 복제 페이지에서 다음 단계를 수행합니다.</block>
   <block id="26c5fd73c2f414e21745bac4c9061520" category="list-text">스냅샷 및 복제 페이지에서 백업 유형 및 백업 유형 페이지에서 선택한 스케줄 유형에 대한 보존 설정을 지정합니다.</block>
   <block id="eff059db75a3581eefbc224fcb754955" category="paragraph">유지할 사본 * 을 선택한 다음 유지할 스냅샷 수를 지정합니다.</block>
-  <block id="75653881b192c0f71e63eff99df780b0" category="paragraph">보조 스냅샷 복사본 잠금 기간</block>
   <block id="ad6c4cefab999b5d3b0c637f45be0c1e" category="list-text">스냅샷 복사본 기반 백업의 경우 보조 복제 옵션 선택 섹션에서 다음 보조 복제 옵션 중 하나 또는 둘 다를 선택합니다.</block>
   <block id="c0cfc52080e2a067b98e24711aebb894" category="paragraph"><block ref="c0cfc52080e2a067b98e24711aebb894" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90f9660dfd88af9a8e7316dbe773ef8d" category="list-text">Custom backup settings(사용자 지정 백업 설정) 섹션에서 플러그인에 전달해야 하는 특정 백업 설정을 키 값 형식으로 제공합니다.</block>
   <block id="8ec0c5b593d331f0bf00c2469725e303" category="list-text">Snapshot settings(스냅샷 설정) 섹션에서 * Backup Type * 페이지에서 선택한 백업 유형 및 스케줄 유형에 대한 보존 설정을 지정합니다.</block>
   <block id="b794f07b4da865ba0ea5b2e45e40e2d7" category="list-text">정책 레이블을 선택합니다.</block>
-  <block id="d8321bde9335ee452a7c54b922588669" category="paragraph">선택한 정책 레이블에 따라 ONTAP은 해당 레이블과 일치하는 보조 스냅샷 보존 정책을 적용합니다.</block>
   <block id="40760df99ad1881cc4099caa2853c64b" category="inline-link-macro">토폴로지 페이지에서 MySQL 리소스 관련 백업 및 클론을 봅니다</block>
   <block id="81a788b178a1784f4d3b3c98f0a5c0fd" category="paragraph">을 <block ref="6710edbd3b148f1744e483f97807e560" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="c708e7888448bf0b8b9020a354adbf4d" category="doc">리소스 그룹을 생성하고 ASA R2 시스템에서 MySQL 리소스에 대한 2차 보호를 활성화합니다</block>
@@ -9095,7 +9079,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="5c72942e47dd59d535a0243e01b915c5" category="paragraph">검색 상자에 자원 그룹 이름을 입력하거나 * * 를 클릭한 다음 태그를 선택하여 자원 그룹을 검색할 수<block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>있습니다. 그런 다음 * * 를 클릭하여 필터 창을 닫을 수<block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>있습니다.</block>
   <block id="75dd626c2900bf0ae903a1af9ff5bb4d" category="list-text">백업 유형 및 복제 페이지에서 다음 단계를 수행합니다.</block>
   <block id="66e5ec1722ee55d19932c5bc96d7c5c3" category="list-text">Policy 레이블을 선택합니다.</block>
-  <block id="5a448dc3de839f6ccafc3c5c79832c90" category="admonition">2차 스냅샷 복사본 잠금 기간 * 에 대한 2차 복제 옵션을 선택해야 적용됩니다. 보조 스냅샷 복사본 잠금 기간 * 옵션은 보존 페이지에서 사용할 수 있습니다.</block>
   <block id="41b7523d6eb2b3d6f06599d202b36bc2" category="paragraph">운영 스냅샷 잠금 기간입니다</block>
   <block id="bdb12321d80003b575f05b8f7554d39f" category="paragraph">Primary snapshot copy locking period * 를 선택하고 일, 월 또는 연도를 선택합니다.</block>
   <block id="a76a81f87730cc587fdae2f40fc9d18b" category="paragraph"><block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>호스트 이름 및 Exchange Server를 클릭하여 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭하여 필터 창을 닫을 수 <block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block> 있습니다.</block>
@@ -9132,8 +9115,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="1524074fad20a78ac464c12b7c0ab1be" category="paragraph"><block ref="1524074fad20a78ac464c12b7c0ab1be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5116143fc568cf90dd6d42f66fce7458" category="list-text">스냅샷 및 복제 페이지에서 다음 단계를 수행합니다.</block>
   <block id="eb1d9d00c6e807619cab9ea37bcf137a" category="list-text">Data snapshot retention settings 섹션에서 백업 유형 및 백업 유형 페이지에서 선택한 스케줄 유형에 대한 보존 설정을 지정합니다.</block>
-  <block id="a5f1bd1f3375b552f48386ca5d05e45a" category="paragraph">운영 스냅샷 복사본 잠금 기간을 지정하려면 * Primary snapshot copy locking period * 를 선택하고 일, 월 또는 연도를 선택합니다.</block>
-  <block id="2c1e6867a6e3b711ba7c5a6b89167c44" category="paragraph">보조 스냅샷 복사본 잠금 기간을 지정하려면 * 보조 스냅샷 복사본 잠금 기간 * 을 선택하고 일, 월 또는 연도를 선택합니다.</block>
   <block id="218bd996ffd443419d26b630b917d4da" category="list-text">아카이브 로그 스냅숏 보존 설정 섹션에서 백업 유형 및 백업 유형 페이지에서 선택한 일정 유형에 대한 보존 설정을 지정합니다.</block>
   <block id="17e51acfcdd274bfcfeb54ea63213736" category="list-text">정책 레이블을 선택합니다.</block>
   <block id="e38051a0d9227426e5f8160402a78211" category="paragraph">명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도<block ref="a6987fd1f481831496b6e000c63cd27d" category="inline-link-rx"></block>있습니다.</block>
@@ -9165,7 +9146,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="955e59c39a685284fed2337a93e106ba" category="admonition">기본적으로 보존 횟수 값은 2로 설정됩니다. 보존 횟수를 1로 설정하면 새 스냅샷이 타겟으로 복제될 때까지 첫 번째 스냅샷이 SnapVault 관계에 대한 참조 스냅샷이기 때문에 보존 작업이 실패할 수 있습니다.</block>
   <block id="de89a185c7194c68782b531cfd26fd28" category="list-text">스냅샷을 보관할 시간입니다</block>
   <block id="baf9bfd10581e4153f7ec33ae67cdfc2" category="list-text">스냅샷을 삭제하기 전에 보관할 일 수를 지정하려면 * 복제본 유지 * 를 선택합니다.</block>
-  <block id="d2f6ae7e40615559468909d9d4717552" category="list-text">스냅샷 레이블을 선택합니다</block>
   <block id="6eeddb49abf2b478b28ef816bcc9d4b5" category="section-title">7단계: 보조 복제 옵션을 구성합니다</block>
   <block id="81acf3e2ad702e58e6f17b488f420f60" category="paragraph">을 <block ref="a3a1de85b36025c39faacf264d5c19f2" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="ef37f84ddc9d52086dc669514422940b" category="section-title">8단계: 스크립트 설정을 구성합니다</block>
@@ -9178,7 +9158,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="ea64a472e78bd4b210304f394bbe8e3a" category="list-text">를 클릭한 <block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>다음 호스트 이름과 Unix 파일 시스템을 선택하여 리소스를 필터링합니다.</block>
   <block id="fe87c152ea8a027207bc606ca85f3c4c" category="list-text">백업 설정을 지정합니다.</block>
   <block id="9cda14399e82414944fcea8fffd39485" category="list-text">보존 페이지에서 백업 유형 및 백업 및 복제 페이지에서 선택한 스케줄 유형에 대한 보존 설정을 지정합니다.</block>
-  <block id="5f455fba952d07764d32e75250b5ba52" category="paragraph">운영 스냅샷의 스냅샷 잠금 기간을 지정하려면 * Primary snapshot copy locking period * 를 선택하고 일, 월 또는 연도를 선택합니다.</block>
   <block id="68cdec5e109e43073b7bf9bf31a79009" category="doc">리소스 그룹을 생성하고 ASA R2 시스템에서 Windows 파일 시스템에 대한 보조 보호를 설정합니다</block>
   <block id="6f939f8b76abcb6333b6300620a5e0f3" category="image-alt">백업 워크플로우</block>
   <block id="6af63e081593a62ed023786db3b2e4ee" category="paragraph">요구 사항을 충족하는 기존 정책이 없는 경우 기존 정책을 복사하여 수정하거나 를 클릭하여 정책 마법사를 시작하여 새 정책을 생성할 수 있습니다. <block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block> 요구 사항을 충족하는 기존 정책이 없는 경우 기존 정책을 복사하여 수정하거나 를 클릭하여 정책 마법사를 시작하여 새 정책을 생성할 수 있습니다. <block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block></block>
@@ -9248,7 +9227,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="bf1764b9ff5a6e7b28ab3b2166bff7a4" category="admonition">NetApp ONTAP는 2차 위치에서 데이터 이동 없이 복원을 지원합니다.</block>
   <block id="cdc0da196ab05c60eaebdca9a2459cd1" category="list-text">FlexClone 볼륨 분할 작업에 대한 자세한 내용은 을 참조하십시오. <block ref="a740171a60876518d945f2e24ddd79f9" category="inline-link-rx"></block></block>
   <block id="dc4d7bf5602b12335597fd5350deab23" category="admonition">최대 보존 값은 1018입니다. 보존이 기본 NetApp ONTAP 버전에서 지원하는 값보다 높은 값으로 설정된 경우 백업이 실패합니다.</block>
-  <block id="ee96dd48de878c0191d0701d853dd514" category="paragraph">이 예에서는 로그 스냅샷 보존을 2로 설정합니다.</block>
   <block id="ab6d9fe11358cebc1d2cc02fa1c47496" category="list-text">Azure에서 서비스 보안 주체를 만들었는지 확인합니다.</block>
   <block id="6f346066b074941885d0989051206e4e" category="list-text">사용 가능한 서비스 주체와 연결된 테넌트 ID, 클라이언트 ID 및 암호 키가 있는지 확인합니다.</block>
   <block id="db4af27eace345776f29f9a3dbb3b5ff" category="list-text">테넌트 ID는 Entra ID에 대한 개요 페이지의 Azure Portal에서 확인할 수 있습니다.</block>
@@ -9593,4 +9571,17 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="0f6e39c02439e0ed8443edc2be967e14" category="paragraph">cmdlet에 대한 정보는 다음을 참조하세요.<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block> .</block>
   <block id="87592b536cbfa9f8d915045e1c7873f1" category="paragraph"><block ref="2c04bf704e48a12576c63de2102c1c43" prefix="" category="inline-code"></block></block>
   <block id="fa091713eff4575bdb9b210ff2415c9c" category="paragraph"><block ref="b883ee9ba55ef21bf483fd5986981580" prefix="" category="inline-code"></block></block>
+  <block id="971b3c1d99a5aa6f2b187690d01d852c" category="paragraph">스냅샷 복사 잠금 기간</block>
+  <block id="6b98a909e75e4d7d49461b7870f270bb" category="paragraph">*스냅샷 복사 잠금 기간*을 선택하고 일, 월 또는 년을 지정합니다.</block>
+  <block id="7f9c21c186057efab059e539477e7cb8" category="list-text">정책 라벨을 지정합니다.</block>
+  <block id="2c5bee50fa6fe5f3871c65e5847d0382" category="paragraph">원격 복제를 위해 기본 스냅샷에 SnapMirror 레이블을 할당하면 기본 스냅샷이 SnapCenter 에서 ONTAP 보조 시스템으로 스냅샷 복제 작업을 오프로드할 수 있습니다.  정책 페이지에서 SnapMirror 또는 SnapVault 옵션을 활성화하지 않고도 이 작업을 수행할 수 있습니다.</block>
+  <block id="4dd3845fa1427b8270fec6409779e3ce" category="paragraph">스냅샷 수가 지정된 수를 초과하면 가장 오래된 스냅샷이 먼저 삭제됩니다.</block>
+  <block id="9f4dc04b028094d2b50c905cb66cb584" category="admonition">최대 보존 값은 1018입니다.  보존 기간이 ONTAP 버전에서 지원하는 것보다 높은 값으로 설정된 경우 백업이 실패합니다.</block>
+  <block id="1df9ce8f8ee70d4668259711a2f20cd1" category="paragraph">*스냅샷 복사 잠금 기간*을 선택하고 일, 월 또는 년을 지정합니다.</block>
+  <block id="83c353dab613896fa690239dff46e104" category="admonition">최대 보존 값은 1018입니다.  보존 기간이 ONTAP 버전에서 지원하는 것보다 높은 값으로 설정된 경우 백업이 실패합니다.</block>
+  <block id="3300240ffba2f4633a53323d37d6b7e1" category="paragraph">+ 스냅샷 잠금 기간을 지정하면 보존 기간이 만료될 때까지 스냅샷이 삭제되는 것을 방지할 수 있습니다.  이를 통해 정책에 지정된 수보다 더 많은 수의 스냅샷을 보존할 수 있습니다.</block>
+  <block id="dca9965d6a6b336628078d10c70a83d6" category="paragraph">+ ONTAP 9.12.1 이하 버전의 경우 복원의 일부로 SnapLock Vault 스냅샷에서 생성된 복제본은 SnapLock Vault 만료 시간을 상속합니다.  스토리지 관리자는 SnapLock 만료 시간 이후에 복제본을 수동으로 정리해야 합니다.</block>
+  <block id="bd4112ff24244ca0e669eb1f5a3bae9b" category="paragraph">*스냅샷 복사 잠금 기간*을 선택하고 기간을 일, 월 또는 년 단위로 지정합니다.</block>
+  <block id="4b0801e52b058b04e3451f31a90447e6" category="list-text">*스냅샷 복사 잠금 기간*을 선택하고 기간을 일, 월 또는 년 단위로 지정합니다.</block>
+  <block id="5c2f59b69b9e772c86d6723464bda765" category="paragraph">스냅샷 잠금 기간을 선택하고 기간을 일, 월 또는 년으로 지정합니다.</block>
 </blocks>
