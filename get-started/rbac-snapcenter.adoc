@@ -11,18 +11,18 @@ summary: 'ONTAP RBAC(역할 기반 액세스 제어) 및 SnapCenter 권한을 �
 
 
 [role="lead"]
-ONTAP RBAC(역할 기반 액세스 제어) 및 SnapCenter 권한을 사용하여 SnapCenter 관리자는 SnapCenter 리소스에 대한 제어 권한을 다른 사용자 또는 사용자 그룹에 위임할 수 있습니다. 이러한 중앙 관리형 액세스를 통해 애플리케이션 관리자는 위임된 환경 내에서 안전하게 작업할 수 있습니다.
+SnapCenter 역할 기반 액세스 제어(RBAC) 및 ONTAP 권한을 통해 SnapCenter 관리자는 사용자 또는 그룹에 리소스 액세스 권한을 할당할 수 있습니다.  중앙에서 관리되는 액세스를 통해 애플리케이션 관리자는 지정된 환경 내에서 안전하게 작업할 수 있습니다.
 
-역할을 생성 및 수정할 수 있으며 언제든지 사용자에게 리소스 액세스를 추가할 수 있습니다. 그러나 SnapCenter를 처음 설정할 때는 최소한 Active Directory 사용자 또는 그룹을 역할에 추가한 다음 해당 사용자 또는 그룹에 대한 리소스 액세스를 추가해야 합니다.
+역할을 생성하거나 수정하고 사용자에게 리소스 액세스 권한을 추가해야 합니다.  처음으로 SnapCenter 설정할 때 Active Directory 사용자나 그룹을 역할에 추가하고 해당 사용자나 그룹에 리소스를 할당합니다.
 
 
-NOTE: SnapCenter를 사용하여 사용자 또는 그룹 계정을 만들 수 없습니다. 운영 체제 또는 데이터베이스의 Active Directory에서 사용자 또는 그룹 계정을 만들어야 합니다.
+NOTE: SnapCenter 사용자나 그룹 계정을 생성하지 않습니다.  운영 체제나 데이터베이스의 Active Directory에서 사용자나 그룹 계정을 만듭니다.
 
 
 
 == SnapCenter의 RBAC 유형
 
-SnapCenter는 다음과 같은 유형의 역할 기반 액세스 제어를 사용합니다.
+SnapCenter 다음과 같은 유형의 역할 기반 액세스 제어를 지원합니다.
 
 * SnapCenter RBAC
 * 애플리케이션 레벨 RBAC
@@ -34,7 +34,7 @@ SnapCenter는 다음과 같은 유형의 역할 기반 액세스 제어를 사�
 
 === SnapCenter RBAC
 
-SnapCenter에는 미리 정의된 역할이 있으며 이러한 역할에 사용자 또는 사용자 그룹을 할당할 수 있습니다. 사전 정의된 역할은 다음과 같습니다.
+SnapCenter 에는 미리 정의된 역할이 있으며 이러한 역할에 사용자나 그룹을 할당할 수 있습니다.
 
 * SnapCenter 관리자 역할
 * 앱 백업 및 클론 관리자 역할
@@ -42,16 +42,16 @@ SnapCenter에는 미리 정의된 역할이 있으며 이러한 역할에 사용
 * 인프라 관리자 역할
 
 
-사용자에게 역할을 할당할 때 SnapCenterAdmin 역할을 할당하지 않은 경우 해당 사용자와 관련된 작업만 작업 페이지에 표시됩니다.
+사용자에게 역할을 할당하면 SnapCenter 사용자에게 SnapCenterAdmin 역할이 없는 한 해당 사용자와 관련된 작업을 작업 페이지에 표시합니다.
 
 새 역할을 만들고 사용 권한 및 사용자를 관리할 수도 있습니다. 사용자 또는 그룹에 권한을 할당하여 호스트, 스토리지 접속 및 리소스 그룹과 같은 SnapCenter 객체를 액세스할 수 있습니다.
 
 동일한 포리스트 내의 사용자와 그룹 및 다른 포리스트에 속한 사용자에게 RBAC 권한을 할당할 수 있습니다. 포리스트 전체의 중첩된 그룹에 속하는 사용자에게는 RBAC 권한을 할당할 수 없습니다.
 
 
-NOTE: 사용자 지정 역할을 생성하는 경우 해당 역할에 SnapCenterAdmin 역할의 모든 권한이 포함되어 있어야 합니다. 호스트 추가 또는 호스트 제거 등의 일부 권한만 복사하는 경우에는 해당 작업을 수행할 수 없습니다.
+NOTE: 사용자 지정 역할을 만들 때 SnapCenterAdmin 역할의 모든 권한이 포함되어 있는지 확인하세요.  일부 권한만 복사하면 SnapCenter 에서 모든 작업을 수행할 수 없습니다.
 
-사용자는 로그인 시 그래픽 사용자 인터페이스(GUI) 또는 PowerShell cmdlet을 사용하여 인증을 제공해야 합니다. 사용자가 둘 이상의 역할의 구성원인 경우 로그인 자격 증명을 입력한 후 사용할 역할을 지정하라는 메시지가 표시됩니다. 또한 사용자는 API를 실행하기 위한 인증을 제공해야 합니다.
+사용자는 사용자 인터페이스나 PowerShell cmdlet을 통해 로그인할 때 인증을 받아야 합니다.  사용자에게 여러 역할이 있는 경우 로그인 후 역할을 선택합니다. API를 실행하려면 인증도 필요합니다.
 
 
 
@@ -59,9 +59,9 @@ NOTE: 사용자 지정 역할을 생성하는 경우 해당 역할에 SnapCenter
 
 SnapCenter는 자격 증명을 사용하여 권한이 있는 SnapCenter 사용자에게 응용 프로그램 수준 권한도 있는지 확인합니다.
 
-예를 들어, SQL Server 환경에서 데이터 보호 작업을 수행하려면 적절한 Windows 또는 SQL 자격 증명을 사용하여 자격 증명을 설정해야 합니다. SnapCenter 서버는 두 가지 방법 중 하나를 사용하여 설정된 자격 증명을 인증합니다. ONTAP 스토리지의 Windows 파일 시스템 환경에서 데이터 보호 작업을 수행하려면 SnapCenter 관리 역할에 Windows 호스트에 admin Privileges가 있어야 합니다.
+예를 들어, SQL Server 환경에서 데이터 보호 작업을 수행하려면 올바른 Windows 또는 SQL 자격 증명을 설정합니다.  ONTAP 스토리지의 Windows 파일 시스템 환경에서 데이터 보호 작업을 수행하려면 SnapCenter 관리자 역할에 Windows 호스트에 대한 관리자 권한이 있어야 합니다.
 
-마찬가지로 Oracle 데이터베이스에서 데이터 보호 작업을 수행하고 데이터베이스 호스트에서 운영 체제(OS) 인증을 사용하지 않도록 설정한 경우 Oracle 데이터베이스 또는 Oracle ASM 자격 증명을 사용하여 자격 증명을 설정해야 합니다. SnapCenter 서버는 작업에 따라 이러한 방법 중 하나를 사용하여 설정된 자격 증명을 인증합니다.
+마찬가지로, Oracle 데이터베이스에서 데이터 보호 작업을 수행하려는 경우 데이터베이스 호스트에서 운영 체제(OS) 인증이 비활성화된 경우 Oracle 데이터베이스 또는 Oracle ASM 자격 증명으로 자격 증명을 설정해야 합니다.  SnapCenter 서버는 작업에 따라 다음 방법 중 하나를 사용하여 설정된 자격 증명을 인증합니다.
 
 
 
@@ -69,24 +69,21 @@ SnapCenter는 자격 증명을 사용하여 권한이 있는 SnapCenter 사용�
 
 VM 일관성 있는 데이터 보호를 위해 SnapCenter VMware 플러그인을 사용하는 경우 vCenter Server는 추가 RBAC 수준을 제공합니다. SnapCenter VMware 플러그인은 vCenter Server RBAC와 ONTAP RBAC를 모두 지원합니다. https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html["자세한 정보"^]
 
-|===
+참고: NetApp SnapCenter Plug-in for VMware vSphere 작업에 대해 하나의 ONTAP 역할을 만들고 필요한 모든 권한을 할당할 것을 권장합니다.
 
-
-| * 모범 사례: * VMware vSphere 운영을 위한 SnapCenter 플러그인에 대해 하나의 ONTAP 역할을 생성한 후 필요한 모든 권한을 할당하는 것이 좋습니다. 
-|===
 
 
 === ONTAP 권한
 
-스토리지 시스템을 액세스하는 데 필요한 권한이 있는 vsadmin 계정을 생성해야 합니다. link:../install/task_add_a_user_or_group_and_assign_role_and_assets.html["자세한 정보"]
+스토리지 시스템에 액세스하는 데 필요한 권한이 있는 vsadmin 계정을 만들어야 합니다.link:../install/task_add_a_user_or_group_and_assign_role_and_assets.html["자세한 정보"]
 
 
 
 == 사전 정의된 SnapCenter 역할에 할당된 권한입니다
 
-사용자를 역할에 추가할 때는 스토리지 가상 시스템(SVM) 통신을 지원하기 위해 StorageConnection 권한을 할당하거나 SVM을 사용할 수 있도록 SVM을 사용자에게 할당해야 합니다. 스토리지 연결 권한을 사용하면 SVM 연결을 생성할 수 있습니다.
+역할에 사용자를 추가할 때 StorageConnection 권한을 할당하여 SVM(스토리지 가상 머신) 통신을 활성화하거나 사용자에게 SVM을 할당하여 SVM을 사용할 수 있는 권한을 부여합니다.  저장소 연결 권한을 통해 사용자는 SVM 연결을 생성할 수 있습니다.
 
-예를 들어, SnapCenter 관리자 역할을 가진 사용자는 SVM 연결을 생성하여 앱 백업 및 클론 관리 역할을 가진 사용자에게 할당할 수 있습니다. 이 역할은 기본적으로 SVM 연결을 생성하거나 편집할 권한이 없습니다. SVM이 연결되지 않으면 사용자는 백업, 클론 복제 또는 복원 작업을 완료할 수 없습니다.
+예를 들어, SnapCenter 관리자는 SVM 연결을 생성하고 이를 App Backup 및 Clone 관리자 사용자에게 할당할 수 있습니다. App Backup 및 Clone 관리자는 SVM 연결을 생성하거나 편집할 수 없습니다.  SVM 연결 없이는 사용자는 백업, 복제 또는 복원 작업을 수행할 수 없습니다.
 
 
 
@@ -376,7 +373,7 @@ App Backup and Clone Admin 역할에는 애플리케이션 백업 및 클론 관
 
 === 백업 및 클론 뷰어 역할
 
-백업 및 클론 뷰어 역할에는 모든 권한에 대한 읽기 전용 보기가 있습니다. 또한 이 역할에는 대시보드 검색, 보고 및 액세스에 대한 사용 권한이 설정되어 있습니다.
+백업 및 복제 뷰어 역할은 모든 권한에 대한 읽기 전용 보기 권한을 갖습니다.  이 역할에는 검색, 보고 및 대시보드 액세스에 대한 권한도 활성화되어 있습니다.
 
 |===
 | 권한 | 활성화됨 | 생성 | 읽기 | 업데이트 | 삭제 

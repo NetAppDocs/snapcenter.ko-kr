@@ -2312,7 +2312,6 @@
   <block id="644de64c921a575ddfcd3087ae6d3de1" category="list-text">SnapCenter 서버 관리자 Windows 자격 증명을 선택하고 * 확인 * 을 클릭합니다.</block>
   <block id="5b416e1633d16aad217a2e0fc2d097f8" category="doc">워크플로우 업그레이드</block>
   <block id="994e8a3ae2b587ba4467292fb5e6ba75" category="paragraph">SnapCenter의 각 릴리즈에는 업데이트된 SnapCenter 서버 및 플러그인 패키지가 포함되어 있습니다. 플러그인 패키지 업데이트는 SnapCenter 설치 프로그램과 함께 배포됩니다. SnapCenter에서 사용 가능한 업데이트를 확인하도록 구성할 수 있습니다.</block>
-  <block id="1942fea7712357c67be30cfd20652b93" category="paragraph">워크플로우는 SnapCenter 서버 및 플러그인 패키지를 업그레이드하는 데 필요한 여러 작업을 보여 줍니다.</block>
   <block id="f640c846348fd61e77b392f8bb721f0c" category="image-alt">워크플로우 업그레이드</block>
   <block id="1f3416d24aa4604f3bf013f7b5ba6d0f" category="summary">개별 플러그인 또는 플러그인 패키지가 더 이상 필요하지 않다고 결정한 경우 SnapCenter 인터페이스를 사용하여 제거할 수 있습니다.</block>
   <block id="76af7718f89458bae85fc299897539a1" category="doc">SnapCenter GUI를 사용하여 플러그인을 제거합니다</block>
@@ -3999,7 +3998,6 @@
   <block id="8544e54da381581f9b9e4e593c42cb57" category="list-text">응용 프로그램 볼륨 추가 * 를 클릭합니다.</block>
   <block id="3e98357302d4518e158bc9dc7f45c162" category="list-text">Name(이름) 필드에 애플리케이션 볼륨의 이름을 입력합니다.</block>
   <block id="53b78d17407010f7e0c4051f330998b4" category="list-text">호스트 이름 필드에 호스트 이름을 입력합니다.</block>
-  <block id="bc1281f9dd3caf1b8951ef83af9fbe38" category="paragraph">여러 스토리지 시스템을 추가할 수 있습니다.</block>
   <block id="80e5eb37566e84270d23254e8f050156" category="list-text">리소스 페이지의 * 보기 * 목록에서 * 응용 프로그램 볼륨 * 을 선택하여 추가한 모든 응용 프로그램 볼륨을 봅니다.</block>
   <block id="088ea09c5845b030ebf8ae5975d090cb" category="section-title">애플리케이션 볼륨을 수정합니다</block>
   <block id="6c6c48e7a3a56b7164aaa8b8eb204354" category="paragraph">백업이 생성되지 않은 경우 애플리케이션 볼륨을 추가하는 동안 지정한 모든 값을 수정할 수 있습니다. 백업이 생성된 경우 스토리지 시스템 세부 정보만 수정할 수 있습니다.</block>
@@ -5659,23 +5657,17 @@
   <block id="cd203ccd68b84de1c5df8fd890e104e0" category="cell">PB</block>
   <block id="ac22fdf0c10c83edf98e803174984090" category="cell">PB 페타바이트(TB x 1024 byes) 또는 페이비바이트</block>
   <block id="0e8b55402d6627c0f8102010e3494744" category="inline-link-macro">swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법</block>
-  <block id="8e9100a341414c9d65801258490fe489" category="cell">* 모범 사례: * VMware vSphere 운영을 위한 SnapCenter 플러그인에 대해 하나의 ONTAP 역할을 생성한 후 필요한 모든 권한을 할당하는 것이 좋습니다.</block>
   <block id="dd23acac46f17cbfd4d5541f8ee3c7a1" category="list-text">리소스 그룹</block>
   <block id="1a207e1c839db0b921558b34cc67a80d" category="list-text">스토리지 연결</block>
   <block id="2938c7f7e560ed972f8a4f68e80ff834" category="list-text">대시보드</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="list-text">마이그레이션</block>
   <block id="c3c73b7f9d382d2231b0aa3e8a26db67" category="list-text">작업 모니터</block>
   <block id="c89d1d1a076ae6db4420d478e9a43bd1" category="summary">ONTAP RBAC(역할 기반 액세스 제어) 및 SnapCenter 권한을 사용하면 SnapCenter 관리자가 역할을 만들고 액세스 권한을 설정할 수 있습니다. 이러한 중앙 관리형 액세스를 통해 애플리케이션 관리자는 위임된 환경 내에서 안전하게 작업할 수 있습니다.</block>
-  <block id="a6434cb33fd5968114b46f8371c99b97" category="paragraph">ONTAP RBAC(역할 기반 액세스 제어) 및 SnapCenter 권한을 사용하여 SnapCenter 관리자는 SnapCenter 리소스에 대한 제어 권한을 다른 사용자 또는 사용자 그룹에 위임할 수 있습니다. 이러한 중앙 관리형 액세스를 통해 애플리케이션 관리자는 위임된 환경 내에서 안전하게 작업할 수 있습니다.</block>
-  <block id="e8a9ea3436295dbce3f5e848ea8c441a" category="admonition">SnapCenter를 사용하여 사용자 또는 그룹 계정을 만들 수 없습니다. 운영 체제 또는 데이터베이스의 Active Directory에서 사용자 또는 그룹 계정을 만들어야 합니다.</block>
-  <block id="8b4e9abf70f654cf29a1dd56b5572032" category="paragraph">SnapCenter는 다음과 같은 유형의 역할 기반 액세스 제어를 사용합니다.</block>
   <block id="5e8182c0fb39e16fe0a96577565e2e28" category="list-text">SnapCenter RBAC</block>
   <block id="9624ca855be2906ad6628109f1d9e3d0" category="list-text">애플리케이션 레벨 RBAC</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="list-text">ONTAP 권한</block>
   <block id="57dc1aab3659c78a4e7752db4d4e652d" category="paragraph">동일한 포리스트 내의 사용자와 그룹 및 다른 포리스트에 속한 사용자에게 RBAC 권한을 할당할 수 있습니다. 포리스트 전체의 중첩된 그룹에 속하는 사용자에게는 RBAC 권한을 할당할 수 없습니다.</block>
-  <block id="f99af3f9d6fe830ae8bd2fc15f75f35f" category="paragraph">사용자는 로그인 시 그래픽 사용자 인터페이스(GUI) 또는 PowerShell cmdlet을 사용하여 인증을 제공해야 합니다. 사용자가 둘 이상의 역할의 구성원인 경우 로그인 자격 증명을 입력한 후 사용할 역할을 지정하라는 메시지가 표시됩니다. 또한 사용자는 API를 실행하기 위한 인증을 제공해야 합니다.</block>
   <block id="4621c32301e9db3796cade120966e4ac" category="paragraph">SnapCenter는 자격 증명을 사용하여 권한이 있는 SnapCenter 사용자에게 응용 프로그램 수준 권한도 있는지 확인합니다.</block>
-  <block id="1247a4f73aec617351c15da7677f2470" category="paragraph">마찬가지로 Oracle 데이터베이스에서 데이터 보호 작업을 수행하고 데이터베이스 호스트에서 운영 체제(OS) 인증을 사용하지 않도록 설정한 경우 Oracle 데이터베이스 또는 Oracle ASM 자격 증명을 사용하여 자격 증명을 설정해야 합니다. SnapCenter 서버는 작업에 따라 이러한 방법 중 하나를 사용하여 설정된 자격 증명을 인증합니다.</block>
   <block id="880474ac5a13e7ace0b497d868bfcec8" category="section-title">VMware vSphere용 SnapCenter 플러그인 RBAC</block>
   <block id="f709ed2f05802131924f53cb483d0216" category="paragraph">SnapCenter 서버</block>
   <block id="4ee2d383554981f4ea8eff4f35db6832" category="inline-link">VMware vSphere REST API용 SnapCenter 플러그인</block>
@@ -5687,8 +5679,6 @@
   <block id="c3ab820456c9495a13e6c8d3bf203adb" category="list-text">앱 백업 및 클론 관리자 역할</block>
   <block id="9cbf4a13bbbfd716d85a344992a28d5c" category="list-text">백업 및 클론 뷰어 역할</block>
   <block id="c79885b0ddab0b04ef9ffcd2a2adc001" category="list-text">인프라 관리자 역할</block>
-  <block id="c6e575969465b9ba25194550f4409a37" category="paragraph">사용자를 역할에 추가할 때는 스토리지 가상 시스템(SVM) 통신을 지원하기 위해 StorageConnection 권한을 할당하거나 SVM을 사용할 수 있도록 SVM을 사용자에게 할당해야 합니다. 스토리지 연결 권한을 사용하면 SVM 연결을 생성할 수 있습니다.</block>
-  <block id="a1a7f8fc168b0e00b72aa67994aca50a" category="paragraph">예를 들어, SnapCenter 관리자 역할을 가진 사용자는 SVM 연결을 생성하여 앱 백업 및 클론 관리 역할을 가진 사용자에게 할당할 수 있습니다. 이 역할은 기본적으로 SVM 연결을 생성하거나 편집할 권한이 없습니다. SVM이 연결되지 않으면 사용자는 백업, 클론 복제 또는 복원 작업을 완료할 수 없습니다.</block>
   <block id="9c841e2716f76afb092d7a07c5b70179" category="paragraph">SnapCenter 관리자 역할에는 모든 권한이 활성화되어 있습니다. 이 역할에 대한 권한은 수정할 수 없습니다. 사용자 및 그룹을 역할에 추가하거나 제거할 수 있습니다.</block>
   <block id="a874cfab5c47d6543b2c7212ad2c31f5" category="paragraph">App Backup and Clone Admin 역할에는 애플리케이션 백업 및 클론 관련 작업에 대한 관리 작업을 수행하는 데 필요한 권한이 있습니다. 이 역할에는 호스트 관리, 프로비저닝, 스토리지 접속 관리 또는 원격 설치에 대한 권한이 없습니다.</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">권한</block>
@@ -5699,7 +5689,6 @@
   <block id="eace16d66cdd93ad876c620db7456077" category="paragraph">마운트</block>
   <block id="1281764038ea27ade56d7d2b8be22798" category="paragraph">마운트 해제하다</block>
   <block id="0d73a80a294d9fcca263cef71862af94" category="paragraph">전체 볼륨 복원</block>
-  <block id="df44602e169cb1f9dbb6288c7e86985e" category="paragraph">백업 및 클론 뷰어 역할에는 모든 권한에 대한 읽기 전용 보기가 있습니다. 또한 이 역할에는 대시보드 검색, 보고 및 액세스에 대한 사용 권한이 설정되어 있습니다.</block>
   <block id="969d7fda8acd2ab121789be3a975bbb4" category="paragraph">인프라 관리자 역할에는 호스트 관리, 스토리지 관리, 프로비저닝, 리소스 그룹, 원격 설치 보고서, 대시보드에 액세스합니다.</block>
   <block id="6309043436d4e7e5bad9a81c89ff15e4" category="doc">SnapCenter 개요</block>
   <block id="6d02db19251dfec578c356202bfb1bdc" category="list-text">빠르고 공간 효율적이며 애플리케이션 정합성이 보장되는 디스크 기반 백업</block>
@@ -5958,7 +5947,6 @@
   <block id="1cd8b2345e3fc8629233e588fdab2761" category="doc">Oracle 데이터베이스용 SnapCenter 플러그인 설치 워크플로우</block>
   <block id="c154f07a4589eb83e2c309a57882666a" category="list-text">리소스 페이지에서 가져올 데이터베이스가 검색되어 표시되는지 확인합니다.</block>
   <block id="b171e637bb7cf16f18741fbe5702d170" category="list-text">스크립트 페이지에서 클론 생성 전에 실행할 스크립트의 이름, 파일 시스템을 마운트하는 명령 및 클론 생성 후 실행할 스크립트의 이름을 지정합니다.</block>
-  <block id="2e1075c2f00fe853dfc8acda6a66a53f" category="list-text">Storage Footprint 페이지에서 스토리지 시스템 이름을 입력하고 하나 또는 볼륨을 선택한 다음 연결된 LUN 또는 qtree를 지정합니다.</block>
   <block id="c513fadbc5c352b88ef69bb2bec105ec" category="list-text">스토리지 연결 페이지에서 적절한 SVM 이름을 클릭합니다.</block>
   <block id="9442f446bcaa1c558d0de046c938e087" category="list-text">SVM이 클러스터에 속하지 않는 경우 스토리지 시스템 수정 페이지에서 사용자 이름, 암호, EMS 및 AutoSupport 설정, 플랫폼, 프로토콜, 포트, 시간 초과 등의 구성을 수정합니다. 및 기본 IP를 선택합니다.</block>
   <block id="f16ff770d40beb50d9a06eeef742b55c" category="list-text">SVM이 클러스터의 일부인 경우 Modify Storage System 페이지에서 * Manage SVM Independently * 를 선택하고 사용자 이름, 암호, EMS 및 AutoSupport 설정, 플랫폼, 프로토콜, 포트, 시간 초과 등의 구성을 수정합니다. 및 기본 IP를 선택합니다.</block>
@@ -7285,7 +7273,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="106eca4a643cd4a82ba724aaf63cf399" category="sidebar">Unix 파일 시스템을 복구 및 복구합니다</block>
   <block id="acebdece1b3734e875859ee761ab347e" category="sidebar">Unix 파일 시스템의 클론을 생성합니다</block>
   <block id="1121f6eb8ee08b3fbbc4d05a5ee6ca76" category="sidebar">기술 업데이트</block>
-  <block id="336669dbe720233ed5577ddf81b653d3" category="cell">5.0 을 참조하십시오</block>
   <block id="4bb4114cf33351f203faec5f1e34960e" category="paragraph"><block ref="11d2d1b194d6948e42dc38dca8202191" category="inline-link-rx"></block></block>
   <block id="9166c380efba6c6a0d61dc08bcc135ee" category="summary">백업할 리소스 또는 리소스 그룹에 대한 백업 정책을 생성합니다.</block>
   <block id="73f45971c435fbf9828b3c34fe76a670" category="paragraph">SnapCenter를 사용하여 Oracle 데이터베이스 리소스를 백업하기 전에 백업하려는 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다.</block>
@@ -7870,7 +7857,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="4c6ec01f6ae03e08c146fe6865423a4b" category="list-text">PowerShell 7.4.2 이상</block>
   <block id="149d1be25c7d76696b875863179ac66d" category="list-text">Nginx는 역방향 프록시로 사용할 수 있는 웹 서버입니다</block>
   <block id="6d4ed4face9b51c5caae12208e47fa1e" category="paragraph">PAM(Pluggable Authentication Modules)은 시스템 관리자가 인증을 수행하는 프로그램을 다시 컴파일하지 않고도 인증 정책을 설정할 수 있는 시스템 보안 도구입니다.</block>
-  <block id="47217be9e2af813e09f7a7760c32e8ce" category="paragraph">TCP(Transport Control Protocol)를 통한 비휘발성 메모리 익스프레스(NVMe)를 지원합니다.</block>
   <block id="2e2da9aed107a3761b9b4f5441c315fc" category="summary">기존 NetApp 계정이 없는 경우 다음 단계에 따라 소프트웨어 액세스를 등록해야 합니다.</block>
   <block id="377990998ce406bfbee44e98450fd025" category="doc">SnapCenter 소프트웨어에 액세스하려면 등록하십시오</block>
   <block id="e50fd9dc4c667a815c84bcd3a7168b40" category="list-text">회사 이메일 ID에 액세스할 수 있어야 합니다.</block>
@@ -8888,7 +8874,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="8bd5c68a1ade9c22f98424902eb6b969" category="admonition">DB2 pureScale 환경 및 DB2 DPF(다중 노드) 시스템은 지원되지 않습니다.</block>
   <block id="89f4d38108821acdbf6cd6b780454397" category="summary">SnapCenter에 지원되는 업그레이드 경로입니다.</block>
   <block id="5097f966477870c178d6885558d88ef0" category="doc">SnapCenter에 대해 지원되는 업그레이드 경로</block>
-  <block id="917e552e8290664f15e1332b2d723ec0" category="paragraph">업그레이드 경로를 통해 최신 버전의 SnapCenter로 업그레이드할 수 있는 모든 이전 버전의 SnapCenter와 지원되는 플러그인 버전을 파악할 수 있습니다.</block>
   <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">릴리즈 노트</block>
   <block id="8b7c42123642e2e4ea7dd426aeb2de58" category="list-text">NVMe/TCP</block>
   <block id="e32c19b9fdeb1a3c3b963304701ce944" category="list-text">NVMe/TCP를 통해 생성되는 VMFS의 VMDK</block>
@@ -8948,7 +8933,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="150f5e2d2bbfc9515a0cf19f5cfb78cf" category="list-text"><block ref="b58bfe0f03c84dd62a9ee2931ced9b8e" prefix="" category="inline-code"></block></block>
   <block id="dc7e4332f30a78544c57ff51a169f4c2" category="summary">ASA R2 시스템에서 SanpCenter와 함께 사용할 SVM을 구성하고 vsadmin 역할을 사용하지 않으려는 경우 SVM 역할을 생성해야 합니다.</block>
   <block id="48dba86fa4ce5de943ef3072ea74d595" category="doc">ASA R2 시스템에 대한 SVM 역할을 생성합니다</block>
-  <block id="0c645d1cfd7f66061d3e5a68e06bc4df" category="paragraph">ASA R2 시스템에서 새 SVM 사용자의 역할을 생성하려면 몇 가지 ONTAP CLI 명령을 실행해야 합니다. 이 역할은 ASA R2 시스템에서 SnapCenter와 함께 사용할 SVM을 구성하고 vsadmin 역할을 사용하지 않으려는 경우에 필요합니다.</block>
   <block id="3a3326ab8a855eda366dde90677dcceb" category="paragraph"><block ref="8116804423bfe31ed3dfa65643146cde" prefix="" category="inline-code"></block></block>
   <block id="ceb09374475caa40385e66db6413f535" category="list-text"><block ref="62422d81270184927cae1001a7799732" prefix="" category="inline-code"></block></block>
   <block id="2523fae0d4c9e7a295a409276c552f2b" category="list-text"><block ref="58c812fa3d72aa1f67c5bcf47b8d10b2" prefix="" category="inline-code"></block></block>
@@ -8958,13 +8942,8 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="1f46b6eec6f3def165a94aea4fbd2de8" category="list-text"><block ref="d873942b6f54bbecd97eb915c6e95c45" prefix="" category="inline-code"></block></block>
   <block id="73c050ddeaec2b5e5a856c81666f8026" category="list-text">아이콘을 클릭한 <block ref="725f4bf2ffc300942027282d0182533f" category="inline-image-macro-rx" type="image"></block> 다음 * 인증서 유효성 검사 활성화 * 를 클릭합니다.</block>
   <block id="989977a18a476a92018e04dd60ec37c1" category="inline-link">ASA R2 시스템에 대해 자세히 알아보십시오</block>
-  <block id="b3c78f6e772922673e6d35ae6df26cbd" category="list-text">VMDK를 통해 애플리케이션의 기본 백업을 생성합니다</block>
-  <block id="7e358fa759baa4f70a96f79cf29b4c61" category="list-text">정합성 보장 그룹 스냅샷을 보조 스토리지 시스템으로 전송합니다</block>
   <block id="a0f3e47cc5179a026d7b861797055f6d" category="list-text">RDM(Raw Device Mapping)</block>
-  <block id="b47dab3c647bba9b7ad0a8fc0cde81dc" category="list-text">Oracle용 애플리케이션 볼륨</block>
-  <block id="7236f926bc1402ad0d847fd55a34001d" category="list-text">SAP HANA NDV</block>
   <block id="da612433b3e7d1bdc94a92a26f362677" category="list-text">LockVault 를 클릭합니다</block>
-  <block id="425514993f273b658b0218c334836b26" category="list-text">계층적 일관성 그룹</block>
   <block id="980869fd79cd78a3682752206f149791" category="list-text">스냅샷 이름 바꾸기</block>
   <block id="bc3c828cce582fafd1e35e77b8c84327" category="cell">포트 이름</block>
   <block id="f78fb51edae6a69d5e1e911a2b6fc268" category="cell">포트 번호</block>
@@ -9013,8 +8992,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="b618a910cf6913786f002b81f8c68b29" category="inline-image-macro">정의되지 않은 아이콘</block>
   <block id="f79223ed88950e342e86b7b49a4754b0" category="list-text"><block ref="31f3aaed9a9bf45960790968b6c989cf" category="inline-image-macro-rx" type="image"></block>* * 는 연결 정보를 검색할 수 없음을 나타냅니다.</block>
   <block id="dddf3c98ce717f2c803bfbb3e00ab335" category="list-text"><block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>새 도메인을 등록하려면 클릭합니다.</block>
-  <block id="7194a77b27ca79615dcf6dd232710c52" category="inline-link">SnapCenter 6.1에 대한 고지 사항</block>
-  <block id="077b1607930ff1f5ea2a35c6bd385625" category="paragraph"><block ref="077b1607930ff1f5ea2a35c6bd385625" category="inline-link-rx"></block></block>
   <block id="ddc7a1dcd5b30eb0947ce31cc8f2d939" category="list-text">일정을 구성하려는 정책에 대한 스케줄 구성 열에서 * * * 를 선택합니다<block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="2cd8b8c68f6fcf7e0dad392639951464" category="list-text">확인 일정을 구성할 정책을 선택한 다음 * * * * 를 클릭합니다<block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="26d41db9e082320c220bc9f4fdc9368a" category="list-text">Configure Schedules 열에서 구성할 정책에 대해 * * * 를 클릭합니다<block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>.</block>
@@ -9063,7 +9040,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="54131ac137e0428a48243c6552fd5559" category="paragraph">을 <block ref="582182fe79d6b435038edcbe448ef476" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="b2c46b2b0702b19d5fccc4f1b9f8648a" category="paragraph">SnapLock 볼트에 대한 자세한 내용은 볼트 대상에서 WORM에 스냅샷 커밋 을 참조하십시오.</block>
   <block id="d2b3fcd21580309bc53248671abf5edb" category="image-alt">SnapCenter NetApp 지원 플러그인의 워크플로우</block>
-  <block id="6dbd0d50e334f8371da5ec40fc37adb2" category="list-text">SVM에 여러 데이터 경로(LIF)가 있을 경우 SnapCenter은 NFS 클론 복제된 볼륨을 마운트하기 위해 적절한 데이터 경로(LIF)를 선택합니다. 그러나 특정 데이터 경로(LIF)를 지정하려면 Set-SvmPreferredDataPath CLI를 실행해야 합니다. 명령에 사용할 수 있는 매개 변수와 해당 설명에 대한 정보는 _get-Help command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도<block ref="a6987fd1f481831496b6e000c63cd27d" category="inline-link-rx"></block>있습니다.</block>
   <block id="3b666c1c85e6d7621ddbf36de893633c" category="paragraph"><block ref="3b666c1c85e6d7621ddbf36de893633c" category="inline-link-macro-rx"></block></block>
   <block id="cdfd383dc16da3ad6abe4e1c059a6094" category="list-text">백업 및 복제 페이지에서 다음 작업을 수행합니다.</block>
   <block id="a01b7da75a123f67d2bd092bd390357b" category="inline-link-macro">토폴로지 페이지에서 PostgreSQL 리소스 관련 백업 및 클론을 봅니다</block>
@@ -9082,12 +9058,10 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="41b7523d6eb2b3d6f06599d202b36bc2" category="paragraph">운영 스냅샷 잠금 기간입니다</block>
   <block id="bdb12321d80003b575f05b8f7554d39f" category="paragraph">Primary snapshot copy locking period * 를 선택하고 일, 월 또는 연도를 선택합니다.</block>
   <block id="a76a81f87730cc587fdae2f40fc9d18b" category="paragraph"><block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>호스트 이름 및 Exchange Server를 클릭하여 선택하여 리소스를 필터링합니다. 그런 다음 을 클릭하여 필터 창을 닫을 수 <block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block> 있습니다.</block>
-  <block id="95ca7268c72e31c20f65d0b5b54ea8c6" category="list-text"><block ref="f790bf9188cee374d2bb1f3790c6a393" category="inline-image-macro-rx" type="image"></block>값을 수정하려면 ELETE ICON(삭제 아이콘)]을 클릭합니다.</block>
   <block id="dffd94234b3c1a116e4948ff3c5072e3" category="list-text">AIX 호스트의 경우:<block ref="b116e79e4da50b16dcaed1ed3f1567e1" prefix=" " category="inline-code"></block></block>
   <block id="d1f43f7b8d3d193845fa35a92bbdd6a6" category="paragraph">검색 상자에 자원 그룹 이름을 입력하거나 * * 를 클릭한 다음 태그를 선택하여 자원 그룹을 검색할 수<block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>있습니다. 그런 다음 * * 를 클릭하여 필터 창을 닫을 수<block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>있습니다.</block>
   <block id="c00a655ac4b7e93c83b7d1e532a271e3" category="list-text">* 를<block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>클릭한 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
   <block id="f63dd098114d3f8b75e78f18fe6c2a93" category="list-text">일정을 구성할 정책에 대한 Configure Schedules 열을 클릭합니다 <block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block> .</block>
-  <block id="92d77f5c034495123ea4c7adc77aeefa" category="paragraph">명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 을 참조하십시오<block ref="a6987fd1f481831496b6e000c63cd27d" category="inline-link-rx"></block>.</block>
   <block id="0930d24a992b94bd9c44e45e7df5d54f" category="list-text">클론 복제된 리소스를 선택하고 을 클릭합니다 <block ref="16199d2eb7d7252498e560be9c8c8d7c" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="e41304e7d689f8fed5c98620228184cf" category="inline-link">ONTAP 스토리지에 Linux 호스트 사용</block>
   <block id="4261289fb5bad467a2ad973679d86c14" category="list-text"><block ref="4261289fb5bad467a2ad973679d86c14" category="inline-link-rx"></block></block>
@@ -9096,7 +9070,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="f4e54f1fe48ac3ce5112308b1eceabc9" category="list-text">를 클릭한 <block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
   <block id="cf36ffc4ba53a8ecbd58193758b7e7f2" category="list-text">검색 상자에 리소스 그룹 이름을 입력하거나 를 클릭하고 <block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>태그를 선택합니다.</block>
   <block id="fab9a033dfbc33ab049bd62138584423" category="paragraph"><block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>필터 창을 닫으려면 클릭합니다.</block>
-  <block id="0368e71bb17355bfa46d48de37edc0d2" category="paragraph">명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도<block ref="a6987fd1f481831496b6e000c63cd27d" category="inline-link-rx"></block>있습니다.</block>
   <block id="61cdbe28fdf91e577bdcd2f7eb0d2b9d" category="paragraph">* * 를 클릭하여 매개변수를 추가할 수<block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>있습니다.</block>
   <block id="c784d3cba09b3b53f393f1421e45c4df" category="section-title">호스트에서 기본 IP를 업데이트합니다</block>
   <block id="85ad854c35f24af1b7c52632e891c37a" category="paragraph">클론 작업이 완료되면 SAL(스토리지 액세스 계층)에서 클론에 제공하는 경로는 _&lt;nfs_lif_IP&gt;:&lt;JunctionPath&gt;_format입니다. 기본 IP를 제공하려면 SCCLI 명령을 사용하여 호스트에 구성해야 합니다.</block>
@@ -9117,15 +9090,11 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="eb1d9d00c6e807619cab9ea37bcf137a" category="list-text">Data snapshot retention settings 섹션에서 백업 유형 및 백업 유형 페이지에서 선택한 스케줄 유형에 대한 보존 설정을 지정합니다.</block>
   <block id="218bd996ffd443419d26b630b917d4da" category="list-text">아카이브 로그 스냅숏 보존 설정 섹션에서 백업 유형 및 백업 유형 페이지에서 선택한 일정 유형에 대한 보존 설정을 지정합니다.</block>
   <block id="17e51acfcdd274bfcfeb54ea63213736" category="list-text">정책 레이블을 선택합니다.</block>
-  <block id="e38051a0d9227426e5f8160402a78211" category="paragraph">명령에 사용할 수 있는 매개 변수와 이에 대한 설명은 get-help command_name 을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도<block ref="a6987fd1f481831496b6e000c63cd27d" category="inline-link-rx"></block>있습니다.</block>
   <block id="8a2ba757e81446f3bb13c549e71a6fe2" category="list-text">PDB 클론(targetCDB:PDBClone)을 선택한 다음 을 클릭합니다 <block ref="f790bf9188cee374d2bb1f3790c6a393" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="81dfe22f147e5863ac036d5825fc0d36" category="paragraph"><block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>Ilter icon]을 클릭한 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다. 그런 다음 imagfilter_icon.gif[filter icon]_icon.png[] 아이콘을 클릭하여 필터 창을 닫을 수 있습니다.</block>
-  <block id="669176988e2770456c38c567c99afee6" category="paragraph">명령에 사용할 수 있는 매개 변수 및 해당 설명에 대한 정보는 get-Help_command_name_을 실행하여 얻을 수 있습니다. 또는 을 참조할 수도<block ref="a6987fd1f481831496b6e000c63cd27d" category="inline-link-rx"></block>있습니다.</block>
-  <block id="796405e4b0f07f89056f5608f7f10669" category="paragraph">UNIX 명령에 대한 자세한 내용은 를<block ref="a6987fd1f481831496b6e000c63cd27d" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="4fb3b2f69e00418d4f3dcd3ecbd61d1e" category="list-text">복제된 리소스(예: 데이터베이스 또는 LUN)를 선택한 다음 을 클릭합니다 <block ref="16199d2eb7d7252498e560be9c8c8d7c" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="c0eb997ff74c60645cc757d2031ca50a" category="list-text">PDB 클론(targetCDB:PDBClone)을 선택한 다음 을 클릭합니다 <block ref="16199d2eb7d7252498e560be9c8c8d7c" category="inline-image-macro-rx" type="image"></block>.</block>
   <block id="e13720033977db6e0527dfee3b780f5b" category="list-text">클론을 삭제하려면 표에서 클론을 선택한 다음 을 클릭합니다 <block ref="f790bf9188cee374d2bb1f3790c6a393" category="inline-image-macro-rx" type="image"></block>.</block>
-  <block id="c3574823a3ee32c7dee18739df74fe59" category="paragraph">또는 또는 을 참조할 수도<block ref="a6987fd1f481831496b6e000c63cd27d" category="inline-link-rx"></block><block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block>있습니다.</block>
   <block id="8ee05325e57cc519cdb31ab5c97c3054" category="image-alt">비대칭 LUN 매핑</block>
   <block id="c347b6ffeaa299dea564511a8a531ca5" category="doc">리소스 그룹을 생성하고 ASA R2 시스템에서 Microsoft SQL Server 리소스에 대한 보조 보호를 설정합니다</block>
   <block id="8d2ad583a58059f543540eb44dc0662b" category="list-text">백업 작업을 최적화하려면 DNS 서버에 Windows 클러스터 이름 및 IP 주소의 역방향 조회 레코드를 만들어야 합니다.</block>
@@ -9168,16 +9137,8 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="e1282ba4f34b11ff282fb7d9970b2736" category="paragraph">유지할 총 스냅샷 복사본</block>
   <block id="890049ee281f6f438392008ad804b79b" category="paragraph">에 대한 스냅샷 복사본을 유지합니다</block>
   <block id="cd57cfd18c8588efd33f1587c562e1f0" category="list-text">ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들을 설치해야 합니다.</block>
-  <block id="37a72f0a6be56bf333e34afd56e02051" category="paragraph">SnapCenter 6.1에서 사용할 수 있는 새로운 기능과 향상된 기능에 대해 알아봅니다.</block>
-  <block id="9b158dce63142730ba189d0e12431ec8" category="inline-link-macro">SnapCenter 6.1의 새로운 기능</block>
-  <block id="4a0c8bd65f8fdcc6af3bc9ef18a3f989" category="paragraph">새로운 기능 및 향상된 기능의 전체 목록은 를 참조하십시오<block ref="4f8e9916d8d6ddf6a19a65cc210544e6" category="inline-link-macro-rx"></block>.</block>
-  <block id="4a3f09c73e2dacacbebddfd96cac1948" category="inline-link">SnapCenter 소프트웨어 6.1 릴리스 정보</block>
-  <block id="77400fe4524142ac29310162939726cb" category="paragraph">알려진 문제점, 제한 사항, 해결된 문제, 새로운 명령 및 변경된 명령에 대한 자세한 내용은 를 참조하십시오<block ref="5c68c6454568b27710c4196bb910da4f" category="inline-link-rx"></block>. 릴리스 정보에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
   <block id="d6eb82c324cab2f36e345863fad95090" category="cell">6.1</block>
   <block id="1e095c69621645fccc8f12cd7f35f6fc" category="inline-link-macro">ASA R2 시스템 지원</block>
-  <block id="cc753d144910e12701641281c8cb88ed" category="paragraph">이제 SnapCenter는 SAN 전용 고객의 요구 사항에 따라 간소화된 환경을 제공하는 ASA R2 시스템을 지원합니다.</block>
-  <block id="915d43127ff96a6e94b70e22873bdfb5" category="cell">2차 변조 방지 스냅샷 지원</block>
-  <block id="3725caead33410ce98d5a292b7c0cc95" category="paragraph">SnapCenter 보조 스냅샷의 잠금 기간을 지정할 수 있습니다.</block>
   <block id="92d37724657724129ae0451584c728aa" category="inline-link">VMware vSphere용 SnapCenter 플러그인을 제거합니다</block>
   <block id="79cfb9f00fa8ea603f631e679e453fad" category="paragraph">VMware vSphere용 SnapCenter 플러그인 제거에 대한 자세한 내용은 을 참조하십시오<block ref="cae8a6db54fa4da6d80207fee61e78d1" category="inline-link-rx"></block>.</block>
   <block id="9792c7ba1a8a833a1c75e11c4a7b46c3" category="list-text">여러 호스트를 업그레이드하려면 모든 호스트를 선택하고 를 클릭한 다음 * Upgrade * &gt; * OK * 를 <block ref="725f4bf2ffc300942027282d0182533f" category="inline-image-macro-rx" type="image"></block>클릭합니다.</block>
@@ -9239,10 +9200,7 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="5c8b8bc332cb41802ffbe6c5cda258ab" category="paragraph">VMDK, VVOL 및 RDM 가상 스토리지 레이아웃이 지원됩니다.</block>
   <block id="e5385a9de21528bfedd644f4c0331eb1" category="summary">SnapCenter 소프트웨어는 간단하고 확장 가능한 중앙 집중식 플랫폼으로, 하이브리드 클라우드의 모든 위치에서 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대한 애플리케이션 정합성이 보장된 데이터 보호를 제공합니다.</block>
   <block id="68578ccfcf5117ca8a9a2d7d884e320f" category="summary">SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다.</block>
-  <block id="600ede45d5c4a07242a73e3a5a885e15" category="doc">SnapCenter 소프트웨어 6.1의 새로운 기능</block>
-  <block id="8f13c7650e8ef95e186d64196ea879a5" category="sidebar">SnapCenter 소프트웨어는 간단하고 확장 가능한 중앙 집중식 플랫폼으로, 하이브리드 클라우드의 모든 위치에서 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대한 애플리케이션 정합성 보장 데이터 보호를 제공합니다. 이 설명서 라이브러리에는 버전 6.1에 대한 정보가 포함되어 있습니다.</block>
   <block id="8127605cde4cee83a23b35f1207c7572" category="sidebar">SnapCenter 소프트웨어 설명서</block>
-  <block id="f3e84c2e19a0aa80c716ba1fc7f07e0e" category="sidebar">SnapCenter 소프트웨어 6.1 문서</block>
   <block id="e76a4ae8df1bf6770838ce7c7d94e229" category="paragraph">플러그인 서비스 시작(Windows 호스트에서 실행 중인 플러그인에만 해당)</block>
   <block id="8e6af76634121af640a2987aea883af4" category="doc">SnapCenter 자격 증명에 대한 인증 방법입니다</block>
   <block id="ab1717232c31936a0349a64fd823f3c9" category="paragraph">자격 증명은 응용 프로그램이나 환경에 따라 다른 인증 방법을 사용합니다. 자격 증명은 SnapCenter 작업을 수행할 수 있도록 사용자를 인증합니다. 플러그인 설치를 위한 자격 증명 세트와 데이터 보호 작업을 위한 자격 증명 세트를 생성해야 합니다.</block>
@@ -9339,16 +9297,10 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="0c009e2dd71d00302c96ee23f56096a6" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 응용 프로그램을 보호합니다</block>
   <block id="52a52f83f343872ccfdccea36d808fbe" category="paragraph">SnapCenter 서버 및 필요한 플러그인을 성공적으로 설치한 후 애플리케이션 백업 생성을 시작할 수 있습니다. 이러한 백업은 나중에 필요한 경우 복원 및 클론 복제용으로 사용할 수 있습니다.</block>
   <block id="f13285409ed0f9b4e02f4b32dde1d33b" category="doc">SnapCenter에서 역할 기반 액세스 제어</block>
-  <block id="c9828fe019b2727bf358cb0c2478e00e" category="paragraph">역할을 생성 및 수정할 수 있으며 언제든지 사용자에게 리소스 액세스를 추가할 수 있습니다. 그러나 SnapCenter를 처음 설정할 때는 최소한 Active Directory 사용자 또는 그룹을 역할에 추가한 다음 해당 사용자 또는 그룹에 대한 리소스 액세스를 추가해야 합니다.</block>
   <block id="d57877ec626f302c9e7b1e10875a9aba" category="section-title">SnapCenter의 RBAC 유형</block>
   <block id="de366de90ac02d57b616cbb9abcdf3bf" category="list-text">VMware vSphere RBAC용 SnapCenter 플러그인</block>
-  <block id="8592af0d51ce75785397c9766e688d3e" category="paragraph">SnapCenter에는 미리 정의된 역할이 있으며 이러한 역할에 사용자 또는 사용자 그룹을 할당할 수 있습니다. 사전 정의된 역할은 다음과 같습니다.</block>
-  <block id="007a5b05d417439d7f97ec008cdc5503" category="paragraph">사용자에게 역할을 할당할 때 SnapCenterAdmin 역할을 할당하지 않은 경우 해당 사용자와 관련된 작업만 작업 페이지에 표시됩니다.</block>
   <block id="9ca340103de1d28a94c059e44a33383f" category="paragraph">새 역할을 만들고 사용 권한 및 사용자를 관리할 수도 있습니다. 사용자 또는 그룹에 권한을 할당하여 호스트, 스토리지 접속 및 리소스 그룹과 같은 SnapCenter 객체를 액세스할 수 있습니다.</block>
-  <block id="2f76e68b8e64dc2201f5063e384a8abe" category="admonition">사용자 지정 역할을 생성하는 경우 해당 역할에 SnapCenterAdmin 역할의 모든 권한이 포함되어 있어야 합니다. 호스트 추가 또는 호스트 제거 등의 일부 권한만 복사하는 경우에는 해당 작업을 수행할 수 없습니다.</block>
-  <block id="39c904af75907a4d55bdd66945c2263a" category="paragraph">예를 들어, SQL Server 환경에서 데이터 보호 작업을 수행하려면 적절한 Windows 또는 SQL 자격 증명을 사용하여 자격 증명을 설정해야 합니다. SnapCenter 서버는 두 가지 방법 중 하나를 사용하여 설정된 자격 증명을 인증합니다. ONTAP 스토리지의 Windows 파일 시스템 환경에서 데이터 보호 작업을 수행하려면 SnapCenter 관리 역할에 Windows 호스트에 admin Privileges가 있어야 합니다.</block>
   <block id="c8bff4b06f4bf572d4901653835a04c3" category="paragraph">VM 일관성 있는 데이터 보호를 위해 SnapCenter VMware 플러그인을 사용하는 경우 vCenter Server는 추가 RBAC 수준을 제공합니다. SnapCenter VMware 플러그인은 vCenter Server RBAC와 ONTAP RBAC를 모두 지원합니다.<block ref="8ce4aadb919efeeb2d5eb9e4e24e0325" category="inline-link-rx"></block></block>
-  <block id="b04339a4190897882d5056f48b492577" category="paragraph">스토리지 시스템을 액세스하는 데 필요한 권한이 있는 vsadmin 계정을 생성해야 합니다. <block ref="4788713879ad0dd4b6ac16aeef8f00b9" category="inline-link-macro-rx"></block></block>
   <block id="936fc5cf40b66aba18242ea8b14d5c34" category="section-title">사전 정의된 SnapCenter 역할에 할당된 권한입니다</block>
   <block id="01dad866320f752a70be4c8b1afc9d88" category="doc">SnapCenter의 보안 기능</block>
   <block id="12071348264f48526f2f806ad19b4835" category="list-text">FIPS(Federal Information Processing Standard)를 준수하는 보안 알고리즘을 지원합니다.</block>
@@ -9364,7 +9316,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="655128b143567b934dd54966cc45ec47" category="list-text">NetApp ONTAP 9.12.1 이상</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Files</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">NetApp ONTAP용 Amazon FSx</block>
-  <block id="ababa124e254733f565e62afc357fc79" category="list-text">NetApp ONTAP 9.16.1을 실행하는 NetApp ASA R2 시스템입니다.</block>
   <block id="0b4e0166878acdd36f882f2270445c06" category="section-title">지원되는 애플리케이션 및 데이터베이스</block>
   <block id="29756d78461f8a62cb986dc97f47496b" category="paragraph">SnapCenter는 다양한 애플리케이션 및 데이터베이스의 보호를 지원합니다. 지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오<block ref="734369dbdcbe00444fc7be843d617a6c" category="inline-link-rx"></block>.</block>
   <block id="ee0febdaba6d4c618d2cca84b2c49df1" category="paragraph">SnapCenter는 VMware Cloud on Amazon Web Services(AWS) 소프트웨어 정의 데이터 센터(SDDC) 환경에서 Oracle 및 Microsoft SQL 워크로드를 보호할 수 있도록 지원합니다. <block ref="95513dc65edb533209d1910ac5e4b37d" category="inline-link-rx"></block>..</block>
@@ -9474,14 +9425,10 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="599bdb9ade4d424c1d0e46738185a553" category="paragraph">SnapCenter는 ZAPI를 지원하지 않는 ASA r2 시스템에서 모든 작업을 수행하기 위해 REST API를 활용합니다.</block>
   <block id="c2ecaf82710b87f701c30b03217ce358" category="paragraph">데이터 보호는 ONTAP 시스템에서 실행되는 Microsoft Exchange Server, Microsoft SQL Server, Linux 또는 AIX의 Oracle 데이터베이스, SAP HANA 데이터베이스, IBM DB2, PostgreSQL, MySQL 및 Windows 호스트 파일 시스템에 대해 지원됩니다. SnapCenter는 MongoDB, Storage, MaxDB, Sybase ASE, ORASCPM과 같은 애플리케이션의 보호도 지원합니다.</block>
   <block id="856b104aa0e600cd87dcca68d37108cd" category="doc">ASA r2 시스템에 지원되는 SnapCenter 작업</block>
-  <block id="b7e8225960284afe2c6e37957709cd90" category="paragraph">ASA r2 스토리지 시스템은 SnapCenter 6.1부터 지원됩니다. <block ref="b840388ca7e01a42ddc42d721bbbf472" category="inline-link-rx"></block></block>
   <block id="9495c0bfae580f7cd9a35b1c4bda619f" category="paragraph">*ASA r2 시스템용 SnapCenter에서 지원하는 작업*</block>
-  <block id="48a4a4a55c074d578a28288306965ebc" category="list-text">기본 및 보조 스토리지 시스템의 백업을 원래 호스트 또는 대체 호스트로 복원합니다.</block>
   <block id="88f032fba4d12f7f4fad32b78d6163d7" category="list-text">VMware vMotion을 사용하여 기본 및 보조 스토리지 시스템 모두에서 제자리 복원</block>
   <block id="5eaeee1ce928de977b68a25b9c1b1a94" category="list-text">1차 및 2차 스토리지 시스템 모두에서 연결 및 복사 복원</block>
   <block id="2ac74f7e56e1eda352b17c65251f4a20" category="list-text">백업을 원래 호스트 또는 대체 호스트로 복제</block>
-  <block id="1ad6d2de484cb785da5c2ff1e4e68a57" category="paragraph">SnapCenter는 ONTAP 일관성 그룹을 검색하거나 생성할 수 있습니다. 또한 보조 보호를 위해 대상 클러스터에 대한 SnapMirror 관계를 프로비저닝하고 초기화할 수 있습니다.</block>
-  <block id="6f04bce7ee68a94f8a7107a6ec8f82ef" category="paragraph">애플리케이션에 대한 ASA r2 시스템의 보조 보호 활성화에 대한 자세한 내용은 다음을 참조하세요.</block>
   <block id="1cc48bfa9deb8cbe9ac86aa7814eafc2" category="inline-link">Microsoft SQL Server 리소스에 대한 보조 보호 활성화</block>
   <block id="6a7bda8e55fec33c0e84308f3a7487d9" category="list-text"><block ref="6a7bda8e55fec33c0e84308f3a7487d9" category="inline-link-rx"></block></block>
   <block id="5c1b83640f350debd19233ccd7049769" category="inline-link">SAP HANA 리소스에 대한 보조 보호 활성화</block>
@@ -9502,7 +9449,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="c4bf0f56feeec9a45e973768fbc4f47e" category="list-text">변조 방지 스냅샷</block>
   <block id="ee1ef6cf0f3971b44eb2abcac958fb8d" category="list-text">FlexGroup 볼륨</block>
   <block id="29a720af33d29332fae31060b6910f77" category="list-text">ASA, AFF 또는 FAS 스토리지 시스템에서 ASA r2 스토리지 시스템으로 마이그레이션</block>
-  <block id="7abee40aa1933e637766c0d692411a73" category="list-text">ASA, AFF 또는 FAS 리소스와 ASA r2 리소스가 혼합된 데이터베이스 보호</block>
   <block id="dbc2c133826d732ac86927b2062c928d" category="list-text">SQL 플러그인 호스트의 로그 디렉토리의 2차 프로비저닝</block>
   <block id="e29e29246a71235f47845c88c4a61f52" category="paragraph">이는 플러그인 호스트에서만 사용되는 내부 포트입니다. 방화벽 예외가 필요하지 않습니다.</block>
   <block id="225b299c2a6edae75ebfaff049e07f4e" category="paragraph">SnapCenter 서버와 플러그인 간의 통신은 포트 8145를 통해 라우팅됩니다.</block>
@@ -9584,4 +9530,82 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="bd4112ff24244ca0e669eb1f5a3bae9b" category="paragraph">*스냅샷 복사 잠금 기간*을 선택하고 기간을 일, 월 또는 년 단위로 지정합니다.</block>
   <block id="4b0801e52b058b04e3451f31a90447e6" category="list-text">*스냅샷 복사 잠금 기간*을 선택하고 기간을 일, 월 또는 년 단위로 지정합니다.</block>
   <block id="5c2f59b69b9e772c86d6723464bda765" category="paragraph">스냅샷 잠금 기간을 선택하고 기간을 일, 월 또는 년으로 지정합니다.</block>
+  <block id="88d9e24753477cfb09f25b21c0a59b9e" category="paragraph">SnapCenter 스냅샷 작업을 완료한 후 SnapMirror 와 SnapVault 에 대한 업데이트를 수행합니다. SnapMirror 및 SnapVault 업데이트는 SnapCenter 작업의 일부로 수행됩니다. SnapMirror 활성 동기화를 사용하는 경우 SnapMirror 활성 동기화와 비동기 관계 모두에 기본 SnapMirror 또는 SnapVault 일정을 사용하세요.</block>
+  <block id="f347968a4de8b3b247caa682bf0f6240" category="section-title">일관성 그룹(CG)</block>
+  <block id="b36742dbca767f044c826ec8fbe9b099" category="inline-link-macro">일관성 그룹</block>
+  <block id="95b64a20a2db4c159dee86787823dbff" category="paragraph">일관성 그룹은 단일 단위로 관리되는 볼륨의 모음입니다.  CG는 저장 장치와 볼륨 전체에서 데이터 일관성을 위해 동기화됩니다.  ONTAP 에서는 여러 볼륨에 걸친 애플리케이션 작업 부하에 대한 쉬운 관리와 보호 보장을 제공합니다. 자세히 알아보세요 <block ref="e3fa34f0a183afb2fde78d5c0bcf8944" category="inline-link-macro-rx"></block> .</block>
+  <block id="3d2174aeb8ed8c653211741f95bf82b5" category="paragraph">ASA r2 스토리지 시스템은 SnapCenter 6.1부터 지원됩니다.<block ref="8282a433e360eb53c7146eae7e6c919b" category="inline-link-rx"></block> .</block>
+  <block id="fcc6d2668bf7d486bbebe88e6ebcafac" category="paragraph">SnapCenter 물리적 시스템과 VMFS(가상 머신 파일 시스템)에서 실행되는 애플리케이션의 기본 및 보조 보호를 모두 지원합니다.  SnapCenter ASA r2 시스템의 모든 작업에 REST API를 사용합니다.  ASA r2 시스템은 ZAPI를 지원하지 않습니다.</block>
+  <block id="928fe5b86c85a90f1dd411e2499b4911" category="list-text">애플리케이션의 기본 백업 생성</block>
+  <block id="e8f70758ce1ebf2129e56741fa84fc19" category="list-text">계층적 일관성 그룹 스냅샷을 보조 스토리지 시스템으로 이동</block>
+  <block id="0361013e37238c5a27537b54089d9c27" category="list-text">기본 및 보조 스토리지 시스템에서 원본 또는 대체 호스트로 백업 복원</block>
+  <block id="ac946ae7b415df20f529a46fd24b98e3" category="list-text">Oracle용 애플리케이션 볼륨 보호</block>
+  <block id="5097ab7bd6d21f43a44cf3fa2819d1a9" category="list-text">SAP HANA NDV 보호</block>
+  <block id="dea949f89da961edae31cb07cf178de2" category="inline-link">ONTAP 일관성 그룹에 대해 자세히 알아보세요</block>
+  <block id="33f6f98912a46b71470b0b88a5796453" category="paragraph">SnapCenter ONTAP 일관성 그룹을 검색하거나 생성합니다.  2차 보호를 위해 대상 클러스터에 SnapMirror 관계를 설정합니다.<block ref="c9cf167a41f1aec3d6cac7c4bebb9647" category="inline-link-rx"></block> .</block>
+  <block id="66a780869a0bc12446e0ddcc0035ae9b" category="admonition">SnapCenter 6.2(서버 및 플러그인)와 ONTAP 9.17.1로 업그레이드한 후 SnapCenter 첫 번째 예약된 백업 중에 플랫 일관성 그룹을 계층적 일관성 그룹으로 변경합니다.</block>
+  <block id="9f2d0dc08fd406b0b8600cb2332c7a4c" category="paragraph">애플리케이션에 대해 ASA r2 시스템에서 보조 보호를 활성화하는 방법을 알아보려면 다음을 참조하세요.</block>
+  <block id="7e2e4828b97a80ed5f31feecd44dbb2c" category="list-text">ASA, AFF 또는 FAS 리소스와 ASA r2 리소스를 혼합하여 데이터베이스 보호</block>
+  <block id="6fe3ae956085a9133eaacd31f9913d80" category="list-text">Windows 리소스 프로비저닝</block>
+  <block id="3e17ad5c21f5763c3ec42c72b28831f9" category="list-text">SnapMirror 활성 동기화 장애 조치가 있는 경우 보조 보호</block>
+  <block id="8fda05d0d5dc4c21680bc806b4b5d00e" category="list-text">SnapMirror Active Sync가 활성화된 경우 NVMe(Nonvolatile Memory Express) 프로토콜</block>
+  <block id="ce69d758f9a6bec23f9c27fcc9e412ad" category="list-text">AIX에서 실행되는 애플리케이션 보호</block>
+  <block id="58b7e6269a90f98426cc77f0ae13268f" category="list-text">Microsoft SQL 리소스의 재해 복구</block>
+  <block id="b30158c7fa46aee24e490898d671bc95" category="paragraph">SnapCenter 역할 기반 액세스 제어(RBAC) 및 ONTAP 권한을 통해 SnapCenter 관리자는 사용자 또는 그룹에 리소스 액세스 권한을 할당할 수 있습니다.  중앙에서 관리되는 액세스를 통해 애플리케이션 관리자는 지정된 환경 내에서 안전하게 작업할 수 있습니다.</block>
+  <block id="309756228a9746144b98b5d69a86513d" category="paragraph">역할을 생성하거나 수정하고 사용자에게 리소스 액세스 권한을 추가해야 합니다.  처음으로 SnapCenter 설정할 때 Active Directory 사용자나 그룹을 역할에 추가하고 해당 사용자나 그룹에 리소스를 할당합니다.</block>
+  <block id="cc7189f4c07659090445fd16c85392de" category="admonition">SnapCenter 사용자나 그룹 계정을 생성하지 않습니다.  운영 체제나 데이터베이스의 Active Directory에서 사용자나 그룹 계정을 만듭니다.</block>
+  <block id="1294035acf56fcb2ee658fdb1caf21f3" category="paragraph">SnapCenter 다음과 같은 유형의 역할 기반 액세스 제어를 지원합니다.</block>
+  <block id="75a26496b2bf414af9e579e87fcf7f7a" category="paragraph">SnapCenter 에는 미리 정의된 역할이 있으며 이러한 역할에 사용자나 그룹을 할당할 수 있습니다.</block>
+  <block id="1c824809edac653a7f2402a54726bbb3" category="paragraph">사용자에게 역할을 할당하면 SnapCenter 사용자에게 SnapCenterAdmin 역할이 없는 한 해당 사용자와 관련된 작업을 작업 페이지에 표시합니다.</block>
+  <block id="c463d704b604bb0e4a44ab5198f250a3" category="admonition">사용자 지정 역할을 만들 때 SnapCenterAdmin 역할의 모든 권한이 포함되어 있는지 확인하세요.  일부 권한만 복사하면 SnapCenter 에서 모든 작업을 수행할 수 없습니다.</block>
+  <block id="f07c3a86a889108d1123eb9a7020b716" category="paragraph">사용자는 사용자 인터페이스나 PowerShell cmdlet을 통해 로그인할 때 인증을 받아야 합니다.  사용자에게 여러 역할이 있는 경우 로그인 후 역할을 선택합니다. API를 실행하려면 인증도 필요합니다.</block>
+  <block id="13e09db1bf5e1c29d1b3ff5cbc25200f" category="paragraph">예를 들어, SQL Server 환경에서 데이터 보호 작업을 수행하려면 올바른 Windows 또는 SQL 자격 증명을 설정합니다.  ONTAP 스토리지의 Windows 파일 시스템 환경에서 데이터 보호 작업을 수행하려면 SnapCenter 관리자 역할에 Windows 호스트에 대한 관리자 권한이 있어야 합니다.</block>
+  <block id="84e3d4f2b980c06798f1ea5b71db7612" category="paragraph">마찬가지로, Oracle 데이터베이스에서 데이터 보호 작업을 수행하려는 경우 데이터베이스 호스트에서 운영 체제(OS) 인증이 비활성화된 경우 Oracle 데이터베이스 또는 Oracle ASM 자격 증명으로 자격 증명을 설정해야 합니다.  SnapCenter 서버는 작업에 따라 다음 방법 중 하나를 사용하여 설정된 자격 증명을 인증합니다.</block>
+  <block id="2537acb1dcecf2bb045e640678bc4d28" category="paragraph">참고: NetApp SnapCenter Plug-in for VMware vSphere 작업에 대해 하나의 ONTAP 역할을 만들고 필요한 모든 권한을 할당할 것을 권장합니다.</block>
+  <block id="2019816d7f8d1634743e43281cebbbeb" category="paragraph">스토리지 시스템에 액세스하는 데 필요한 권한이 있는 vsadmin 계정을 만들어야 합니다.<block ref="4788713879ad0dd4b6ac16aeef8f00b9" category="inline-link-macro-rx"></block></block>
+  <block id="ec7108c1f489d11ef4093aba09ed0426" category="paragraph">역할에 사용자를 추가할 때 StorageConnection 권한을 할당하여 SVM(스토리지 가상 머신) 통신을 활성화하거나 사용자에게 SVM을 할당하여 SVM을 사용할 수 있는 권한을 부여합니다.  저장소 연결 권한을 통해 사용자는 SVM 연결을 생성할 수 있습니다.</block>
+  <block id="4fa772613b9230db9720cbffec0bb577" category="paragraph">예를 들어, SnapCenter 관리자는 SVM 연결을 생성하고 이를 App Backup 및 Clone 관리자 사용자에게 할당할 수 있습니다. App Backup 및 Clone 관리자는 SVM 연결을 생성하거나 편집할 수 없습니다.  SVM 연결 없이는 사용자는 백업, 복제 또는 복원 작업을 수행할 수 없습니다.</block>
+  <block id="9f159c30e60b26f31f5d8cd1c8be396c" category="paragraph">백업 및 복제 뷰어 역할은 모든 권한에 대한 읽기 전용 보기 권한을 갖습니다.  이 역할에는 검색, 보고 및 대시보드 액세스에 대한 권한도 활성화되어 있습니다.</block>
+  <block id="035924fdde240e490096f67f520b2a14" category="paragraph">Amazon FSx for NetApp ONTAP TCP(Transport Control Protocol)를 통해 NVMe(Non-Volatile Memory Express)를 지원합니다.</block>
+  <block id="3973825448e1695dd11390dad8f1df7d" category="list-text">NetApp ONTAP 9.16.1 이상을 실행하는 NetApp ASA r2 시스템</block>
+  <block id="65bb9cafce054984dfcbd59e86fce377" category="paragraph">SnapCenter Server 6.2와 SnapCenter 플러그인 6.2를 사용하는 경우 ONTAP 9.17.1을 사용해야 합니다.</block>
+  <block id="f3dde5fad667fb972961b6f701156637" category="paragraph">SnapCenter 서버와 플러그인을 설치한 후 SnapCenter 용 REST API를 활성화하여 SnapMirror 활성 동기화 관계를 감지해야 합니다.</block>
+  <block id="3bb944e9cbfa3d955346c885e83c07b2" category="list-text">SnapCenter 서버 호스트에서 _C:\Program Files\ NetApp\SMCore\SMCoreServiceHost.dll.config_ 파일을 편집하여 _IsRestEnabledForStorageConnection_ 매개변수 값을 _true_로 수정한 다음 SnapCenter SMCore 서비스를 다시 시작합니다.</block>
+  <block id="9542c26f82881425e6e9e8ba6e59679f" category="list-text">Windows 플러그인 호스트에서:</block>
+  <block id="c8b21d5f027718e63a4436fe0c39b873" category="list-text">_C:\Program Files\ NetApp\ SnapCenter\SMCore\SMCoreServiceHost.dll.config_ 파일을 편집하여 _IsRestEnabledForStorageConnection_ 매개변수 값을 _true_로 수정합니다.</block>
+  <block id="688684488a7d080aa39f8cf8ee987f33" category="list-text">_C:\Program Files\ NetApp\ SnapCenter\SMCore\SnapDriveService.dll.config_ 파일을 편집하여 _IsRestEnabledForStorageConnection_ 매개변수 값을 _true_로 수정합니다.</block>
+  <block id="71853e69c97656091e1ccd739e228e7c" category="list-text">SnapCenter SMCore 서비스를 다시 시작합니다.</block>
+  <block id="e7da6395a99301c869ec8939ad3351c5" category="paragraph">ASA r2 시스템에서 새로운 SVM 사용자에 대한 역할을 생성하려면 실행해야 하는 여러 가지 ONTAP CLI 명령이 있습니다.  SnapCenter 와 함께 사용하기 위해 ASA r2 시스템에서 SVM을 구성하고 vsadmin 역할을 사용하지 않으려는 경우 이 역할이 필요합니다.</block>
+  <block id="1103eb1f6654db72f56132d6ce60314d" category="inline-link">SnapCenter 6.2에 대한 공지</block>
+  <block id="19ebec718f0cd2ae87495f51da298086" category="paragraph"><block ref="19ebec718f0cd2ae87495f51da298086" category="inline-link-rx"></block></block>
+  <block id="223ee142b61cd4579ffa55b3c511adbe" category="list-text">SVM에 여러 개의 데이터 경로(LIF)가 있는 경우 SnapCenter NFS 복제 볼륨을 마운트하기 위해 적절한 데이터 경로(LIF)를 선택합니다.  하지만 특정 데이터 경로(LIF)를 지정하려면 Set-SvmPreferredDataPath CLI를 실행해야 합니다.  명령과 함께 사용할 수 있는 매개변수와 해당 설명에 대한 정보는 _Get-Help command_name_을 실행하면 얻을 수 있습니다.  또는 다음을 참조할 수도 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> .</block>
+  <block id="95c937cfb2c57f00a2d2ef3ceafe0a1c" category="list-text">저장소 공간 페이지에서 다음 작업을 수행합니다.</block>
+  <block id="c64c055a256278373345c4759cc269fe" category="list-text">저장 유형을 선택하세요.</block>
+  <block id="effc7a4b937dedb033f6979733da3aa9" category="list-text">저장 시스템 이름을 입력하세요.</block>
+  <block id="409f598b752b995f6f2326bda7c4f815" category="list-text">저장 장치를 선택하세요.</block>
+  <block id="785dc4b462634580fc1eb2f77acb239c" category="paragraph">여러 개의 저장 장치를 추가할 수 있습니다.</block>
+  <block id="b80a6daf1581b8ab554db7d606c1428c" category="list-text">딸깍 하는 소리<block ref="f790bf9188cee374d2bb1f3790c6a393" category="inline-image-macro-rx" type="image"></block> 애플리케이션 볼륨을 삭제합니다.</block>
+  <block id="bb7642a6340577eecc8f765b360b6eae" category="paragraph">명령과 함께 사용할 수 있는 매개변수와 해당 설명에 대한 정보는 Get-Help command_name을 실행하면 얻을 수 있습니다.  또는 다음을 참조할 수 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> .</block>
+  <block id="57c72a5ff23bb1db581b8001531dcb35" category="paragraph">명령과 함께 사용할 수 있는 매개변수와 해당 설명에 대한 정보는 Get-Help _command_name_을 실행하면 얻을 수 있습니다.  또는 다음을 참조할 수도 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> .</block>
+  <block id="9bc40fe6e0b9523fba111ee7815e3a1b" category="paragraph">명령과 함께 사용할 수 있는 매개변수와 해당 설명에 대한 정보는 Get-Help command_name을 실행하면 얻을 수 있습니다.  또는 다음을 참조할 수도 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> .</block>
+  <block id="202db78e7e2ac241d08b359f1f79644f" category="paragraph">명령과 함께 사용할 수 있는 매개변수와 해당 설명에 대한 정보는 Get-Help _command_name_을 실행하면 얻을 수 있습니다.  또는 다음을 참조할 수도 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> .</block>
+  <block id="052131f99fadbb192418dc45065d8c15" category="paragraph">UNIX 명령에 대한 자세한 내용은 다음을 참조하세요.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> .</block>
+  <block id="67998d9af35dea74903e9cdb371f7e7a" category="paragraph">또는 다음을 참조할 수도 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> 또는<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block> .</block>
+  <block id="e2affc8ad90cb942103d56d82396b5f7" category="paragraph">SnapCenter 6.2에서 사용할 수 있는 새롭고 향상된 기능에 대해 알아보세요.</block>
+  <block id="652468e7a8f47c94c0dfc2bbbe3f6788" category="inline-link-macro">SnapCenter 6.2의 새로운 기능</block>
+  <block id="d5d7d6e218fb8deef9aa758f16f3e053" category="paragraph">새로운 기능 및 향상된 기능의 전체 목록은 다음을 참조하세요. <block ref="ba56a05032a421946bbeef30dde12674" category="inline-link-macro-rx"></block> .</block>
+  <block id="24443d9133830b434ac05072f0c9653a" category="inline-link">SnapCenter 소프트웨어 6.2 릴리스 노트</block>
+  <block id="34319768640d09bbc428643b51adb5af" category="paragraph">알려진 문제, 제한 사항, 해결된 문제, 새 명령 및 변경된 명령에 대한 자세한 내용은 다음을 참조하세요.<block ref="b5242c8747d109e2a469b208226df65c" category="inline-link-rx"></block> . 릴리스 노트에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
+  <block id="320bd16b81d8a6a0a077d7308db7683d" category="paragraph">업그레이드 경로는 어떤 SnapCenter 버전에서 업그레이드할 수 있는지, 어떤 플러그인 버전이 지원되는지 보여줍니다.</block>
+  <block id="f734f899336791933d28373bca69a72f" category="admonition">SnapCenter Server를 6.2로 업그레이드하는 경우 플러그인도 6.2로 업그레이드하세요.</block>
+  <block id="7a22247de8db3271f3bf8573be10e986" category="cell">6.2</block>
+  <block id="cb2f94cd974dcdf68577ffd66816a900" category="doc">SnapCenter software 6.2의 새로운 기능</block>
+  <block id="02a7a1f2d7c2b92647dd96da7bf06024" category="paragraph">SnapCenter software 6.2 릴리스에는 다음과 같은 새로운 기능이 포함되어 있습니다.</block>
+  <block id="efd8ec518c3271e168cebeb4a21d4fc3" category="paragraph">SnapCenter 6.2(서버 및 플러그인)와 ONTAP 9.17.1은 계층적 일관성 그룹을 활용하여 물리적 시스템(Linux 및 Windows)과 가상 머신 파일 시스템(VMFS)에서 실행되는 애플리케이션의 기본 및 보조 보호를 모두 지원합니다.</block>
+  <block id="669e7e163e3b320fc474c04f2cd99bdc" category="paragraph">SnapCenter 6.2 및 ONTAP 9.17.1로 업그레이드한 후 SnapCenter 첫 번째 예약된 백업 중에 플랫 일관성 그룹을 계층적 일관성 그룹으로 변경합니다.</block>
+  <block id="9e1557573461036ce114499c0c41ed6f" category="paragraph">워크플로에는 SnapCenter 서버와 플러그인 패키지를 업그레이드하기 위해 완료해야 하는 작업이 나열되어 있습니다.</block>
+  <block id="dd201952143a00ac8776c871aff1b834" category="paragraph">이 섹션에서는 업그레이드할 수 있는 SnapCenter 버전과 지원되는 플러그인 버전을 보여줍니다.</block>
+  <block id="24f24d3f1f893e4176aff86940b1f7bd" category="paragraph">SnapCenter Plug-in for VMware vSphere 업그레이드하는 방법을 알아보려면 다음을 참조하세요.<block ref="9fa07c2f7a59d2185d48077e327b705e" category="inline-link-rx"></block> .</block>
+  <block id="97e76bbffdf8f08342d1c5a741af4b2a" category="sidebar">SnapCenter software 하이브리드 클라우드의 어느 곳에서나 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대해 애플리케이션 일관된 데이터 보호 기능을 제공하는 간단하고 중앙 집중식이며 확장 가능한 플랫폼입니다.  이 문서 라이브러리에는 버전 6.2에 대한 정보가 포함되어 있습니다.</block>
+  <block id="1e0eab11641f75c3ff495410ce40bf66" category="sidebar">SnapCenter software 6.2 문서</block>
 </blocks>

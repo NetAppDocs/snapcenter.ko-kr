@@ -11,8 +11,8 @@ summary: 해결된 문제, 알려진 문제, 주의 및 제한 사항을 포함�
 
 
 [role="lead"]
-SnapCenter 6.1에서 사용할 수 있는 새로운 기능과 향상된 기능에 대해 알아봅니다.
+SnapCenter 6.2에서 사용할 수 있는 새롭고 향상된 기능에 대해 알아보세요.
 
-새로운 기능 및 향상된 기능의 전체 목록은 를 참조하십시오link:what's-new-in-snapcenter61.html["SnapCenter 6.1의 새로운 기능"].
+새로운 기능 및 향상된 기능의 전체 목록은 다음을 참조하세요. link:what's-new-in-snapcenter61.html["SnapCenter 6.2의 새로운 기능"] .
 
-알려진 문제점, 제한 사항, 해결된 문제, 새로운 명령 및 변경된 명령에 대한 자세한 내용은 를 참조하십시오 https://library.netapp.com/ecm/ecm_download_file/ECMLP3337665["SnapCenter 소프트웨어 6.1 릴리스 정보"^]. 릴리스 정보에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.
+알려진 문제, 제한 사항, 해결된 문제, 새 명령 및 변경된 명령에 대한 자세한 내용은 다음을 참조하세요. https://library.netapp.com/ecm/ecm_download_file/ECMLP3337665["SnapCenter 소프트웨어 6.2 릴리스 노트"^] . 릴리스 노트에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.

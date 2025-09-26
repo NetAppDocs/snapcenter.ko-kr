@@ -19,6 +19,18 @@ SnapMirror Active Sync의 경우 다양한 하드웨어, 소프트웨어 및 시
 
 이 기능에서 지원되는 플러그인은 SQL Server용 SnapCenter 플러그인, Windows용 SnapCenter 플러그인, Oracle 데이터베이스용 SnapCenter 플러그인, SAP HANA 데이터베이스용 SnapCenter 플러그인, Microsoft Exchange Server용 SnapCenter 플러그인, Unix용 SnapCenter 플러그인입니다.
 
+SnapCenter 서버와 플러그인을 설치한 후 SnapCenter 용 REST API를 활성화하여 SnapMirror 활성 동기화 관계를 감지해야 합니다.
+
+* SnapCenter 서버 호스트에서 _C:\Program Files\ NetApp\SMCore\SMCoreServiceHost.dll.config_ 파일을 편집하여 _IsRestEnabledForStorageConnection_ 매개변수 값을 _true_로 수정한 다음 SnapCenter SMCore 서비스를 다시 시작합니다.
+* Windows 플러그인 호스트에서:
++
+** _C:\Program Files\ NetApp\ SnapCenter\SMCore\SMCoreServiceHost.dll.config_ 파일을 편집하여 _IsRestEnabledForStorageConnection_ 매개변수 값을 _true_로 수정합니다.
+** _C:\Program Files\ NetApp\ SnapCenter\SMCore\SnapDriveService.dll.config_ 파일을 편집하여 _IsRestEnabledForStorageConnection_ 매개변수 값을 _true_로 수정합니다.
+** SnapCenter SMCore 서비스를 다시 시작합니다.
+
+
+
+
 
 NOTE: SnapCenter에서 호스트 이니시에이터 근접성을 지원하려면 소스 또는 대상 값을 ONTAP에서 설정해야 합니다.
 
