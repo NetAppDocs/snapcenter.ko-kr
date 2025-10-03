@@ -9595,7 +9595,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="652468e7a8f47c94c0dfc2bbbe3f6788" category="inline-link-macro">SnapCenter 6.2의 새로운 기능</block>
   <block id="d5d7d6e218fb8deef9aa758f16f3e053" category="paragraph">새로운 기능 및 향상된 기능의 전체 목록은 다음을 참조하세요. <block ref="ba56a05032a421946bbeef30dde12674" category="inline-link-macro-rx"></block> .</block>
   <block id="24443d9133830b434ac05072f0c9653a" category="inline-link">SnapCenter 소프트웨어 6.2 릴리스 노트</block>
-  <block id="34319768640d09bbc428643b51adb5af" category="paragraph">알려진 문제, 제한 사항, 해결된 문제, 새 명령 및 변경된 명령에 대한 자세한 내용은 다음을 참조하세요.<block ref="b5242c8747d109e2a469b208226df65c" category="inline-link-rx"></block> . 릴리스 노트에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
   <block id="320bd16b81d8a6a0a077d7308db7683d" category="paragraph">업그레이드 경로는 어떤 SnapCenter 버전에서 업그레이드할 수 있는지, 어떤 플러그인 버전이 지원되는지 보여줍니다.</block>
   <block id="f734f899336791933d28373bca69a72f" category="admonition">SnapCenter Server를 6.2로 업그레이드하는 경우 플러그인도 6.2로 업그레이드하세요.</block>
   <block id="7a22247de8db3271f3bf8573be10e986" category="cell">6.2</block>
@@ -9608,4 +9607,5 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="24f24d3f1f893e4176aff86940b1f7bd" category="paragraph">SnapCenter Plug-in for VMware vSphere 업그레이드하는 방법을 알아보려면 다음을 참조하세요.<block ref="9fa07c2f7a59d2185d48077e327b705e" category="inline-link-rx"></block> .</block>
   <block id="97e76bbffdf8f08342d1c5a741af4b2a" category="sidebar">SnapCenter software 하이브리드 클라우드의 어느 곳에서나 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대해 애플리케이션 일관된 데이터 보호 기능을 제공하는 간단하고 중앙 집중식이며 확장 가능한 플랫폼입니다.  이 문서 라이브러리에는 버전 6.2에 대한 정보가 포함되어 있습니다.</block>
   <block id="1e0eab11641f75c3ff495410ce40bf66" category="sidebar">SnapCenter software 6.2 문서</block>
+  <block id="9968307e35346723a7def9d1da87a203" category="paragraph">알려진 문제, 제한 사항, 해결된 문제, 새 명령 및 변경된 명령에 대한 자세한 내용은 다음을 참조하세요.<block ref="bedfbb0cb9ae5977029e72ca67318671" category="inline-link-rx"></block> . 릴리스 노트에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
 </blocks>
