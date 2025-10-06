@@ -11,7 +11,7 @@ summary: Linux 호스트에서 SnapCenter 서버를 사용하여 CA 인증서를
 
 
 [role="lead"]
-Linux에 SnapCenter 서버를 설치하면 설치 프로그램이 자체 서명된 인증서를 생성합니다. CA 인증서를 사용하려면 nginx 역방향 프록시, 감사 로깅 및 SnapCenter 서비스에 대한 인증서를 구성해야 합니다.
+Linux에 SnapCenter 서버를 설치한 후 설치 프로그램이 자체 서명 인증서를 생성합니다. CA 인증서를 사용하려면 nginx 역방향 프록시, 감사 로깅 및 SnapCenter 에 대한 인증서를 구성해야 합니다.
 
 
 
@@ -45,7 +45,7 @@ _INSTALL_DIR_의 기본값은 _/OPT_입니다.
 
 
 
-== SnapCenter 서비스 인증서를 구성합니다
+== SnapCenter 인증서 구성
 
 .단계
 . vi 또는 텍스트 편집기를 사용하여 다음 구성 파일을 엽니다.
@@ -60,7 +60,7 @@ _INSTALL_DIR_의 기본값은 _/OPT_입니다.
 
 . CA 인증서 경로와 암호를 각각 포함하도록 * service_certificate_path * 및 * service_certificate_password * 키를 편집합니다.
 +
-SnapCenter 서비스 인증서에는 _.pfx_format만 지원됩니다.
+SnapCenter 인증서에는 _.pfx_ 형식만 지원됩니다.
 
 . 파일을 저장하고 닫습니다.
 . 모든 서비스를 다시 시작합니다.
