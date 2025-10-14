@@ -2142,7 +2142,6 @@
   <block id="718d9231009edb9654b9f6f52346a835" category="list-text">방화벽, 프록시 또는 기타 네트워크 장치가 연결을 방해해서는 안 됩니다.</block>
   <block id="eceb61ca100437ca326b49341fc1f909" category="list-text">SnapCenter를 설치할 때 사용자 지정 포트를 지정하는 경우 SnapCenter 플러그인 로더의 해당 포트에 대한 방화벽 규칙을 플러그인 호스트에 추가해야 합니다.</block>
   <block id="29e256a27c9d420cee02c5cda005de01" category="paragraph">다음 표에는 여러 포트와 해당 기본값이 나와 있습니다.</block>
-  <block id="ed00b70cc595a411eff2cc42510a291f" category="paragraph">SnapCenter 포트</block>
   <block id="18622e175ff22b2375f9cbc2314b3285" category="paragraph">SnapCenter SMCore 통신 포트입니다</block>
   <block id="91ca015b30de2a05aff2f16ec93231dd" category="paragraph">MySQL 포트</block>
   <block id="4abc501abe98e95144eba2c4d17174ad" category="paragraph">Windows 플러그인 호스트</block>
@@ -9612,4 +9611,5 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="995c8f79a8e07fbd8d519e45d03d6004" category="paragraph">강화되고 재구성된 BlueXP 기반을 기반으로 구축된 NetApp 콘솔은 엔터프라이즈급 온프레미스 및 클라우드 환경 전반에서 NetApp 스토리지와 NetApp 데이터 서비스를 중앙에서 관리하여 실시간 통찰력, 더 빠른 워크플로, 간소화된 관리를 제공하며, 높은 보안성과 규정 준수를 보장합니다.</block>
   <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link-macro">NetApp 콘솔 릴리스 노트</block>
   <block id="1e3eeac5409758903bc21870184a640a" category="paragraph">변경된 사항에 대한 자세한 내용은 다음을 참조하세요.<block ref="06d876b9fcdfcba8772d93beac1ca38b" category="inline-link-macro-rx"></block> .</block>
+  <block id="e6f36a956625505e0a3733e3e0073fa0" category="paragraph">SnapCenter 웹 포트</block>
 </blocks>
