@@ -87,3 +87,5 @@ indexpage:
       url: https://www.netapp.com/data-protection/backup-recovery/snapcenter-backup-management/documentation/#ProseArticleLinkList13
     - title: NetApp 기술 자료 - SnapCenter
       url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter
+    - title: SnapCenter 기술 보고서
+      url: https://docs.netapp.com/us-en/ontap-technical-reports/snapcenter.html
