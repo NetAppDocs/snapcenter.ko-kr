@@ -53,7 +53,6 @@ SnapCenter 4.1.1 사용자의 경우 VMware vSphere 4.1.1 용 SnapCenter 플러�
 
 * 자세한 정보 찾기 *
 
-* https://imt.netapp.com/matrix/imt.jsp?components=121071;&solution=1259&isHWU&src=IMT["상호 운용성 매트릭스 툴"^]
 * https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html["VMware vSphere용 SnapCenter 플러그인 설명서"^]
 * https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Data_protection_operation_fails_in_a_non-multipath_environment_in_RHEL_7_and_later["RHEL 7 이상의 비 다중 경로 환경에서 데이터 보호 작업이 실패합니다"^]
 

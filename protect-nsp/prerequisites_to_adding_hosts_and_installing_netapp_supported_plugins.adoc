@@ -53,16 +53,13 @@ NOTE: 스토리지 및 Oracle 애플리케이션은 AIX에서 지원됩니다.
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
 * Linux 호스트에 Java 11을 설치해야 합니다.
 +
-SnapCenter 서버 호스트에 대해 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 11을 설치해야 합니다. 상호 운용성 매트릭스 툴(IMT): 요구사항에 대한 최신 정보를 제공합니다.
+SnapCenter 서버 호스트로 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 11을 설치해야 합니다.
 
 +
 http://www.java.com/en/download/manual.jsp["Linux용 JAVA 다운로드"]
 
 +
 https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?license=IBM["AIX용 JAVA 다운로드"]
-
-+
-https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
 * 여러 경로에 대한 액세스를 제공하려면 비루트 사용자에 대해 sudo 권한을 구성해야 합니다. visudo Linux 유틸리티를 사용하여 /etc/sudoers 파일에 다음 행을 추가합니다.
 +
@@ -148,8 +145,6 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
 Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.
 
 |===
-지원되는 버전에 대한 최신 정보는 를 https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^]참조하십시오.
-
 
 
 === AIX 호스트에 대한 루트가 아닌 사용자에 대한 sudo 권한을 구성합니다

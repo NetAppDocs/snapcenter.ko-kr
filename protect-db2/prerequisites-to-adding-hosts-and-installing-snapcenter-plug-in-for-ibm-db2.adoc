@@ -34,9 +34,6 @@ NOTE: IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.
 +
 http://www.java.com/en/download/manual.jsp["Windows용 JAVA 다운로드"]
 
-+
-https://imt.netapp.com/matrix/imt.jsp?components=121066;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
-
 
 
 
@@ -50,9 +47,6 @@ http://www.java.com/en/download/manual.jsp["Linux용 JAVA 다운로드"]
 
 +
 https://developer.ibm.com/languages/java/semeru-runtimes/downloads/?license=IBM["AIX용 JAVA 다운로드"]
-
-+
-https://imt.netapp.com/matrix/imt.jsp?components=121066;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
 * Linux 호스트에서 실행되는 IBM DB2 데이터베이스의 경우 IBM DB2용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인이 자동으로 설치됩니다.
 * 플러그인 설치를 위한 기본 셸은 * bash * 이어야 합니다.

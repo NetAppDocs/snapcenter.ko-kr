@@ -2548,7 +2548,6 @@
   <block id="d444fb67779b9c8a26850d1ce6c0e031" category="paragraph">SnapCenter UI(사용자 인터페이스)를 사용하여 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치해야 합니다. 사용 환경에서 SnapCenter UI에서 플러그인을 원격으로 설치할 수 없는 경우 CLI(Command-Line Interface)를 사용하여 콘솔 모드 또는 자동 모드로 SAP HANA 데이터베이스용 플러그인을 설치할 수 있습니다.</block>
   <block id="c20d8d729a2cb1909e6c92aa4b0635a1" category="list-text">HDBSQL 클라이언트가 상주하는 각 Linux 호스트에 SAP HANA 데이터베이스용 플러그인을 설치해야 합니다.</block>
   <block id="9638dcdc640dbf6662834e293cbc12b3" category="list-text">SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하려는 Linux 호스트는 종속 소프트웨어, 데이터베이스 및 운영 체제 요구사항을 충족해야 합니다.</block>
-  <block id="9e8c841a17bd4c0ec7d85ab94b954bca" category="paragraph">상호 운용성 매트릭스 툴(IMT): 지원되는 구성에 대한 최신 정보를 제공합니다.</block>
   <block id="33a8f9c4fe2c0cd8ae505b8d4831fe28" category="list-text">SAP HANA 데이터베이스용 SnapCenter 플러그인은 Linux용 SnapCenter 플러그인 패키지의 일부입니다. Linux용 SnapCenter 플러그인 패키지를 설치하기 전에 Windows 호스트에 SnapCenter가 이미 설치되어 있어야 합니다.</block>
   <block id="14121664b691a3085947fb503ee4883e" category="list-text">Linux용 SnapCenter 플러그인 패키지 설치 파일(snapcenter_linux_host_plugin.bin)을 C:\ProgramData\NetApp\SnapCenter\Package Repository에서 SAP HANA 데이터베이스용 플러그인을 설치하려는 호스트로 복사합니다.</block>
   <block id="b3f72639442ac8dbec9806a234d5e8db" category="list-text">/&lt;설치 디렉토리&gt;/NetApp/snapcenter/SCC/etc/SC_SMS_Services.properties 파일을 편집한 다음 plugins_enabled=HANA:3.0 매개 변수를 추가합니다.</block>
@@ -3323,8 +3322,6 @@
   <block id="914e3ed381a18db751f3d27cad180ad7" category="paragraph">또한 보낸 사람 및 받는 사람 전자 메일 주소와 전자 메일의 제목도 지정해야 합니다. 수행된 클론 작업의 보고서를 첨부하려면 * 작업 보고서 연결 * 을 선택합니다.</block>
   <block id="b8ceb1eaf0d60af03679989562024d6b" category="paragraph">클론이 생성된 후에는 이름을 바꿀 수 없습니다.</block>
   <block id="8a2bd81e968aaadb6ec10a1b58f541cc" category="inline-link-macro">SQL Server 데이터베이스, 인스턴스 또는 가용성 그룹을 백업합니다</block>
-  <block id="68f8e37f5b3d7c3c6c34a481b33a736f" category="inline-link">클론 작업이 실패하거나 기본 TCP_TIMEOUT 값으로 완료하는 데 시간이 더 오래 걸릴 수 있습니다</block>
-  <block id="f7e7f0dd9d36aec3d609775de2dbbd0b" category="paragraph"><block ref="f7e7f0dd9d36aec3d609775de2dbbd0b" category="inline-link-rx"></block></block>
   <block id="1e9ab426973a56020f8d1db85cb07f06" category="inline-link">장애 조치 클러스터 인스턴스 데이터베이스 클론에 장애가 발생합니다</block>
   <block id="2df5362c7aa8c12a0dd2f1b211cdf61d" category="paragraph"><block ref="2df5362c7aa8c12a0dd2f1b211cdf61d" category="inline-link-rx"></block></block>
   <block id="dc894d281805d8d1c222c04f94404928" category="doc">SQL Server용 SnapCenter 플러그인의 재해 복구</block>
@@ -3454,8 +3451,6 @@
   <block id="770dea1a7ffca4cdfedbdad1adb3687d" category="paragraph">백업 후 검증 실행 * 을 선택합니다.</block>
   <block id="3c68b24e5b4018140925233153bb6538" category="admonition">검증 서버에 스토리지 접속이 없는 경우 디스크 마운트 실패 오류가 발생하면서 확인 작업이 실패합니다.</block>
   <block id="0f0ea16fe5c3ccaa1f1c239674409d15" category="list-text">백업 후 확인 * 을 선택하여 백업을 확인합니다.</block>
-  <block id="db9c751c1327ee48b470f3140421daf6" category="inline-link">TCP_TIMEOUT의 지연으로 인해 MySQL 연결 오류로 인해 백업 작업이 실패합니다</block>
-  <block id="0cd607c6c3ab41f1a5532b188171495c" category="paragraph"><block ref="0cd607c6c3ab41f1a5532b188171495c" category="inline-link-rx"></block></block>
   <block id="c473dc65af16d92c688e88cffad5b825" category="inline-link">Windows 스케줄러 오류로 인해 백업이 실패합니다</block>
   <block id="ee70f525f7b0b70b3e7de9d8f872cbe4" category="paragraph"><block ref="ee70f525f7b0b70b3e7de9d8f872cbe4" category="inline-link-rx"></block></block>
   <block id="f1b0e4721c4648a3a0d9747b1df24457" category="inline-link">리소스 중지 또는 그룹화 작업이 실패했습니다</block>
@@ -3561,9 +3556,6 @@
   <block id="b7d4e9465660c3654b7e3da747496c5c" category="paragraph">데이터베이스 클론 생성 작업은 작업 ID를 기반으로 보고서를 생성합니다.</block>
   <block id="999e40363ae36d8696166b52a3c23152" category="paragraph">다음 워크플로에서는 클론 생성 작업을 수행해야 하는 순서를 보여 줍니다.</block>
   <block id="70124670f70878681ab7bb78e2860796" category="image-alt">클론 워크플로우 다이어그램</block>
-  <block id="a121a292ca8a39c5591cdcc69d0f0ff8" category="paragraph"><block ref="a121a292ca8a39c5591cdcc69d0f0ff8" category="inline-link-macro-rx"></block></block>
-  <block id="b5fb765366530fd4f75c7c5c651544bd" category="paragraph"><block ref="b5fb765366530fd4f75c7c5c651544bd" category="inline-link-macro-rx"></block></block>
-  <block id="5f2b3d8994098e5cded686a40b8bb7c9" category="paragraph"><block ref="5f2b3d8994098e5cded686a40b8bb7c9" category="inline-link-macro-rx"></block></block>
   <block id="03aec48a1392a75e035647bb7b9f190b" category="summary">특정 복구 모델은 기본적으로 각 데이터베이스 유형에 할당됩니다. SQL Server 데이터베이스 관리자는 각 데이터베이스를 다른 복구 모델에 다시 할당할 수 있습니다.</block>
   <block id="4be39d40645ee3666c8949ae4f085dd9" category="doc">SnapCenter에서 지원하는 SQL Server 복구 모델</block>
   <block id="628e7a9f62e25a7947450f9f3f0712d6" category="paragraph">SnapCenter는 다음과 같은 세 가지 유형의 SQL Server 복구 모델을 지원합니다.</block>
@@ -3828,7 +3820,6 @@
   <block id="05830c8246821e218b0397b0d819691f" category="list-text">데이터베이스가 NetApp 스토리지 시스템에 있으며 보호되고 있고 데이터베이스에 대해 백업이 트리거되는 경우 사용자 인터페이스에 * Overall Status * 열에 "Backup Succeeded" 메시지가 표시됩니다.</block>
   <block id="bc28bb88d79b659789c035dc50b62131" category="admonition">자격 증명을 설정하는 동안 SQL 인증을 활성화한 경우 검색된 인스턴스 또는 데이터베이스에 빨간색 자물쇠 아이콘이 표시됩니다. 자물쇠 아이콘이 나타나면 인스턴스 또는 데이터베이스 자격 증명을 지정하여 인스턴스 또는 데이터베이스를 리소스 그룹에 성공적으로 추가해야 합니다.</block>
   <block id="082aaa75fb7adaf7a6d039461347c2b0" category="paragraph">SnapCenter 관리자가 RBAC 사용자에게 리소스를 할당한 후에는 RBAC 사용자가 로그인하여 * 자원 새로 고침 * 을 클릭하여 리소스의 최신 * 전체 상태 * 를 확인해야 합니다.</block>
-  <block id="918d32b75f0ab883abba3a8dc0c3ae8d" category="inline-link">상호 운용성 매트릭스 툴</block>
   <block id="8124579383e90243e4b06323d2b37f8d" category="cell">호스트</block>
   <block id="5ae5c2db7baad917cb8389420693266d" category="paragraph">Windows용 SnapCenter 플러그인</block>
   <block id="72de9cea28a7cca58f8423279c68e8c6" category="list-text">에서 SnapCenter 서버 설치 패키지를 다운로드합니다<block ref="d4fdc92072f5257471f3139636068769" category="inline-link-rx"></block> 그런 다음 exe를 두 번 클릭합니다.</block>
@@ -7271,7 +7262,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="106eca4a643cd4a82ba724aaf63cf399" category="sidebar">Unix 파일 시스템을 복구 및 복구합니다</block>
   <block id="acebdece1b3734e875859ee761ab347e" category="sidebar">Unix 파일 시스템의 클론을 생성합니다</block>
   <block id="1121f6eb8ee08b3fbbc4d05a5ee6ca76" category="sidebar">기술 업데이트</block>
-  <block id="4bb4114cf33351f203faec5f1e34960e" category="paragraph"><block ref="11d2d1b194d6948e42dc38dca8202191" category="inline-link-rx"></block></block>
   <block id="9166c380efba6c6a0d61dc08bcc135ee" category="summary">백업할 리소스 또는 리소스 그룹에 대한 백업 정책을 생성합니다.</block>
   <block id="73f45971c435fbf9828b3c34fe76a670" category="paragraph">SnapCenter를 사용하여 Oracle 데이터베이스 리소스를 백업하기 전에 백업하려는 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다.</block>
   <block id="32005b30ff172564875bf82c9538168f" category="list-text">드롭다운 목록에서 Oracle Database 를 선택합니다.</block>
@@ -8324,7 +8314,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="b64964f7c6cb3e2d0ad50647f28415f4" category="list-text">해당하는 경우 플러그인 호스트에 Java 11을 설치합니다.</block>
   <block id="70470fa292d95a8fc9a82053e4e3efc0" category="paragraph">포트 9090은 SnapCenter에 필요한 다른 포트 외에 NetApp 지원 플러그인에서 사용하도록 예약해야 합니다.</block>
   <block id="db39871b690a95f007f3b71acd6533d2" category="doc">호스트 추가 및 NetApp 지원 플러그인 설치를 위한 사전 요구 사항</block>
-  <block id="1bd7b03e9e6f0b21298c8109c8f483ce" category="paragraph">SnapCenter 서버 호스트에 대해 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 11을 설치해야 합니다. 상호 운용성 매트릭스 툴(IMT): 요구사항에 대한 최신 정보를 제공합니다.</block>
   <block id="06489e5a01873cf102f78c0da703ea59" category="list-text">기본 복구 작업은 스토리지 객체만 복원합니다. 애플리케이션 레벨에서 복구 작업은 NetApp 지원 플러그인이 해당 기능을 제공하는 경우에만 수행할 수 있습니다.</block>
   <block id="67d899b4318f9296298e7c4bb8999573" category="doc">NetApp 지원 플러그인 리소스를 복원합니다</block>
   <block id="f62ecec13f26504ecae9b49f3ed6b228" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 을 참조하십시오<block ref="b1f5996558dd020cdfc2747708228767" category="inline-link-rx"></block>.</block>
@@ -8626,26 +8615,7 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="a2706d1c365c79f6f2378228b67eb95a" category="admonition">Azure NetApp Files에는 표준 라이센스와 용량 기반 라이센스가 필요하지 않습니다.</block>
   <block id="9e19caeb431a5e29a1a63e3cee4b36c9" category="inline-link">ONTAP을 사용한 Oracle 데이터 보호</block>
   <block id="d118010bb2b3542007c6749bfd237123" category="list-text"><block ref="d118010bb2b3542007c6749bfd237123" category="inline-link-rx"></block></block>
-  <block id="3fd57bbce38ee807b2553fd56f562c3a" category="paragraph">지원되는 버전에 대한 최신 정보는 를<block ref="734369dbdcbe00444fc7be843d617a6c" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="e688fd8ff964975e518ba6e9fff48630" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>.</block>
-  <block id="580a1e1b3bc67640f27785bacfdba10c" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오 <block ref="fd691abce396db29ca9081f79eea36a4" category="inline-link-rx"></block>.</block>
-  <block id="f773b518874c315e0079bcc43b41dafb" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오 <block ref="7e664c06fb213184870ee71fe5278749" category="inline-link-rx"></block>.</block>
-  <block id="5ff7954c3f2b829e25e83d1cec41fd90" category="paragraph">지원되는 버전에 대한 최신 정보는 를<block ref="bf4b590a983f5498451b0eaa24cb5904" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="0a2ff1c0a6b2aee7bcd66cc2b6860aee" category="paragraph">지원되는 버전에 대한 최신 정보는 를<block ref="fe8a65f917aada6df3764fc6c6209a28" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="752a11b4b210ea35436698a7cd80caea" category="paragraph"><block ref="e7d7a2115bf371d0f0089011e31cda38" category="inline-link-rx"></block></block>
-  <block id="f2a30e95b118ce2c4e84d94437f4a891" category="paragraph"><block ref="441e536b7611a093a15728d219a7454c" category="inline-link-rx"></block></block>
-  <block id="ae40aaa559a1bbbe76fec5e022433b75" category="paragraph"><block ref="351286a887d0b0d2fc33bf3b0aea6c46" category="inline-link-rx"></block></block>
-  <block id="9739b5dca00527fc095cb7d7328ae9a7" category="paragraph"><block ref="4ff8a1baebd27154daa6b321538c5ed7" category="inline-link-rx"></block></block>
-  <block id="56a209ac4190647592f4f2269ba15e4b" category="paragraph"><block ref="c8cd869b77fffd17e64627cb1aa57436" category="inline-link-rx"></block></block>
-  <block id="15819c8f1b3ff9ce9e18a6765617b72f" category="paragraph"><block ref="370c38cf447e1e69e1ad058e85ef81da" category="inline-link-rx"></block></block>
   <block id="b292068e5bdee43d554d534df100834f" category="paragraph">지원되는 버전에 대한 최신 정보는 를 참조하십시오<block ref="bf4b590a983f5498451b0eaa24cb5904" category="inline-link-rx"></block></block>
-  <block id="26c29286acbcac90c9ca148d0edc6829" category="paragraph"><block ref="f4c726cc6a480d91bc287e4e17640f59" category="inline-link-rx"></block></block>
-  <block id="cbf06340cf7e3ebe82b098559b7d3b1d" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신<block ref="ac8016761c99410cb5502fc617daf49f" category="inline-link-rx"></block> 정보는 [NetApp 상호 운용성 매트릭스 도구] 를 참조하십시오.</block>
-  <block id="dd51beca21dafbea1327c8a54048049f" category="paragraph">Oracle 데이터베이스용 SnapCenter 플러그인에서 지원되는 구성은 에 나와<block ref="f921a84bb94ef2f856de2002022c7838" category="inline-link-rx"></block>있습니다.</block>
-  <block id="ea7066cba2f5864f04733d3067090883" category="list-text"><block ref="24657c22d8d7f925e015eed9a43e11c5" category="inline-link-rx"></block></block>
-  <block id="93c316672b17211820e2eaed5f45f68f" category="paragraph">지원되는 버전에 대한 최신 정보는 를<block ref="b02065f5fe9f591a1587fb1e13c5796e" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="b394be29329a30bfde3ff6670085b4f8" category="paragraph">에는<block ref="df4d48b0823cb16de0f94c0dcd83ea6f" category="inline-link-rx"></block> 지원되는 버전에 대한 최신 정보가 포함되어 있습니다.</block>
-  <block id="54634901ea136d581a907da437231faa" category="paragraph">지원되는 Oracle 버전에 대한 최신 정보는 를 참조하십시오<block ref="f921a84bb94ef2f856de2002022c7838" category="inline-link-rx"></block>.</block>
   <block id="f726f8fd5eef7b55d41228aa71d0a7e9" category="list-text">호스트 새로 고침 API:<block ref="b37cd34fbbf7b073a1b5c2fd52ee92dd" prefix=" " category="inline-code"></block> 또는 cmdlet:_Invoke-SmTechRefreshHost _ 를 실행합니다.</block>
   <block id="875d7a3460c60f3568be1f2abe89a635" category="list-text">API: 또는 cmdlet:_New-SmServerBackup _ 을(를) 사용하여 이전 호스트에서 SnapCenter 서버의 백업을 만듭니다<block ref="88422de128aef85dbcc043bb5e99d727" prefix=" " category="inline-code"></block> .</block>
   <block id="717c72270ce876f743856a621389e967" category="list-text">API: 또는 cmdlet:_Restore-SmServerBackup _ 을(를) 사용하여 새 호스트에서 SnapCenter 서버의 백업을<block ref="4c4a6e8508df6259fb36bbdfd36c0086" prefix=" " category="inline-code"></block> 복원합니다.</block>
@@ -8660,7 +8630,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="cc0cce77e1e28838ab6e9078eb7da114" category="list-text">저장소 세부 정보를 확인한 후 _IsDryRun_attribute를 False로 설정하고 저장소 새로 고침 API:<block ref="84d2bad3561662612c0f19102d8af171" prefix=" " category="inline-code"></block> 또는 cmdlet:_Invoke-SmTechRefreshPrimaryStorage _ 를 실행합니다.</block>
   <block id="c81b0a7466aafc83de0beda501358cdd" category="list-text">(선택 사항) 모든 스냅샷이 이전 운영 스토리지에서 새 운영 스토리지로 이동되지 않으면 다음 API를<block ref="6e088a1a2676abbb3b6434c32a05fa0c" prefix=" " category="inline-code"></block> 실행하거나 Cmdlet_Invoke-SmPrimaryBackupsExistenceCheck _ 를 실행하십시오.</block>
   <block id="da838fd656a52206a5571426cdea502d" category="list-text">호스트에 있는 모든 리소스의 백업을 성공적으로 생성한 후 보조 스토리지 새로 고침 API:<block ref="519c39228e07d21e137e72515657a3cf" prefix=" " category="inline-code"></block> 또는 cmdlet:_Invoke-SmTechRefreshSecondaryStorage _ 를 실행합니다.</block>
-  <block id="4f76be6e3e78147f069df76d367c9608" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 를 <block ref="1b8aeeaa3467913188c00052ded68716" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="e41c493e675bae82cb792b14a41ea23d" category="list-text">SnapManager.Web.UI.dll.config 파일에서 MySQLProtocol 키 값을 업데이트합니다.</block>
   <block id="195748e3bf5f1bb6db5e627914555154" category="paragraph">다음 예제에서는 SnapManager.Web.UI.dll.config 파일에서 업데이트된 MySQLProtocol 키의 값을 보여 줍니다.</block>
   <block id="fc8660e632799d14ef937c4ca79726ab" category="list-text">SnapManager.Web.UI.dll.config 파일을 my.ini 파일의 [client] 섹션에 제공된 경로로 업데이트합니다.</block>
@@ -9312,7 +9281,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="list-text">Azure NetApp Files</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">NetApp ONTAP용 Amazon FSx</block>
   <block id="0b4e0166878acdd36f882f2270445c06" category="section-title">지원되는 애플리케이션 및 데이터베이스</block>
-  <block id="29756d78461f8a62cb986dc97f47496b" category="paragraph">SnapCenter는 다양한 애플리케이션 및 데이터베이스의 보호를 지원합니다. 지원되는 응용 프로그램 및 데이터베이스에 대한 자세한 내용은 을 참조하십시오<block ref="734369dbdcbe00444fc7be843d617a6c" category="inline-link-rx"></block>.</block>
   <block id="ee0febdaba6d4c618d2cca84b2c49df1" category="paragraph">SnapCenter는 VMware Cloud on Amazon Web Services(AWS) 소프트웨어 정의 데이터 센터(SDDC) 환경에서 Oracle 및 Microsoft SQL 워크로드를 보호할 수 있도록 지원합니다. <block ref="95513dc65edb533209d1910ac5e4b37d" category="inline-link-rx"></block>..</block>
   <block id="b9c10c8dd3cdddca3cd9a96c6f110517" category="doc">SnapCenter에서 SnapMirror 활성 동기화</block>
   <block id="24a4022d37c99455611842cdead9d299" category="paragraph">SnapMirror 활성 동기화에 대한 자세한 내용은 을<block ref="014166fe18ae8fdd05d96b765aaf21c5" category="inline-link-rx"></block>참조하십시오.</block>
@@ -9380,7 +9348,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="d39d360863f3fda3c5d615dc978e14ae" category="sidebar">SnapCenter 서버를 설치합니다</block>
   <block id="3199d4d0758d0f4f53db9a8f36670c18" category="sidebar">SnapCenter 서버 구성</block>
   <block id="4c975961e88401702aa6aac167300031" category="sidebar">스토리지 시스템 추가 및 프로비저닝</block>
-  <block id="81f9b64ab1987ed2d00f4d52a80ca52b" category="paragraph">지원되는 버전에 대한 최신 정보는 를<block ref="315018c067f16596ddc2e2de507c24d0" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="0885e9f12d8cb35b0f02655c34c87004" category="admonition">IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.</block>
   <block id="48c9a1bf5de7bf57f1efa648f3bc8d17" category="inline-link">Windows용 JAVA 다운로드</block>
   <block id="a4560fe71d10d98deabf55fdf50b90f0" category="paragraph"><block ref="a4560fe71d10d98deabf55fdf50b90f0" category="inline-link-rx"></block></block>
@@ -9613,4 +9580,25 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="1e3eeac5409758903bc21870184a640a" category="paragraph">변경된 사항에 대한 자세한 내용은 다음을 참조하세요.<block ref="06d876b9fcdfcba8772d93beac1ca38b" category="inline-link-macro-rx"></block> .</block>
   <block id="e6f36a956625505e0a3733e3e0073fa0" category="paragraph">SnapCenter 웹 포트</block>
   <block id="da994c44eacde8f5cafe8883779cb695" category="sidebar">SnapCenter 기술 보고서</block>
+  <block id="a5ae087d92fe3db87c6e8de8e579868c" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="845d98cf9e1414112b381d552d9c8014" category="inline-link-rx"></block>.</block>
+  <block id="96210757b8412d030188fecde28ceb9d" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 다음을 참조하세요. <block ref="6c9a8409bf98d8a8939e1ebaf2e43454" category="inline-link-rx"></block>.</block>
+  <block id="cf12f1baaed2b3c195374322d8d857bc" category="paragraph">SnapCenter 다양한 애플리케이션과 데이터베이스의 보호를 지원합니다.</block>
+  <block id="02ad1debcdf6904dd2ade67597e4c26e" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요. <block ref="0bd5b4c33632bb634c82faaae99e0602" category="inline-link-rx"></block>.</block>
+  <block id="73f538f8783386e78b66d9443bb98bd0" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요. <block ref="9ba7ed904923f6110f4eb8cece054441" category="inline-link-rx"></block>.</block>
+  <block id="891f174b4f7f5c2ac6b414ca9ea01713" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="00e02cae149cc9de4aea278bb76f630e" category="inline-link-rx"></block> .</block>
+  <block id="2a38b23cace66a1ff7fcaae540c065e1" category="paragraph">+ 지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="6191699ded4b56fe00b3328a9193fb3c" category="inline-link-rx"></block>.</block>
+  <block id="c9dd6bad4c7d561872f2e2d498a990bf" category="inline-link">상호 운용성 매트릭스 도구(IMT)</block>
+  <block id="298397a9c073629495179c7913e1c3ce" category="paragraph">그만큼<block ref="af6eb6bb2f15f565365a0be0579b55eb" category="inline-link-rx"></block> 지원되는 구성에 대한 최신 정보가 포함되어 있습니다.</block>
+  <block id="c09f9355ffec7a4ebce82be71a8c243f" category="paragraph">그만큼<block ref="fb864633e8f65af932ce118a1d181b8d" category="inline-link-rx"></block> 지원되는 구성에 대한 최신 정보가 포함되어 있습니다.</block>
+  <block id="d289bbfe1554f83d213d5958a481c248" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요. 지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="00e02cae149cc9de4aea278bb76f630e" category="inline-link-rx"></block>.</block>
+  <block id="0be174a8508a59f21b484245da1e1605" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="845d98cf9e1414112b381d552d9c8014" category="inline-link-rx"></block> .</block>
+  <block id="57c12b0c6639b8884c79259831fa9f28" category="paragraph">그만큼<block ref="45ef37a4bb1edb251808bfcdb0b9e22c" category="inline-link-rx"></block> 지원되는 구성에 대한 최신 정보가 포함되어 있습니다.</block>
+  <block id="f101abf86e878a2ecb48d889221777be" category="paragraph">SnapCenter 서버 호스트로 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 11을 설치해야 합니다.</block>
+  <block id="a0d1f8ac2dd9261f6193237061098514" category="paragraph">그만큼<block ref="b6383984df7f2080eb1163b0aa6a5917" category="inline-link-rx"></block> 지원되는 구성에 대한 최신 정보가 포함되어 있습니다.</block>
+  <block id="6fc7bf078a50f1c4ddd79c0229afe3ff" category="doc">Microsoft Exchange Server용 SnapCenter 플러그인에서 지원하는 스토리지 유형</block>
+  <block id="08fed5985d86e1f1278601d57e1bff6b" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="bf4b37302d584cabdf50327923359db4" category="inline-link-rx"></block> .</block>
+  <block id="a9ac2dfd2f149cd6721af54e0c2be71a" category="paragraph">Oracle Database용 SnapCenter 플러그인에서 지원되는 구성은 다음에 나열되어 있습니다.<block ref="58ad8fcd3a707b69946dbf79718bb07e" category="inline-link-rx"></block>.</block>
+  <block id="3c5c3e6bd14b3e4e352c8002cf589e92" category="paragraph">지원되는 Oracle 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="a89f191aac75a149b4bd1d52674271e1" category="inline-link-rx"></block>.</block>
+  <block id="376e524c167313cb5049a67eee645bf3" category="paragraph">PowerShell cmdlet을 수동으로 또는 스크립트로 사용하여 백업, 복원, 복구, 확인 및 복제 작업을 수행할 수도 있습니다. PowerShell cmdlet에 대한 자세한 내용은 SnapCenter cmdlet 도움말을 사용하거나 다음을 참조하세요.<block ref="b1f5996558dd020cdfc2747708228767" category="inline-link-rx"></block>.</block>
+  <block id="de59c74d77a24fb63e10ea5992296495" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="80c012152b8b3575d1f77200bc55e9c0" category="inline-link-rx"></block> .</block>
 </blocks>

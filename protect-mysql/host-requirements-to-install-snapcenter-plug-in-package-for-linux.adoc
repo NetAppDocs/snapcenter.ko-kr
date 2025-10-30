@@ -24,7 +24,7 @@ Linux용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 기
 * SUSE Linux Enterprise Server(SLES)
 
 
-지원되는 버전에 대한 최신 정보는 를 https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]참조하십시오.
+지원되는 버전에 대한 최신 정보는 다음을 참조하세요. 지원되는 버전에 대한 최신 정보는 다음을 참조하세요. https://imt.netapp.com/imt/imt.jsp?components=180320;180338;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"].
 
 
 
@@ -51,7 +51,5 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
 Java 11 Oracle Java 및 OpenJDK
 
 Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.
-
-지원되는 버전에 대한 최신 정보는 를 https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]참조하십시오.
 
 |===

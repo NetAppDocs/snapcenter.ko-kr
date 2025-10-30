@@ -56,8 +56,3 @@ Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/et
 
 |===
 지원되는 버전에 대한 최신 정보는 를 참조하십시오 https://imt.netapp.com/matrix/imt.jsp?components=121073;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
-
-[]
-====
-
-====

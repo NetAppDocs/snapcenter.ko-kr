@@ -34,9 +34,6 @@ NOTE: IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.
 +
 http://www.java.com/en/download/manual.jsp["모든 운영 체제용 JAVA 다운로드"]
 
-+
-https://imt.netapp.com/matrix/imt.jsp?components=121069;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
-
 
 
 
@@ -47,9 +44,6 @@ https://imt.netapp.com/matrix/imt.jsp?components=121069;&solution=1259&isHWU&src
 * Linux 호스트에 Java 11을 설치해야 합니다.
 +
 http://www.java.com/en/download/manual.jsp["모든 운영 체제용 JAVA 다운로드"]
-
-+
-https://imt.netapp.com/matrix/imt.jsp?components=121069;&solution=1259&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"]
 
 * Linux 호스트에서 실행 중인 PostgreSQL 클러스터의 경우 PostgreSQL용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인이 자동으로 설치됩니다.
 * 플러그인 설치를 위한 기본 셸은 * bash * 이어야 합니다.
