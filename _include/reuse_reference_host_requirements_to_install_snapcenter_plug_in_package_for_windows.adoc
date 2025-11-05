@@ -40,9 +40,6 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
 * ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
 * PowerShell 코어 7.4.2
 * Java 11 Oracle Java 및 OpenJDK
-+
-Java 11 Oracle Java 및 OpenJDK는 SAP HANA, IBM DB2, PostgreSQL, MySQL, NetApp 지원 플러그인 및 Windows 호스트에 설치할 수 있는 기타 사용자 지정 애플리케이션에만 필요합니다.
-
 
 
 NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 https://kb.netapp.com/mgmt/SnapCenter/SnapCenter_upgrade_or_install_fails_with_This_KB_is_not_related_to_the_OS["인터넷에 연결되지 않은 기존 시스템의 경우 SnapCenter 업그레이드 또는 설치가 실패합니다."]

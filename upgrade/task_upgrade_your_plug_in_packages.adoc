@@ -4,64 +4,53 @@ sidebar: sidebar
 keywords: upgrade, upgrade plug-in packages 
 summary: 플러그인 패키지는 SnapCenter 업그레이드의 일부로 배포됩니다. 
 ---
-= 플러그인 패키지를 업그레이드합니다
+= SnapCenter 플러그인 패키지 업그레이드
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-플러그인 패키지는 SnapCenter 업그레이드의 일부로 배포됩니다.
+플러그인 패키지는 SnapCenter 업그레이드의 일부로 배포됩니다. 업그레이드 절차를 수행하면 Windows, Linux 또는 AIX 플러그인 호스트가 자동으로 유지 관리 모드로 전환됩니다.  유지 관리 모드에서는 플러그인 호스트가 업그레이드 중에 예약된 작업을 실행하지 못합니다.
 
-업그레이드 절차를 수행하면 Windows, Linux 또는 AIX 플러그인 호스트가 유지보수 모드로 전환되므로 유지보수 모드로 업그레이드하려는 각 플러그인 호스트를 수동으로 전환할 필요가 없습니다. 유지 관리 모드에서는 업그레이드 중에 플러그인 호스트에서 예약된 작업이 실행되지 않습니다.
+시스템은 패키지의 모든 플러그인을 선택하지만, 이전 버전의 SnapCenter 와 함께 설치한 플러그인만 업그레이드합니다.  시스템은 나머지 플러그인을 설치하지 않습니다.  새로운 플러그인을 설치하려면 *플러그인 추가* 옵션을 사용하세요.
 
 .시작하기 전에
 * Linux 시스템에 액세스할 수 있는 루트가 아닌 사용자인 경우 업그레이드 작업을 수행하기 전에 _/etc/sudoers_file을 최신 체크섬 값으로 업데이트해야 합니다.
+* Windows 플러그인 호스트에 PowerShell Core 7.4.2가 설치되어 있는지 확인하세요.
+* Windows 및 Linux 플러그인 호스트에 Java 11 Oracle Java 및 OpenJDK가 설치되어 있는지 확인하세요.
 * 기본적으로 SnapCenter는 환경에서 java_home을 감지합니다. 고정 java_home을 사용하고 Linux 호스트에서 플러그인을 업그레이드하는 경우 _/var/opt/snapcenter/spl/etc/_에 있는 _spl.properties_ 파일에 skip_jAVAHOME_update 매개 변수를 수동으로 추가하고 값을 true 로 설정해야 합니다.
 +
 플러그인이 업그레이드되거나 SnapCenter 플러그인 로더(SPL) 서비스가 다시 시작되면 java_home의 값이 업데이트됩니다. SPL을 업그레이드하거나 다시 시작하기 전에 skip_jAVAHOME_update 매개 변수를 추가하고 값을 true 로 설정하면 java_home 값이 업데이트되지 않습니다.
 
-* SnapCenter 서버 호스트 또는 플러그인 호스트에서 수정한 모든 SnapCenter 구성 파일을 백업해야 합니다.
-+
-SnapCenter 구성 파일의 예: SnapDriveService.exe.config, SMCoreServiceHost.exe.config 등
-
+* SnapCenter 서버 호스트 또는 플러그인 호스트에서 수정된 모든 SnapCenter 구성 파일(예: SnapDriveService.exe.config, SMCoreServiceHost.exe.config 등)을 백업합니다.
 
 
 .이 작업에 대해
-* Microsoft SQL Server용 SnapCenter 플러그인, Microsoft Exchange Server용 SnapCenter 플러그인 및 Microsoft Windows용 SnapCenter 플러그인의 경우 실행할 scripts_path의 최신 버전으로 서버와 플러그인 호스트를 모두 업그레이드하는 것이 좋습니다.
-+
+Microsoft SQL Server용 SnapCenter 플러그인, Microsoft Exchange Server용 SnapCenter 플러그인 및 Microsoft Windows용 SnapCenter 플러그인의 경우 실행할 scripts_path의 최신 버전으로 서버와 플러그인 호스트를 모두 업그레이드하는 것이 좋습니다.
+
 정책에서 predpts 및 postscript가 활성화된 기존 백업 및 검증 스케줄의 경우 업그레이드 후에도 백업 작업이 계속 작동합니다.
 
-+
 Job details * 페이지에서 스크립트를 scripts_path에 복사하고 정책을 편집하여 scripts_path와 관련된 경로를 제공하는 것이 좋습니다. 클론 수명주기 작업의 경우 하위 작업 레벨에 경고 메시지가 표시됩니다.
-
-
 
 .단계
 . 왼쪽 탐색 창에서 * 호스트 * > * 관리 호스트 * 를 클릭합니다.
 . 다음 작업 중 하나를 수행하여 호스트를 업그레이드합니다.
 +
-** 전체 상태 열에 플러그인 호스트 중 하나에 대해 "업그레이드 사용 가능"이 표시되면 플러그인 호스트 이름을 클릭하고 다음을 수행합니다.
+** 플러그인 호스트 중 하나에 대해 전체 상태 열에 "업그레이드 가능"이 표시되면 플러그인 호스트 이름을 클릭하고 다음을 수행합니다.
 +
 ... 추가 옵션 * 을 클릭합니다.
 ... 플러그인 호스트가 플러그인 업그레이드를 위한 요구 사항을 충족하는지 확인하려면 * 사전 점검 건너뛰기 * 를 선택하십시오.
++
+
+NOTE: *사전 검사 건너뛰기*를 선택하지 않으면 SnapCenter 플러그인 호스트가 요구 사항을 충족하는지 확인합니다.  요구 사항이 충족되지 않으면 오류나 경고 메시지가 나타납니다.  오류가 디스크 공간이나 RAM과 관련된 경우 _C:\Program Files\ NetApp\ SnapCenter WebApp_에 있는 web.config나 _C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ SnapCenter\_에 있는 PowerShell 구성 파일을 업데이트하여 기본값을 수정할 수 있습니다. 오류가 나머지 매개변수와 관련된 경우 문제를 해결한 다음 요구 사항을 다시 검증해야 합니다.
+
 ... 업그레이드 * 를 클릭합니다.
 
 
 ** 여러 호스트를 업그레이드하려면 모든 호스트를 선택하고 를 클릭한 다음 * Upgrade * > * OK * 를 image:../media/more_icon.gif["추가 아이콘"]클릭합니다.
 +
 플러그인 업그레이드 중에 모든 관련 서비스가 다시 시작됩니다.
-
-+
-
-NOTE: 패키지의 모든 플러그인이 선택되지만 이전 버전의 SnapCenter와 함께 설치된 플러그인만 업그레이드되고 나머지 플러그인은 설치되지 않습니다. 새 플러그인을 설치하려면 * 플러그인 추가 * 옵션을 사용해야 합니다.
-
-+
-Skip prechecks* 확인란을 선택하지 않은 경우 플러그인 호스트가 플러그인 설치 요구 사항을 충족하는지 확인합니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다. 문제를 해결한 후 * 업그레이드 * 를 클릭합니다.
-
-+
-
-NOTE: 오류가 디스크 공간 또는 RAM과 관련된 경우 C:\Program Files\NetApp\SnapCenter WebApp에 있는 web.config 또는 C:\Windows\System32\WindowsPowerShell\v1.0\Modules\SnapCenter\에 있는 PowerShell config 파일을 업데이트하여 기본값을 수정할 수 있습니다. 오류가 나머지 매개변수와 관련된 경우 문제를 해결한 다음 요구 사항을 다시 확인해야 합니다.
 
 
 

@@ -22,7 +22,7 @@ Windows용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 �
  a| 
 Microsoft Windows
 
-+ 지원되는 버전에 대한 최신 정보는 다음을 참조하세요. https://imt.netapp.com/imt/imt.jsp?components=180321;180339;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"].
+지원되는 버전에 대한 최신 정보는 다음을 참조하세요. https://imt.netapp.com/imt/imt.jsp?components=180321;180339;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"] .
 
 
 

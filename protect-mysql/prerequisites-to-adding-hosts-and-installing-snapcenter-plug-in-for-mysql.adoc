@@ -22,6 +22,7 @@ NOTE: IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.
 * Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다. Microsoft Windows용 SnapCenter 플러그인은 Windows 호스트에 MySQL 플러그인과 함께 기본적으로 배포됩니다.
 * SnapCenter Server는 MySQL 호스트용 플러그인의 8145 또는 사용자 지정 포트에 액세스할 수 있어야 합니다.
 * MySQL 5.7의 경우 MySQL config(my.cnf 또는 mysql-server.cnf) 파일에 binlog를 지정해야 합니다.
+* MySQL 8.0 이전 버전을 사용 중이라면 MySQLX 플러그인을 수동으로 설치하고 활성화해야 합니다. MySQLX 플러그인은 MySQL 8.0 이상 버전에서 기본적으로 설치 및 활성화되어 있습니다.
 
 
 
