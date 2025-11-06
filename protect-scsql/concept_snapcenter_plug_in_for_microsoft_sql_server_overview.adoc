@@ -17,6 +17,5 @@ SQL Server용 플러그인을 설치하면 SnapCenter와 NetApp SnapMirror 기�
 
 * SnapCenter 환경에서 Microsoft SQL Server 데이터베이스의 애플리케이션 인식 백업, 복원 및 클론 복제 작업을 자동화합니다.
 * VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록할 때 VMDK 및 RDM(Raw Device Mapping) LUN에서 Microsoft SQL Server 데이터베이스를 지원합니다
-* SMB 공유만 프로비저닝을 지원합니다. SMB 공유에서 SQL Server 데이터베이스 백업에 대한 지원은 제공되지 않습니다.
 * SnapManager for Microsoft SQL Server에서 SnapCenter로 백업 가져오기를 지원합니다.
 
