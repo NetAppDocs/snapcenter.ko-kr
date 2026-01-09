@@ -1375,9 +1375,6 @@
   <block id="623ef35114e69633221d2c9bf99f6cab" category="list-text">WCF(Windows Communication Foundation) HTTP Activation45</block>
   <block id="c38d32373eca3e6335e44b42893f0034" category="list-text">TCP 활성화</block>
   <block id="cb6ddd90b08469e2479460ec34538fe2" category="list-text">HTTP 활성화</block>
-  <block id="c3dbd8c35d4829310dd57365a749f10f" category="paragraph">메시지 큐</block>
-  <block id="9c7750973d73f078f45c6bfd80cbfc85" category="list-text">메시지 큐 서비스</block>
-  <block id="be0efd214f0b56cf8372d18ec1837f53" category="admonition">SnapCenter가 만들고 관리하는 MSMQ 서비스를 사용하는 다른 응용 프로그램이 없는지 확인합니다.</block>
   <block id="a8e1305e0c86caf1fec261807b3362ef" category="paragraph">Windows 프로세스 활성화 서비스</block>
   <block id="494ecde4fb6ee77e99799902ed23cd14" category="list-text">프로세스 모델</block>
   <block id="293616622aeda675821b42e39b4d4e7b" category="paragraph">구성 API</block>
@@ -3281,7 +3278,6 @@
   <block id="c48d82f0b1e5949ce3d34dc8ac74b4b5" category="paragraph">SQL Server 시스템 데이터베이스 확인은 지원되지 않습니다. SnapCenter는 데이터베이스를 복제하여 검증 작업을 수행합니다. SnapCenter는 SQL Server 시스템 데이터베이스를 복제할 수 없으므로 이러한 데이터베이스를 확인할 수 없습니다.</block>
   <block id="c27ceb4a4892c429a975a62841762540" category="list-text">백업 작업 및 클론 작업 예약</block>
   <block id="aa71cd3a5a90a32aafb3072b19a68b09" category="list-text">백업 작업, 복원 작업 및 클론 작업을 모니터링합니다</block>
-  <block id="c343d8ab7af87f16e58b8e8040d7813a" category="admonition">SQL Server용 플러그인은 SMB 공유에서 SQL Server 데이터베이스의 백업 및 복구를 지원하지 않습니다.</block>
   <block id="f2b64e9f01b196d10f0f2aa40fc2203e" category="summary">필요한 백업 작업 수를 결정하는 요인에는 데이터베이스 크기, 사용된 볼륨 수, 데이터베이스 변경 속도 및 SLA(서비스 수준 계약)\ 등이 있습니다.</block>
   <block id="99fb5ff09a4f066b4ab553406e478671" category="paragraph">필요한 백업 작업 수를 결정하는 요인에는 데이터베이스 크기, 사용된 볼륨 수, 데이터베이스 변경 속도 및 SLA(서비스 수준 계약)가 포함됩니다.</block>
   <block id="44567489037e9457257d3790f8cb3ccd" category="paragraph">데이터베이스 백업의 경우 일반적으로 선택한 백업 작업 수는 데이터베이스를 배치한 볼륨의 수에 따라 달라집니다. 예를 들어, 한 볼륨에 작은 데이터베이스 그룹을 배치하고 다른 볼륨에 큰 데이터베이스를 배치한 경우 작은 데이터베이스에 대해 하나의 백업 작업을 생성하고 큰 데이터베이스에 대해 하나의 백업 작업을 만들 수 있습니다.</block>
@@ -5713,7 +5709,6 @@
   <block id="4abb41aae1dfe9c81afb3c3672df559c" category="paragraph">Linux 또는 Windows</block>
   <block id="50e95eafa6faf8d2ee3f01921820b42b" category="list-text">SnapCenter 환경에서 Microsoft SQL Server 데이터베이스의 애플리케이션 인식 백업, 복원 및 클론 복제 작업을 자동화합니다.</block>
   <block id="e40237d2b53363bc373f8134071d1be1" category="list-text">VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록할 때 VMDK 및 RDM(Raw Device Mapping) LUN에서 Microsoft SQL Server 데이터베이스를 지원합니다</block>
-  <block id="a7e3ff2bca34971756f1600032ff8b61" category="list-text">SMB 공유만 프로비저닝을 지원합니다. SMB 공유에서 SQL Server 데이터베이스 백업에 대한 지원은 제공되지 않습니다.</block>
   <block id="6bff10ef4d0d0d6d7ed28de9adc0169d" category="list-text">SnapManager for Microsoft SQL Server에서 SnapCenter로 백업 가져오기를 지원합니다.</block>
   <block id="1b789581aeaa48640561ebae3b263a76" category="list-text">SnapCenter 환경의 Windows 호스트에서 실행 중인 다른 플러그인에 대해 애플리케이션 인식 데이터 보호 지원</block>
   <block id="d764b7be86ece9a7b21fa445a8e1493c" category="list-text">SnapCenter 환경에서 Microsoft 파일 시스템에 대한 애플리케이션 인식 백업, 복원 및 클론 복제 작업을 자동화합니다</block>
@@ -7827,7 +7822,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="10dbf6dc6b3b30fd58efded1253516d8" category="paragraph">Exchange 데이터베이스용 SnapCenter 플러그인</block>
   <block id="b0ca30368b247fa738c8bdba36dd4d73" category="paragraph">기본 네트입니다. TCP 포트는 Windows용 플러그인에서 Exchange VSS 콜백에 연결하는 데 사용됩니다.</block>
   <block id="cc0974b8a511f2e4b4d021cda6e5e820" category="paragraph">SnapCenter에 대해 NetApp 지원 플러그인</block>
-  <block id="7eaa993723e57b3bfc99923c196e2e17" category="list-text">RabbitMQ입니다</block>
   <block id="6905661e5d7f8f3e6a4faffbbab0f627" category="cell">Windows 호스트 요구 사항</block>
   <block id="e7074f744b12e993cbdc6c77ee980b3e" category="list-text">Red Hat Enterprise Linux(RHEL) 8 및 9</block>
   <block id="447430d602cceb081264e037425cd96e" category="list-text">SUSE Linux Enterprise Server(SLES) 15</block>
@@ -9608,4 +9602,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="9ece03be74b25dcc59b19ce7d0ef2dfb" category="list-text">SnapCenter 서버 호스트 또는 플러그인 호스트에서 수정된 모든 SnapCenter 구성 파일(예: SnapDriveService.exe.config, SMCoreServiceHost.exe.config 등)을 백업합니다.</block>
   <block id="def9934ca3f718accf65ee67850cf9eb" category="list-text">플러그인 호스트 중 하나에 대해 전체 상태 열에 "업그레이드 가능"이 표시되면 플러그인 호스트 이름을 클릭하고 다음을 수행합니다.</block>
   <block id="25c5cc506d7be2c3d358fc8fd23f0e8f" category="admonition">*사전 검사 건너뛰기*를 선택하지 않으면 SnapCenter 플러그인 호스트가 요구 사항을 충족하는지 확인합니다.  요구 사항이 충족되지 않으면 오류나 경고 메시지가 나타납니다.  오류가 디스크 공간이나 RAM과 관련된 경우 _C:\Program Files\ NetApp\ SnapCenter WebApp_에 있는 web.config나 _C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ SnapCenter\_에 있는 PowerShell 구성 파일을 업데이트하여 기본값을 수정할 수 있습니다. 오류가 나머지 매개변수와 관련된 경우 문제를 해결한 다음 요구 사항을 다시 검증해야 합니다.</block>
+  <block id="ef99553115dfc1718a9b51a970da1ae9" category="paragraph">아카이브 로그 파일의 확장자를 지정합니다.</block>
+  <block id="7f051ce525ea23f09ed6b21ec49fa590" category="paragraph">예를 들어, 아카이브 로그 파일이 log_backup_0_1.log인 경우 파일 확장자로 .log를 지정하십시오.</block>
 </blocks>
