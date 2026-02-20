@@ -1443,7 +1443,6 @@
   <block id="b88dbedd8fcea13adf629d85780a25e4" category="list-text">Windows용 플러그인은 Microsoft 클러스터의 가상 시스템에서 MPIO를 지원하지 않습니다.</block>
   <block id="5010ac065b072d3a5a66d4913af22358" category="section-title">공유 FC RDM LUN을 생성합니다</block>
   <block id="10680a7aa79949d8b454b29a782cc64a" category="paragraph">FC RDM LUN을 사용하여 Microsoft 클러스터의 노드 간에 스토리지를 공유하려면 먼저 공유 쿼럼 디스크와 공유 스토리지 디스크를 생성한 다음 클러스터의 두 가상 머신에 추가해야 합니다.</block>
-  <block id="cbdb6828febec04786f22df9a1ccc748" category="inline-link">물리적 호스트에서 가상 시스템을 클러스터링합니다</block>
   <block id="4ce9ef971363d62abcf2c6d2b1234486" category="summary">SnapCenter 인증서를 내보냅니다.</block>
   <block id="4b7e01d00c62bc7cc219f57128db2b48" category="doc">SnapCenter 인증서를 내보냅니다</block>
   <block id="23d304f4f8ba5a36ae5e430eb209adc8" category="list-text">MMC(Microsoft Management Console)로 이동한 다음 * 파일 * &gt; * 스냅인 추가/제거 * 를 클릭합니다.</block>
@@ -9092,7 +9091,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="9792c7ba1a8a833a1c75e11c4a7b46c3" category="list-text">여러 호스트를 업그레이드하려면 모든 호스트를 선택하고 를 클릭한 다음 * Upgrade * &gt; * OK * 를 <block ref="725f4bf2ffc300942027282d0182533f" category="inline-image-macro-rx" type="image"></block>클릭합니다.</block>
   <block id="fc8e535c7339f77157a0f93f32cb1f80" category="list-text">Oracle 및 SAP HANA 마운트 및 카탈로그 워크플로는 오브젝트 스토리지 백업용으로 지원되지 않지만 스냅샷에는 지원됩니다.</block>
   <block id="2128757ca4207f5d5000cd4894d8c58f" category="list-text">Oracle PDB 클론은 오브젝트 스토리지 백업에는 지원되지 않지만 스냅샷에는 지원됩니다.</block>
-  <block id="6eec14240810faadbd60c3ec98b543e7" category="paragraph">Windows용 플러그인을 사용하여 공유 디스크가 생성되지 않습니다. 공유 LUN을 생성한 다음 클러스터의 각 가상 머신에 추가해야 합니다. 자세한 내용은 을<block ref="0564b16166a6e24aa234d21e5bcdc18a" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="744d48cfa6032e04d109166f7ff6aeaf" category="paragraph">문제 해결 정보는 을<block ref="361c774ee5cb22be42ef8ea152ed45ad" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="a141599a0eec0e6d9aea907fc97ea039" category="list-text">신뢰 당사자 신뢰 * 를 선택합니다.</block>
   <block id="458f1b484cf2f93e8e2f35b3f5a3b94a" category="list-text">SnapCenter용으로 생성된 신뢰 당사자 신뢰를 마우스 오른쪽 버튼으로 클릭하고 * 삭제 * 를 선택합니다.</block>
@@ -9604,4 +9602,8 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="25c5cc506d7be2c3d358fc8fd23f0e8f" category="admonition">*사전 검사 건너뛰기*를 선택하지 않으면 SnapCenter 플러그인 호스트가 요구 사항을 충족하는지 확인합니다.  요구 사항이 충족되지 않으면 오류나 경고 메시지가 나타납니다.  오류가 디스크 공간이나 RAM과 관련된 경우 _C:\Program Files\ NetApp\ SnapCenter WebApp_에 있는 web.config나 _C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ SnapCenter\_에 있는 PowerShell 구성 파일을 업데이트하여 기본값을 수정할 수 있습니다. 오류가 나머지 매개변수와 관련된 경우 문제를 해결한 다음 요구 사항을 다시 검증해야 합니다.</block>
   <block id="ef99553115dfc1718a9b51a970da1ae9" category="paragraph">아카이브 로그 파일의 확장자를 지정합니다.</block>
   <block id="7f051ce525ea23f09ed6b21ec49fa590" category="paragraph">예를 들어, 아카이브 로그 파일이 log_backup_0_1.log인 경우 파일 확장자로 .log를 지정하십시오.</block>
+  <block id="1e70ac4737c2e839c6fd901789e3bafb" category="paragraph">공유 디스크는 Plug-in for Windows를 사용하여 생성되지 않습니다. 공유 LUN을 생성한 다음 클러스터의 각 가상 머신에 추가해야 합니다.</block>
+  <block id="ae0aa1a81eb18e69d5fc662eaee0efd5" category="inline-link-macro">Broadcom 기술 문서</block>
+  <block id="35108ed715245e1479e838ca41d91463" category="paragraph"><block ref="fba62a4233b1f0aa3ff3e46f7f59037b" category="inline-link-macro-rx"></block>을 참조하고 물리적 호스트에 걸쳐 가상 머신을 클러스터링하고 Microsoft 클러스터용 공유 FC RDM LUN을 생성하는 방법에 대한 문서를 검색하십시오.</block>
+  <block id="82b9e59bccf9587b5e339fa8a0f02dd5" category="list-text">NVMe 컨트롤러는 NVMe 데이터 저장소에서만 지원됩니다.</block>
 </blocks>
