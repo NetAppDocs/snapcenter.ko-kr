@@ -7878,7 +7878,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="66fe54fa4e213e520e33fab0de4829f3" category="list-text">SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 설정 등의 작업을 완료해야 합니다.</block>
   <block id="8d8222bc5c37db0562c84d9175b85db9" category="paragraph">다음 구성에서는 수동 검색이 지원되지 않습니다.</block>
   <block id="0e74c3e0dd316d16d24798ac1b0249ef" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 선택한 다음 드롭다운 목록에서 IBM DB2용 SnapCenter 플러그인을 선택합니다.</block>
-  <block id="6425c50f54d17cde35a57532dc8e8d08" category="list-text">리소스 페이지에서 * IBM DB2 리소스 추가 * 를 클릭합니다.</block>
   <block id="75795411fa0821e8da73e95200ff81ad" category="paragraph">데이터베이스 이름을 지정합니다.</block>
   <block id="1c07f24dbaeb847f4662960d2691d528" category="paragraph">호스트 이름</block>
   <block id="ce7a42c0c120b0e761b1d9b2851def5b" category="paragraph">호스트 이름을 입력합니다.</block>
@@ -7888,7 +7887,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="5efe9e6fa4156b39ced69425eba7fb49" category="paragraph">자격 증명을 선택하거나 자격 증명에 대한 정보를 추가합니다.</block>
   <block id="deec2d29ae112d513d1bbd8cb6f3a23c" category="paragraph">이는 선택 사항입니다.</block>
   <block id="4e4f9229f5def86d57e9acaf8014a093" category="list-text">스토리지 설치 공간 제공 페이지에서 스토리지 유형을 선택하고 하나 이상의 볼륨, LUN 및 qtree를 선택한 다음 * 저장 * 을 클릭합니다.</block>
-  <block id="bdf0204433b7ea9c415d7d723d74d2ef" category="list-text">선택 사항: 리소스 설정 페이지에서 Windows 호스트의 리소스에 대해 IBM DB2 플러그인에 대한 사용자 지정 키-값 쌍을 입력합니다</block>
   <block id="da0726c01021262f418bf88a38a3c39d" category="paragraph">데이터베이스는 호스트 이름, 관련 리소스 그룹 및 정책, 전체 상태 등의 정보와 함께 표시됩니다</block>
   <block id="c919dec0be0a88ec3d86651541015ec0" category="paragraph">데이터베이스를 추가한 후 IBM DB2 데이터베이스 세부 정보를 수정할 수 있습니다.</block>
   <block id="8c1a9a6f582efdb1bcf39b24b3a86ac7" category="summary">리소스는 SnapCenter에서 관리하는 Linux 호스트의 IBM DB2 데이터베이스 및 인스턴스입니다. IBM DB2용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 IBM DB2 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
@@ -9606,4 +9604,21 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="ae0aa1a81eb18e69d5fc662eaee0efd5" category="inline-link-macro">Broadcom 기술 문서</block>
   <block id="35108ed715245e1479e838ca41d91463" category="paragraph"><block ref="fba62a4233b1f0aa3ff3e46f7f59037b" category="inline-link-macro-rx"></block>을 참조하고 물리적 호스트에 걸쳐 가상 머신을 클러스터링하고 Microsoft 클러스터용 공유 FC RDM LUN을 생성하는 방법에 대한 문서를 검색하십시오.</block>
   <block id="82b9e59bccf9587b5e339fa8a0f02dd5" category="list-text">NVMe 컨트롤러는 NVMe 데이터 저장소에서만 지원됩니다.</block>
+  <block id="cc05f18551b367465c63e80895a59c04" category="list-text">리소스 페이지에서 *IBM DB2 리소스 추가*를 선택합니다.</block>
+  <block id="89cb4324d3c17b7b0eaa5b7eb935edd8" category="paragraph">마운트 경로</block>
+  <block id="cc1a25d74bb64939e2163e074e092923" category="paragraph">리소스가 마운트된 마운트 경로를 입력하십시오. 이 기능은 Windows 호스트에만 적용됩니다.</block>
+  <block id="30deb25c4a7c59e8200ce96d5e23156f" category="paragraph">이 필드는 선택 사항입니다.</block>
+  <block id="d353032aed6d3d3117bcf87b841c7809" category="list-text">선택 사항: 리소스 설정 페이지에서 IBM Db2용 SnapCenter 플러그인이 설치된 Linux 호스트의 리소스에 대해 IBM Db2 플러그인용 사용자 지정 키-값 쌍을 입력합니다. 중앙 집중식 Windows 플러그인으로 등록된 IBM Db2 데이터베이스의 경우 사용자 지정 키-값 쌍은 지원되지 않습니다.</block>
+  <block id="a56c9defea42601d21f4c5106fa4712f" category="paragraph">데이터베이스는 호스트 이름, 연결된 리소스 그룹 및 정책, 전반적인 상태와 같은 정보와 함께 표시됩니다.</block>
+  <block id="aeab626a715ace67f9b44eba97173286" category="list-text">ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock Vault 스냅샷으로부터 생성된 클론은 SnapLock Vault 만료 시간을 상속받습니다. 스토리지 관리자는 SnapLock 만료 시간이 지난 후 클론을 수동으로 정리해야 합니다.</block>
+  <block id="988351bdb1f1d7ecd10610f11fe7bd42" category="list-text">리소스 페이지에서 *새 리소스 그룹*을 선택합니다.</block>
+  <block id="5c97cba64ecb09baf4d77b8f9af3d46f" category="paragraph">스냅샷에 사용자 지정 이름 형식 사용</block>
+  <block id="5ff5fcae197a653580a534917740d7f8" category="list-text">*Scripts* 화살표를 선택하고 정지, 스냅샷 및 정지 해제 작업에 대한 사전 및 사후 명령을 입력하십시오. 오류 발생 시 종료하기 전에 실행할 사전 명령도 입력할 수 있습니다.</block>
+  <block id="d3436e2d89e59038914374a22cc8c673" category="list-text">*사용자 지정 구성* 화살표를 선택하고 이 리소스를 사용하는 모든 데이터 보호 작업에 필요한 사용자 지정 키-값 쌍을 입력하십시오.</block>
+  <block id="98f1c90d5d623746b2adfec471311f76" category="list-text">스냅샷을 생성할 도구를 선택하려면 *Snapshot Copy Tool* 화살표를 선택하십시오.</block>
+  <block id="7658971f73ec7751e63de7b917ad3277" category="paragraph">스냅샷을 생성하기 위해 호스트에서 실행할 명령을 입력합니다.</block>
+  <block id="375a1cee000ea12f25f7ea0aa40c92d2" category="paragraph"><block ref="375a1cee000ea12f25f7ea0aa40c92d2" category="inline-link-macro-rx"></block></block>
+  <block id="3edc812c3aede1bb8931ed56901c3d63" category="list-text">Linux 또는 AIX 호스트에 Java 11이 설치되어 있어야 합니다.</block>
+  <block id="67444cdbc60594b36af73fd32a491c3e" category="paragraph"><block ref="67444cdbc60594b36af73fd32a491c3e" category="inline-link-macro-rx"></block></block>
+  <block id="947890351727a5bfefd25ab911655064" category="paragraph"><block ref="947890351727a5bfefd25ab911655064" category="inline-link-macro-rx"></block></block>
 </blocks>
