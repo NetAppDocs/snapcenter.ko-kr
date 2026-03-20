@@ -333,7 +333,6 @@
   <block id="88ff0775a15d5ae4d05b9ecdeb6b5a48" category="paragraph">아카이브 로그가 하위 디렉토리 아래에 있는 경우 이 매개 변수를 사용해야 합니다.</block>
   <block id="70ea5c730ba565a725b5e6a5ce34b32d" category="cell">원하는 작업</block>
   <block id="62559cf2803ff56106a84e128591c337" category="paragraph">이 옵션은 SAP HANA 데이터베이스용 SnapCenter 플러그인에는 적용되지 않습니다.</block>
-  <block id="086beaa9afd2391b7d5204a8db47791c" category="paragraph">호스트에서 실행할 명령을 입력하여 스냅샷 복사본을 생성합니다.</block>
   <block id="70c30c71587e2d0c71b7f9e97a8aad7d" category="list-text">드롭다운 목록에서 하나 이상의 정책을 선택합니다.</block>
   <block id="e27c3f444b9f74c83a643ba11ed3a83e" category="admonition">* 를 클릭하여 정책을 생성할 수도 있습니다<block ref="abe09f480538c71c9fc89b98cd91e2d0" category="inline-image-macro-rx" type="image"></block>*.</block>
   <block id="bfd0e05a188a0885b5397fae78f649b8" category="paragraph">정책은 * 선택한 정책에 대한 일정 구성 * 섹션에 나열됩니다.</block>
@@ -2618,7 +2617,6 @@
   <block id="2cda512470ebd52d3c5ba685f87bb1fb" category="paragraph">SAP HANA 시스템 복제 백업을 생성하려면 SAP HANA 시스템의 모든 리소스를 하나의 리소스 그룹에 추가하는 것이 좋습니다. 이렇게 하면 Takeover-failback 모드 중에 원활한 백업이 보장됩니다.</block>
   <block id="775b811b88d8fc4fc28b0d206dcc4c05" category="list-text">사용자 지정 구성 * 화살표를 클릭하고 이 리소스를 사용하는 모든 데이터 보호 작업에 필요한 사용자 지정 키 값 쌍을 입력합니다.</block>
   <block id="036fef469740fe0c7a8ae6e09ddcb791" category="paragraph">아카이브 로그 관리를 활성화하여 아카이브 로그를 삭제합니다.</block>
-  <block id="0d1c37a6cf22ce8a58bdf0cb6bb40c68" category="admonition">SAP HANA Linux 플러그인 시스템에서는 맞춤형 키 값 쌍이 지원되며, 중앙 집중식 Windows 플러그인으로 등록된 SAP HANA 데이터베이스는 지원되지 않습니다.</block>
   <block id="39fba97fa35b3e2df0e6339cd21abe23" category="paragraph">선택한 정책에 대한 스케줄 구성 섹션에 정책이 나열됩니다.</block>
   <block id="7c221f1777123603eacf6f596630737a" category="paragraph">구성된 스케줄은 * Applied Schedules * 열에 나열됩니다.</block>
   <block id="b77f43243ff7824de010f233cda7884a" category="summary">SnapCenter에 직접 등록된 SAP HANA 호스트의 경우 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치 또는 업그레이드하면 호스트에서 리소스를 자동으로 검색할 수 있습니다. 플러그인을 설치 또는 업그레이드한 후 플러그인 호스트에 있는 모든 다중 테넌트 데이터베이스 컨테이너 \(MDC\) 리소스에 대해 다른 GUID 형식으로 다른 MDC 리소스가 자동으로 검색되어 SnapCenter에 등록됩니다. 새 리소스가 "잠김" 상태가 됩니다.</block>
@@ -3176,7 +3174,6 @@
   <block id="02014e1d58ea0ff61c8657ffa8e76bd7" category="paragraph">예를 들어, * 작업 * 에서 도넛형 차트를 클릭하면 선택에 대한 자세한 정보가 모니터 페이지로 리디렉션됩니다. 보호 요약 * 에서 도넛형 차트를 클릭하면 보고서 페이지로 리디렉션되어 선택 사항에 대한 자세한 정보를 볼 수 있습니다.</block>
   <block id="b36ee7ff89fbb252e1b22b5a6cce9b0f" category="summary">SnapCenter에서 수행되는 다양한 작업과 관련된 정보는 SnapCenter 서버 데이터베이스 저장소에 저장됩니다. SnapCenter 서버가 데이터 손실로부터 보호되도록 리포지토리의 백업을 만들어야 합니다.</block>
   <block id="7d0bb889cb0b99adea9fd13298f9dc65" category="doc">SnapCenter 서버 리포지토리를 관리합니다</block>
-  <block id="a1e91e17ee1b5e24f7c7302a0064632f" category="paragraph">SnapCenter 서버 저장소는 NSM 데이터베이스라고도 합니다.</block>
   <block id="fe7cd80bae6be2bcc96ab226eb99c50a" category="section-title">SnapCenter 리포지토리 보호를 위한 사전 요구 사항</block>
   <block id="01ef52f0d7aff8362a33649ac3782a4e" category="paragraph">SnapCenter 리포지토리를 보호하려면 환경에서 특정 사전 요구 사항을 충족해야 합니다.</block>
   <block id="56cd02514fc7e3e9a291f682b7b4152f" category="list-text">SVM(스토리지 가상 시스템) 연결 관리</block>
@@ -3186,20 +3183,10 @@
   <block id="5939935560a57cf24f66e58fc3474130" category="paragraph">호스트 추가, SVM 연결 설정 및 호스트 프로비저닝에 대한 자세한 내용은 설치 지침을 참조하십시오.</block>
   <block id="f59018181ccb88a6778559b6b5c4473e" category="list-text">iSCSI LUN 또는 VMDK를 프로비저닝합니다</block>
   <block id="4ab874225134090fa4c4cfdc80864dd6" category="paragraph">고가용성(HA) 구성의 경우 SnapCenter 서버 중 하나에 iSCSI LUN 또는 VMDK를 프로비저닝할 수 있습니다.</block>
-  <block id="7597d52eb0c956005115012b9fa9bd26" category="paragraph">SnapCenter 서버 리포지토리를 백업하면 데이터 손실로부터 보호할 수 있습니다. _protect-SmRepository_cmdlet을 실행하여 리포지토리를 백업할 수 있습니다.</block>
-  <block id="df8c6c6a4cbe864804d25a19c138d1e4" category="paragraph">Protect-SmRepository_cmdlet은 다음 작업을 수행합니다.</block>
   <block id="a50ee732cf2b94825d6f396603785b14" category="list-text">리소스 그룹 및 정책을 생성합니다</block>
   <block id="bcd34fe0c0a8a4c0ceaad81a07d9c1a3" category="list-text">SnapCenter 리포지토리에 대한 백업 일정을 만듭니다</block>
-  <block id="304b4f669a8de7a8bc81003b9b4662ac" category="list-text">_protect-SmRepository_cmdlet 및 필수 매개 변수를 사용하여 리포지토리를 백업합니다.</block>
   <block id="619a478ddd75b061c06fe4b486fd257d" category="section-title">SnapCenter 리포지토리의 백업을 봅니다</block>
-  <block id="3914a7caf7bf09997c2fc2fbe52d8be9" category="paragraph">get-SmrepositoryBackups_cmdlet을 실행하여 SnapCenter 서버 데이터베이스 저장소 백업 목록을 표시할 수 있습니다.</block>
-  <block id="cf09cb1daef76e19292bdba03e3b0854" category="paragraph">리포지토리 백업은 _protect-SmRepository_cmdlet에 지정된 일정에 따라 생성됩니다.</block>
-  <block id="82e30b4352734f6dc42efb531c81acab" category="list-text">명령 프롬프트에서 다음 cmdlet을 입력한 다음 SnapCenter 서버에 연결할 자격 증명을 입력합니다._Open - SMConnection_</block>
-  <block id="1052207e87a7abc9637c274fe1512058" category="list-text">get-SmrepositoryBackups_cmdlet을 사용하여 사용 가능한 모든 SnapCenter 데이터베이스 백업을 나열합니다.</block>
   <block id="1f3fde786df2928c4db966c705ec8ba1" category="section-title">SnapCenter 데이터베이스 리포지토리를 복구합니다</block>
-  <block id="8efce21441fffae32eaf2ee4fec1a9b8" category="paragraph">_Restore-SmRepositoryBackup_cmdlet을 실행하여 SnapCenter 리포지토리를 복원할 수 있습니다.</block>
-  <block id="09a6d5e712449f112a3dcd2169dac55a" category="paragraph">SnapCenter 리포지토리를 복구하는 경우 복원 작업 중에 리포지토리 데이터베이스에 액세스할 수 없기 때문에 실행 중인 다른 SnapCenter 작업이 영향을 받습니다.</block>
-  <block id="f65a265b9c1e948edcb4b8b5bd492a18" category="list-text">_Restore-SmRepositoryBackup_cmdlet을 사용하여 리포지토리 백업을 복원합니다.</block>
   <block id="ec9dad1ea2b1a5314f82d20d3bf23f49" category="paragraph">다음 cmdlet은 iSCSI LUN 또는 VMDK에 있는 백업에서 SnapCenter MySQL 데이터베이스 리포지토리를 복구합니다.</block>
   <block id="ba26ffcdcd99a1aea9b86f7be319ba8b" category="admonition">복원 작업을 수행한 후 리포지토리 백업을 검색할 때 리포지토리 복원 작업을 수행하는 데 사용된 백업이 표시되지 않습니다.</block>
   <block id="071788d560dec04e39684f7e9734f7f8" category="section-title">SnapCenter 리포지토리를 마이그레이션합니다</block>
@@ -3218,8 +3205,6 @@
   <block id="b8b2c5727e9add44321ab3714400d246" category="section-title">SnapCenter 리포지토리 암호를 재설정합니다</block>
   <block id="faa0310fc3df6f9869f6dc9e0bb9d44d" category="paragraph">MySQL 서버 리포지토리 데이터베이스 암호는 SnapCenter 4.2에서 SnapCenter 서버를 설치하는 동안 자동으로 생성됩니다. SnapCenter 사용자는 이 자동 생성된 암호를 언제든지 알 수 없습니다. 리포지토리 데이터베이스에 액세스하려면 암호를 재설정해야 합니다.</block>
   <block id="b34c04c23047012dce89ab9b0f667d6f" category="paragraph">비밀번호를 재설정하려면 SnapCenter 관리자 권한이 있어야 합니다.</block>
-  <block id="2bc36d79452c84a7d4dcf76ddbbd79db" category="list-text">명령 프롬프트에서 다음 명령을 입력한 다음 SnapCenter 서버에 연결할 자격 증명을 입력합니다._Open - SMConnection _</block>
-  <block id="f14f9ddeff8bba25b45edf7c8f27a7f1" category="list-text">리포지토리 암호 재설정: _Set-SmRepositoryPassword_</block>
   <block id="e340c193c1f0abe76ae4f936229af71d" category="paragraph">다음 명령을 실행하면 리포지토리 암호가 재설정됩니다.</block>
   <block id="3a3be0733cfa37aa5b2c3451b35cd9f3" category="summary">PowerShell cmdlet을 사용하여 EMS(Event Management System) 데이터 수집을 예약하고 관리할 수 있습니다. EMS 데이터 수집에는 SnapCenter 서버, 설치된 SnapCenter 플러그인 패키지, 호스트 및 이와 유사한 정보에 대한 세부 정보를 수집한 다음 지정된 ONTAP 스토리지 가상 시스템\(SVM\)으로 전송하는 작업이 포함됩니다.</block>
   <block id="4b77029241e362a83eda111b72aa5feb" category="doc">EMS Data 수집 관리</block>
@@ -7571,8 +7556,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="6fa0e3128174a7e08f019a67d401084d" category="list-text">정지, 스냅샷 및 정지 해제 작업에 대해 사전 및 사후 명령을 실행하려면 스크립트 * 화살표를 선택합니다.</block>
   <block id="5b0cda43c7e63de2868d2bf0d3b62f53" category="paragraph">SnapCenter 를 눌러 스토리지 레벨의 스냅샷을 생성합니다</block>
   <block id="d00226243bd3282875e3647e34ef9ac2" category="paragraph">SnapCenter - Windows용 플러그인을 사용하여 파일 시스템을 일관된 상태로 설정한 다음 스냅샷을 생성합니다</block>
-  <block id="513e9e5c9242c20cd3a0e1af2c91141c" category="paragraph">스냅샷 작업이 완료될 때까지 대기할 시간을 지정하려면 * 긴급 *, * 보통 * 또는 * 느림 * 을 선택합니다.</block>
-  <block id="7753c7b112c057fc94bcaa18ecc0f343" category="list-text">스크립트 * 화살표를 클릭하고 정지, 스냅샷 및 정지 해제 작업에 대한 사전 및 사후 명령을 입력합니다. 장애 발생 시 종료하기 전에 실행할 사전 명령을 입력할 수도 있습니다.</block>
   <block id="660ee777f341ef8a02048c649ceb5033" category="admonition">리소스에 볼륨 또는 qtree가 포함된 경우 해당 볼륨 또는 qtree에서 복원을 위해 선택된 스냅샷 이후에 생성된 스냅샷은 삭제되며 복구할 수 없습니다. 또한 동일한 볼륨 또는 qtree에서 다른 리소스가 호스트되는 경우 해당 리소스도 삭제됩니다.</block>
   <block id="99b447de4897ad60ae2d4ef832acc11d" category="paragraph">예를 들어 운영 스냅샷 보존 기간이 7일이고 보조 스냅샷 보존 기간이 45일이고 45일이 지난 후 모든 백업이 삭제된 후에 리소스 그룹과 이전 MDC 리소스를 삭제해야 합니다.</block>
   <block id="d7d148a2da0b4f8f54f724e577240359" category="paragraph">리소스에 볼륨 또는 qtree가 포함된 경우 해당 볼륨 또는 qtree에서 복원을 위해 선택된 스냅샷 이후에 생성된 스냅샷은 삭제되며 복구할 수 없습니다. 또한 동일한 볼륨 또는 qtree에서 다른 리소스가 호스트되는 경우 해당 리소스도 삭제됩니다. 이 옵션은 * 볼륨 복원 * 옵션이 있는 * 전체 리소스 * 가 복원용으로 선택된 경우에 적용됩니다.</block>
@@ -9143,7 +9126,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="57cf9c4ee485623172a5c60cbee423a4" category="paragraph"><block ref="96716f545c5cf1a209bf10c1a798ce38" category="inline-link-macro-rx"></block>비디오를 참조하십시오.</block>
   <block id="5c8b8bc332cb41802ffbe6c5cda258ab" category="paragraph">VMDK, VVOL 및 RDM 가상 스토리지 레이아웃이 지원됩니다.</block>
   <block id="e5385a9de21528bfedd644f4c0331eb1" category="summary">SnapCenter 소프트웨어는 간단하고 확장 가능한 중앙 집중식 플랫폼으로, 하이브리드 클라우드의 모든 위치에서 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대한 애플리케이션 정합성이 보장된 데이터 보호를 제공합니다.</block>
-  <block id="68578ccfcf5117ca8a9a2d7d884e320f" category="summary">SnapCenter 소프트웨어의 6.1 릴리스에는 몇 가지 새로운 기능과 개선 사항이 포함되어 있습니다.</block>
   <block id="8127605cde4cee83a23b35f1207c7572" category="sidebar">SnapCenter 소프트웨어 설명서</block>
   <block id="e76a4ae8df1bf6770838ce7c7d94e229" category="paragraph">플러그인 서비스 시작(Windows 호스트에서 실행 중인 플러그인에만 해당)</block>
   <block id="8e6af76634121af640a2987aea883af4" category="doc">SnapCenter 자격 증명에 대한 인증 방법입니다</block>
@@ -9533,13 +9515,11 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="67998d9af35dea74903e9cdb371f7e7a" category="paragraph">또는 다음을 참조할 수도 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> 또는<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block> .</block>
   <block id="e2affc8ad90cb942103d56d82396b5f7" category="paragraph">SnapCenter 6.2에서 사용할 수 있는 새롭고 향상된 기능에 대해 알아보세요.</block>
   <block id="652468e7a8f47c94c0dfc2bbbe3f6788" category="inline-link-macro">SnapCenter 6.2의 새로운 기능</block>
-  <block id="d5d7d6e218fb8deef9aa758f16f3e053" category="paragraph">새로운 기능 및 향상된 기능의 전체 목록은 다음을 참조하세요. <block ref="ba56a05032a421946bbeef30dde12674" category="inline-link-macro-rx"></block> .</block>
   <block id="24443d9133830b434ac05072f0c9653a" category="inline-link">SnapCenter 소프트웨어 6.2 릴리스 노트</block>
   <block id="320bd16b81d8a6a0a077d7308db7683d" category="paragraph">업그레이드 경로는 어떤 SnapCenter 버전에서 업그레이드할 수 있는지, 어떤 플러그인 버전이 지원되는지 보여줍니다.</block>
   <block id="f734f899336791933d28373bca69a72f" category="admonition">SnapCenter Server를 6.2로 업그레이드하는 경우 플러그인도 6.2로 업그레이드하세요.</block>
   <block id="7a22247de8db3271f3bf8573be10e986" category="cell">6.2</block>
   <block id="cb2f94cd974dcdf68577ffd66816a900" category="doc">SnapCenter software 6.2의 새로운 기능</block>
-  <block id="02a7a1f2d7c2b92647dd96da7bf06024" category="paragraph">SnapCenter software 6.2 릴리스에는 다음과 같은 새로운 기능이 포함되어 있습니다.</block>
   <block id="efd8ec518c3271e168cebeb4a21d4fc3" category="paragraph">SnapCenter 6.2(서버 및 플러그인)와 ONTAP 9.17.1은 계층적 일관성 그룹을 활용하여 물리적 시스템(Linux 및 Windows)과 가상 머신 파일 시스템(VMFS)에서 실행되는 애플리케이션의 기본 및 보조 보호를 모두 지원합니다.</block>
   <block id="669e7e163e3b320fc474c04f2cd99bdc" category="paragraph">SnapCenter 6.2 및 ONTAP 9.17.1로 업그레이드한 후 SnapCenter 첫 번째 예약된 백업 중에 플랫 일관성 그룹을 계층적 일관성 그룹으로 변경합니다.</block>
   <block id="9e1557573461036ce114499c0c41ed6f" category="paragraph">워크플로에는 SnapCenter 서버와 플러그인 패키지를 업그레이드하기 위해 완료해야 하는 작업이 나열되어 있습니다.</block>
@@ -9621,4 +9601,40 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="3edc812c3aede1bb8931ed56901c3d63" category="list-text">Linux 또는 AIX 호스트에 Java 11이 설치되어 있어야 합니다.</block>
   <block id="67444cdbc60594b36af73fd32a491c3e" category="paragraph"><block ref="67444cdbc60594b36af73fd32a491c3e" category="inline-link-macro-rx"></block></block>
   <block id="947890351727a5bfefd25ab911655064" category="paragraph"><block ref="947890351727a5bfefd25ab911655064" category="inline-link-macro-rx"></block></block>
+  <block id="4eecf71620cb916df975db3d622e9c30" category="paragraph">SnapCenter Server 리포지토리는 NSM 데이터베이스라고도 합니다. 사용 가능한 모든 cmdlet에 대한 자세한 내용은<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="e9087f4d1c2c90b2c0e70f14ce029f2b" category="paragraph">SnapCenter 서버 리포지토리를 백업하면 데이터 손실을 방지하는 데 도움이 됩니다. <block ref="f89bc12c0d2d413f64b24c351b6b566d" prefix=" " category="inline-code"></block> cmdlet을 실행하여 리포지토리를 백업할 수 있습니다.</block>
+  <block id="7de02e43c7e5e44fea6db42bf98f4e4f" category="paragraph"><block ref="f89bc12c0d2d413f64b24c351b6b566d" prefix=" " category="inline-code"></block>cmdlet은 다음과 같은 작업을 수행합니다.</block>
+  <block id="7c6f43e53987a1cba407a45574b6e131" category="list-text">SnapCenter 서버 호스트에서 <block ref="5127bb5818426c9a226f86808b688df6" prefix=" " category="inline-code"></block> cmdlet을 사용하여 세션을 설정하고 자격 증명을 입력합니다.</block>
+  <block id="2313913b76aff94d8503163d4f267e85" category="list-text"><block ref="f89bc12c0d2d413f64b24c351b6b566d" prefix=" " category="inline-code"></block> cmdlet을 사용하여 다음 필수 매개변수로 리포지토리를 백업하십시오.</block>
+  <block id="a78522bed1f819174f25cef96c0c0ff3" category="list-text"><block ref="cf11ed5faa9031625d5872a33b51369d" prefix="" category="inline-code"></block>: SnapCenter 리포지토리가 있는 서버의 호스트 이름을 지정합니다.</block>
+  <block id="f72b4d51cc947b4944fe5bff106a159e" category="list-text"><block ref="6c15defbbb5591f238f00aae21da8102" prefix="" category="inline-code"></block>: 리포지토리 백업이 저장되는 NetApp 스토리지 시스템의 파일 시스템 경로를 지정합니다.</block>
+  <block id="45cfbc93f52bddc8332cbb3821a79fcd" category="list-text"><block ref="3e6a04e315cffe1935944c6e148259e3" prefix="" category="inline-code"></block>: 저장소 백업 일정을 정의합니다. 일반적으로 해시 테이블로 정의됩니다.</block>
+  <block id="ea93be765766b1b0340a46ec9fa44007" category="list-text"><block ref="17c9a3d0386d0c9388f23f0e1746b442" prefix="" category="inline-code"></block>: 보존할 리포지토리 백업 개수를 지정합니다. 백업 개수가 이 개수를 초과하면 가장 오래된 백업이 삭제됩니다.</block>
+  <block id="fbb43b857700ed367835ec83901639b4" category="inline-link">SnapCenter Software Cmdlet 참조 가이드 - Get-SmRepositoryBackups</block>
+  <block id="bc38773382be3f74dc73755cd9827105" category="paragraph"><block ref="8f3ee45ff6a4d15cb1535fbb2104cbe3" prefix=" " category="inline-code"></block> cmdlet을 실행하여 SnapCenter Server 데이터베이스 리포지토리 백업 목록을 표시할 수 있습니다. 자세한 내용은 <block ref="c67bf538930b4faf23ee321b029e47b4" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="fe977c7845ac3fb77271396a2eccec70" category="paragraph">리포지토리 백업은 <block ref="f89bc12c0d2d413f64b24c351b6b566d" prefix=" " category="inline-code"></block> cmdlet에 지정된 일정에 따라 생성됩니다.</block>
+  <block id="c55d0155b4fd52f1558139d035379b17" category="list-text">명령 프롬프트에서 <block ref="5127bb5818426c9a226f86808b688df6" prefix=" " category="inline-code"></block> cmdlet을 입력하고 SnapCenter 서버에 연결하기 위한 자격 증명을 제공합니다.</block>
+  <block id="1d8ed305cde1786adbe54ceb761583b1" category="list-text"><block ref="8f3ee45ff6a4d15cb1535fbb2104cbe3" prefix=" " category="inline-code"></block> cmdlet을 사용하여 사용 가능한 모든 SnapCenter 데이터베이스 백업을 나열합니다.</block>
+  <block id="f815b5ceaf8636c8128f6fdfe485fca0" category="paragraph"><block ref="8ae865811cf35c74eae23a4044145d22" prefix=" " category="inline-code"></block> cmdlet을 실행하여 SnapCenter 리포지토리를 복원할 수 있습니다.</block>
+  <block id="358aee23266781e25636c5c68e9d029f" category="paragraph">SnapCenter 리포지토리를 복원하는 동안에는 복원 작업 중 리포지토리 데이터베이스에 액세스할 수 없으므로 실행 중인 다른 SnapCenter 작업에 영향을 미칩니다.</block>
+  <block id="ade1166053736f73c976329f5201c8e3" category="list-text"><block ref="8ae865811cf35c74eae23a4044145d22" prefix=" " category="inline-code"></block> cmdlet을 사용하여 리포지토리 백업을 복원합니다.</block>
+  <block id="493b7d8df398bc120f9f428c564acc5c" category="list-text"><block ref="e276a5794a7efafc0fd13b7cc2d4468c" prefix=" " category="inline-code"></block> cmdlet을 사용하여 리포지토리 암호를 재설정합니다.</block>
+  <block id="151857987a4ca8ab0b6b4ae84218e0ef" category="paragraph">cmdlet과 함께 사용할 수 있는 매개변수 및 해당 설명에 대한 정보는 <block ref="b306feeed6ddda97d08ef1f2a0ba62d9" prefix=" " category="inline-code"></block> 명령을 실행하여 얻을 수 있습니다. 또는 <block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block>을 참조할 수도 있습니다.</block>
+  <block id="f6290ecec0b6032b705450a72b783056" category="list-text">ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock Vault 스냅샷으로부터 생성된 클론은 SnapLock Vault 만료 시간을 상속합니다. 스토리지 관리자는 SnapLock 만료 시간 이후에 클론을 수동으로 정리해야 합니다.</block>
+  <block id="5e0169811e6298c75af680faf7eb3898" category="paragraph">스냅샷에 사용자 지정 이름 형식을 사용합니다.</block>
+  <block id="32aa9c674cdcdd67bbedcd5786e9c89c" category="paragraph">예를 들어, customtext_resourcegroup_policy_hostname 또는 resource group_hostname과 같습니다. 기본적으로 스냅샷 이름에 타임스탬프가 추가됩니다.</block>
+  <block id="71c597cb94a0c26a5fa6146e850d4c89" category="paragraph">아카이브 로그를 보존할 일수를 지정합니다.</block>
+  <block id="25b35304e237e166d7ff315d9ad4ba4d" category="paragraph">이 설정은 NTAP_SNAPSHOT_RETENTIONS와 같거나 커야 합니다.</block>
+  <block id="7e4961425800a99500e244a5e02bc700" category="paragraph">아카이브 로그가 포함된 디렉터리의 경로를 지정합니다.</block>
+  <block id="244579f440504a33f1468b477f530b72" category="paragraph">로그 파일의 파일 이름 확장자와 일치하는 정규 표현식을 지정합니다.</block>
+  <block id="2168489b9f8e6334897f26a5329667ab" category="paragraph">숫자로 끝나는 로그 파일의 경우 <block ref="ececa0327fd65b97690ab7756b7b6c18" prefix=" " category="inline-code"></block> 또는 (6.0부터) <block ref="217c2028762e7dcdedd3dce416220593" prefix=" " category="inline-code"></block> (최소 한 글자 이상의 임의 길이의 숫자)와 같은 정규 표현식을 매개변수 값으로 사용하십시오. 이는 SAP HANA의 로그 시퀀스 번호를 나타냅니다.</block>
+  <block id="488081ea3d4e639bcf2be8f71cd46132" category="paragraph">ARCHIVE_LOG_RECURSIVE_SEARCH</block>
+  <block id="85bbfdb76a2b2ed0fd1b0da7a4fb3785" category="paragraph">하위 디렉터리 내의 아카이브 로그를 관리할 수 있습니다.</block>
+  <block id="4c6d3857eae63796ee3d5f67011e194f" category="paragraph">아카이브 로그가 하위 디렉터리에 있는 경우 이 매개변수를 사용해야 합니다.</block>
+  <block id="5223ed0f09a7ed8f79cb34ee678642b2" category="admonition">Linux 시스템의 SAP HANA 데이터베이스용 SnapCenter 플러그인에서는 사용자 지정 키-값 쌍이 지원되지만, Microsoft Windows용 SnapCenter 플러그인에 등록된 SAP HANA 데이터베이스에서는 지원되지 않습니다.</block>
+  <block id="fef844efd5d5274641ab5a8e530ced87" category="admonition">*<block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>*를 선택하여 정책을 생성할 수도 있습니다.</block>
+  <block id="d3562ace999b51c49c22ce4c580579b0" category="list-text">일정 구성 열에서 구성하려는 정책에 대해 *<block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>*를 선택합니다.</block>
+  <block id="8d3b5ad5b9f27b4f9781e490487c376e" category="paragraph">새로운 기능 및 개선 사항의 전체 목록은 <block ref="333326639e0f94ceb693906a79235ec5" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="2f1352033f9cdf5dbec684bea0d87ee5" category="summary">SnapCenter software 6.2 버전에는 여러 가지 새로운 기능과 개선 사항이 포함되어 있습니다.</block>
+  <block id="f4090871da1ea3c21c90ff0a2bfe77db" category="paragraph">SnapCenter software 6.2 버전에는 다음과 같은 확장 기능이 포함되어 있습니다.</block>
 </blocks>

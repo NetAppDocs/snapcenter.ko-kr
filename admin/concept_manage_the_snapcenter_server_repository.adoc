@@ -11,7 +11,7 @@ summary: SnapCenter에서 수행되는 다양한 작업과 관련된 정보는 S
 [role="lead"]
 SnapCenter에서 수행되는 다양한 작업과 관련된 정보는 SnapCenter 서버 데이터베이스 저장소에 저장됩니다. SnapCenter 서버가 데이터 손실로부터 보호되도록 리포지토리의 백업을 만들어야 합니다.
 
-SnapCenter 서버 저장소는 NSM 데이터베이스라고도 합니다.
+SnapCenter Server 리포지토리는 NSM 데이터베이스라고도 합니다. 사용 가능한 모든 cmdlet에 대한 자세한 내용은 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]을 참조하십시오.
 
 
 
@@ -40,51 +40,54 @@ SnapCenter 저장소 호스트에는 하나 이상의 NetApp 저장소 디스크
 
 == SnapCenter 리포지토리를 백업합니다
 
-SnapCenter 서버 리포지토리를 백업하면 데이터 손실로부터 보호할 수 있습니다. _protect-SmRepository_cmdlet을 실행하여 리포지토리를 백업할 수 있습니다.
+SnapCenter 서버 리포지토리를 백업하면 데이터 손실을 방지하는 데 도움이 됩니다.  `Protect-SmRepository` cmdlet을 실행하여 리포지토리를 백업할 수 있습니다.
 
-* 이 작업에 대한 정보 *
-
-Protect-SmRepository_cmdlet은 다음 작업을 수행합니다.
+.이 작업에 대해
+ `Protect-SmRepository`cmdlet은 다음과 같은 작업을 수행합니다.
 
 * 리소스 그룹 및 정책을 생성합니다
 * SnapCenter 리포지토리에 대한 백업 일정을 만듭니다
 
 
-* 단계 *
-
+.단계
 . PowerShell을 실행합니다.
-. SnapCenter 서버 호스트에서 _Open-SmConnection_cmdlet을 사용하여 세션을 설정한 다음 자격 증명을 입력합니다.
-. _protect-SmRepository_cmdlet 및 필수 매개 변수를 사용하여 리포지토리를 백업합니다.
+. SnapCenter 서버 호스트에서  `Open-SmConnection` cmdlet을 사용하여 세션을 설정하고 자격 증명을 입력합니다.
+.  `Protect-SmRepository` cmdlet을 사용하여 다음 필수 매개변수로 리포지토리를 백업하십시오.
++
+.. `-HostName (String)`: SnapCenter 리포지토리가 있는 서버의 호스트 이름을 지정합니다.
+.. `-Path (String)`: 리포지토리 백업이 저장되는 NetApp 스토리지 시스템의 파일 시스템 경로를 지정합니다.
+.. `-Schedule (Hashtable)`: 저장소 백업 일정을 정의합니다. 일반적으로 해시 테이블로 정의됩니다.
+.. `-RetentionCount (Int32)`: 보존할 리포지토리 백업 개수를 지정합니다. 백업 개수가 이 개수를 초과하면 가장 오래된 백업이 삭제됩니다.
+
+
 
 
 
 
 == SnapCenter 리포지토리의 백업을 봅니다
 
-get-SmrepositoryBackups_cmdlet을 실행하여 SnapCenter 서버 데이터베이스 저장소 백업 목록을 표시할 수 있습니다.
+ `Get-SmRepositoryBackups` cmdlet을 실행하여 SnapCenter Server 데이터베이스 리포지토리 백업 목록을 표시할 수 있습니다. 자세한 내용은  https://docs.netapp.com/us-en/snapcenter-cmdlets/Get-SmRepositoryBackups.html["SnapCenter Software Cmdlet 참조 가이드 - Get-SmRepositoryBackups"^]를 참조하십시오.
 
-리포지토리 백업은 _protect-SmRepository_cmdlet에 지정된 일정에 따라 생성됩니다.
+리포지토리 백업은  `Protect-SmRepository` cmdlet에 지정된 일정에 따라 생성됩니다.
 
-* 단계 *
-
+.단계
 . PowerShell을 실행합니다.
-. 명령 프롬프트에서 다음 cmdlet을 입력한 다음 SnapCenter 서버에 연결할 자격 증명을 입력합니다._Open - SMConnection_
-. get-SmrepositoryBackups_cmdlet을 사용하여 사용 가능한 모든 SnapCenter 데이터베이스 백업을 나열합니다.
+. 명령 프롬프트에서  `Open-SmConnection` cmdlet을 입력하고 SnapCenter 서버에 연결하기 위한 자격 증명을 제공합니다.
+.  `Get-SmRepositoryBackups` cmdlet을 사용하여 사용 가능한 모든 SnapCenter 데이터베이스 백업을 나열합니다.
 
 
 
 
 == SnapCenter 데이터베이스 리포지토리를 복구합니다
 
-_Restore-SmRepositoryBackup_cmdlet을 실행하여 SnapCenter 리포지토리를 복원할 수 있습니다.
+ `Restore-SmRepositoryBackup` cmdlet을 실행하여 SnapCenter 리포지토리를 복원할 수 있습니다.
 
-SnapCenter 리포지토리를 복구하는 경우 복원 작업 중에 리포지토리 데이터베이스에 액세스할 수 없기 때문에 실행 중인 다른 SnapCenter 작업이 영향을 받습니다.
+SnapCenter 리포지토리를 복원하는 동안에는 복원 작업 중 리포지토리 데이터베이스에 액세스할 수 없으므로 실행 중인 다른 SnapCenter 작업에 영향을 미칩니다.
 
-* 단계 *
-
+.단계
 . PowerShell을 실행합니다.
-. 명령 프롬프트에서 다음 cmdlet을 입력한 다음 SnapCenter 서버에 연결할 자격 증명을 입력합니다._Open - SMConnection_
-. _Restore-SmRepositoryBackup_cmdlet을 사용하여 리포지토리 백업을 복원합니다.
+. 명령 프롬프트에서  `Open-SmConnection` cmdlet을 입력하고 SnapCenter 서버에 연결하기 위한 자격 증명을 제공합니다.
+.  `Restore-SmRepositoryBackup` cmdlet을 사용하여 리포지토리 백업을 복원합니다.
 +
 다음 cmdlet은 iSCSI LUN 또는 VMDK에 있는 백업에서 SnapCenter MySQL 데이터베이스 리포지토리를 복구합니다.
 
@@ -112,8 +115,7 @@ NOTE: 복원 작업을 수행한 후 리포지토리 백업을 검색할 때 리
 
 SnapCenter 서버 데이터베이스 리포지토리를 기본 위치에서 다른 디스크로 마이그레이션할 수 있습니다. 저장소를 더 많은 공간이 있는 디스크에 재배치하려면 리포지토리를 마이그레이션할 수 있습니다.
 
-* 단계 *
-
+.단계
 . Windows에서 MYSQL57 서비스를 중지합니다.
 . MySQL DATA 디렉토리를 찾습니다.
 +
@@ -140,11 +142,10 @@ MySQL 서버 리포지토리 데이터베이스 암호는 SnapCenter 4.2에서 S
 .시작하기 전에
 비밀번호를 재설정하려면 SnapCenter 관리자 권한이 있어야 합니다.
 
-* 단계 *
-
+.단계
 . PowerShell을 실행합니다.
-. 명령 프롬프트에서 다음 명령을 입력한 다음 SnapCenter 서버에 연결할 자격 증명을 입력합니다._Open - SMConnection _
-. 리포지토리 암호 재설정: _Set-SmRepositoryPassword_
+. 명령 프롬프트에서  `Open-SmConnection` cmdlet을 입력하고 SnapCenter 서버에 연결하기 위한 자격 증명을 제공합니다.
+.  `Set-SmRepositoryPassword` cmdlet을 사용하여 리포지토리 암호를 재설정합니다.
 +
 다음 명령을 실행하면 리포지토리 암호가 재설정됩니다.
 
@@ -161,4 +162,4 @@ Successfully updated the MySQL server password.
 
 
 .관련 정보
-cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도 https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]있습니다.
+cmdlet과 함께 사용할 수 있는 매개변수 및 해당 설명에 대한 정보는  `Get-Help command_name` 명령을 실행하여 얻을 수 있습니다. 또는  https://docs.netapp.com/us-en/snapcenter-cmdlets/index.html["SnapCenter 소프트웨어 cmdlet 참조 가이드"^]을 참조할 수도 있습니다.
