@@ -58,6 +58,21 @@ VVOL 데이터 저장소는 VMware vSphere용 ONTAP 툴로만 프로비저닝할
 
 
 
+
+
+ a| 
+기타 하이퍼바이저
+ a| 
+KVM, Xen, Hyper-V 및 하이퍼스케일러 하이퍼바이저에서 실행되는 Linux는 게스트 OS가 다음 방법을 사용하여 필요한 ONTAP 스토리지 리소스에 직접 TCP/IP로 액세스할 수 있는 경우에 지원됩니다.
+
+* iSCSI로 연결된 LUN
+* NFS 연결 볼륨
+* NVMe/TCP
+
+
+
+NOTE: VMware 외부에서는 데이터 저장소 및 원시 장치 표현이 지원되지 않습니다.
+
 |===
 
 

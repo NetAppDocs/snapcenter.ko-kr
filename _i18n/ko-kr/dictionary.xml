@@ -9637,4 +9637,7 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="8d3b5ad5b9f27b4f9781e490487c376e" category="paragraph">새로운 기능 및 개선 사항의 전체 목록은 <block ref="333326639e0f94ceb693906a79235ec5" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
   <block id="2f1352033f9cdf5dbec684bea0d87ee5" category="summary">SnapCenter software 6.2 버전에는 여러 가지 새로운 기능과 개선 사항이 포함되어 있습니다.</block>
   <block id="f4090871da1ea3c21c90ff0a2bfe77db" category="paragraph">SnapCenter software 6.2 버전에는 다음과 같은 확장 기능이 포함되어 있습니다.</block>
+  <block id="e8210c34cf4a643a11f3bfc4c0fd905f" category="paragraph">기타 하이퍼바이저</block>
+  <block id="ff968c11eab0f01c02347241d47d4a25" category="paragraph">KVM, Xen, Hyper-V 및 하이퍼스케일러 하이퍼바이저에서 실행되는 Linux는 게스트 OS가 다음 방법을 사용하여 필요한 ONTAP 스토리지 리소스에 직접 TCP/IP로 액세스할 수 있는 경우에 지원됩니다.</block>
+  <block id="19228485fa8108fc9a8c5a7a0e681742" category="admonition">VMware 외부에서는 데이터 저장소 및 원시 장치 표현이 지원되지 않습니다.</block>
 </blocks>
