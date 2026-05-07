@@ -129,7 +129,7 @@ NOTE: GMSA는 SnapCenter Plug-in for Windows 서비스에 대해서만 로그온
 |===
 . 제출 * 을 클릭합니다.
 +
-Skip prechecks 확인란을 선택하지 않은 경우 호스트는 호스트가 플러그인 설치 요구 사항을 충족하는지 확인합니다. 디스크 공간, RAM, PowerShell 버전, NET 버전, 위치(Windows 플러그인의 경우) 및 Java 11(Windows 및 Linux 플러그인의 경우)은 최소 요구 사항에 따라 검증됩니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다.
+사전 검사 건너뛰기 확인란을 선택하지 않은 경우 호스트가 플러그인 설치 요구 사항을 충족하는지 확인하기 위해 호스트의 유효성을 검사합니다. 디스크 공간, RAM, PowerShell 버전, .NET 버전, 위치(Windows 플러그인의 경우) 및 Java 17(Windows 및 Linux 플러그인 모두)이 최소 요구 사항을 충족하는지 검사합니다. 최소 요구 사항을 충족하지 못하면 적절한 오류 또는 경고 메시지가 표시됩니다.
 
 +
 오류가 디스크 공간 또는 RAM과 관련된 경우 C:\Program Files\NetApp\SnapCenter WebApp에 있는 web.config 파일을 업데이트하여 기본값을 수정할 수 있습니다. 오류가 다른 매개변수와 관련된 경우 문제를 해결해야 합니다.

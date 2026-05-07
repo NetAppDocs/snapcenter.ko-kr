@@ -27,7 +27,7 @@ SnapCenter는 서로 다른 클러스터에서 동일한 이름의 여러 스토
 
 
 .단계
-. Open-SmConnection cmdlet을 사용하여 PowerShell Core 연결 세션을 시작합니다.
+. Open-SmConnection cmdlet을 사용하여 PowerShell 연결 세션을 시작합니다.
 +
 [listing]
 ----

@@ -36,7 +36,7 @@ SnapCenter 물리적 시스템과 VMFS(가상 머신 파일 시스템)에서 실
 SnapCenter ONTAP 일관성 그룹을 검색하거나 생성합니다.  2차 보호를 위해 대상 클러스터에 SnapMirror 관계를 설정합니다. https://docs.netapp.com/us-en/ontap/consistency-groups["ONTAP 일관성 그룹에 대해 자세히 알아보세요"^] .
 
 
-NOTE: SnapCenter 6.2(서버 및 플러그인)와 ONTAP 9.17.1로 업그레이드한 후 SnapCenter 첫 번째 예약된 백업 중에 플랫 일관성 그룹을 계층적 일관성 그룹으로 변경합니다.
+NOTE: SnapCenter 6.2.1(서버 및 플러그인) 및 ONTAP 9.17.1로 업그레이드한 후, SnapCenter는 첫 번째 예약 백업 중에 플랫 일관성 그룹을 계층적 일관성 그룹으로 변경합니다.
 
 애플리케이션에 대해 ASA r2 시스템에서 보조 보호를 활성화하는 방법을 알아보려면 다음을 참조하세요.
 

@@ -1,0 +1,14 @@
+---
+permalink: 'release-notes/what"s-new-in-snapcenter621.html' 
+sidebar: sidebar 
+keywords: what is new, features, enhancements, 6.2.1 
+summary: SnapCenter 소프트웨어 6.2.1 릴리스에는 새로운 기능이나 개선 사항이 없으며, SnapCenter 서버와 플러그인에 대한 알려진 버그 수정 및 검증된 버전 업데이트만 포함되어 있습니다. 
+---
+= SnapCenter software 6.2.1의 새로운 기능
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SnapCenter 소프트웨어 6.2.1 릴리스에는 새로운 기능이나 개선 사항이 포함되어 있지 않습니다. 이 릴리스에는 알려진 버그 수정 및 SnapCenter 서버와 플러그인의 적격 버전 업데이트만 포함되어 있습니다. 자세한 내용은 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467["SnapCenter 6.2.1 릴리스 노트"^]을 참조하십시오.

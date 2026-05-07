@@ -96,6 +96,8 @@ entries:
   entries:
   - title: 워크플로를 백업합니다
     url: "/protect-postgresql/back-up-postgresql-resources.html"
+  - title: PostgreSQL 클러스터에 대한 자격 증명 구성
+    url: "/protect-postgresql/configure-credentials-for-postgresql-cluster.html"
   - title: 클러스터를 자동으로 검색합니다
     url: "/protect-postgresql/discover-the-clusters-automatically.html"
   - title: 플러그인 호스트에 수동으로 리소스를 추가합니다

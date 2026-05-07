@@ -178,7 +178,6 @@
   <block id="dbef26874057ae0be535fee20766f8cb" category="list-text">SnapCenter에서 클러스터 노드를 관리하는 경우 클러스터의 모든 노드에 대한 관리 권한이 있는 사용자가 있어야 합니다.</block>
   <block id="cfe19b0ae08454358fbe515d88fd6095" category="section-title">Linux 호스트</block>
   <block id="92f854eabda8c2aa761e01fba1c6ffd4" category="list-text">루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.</block>
-  <block id="6919c26b69875a76335f5a1dd643e508" category="inline-link">모든 운영 체제에 대한 Java 다운로드</block>
   <block id="5e398ea531b7d56ad433ce2103049eab" category="summary">필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)\ 등이 있습니다.</block>
   <block id="fee335c3c26419e1b2971157844984a7" category="doc">필요한 백업 작업 수입니다</block>
   <block id="8b3a2edf035fc93730de54663ee89cc2" category="paragraph">필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)가 포함됩니다.</block>
@@ -560,7 +559,6 @@
   <block id="fdcd362ac5f5f9817e70642dd2a48bfd" category="list-text">Oracle Linux</block>
   <block id="a51e41e4cd7b03dd48ce2e65ed3e1736" category="list-text">SUSE Linux Enterprise Server(SLES)</block>
   <block id="083ad21990802d20fc5fdefdb7255565" category="paragraph">2GB</block>
-  <block id="bac8e3a852c936b4db89afd35d4d962a" category="paragraph">Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties 에 있는 java_home 옵션이 올바른 Java 버전과 올바른 경로로 설정되어 있는지 확인해야 합니다.</block>
   <block id="fd05d7f6bfc90e815087880e8e915b43" category="paragraph">예:</block>
   <block id="a344a2fc65197b27dcccc38ac1ef85a3" category="inline-link-macro">호스트를 추가하고 원격 호스트에 플러그인 패키지를 설치합니다.</block>
   <block id="65c7bdc0c946f828cd443cfb3a30afb1" category="summary">설치-SmHostPackage PowerShell cmdlet을 사용하여 Linux 또는 Windows용 SnapCenter 플러그인 패키지를 여러 호스트에 동시에 설치할 수 있습니다.</block>
@@ -4918,15 +4916,12 @@
   <block id="1937942be6bc478199bc930af1623991" category="paragraph">SnapCenter는 자격 증명을 사용하여 SnapCenter 작업을 위해 사용자를 인증합니다. Linux 또는 AIX 호스트에 플러그인 패키지를 설치하기 위한 자격 증명을 작성해야 합니다.</block>
   <block id="93ec70472eb9ceff1f5bd3b65b97df6c" category="paragraph">이 자격 증명은 루트 사용자 또는 sudo 권한이 있는 비루트 사용자에 대해 생성되어 플러그인 프로세스를 설치 및 시작할 수 있습니다.</block>
   <block id="11dbb070e552e50e58059b5d673f1d1a" category="paragraph">자세한 내용은 다음을 참조하십시오. <block ref="f3719d4df312e2308fdbfca4904a6c51" category="inline-xref-macro-rx"></block> 또는 <block ref="0cff305d940e3d5ee78f36245aa0f592" category="inline-xref-macro-rx"></block></block>
-  <block id="bb7cb5e0c78f0ae62b8ec079f1b70efc" category="cell">* 모범 사례: * 호스트를 구축하고 플러그인을 설치한 후에는 자격 증명을 생성할 수 있지만, 호스트를 구축하고 플러그인을 설치하기 전에 SVM을 추가한 후 자격 증명을 생성하는 것이 가장 좋습니다.</block>
   <block id="a789173ed9b6f7eea2bff098b4efbb2b" category="list-text">자격 증명 페이지에 자격 증명 정보를 입력합니다.</block>
   <block id="678fe3118680b05727ac6f1183530e90" category="paragraph">플러그인 호스트의 운영 체제에 따라 Linux 또는 AIX를 선택합니다.</block>
   <block id="1cdecd7145db58cd1e143666aa2b41b4" category="section-title">Oracle 데이터베이스에 대한 자격 증명을 구성합니다</block>
   <block id="e35a87504c653f801b6c01e104a25258" category="paragraph">Oracle 데이터베이스에서 데이터 보호 작업을 수행하는 데 사용되는 자격 증명을 구성해야 합니다.</block>
   <block id="242cdc11ae22f217c93ae40e14e96194" category="paragraph">개별 리소스 그룹에 대한 자격 증명을 설정하고 사용자 이름에 전체 관리자 권한이 없는 경우 사용자 이름에 적어도 리소스 그룹 및 백업 권한이 있어야 합니다.</block>
   <block id="7b13621f41f0146d0ffd2434af94438a" category="paragraph">Oracle 데이터베이스 인증을 사용하도록 설정한 경우 리소스 보기에 빨간색 자물쇠 아이콘이 표시됩니다. 데이터베이스를 보호하거나 리소스 그룹에 데이터베이스 자격 증명을 추가하여 데이터 보호 작업을 수행하려면 데이터베이스 자격 증명을 구성해야 합니다.</block>
-  <block id="9d84c90ce04a969ca09498823506ba1f" category="admonition">자격 증명을 생성하는 동안 잘못된 세부 정보를 지정하면 오류 메시지가 표시됩니다. 취소 * 를 클릭한 다음 다시 시도해야 합니다.</block>
-  <block id="5de6e0a70b653c8dab85d2d2bccf04ae" category="list-text">데이터베이스를 선택한 다음 * 데이터베이스 설정 * &gt; * 데이터베이스 구성 * 을 클릭합니다.</block>
   <block id="6df18cfefa59a0d65ea120d8247b7ba8" category="list-text">데이터베이스 설정 구성 섹션의 * 기존 자격 증명 사용 * 드롭다운 목록에서 Oracle 데이터베이스에서 데이터 보호 작업을 수행하는 데 사용할 자격 증명을 선택합니다.</block>
   <block id="bc36b053b483bc3f05afdf22b15ab4cf" category="admonition">Oracle 사용자는 sysdba 권한을 가지고 있어야 합니다.</block>
   <block id="f711a8eede361a793f45284580f869aa" category="paragraph">을 클릭하여 자격 증명을 생성할 수도 있습니다 <block ref="db9d5f6f137b990473b3ea783cd913f5" category="inline-image-macro-rx" type="image"></block>.</block>
@@ -4938,7 +4933,6 @@
   <block id="65c2449dd103d146930974c3c6b38806" category="paragraph">선호하는 노드는 RAC 데이터베이스 인스턴스가 있는 하나 또는 모든 클러스터 노드일 수 있습니다. 백업 작업은 기본 설정 순서대로 이러한 기본 설정 노드에서만 트리거됩니다.</block>
   <block id="368fea2d6bbc65dc4e5625eb27f9bd66" category="paragraph">RAC One Node에서는 하나의 노드만 기본 노드에 나열되고 이 기본 설정 노드는 데이터베이스가 현재 호스팅되는 노드입니다.</block>
   <block id="cc64f4c44fdc213d2a7145638c9720aa" category="paragraph">RAC One Node 데이터베이스의 페일오버 또는 재배치 후 SnapCenter 리소스 페이지에서 리소스를 새로 고치면 데이터베이스가 이전에 호스팅되었던 * 선호 RAC 노드 * 목록에서 호스트가 제거됩니다. 데이터베이스가 재배치된 RAC 노드는 * RAC 노드 * 에 나열되며 기본 RAC 노드로 수동으로 구성해야 합니다.</block>
-  <block id="b73216514e4678fde5a5aea6c63626c9" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="8f2b39531f2b3f3e4e9667f4d7ba23f5" category="inline-link-macro-rx"></block>.</block>
   <block id="292af99fc6655232e2e030c94a1eab16" category="summary">SnapCenter를 사용하여 데이터베이스 백업을 사용하여 Oracle 데이터베이스를 복제할 수 있습니다.</block>
   <block id="b58dffb66fff6140705eb8518dfb79f9" category="doc">Oracle 데이터베이스 백업의 클론을 생성합니다</block>
   <block id="c9c8847cfb46bb224784f4c236d95598" category="paragraph">클론 생성 작업을 수행하면 데이터베이스 데이터 파일의 복사본이 생성되고 새 온라인 redo 로그 파일과 제어 파일이 생성됩니다. 지정된 복구 옵션에 따라 데이터베이스를 지정된 시간으로 선택적으로 복구할 수 있습니다.</block>
@@ -6265,7 +6259,6 @@
   <block id="6aa52762a93e2798d142fe8255a41086" category="paragraph">선택적 사전 설치 검사를 건너뜁니다</block>
   <block id="b1973a0eeb1e8eeaf3ab59ec202bef7a" category="paragraph">이미 플러그인을 수동으로 설치했고 호스트가 플러그인 설치 요구 사항을 충족하는지 확인하지 않으려면 이 확인란을 선택합니다.</block>
   <block id="4a320bb1e5b313ab794ae3a798ba5cde" category="paragraph">Oracle 데이터베이스용 SnapCenter 플러그인은 루트가 아닌 사용자가 설치할 수 있습니다. 그러나 비루트 사용자에 대한 sudo 권한을 구성하여 플러그인 프로세스를 설치하고 시작해야 합니다. 플러그인을 설치하면 프로세스가 루트가 아닌 효과적인 사용자로 실행됩니다.</block>
-  <block id="48b525b2b37df887839c2e72d7a4a780" category="admonition">Linux 호스트에 Java 11의 인증된 버전만을 설치했는지 확인합니다.</block>
   <block id="f9c6e2752992927f2c51ce2a85236ca9" category="paragraph">SnapCenter 2.0 이상 버전에서는 루트가 아닌 사용자가 Linux용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 플러그인 프로세스는 효과적인 비루트 사용자로 실행됩니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.</block>
   <block id="e3f6dee76e478bb44341e47d36be0f01" category="list-text">sudo 버전 1.8.7 이상</block>
   <block id="8e2de751f9a0d6e07b10791d5aec1925" category="list-text">/home/_linux_user_/.sc_netapp/snapcenter_linux_host_plugin.bin</block>
@@ -7044,7 +7037,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="2e1961167c1057a818d6fff279cd9778" category="list-text">루트 또는 루트 이외의 사용자에 대해 암호 기반 인증을 사용하거나 SSH 키 기반 인증을 사용할 수 있습니다.</block>
   <block id="fed1505389358193273003d88a5d4e8b" category="paragraph">Unix 파일 시스템용 SnapCenter 플러그인은 루트가 아닌 사용자가 설치할 수 있습니다. 그러나 비루트 사용자에 대한 sudo 권한을 구성하여 플러그인 프로세스를 설치하고 시작해야 합니다. 플러그인을 설치하면 프로세스가 루트가 아닌 효과적인 사용자로 실행됩니다.</block>
   <block id="45d6e373e26981f8611297351f3acd1f" category="list-text">설치 사용자에 대해 인증 모드를 Linux로 사용하여 자격 증명을 생성합니다.</block>
-  <block id="def18ece6fc73f693c0b0bc38b5819e3" category="paragraph">Java를 다운로드하는 방법에 대한 자세한 내용은 다음을 참조하십시오.<block ref="dc93a441af3c4c177b993a3220d67dc7" category="inline-link-rx"></block></block>
   <block id="03a5add8b1ca9e57103fcc6d2af1e13d" category="summary">데이터가 손실되는 경우 SnapCenter를 사용하여 데이터를 복원할 수 있습니다.</block>
   <block id="e4fb3d3aee9f2c9a606d7c14e14554c2" category="doc">Unix 파일 시스템을 복구합니다</block>
   <block id="477b9e0faab6fa2ed715b3c19c3d00d9" category="paragraph">데이터가 손실되는 경우 SnapCenter를 사용하여 Unix 파일 시스템을 복구할 수 있습니다.</block>
@@ -7606,15 +7598,12 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="58184ed57b20efbfac17064f1bc0e4f4" category="list-text">백업을 선택하고 * 보호 제거 * 를 클릭합니다.</block>
   <block id="ad569cc1cca820033bb20ffe1d5bc4a5" category="paragraph">AIX 7.1 이상</block>
   <block id="6b139c8a52407032a30a5d0cbb7c1438" category="list-text">볼륨 스냅샷 수정 - SnapLock-expiry-time</block>
-  <block id="4a58751c57809081912e30803a16d52e" category="list-text">PowerShell 코어 7.4.2</block>
-  <block id="b7ccd7f577996dd33bde8070db971b93" category="list-text">Java 11 Oracle Java 및 OpenJDK</block>
   <block id="9b722cfab4d80b751e95d2565746573a" category="paragraph">NFS와 SAN 모두에서 VVOL 데이터 저장소</block>
   <block id="e37a9ce9ba1b9f128287af3bf8300997" category="paragraph">VMware vSphere용 ONTAP 툴</block>
   <block id="74db7181476f94f0e2927d8c8d98cb97" category="paragraph">cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 running_get-Help command_name_에서 확인할 수 있습니다. 또는 을 참조할 수도<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block>있습니다.</block>
   <block id="7359d18faa5cf73508a61a7a55fa8078" category="paragraph">Windows Server 2016 이상을 사용하면 관리되는 도메인 계정에서 자동화된 서비스 계정 암호 관리를 제공하는 그룹 GMSA(Managed Service Account)를 만들 수 있습니다.</block>
   <block id="f9c537b0510058ab13ecb3f2c5dba296" category="list-text">Windows Server 2016 이상의 도메인 컨트롤러가 있어야 합니다.</block>
   <block id="7f8a12ff662f4ebfae4a4fae37911f70" category="list-text">도메인의 구성원인 Windows Server 2016 이상 호스트가 있어야 합니다.</block>
-  <block id="13d1cfa343dd610d15ad68b43ed6733b" category="list-text">Open-SmConnection cmdlet을 사용하여 PowerShell Core 연결 세션을 시작합니다.</block>
   <block id="a5fa058c13c0c8a9236ecfe243b173b2" category="cell">NetApp 지원 플러그인의 경우</block>
   <block id="d63a7945f954d7f0cb122f664ce1a434" category="cell">DB2용</block>
   <block id="32b2fa1d8696fe76a40e6bfcf9eb68ca" category="cell">PostgreSQL의 경우</block>
@@ -7853,7 +7842,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="97aa5d732e113de93c33cd5b5f45d232" category="admonition">IBM DB2용 플러그인은 IBM DB2 클라이언트 호스트에 설치되며 이 호스트는 Windows 시스템 또는 Linux 시스템에 있을 수 있습니다.</block>
   <block id="ac3f0f70b90920f66b01df6df5178730" category="paragraph">REST API를 사용하여 DB2용 플러그인을 설치하는 동안 버전을 3.0으로 전달해야 합니다. 예: DB2:3.0</block>
   <block id="a06badbc50b005d66c89afeb19164928" category="paragraph">IBM DB2용 플러그인은 IBM DB2 클라이언트 호스트에 설치되며 이 호스트는 Windows 시스템 또는 Linux 시스템에 있을 수 있습니다.</block>
-  <block id="7e5dacddaaa8672290ea4564cf1c41ad" category="paragraph">Skip prechecks 확인란을 선택하지 않은 경우 호스트는 호스트가 플러그인 설치 요구 사항을 충족하는지 확인합니다. 디스크 공간, RAM, PowerShell 버전, NET 버전, 위치(Windows 플러그인의 경우) 및 Java 11(Windows 및 Linux 플러그인의 경우)은 최소 요구 사항에 따라 검증됩니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다.</block>
   <block id="0fcc0f3a2dace0457cd9db71bb8bfef8" category="list-text">Windows 플러그인의 경우 설치 및 업그레이드 로그는 _C:\Windows\SnapCenter plugin\Install_&lt;JOBID&gt;\에 있습니다</block>
   <block id="4921a99bb14e7c74ffbcbc45df56f359" category="list-text">Linux 플러그인의 경우 설치 로그는 _/var/opt/snapcenter/logs/SnapCenter_Linux_Host_Plug-in_Install_&lt;JOBID&gt;.log에 있으며 업그레이드 로그는 _/var/opt/snapcenter/logs/SnapCenter_Linux_Host_Plug-in_Upgrade_&lt;JOBID&gt;.log에 있습니다</block>
   <block id="f55d81a07e6e0581f3e19eff0a932069" category="summary">특정 DB2 인스턴스에 대해서는 자동 검색이 지원되지 않습니다. 이러한 리소스를 수동으로 추가해야 합니다.</block>
@@ -7909,7 +7897,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="cbdb153ba57beb687294d7e8f31412e0" category="list-text">백업 일정(백업을 수행할 정확한 시기)</block>
   <block id="6aeab35488d70b793616d60842ca0876" category="summary">PowerShell cmdlet을 사용하여 IBM DB2 데이터베이스를 백업, 복원 또는 복제하기 전에 SVM(스토리지 가상 시스템) 연결과 자격 증명을 생성해야 합니다.</block>
   <block id="7df89a57cd954d9fccb7460aba44487f" category="doc">IBM DB2용 PowerShell cmdlet을 사용하여 스토리지 시스템 연결과 자격 증명을 생성합니다</block>
-  <block id="118cab1ac580f1a92885e2cf6b354202" category="list-text">SnapCenterPS * 를 클릭하여 PowerShell Core를 시작합니다.</block>
   <block id="dabd3a5e1251c743ed158ee90a82f546" category="list-text">SnapCenter 서버에 IBM DB2 통신 호스트를 추가합니다.</block>
   <block id="4d733d69dd67f5078610a37dc6cf23e2" category="list-text">패키지와 IBM DB2용 SnapCenter 플러그인을 호스트에 설치합니다.</block>
   <block id="1b859fa3e819f0a2c67e3a9c24c49334" category="list-text">SQLLIB에 대한 경로를 설정합니다.</block>
@@ -7987,14 +7974,10 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="1cee6b1d92dab1cdbc73f49bf49e7540" category="doc">IBM DB2용 SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템 준비</block>
   <block id="f80fec9ba0fd21d9be7aae0929912664" category="summary">IBM DB2용 SnapCenter 플러그인을 사용하려면 먼저 SnapCenter 관리자가 SnapCenter 서버를 설치 및 구성하고 필수 작업을 수행해야 합니다.</block>
   <block id="5a57722bded3e33c1b6bf551ed3ea25f" category="doc">IBM DB2용 SnapCenter 플러그인 사용을 위한 사전 요구 사항</block>
-  <block id="80718846c9ca830ee95177bb30f81b82" category="list-text">Linux 또는 Windows 호스트에 Java 11을 설치합니다.</block>
-  <block id="8b78d81fcf70311e0778d7ca1a1da748" category="list-text">호스트에 Java 11을 설치해야 합니다.</block>
   <block id="ab4159cc3447ed2c57efc22073c9a591" category="list-text">Windows의 경우 IBM DB2용 플러그인이 도메인 관리자로 설치된 경우 기본 동작인 ""LocalSystem"" Windows 사용자를 사용하여 플러그인 Creator Service를 실행해야 합니다.</block>
   <block id="e4a8446fdfa57d72bb5925250cccc5b7" category="list-text">Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다. Microsoft Windows용 SnapCenter 플러그인은 Windows 호스트에 IBM DB2 플러그인과 함께 기본적으로 배포됩니다.</block>
   <block id="70557a0ca3b5f90edd18cfc0d99671ad" category="list-text">SnapCenter 서버는 IBM DB2 호스트용 플러그인의 8145 또는 사용자 지정 포트에 액세스할 수 있어야 합니다.</block>
   <block id="e978910a0a826388ce9c16d9683c5bd4" category="list-text">Windows 호스트에 IBM DB2용 플러그인을 설치하는 동안 Microsoft Windows용 SnapCenter 플러그인이 자동으로 설치됩니다.</block>
-  <block id="74b8e77de0b5018c5ab2ca7eb523ff31" category="list-text">Windows 호스트에 Java 11을 설치해야 합니다.</block>
-  <block id="129fdeda5a8637916b3b579b072e4eaa" category="list-text">Linux 호스트에 Java 11을 설치해야 합니다.</block>
   <block id="29a9fb7975f0f566600524d35939f828" category="list-text">Linux 호스트에서 실행되는 IBM DB2 데이터베이스의 경우 IBM DB2용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인이 자동으로 설치됩니다.</block>
   <block id="a2e3df47ed947a4f17566f6f4c728ec8" category="list-text">루트가 아닌 사용자의 경우 루트가 아닌 사용자 및 사용자 그룹의 이름이 동일해야 합니다.</block>
   <block id="31245bdedaeb267e7e5c6f53cf9e708d" category="paragraph">다음 위치에 있는 * SC_UNIX_plugins_checksum.txt * 파일에서 _checksum_value_를 가져올 수 있습니다.</block>
@@ -8254,7 +8237,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="c8decdbf430021dfc0d8d243973909b6" category="summary">SnapCenter를 사용하여 NetApp 지원 플러그인 특정 리소스를 백업하기 전에 백업하려는 리소스 또는 리소스 그룹에 대한 백업 정책을 생성해야 합니다.</block>
   <block id="3dd6642ca499d1f7ea549635f37b1c82" category="doc">NetApp 지원 플러그인 리소스에 대한 정책을 생성합니다</block>
   <block id="19648bb3ed0d97dbf793f0f414a626a8" category="paragraph">자세한 내용은 NetApp 지원 플러그인에 대한 데이터 보호 전략 정의에 대한 정보를 참조하십시오.</block>
-  <block id="8e3a492a9b736283405d7d14febefe64" category="paragraph">Java 11 Oracle Java 또는 OpenJDK</block>
   <block id="3d409e4955bb3de9bcf0382e6ed02f3c" category="doc">리소스, 리소스 그룹 및 정책을 사용하여 NetApp 지원 플러그인 리소스를 보호하는 방법</block>
   <block id="041c2bc239865621fefddc8c25a37009" category="summary">NetApp 지원 플러그인 리소스를 보호하려면 SnapCenter NetApp 지원 플러그인을 설치하고 설정해야 합니다.</block>
   <block id="51810f5f2de2f019cb898ee5bb825600" category="doc">SnapCenter NetApp 지원 플러그인의 설치 워크플로우</block>
@@ -8279,7 +8261,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="031130cc740dce019fe31437829d3261" category="doc">NetApp 지원 플러그인을 위한 SnapMirror 및 SnapVault 복제용 스토리지 시스템 준비</block>
   <block id="b5d24747e2254cd74a278959e55db769" category="summary">SnapCenter NetApp 지원 플러그인을 사용하려면 먼저 SnapCenter 관리자가 SnapCenter Server를 설치 및 구성하고 필수 작업을 수행해야 합니다.</block>
   <block id="6f9abdf4e6349ffead799b7fe0fb5848" category="doc">NetApp 지원 플러그인을 사용하기 위한 사전 요구사항</block>
-  <block id="b64964f7c6cb3e2d0ad50647f28415f4" category="list-text">해당하는 경우 플러그인 호스트에 Java 11을 설치합니다.</block>
   <block id="70470fa292d95a8fc9a82053e4e3efc0" category="paragraph">포트 9090은 SnapCenter에 필요한 다른 포트 외에 NetApp 지원 플러그인에서 사용하도록 예약해야 합니다.</block>
   <block id="db39871b690a95f007f3b71acd6533d2" category="doc">호스트 추가 및 NetApp 지원 플러그인 설치를 위한 사전 요구 사항</block>
   <block id="06489e5a01873cf102f78c0da703ea59" category="list-text">기본 복구 작업은 스토리지 객체만 복원합니다. 애플리케이션 레벨에서 복구 작업은 NetApp 지원 플러그인이 해당 기능을 제공하는 경우에만 수행할 수 있습니다.</block>
@@ -8461,8 +8442,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="7de40efacefbbc10736955fb76d4f312" category="list-text">백업, 복구, 클론, 마운트, 마운트 해제, 카탈로그, 카탈로그 해제 및 검증 워크플로우 워크플로우가 TCP/IP를 통한 NVMe에서 지원됩니다.</block>
   <block id="449c889358b05b8939d81d9dfd5ad5a4" category="list-text">백업, 복구, 클론, 마운트, 마운트 해제, 카탈로그, 비카탈로그 및 검증 워크플로는 TCP/IP를 통해 NVMe에서 생성된 VMDK 레이아웃에서 지원됩니다.</block>
   <block id="0520e3156de98e2c722c4ebe7fe303c7" category="list-text">SnapMirror 액티브 동기화(처음에 SnapMirror Business Continuity[SM-BC]로 릴리스)를 지원하므로 전체 사이트 장애 시에도 비즈니스 서비스의 운영을 지속할 수 있으며, 2차 복사본을 사용하여 애플리케이션을 투명하게 페일오버할 수 있습니다. SnapMirror 액티브 동기화로 페일오버를 트리거하는 데 수동 개입이나 추가 스크립팅이 필요하지 않습니다.</block>
-  <block id="cadca0993c074565e0295e47c4f0c2a0" category="list-text">Linux 또는 AIX 호스트에 Java 11을 설치해야 합니다.</block>
-  <block id="97ee77f84790cbf22d7e32413911f94c" category="paragraph">자바 11 IBM 자바</block>
   <block id="3ab5865f7b3fcc5851ae24144b15f370" category="list-text">NVMe-FC를 지원합니다</block>
   <block id="bb2676e02f9905c86303b7f1988d2898" category="list-text">NFS 데이터 저장소에 있는 VMDK입니다</block>
   <block id="ae1d120b56beba9c6f5a7802f3e3d61d" category="admonition">RAC는 공유 VMDK를 지원하는 ESX 8.0U2에서 지원됩니다</block>
@@ -8741,10 +8720,7 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="44040e214e919d86d6a1f3f26db3d22c" category="inline-image-macro">편집 아이콘</block>
   <block id="68819c7042f13f544d27a782b1c23806" category="list-text">을 <block ref="b4ece97e1b8d14f42e755a2c424f87a6" category="inline-image-macro-rx" type="image"></block> 클릭하여 값을 수정합니다.</block>
   <block id="cb62fbb794888232bcd99a94764ba3fb" category="image-alt">리소스 그룹 정책입니다</block>
-  <block id="79a43ebcb13d1d4c2e8786939bbd0a57" category="list-text">Oracle의 Java 및 OpenJDK는 Linux에서 지원됩니다</block>
   <block id="4f89061470b39de2158694538d7101af" category="inline-link">IBM Semeru RunTimes 다운로드</block>
-  <block id="1c4627ccac14a61e3bce6d3629218d85" category="list-text">AIX용 IBM Java. 에서 다운로드할 수 있습니다<block ref="cf41b0c524544b137d4105ff48ece522" category="inline-link-rx"></block></block>
-  <block id="94cfbdf843ad80dab8b4c63aa78522c5" category="paragraph">Java 11 Oracle 및 OpenJDK</block>
   <block id="2584ae0844f37bdb517dc8e38d68a2f5" category="list-text">백업 작업을 시작한 후 <block ref="64eace402f8f00b7a999e38fb6d87e55" category="inline-image-macro-rx" type="image"></block> Activity(작업) 창을 클릭하여 가장 최근의 5개 작업을 봅니다.</block>
   <block id="8da2271859ceaf1866467967dd6640c9" category="paragraph">을 <block ref="dc20cca85782861f6e03c00cec5a33c0" category="inline-link-macro-rx"></block>참조하십시오.</block>
   <block id="1edc23bb6f80cdc062019a1682663523" category="list-text">image:.../media/filter_icon.png[filter icon]을 선택하고 인스턴스를 필터링할 호스트 이름을 선택합니다.</block>
@@ -8786,7 +8762,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="c8df28b406eabc43243b92181d68f712" category="paragraph">호스트 추가 페이지에서 NetApp 지원 플러그인을 설치할 수 있습니다.</block>
   <block id="cb15647de6f65c6f817e3b480a54f7db" category="summary">호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. NetApp 지원 플러그인은 Windows, Linux 또는 AIX 환경 모두에서 사용할 수 있습니다.</block>
   <block id="01b37fc83542f28040f13cc0ca72a787" category="paragraph">호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. NetApp 지원 플러그인은 Windows, Linux 및 AIX 환경에서 지원됩니다.</block>
-  <block id="a12fcc2714160353d9eaad3f6b1236bc" category="list-text">Linux, Windows 또는 AIX 호스트에 Java 11을 설치해야 합니다.</block>
   <block id="4baf1f02e89e733c2e9e86eb70c5a37b" category="list-text">호스트 추가 작업이 수행되는 클라이언트 호스트에서 MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, 스토리지 플러그인과 같은 NetApp 지원 플러그인을 사용할 수 있어야 합니다.</block>
   <block id="0612f5c4c0ebcf5d100decba8d34d5a2" category="list-text">Microsoft Windows용 SnapCenter 플러그인을 수동으로 선택해야 합니다.</block>
   <block id="97f324a8c5553ff0e590a7f1d7426c7b" category="list-text">Linux 또는 AIX 호스트</block>
@@ -9311,14 +9286,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="3199d4d0758d0f4f53db9a8f36670c18" category="sidebar">SnapCenter 서버 구성</block>
   <block id="4c975961e88401702aa6aac167300031" category="sidebar">스토리지 시스템 추가 및 프로비저닝</block>
   <block id="0885e9f12d8cb35b0f02655c34c87004" category="admonition">IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.</block>
-  <block id="48c9a1bf5de7bf57f1efa648f3bc8d17" category="inline-link">Windows용 JAVA 다운로드</block>
-  <block id="a4560fe71d10d98deabf55fdf50b90f0" category="paragraph"><block ref="a4560fe71d10d98deabf55fdf50b90f0" category="inline-link-rx"></block></block>
-  <block id="25827211b51e5a08cc74ddb2f845f386" category="inline-link">Linux용 JAVA 다운로드</block>
-  <block id="0632a773655c14c1b1e9ced88bc550ed" category="paragraph"><block ref="0632a773655c14c1b1e9ced88bc550ed" category="inline-link-rx"></block></block>
-  <block id="ffef625a5852f63e8c97e120b261e871" category="inline-link">AIX용 JAVA 다운로드</block>
-  <block id="1cf0cff6e7cd05dac4238e50abe74627" category="paragraph"><block ref="1cf0cff6e7cd05dac4238e50abe74627" category="inline-link-rx"></block></block>
-  <block id="67366bdaf9086e6015fe527a27beb845" category="inline-link">모든 운영 체제용 JAVA 다운로드</block>
-  <block id="230f7d0fc162c3a559cd8b29556f41f4" category="paragraph"><block ref="230f7d0fc162c3a559cd8b29556f41f4" category="inline-link-rx"></block></block>
   <block id="17103b09b3247a2b39032b11b995b325" category="list-text">ORACLE_BACKUPMODE는 온라인 백업을 수행할지, 오프라인 백업을 수행할지 지정합니다.</block>
   <block id="e787bc810fe0c9919da5538cad8cb1f1" category="list-text">ORACLE_EXPORT_PARAMETERS는 _/bin/su &lt;user running sqlplus&gt; -c sqlplus /nolog &lt;cmd&gt;_를 실행하는 동안 위에 정의된 환경 변수를 다시 내보내야 하는지 여부를 지정합니다. 이는 일반적으로 sqlplus를 실행하는 사용자가 _connect / as sysdba_를 사용하여 데이터베이스에 연결하는 데 필요한 모든 환경 변수를 설정하지 않은 경우에 발생합니다.</block>
   <block id="a6f6a01605d225b6eccb8bc600198254" category="doc">사용 중인 플러그인 키 저장소 및 CA 서명 키 쌍의 별칭에 대한 암호 관리</block>
@@ -9465,7 +9432,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="5097ab7bd6d21f43a44cf3fa2819d1a9" category="list-text">SAP HANA NDV 보호</block>
   <block id="dea949f89da961edae31cb07cf178de2" category="inline-link">ONTAP 일관성 그룹에 대해 자세히 알아보세요</block>
   <block id="33f6f98912a46b71470b0b88a5796453" category="paragraph">SnapCenter ONTAP 일관성 그룹을 검색하거나 생성합니다.  2차 보호를 위해 대상 클러스터에 SnapMirror 관계를 설정합니다.<block ref="c9cf167a41f1aec3d6cac7c4bebb9647" category="inline-link-rx"></block> .</block>
-  <block id="66a780869a0bc12446e0ddcc0035ae9b" category="admonition">SnapCenter 6.2(서버 및 플러그인)와 ONTAP 9.17.1로 업그레이드한 후 SnapCenter 첫 번째 예약된 백업 중에 플랫 일관성 그룹을 계층적 일관성 그룹으로 변경합니다.</block>
   <block id="9f2d0dc08fd406b0b8600cb2332c7a4c" category="paragraph">애플리케이션에 대해 ASA r2 시스템에서 보조 보호를 활성화하는 방법을 알아보려면 다음을 참조하세요.</block>
   <block id="7e2e4828b97a80ed5f31feecd44dbb2c" category="list-text">ASA, AFF 또는 FAS 리소스와 ASA r2 리소스를 혼합하여 데이터베이스 보호</block>
   <block id="6fe3ae956085a9133eaacd31f9913d80" category="list-text">Windows 리소스 프로비저닝</block>
@@ -9513,9 +9479,7 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="202db78e7e2ac241d08b359f1f79644f" category="paragraph">명령과 함께 사용할 수 있는 매개변수와 해당 설명에 대한 정보는 Get-Help _command_name_을 실행하면 얻을 수 있습니다.  또는 다음을 참조할 수도 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> .</block>
   <block id="052131f99fadbb192418dc45065d8c15" category="paragraph">UNIX 명령에 대한 자세한 내용은 다음을 참조하세요.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> .</block>
   <block id="67998d9af35dea74903e9cdb371f7e7a" category="paragraph">또는 다음을 참조할 수도 있습니다.<block ref="4a5b4acb82a31b5d3a197c5ec1468fe8" category="inline-link-rx"></block> 또는<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block> .</block>
-  <block id="e2affc8ad90cb942103d56d82396b5f7" category="paragraph">SnapCenter 6.2에서 사용할 수 있는 새롭고 향상된 기능에 대해 알아보세요.</block>
   <block id="652468e7a8f47c94c0dfc2bbbe3f6788" category="inline-link-macro">SnapCenter 6.2의 새로운 기능</block>
-  <block id="24443d9133830b434ac05072f0c9653a" category="inline-link">SnapCenter 소프트웨어 6.2 릴리스 노트</block>
   <block id="320bd16b81d8a6a0a077d7308db7683d" category="paragraph">업그레이드 경로는 어떤 SnapCenter 버전에서 업그레이드할 수 있는지, 어떤 플러그인 버전이 지원되는지 보여줍니다.</block>
   <block id="f734f899336791933d28373bca69a72f" category="admonition">SnapCenter Server를 6.2로 업그레이드하는 경우 플러그인도 6.2로 업그레이드하세요.</block>
   <block id="7a22247de8db3271f3bf8573be10e986" category="cell">6.2</block>
@@ -9527,7 +9491,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="24f24d3f1f893e4176aff86940b1f7bd" category="paragraph">SnapCenter Plug-in for VMware vSphere 업그레이드하는 방법을 알아보려면 다음을 참조하세요.<block ref="9fa07c2f7a59d2185d48077e327b705e" category="inline-link-rx"></block> .</block>
   <block id="97e76bbffdf8f08342d1c5a741af4b2a" category="sidebar">SnapCenter software 하이브리드 클라우드의 어느 곳에서나 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대해 애플리케이션 일관된 데이터 보호 기능을 제공하는 간단하고 중앙 집중식이며 확장 가능한 플랫폼입니다.  이 문서 라이브러리에는 버전 6.2에 대한 정보가 포함되어 있습니다.</block>
   <block id="1e0eab11641f75c3ff495410ce40bf66" category="sidebar">SnapCenter software 6.2 문서</block>
-  <block id="9968307e35346723a7def9d1da87a203" category="paragraph">알려진 문제, 제한 사항, 해결된 문제, 새 명령 및 변경된 명령에 대한 자세한 내용은 다음을 참조하세요.<block ref="bedfbb0cb9ae5977029e72ca67318671" category="inline-link-rx"></block> . 릴리스 노트에 액세스하려면 NetApp 계정으로 로그인하거나 계정을 만들어야 합니다.</block>
   <block id="ea1c96f839915f73d25b910bbc92b734" category="list-text">NetApp 백업 및 복구 통합을 사용하여 ONTAP FAS, AFF 또는 ASA 기본 및 보조 시스템에 있는 데이터를 클라우드의 개체 및 아카이브 스토리지로 보호합니다.</block>
   <block id="45099ef1959df4e973d03fee8da8217e" category="paragraph">Linux에 SnapCenter 서버를 설치한 후 설치 프로그램이 자체 서명 인증서를 생성합니다. CA 인증서를 사용하려면 nginx 역방향 프록시, 감사 로깅 및 SnapCenter 에 대한 인증서를 구성해야 합니다.</block>
   <block id="f2c3d774134cb37665bf8a734950fe0b" category="section-title">SnapCenter 인증서 구성</block>
@@ -9550,7 +9513,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="d289bbfe1554f83d213d5958a481c248" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요. 지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="00e02cae149cc9de4aea278bb76f630e" category="inline-link-rx"></block>.</block>
   <block id="0be174a8508a59f21b484245da1e1605" category="paragraph">지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="845d98cf9e1414112b381d552d9c8014" category="inline-link-rx"></block> .</block>
   <block id="57c12b0c6639b8884c79259831fa9f28" category="paragraph">그만큼<block ref="45ef37a4bb1edb251808bfcdb0b9e22c" category="inline-link-rx"></block> 지원되는 구성에 대한 최신 정보가 포함되어 있습니다.</block>
-  <block id="f101abf86e878a2ecb48d889221777be" category="paragraph">SnapCenter 서버 호스트로 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 11을 설치해야 합니다.</block>
   <block id="a0d1f8ac2dd9261f6193237061098514" category="paragraph">그만큼<block ref="b6383984df7f2080eb1163b0aa6a5917" category="inline-link-rx"></block> 지원되는 구성에 대한 최신 정보가 포함되어 있습니다.</block>
   <block id="6fc7bf078a50f1c4ddd79c0229afe3ff" category="doc">Microsoft Exchange Server용 SnapCenter 플러그인에서 지원하는 스토리지 유형</block>
   <block id="08fed5985d86e1f1278601d57e1bff6b" category="paragraph">SnapCenter 프로비저닝 및 데이터 보호 지원은 Windows Server에서 제공됩니다. 지원되는 버전에 대한 최신 정보는 다음을 참조하세요.<block ref="bf4b37302d584cabdf50327923359db4" category="inline-link-rx"></block> .</block>
@@ -9573,8 +9535,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="f98d06e0365bbdb788bff3b7d98e015e" category="doc">SnapCenter 플러그인 패키지 업그레이드</block>
   <block id="5afd668caa3def0cebf1f64a3e6a9d0c" category="paragraph">플러그인 패키지는 SnapCenter 업그레이드의 일부로 배포됩니다. 업그레이드 절차를 수행하면 Windows, Linux 또는 AIX 플러그인 호스트가 자동으로 유지 관리 모드로 전환됩니다.  유지 관리 모드에서는 플러그인 호스트가 업그레이드 중에 예약된 작업을 실행하지 못합니다.</block>
   <block id="50263858fed39155040b6bb90507bcee" category="paragraph">시스템은 패키지의 모든 플러그인을 선택하지만, 이전 버전의 SnapCenter 와 함께 설치한 플러그인만 업그레이드합니다.  시스템은 나머지 플러그인을 설치하지 않습니다.  새로운 플러그인을 설치하려면 *플러그인 추가* 옵션을 사용하세요.</block>
-  <block id="6d49197dab9dd6c6555e0981f8aa6207" category="list-text">Windows 플러그인 호스트에 PowerShell Core 7.4.2가 설치되어 있는지 확인하세요.</block>
-  <block id="0b1004975d827c800b2ea1d2934ebcdd" category="list-text">Windows 및 Linux 플러그인 호스트에 Java 11 Oracle Java 및 OpenJDK가 설치되어 있는지 확인하세요.</block>
   <block id="9ece03be74b25dcc59b19ce7d0ef2dfb" category="list-text">SnapCenter 서버 호스트 또는 플러그인 호스트에서 수정된 모든 SnapCenter 구성 파일(예: SnapDriveService.exe.config, SMCoreServiceHost.exe.config 등)을 백업합니다.</block>
   <block id="def9934ca3f718accf65ee67850cf9eb" category="list-text">플러그인 호스트 중 하나에 대해 전체 상태 열에 "업그레이드 가능"이 표시되면 플러그인 호스트 이름을 클릭하고 다음을 수행합니다.</block>
   <block id="25c5cc506d7be2c3d358fc8fd23f0e8f" category="admonition">*사전 검사 건너뛰기*를 선택하지 않으면 SnapCenter 플러그인 호스트가 요구 사항을 충족하는지 확인합니다.  요구 사항이 충족되지 않으면 오류나 경고 메시지가 나타납니다.  오류가 디스크 공간이나 RAM과 관련된 경우 _C:\Program Files\ NetApp\ SnapCenter WebApp_에 있는 web.config나 _C:\Windows\System32\WindowsPowerShell\v1.0\Modules\ SnapCenter\_에 있는 PowerShell 구성 파일을 업데이트하여 기본값을 수정할 수 있습니다. 오류가 나머지 매개변수와 관련된 경우 문제를 해결한 다음 요구 사항을 다시 검증해야 합니다.</block>
@@ -9597,10 +9557,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="d3436e2d89e59038914374a22cc8c673" category="list-text">*사용자 지정 구성* 화살표를 선택하고 이 리소스를 사용하는 모든 데이터 보호 작업에 필요한 사용자 지정 키-값 쌍을 입력하십시오.</block>
   <block id="98f1c90d5d623746b2adfec471311f76" category="list-text">스냅샷을 생성할 도구를 선택하려면 *Snapshot Copy Tool* 화살표를 선택하십시오.</block>
   <block id="7658971f73ec7751e63de7b917ad3277" category="paragraph">스냅샷을 생성하기 위해 호스트에서 실행할 명령을 입력합니다.</block>
-  <block id="375a1cee000ea12f25f7ea0aa40c92d2" category="paragraph"><block ref="375a1cee000ea12f25f7ea0aa40c92d2" category="inline-link-macro-rx"></block></block>
-  <block id="3edc812c3aede1bb8931ed56901c3d63" category="list-text">Linux 또는 AIX 호스트에 Java 11이 설치되어 있어야 합니다.</block>
-  <block id="67444cdbc60594b36af73fd32a491c3e" category="paragraph"><block ref="67444cdbc60594b36af73fd32a491c3e" category="inline-link-macro-rx"></block></block>
-  <block id="947890351727a5bfefd25ab911655064" category="paragraph"><block ref="947890351727a5bfefd25ab911655064" category="inline-link-macro-rx"></block></block>
   <block id="4eecf71620cb916df975db3d622e9c30" category="paragraph">SnapCenter Server 리포지토리는 NSM 데이터베이스라고도 합니다. 사용 가능한 모든 cmdlet에 대한 자세한 내용은<block ref="bc822c4319e03a98720e4951c1009810" category="inline-link-rx"></block>을 참조하십시오.</block>
   <block id="e9087f4d1c2c90b2c0e70f14ce029f2b" category="paragraph">SnapCenter 서버 리포지토리를 백업하면 데이터 손실을 방지하는 데 도움이 됩니다. <block ref="f89bc12c0d2d413f64b24c351b6b566d" prefix=" " category="inline-code"></block> cmdlet을 실행하여 리포지토리를 백업할 수 있습니다.</block>
   <block id="7de02e43c7e5e44fea6db42bf98f4e4f" category="paragraph"><block ref="f89bc12c0d2d413f64b24c351b6b566d" prefix=" " category="inline-code"></block>cmdlet은 다음과 같은 작업을 수행합니다.</block>
@@ -9634,10 +9590,82 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="5223ed0f09a7ed8f79cb34ee678642b2" category="admonition">Linux 시스템의 SAP HANA 데이터베이스용 SnapCenter 플러그인에서는 사용자 지정 키-값 쌍이 지원되지만, Microsoft Windows용 SnapCenter 플러그인에 등록된 SAP HANA 데이터베이스에서는 지원되지 않습니다.</block>
   <block id="fef844efd5d5274641ab5a8e530ced87" category="admonition">*<block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>*를 선택하여 정책을 생성할 수도 있습니다.</block>
   <block id="d3562ace999b51c49c22ce4c580579b0" category="list-text">일정 구성 열에서 구성하려는 정책에 대해 *<block ref="7b8f66898e8dfce6b3b454cf0514c993" category="inline-image-macro-rx" type="image"></block>*를 선택합니다.</block>
-  <block id="8d3b5ad5b9f27b4f9781e490487c376e" category="paragraph">새로운 기능 및 개선 사항의 전체 목록은 <block ref="333326639e0f94ceb693906a79235ec5" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
   <block id="2f1352033f9cdf5dbec684bea0d87ee5" category="summary">SnapCenter software 6.2 버전에는 여러 가지 새로운 기능과 개선 사항이 포함되어 있습니다.</block>
   <block id="f4090871da1ea3c21c90ff0a2bfe77db" category="paragraph">SnapCenter software 6.2 버전에는 다음과 같은 확장 기능이 포함되어 있습니다.</block>
   <block id="e8210c34cf4a643a11f3bfc4c0fd905f" category="paragraph">기타 하이퍼바이저</block>
   <block id="ff968c11eab0f01c02347241d47d4a25" category="paragraph">KVM, Xen, Hyper-V 및 하이퍼스케일러 하이퍼바이저에서 실행되는 Linux는 게스트 OS가 다음 방법을 사용하여 필요한 ONTAP 스토리지 리소스에 직접 TCP/IP로 액세스할 수 있는 경우에 지원됩니다.</block>
   <block id="19228485fa8108fc9a8c5a7a0e681742" category="admonition">VMware 외부에서는 데이터 저장소 및 원시 장치 표현이 지원되지 않습니다.</block>
+  <block id="d5339ec2460f6dc04a037cc1e0c21e2c" category="list-text">PowerShell 7.4.13</block>
+  <block id="3eff2fffafd42d18c698c1f6d5b8528d" category="list-text">Java 17(Oracle Java 및 OpenJDK)</block>
+  <block id="0b28f3dba3d0679c7ead8286c1b86497" category="admonition">SnapCenter 6.2.1(서버 및 플러그인) 및 ONTAP 9.17.1로 업그레이드한 후, SnapCenter는 첫 번째 예약 백업 중에 플랫 일관성 그룹을 계층적 일관성 그룹으로 변경합니다.</block>
+  <block id="690134bf1736a3c694f96c546d17c21d" category="paragraph">사전 검사 건너뛰기 확인란을 선택하지 않은 경우 호스트가 플러그인 설치 요구 사항을 충족하는지 확인하기 위해 호스트의 유효성을 검사합니다. 디스크 공간, RAM, PowerShell 버전, .NET 버전, 위치(Windows 플러그인의 경우) 및 Java 17(Windows 및 Linux 플러그인 모두)이 최소 요구 사항을 충족하는지 검사합니다. 최소 요구 사항을 충족하지 못하면 적절한 오류 또는 경고 메시지가 표시됩니다.</block>
+  <block id="1eb0af61a769d0522873cb3b2942d431" category="list-text">*SnapCenterPS*를 선택하여 PowerShell을 시작합니다.</block>
+  <block id="852731c1b7550625486510fe72aa91ae" category="paragraph">Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties에 있는 JAVA_HOME 옵션이 올바른 Java 버전 및 올바른 경로로 설정되어 있는지 확인해야 합니다.</block>
+  <block id="76b820fbb056248b792f7d6bd52d26b2" category="list-text">Linux 또는 Windows 호스트에 Java 17을 설치합니다.</block>
+  <block id="4abb709c6d05f5f86be6a29ebfa3b2cd" category="list-text">호스트에 Java 17이 설치되어 있어야 합니다.</block>
+  <block id="d5c967ad4811c11d6537b7432e92b977" category="list-text">Windows 호스트에 Java 17이 설치되어 있어야 합니다.</block>
+  <block id="32c6d5ca3ecff4133066e972e1572ac7" category="inline-link-macro">Windows용 Java 다운로드</block>
+  <block id="f46c99c6dad9cfc1105a9eb84bac7db0" category="paragraph"><block ref="f46c99c6dad9cfc1105a9eb84bac7db0" category="inline-link-macro-rx"></block></block>
+  <block id="5d8727327c9fe92d26bd0015c2bbe68c" category="list-text">Linux 또는 AIX 호스트에 Java 17이 설치되어 있어야 합니다.</block>
+  <block id="277beaf4372bf50e1af3a4104115fe0a" category="inline-link-macro">Linux용 Java 다운로드</block>
+  <block id="028890b6d9b6139ffe4f229f30b7bbfa" category="paragraph"><block ref="028890b6d9b6139ffe4f229f30b7bbfa" category="inline-link-macro-rx"></block></block>
+  <block id="067bc8a063d23efc69ec35694bac526f" category="inline-link-macro">AIX용 Java 다운로드</block>
+  <block id="d8f3c02dacf7aa14b7984862d6519daa" category="paragraph"><block ref="d8f3c02dacf7aa14b7984862d6519daa" category="inline-link-macro-rx"></block></block>
+  <block id="21edd03e54925331f15a7eeccef5d870" category="inline-link-macro">모든 운영 체제용 Java 다운로드</block>
+  <block id="b463ee31d784a22ba3ba4b0645fa7aaa" category="paragraph"><block ref="b463ee31d784a22ba3ba4b0645fa7aaa" category="inline-link-macro-rx"></block></block>
+  <block id="229b8bb179d661c3d6ed2a72028f7029" category="list-text">Linux 호스트에 Java 17이 설치되어 있어야 합니다.</block>
+  <block id="8c6b5164102ae393bac5cf68a8e53c50" category="paragraph">Java 17(Oracle Java 또는 OpenJDK)</block>
+  <block id="c137369ed677f84e8f10d176b75f0f60" category="list-text">필요한 경우 플러그인 호스트에 Java 17을 설치하십시오.</block>
+  <block id="645c05cc982c6967f4b780067b08d7e5" category="list-text">Linux, Windows 또는 AIX 호스트에 Java 17이 설치되어 있어야 합니다.</block>
+  <block id="d39860bc8546eab4e9a54056d3755ef2" category="paragraph"><block ref="d39860bc8546eab4e9a54056d3755ef2" category="inline-link-macro-rx"></block></block>
+  <block id="635642373e8f1e4e290c872a3e808345" category="paragraph">SnapCenter 서버 호스트로 Windows Server 2019 또는 Windows Server 2016을 사용하는 경우 Java 17을 설치해야 합니다.</block>
+  <block id="8e38e28ee0341b15ba2a3e98884afe4b" category="paragraph"><block ref="8e38e28ee0341b15ba2a3e98884afe4b" category="inline-link-macro-rx"></block></block>
+  <block id="c51e95a7ba6f7936384db31eff8869e3" category="paragraph"><block ref="c51e95a7ba6f7936384db31eff8869e3" category="inline-link-rx"></block></block>
+  <block id="d018402cf57ffa7c0393b1d67057e5e4" category="paragraph">Java 17 IBM Java</block>
+  <block id="44c13dc9a1753cb466fee3ad110bb019" category="summary">데이터 보호 작업을 수행하려면 PostgreSQL 클러스터에 대한 클러스터 사용자 자격 증명을 구성해야 합니다.</block>
+  <block id="3243b2db06af9a3a8b41f285981576ec" category="doc">PostgreSQL 클러스터에 대한 자격 증명 구성</block>
+  <block id="502ea8597e926db5739accdc503c5c90" category="list-text">PostgreSQL 클러스터에 유효한 자격 증명이 구성되어 있지 않으면 자동 검색된 리소스에만 빨간색 자물쇠 아이콘이 표시됩니다. 이후 검색 작업 중에 구성된 자격 증명이 올바르지 않거나 클러스터 자체에 대한 액세스 권한을 제공하지 않는 것으로 확인되면 빨간색 자물쇠 아이콘이 다시 나타납니다.</block>
+  <block id="c9a75870f8ba894399624e689c422596" category="list-text">리소스를 보호하거나 리소스 그룹에 추가하여 데이터 보호 작업을 수행하려면 유효한 PostgreSQL 클러스터 자격 증명을 구성해야 합니다.</block>
+  <block id="d55b89ea75b27c9de81ad2f6398cb84d" category="list-text">자격 증명에 구성된 PostgreSQL 사용자는 클러스터에 액세스하고 백업 및 복원 작업을 수행할 수 있는 충분한 권한을 가지고 있어야 합니다. 최소한 해당 사용자는 *SUPERUSER* 역할 또는 그에 상응하는 권한(예: *pg_read_all_data*, *pg_write_all_data* 및 *replication* 권한)을 보유해야 합니다.</block>
+  <block id="10ba74df3991cdbaaf9f0670d4001cf5" category="list-text">SnapCenter는 구성된 자격 증명을 사용하여 *psql* 또는 *libpq* 클라이언트를 통해 PostgreSQL 인스턴스에 연결합니다. 플러그인 호스트에 PostgreSQL 클라이언트 도구가 설치되어 있는지 확인하십시오.</block>
+  <block id="dd3e905814dfdaf48b383528621ea0ee" category="admonition">클러스터를 구성하기 전에 먼저 PostgreSQL 자격 증명을 SnapCenter에 추가해야 합니다.</block>
+  <block id="cbf3301d0d753e8461dcc76725f98e1d" category="list-text">왼쪽 탐색 창에서 *리소스*를 선택한 다음 목록에서 PostgreSQL 클러스터용 SnapCenter 플러그인을 선택합니다.</block>
+  <block id="66e4f4069d5574fce9f76098a0d21eef" category="list-text">(선택 사항) <block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>를 선택하고 호스트 이름을 선택합니다.</block>
+  <block id="92e6162b6295f71cd24f1ddaa4deabdb" category="paragraph">그런 다음 <block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>를 선택하여 필터 창을 닫을 수 있습니다.</block>
+  <block id="c1327e03f464857dae9e0881c85d39e5" category="list-text">클러스터를 선택한 다음 *자격 증명 구성*을 선택합니다.</block>
+  <block id="ffcbcede6515ab2fc9732ecf5f1d76df" category="list-text">SnapCenter에서 PostgreSQL 클러스터 사용자용으로 구성된 자격 증명을 선택하십시오. 자격 증명에는 데이터 보호 작업을 수행하는 데 필요한 충분한 권한이 있는 유효한 사용자 이름과 암호가 포함되어야 합니다.</block>
+  <block id="9a9700301d1207689b2cfec2adf03e45" category="paragraph">토폴로지 페이지에서 클러스터 구성을 수정할 수 있습니다.</block>
+  <block id="f374913797d0295c317d0055e71b421e" category="doc">리소스 그룹 수준에서 일관성 그룹 스냅샷을 활성화합니다</block>
+  <block id="a9cf5d66edaed6a32b08051d0eb943ab" category="paragraph">기본적으로 Oracle Database용 SnapCenter 플러그인은 ASM(Automatic Storage Management) 디스크 그룹 또는 LVM(Logical Volume Management) 볼륨 그룹 수준에서 일관성 그룹 스냅샷을 생성합니다. 모범 사례로, 단일 리소스 그룹 내의 데이터베이스는 ASM 디스크 그룹 또는 LVM 볼륨 그룹 간에 ONTAP 볼륨을 공유하지 않아야 합니다.</block>
+  <block id="b9f94b68be04293cfc27b9c82cc9f8d3" category="paragraph">하지만 ASM 디스크 그룹이나 LVM 볼륨 그룹이 기본 ONTAP 볼륨을 공유하는 경우, 중복 스냅샷 충돌로 인해 일관성 그룹 스냅샷이 실패할 수 있습니다. 이러한 경우 SnapCenter는 자동으로 볼륨 수준 스냅샷으로 대체합니다.</block>
+  <block id="dfb289753e6224ef9124760edf05ea07" category="paragraph">ASM 디스크 그룹 또는 LVM 볼륨 그룹 간에 볼륨이 공유되는 시나리오에서 SnapCenter는 리소스 그룹 수준에서 일관성 그룹 스냅샷을 활성화하는 기능을 지원합니다. 이를 통해 리소스 그룹 내 데이터베이스와 연결된 모든 ASM 디스크 그룹 또는 LVM 볼륨 그룹이 단일 일관성 그룹 스냅샷으로 캡처됩니다. 다음 단계에서는 이 기능을 사용하는 방법을 설명합니다.</block>
+  <block id="5c741578980e7704da528093f5e324cd" category="list-text">SnapCenter 서버에서 다음 구성 파일로 이동하십시오.</block>
+  <block id="104eca5a6c04470e26d35fe31b06c3ea" category="paragraph"><block ref="be2c922dfeee4a22e9331f08a784def3" prefix="" category="inline-code"></block>.</block>
+  <block id="46376aff63fb964edf22387df4324caa" category="list-text"><block ref="bc0b5416c67e568e5fd5d624fd885d11" prefix=" " category="inline-code"></block> 매개 변수를 찾아 값을 *false*에서 *true*로 변경합니다.</block>
+  <block id="911f345bc86988158b772d982e282ada" category="list-text">변경 사항을 적용하려면 <block ref="92d506e04aeaf411d00bd3530505a36b" prefix=" " category="inline-code"></block> 서비스를 다시 시작하십시오.</block>
+  <block id="2c2657517ad43d08352a5451f985e40e" category="list-text">Linux 또는 AIX 호스트에 Java 17이 설치되어 있어야 합니다.</block>
+  <block id="c21b5da89b1f81162977127cb9031d22" category="list-text">Linux에서는 Oracle Java와 OpenJDK가 지원됩니다.</block>
+  <block id="3a963dcf9de35dbba651650701736b82" category="list-text">AIX용 IBM Java입니다. 다운로드는 <block ref="c0de5e0b50d0c2c65f1c384a68baae61" category="inline-link-rx"></block>에서 할 수 있습니다.</block>
+  <block id="5644b685e992d1f3592d7905a4bf7ce2" category="admonition">Linux 호스트에 인증된 Java 17 버전만 설치했는지 확인하십시오.</block>
+  <block id="34173baea9817dda310abe58b671a2f7" category="paragraph">Java 17(Oracle 또는 OpenJDK)</block>
+  <block id="4984a1c61cf9b38d22b24181dc7e50e9" category="list-text"><block ref="07b421e5f5e0300b1a0fd6cc22745306" prefix=" " category="inline-code"></block> 파일을 편집하여 메시지 인증 코드 알고리즘을 구성합니다. MACs hmac-sha2-256 및 MACs hmac-sha2-512.</block>
+  <block id="1eb22a3ae1c2ce45dd6dd271f5a31da7" category="admonition">호스트를 배포하고 플러그인을 설치한 후에도 자격 증명을 생성할 수 있지만, *모범 사례*는 SVM을 추가한 후 호스트를 배포하고 플러그인을 설치하기 전에 자격 증명을 생성하는 것입니다.</block>
+  <block id="6b7e4e697475dd4860abcf786126c1c7" category="admonition">자격 증명을 생성하는 동안 잘못된 정보를 입력하면 오류 메시지가 표시됩니다. *취소*를 선택한 다음 다시 시도하십시오.</block>
+  <block id="a67c677fb64ec1097b791d50fa972eeb" category="list-text"><block ref="ef7fd6a62d3d2e73b9eef702ebac01ef" category="inline-image-macro-rx" type="image"></block>을 선택한 다음 호스트 이름과 데이터베이스 유형을 선택하여 리소스를 필터링합니다.</block>
+  <block id="d8f223fc0bc1bca623d2d7c084e193c2" category="list-text">데이터베이스를 선택한 다음 *Database Settings* &gt; *Configure Database*를 선택합니다.</block>
+  <block id="dab985facceb94f13f985f8249833bc0" category="paragraph">자세한 내용은 <block ref="8f2b39531f2b3f3e4e9667f4d7ba23f5" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="fe83151208012d5b73e22523d7f033ba" category="paragraph">Java 다운로드에 대한 자세한 내용은 <block ref="f2ff54b9e43f2ec55847a13d208d9402" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="41a4b4dac1c1d04e2b895fdb51832356" category="paragraph">SnapCenter 6.2 및 6.2.1에서 사용할 수 있는 새롭고 향상된 기능에 대해 알아보십시오.</block>
+  <block id="ba326f97f514ee86456bacdbb611b94c" category="inline-link-macro">SnapCenter 6.2.1의 새로운 기능</block>
+  <block id="1e8a051ced3087d8f8c0358cafb2bae4" category="paragraph">새로운 기능 및 개선 사항의 전체 목록은 <block ref="dbbc4e697b5acac11e7237418d4e74e7" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="660e11cd0d8b7a0d5f30a5c4ab9874ee" category="paragraph">새로운 기능 및 개선 사항의 전체 목록은 <block ref="333326639e0f94ceb693906a79235ec5" category="inline-link-macro-rx"></block>을(를) 참조하십시오.</block>
+  <block id="6fb4aad380990fd6f7b6d9b9431147f8" category="inline-link">SnapCenter Software 6.2.1 릴리스 노트</block>
+  <block id="555ee24c1ccffeec9a9363373d9b08a6" category="paragraph">알려진 문제, 제한 사항, 해결된 문제, 새롭거나 변경된 명령에 대한 자세한 내용은<block ref="039e73fc576f8d9ddcba7242690e2327" category="inline-link-rx"></block>를 참조하십시오. 릴리스 노트에 액세스하려면 NetApp 계정으로 로그인하거나 새 계정을 만들어야 합니다.</block>
+  <block id="5aae26cfc631423a28ee9f3eea8618b0" category="cell">6.2.1</block>
+  <block id="4405435b2ad2e79a5a4506de478aafd7" category="summary">SnapCenter 소프트웨어 6.2.1 릴리스에는 새로운 기능이나 개선 사항이 없으며, SnapCenter 서버와 플러그인에 대한 알려진 버그 수정 및 검증된 버전 업데이트만 포함되어 있습니다.</block>
+  <block id="fed22bd00ec1bb7537e843bbc0886bcc" category="doc">SnapCenter software 6.2.1의 새로운 기능</block>
+  <block id="f6a2ad4b89455cf23e3e4843e1f51aee" category="inline-link-macro">SnapCenter 6.2.1 릴리스 노트</block>
+  <block id="f0de22be0ad3dd3c1e51ed207f0e298e" category="paragraph">SnapCenter 소프트웨어 6.2.1 릴리스에는 새로운 기능이나 개선 사항이 포함되어 있지 않습니다. 이 릴리스에는 알려진 버그 수정 및 SnapCenter 서버와 플러그인의 적격 버전 업데이트만 포함되어 있습니다. 자세한 내용은 <block ref="f297672c4e3c5441ce384d3bd8457e0c" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="8ca913d8030ab27ecf31b8863c908b83" category="list-text">Windows 플러그인 호스트에 PowerShell 7.4.13이 설치되어 있는지 확인하십시오.</block>
+  <block id="1a0f97251fd1801dcc25004385c56be0" category="list-text">Windows 및 Linux 플러그인 호스트에 Java 17(Oracle Java 및 OpenJDK)이 설치되어 있는지 확인하십시오.</block>
 </blocks>
