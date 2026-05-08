@@ -21,11 +21,11 @@ SnapCenter 서버 및 Windows 플러그인 호스트에 대한 인증서 기반 
 
 * 클라이언트 인증서 기반 인증을 사용하려면 다음을 따르십시오.
 +
-`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName`<<hostname>>
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="true"}` `-HostName` `hostname`
 
 * 클라이언트 인증서 기반 인증을 사용하지 않도록 설정하려면 다음을 따르십시오.
 +
-`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `<<hostname>>``
+`Set-SmConfigSettings -Agent –configSettings @{"EnableClientCertificateAuthentication"="false"}` `-HostName` `hostname`
 
 
 

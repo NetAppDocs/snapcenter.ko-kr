@@ -701,7 +701,6 @@
   <block id="95d04783b89b5d5f8a4c905e6a139950" category="paragraph">배포에 대한 자세한 내용은 을 참조하십시오<block ref="09fdd78e4c4f2997a9baa6b6e4423d52" category="inline-link-rx"></block>.</block>
   <block id="0a43bd1f35095f6ca081444f65372381" category="section-title">CA 인증서를 배포합니다</block>
   <block id="c9abc3786b4bb68c9d780c7e265731ff" category="inline-link">SSL 인증서를 생성하거나 가져옵니다</block>
-  <block id="77e6d176ef9b9d439f75a9636390005d" category="paragraph">VMware vSphere용 SnapCenter 플러그인을 사용하여 CA 인증서를 구성하려면 를 참조하십시오<block ref="1b5e247395791063ff5d33fa4a1ba4ec" category="inline-link-rx"></block>.</block>
   <block id="3228309100966454e78a162d4ba9bd75" category="section-title">CRL 파일을 구성합니다</block>
   <block id="456dce50d13fcf7c2c4881e39c114254" category="paragraph">VMware vSphere용 SnapCenter 플러그인은 사전 구성된 디렉토리에서 CRL 파일을 찾습니다. VMware vSphere용 SnapCenter 플러그인의 기본 CRL 파일 디렉토리는 _/opt/netapp/config/CRL_ 입니다.</block>
   <block id="e1470cbc380c0e4285ea434aa1f30381" category="doc">SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템 준비</block>
@@ -6701,9 +6700,7 @@
   <block id="ac91c641781bd7c7379113e123abc706" category="doc">인증서 기반 인증을 사용합니다</block>
   <block id="2deb2b431122c2428813248c5cc7e3cf" category="paragraph">SnapCenter 서버 및 Windows 플러그인 호스트에 대한 인증서 기반 인증을 활성화하려면 다음 PowerShell cmdlet을 실행합니다.  Linux 플러그인 호스트의 경우 양방향 SSL을 활성화하면 인증서 기반 인증이 활성화됩니다.</block>
   <block id="012d451c2966c8058914f66afd3ff9be" category="list-text">클라이언트 인증서 기반 인증을 사용하려면 다음을 따르십시오.</block>
-  <block id="c7414a7d4890863a34509bebe1bd9225" category="paragraph"><block ref="a578dd94961bb2b0ce287d29a112740b" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="a71cdd4660400fab236be52b25300411" prefix=" " category="inline-code"></block></block>
   <block id="8b5db05d124326542535790d2a1a0411" category="list-text">클라이언트 인증서 기반 인증을 사용하지 않도록 설정하려면 다음을 따르십시오.</block>
-  <block id="b5cfca9930b60b6f87f38ad0e8d31765" category="paragraph"><block ref="ee29fb805334372351c3e459eaf40ac3" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="b1b73520f4b4ea4d2583cc59029bbe0d" prefix=" " category="inline-code"></block></block>
   <block id="1a415d60c0654233b8e03281525e6b18" category="admonition">도메인 이름을 제외한 스토리지 시스템 이름은 15자 이하여야 하며 이름을 확인할 수 있어야 합니다. 이름이 15자를 초과하는 스토리지 시스템 접속을 생성하려면 Add-SmStorageConnectionPowerShell cmdlet을 사용합니다.</block>
   <block id="542082ddc576a51ede49e11ac68a28ff" category="paragraph">SnapCenter에서 SVM을 추가한 경우 사용자는 드롭다운에서 수동으로 플랫폼 유형을 선택해야 합니다.</block>
   <block id="440355fc57f515aab537d229da6473e3" category="paragraph">AD FS(Active Directory Federation Service) 서버 및 SnapCenter 서버에서 MFA(Multi-Factor Authentication) 기능을 관리할 수 있습니다.</block>
@@ -9256,7 +9253,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="334226d3cfa4581cf30266ef27f8d444" category="list-text">VMware vSphere용 SnapCenter 플러그인을 구축하고 SnapCenter에 플러그인을 등록할 때 RDM LUN에서 가상화된 Exchange Server를 지원합니다.</block>
   <block id="d606f67e2e785da61d4eec544382d173" category="section-title">Oracle 버전 12cR2에서 18C, 19c 또는 21c의 경우</block>
   <block id="6a02cc7ce0251bbc4d48ab0a5e120358" category="paragraph">Oracle 데이터베이스에 지원되는 다양한 인증 방법을 검토해야 합니다. 자세한 내용은 을 <block ref="7870051f24add37682324e1578aee75d" category="inline-link-macro-rx"></block>참조하십시오.</block>
-  <block id="cb5d59c817a7392efa454c9c69508067" category="paragraph"><block ref="cb5d59c817a7392efa454c9c69508067" category="inline-link-rx"></block></block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">피처</block>
   <block id="d662aa2b841a0c131c86e10f89661f14" category="paragraph">FlexClone 라이센스에 대한 내용은 를 참조하십시오 <block ref="d9f19820592fa27802c8f2a3fe0b8c47" category="inline-link-macro-rx"></block>.</block>
   <block id="073f586b61cc6ba33a4441cb7dadca15" category="cell"><block ref="073f586b61cc6ba33a4441cb7dadca15" category="inline-link-macro-rx"></block></block>
@@ -9668,4 +9664,8 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="f0de22be0ad3dd3c1e51ed207f0e298e" category="paragraph">SnapCenter 소프트웨어 6.2.1 릴리스에는 새로운 기능이나 개선 사항이 포함되어 있지 않습니다. 이 릴리스에는 알려진 버그 수정 및 SnapCenter 서버와 플러그인의 적격 버전 업데이트만 포함되어 있습니다. 자세한 내용은 <block ref="f297672c4e3c5441ce384d3bd8457e0c" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="8ca913d8030ab27ecf31b8863c908b83" category="list-text">Windows 플러그인 호스트에 PowerShell 7.4.13이 설치되어 있는지 확인하십시오.</block>
   <block id="1a0f97251fd1801dcc25004385c56be0" category="list-text">Windows 및 Linux 플러그인 호스트에 Java 17(Oracle Java 및 OpenJDK)이 설치되어 있는지 확인하십시오.</block>
+  <block id="92f7e9adcc0061bde4c2abd78f00e01e" category="paragraph">SnapCenter Plug-in for VMware vSphere에서 CA 인증서를 구성하려면 <block ref="e0ef04da7ad7ee6e29cb49ed5497582e" category="inline-link-rx"></block>를 참조하십시오.</block>
+  <block id="0ff275ffe02e672fcd7c5215c9cbcfb6" category="paragraph"><block ref="a578dd94961bb2b0ce287d29a112740b" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="0897acf49c7c1ea9f76efe59187aa046" prefix=" " category="inline-code"></block></block>
+  <block id="11428fc511268a2c63fa0e7ebcb2530d" category="paragraph"><block ref="ee29fb805334372351c3e459eaf40ac3" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="0897acf49c7c1ea9f76efe59187aa046" prefix=" " category="inline-code"></block></block>
+  <block id="2af0fc8c21c11cf5ed04e0063f53931e" category="paragraph"><block ref="2af0fc8c21c11cf5ed04e0063f53931e" category="inline-link-rx"></block></block>
 </blocks>
