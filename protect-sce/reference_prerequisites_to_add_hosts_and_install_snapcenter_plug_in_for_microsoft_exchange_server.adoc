@@ -15,18 +15,18 @@ summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에
 
 * iSCSI를 사용하는 경우 iSCSI 서비스가 실행 중이어야 합니다.
 * 원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 도메인 사용자가 있어야 합니다.
-* 독립 실행형 및 데이터베이스 가용성 그룹 구성에 Microsoft Exchange Server 2013, 2016 또는 2019를 사용해야 합니다.
+* 독립 실행형 및 데이터베이스 가용성 그룹 구성에는 Microsoft Exchange Server를 사용해야 합니다. 지원되는 Microsoft Exchange Server 버전은 link:https://imt.netapp.com/imt/#search["상호 운용성 매트릭스 도구(IMT)"^]을 참조하십시오.
 * Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다.
 * SnapCenter에서 클러스터 노드를 관리하는 경우 클러스터의 모든 노드에 대한 관리 권한이 있는 사용자가 있어야 합니다.
 * Exchange Server에 대한 관리 권한이 있는 사용자가 있어야 합니다.
 * SnapManager for Microsoft Exchange Server 및 SnapDrive for Windows가 이미 설치되어 있는 경우, 동일한 Exchange Server에 Exchange용 플러그인을 설치하기 전에 SnapDrive for Windows에서 사용하는 VSS 하드웨어 공급자를 등록 취소해야 SnapCenter를 사용하여 데이터를 성공적으로 보호할 수 있습니다.
 * Microsoft Exchange Server용 SnapManager와 Exchange용 플러그인이 동일한 서버에 설치되어 있는 경우 Windows 스케줄러에서 Microsoft Exchange Server용 SnapManager가 생성한 모든 스케줄을 일시 중지하거나 삭제해야 합니다.
 * 호스트는 서버에서 FQDN(정규화된 도메인 이름)으로 확인할 수 있어야 합니다. 호스트 파일을 확인할 수 있도록 수정하고 호스트 파일에 짧은 이름과 FQDN이 모두 지정된 경우 _<IP_address><host_FQDN><host_name>_ 형식으로 SnapCenter hosts 파일에 항목을 생성합니다.
-* 방화벽에서 다음 포트가 차단되지 않았는지 확인합니다. 차단되지 않으면 호스트 추가 작업이 실패합니다. 이 문제를 해결하려면 동적 포트 범위를 구성해야 합니다. 자세한 내용은 을 참조하십시오 https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls["Microsoft 설명서"^].
+* 방화벽에서 다음 포트가 차단되지 않았는지 확인하십시오. 그렇지 않으면 호스트 추가 작업이 실패합니다. 이 문제를 해결하려면 동적 포트 범위를 구성해야 합니다. 자세한 내용은 https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls["Microsoft 설명서"^]를 참조하십시오. 지원되는 Microsoft Exchange Server 버전은 link:https://imt.netapp.com/imt/#search["상호 운용성 매트릭스 도구(IMT)"^]를 참조하십시오.
 +
-** Windows 2016 및 Exchange 2016의 경우 포트 범위 50000 - 51000
-** Windows 2012 R2 및 Exchange 2013의 경우 포트 범위는 6000-6500입니다
 ** Windows 2019의 경우 포트 범위 49152-65536
+** Windows 2016 및 Exchange 2016의 경우 포트 범위 50000 - 51000
+** Windows 2012 R2 및 Exchange 2013의 포트 범위 6000 - 6500
 
 
 

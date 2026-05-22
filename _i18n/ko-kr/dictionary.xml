@@ -1064,16 +1064,13 @@
   <block id="8b8199b2cc69508101df27784ccae8d5" category="doc">SnapCenter 플러그인 패키지 설치 상태를 모니터링합니다</block>
   <block id="e53c11d95478892635e2a7753106adc5" category="summary">호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다.</block>
   <block id="690761e3a499ee562da842d3bd6f2db0" category="doc">호스트를 추가하고 Microsoft Exchange Server용 SnapCenter 플러그인을 설치하기 위한 사전 요구 사항</block>
-  <block id="3135b36cd939fa03c3be552b0fbe8534" category="list-text">독립 실행형 및 데이터베이스 가용성 그룹 구성에 Microsoft Exchange Server 2013, 2016 또는 2019를 사용해야 합니다.</block>
   <block id="6f4630c11483dcb4143ae30dadd50487" category="list-text">Windows 호스트에 플러그인을 설치할 때 기본 제공되지 않은 자격 증명을 지정하거나 사용자가 로컬 작업 그룹 사용자의 경우 호스트에서 UAC를 비활성화해야 합니다.</block>
   <block id="28d2b8ff10c1db028f2426c313a6f6ac" category="list-text">Exchange Server에 대한 관리 권한이 있는 사용자가 있어야 합니다.</block>
   <block id="b387198e1b998aa635e2ad89704fa61e" category="list-text">SnapManager for Microsoft Exchange Server 및 SnapDrive for Windows가 이미 설치되어 있는 경우, 동일한 Exchange Server에 Exchange용 플러그인을 설치하기 전에 SnapDrive for Windows에서 사용하는 VSS 하드웨어 공급자를 등록 취소해야 SnapCenter를 사용하여 데이터를 성공적으로 보호할 수 있습니다.</block>
   <block id="e14f254ce5508b044595b70ba76e2dd9" category="list-text">Microsoft Exchange Server용 SnapManager와 Exchange용 플러그인이 동일한 서버에 설치되어 있는 경우 Windows 스케줄러에서 Microsoft Exchange Server용 SnapManager가 생성한 모든 스케줄을 일시 중지하거나 삭제해야 합니다.</block>
   <block id="363807fbbec214888e9bb4ab89312c45" category="list-text">호스트는 서버에서 FQDN(정규화된 도메인 이름)으로 확인할 수 있어야 합니다. 호스트 파일을 확인할 수 있도록 수정하고 호스트 파일에 짧은 이름과 FQDN이 모두 지정된 경우 _&lt;IP_address&gt;&lt;host_FQDN&gt;&lt;host_name&gt;_ 형식으로 SnapCenter hosts 파일에 항목을 생성합니다.</block>
   <block id="727d6ec7c143ece348a58c5723f2f025" category="inline-link">Microsoft 설명서</block>
-  <block id="49178d8917274413da493299118d6557" category="list-text">방화벽에서 다음 포트가 차단되지 않았는지 확인합니다. 차단되지 않으면 호스트 추가 작업이 실패합니다. 이 문제를 해결하려면 동적 포트 범위를 구성해야 합니다. 자세한 내용은 을 참조하십시오<block ref="70d4a5fd2803e35738264291f84fc1aa" category="inline-link-rx"></block>.</block>
   <block id="16b480a328aa6342db0d1f44787d9eaf" category="list-text">Windows 2016 및 Exchange 2016의 경우 포트 범위 50000 - 51000</block>
-  <block id="3d865e6796dba371ef2bbaf9003ed1eb" category="list-text">Windows 2012 R2 및 Exchange 2013의 경우 포트 범위는 6000-6500입니다</block>
   <block id="2973bd6a9b781fc2968849d58205311c" category="list-text">Windows 2019의 경우 포트 범위 49152-65536</block>
   <block id="fe76fc133ce5d0e6aa2e73fa56ca464c" category="paragraph">포트 범위를 식별하려면 다음 명령을 실행합니다.</block>
   <block id="70766abc1e0d9fa835c550fd65fe8108" category="list-text">netsh int ipv4 show dynamicport tcp</block>
@@ -9668,4 +9665,7 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="0ff275ffe02e672fcd7c5215c9cbcfb6" category="paragraph"><block ref="a578dd94961bb2b0ce287d29a112740b" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="0897acf49c7c1ea9f76efe59187aa046" prefix=" " category="inline-code"></block></block>
   <block id="11428fc511268a2c63fa0e7ebcb2530d" category="paragraph"><block ref="ee29fb805334372351c3e459eaf40ac3" prefix="" category="inline-code"></block><block ref="e685e5103f8306754d61ec1a0da15686" prefix=" " category="inline-code"></block><block ref="0897acf49c7c1ea9f76efe59187aa046" prefix=" " category="inline-code"></block></block>
   <block id="2af0fc8c21c11cf5ed04e0063f53931e" category="paragraph"><block ref="2af0fc8c21c11cf5ed04e0063f53931e" category="inline-link-rx"></block></block>
+  <block id="58065290ed803cdf3874ac1d4114dcef" category="list-text">독립 실행형 및 데이터베이스 가용성 그룹 구성에는 Microsoft Exchange Server를 사용해야 합니다. 지원되는 Microsoft Exchange Server 버전은 <block ref="a56461e56210fb5ec91e8f031015b65a" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="00ae82bfdfa80871841f81003a4c71b8" category="list-text">방화벽에서 다음 포트가 차단되지 않았는지 확인하십시오. 그렇지 않으면 호스트 추가 작업이 실패합니다. 이 문제를 해결하려면 동적 포트 범위를 구성해야 합니다. 자세한 내용은<block ref="70d4a5fd2803e35738264291f84fc1aa" category="inline-link-rx"></block>를 참조하십시오. 지원되는 Microsoft Exchange Server 버전은 <block ref="a56461e56210fb5ec91e8f031015b65a" category="inline-link-macro-rx"></block>를 참조하십시오.</block>
+  <block id="e009ef54959ef44bca3f7d7710210754" category="list-text">Windows 2012 R2 및 Exchange 2013의 포트 범위 6000 - 6500</block>
 </blocks>
