@@ -105,7 +105,7 @@ NOTE: 참고: SnapCenter 저장소가 설치된 동일한 드라이브에 SnapCe
  a| 
 필요한 소프트웨어 패키지
  a| 
-* ASP.NET Core Runtime 8.0.12(및 이후의 모든 8.0.x 패치) 호스팅 번들
+* ASP.NET Core Runtime 8.0.24(및 이후 모든 8.0.x 패치) Hosting Bundle
 * PowerShell 7.4.2 이상
 
 
