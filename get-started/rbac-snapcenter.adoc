@@ -200,7 +200,7 @@ App Backup and Clone Admin 역할에는 애플리케이션 백업 및 클론 관
  a| 
 예
  a| 
-아니요
+예
  a| 
 아니요
 
