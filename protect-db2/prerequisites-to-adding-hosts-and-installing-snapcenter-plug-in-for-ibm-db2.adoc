@@ -13,8 +13,7 @@ summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에
 [role="lead"]
 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. Windows, Linux 및 AIX 환경에서 지원되는 IBM DB2용 SnapCenter 플러그인
 
-* SnapCenter 6.2.1 이상 버전을 사용하려면 Java 17(Oracle Java 또는 OpenJDK)이 설치되어 있어야 합니다
-* 호스트의 SnapCenter 6.2 이하 버전용 Java 11.
+* SnapCenter 6.2.1 이상 버전을 사용하려면 호스트에 Java 17(Oracle Java, OpenJDK 또는 SAP JDK)이 설치되어 있어야 하고, SnapCenter 6.2 이하 버전을 사용하려면 Java 11이 설치되어 있어야 합니다.
 +
 
 NOTE: IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.
@@ -31,8 +30,7 @@ NOTE: IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.
 * 원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 도메인 사용자가 있어야 합니다.
 * Windows 호스트에 IBM DB2용 플러그인을 설치하는 동안 Microsoft Windows용 SnapCenter 플러그인이 자동으로 설치됩니다.
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
-* SnapCenter 6.2.1 이상 버전을 사용하려면 Java 17(Oracle Java 또는 OpenJDK)이 설치되어 있어야 합니다
-* 호스트의 SnapCenter 6.2 이하 버전용 Java 11.
+* SnapCenter 6.2.1 이상 버전을 사용하려면 호스트에 Java 17(Oracle Java, OpenJDK 또는 SAP JDK)이 설치되어 있어야 하고, SnapCenter 6.2 이하 버전을 사용하려면 Java 11이 설치되어 있어야 합니다.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17["Windows용 Java 다운로드"^]
 
@@ -43,8 +41,7 @@ link:https://www.oracle.com/java/technologies/downloads/#java17["Windows용 Java
 == Linux 및 AIX 호스트
 
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
-* SnapCenter 6.2.1 이상 버전을 사용하려면 Java 17(Oracle Java 또는 OpenJDK)이 설치되어 있어야 합니다
-* Linux 또는 AIX 호스트의 SnapCenter 6.2 이하 버전용 Java 11.
+* SnapCenter 6.2.1 이상 버전을 사용하려면 Linux 또는 AIX 호스트에 Java 17(Oracle Java, OpenJDK 또는 SAP JDK)이 설치되어 있어야 하고, SnapCenter 6.2 이하 버전을 사용하려면 Java 11이 설치되어 있어야 합니다.
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17["Linux용 Java 다운로드"^]
 

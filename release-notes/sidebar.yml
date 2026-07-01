@@ -2,10 +2,6 @@
 section: release-notes
 title: 릴리스 정보
 entries:
-- title: 릴리즈 노트
-  url: "/release-notes/release-notes.html"
-- title: SnapCenter 6.2.1의 새로운 기능
-  url: "/release-notes/what's-new-in-snapcenter621.html"
 - title: SnapCenter 6.2의 새로운 기능
   url: "/release-notes/what's-new-in-snapcenter62.html"
 - title: SnapCenter에 대해 지원되는 업그레이드 경로

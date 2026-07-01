@@ -16,7 +16,10 @@ summary: SnapCenter 서버 설치 관리자 실행 파일을 사용하여 SnapCe
 .시작하기 전에
 * SnapCenter 서버 호스트를 최신 Windows 업데이트로 업데이트하고 보류 중인 시스템 재시작이 없는지 확인하세요.
 * 업그레이드를 시작하기 전에 다른 작업이 실행되고 있지 않은지 확인하세요.
-* ASP.NET Core Runtime 8.0.24(및 이후의 모든 8.0.x 패치) Hosting Bundle 및 PowerShell 7.4.13 이상을 설치하십시오.
+* ASP.NET Core 런타임 10.0.7 호스팅 번들(또는 이후 버전)과 PowerShell 7.6.1(또는 이후 버전)을 설치하십시오.
++
+특정 SnapCenter 버전에 대해 검증된 최신 버전의 ASP.NET Core 및 PowerShell은 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467["SnapCenter 소프트웨어 릴리스 노트"^]을 참조하십시오.
+
 * 작업이 실행되고 있지 않은지 확인한 후 SnapCenter 저장소(MySQL) 데이터베이스를 백업합니다. SnapCenter Server와 Exchange 플러그인을 업그레이드하기 전에 이 작업을 수행하는 것이 좋습니다.
 +
 자세한 내용은 을 참조하십시오 link:../admin/concept_manage_the_snapcenter_server_repository.html#back-up-the-snapcenter-repository["SnapCenter 리포지토리를 백업합니다"^].
