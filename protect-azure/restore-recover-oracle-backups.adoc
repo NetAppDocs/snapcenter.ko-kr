@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for Oracle Database, restore, recover, tablespaces, pluggable databases, point-in-time 
 summary: SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 복원 및 복구할 수 있습니다. 
 ---
-= Oracle 데이터베이스 복원 및 복구
+= SnapCenter를 사용하여 Oracle 데이터베이스 복원 및 복구
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -54,6 +54,7 @@ summary: SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 �
 
 
 
+[[restore-and-recover-tablespaces-using-point-in-time-recovery]]
 == 시점 복구를 사용하여 테이블스페이스를 복구 및 복구합니다
 
 데이터베이스의 다른 테이블스페이스에 영향을 주지 않고 손상되거나 삭제된 테이블스페이스의 하위 집합을 복원할 수 있습니다. SnapCenter는 RMAN을 사용하여 테이블스페이스의 시점 복구(PITR)를 수행합니다.
@@ -88,6 +89,7 @@ summary: SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 �
 
 
 
+[[restore-and-recover-pluggable-database-using-point-in-time-recovery]]
 == 시점 복구를 사용하여 플러그형 데이터베이스를 복원 및 복구합니다
 
 컨테이너 데이터베이스(CDB)의 다른 PDB에 영향을 주지 않고 손상되거나 삭제된 플러그형 데이터베이스(PDB)를 복원 및 복구할 수 있습니다. SnapCenter는 RMAN을 사용하여 PDB의 시점 복구(PITR)를 수행합니다.

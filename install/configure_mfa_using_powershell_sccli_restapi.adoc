@@ -15,6 +15,7 @@ SnapCenter 서버에서 PowerShell, SCCLI 및 REST API를 사용하여 MFA를 �
 
 
 
+[[snapcenter-mfa-cli-authentication]]
 == SnapCenter MFA CLI 인증
 
 PowerShell 및 SCCLI에서 베어러 토큰을 사용하여 사용자를 인증하는 데 "AccessToken"이라는 필드가 하나 더 있는 기존 cmdlet(Open-SmConnection)이 확장됩니다.
@@ -25,12 +26,14 @@ PowerShell 및 SCCLI에서 베어러 토큰을 사용하여 사용자를 인증�
 
 
 
+[[snapcenter-mfa-rest-api-authentication]]
 == SnapCenter MFA REST API 인증
 
 SnapCenter로부터 성공적인 응답을 얻으려면 _Authorization=Bearer <access token>_in REST API 클라이언트(예: Postman 또는 swagger)의 형식으로 베어러 토큰을 사용하고 헤더에 사용자 RoleName을 언급하십시오.
 
 
 
+[[mfa-rest-api-workflow]]
 == MFA REST API 워크플로우
 
 MFA가 AD FS로 구성된 경우 액세스(베어러) 토큰을 사용하여 인증하여 REST API를 통해 SnapCenter 애플리케이션에 액세스해야 합니다.
@@ -80,6 +83,7 @@ AD FS SSO 페이지에서 사용자 이름 텍스트 상자에 사용자 이름 
 
 
 
+[[enable-or-disable-snapcenter-mfa-functionality-for-rest-api-cli-and-gui]]
 == REST API, CLI 및 GUI에 대해 SnapCenter MFA 기능을 사용하거나 사용하지 않도록 설정합니다
 
 * GUI *

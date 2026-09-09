@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup type, preferred nodes, catalog backups, schedules, backup name format, retention, verification 
 summary: Oracle 데이터베이스에 지원되는 백업 유형입니다. 
 ---
-= Oracle 데이터베이스에 지원되는 백업 유형입니다
+= SnapCenter에서 지원되는 Oracle 데이터베이스 백업 유형
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ summary: Oracle 데이터베이스에 지원되는 백업 유형입니다.
 
 
 
+[[online-backup]]
 == 온라인 백업
 
 데이터베이스가 온라인 상태일 때 생성되는 백업을 온라인 백업이라고 합니다. 핫 백업이라고도 하는 온라인 백업을 사용하면 데이터베이스를 종료하지 않고도 데이터베이스 백업을 생성할 수 있습니다.
@@ -28,6 +29,7 @@ summary: Oracle 데이터베이스에 지원되는 백업 유형입니다.
 
 
 
+[[offline-backup]]
 == 오프라인 백업
 
 데이터베이스가 마운트되었거나 종료 상태일 때 생성된 백업을 오프라인 백업이라고 합니다. 오프라인 백업을 콜드 백업이라고도 합니다. 데이터 파일만 포함하고 오프라인 백업에는 제어 파일을 포함할 수 있습니다. 오프라인 마운트 또는 오프라인 종료 백업을 생성할 수 있습니다.

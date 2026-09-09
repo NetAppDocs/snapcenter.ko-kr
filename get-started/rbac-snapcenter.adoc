@@ -20,6 +20,7 @@ NOTE: SnapCenter 사용자나 그룹 계정을 생성하지 않습니다.  운�
 
 
 
+[[types-of-rbac-in-snapcenter]]
 == SnapCenter의 RBAC 유형
 
 SnapCenter 다음과 같은 유형의 역할 기반 액세스 제어를 지원합니다.
@@ -32,6 +33,7 @@ SnapCenter 다음과 같은 유형의 역할 기반 액세스 제어를 지원�
 
 
 
+[[snapcenter-rbac]]
 === SnapCenter RBAC
 
 SnapCenter 에는 미리 정의된 역할이 있으며 이러한 역할에 사용자나 그룹을 할당할 수 있습니다.
@@ -55,6 +57,7 @@ NOTE: 사용자 지정 역할을 만들 때 SnapCenterAdmin 역할의 모든 권
 
 
 
+[[application-level-rbac]]
 === 애플리케이션 레벨 RBAC
 
 SnapCenter는 자격 증명을 사용하여 권한이 있는 SnapCenter 사용자에게 응용 프로그램 수준 권한도 있는지 확인합니다.
@@ -65,6 +68,7 @@ SnapCenter는 자격 증명을 사용하여 권한이 있는 SnapCenter 사용�
 
 
 
+[[snapcenter-plug-in-for-vmware-vsphere-rbac]]
 === VMware vSphere용 SnapCenter 플러그인 RBAC
 
 VM 일관성 있는 데이터 보호를 위해 SnapCenter VMware 플러그인을 사용하는 경우 vCenter Server는 추가 RBAC 수준을 제공합니다. SnapCenter VMware 플러그인은 vCenter Server RBAC와 ONTAP RBAC를 모두 지원합니다. https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_types_of_rbac_for_snapcenter_users.html["자세한 정보"^]
@@ -73,12 +77,14 @@ VM 일관성 있는 데이터 보호를 위해 SnapCenter VMware 플러그인을
 
 
 
+[[ontap-permissions]]
 === ONTAP 권한
 
 스토리지 시스템에 액세스하는 데 필요한 권한이 있는 vsadmin 계정을 만들어야 합니다.link:../install/task_add_a_user_or_group_and_assign_role_and_assets.html["자세한 정보"]
 
 
 
+[[permissions-assigned-to-the-pre-defined-snapcenter-roles]]
 == 사전 정의된 SnapCenter 역할에 할당된 권한입니다
 
 역할에 사용자를 추가할 때 StorageConnection 권한을 할당하여 SVM(스토리지 가상 머신) 통신을 활성화하거나 사용자에게 SVM을 할당하여 SVM을 사용할 수 있는 권한을 부여합니다.  저장소 연결 권한을 통해 사용자는 SVM 연결을 생성할 수 있습니다.
@@ -87,12 +93,14 @@ VM 일관성 있는 데이터 보호를 위해 SnapCenter VMware 플러그인을
 
 
 
+[[snapcenter-admin-role]]
 === SnapCenter 관리자 역할
 
 SnapCenter 관리자 역할에는 모든 권한이 활성화되어 있습니다. 이 역할에 대한 권한은 수정할 수 없습니다. 사용자 및 그룹을 역할에 추가하거나 제거할 수 있습니다.
 
 
 
+[[app-backup-and-clone-admin-role]]
 === 앱 백업 및 클론 관리자 역할
 
 App Backup and Clone Admin 역할에는 애플리케이션 백업 및 클론 관련 작업에 대한 관리 작업을 수행하는 데 필요한 권한이 있습니다. 이 역할에는 호스트 관리, 프로비저닝, 스토리지 접속 관리 또는 원격 설치에 대한 권한이 없습니다.
@@ -371,6 +379,7 @@ App Backup and Clone Admin 역할에는 애플리케이션 백업 및 클론 관
 |===
 
 
+[[backup-and-clone-viewer-role]]
 === 백업 및 클론 뷰어 역할
 
 백업 및 복제 뷰어 역할은 모든 권한에 대한 읽기 전용 보기 권한을 갖습니다.  이 역할에는 검색, 보고 및 대시보드 액세스에 대한 권한도 활성화되어 있습니다.
@@ -650,6 +659,7 @@ App Backup and Clone Admin 역할에는 애플리케이션 백업 및 클론 관
 |===
 
 
+[[infrastructure-admin-role]]
 === 인프라 관리자 역할
 
 인프라 관리자 역할에는 호스트 관리, 스토리지 관리, 프로비저닝, 리소스 그룹, 원격 설치 보고서, 대시보드에 액세스합니다.

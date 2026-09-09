@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: prerequisites, iSCSI, host requirement for Linux, sudo privileges, non-root user, credentials, authenticate, domain administrator, local administrator, workgroup, sudo, root user 
 summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. 
 ---
-= Linux용 호스트 추가 및 플러그인 패키지 설치를 위한 사전 요구 사항
+= 호스트 추가 및 Linux용 SnapCenter 플러그인 패키지 설치를 위한 필수 조건
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -36,6 +36,7 @@ Java 다운로드에 대한 자세한 내용은 link:https://www.oracle.com/java
 
 
 
+[[linux-host-requirements]]
 == Linux 호스트 요구 사항
 
 Linux용 SnapCenter 플러그인 패키지를 설치하기 전에 호스트가 요구 사항을 충족하는지 확인해야 합니다.

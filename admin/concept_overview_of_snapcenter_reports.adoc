@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter reports 
 summary: SnapCenter는 시스템 상태 및 운영 성공을 모니터링하고 관리할 수 있는 다양한 보고 옵션을 제공합니다. 
 ---
-= SnapCenter 보고 기능 개요
+= SnapCenter 보고 기능에 대해 알아보세요.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -55,6 +55,7 @@ SnapCenter는 시스템 상태 및 운영 성공을 모니터링하고 관리할
 |===
 
 
+[[access-reports]]
 == 보고서에 액세스합니다
 
 SnapCenter 대시보드를 사용하여 시스템 상태를 빠르게 파악할 수 있습니다. 대시보드에서 자세한 정보를 확인할 수 있습니다. 또는 상세 보고서에 직접 액세스할 수도 있습니다.
@@ -67,6 +68,7 @@ SnapCenter 대시보드를 사용하여 시스템 상태를 빠르게 파악할 
 
 
 
+[[filter-your-report]]
 == 보고서를 필터링합니다
 
 필요한 정보의 세부 수준과 시간 범위에 따라 다양한 매개 변수에 따라 보고서 데이터를 필터링할 수 있습니다.
@@ -91,6 +93,7 @@ SnapCenter 대시보드를 사용하여 시스템 상태를 빠르게 파악할 
 
 
 
+[[export-or-print-reports]]
 == 보고서를 내보내거나 인쇄합니다
 
 SnapCenter 보고서를 내보내면 다양한 대체 형식으로 보고서를 볼 수 있습니다. 보고서를 인쇄할 수도 있습니다.
@@ -110,6 +113,7 @@ SnapCenter 보고서를 내보내면 다양한 대체 형식으로 보고서를 
 
 
 
+[[set-the-smtp-server-for-email-notifications]]
 == 이메일 알림에 대한 SMTP 서버를 설정합니다
 
 사용자 자신 또는 다른 사람에게 데이터 보호 작업 보고서를 보내는 데 사용할 SMTP 서버를 지정할 수 있습니다. 테스트 이메일을 보내 구성을 확인할 수도 있습니다. 이 설정은 이메일 알림을 구성하는 모든 SnapCenter 작업에 전체적으로 적용됩니다.
@@ -126,6 +130,7 @@ SnapCenter 보고서를 내보내면 다양한 대체 형식으로 보고서를 
 
 
 
+[[configure-the-option-to-email-reports]]
 == 보고서를 e-메일로 보내는 옵션을 구성합니다
 
 정기적으로 SnapCenter 데이터 보호 작업 업데이트를 자신 또는 다른 사람에게 보내 해당 업데이트의 상태를 모니터링하려는 경우 리소스 그룹을 만들 때 SnapCenter 보고서를 전자 메일로 보내는 옵션을 구성할 수 있습니다.

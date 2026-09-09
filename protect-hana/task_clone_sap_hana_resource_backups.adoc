@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database 
 summary: 클론 워크플로우에는 클론 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
-= 클론 복제 워크플로우
+= SnapCenter SAP HANA 데이터베이스 복제 워크플로
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mfa, authentication, multifactor authentication 
 summary: SnapCenter는 엄격한 보안 및 인증 기능을 사용하여 데이터를 안전하게 보호합니다. 
 ---
-= 멀티팩터 인증(MFA) 관리
+= SnapCenter에서 다단계 인증 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ AD FS(Active Directory Federation Service) 서버 및 SnapCenter 서버에서 MF
 
 
 
+[[enable-multi-factor-authentication-mfa]]
 == 멀티팩터 인증(MFA) 활성화
 
 PowerShell 명령을 사용하여 SnapCenter Server에 MFA 기능을 사용하도록 설정할 수 있습니다.
@@ -120,6 +121,7 @@ SnapCenter MFA 기능은 REST API를 사용하여 활성화할 수도 있습니�
 
 
 
+[[update-ad-fs-mfa-metadata]]
 == AD FS MFA 메타데이터를 업데이트합니다
 
 AD FS 서버에 업그레이드, CA 인증서 갱신, DR 등과 같은 수정 사항이 있을 때마다 SnapCenter에서 AD FS MFA 메타데이터를 업데이트해야 합니다.
@@ -136,6 +138,7 @@ AD FS 서버에 업그레이드, CA 인증서 갱신, DR 등과 같은 수정 �
 
 
 
+[[update-snapcenter-mfa-metadata]]
 == SnapCenter MFA 메타데이터를 업데이트합니다
 
 복구, CA 인증서 갱신, DR 등과 같은 ADFS 서버에 수정 사항이 있을 때마다 AD FS에서 SnapCenter MFA 메타데이터를 업데이트해야 합니다.
@@ -159,6 +162,7 @@ AD FS 서버에 업그레이드, CA 인증서 갱신, DR 등과 같은 수정 �
 
 
 
+[[disable-multi-factor-authentication-mfa]]
 == MFA(Multi-Factor Authentication) 비활성화
 
 .단계

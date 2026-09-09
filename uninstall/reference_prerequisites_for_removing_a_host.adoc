@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: uninstall, prerequisites, plug-in, plug-in packages 
 summary: SnapCenter를 사용하여 데이터 보호 작업을 더 이상 관리하지 않으려는 경우 호스트를 제거할 수 있습니다. 예를 들어, 보호해야 할 데이터가 더 이상 없으면 호스트를 제거할 수 있습니다. SnapCenter 서버에서 호스트를 제거하기 전에 필수 작업을 수행해야 합니다. 
 ---
-= 호스트 제거를 위한 사전 요구 사항
+= SnapCenter에서 호스트를 제거하기 위한 사전 요구 사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -24,6 +24,7 @@ SnapCenter 서버에서 호스트를 제거하기 전에 사전 요구 사항을
 
 
 
+[[prerequisites-to-remove-a-host-using-role-based-access-control]]
 == 역할 기반 액세스 제어를 사용하여 호스트를 제거하기 위한 사전 요구 사항
 
 * 읽기, 호스트 삭제, 설치, 플러그인 제거 및 개체 삭제 권한이 있는 RBAC 역할을 사용하여 로그인해야 합니다.
@@ -37,6 +38,7 @@ SnapCenter 서버에서 호스트를 제거하기 전에 사전 요구 사항을
 
 
 
+[[prerequisites-to-remove-a-host-with-clones-created-from-clone-lifecycle-operation]]
 == 사전 요구 사항 - 클론 수명주기 작업에서 생성된 클론이 있는 호스트를 제거합니다
 
 * SQL 데이터베이스의 클론 라이프사이클 관리를 사용하여 클론 작업을 생성해야 합니다.

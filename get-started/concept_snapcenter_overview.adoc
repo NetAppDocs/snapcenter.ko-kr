@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter overview 
 summary: SnapCenter 소프트웨어는 간단하고 확장 가능한 중앙 집중식 플랫폼으로, 하이브리드 클라우드의 모든 위치에서 ONTAP 시스템에서 실행되는 애플리케이션, 데이터베이스, 호스트 파일 시스템 및 VM에 대한 애플리케이션 정합성이 보장된 데이터 보호를 제공합니다. 
 ---
-= SnapCenter 개요
+= SnapCenter 소프트웨어에 대해 알아보십시오
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -49,6 +49,7 @@ SnapCenter 온프레미스나 퍼블릭 클라우드에 설치하여 데이터�
 
 
 
+[[key-features]]
 == 주요 기능
 
 SnapCenter는 다음과 같은 주요 기능을 제공합니다.
@@ -94,6 +95,7 @@ SnapCenter는 모든 오케스트레이션 소프트웨어와의 통합 및 Wind
 
 
 
+[[snapcenter-architecture-and-components]]
 == SnapCenter 아키텍처 및 구성 요소
 
 SnapCenter 중앙 관리 서버와 플러그인 호스트를 갖춘 계층형 디자인을 사용합니다.  서버와 플러그인 호스트는 서로 다른 위치에 있을 수 있습니다.
@@ -104,6 +106,7 @@ SnapCenter에는 SnapCenter 서버, Windows용 SnapCenter 플러그인 패키지
 
 
 
+[[snapcenter-server]]
 === SnapCenter 서버
 
 SnapCenter 서버는 Microsoft Windows 및 Linux(RHEL 8.x, RHEL 9.x, SLES 15 SP5) 운영 체제를 지원합니다. SnapCenter 서버에는 웹 서버, 중앙 집중식 HTML5 기반 사용자 인터페이스, PowerShell cmdlet, REST API 및 SnapCenter 저장소가 포함됩니다.
@@ -112,6 +115,7 @@ SnapCenter SnapCenter 저장소에 작업 정보를 저장합니다.
 
 
 
+[[snapcenter-plug-ins]]
 === SnapCenter 플러그인
 
 각 SnapCenter 플러그인은 특정 환경, 데이터베이스 및 애플리케이션을 지원합니다.
@@ -293,6 +297,7 @@ SnapCenter Plug-in for VMware vSphere 가상 머신(VM), 데이터 저장소 및
 
 
 
+[[snapcenter-repository]]
 === SnapCenter 리포지토리
 
 NSM 데이터베이스라고도 하는 SnapCenter 저장소는 모든 SnapCenter 작업에 대한 정보와 메타데이터를 저장합니다.

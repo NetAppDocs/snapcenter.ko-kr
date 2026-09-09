@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup policy 
 summary: SnapCenter를 사용하여 Windows 파일 시스템을 백업하기 전에 리소스에 대한 새 백업 정책을 만들거나 리소스 그룹을 만들 때 또는 리소스를 백업할 때 새 백업 정책을 만들 수 있습니다. 
 ---
-= Windows 파일 시스템에 대한 백업 정책을 생성합니다
+= Windows 파일 시스템용 SnapCenter 백업 정책 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

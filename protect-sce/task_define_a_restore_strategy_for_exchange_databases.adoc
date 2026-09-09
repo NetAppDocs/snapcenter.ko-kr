@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server 
 summary: Exchange Server에 대한 복원 전략을 정의하면 데이터베이스를 성공적으로 복원할 수 있습니다. 
 ---
-= Exchange 데이터베이스에 대한 복구 전략 정의
+= SnapCenter에서 Exchange 데이터베이스에 대한 복구 전략 정의
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ Exchange Server에 대한 복원 전략을 정의하면 데이터베이스를 �
 
 
 
+[[sources-for-a-restore-operation-in-exchange-server]]
 == Exchange Server의 복구 작업에 대한 소스
 
 기본 스토리지의 백업 복사본에서 Exchange Server 데이터베이스를 복원할 수 있습니다.
@@ -23,6 +24,7 @@ Exchange Server에 대한 복원 전략을 정의하면 데이터베이스를 �
 
 
 
+[[types-of-restore-operations-supported-for-exchange-server]]
 == Exchange Server에 대해 지원되는 복구 작업 유형입니다
 
 SnapCenter를 사용하여 Exchange 리소스에 대해 다양한 유형의 복구 작업을 수행할 수 있습니다.
@@ -33,6 +35,7 @@ SnapCenter를 사용하여 Exchange 리소스에 대해 다양한 유형의 복�
 
 
 
+[[restore-up-to-the-minute]]
 === 최대 1분 내에 복원합니다
 
 최신 복원 작업에서 데이터베이스는 장애 지점까지 복구됩니다. SnapCenter는 다음 시퀀스를 실행하여 이를 수행합니다.
@@ -64,6 +67,7 @@ SnapCenter를 사용하여 Exchange 리소스에 대해 다양한 유형의 복�
 
 
 
+[[restore-to-a-previous-point-in-time]]
 === 이전 시점으로 복원합니다
 
 시점 복원 작업에서는 데이터베이스가 과거의 특정 시간으로만 복원됩니다. 시점 복원 작업은 다음과 같은 복원 상황에서 수행됩니다.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore and recovery strategy, IBM Db2 resources, snapcenter 
 summary: 복구 및 복구 작업을 성공적으로 수행하려면 데이터베이스를 복원 및 복구하기 전에 전략을 정의해야 합니다. 
 ---
-= IBM DB2 리소스에 대한 복구 및 복구 전략을 정의합니다
+= IBM Db2 리소스에 대한 복원 및 복구 전략을 SnapCenter에서 정의합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

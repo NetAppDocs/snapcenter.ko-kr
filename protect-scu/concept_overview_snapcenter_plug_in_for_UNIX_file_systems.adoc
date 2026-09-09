@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: overview, unix file system, plug-in for unix file system, backup, restore, clone 
 summary: Unix 파일 시스템용 플러그인은 TOF Unix 파일 시스템의 백업, 복원 및 복제를 지원합니다. 
 ---
-= Unix 파일 시스템용 SnapCenter 플러그인으로 수행할 수 있는 작업
+= UNIX 파일 시스템용 SnapCenter 플러그인에 대해 알아보세요
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,6 +23,7 @@ Unix 파일 시스템용 플러그인이 사용자 환경에 설치된 경우 Sn
 
 
 
+[[supported-configurations]]
 == 지원되는 구성
 
 |===
@@ -84,6 +85,7 @@ NFS와 SAN 모두에서 VVOL 데이터 저장소: VVOL 데이터 저장소는 VM
 |===
 
 
+[[limitations]]
 == 제한 사항
 
 * 볼륨 그룹에서 RDM과 가상 디스크의 혼합은 지원되지 않습니다.
@@ -98,6 +100,7 @@ NFS와 SAN 모두에서 VVOL 데이터 저장소: VVOL 데이터 저장소는 VM
 
 
 
+[[features]]
 == 피처
 
 * Linux 또는 AIX 시스템에서 기본 호스트 스토리지 스택을 처리함으로써 Oracle 데이터베이스용 플러그인이 Oracle 데이터베이스에서 데이터 보호 작업을 수행할 수 있습니다

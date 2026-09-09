@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Requirements 
 summary: Microsoft SQL Server 백업용 SnapCenter 플러그인에서 SQL Server 데이터베이스를 복원하기 전에 몇 가지 요구 사항이 충족되는지 확인해야 합니다. 
 ---
-= 데이터베이스 복원 요구 사항
+= SnapCenter를 사용하여 SQL Server 데이터베이스를 복구하기 위한 요구사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

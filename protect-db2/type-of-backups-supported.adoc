@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2 
 summary: 백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 IBM DB2 데이터베이스에 대해 스냅샷 복제 기반 백업 유형을 지원합니다. 
 ---
-= 지원되는 백업 유형입니다
+= SnapCenter Plug-in for IBM Db2에서 지원하는 백업 유형
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ summary: 백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter
 
 
 
+[[snapshot-copy-based-backup]]
 == 스냅샷 복사본 기반 백업
 
 스냅샷 복사본 기반 백업은 NetApp 스냅샷 기술을 활용하여 IBM DB2 데이터베이스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 만듭니다.

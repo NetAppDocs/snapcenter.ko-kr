@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: unix file systems, preparation for protection, prerequisites 
 summary: 백업, 클론 또는 복원 작업과 같은 데이터 보호 작업을 수행하기 전에 환경을 설정해야 합니다. 
 ---
-= Unix 파일 시스템 보호를 준비합니다
+= SnapCenter으로 UNIX 파일 시스템을 보호하기 위한 사전 요구 사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

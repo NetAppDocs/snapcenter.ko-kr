@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restoring an Exchange database 
 summary: Microsoft Exchange Server 백업용 SnapCenter 플러그인에서 Exchange Server 데이터베이스를 복구하기 전에 몇 가지 요구 사항이 충족되는지 확인해야 합니다. 
 ---
-= Exchange 데이터베이스 복구 요구 사항
+= Microsoft Exchange Server용 SnapCenter 플러그인의 복원 요구 사항
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

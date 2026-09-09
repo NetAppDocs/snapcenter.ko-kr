@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NetApp supported plug-in, resources, NetApp supported plug-ins, MongoDB, ORASCPM, Oracle Applications, SAP ASE, SAP MaxDB, Storage plug-in 
 summary: 백업하거나 클론 복제할 리소스를 추가해야 합니다. 환경에 따라 백업 또는 복제할 데이터베이스 인스턴스 또는 컬렉션이 리소스가 될 수 있습니다. 
 ---
-= NetApp 지원 플러그인에 리소스 추가
+= NetApp 지원 플러그인에 리소스를 추가합니다 SnapCenter
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -101,12 +101,14 @@ IMPORTANT: 데이터베이스가 SnapCenter 외부에서 이름이 변경된 경
 
 
 
+[[parameters-to-configure-the-resource]]
 == 리소스를 구성하는 매개 변수입니다
 
 플러그인을 수동으로 추가하는 경우 다음 매개 변수를 사용하여 리소스 설정 페이지에서 리소스를 구성할 수 있습니다.
 
 
 
+[[plug-in-for-mongodb]]
 === MongoDB용 플러그인
 
 리소스 설정:
@@ -130,6 +132,7 @@ MongoDB.properties 파일을 제공해야 하는 매개 변수는 다음과 같�
 
 
 
+[[plug-in-for-maxdb]]
 === MaxDB용 플러그인
 
 리소스 설정:
@@ -163,6 +166,7 @@ MAXDB_BACKUP_templates 매개 변수가 설정된 경우 MAXDB_BG_SERVER_PREFIX 
 
 
 
+[[plug-in-for-sap-ase]]
 === SAP ASE용 플러그인
 
 리소스 설정:
@@ -187,6 +191,7 @@ UNIX에 필요합니다. 이 매개 변수는 Snap Creator Agent 시작 및 중�
 
 
 
+[[plug-in-for-oracle-applications-orascpm]]
 === Oracle 애플리케이션용 플러그인(ORASCPM)
 
 리소스 설정:

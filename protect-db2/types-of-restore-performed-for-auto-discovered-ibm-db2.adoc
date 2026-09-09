@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2 
 summary: 'SnapCenter는 자동으로 검색된 IBM DB2 데이터베이스에 대해 볼륨 기반 SnapRestore\(VBSR\), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.' 
 ---
-= 자동 검색된 IBM DB2에 대한 복구 작업 유형
+= SnapCenter에서 자동 감지된 IBM Db2 데이터베이스의 복원 유형
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ IBM DB2용 SnapCenter 플러그인은 단일 파일 SnapRestore 및 자동으로
 
 
 
+[[single-file-snaprestore-is-performed-in-nfs-environments-for-the-following-scenarios]]
 == 단일 파일 SnapRestore는 NFS 환경에서 다음 시나리오에 대해 수행됩니다.
 
 * Complete Resource * 옵션만 선택한 경우
@@ -23,6 +24,7 @@ IBM DB2용 SnapCenter 플러그인은 단일 파일 SnapRestore 및 자동으로
 
 
 
+[[single-file-snaprestore-is-performed-in-san-environments-for-the-following-scenarios]]
 == 단일 파일 SnapRestore는 SAN 환경에서 다음 시나리오에 대해 수행됩니다.
 
 * Complete Resource * 옵션만 선택한 경우

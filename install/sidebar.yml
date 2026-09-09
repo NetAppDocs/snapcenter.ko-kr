@@ -12,8 +12,7 @@ entries:
     entries:
     - title: 멀티팩터 인증(MFA) 관리
       url: "/install/enable_multifactor_authentication.html"
-    - title: REST API, PowerShell 및 SCCLI를 사용하여 MFA(Multi-Factor Authentication)를
-        관리합니다
+    - title: REST API, PowerShell 및 SCCLI를 사용하여 SnapCenter에서 MFA 관리
       url: "/install/enable_multifactor_authentication_using_RestAPI_PowerShell_SCCLI.html"
     - title: SnapCenter 서버에서 PowerShell, SCCLI 및 REST API를 사용하여 MFA를 구성합니다
       url: "/install/configure_mfa_using_powershell_sccli_restapi.html"
@@ -23,7 +22,7 @@ entries:
     url: "/install/task_install_the_snapcenter_server_using_the_install_wizard.html"
   - title: Linux 호스트에 SnapCenter 서버를 설치합니다
     url: "/install/install_snapcenter_server_linux.html"
-  - title: SnapCenter을 등록합니다
+  - title: SnapCenter를 등록하여 지원을 활성화합니다.
     url: "/install/register-snapcenter-software.html"
   - title: SnapCenter에 로그인합니다
     url: "/install/task_log_in_to_snapcenter.html"
@@ -31,49 +30,49 @@ entries:
   entries:
   - title: 스토리지 시스템 추가 및 프로비저닝
     entries:
-    - title: 스토리지 시스템을 추가합니다
+    - title: SnapCenter에 스토리지 시스템 추가
       url: "/install/task_add_storage_systems.html"
-    - title: 스토리지 접속 및 자격 증명
+    - title: SnapCenter의 스토리지 연결 및 자격 증명
       url: "/install/concept_svm_connections_and_credentials.html"
     - title: Windows 호스트에서 스토리지 용량 할당
       entries:
-      - title: Igroup 생성 및 관리
+      - title: SnapCenter에서 igroup 생성 및 관리
         url: "/install/concept_create_and_manage_igroups.html"
-      - title: 디스크를 생성하고 관리합니다
+      - title: SnapCenter에서 디스크 생성 및 관리
         url: "/install/task_create_and_manage_disks.html"
-      - title: SMB 공유를 생성하고 관리합니다
+      - title: SnapCenter에서 SMB 공유를 생성하고 관리합니다
         url: "/install/concept_create_and_manage_smb_shares.html"
-      - title: 스토리지 시스템의 공간을 재확보할 수 있습니다
+      - title: SnapCenter를 사용하여 스토리지 시스템의 공간을 회수합니다
         url: "/install/task_reclaim_space_on_the_storage_system.html"
-      - title: PowerShell cmdlet을 사용하여 스토리지 용량 할당
+      - title: SnapCenter PowerShell cmdlets for 스토리지 프로비저닝
         url: "/install/reference_provision_storage_using_powershell_cmdlets.html"
-    - title: VMware 환경에서 스토리지 프로비저닝
+    - title: SnapCenter VMware 환경에서의 스토리지 프로비저닝
       url: "/install/concept_provision_storage_in_vmware_environments.html"
   - title: SnapCenter 표준 컨트롤러 기반 라이센스를 추가합니다
     url: "/install/concept_snapcenter_standard_controller_based_licenses.html"
   - title: 고가용성을 구성합니다
     entries:
-    - title: 고가용성을 위해 SnapCenter 서버를 구성합니다
+    - title: 고가용성을 위한 SnapCenter 서버 구성
       url: "/install/concept_configure_snapcenter_servers_for_high_availabiity_using_f5.html"
     - title: SnapCenter MySQL 리포지토리의 고가용성
       url: "/install/concept_high_availability_for_snapcenter_mysql_repository.html"
   - title: 역할 기반 액세스 제어(RBAC) 구성
     entries:
-    - title: 역할을 생성합니다
+    - title: SnapCenter에서 역할 생성
       url: "/install/task_create_a_role.html"
     - title: 보안 로그인 명령을 사용하여 ONTAP RBAC 역할을 추가합니다
       url: "/install/task_add_an_rbac_role_using_security_login_commands.html"
-    - title: 최소 권한으로 SVM 역할 생성
+    - title: SnapCenter에서 최소 권한으로 SVM 역할 생성
       url: "/install/create-svm-roles-minimum-privileges.html"
-    - title: ASA R2 시스템에 대한 SVM 역할을 생성합니다
+    - title: ASA r2 시스템에 대한 SVM 역할을 SnapCenter에서 생성합니다
       url: "/install/create-svm-roles-asa-r2-resources.html"
-    - title: 최소 권한으로 ONTAP 클러스터 역할을 생성합니다
+    - title: 최소 권한으로 SnapCenter에 대한 ONTAP 클러스터 역할 생성
       url: "/install/task_create_an_ontap_cluster_role_with_minimum_privileges.html"
-    - title: ASA R2 시스템에 대한 ONTAP 클러스터 역할을 생성합니다
+    - title: ASA r2 시스템용 ONTAP 클러스터 역할을 SnapCenter에서 생성합니다
       url: "/install/create-cluster-roles-asa-r2-resources.html"
-    - title: 사용자 또는 그룹을 추가하고 역할 및 자산을 할당합니다
+    - title: SnapCenter에서 사용자 또는 그룹을 추가하고 역할 및 자산을 할당합니다
       url: "/install/task_add_a_user_or_group_and_assign_role_and_assets.html"
-  - title: 감사 로그 설정을 구성합니다
+  - title: SnapCenter에서 감사 로그 설정 구성
     url: "/install/task_configure_audit_log_settings.html"
   - title: SnapCenter 서버로 보안 MySQL 연결을 구성합니다
     url: "/install/concept_configure_secured_mysql_connections_with_snapcenter_server.html"
@@ -81,37 +80,37 @@ entries:
   url: "/install/configure_certificate_based_authentication.html"
 - title: Windows 호스트용 CA 인증서를 구성합니다
   entries:
-  - title: CA 인증서 CSR 파일을 생성합니다
+  - title: SnapCenter의 CA 인증서 CSR 파일
     url: "/install/reference_generate_CA_certificate_CSR_file.html"
   - title: CA 인증서를 가져옵니다
     url: "/install/task_import_CA_certificates.html"
-  - title: CA 인증서 지문을 받습니다
+  - title: SnapCenter에서 CA 인증서 지문 가져오기
     url: "/install/task_get_the_CA_certificate_thumbprint.html"
-  - title: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+  - title: CA 인증서를 SnapCenter Windows 호스트 플러그인 서비스로 구성합니다
     url: "/install/task_configure_CA_certificate_with_Windows_host_plug-in_services.html"
   - title: SnapCenter 사이트를 사용하여 CA 인증서를 구성합니다
     url: "/install/task_configure_CA_certificate_with_snapcenter_site.html"
   - title: SnapCenter 서버에 대해 CA 인증서를 활성화합니다
     url: "/install/task_enable_ca_certificates_for_snapcenter.html"
-- title: Linux 호스트에 대한 CA 인증서를 구성합니다
+- title: Linux 호스트에서 SnapCenter 용 CA 인증서를 구성합니다
   url: "/install/configure_ca_certificate_linux_host.html"
 - title: Windows 호스트에서 양방향 SSL 통신을 구성하고 활성화합니다
   entries:
-  - title: Windows 호스트에서 양방향 SSL 통신을 구성합니다
+  - title: SnapCenter Windows 호스트에서 양방향 SSL 통신을 구성합니다.
     url: "/install/task_configure_two_way_ssl.html"
-  - title: Windows 호스트에서 양방향 SSL 통신을 활성화합니다
+  - title: SnapCenter Windows 호스트에서 양방향 SSL 통신 활성화
     url: "/install/task_enable_two_way_ssl.html"
 - title: Linux 호스트에서 양방향 SSL 통신을 구성하고 활성화합니다
   entries:
-  - title: Linux 호스트에서 양방향 SSL 통신을 구성합니다
+  - title: SnapCenter Linux 호스트에서 양방향 SSL 통신 구성
     url: "/install/configure_two_way_ssl_linux.html"
-  - title: Linux 호스트에서 SSL 통신을 활성화합니다
+  - title: SnapCenter Linux 호스트에서 양방향 SSL 통신 활성화
     url: "/install/enable_two_way_ssl_linux.html"
 - title: Active Directory, LDAP 및 LDAPS를 구성합니다
   entries:
-  - title: 신뢰할 수 없는 Active Directory 도메인을 등록합니다
+  - title: 신뢰할 수 없는 Active Directory 도메인을 SnapCenter에 등록합니다
     url: "/install/task_register_untrusted_active_directory_domains.html"
-  - title: Active Directory 읽기 권한을 사용하도록 IIS 응용 프로그램 풀을 구성합니다
+  - title: Active Directory를 위한 IIS 애플리케이션 풀을 SnapCenter에서 구성합니다
     url: "/install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html"
-  - title: LDAPS에 대한 CA 클라이언트 인증서를 구성합니다
+  - title: SnapCenter에서 LDAPS를 위한 CA 클라이언트 인증서 구성
     url: "/install/task_configure_CA_client_certificate_for_LDAPS.html"

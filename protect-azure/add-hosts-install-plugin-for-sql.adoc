@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add host, install, install plug-in, SQL 
 summary: 호스트를 추가한 다음 플러그인 패키지를 설치합니다. 
 ---
-= 호스트를 추가하고 SQL Server 데이터베이스용 SnapCenter 플러그인을 설치합니다
+= 호스트 추가 및 Microsoft SQL Server용 SnapCenter Plug-in 설치
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

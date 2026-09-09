@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security,two-way ssl,configure two-way ssl, linux host 
 summary: Linux 호스트의 SnapCenter 서버와 플러그인 간의 상호 통신을 보호하기 위해 양방향 SSL 통신을 구성해야 합니다. 
 ---
-= Linux 호스트에서 양방향 SSL 통신을 구성합니다
+= SnapCenter Linux 호스트에서 양방향 SSL 통신 구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

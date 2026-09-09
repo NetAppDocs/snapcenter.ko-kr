@@ -4,19 +4,19 @@ title: REST API를 사용하여 자동화
 entries:
 - title: REST API 개요
   url: "/sc-automation/overview_rest_apis.html"
-- title: SnapCenter REST API에 기본적으로 액세스하는 방법
+- title: SnapCenter REST API에 대한 네이티브 액세스
   url: "/sc-automation/concept_how_to_access_snapcenter_rest_api_natively.html"
-- title: REST 웹 서비스 기반
+- title: SnapCenter를 위한 REST 웹 서비스 기반
   url: "/sc-automation/concept_rest_web_services_foundation.html"
-- title: 기본 작동 특성
+- title: SnapCenter REST API의 기본 작동 특성
   url: "/sc-automation/concept_basic_operational_characteristics.html"
-- title: API 요청을 제어하는 입력 변수입니다
+- title: SnapCenter REST API 요청을 제어하는 입력 변수
   url: "/sc-automation/concept_input_variables_controlling_an_api_request.html"
-- title: API 응답 해석
+- title: SnapCenter REST API 응답 해석
   url: "/sc-automation/concept_interpreting_an_api_response.html"
 - title: SnapCenter 서버 및 플러그인에 지원되는 REST API
   url: "/sc-automation/reference_supported_rest_apis.html"
-- title: Swagger API 웹 페이지를 사용하여 REST API에 액세스하는 방법
+- title: Swagger 웹 페이지를 통해 SnapCenter REST API에 액세스합니다
   url: "/sc-automation/task_how to_access_rest_apis_using_the_swagger_api_web_page.html"
-- title: REST API를 시작합니다
+- title: SnapCenter REST API 시작하기
   url: "/sc-automation/task_get_started_with_the_rest_api.html"

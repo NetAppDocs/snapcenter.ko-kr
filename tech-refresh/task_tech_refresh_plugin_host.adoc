@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: tech refresh, plug-in host, supported plug-ins, prerequisites to refresh plug-in hosts, application hosts, limitations for tech refresh of plug-in hosts 
 summary: 플러그인 호스트의 기술 업데이트를 수행하기 위해 리소스를 이전 호스트에서 새 호스트로 이동합니다. 
 ---
-= SnapCenter 플러그인 호스트의 기술 업데이트
+= SnapCenter 플러그인 호스트의 기술 업데이트를 수행합니다.
 :allow-uri-read: 
 
 

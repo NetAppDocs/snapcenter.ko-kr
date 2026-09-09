@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: uninstall, snapcenter server, linux 
 summary: 데이터 보호 작업을 관리하기 위해 SnapCenter 서버를 더 이상 사용하지 않으려면 SnapCenter 서버를 제거할 수 있습니다. 
 ---
-= Linux 호스트에서 SnapCenter 서버를 제거합니다
+= Linux 호스트에서 SnapCenter 서버 제거
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Credentials, alternate host, clone, FRA, OMF 
 summary: SnapCenter를 사용하여 데이터베이스 백업을 사용하여 Oracle 데이터베이스를 복제할 수 있습니다. 
 ---
-= Oracle 데이터베이스 백업의 클론을 생성합니다
+= SnapCenter를 사용하여 Oracle 데이터베이스 백업 복제
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -358,6 +358,7 @@ AIX 설정에서 lkdev 명령을 사용하여 잠그고 rendev 명령을 사용�
 
 
 
+[[update-the-preferred-ip-on-the-host]]
 == 호스트에서 기본 IP를 업데이트합니다
 
 클론 작업이 완료되면 SAL(스토리지 액세스 계층)에서 클론에 제공하는 경로는 _<nfs_lif_IP>:<JunctionPath>_format입니다. 기본 IP를 제공하려면 SCCLI 명령을 사용하여 호스트에 구성해야 합니다.

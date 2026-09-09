@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter, configure, CA certificate, linux, linux host 
 summary: Linux 호스트에서 SnapCenter 서버를 사용하여 CA 인증서를 구성해야 합니다. 
 ---
-= Linux 호스트에 대한 CA 인증서를 구성합니다
+= Linux 호스트에서 SnapCenter 용 CA 인증서를 구성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ Linux에 SnapCenter 서버를 설치한 후 설치 프로그램이 자체 서명
 
 
 
+[[configure-nginx-certificate]]
 == nginx 인증서를 구성합니다
 
 .단계
@@ -28,6 +29,7 @@ Linux에 SnapCenter 서버를 설치한 후 설치 프로그램이 자체 서명
 
 
 
+[[configure-audit-log-certificate]]
 == 감사 로그 인증서를 구성합니다
 
 .단계
@@ -45,6 +47,7 @@ _INSTALL_DIR_의 기본값은 _/OPT_입니다.
 
 
 
+[[configure-snapcenter-certificate]]
 == SnapCenter 인증서 구성
 
 .단계

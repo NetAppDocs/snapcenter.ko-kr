@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: tech refresh, SnapCenter Server, cmdlet, APIs, F5, rollback, decommission, disaster recovery, standalone 
 summary: 새 호스트에 동일한 버전의 SnapCenter Server를 설치한 다음 API를 실행하거나 cmdlet을 실행하여 이전 서버에서 SnapCenter를 백업하고 새 서버에서 복원합니다. 
 ---
-= SnapCenter 서버 호스트의 기술 업데이트
+= SnapCenter 서버 호스트의 기술 업데이트를 수행하십시오.
 :allow-uri-read: 
 
 
@@ -55,6 +55,7 @@ NOTE: 이전 SnapCenter 호스트에서 web.config 파일을 수동으로 업데
 
 
 
+[[tech-refresh-of-a-node-in-f5-cluster]]
 == F5 클러스터의 노드를 Tech Refresh
 
 노드를 제거하고 새 노드를 추가하여 F5 클러스터의 모든 노드에 대한 기술 업데이트를 수행할 수 있습니다. 새로 고쳐야 하는 노드가 활성 상태인 경우 클러스터의 다른 노드를 활성 노드로 만든 다음 노드를 제거합니다.
@@ -66,22 +67,26 @@ NOTE: F5 클러스터의 URL이 변경되면 API: 또는 cmdlet:_Set-SmServerCon
 
 
 
+[[decommissioning-the-old-snapcenter-server-host]]
 == 이전 SnapCenter 서버 호스트를 사용 중지하는 중입니다
 
 새 SnapCenter 서버가 실행 중이고 모든 플러그인 호스트가 새 SnapCenter 서버 호스트와 통신할 수 있는지 확인한 후 이전 SnapCenter 서버 호스트를 제거할 수 있습니다.
 
 
 
+[[rollback-to-the-old-snapcenter-server-host]]
 == 이전 SnapCenter 서버 호스트로 롤백합니다
 
 문제가 발생할 경우 API: 또는 cmdlet:_Set-SmServerConfig_를 사용하여 모든 호스트에서 SnapCenter 서버 URL을 업데이트하여 이전 SnapCenter 서버 호스트를 되돌릴 수 `/<snapcenter_version>/server/configureurl` 있습니다.
 
 
 
+[[disaster-recovery]]
 == 재해 복구
 
 
 
+[[disaster-recovery-of-standalone-snapcenter-host]]
 === 독립 실행형 SnapCenter 호스트의 재해 복구
 
 서버 백업을 새 호스트로 복구하여 재해 복구를 수행할 수 있습니다.
@@ -115,6 +120,7 @@ NOTE: server_etc/host_entries가 복구되지 않습니다. 이전 서버에서 
 
 
 
+[[disaster-recovery-of-snapcenter-f5-cluster]]
 === SnapCenter F5 클러스터의 재해 복구
 
 서버 백업을 새 호스트로 복원한 다음 독립 실행형 호스트를 클러스터로 변환하여 재해 복구를 수행할 수 있습니다.

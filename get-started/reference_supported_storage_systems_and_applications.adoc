@@ -15,6 +15,7 @@ SnapCenter에서 지원하는 스토리지 시스템, 애플리케이션 및 데
 
 
 
+[[supported-storage-systems]]
 == 지원되는 스토리지 시스템
 
 * NetApp ONTAP 9.12.1 이상
@@ -34,6 +35,7 @@ SnapCenter Server 6.2와 SnapCenter 플러그인 6.2를 사용하는 경우 ONTA
 
 
 
+[[supported-applications-and-databases]]
 == 지원되는 애플리케이션 및 데이터베이스
 
 SnapCenter 다양한 애플리케이션과 데이터베이스의 보호를 지원합니다.

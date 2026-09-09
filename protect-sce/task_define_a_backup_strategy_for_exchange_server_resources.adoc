@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter plug-in for Exchange Server 
 summary: '백업 작업을 생성하기 전에 백업 전략을 정의하면 데이터베이스를 성공적으로 복원하는 데 필요한 백업이 있는지 확인하는 데 도움이 됩니다. 서비스 수준 계약(SLA), 복구 시간 목표(RTO) 및 복구 시점 목표\(RPO\)에 따라 백업 전략이 주로 결정됩니다.' 
 ---
-= Exchange Server 리소스에 대한 백업 전략 정의
+= Exchange Server 리소스에 대한 백업 전략을 SnapCenter에서 정의합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,6 +17,7 @@ SLA는 예상되는 서비스 수준을 정의하고 가용성 및 서비스 성
 
 
 
+[[types-of-backups-supported-for-exchange-database]]
 == Exchange 데이터베이스에 대해 지원되는 백업 유형입니다
 
 SnapCenter를 사용하여 Exchange 메일박스를 백업하려면 데이터베이스 및 DAG(데이터베이스 가용성 그룹)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 기술은 리소스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성하는 데 사용됩니다.
@@ -55,6 +56,7 @@ SnapCenter를 사용하여 Exchange 메일박스를 백업하려면 데이터베
 |===
 
 
+[[backup-schedules-for-database-plug-ins]]
 == 데이터베이스 플러그인에 대한 백업 스케줄입니다
 
 백업 빈도(스케줄 유형)는 정책에 지정되며 백업 스케줄은 리소스 그룹 구성에 지정됩니다. 백업 빈도 또는 스케줄을 결정하는 가장 중요한 요소는 리소스의 변경 속도 및 데이터의 중요도입니다. 자주 사용하는 리소스를 매일 한 번씩 백업할 수도 있고, 자주 사용하지 않는 리소스를 하루에 한 번 백업할 수도 있습니다. 기타 요인으로는 조직에 대한 리소스의 중요성, SLA(서비스 수준 계약) 및 RPO(복구 시점 목표)가 있습니다.
@@ -77,12 +79,14 @@ SLA는 예상되는 서비스 수준을 정의하고 가용성 및 서비스 성
 
 
 
+[[number-of-backup-jobs-needed-for-databases]]
 == 데이터베이스에 필요한 백업 작업 수입니다
 
 필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)가 포함됩니다.
 
 
 
+[[backup-naming-conventions]]
 == 백업 명명 규칙
 
 기본 스냅샷 명명 규칙을 사용하거나 맞춤형 명명 규칙을 사용할 수 있습니다. 기본 백업 명명 규칙은 복사본이 생성된 시기를 식별할 수 있도록 스냅샷 이름에 타임스탬프를 추가합니다.
@@ -108,6 +112,7 @@ dts1_mach1x88_03-12-2015_23.17.26
 
 
 
+[[backup-retention-options]]
 == 백업 보존 옵션
 
 백업 복사본을 보존할 일 수를 선택하거나 유지할 백업 복사본 수를 최대 255개 사본의 ONTAP로 지정할 수 있습니다. 예를 들어, 조직에서 10일간 백업 복사본 또는 130개의 백업 복사본을 보존해야 할 수도 있습니다.
@@ -123,6 +128,7 @@ NOTE: 백업 복사본을 장기간 보존하려면 SnapVault 백업을 사용�
 
 
 
+[[how-long-to-retain-transaction-log-backups-on-the-source-storage-volume-for-exchange-server]]
 == Exchange Server의 소스 스토리지 볼륨에 트랜잭션 로그 백업을 유지하는 기간
 
 Microsoft Exchange Server용 SnapCenter 플러그인에는 최신 복원 작업을 수행하기 위한 트랜잭션 로그 백업이 필요합니다. 이 작업은 데이터베이스를 두 개의 전체 백업 사이의 시간으로 복원합니다.

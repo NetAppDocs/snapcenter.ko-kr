@@ -26,6 +26,7 @@ SnapCenter 관리자 역할에는 관리자 권한이 있어야 합니다.
 
 
 
+[[host-requirements-to-install-snapcenter-plug-ins-package-for-windows]]
 == Windows용 SnapCenter 플러그인 패키지를 설치하기 위한 호스트 요구 사항
 
 Windows용 SnapCenter 플러그인 패키지를 설치하기 전에 몇 가지 기본적인 호스트 시스템 공간 요구 사항 및 사이징 요구 사항을 숙지해야 합니다.
@@ -76,6 +77,7 @@ NET 관련 문제 해결에 대한 자세한 내용은 을 참조하십시오 ht
 |===
 
 
+[[set-up-your-credentials-for-the-plug-in-for-windows]]
 == Windows용 플러그인의 자격 증명을 설정합니다
 
 SnapCenter는 자격 증명을 사용하여 SnapCenter 작업을 위해 사용자를 인증합니다. SnapCenter 플러그인을 설치하기 위한 자격 증명과 Windows 파일 시스템에서 데이터 보호 작업을 수행하기 위한 추가 자격 증명을 만들어야 합니다.
@@ -145,6 +147,7 @@ SnapCenter 플러그인을 설치할 시스템의 도메인 관리자 또는 관
 
 
 
+[[configure-gmsa-on-windows-server-2016-or-later]]
 == Windows Server 2016 이상에서 GMSA를 구성합니다
 
 Windows Server 2016 이상을 사용하면 관리되는 도메인 계정에서 자동화된 서비스 계정 암호 관리를 제공하는 그룹 GMSA(Managed Service Account)를 만들 수 있습니다.

@@ -15,6 +15,7 @@ Microsoft SQL Server용 SnapCenter 플러그인에 대한 일련의 설치 지�
 
 
 
+[[step-1-set-up-run-as-credentials-to-install-the-plug-in-for-microsoft-sql-server]]
 == 1단계: Run as Credentials를 설치하여 Microsoft SQL Server용 플러그인을 설치합니다
 
 . 왼쪽 창에서 * 설정 > 자격 증명 > 새로 만들기 * 를 클릭합니다.
@@ -29,6 +30,7 @@ Microsoft SQL Server용 SnapCenter 플러그인에 대한 일련의 설치 지�
 
 
 
+[[step-2-add-a-host-and-install-the-plug-in-for-microsoft-sql-server]]
 == 2단계: 호스트를 추가하고 Microsoft SQL Server용 플러그인을 설치합니다
 
 . SnapCenter GUI 왼쪽 창에서 * 호스트 > 관리 호스트 > 추가 * 를 클릭합니다.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing 
 summary: IBM DB2를 보호하려면 IBM DB2용 SnapCenter 플러그인을 설치하고 설정해야 합니다. 
 ---
-= IBM DB2용 SnapCenter 플러그인 설치 워크플로우
+= SnapCenter IBM Db2용 플러그인 설치 및 설정 워크플로우
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

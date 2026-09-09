@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cancel clone 
 summary: 대기열에 있는 클론 작업을 취소할 수 있습니다. 
 ---
-= 클론 작업을 취소합니다
+= SnapCenter에서 클론 작업 취소
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

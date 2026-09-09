@@ -15,6 +15,7 @@ Microsoft SQL Server용 SnapCenter Server를 설치하기 위한 일련의 설�
 
 
 
+[[step-1-download-and-install-snapcenter-server]]
 == 1단계: SnapCenter 서버 다운로드 및 설치
 
 . 에서 SnapCenter 서버 설치 패키지를 다운로드합니다 https://mysupport.netapp.com/site/products/all/details/snapcenter/downloads-tab["NetApp Support 사이트"^] 그런 다음 exe를 두 번 클릭합니다.
@@ -34,6 +35,7 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 
 
 
+[[step-2-log-in-to-snapcenter]]
 == 2단계: SnapCenter에 로그인합니다
 
 . 호스트 바탕 화면의 바로 가기나 설치 시 제공된 URL(_\https://server:8146_ SnapCenter 서버가 설치된 기본 포트 8146의 경우 _\ )에서 SnapCenter를 시작합니다.
@@ -49,6 +51,7 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 
 
 
+[[step-3-add-a-snapcenter-standard-controller-based-license]]
 == 3단계: SnapCenter 표준 컨트롤러 기반 라이센스 추가
 
 . ONTAP 명령줄을 사용하여 컨트롤러에 로그인하고 다음을 입력합니다.
@@ -63,6 +66,7 @@ NOTE: 특수 문자 "%"는 설치를 위한 사용자 지정 경로에서 지원
 
 
 
+[[step-4-set-up-storage-system-connections]]
 == 4단계: 스토리지 시스템 접속 설정
 
 . 왼쪽 창에서 * 스토리지 시스템 > 새로 만들기 * 를 클릭합니다.

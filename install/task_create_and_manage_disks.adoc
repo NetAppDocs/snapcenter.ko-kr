@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: disks, create, manage, clustered disks, view 
 summary: Windows 호스트는 스토리지 시스템의 LUN을 가상 디스크로 인식합니다. SnapCenter를 사용하여 FC 연결 또는 iSCSI 연결 LUN을 생성하고 구성할 수 있습니다. 
 ---
-= 디스크를 생성하고 관리합니다
+= SnapCenter에서 디스크 생성 및 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,6 +23,7 @@ NOTE: SnapCenter에서는 디스크 이름을 변경할 수 없습니다. SnapCe
 
 
 
+[[view-the-disks-on-a-host]]
 == 호스트의 디스크를 봅니다
 
 SnapCenter로 관리하는 각 Windows 호스트에서 디스크를 볼 수 있습니다.
@@ -39,6 +40,7 @@ SnapCenter로 관리하는 각 Windows 호스트에서 디스크를 볼 수 있�
 
 
 
+[[view-clustered-disks]]
 == 클러스터링된 디스크를 봅니다
 
 SnapCenter로 관리하는 클러스터에서 클러스터링된 디스크를 볼 수 있습니다. 클러스터 디스크는 호스트 드롭다운에서 클러스터를 선택한 경우에만 표시됩니다.
@@ -55,6 +57,7 @@ SnapCenter로 관리하는 클러스터에서 클러스터링된 디스크를 �
 
 
 
+[[establish-an-iscsi-session]]
 == iSCSI 세션을 설정합니다
 
 iSCSI를 사용하여 LUN에 연결하는 경우 통신을 설정하기 위해 LUN을 생성하기 전에 iSCSI 세션을 설정해야 합니다.
@@ -129,6 +132,7 @@ SnapCenter가 iSCSI 세션을 설정합니다.
 
 
 
+[[create-fc-connected-or-iscsi-connected-luns-or-disks]]
 == FC 연결 또는 iSCSI 연결 LUN 또는 디스크를 생성합니다
 
 Windows 호스트는 스토리지 시스템의 LUN을 가상 디스크로 인식합니다. SnapCenter를 사용하여 FC 연결 또는 iSCSI 연결 LUN을 생성하고 구성할 수 있습니다.
@@ -359,6 +363,7 @@ SnapCenter는 LUN을 생성하여 호스트의 지정된 드라이브 또는 드
 
 
 
+[[resize-a-disk]]
 == 디스크 크기를 조정합니다
 
 스토리지 시스템 요구사항의 변화에 따라 디스크 크기를 늘리거나 줄일 수 있습니다.
@@ -398,6 +403,7 @@ SnapCenter는 디스크의 크기를 조정합니다.
 
 
 
+[[connect-a-disk]]
 == 디스크를 연결합니다
 
 디스크 연결 마법사를 사용하여 기존 LUN을 호스트에 연결하거나 연결이 끊긴 LUN을 다시 연결할 수 있습니다.
@@ -580,6 +586,7 @@ SnapCenter는 LUN을 호스트의 지정된 드라이브 또는 드라이브 경
 
 
 
+[[disconnect-a-disk]]
 == 디스크 연결을 해제합니다
 
 LUN의 콘텐츠에 영향을 주지 않고 호스트에서 LUN을 분리할 수 있습니다. 단, 클론을 분리하기 전에 연결을 끊으면 클론의 내용이 손실됩니다.
@@ -613,6 +620,7 @@ SnapCenter가 디스크의 연결을 끊습니다.
 
 
 
+[[delete-a-disk]]
 == 디스크를 삭제합니다
 
 디스크가 더 이상 필요하지 않으면 삭제할 수 있습니다. 디스크를 삭제한 후에는 삭제할 수 없습니다.

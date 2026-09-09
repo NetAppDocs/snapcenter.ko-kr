@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter 
 summary: Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다 
 ---
-= Windows 호스트 플러그인 서비스를 사용하여 CA 인증서를 구성합니다
+= SnapCenter Windows 호스트 플러그인 서비스로 CA 인증서 구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

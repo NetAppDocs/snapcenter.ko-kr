@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security,disable two-way SSL,enable two-way SSL, windows host 
 summary: PowerShell 명령을 사용하여 Windows 호스트의 SnapCenter 서버와 플러그인 간의 상호 통신을 보호하기 위해 양방향 SSL 통신을 설정할 수 있습니다. 
 ---
-= Windows 호스트에서 양방향 SSL 통신을 활성화합니다
+= SnapCenter Windows 호스트에서 양방향 SSL 통신 활성화
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -39,6 +39,7 @@ PowerShell 명령을 사용하여 Windows 호스트의 SnapCenter 서버와 플�
 
 
 
+[[disable-two-way-ssl-communication]]
 == 양방향 SSL 통신을 비활성화합니다
 
 PowerShell 명령을 사용하여 양방향 SSL 통신을 사용하지 않도록 설정할 수 있습니다.

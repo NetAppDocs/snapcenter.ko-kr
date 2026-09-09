@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: alternate methods, install, plug-ins package, linux, aix, remote hosts, cmdlets, cluster host, silent mode, console mode 
 summary: 다른 대체 방법을 사용하여 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치할 수 있습니다. 
 ---
-= Linux 또는 AIX용 플러그인 패키지를 설치하는 다른 방법
+= Linux 또는 AIX용 SnapCenter 플러그인을 수동으로 설치합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -26,6 +26,7 @@ NOTE: 플러그인을 설치할 호스트에 * OpenSSL 1.0.2g * 가 설치되어
 
 
 
+[[install-on-multiple-remote-hosts-using-cmdlets]]
 == cmdlet을 사용하여 여러 원격 호스트에 설치합니다
 
 여러 호스트에 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치하려면 _Install-SmHostPackage_PowerShell cmdlet을 사용해야 합니다.
@@ -53,6 +54,7 @@ cmdlet과 함께 사용할 수 있는 매개 변수와 이에 대한 설명은 r
 
 
 
+[[install-on-cluster-host]]
 == 클러스터 호스트에 설치합니다
 
 클러스터 호스트의 두 노드에 Linux용 SnapCenter 플러그인 패키지 또는 AIX용 SnapCenter 플러그인 패키지를 설치해야 합니다.
@@ -79,6 +81,7 @@ NOTE: 다른 SnapCenter 작업이 실행 중인 동안 페일오버가 발생하
 
 
 
+[[install-plug-ins-package-for-linux-in-silent-mode]]
 == Linux용 플러그인 패키지를 자동 모드로 설치합니다
 
 CLI(명령줄 인터페이스)를 사용하여 Linux용 SnapCenter 플러그인 패키지를 자동 모드로 설치할 수 있습니다.
@@ -115,6 +118,7 @@ IMPORTANT: 플러그인 패키지를 설치하면 SnapCenter 서버가 아닌 �
 
 
 
+[[install-plug-ins-package-for-aix-in-silent-mode]]
 == AIX용 플러그인 패키지를 자동 모드로 설치합니다
 
 CLI(명령줄 인터페이스)를 사용하여 AIX용 SnapCenter 플러그인 패키지를 자동 모드로 설치할 수 있습니다.

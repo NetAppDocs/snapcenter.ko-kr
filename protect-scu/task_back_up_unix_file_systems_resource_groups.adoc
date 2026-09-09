@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, resource group 
 summary: 리소스 그룹에 대한 백업 작업은 리소스 그룹에 정의된 모든 리소스에 대해 수행됩니다. 
 ---
-= Unix 파일 시스템 리소스 그룹을 백업합니다
+= SnapCenter UNIX 파일 시스템 리소스 그룹 백업
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

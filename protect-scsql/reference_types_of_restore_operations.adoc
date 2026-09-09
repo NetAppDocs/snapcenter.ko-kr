@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SQL Server 
 summary: SnapCenter를 사용하여 SQL Server 리소스에 대해 다양한 유형의 복원 작업을 수행할 수 있습니다. 
 ---
-= 복원 작업의 유형입니다
+= SQL Server 복원 작업 유형(SnapCenter)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -28,6 +28,7 @@ NOTE: SnapCenter는 볼륨 기반 SnapRestore를 지원하지 않습니다.
 
 
 
+[[restore-up-to-the-minute]]
 == 최대 1분 내에 복원합니다
 
 최신 복원 작업(기본적으로 선택됨)에서는 데이터베이스가 장애 지점까지 복구됩니다. SnapCenter는 다음 시퀀스를 실행하여 이를 수행합니다.
@@ -48,12 +49,14 @@ SnapCenter는 로그 전달 백업 파일에서 SQL Server 데이터베이스 �
 
 
 
+[[example-of-an-up-to-the-minute-restore-operation]]
 == 최신 복원 작업의 예
 
 매일 정오와 수요일 오후 4시에 SQL Server 백업을 실행한다고 가정합니다 백업에서 복원해야 합니다. 어떤 이유로 수요일 정오의 백업이 검증에 실패하여 화요일 정오 백업으로부터 복원하기로 결정했습니다. 그런 다음 백업이 복원되면 모든 트랜잭션 로그가 앞으로 이동되어 복구된 데이터베이스에 적용됩니다. 화요일 백업을 생성할 때 커밋되지 않은 로그부터 시작하여 수요일 오후 4시에 작성된 최신 트랜잭션 로그를 계속 진행합니다 (트랜잭션 로그가 백업된 경우)
 
 
 
+[[restore-to-a-previous-point-in-time]]
 == 이전 시점으로 복원합니다
 
 시점 복원 작업에서는 데이터베이스가 과거의 특정 시간으로만 복원됩니다. 시점 복원 작업은 다음과 같은 복원 상황에서 수행됩니다.
@@ -75,6 +78,7 @@ image::../media/point_in_time_recovery_path.gif[이전 시점으로 복원합니
 
 
 
+[[example-of-a-point-in-time-restore-operation]]
 == 시점 복원 작업의 예
 
 자정에 전체 데이터베이스 백업을 한 번, 매시간마다 트랜잭션 로그 백업을 한 번 수행한다고 가정해 보겠습니다. 오전 9시 45분에 데이터베이스가 크래시되지만 오류가 발생한 데이터베이스의 트랜잭션 로그는 여전히 백업되어 있습니다. 다음 시점 복원 시나리오 중 하나를 선택할 수 있습니다.

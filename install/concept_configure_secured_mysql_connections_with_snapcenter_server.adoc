@@ -15,6 +15,7 @@ summary: '독립 실행형 구성 또는 NLB(네트워크 로드 밸런싱) 구�
 
 
 
+[[configure-secured-mysql-connections-for-standalone-snapcenter-server-configurations]]
 == 독립 실행형 SnapCenter 서버 구성에 대해 보안 MySQL 연결을 구성합니다
 
 SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려면 SSL(Secure Sockets Layer) 인증서와 키 파일을 생성할 수 있습니다. MySQL Server 및 SnapCenter Server에서 인증서 및 키 파일을 구성해야 합니다.
@@ -128,6 +129,7 @@ ssl-key="C:/ProgramData/NetApp/SnapCenter/MySQL Data/Data/client-key.pem"
 
 
 
+[[configure-secured-mysql-connections-for-ha-configurations]]
 == HA 구성을 위한 보안 MySQL 연결을 구성합니다
 
 SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려면 고가용성(HA) 노드 모두에 대해 SSL(Secure Sockets Layer) 인증서와 키 파일을 생성할 수 있습니다. MySQL 서버 및 HA 노드에서 인증서와 키 파일을 구성해야 합니다.

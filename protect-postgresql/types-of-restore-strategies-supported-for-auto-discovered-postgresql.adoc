@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for postgresql 
 summary: SnapCenter를 사용하여 복원 작업을 성공적으로 수행하려면 먼저 전략을 정의해야 합니다. 자동으로 검색된 PostgreSQL 클러스터에 대한 복구 전략에는 두 가지 유형이 있습니다. 
 ---
-= 자동으로 검색된 PostgreSQL에 지원되는 복구 전략 유형입니다
+= SnapCenter에서 자동 감지된 PostgreSQL의 복구 전략
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

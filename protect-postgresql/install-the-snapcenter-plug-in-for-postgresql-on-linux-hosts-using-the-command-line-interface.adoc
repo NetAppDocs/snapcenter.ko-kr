@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, SnapCenter Plug-in for postgresql 
 summary: 'SnapCenter UI(사용자 인터페이스)를 사용하여 PostgreSQL 클러스터용 SnapCenter 플러그인을 설치해야 합니다. 환경에서 SnapCenter UI에서 플러그인을 원격으로 설치할 수 없는 경우 명령줄 인터페이스(CLI1)를 사용하여 콘솔 모드 또는 자동 모드로 PostgreSQL 클러스터용 플러그인을 설치할 수 있습니다.' 
 ---
-= 명령줄 인터페이스를 사용하여 Linux 호스트에 PostgreSQL용 SnapCenter 플러그인을 설치합니다
+= CLI를 사용하여 Linux 호스트에 PostgreSQL용 SnapCenter 플러그인을 설치합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

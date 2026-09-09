@@ -92,6 +92,7 @@ Linux 호스트에서 실행 중인 SnapCenter에 플러그인 호스트를 추�
 
 
 
+[[log-in-to-snapcenter-using-multi-factor-authentication-mfa]]
 == 멀티팩터 인증(MFA)을 사용하여 SnapCenter에 로그인
 
 SnapCenter 서버는 Active Directory의 일부인 도메인 계정에 대해 MFA를 지원합니다.
@@ -125,6 +126,7 @@ AD FS 페이지에 잘못된 사용자 이름 또는 암호 오류 메시지가 
 
 
 
+[[modify-the-snapcenter-default-gui-session-timeout]]
 == SnapCenter 기본 GUI 세션 시간 초과를 수정합니다
 
 SnapCenter GUI 세션 제한 시간을 기본 제한 시간 20분 이하로 수정할 수 있습니다.
@@ -140,6 +142,7 @@ SnapCenter는 기본 15분 동안 비활성 상태가 지속되면 GUI 세션에
 
 
 
+[[secure-the-snapcenter-web-server-by-disabling-ssl-3-0]]
 == SSL 3.0을 비활성화하여 SnapCenter 웹 서버를 보호합니다
 
 보안을 위해 SnapCenter 웹 서버에서 SSL(Secure Socket Layer) 3.0 프로토콜을 사용하는 경우 Microsoft IIS에서 SSL(Secure Socket Layer) 3.0 프로토콜을 비활성화해야 합니다.

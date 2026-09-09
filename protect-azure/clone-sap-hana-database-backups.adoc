@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Database, clone, database, backups 
 summary: SnapCenter를 사용하여 백업을 복제할 수 있습니다. 
 ---
-= SAP HANA 데이터베이스 백업의 클론을 생성합니다
+= SnapCenter로 SAP HANA Database 백업 클론 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

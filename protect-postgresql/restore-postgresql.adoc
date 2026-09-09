@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for postgresql 
 summary: 복원 및 복구 워크플로에는 계획, 복원 작업 수행 및 작업 모니터링이 포함됩니다. 
 ---
-= 워크플로를 복원합니다
+= SnapCenter PostgreSQL 복원 워크플로우용 플러그인
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

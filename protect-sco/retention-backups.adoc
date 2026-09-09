@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: oracle databases discover 
 summary: 백업 보존 옵션 
 ---
-= 백업 보존 옵션
+= SnapCenter의 백업 보존 옵션
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

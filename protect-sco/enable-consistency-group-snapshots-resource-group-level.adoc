@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: consistency group, enable, create, resource group level 
 summary: 리소스 그룹은 백업 및 보호할 리소스를 추가하는 컨테이너입니다. 리소스 그룹을 사용하면 지정된 애플리케이션과 연결된 모든 데이터를 동시에 백업할 수 있습니다. 
 ---
-= 리소스 그룹 수준에서 일관성 그룹 스냅샷을 활성화합니다
+= 리소스 그룹 수준에서 SnapCenter 일관성 그룹 스냅샷 활성화
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

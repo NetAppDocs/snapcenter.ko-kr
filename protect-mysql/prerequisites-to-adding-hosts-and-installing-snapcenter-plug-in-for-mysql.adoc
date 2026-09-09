@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: credentials 
 summary: 호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다. MySQL용 SnapCenter 플러그인은 Windows 및 Linux 환경 모두에서 사용할 수 있습니다. 
 ---
-= 호스트를 추가하고 MySQL용 SnapCenter 플러그인을 설치하기 위한 사전 요구 사항
+= 호스트 추가 및 MySQL용 SnapCenter 플러그인 설치를 위한 필수 조건
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -27,6 +27,7 @@ NOTE: IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.
 
 
 
+[[windows-hosts]]
 == Windows 호스트
 
 * 원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 도메인 사용자가 있어야 합니다.
@@ -40,6 +41,7 @@ link:https://www.oracle.com/java/technologies/downloads/#java17["모든 운영 �
 
 
 
+[[linux-hosts]]
 == Linux 호스트
 
 * 루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.
@@ -53,6 +55,7 @@ link:https://www.oracle.com/java/technologies/downloads/#java17["모든 운영 �
 
 
 
+[[supplemental-commands]]
 == 보조 명령
 
 MySQL용 SnapCenter 플러그인에서 추가 명령을 실행하려면 _allowed_commands.config_file에 해당 명령을 포함해야 합니다.
@@ -80,6 +83,7 @@ NOTE: 와일드카드 항목(*)을 사용하여 모든 명령을 허용해서는
 
 
 
+[[configure-sudo-privileges-for-non-root-users-for-linux-host]]
 == Linux 호스트에 대해 루트가 아닌 사용자에 대한 sudo 권한을 구성합니다
 
 SnapCenter를 사용하면 루트가 아닌 사용자가 Linux용 SnapCenter 플러그인 패키지를 설치하고 플러그인 프로세스를 시작할 수 있습니다. 플러그인 프로세스는 효과적인 비루트 사용자로 실행됩니다. 여러 경로에 대한 액세스를 제공하려면 루트가 아닌 사용자에 대해 sudo 권한을 구성해야 합니다.

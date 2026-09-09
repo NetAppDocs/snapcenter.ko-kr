@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, VMware vSphere 
 summary: '데이터베이스가 가상 머신(VM)에 저장되어 있거나 VM 및 데이터 저장소를 보호하려는 경우 SnapCenter Plug-in for VMware vSphere 가상 어플라이언스를 구축해야 합니다.' 
 ---
-= VMware vSphere용 SnapCenter 플러그인을 설치합니다
+= SnapCenter Plug-in for VMware vSphere를 설치합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,12 +17,14 @@ summary: '데이터베이스가 가상 머신(VM)에 저장되어 있거나 VM �
 
 
 
+[[deploy-ca-certificate]]
 == CA 인증서를 배포합니다
 
 SnapCenter Plug-in for VMware vSphere에서 CA 인증서를 구성하려면  https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere["SSL 인증서를 생성하거나 가져옵니다"^]를 참조하십시오.
 
 
 
+[[configure-the-crl-file]]
 == CRL 파일을 구성합니다
 
 VMware vSphere용 SnapCenter 플러그인은 사전 구성된 디렉토리에서 CRL 파일을 찾습니다. VMware vSphere용 SnapCenter 플러그인의 기본 CRL 파일 디렉토리는 _/opt/netapp/config/CRL_ 입니다.

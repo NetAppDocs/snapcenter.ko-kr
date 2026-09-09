@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security,authentication, export CA certificates 
 summary: CA 인증서를 SnapCenter 서버에서 플러그인 호스트로 내보내야 합니다. 
 ---
-= SnapCenter 서버에서 CA(인증 기관) 인증서를 내보냅니다
+= SnapCenter 서버에서 CA 인증서를 내보냅니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

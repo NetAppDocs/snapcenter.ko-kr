@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for MySQL 
 summary: SnapCenter를 사용하여 MySQL 데이터베이스 리소스를 백업하기 전에 백업하려는 리소스 또는 리소스 그룹에 대한 백업 정책을 만들어야 합니다. 백업 정책은 백업을 관리, 예약 및 유지하는 방법을 제어하는 규칙의 집합입니다. 
 ---
-= MySQL에 대한 백업 정책을 생성합니다
+= SnapCenter를 사용하여 MySQL용 백업 정책 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

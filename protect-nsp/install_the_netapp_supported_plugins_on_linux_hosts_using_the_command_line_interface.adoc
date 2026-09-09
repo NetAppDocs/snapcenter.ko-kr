@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install, NetApp supported plug-in 
 summary: 'SnapCenter UI(사용자 인터페이스)를 사용하여 SnapCenter NetApp 지원 플러그인을 설치해야 합니다. 환경에서 SnapCenter UI에서 플러그인의 원격 설치를 허용하지 않는 경우 CLI(명령줄 인터페이스)를 사용하여 콘솔 모드나 자동 모드로 NetApp 지원 플러그인을 설치할 수 있습니다.' 
 ---
-= 명령줄 인터페이스를 사용하여 Linux 호스트에 NetApp 지원 플러그인을 설치합니다
+= NetApp 지원 플러그인을 SnapCenter CLI를 사용하여 Linux 호스트에 설치합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

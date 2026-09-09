@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup policies, policies, unix file systems, file systems 
 summary: 백업할 Unix 파일 시스템에 대한 백업 정책을 생성합니다. 
 ---
-= Unix 파일 시스템에 대한 백업 정책을 생성합니다
+= UNIX 파일 시스템에 대한 백업 정책을 SnapCenter에서 생성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

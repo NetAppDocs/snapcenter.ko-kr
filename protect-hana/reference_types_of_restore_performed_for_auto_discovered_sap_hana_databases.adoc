@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Databases 
 summary: 'SnapCenter는 자동으로 검색된 SAP HANA 데이터베이스에 대해 볼륨 기반 SnapRestore\(VBSR\), 단일 파일 SnapRestore 및 연결/복사 복원 유형을 지원합니다.' 
 ---
-= 자동 검색된 SAP HANA 데이터베이스의 복원 작업 유형
+= SnapCenter에서 자동 검색된 SAP HANA 데이터베이스의 복원 작업
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ SnapCenter는 자동으로 검색된 SAP HANA 데이터베이스에 대해 VBSR(
 
 
 
+[[volume-based-snaprestore-vbsr-is-performed-in-nfs-environments-for-the-following-scenarios]]
 == VBSR(볼륨 기반 SnapRestore)은 NFS 환경에서 다음 시나리오에 대해 수행됩니다.
 
 * 복원용으로 선택한 백업이 SnapCenter 4.3 이전의 릴리즈에서 수행되었으며 ** 전체 리소스** 옵션을 선택한 경우에만 수행됩니다
@@ -23,6 +24,7 @@ SnapCenter는 자동으로 검색된 SAP HANA 데이터베이스에 대해 VBSR(
 
 
 
+[[single-file-snaprestore-is-performed-in-nfs-environments-for-the-following-scenarios]]
 == 단일 파일 SnapRestore는 NFS 환경에서 다음 시나리오에 대해 수행됩니다.
 
 * 복원을 위해 선택한 백업이 SnapCenter 4.3에서 수행된 경우, * Complete Resource * 옵션만 선택한 경우
@@ -32,6 +34,7 @@ SnapCenter는 자동으로 검색된 SAP HANA 데이터베이스에 대해 VBSR(
 
 
 
+[[single-file-snaprestore-is-performed-in-san-environments-for-the-following-scenarios]]
 == 단일 파일 SnapRestore는 SAN 환경에서 다음 시나리오에 대해 수행됩니다.
 
 * SnapCenter 4.3 이전 릴리즈에서 백업을 수행하고 * Complete Resource * 옵션을 선택한 경우에만 백업이 수행됩니다
@@ -41,6 +44,7 @@ SnapCenter는 자동으로 검색된 SAP HANA 데이터베이스에 대해 VBSR(
 
 
 
+[[connect-and-copy-based-restore-is-performed-in-san-environments-for-the-following-scenario]]
 == 연결 및 복사 기반 복원은 SAN 환경에서 다음 시나리오에 대해 수행됩니다.
 
 * MDC의 경우, 복원을 위해 선택된 백업이 SnapCenter 4.3에서 수행되고 * Tenant Database * 옵션이 선택된 경우

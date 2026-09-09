@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup policy 
 summary: SnapCenter를 사용하여 SQL Server 리소스를 백업하기 전에 리소스 또는 리소스 그룹에 대한 백업 정책을 만들거나 리소스 그룹을 만들거나 단일 리소스를 백업할 때 백업 정책을 만들 수 있습니다. 
 ---
-= SQL Server 데이터베이스에 대한 백업 정책을 생성합니다
+= SQL Server 데이터베이스에 대한 백업 정책을 SnapCenter에서 생성합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -58,6 +58,7 @@ ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅
 
 
 
+[[step-1-create-policy-name]]
 == 1단계: 정책 이름 생성
 
 . 왼쪽 탐색 창에서 * 설정 * 을 선택합니다.
@@ -68,6 +69,7 @@ ONTAP 9.12.1 이하 버전의 경우, 복원 과정에서 SnapLock 볼트 스냅
 
 
 
+[[step-2-configure-policy-options]]
 == 2단계: 정책 옵션 구성
 
 . 정책 유형 페이지에서 다음 단계를 수행합니다.
@@ -129,6 +131,7 @@ NOTE: Microsoft SQL은 보조 스토리지에 대해 * 전체 백업 및 로그 
 
 
 
+[[step-3-configure-availability-group-settings]]
 == 3단계: 가용성 그룹 설정 구성
 
 . 가용성 그룹 설정 섹션에서 다음 작업을 수행합니다.
@@ -158,6 +161,7 @@ NOTE: 클러스터 구성에서 백업은 정책에 설정된 보존 설정에 �
 
 
 
+[[step-4-configure-snapshot-and-replication-settings]]
 == 4단계: 스냅샷 및 복제 설정을 구성합니다
 
 . 스냅샷 및 복제 페이지에서 다음 단계를 수행합니다.
@@ -180,6 +184,7 @@ NOTE: 오전 2시에 예약된 경우 DST(일광 절약 시간) 중에는 일정
 
 
 
+[[step-5-configure-up-to-the-minute-retention-settings]]
 == 5단계: 최신 보존 설정을 구성합니다
 
 . 최신 보존 설정 섹션에서 백업 유형 페이지에서 선택한 백업 유형에 따라 다음 작업 중 하나 이상을 수행합니다.
@@ -206,6 +211,7 @@ NOTE: 오전 2시에 예약된 경우 DST(일광 절약 시간) 중에는 일정
 ====
 
 
+[[step-6-configure-snapshot-settings]]
 == 6단계: 스냅샷 설정 구성
 
 . 전체 백업 보존 설정에 대해 다음 작업을 수행합니다.
@@ -246,6 +252,7 @@ NOTE: 원격 복제를 위해 기본 스냅샷에 SnapMirror 레이블을 할당
 
 
 
+[[step-7-configure-secondary-replication-options]]
 == 7단계: 보조 복제 옵션을 구성합니다
 
 . Select secondary replication options 섹션에서 다음 보조 복제 옵션 중 하나 또는 둘 다를 선택합니다.
@@ -299,6 +306,7 @@ SnapLock 볼트에 대한 자세한 내용은 을 참조하십시오 https://doc
 ====
 
 
+[[step-8-configure-script-settings]]
 == 8단계: 스크립트 설정을 구성합니다
 
 . 스크립트 페이지에서 백업 작업 전후에 실행해야 하는 처방인 또는 PS의 경로와 인수를 각각 입력합니다.
@@ -317,6 +325,7 @@ NOTE: ONTAP에서 SnapMirror 보존 정책을 구성하여 보조 스토리지�
 
 
 
+[[step-9-configure-verification-settings]]
 == 9단계: 확인 설정 구성
 
 확인 페이지에서 다음 단계를 수행하십시오.
@@ -361,6 +370,7 @@ NOTE: 처방자 또는 사후 스크립트 경로에는 드라이브 또는 공�
 
 
 
+[[step-10-review-summary]]
 == 10단계: 요약 검토
 
 . 요약을 검토한 후 * Finish * 를 선택합니다.

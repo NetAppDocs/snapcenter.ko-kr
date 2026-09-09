@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for MySQL 
 summary: 특정 MySQL 인스턴스에 대해서는 자동 검색이 지원되지 않습니다. 이러한 리소스를 수동으로 추가해야 합니다. 
 ---
-= 플러그인 호스트에 수동으로 리소스를 추가합니다
+= 플러그인 호스트에 MySQL 리소스를 수동으로 추가합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

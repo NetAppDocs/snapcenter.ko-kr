@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for postgresql 
 summary: SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 복원 및 복구할 수 있습니다. 
 ---
-= 자동 검색된 클러스터 백업을 복구 및 복구합니다
+= SnapCenter Plug-in for PostgreSQL을 사용하여 자동 검색된 클러스터 백업을 복원하고 복구합니다.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

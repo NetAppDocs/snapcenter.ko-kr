@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: application volume, overview, backup, non-data volumes 
 summary: 애플리케이션 볼륨은 Oracle 데이터베이스와 관련된 정보가 저장되는 스토리지입니다. 
 ---
-= 응용 프로그램 볼륨이란 무엇입니까
+= Oracle Database용 SnapCenter 플러그인의 애플리케이션 볼륨에 대해 알아보기
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

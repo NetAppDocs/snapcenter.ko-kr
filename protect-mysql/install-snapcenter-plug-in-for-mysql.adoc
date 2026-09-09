@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installing 
 summary: MySQL을 보호하려면 MySQL용 SnapCenter 플러그인을 설치하고 설정해야 합니다. 
 ---
-= MySQL용 SnapCenter 플러그인의 설치 워크플로
+= SnapCenter Plug-in for MySQL 설치 및 설정 워크플로
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

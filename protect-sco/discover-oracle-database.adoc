@@ -17,6 +17,7 @@ summary: SnapCenter가 Oracle 데이터베이스를 검색하는 방법
 
 
 
+[[for-oracle-versions-11g-to-12cr1]]
 == Oracle 버전 11__g_ ~ 12__c__R1
 
 .RAC 데이터베이스
@@ -45,6 +46,7 @@ RAC One Node 데이터베이스는 /etc/oratab 항목을 기준으로 검색됩�
 
 
 
+[[for-oracle-versions-12cr2-to-18c-19c-or-21c]]
 == Oracle 버전 12cR2에서 18C, 19c 또는 21c의 경우
 
 .RAC 데이터베이스

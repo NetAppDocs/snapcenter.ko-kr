@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: modify RBAC, role, users, groups 
 summary: SnapCenter에서는 역할, 사용자 및 그룹을 수정할 수 있습니다. 
 ---
-= RBAC 관리
+= SnapCenter에서 RBAC 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ SnapCenter에서는 역할, 사용자 및 그룹을 수정할 수 있습니다.
 
 
 
+[[modify-a-role]]
 == 역할을 수정합니다
 
 SnapCenter 역할을 수정하여 사용자 또는 그룹을 제거하고 역할에 연결된 권한을 변경할 수 있습니다. 전체 역할에 사용되는 권한을 변경하거나 제거하고자 할 때 역할을 수정하는 것이 특히 유용합니다.
@@ -44,6 +45,7 @@ NOTE: 이 옵션을 사용하면 개체 또는 리소스를 만든 사용자와 
 
 
 
+[[modify-users-and-groups]]
 == 사용자 및 그룹을 수정합니다
 
 SnapCenter 사용자 또는 그룹을 수정하여 역할 및 자산을 변경할 수 있습니다.

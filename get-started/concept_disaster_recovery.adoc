@@ -17,6 +17,7 @@ SnapCenter DR(재해 복구) 기능을 사용하면 리소스 손상 또는 서�
 
 
 
+[[snapcenter-server-dr]]
 == SnapCenter 서버 DR
 
 * SnapCenter 서버 데이터는 백업되며 SnapCenter 서버에 플러그인을 추가하거나 관리하지 않고도 복구할 수 있습니다.
@@ -28,6 +29,7 @@ SnapCenter DR(재해 복구) 기능을 사용하면 리소스 손상 또는 서�
 
 
 
+[[snapcenter-plug-in-and-storage-dr]]
 == SnapCenter 플러그인 및 스토리지 DR
 
 DR은 SQL Server용 SnapCenter 플러그인에만 사용할 수 있습니다. 플러그인이 중단된 경우 다른 SQL 호스트로 전환하고 몇 가지 단계를 수행하여 데이터를 복구합니다. 을 link:../protect-scsql/task_disaster_recovery_scsql.html["SQL Server용 SnapCenter 플러그인의 재해 복구"]참조하십시오.

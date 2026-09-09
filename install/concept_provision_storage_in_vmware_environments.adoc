@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: guest OS, VMware ESXi server, limitations, RDM, Microsoft cluster 
 summary: VMware 환경에서 Microsoft Windows용 SnapCenter 플러그인을 사용하여 LUN을 생성 및 관리하고 스냅샷 백업 복사본을 관리할 수 있습니다. 
 ---
-= VMware 환경에서 스토리지 프로비저닝
+= SnapCenter VMware 환경에서의 스토리지 프로비저닝
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ VMware 환경에서 Microsoft Windows용 SnapCenter 플러그인을 사용하여
 
 
 
+[[supported-vmware-guest-os-platforms]]
 == 지원되는 VMware 게스트 OS 플랫폼
 
 * 지원되는 Windows Server 버전
@@ -33,6 +34,7 @@ VMware ParaVirtual SCSI 컨트롤러를 지원합니다. RDM 디스크에서 256
 
 
 
+[[vmware-esxi-server-related-limitations]]
 === VMware ESXi 서버 관련 제한 사항
 
 * ESXi 자격 증명을 사용하여 가상 컴퓨터의 Microsoft 클러스터에 Windows용 플러그인을 설치하는 것은 지원되지 않습니다.
@@ -46,6 +48,7 @@ VMware ParaVirtual SCSI 컨트롤러를 지원합니다. RDM 디스크에서 256
 
 
 
+[[minimum-vcenter-privileges-required-for-snapcenter-rdm-operations]]
 === SnapCenter RDM 작업에 필요한 최소 vCenter 권한
 
 게스트 OS에서 RDM 작업을 수행하려면 호스트에 대해 다음과 같은 vCenter 권한이 있어야 합니다.
@@ -61,6 +64,7 @@ VMware ParaVirtual SCSI 컨트롤러를 지원합니다. RDM 디스크에서 256
 
 
 
+[[manage-fc-rdm-luns-in-a-microsoft-cluster]]
 == Microsoft 클러스터에서 FC RDM LUN을 관리합니다
 
 Windows용 플러그인을 사용하여 FC RDM LUN을 사용하여 Microsoft 클러스터를 관리할 수 있지만 먼저 플러그인 외부에서 공유 RDM 쿼럼과 공유 스토리지를 생성한 다음 클러스터의 가상 머신에 디스크를 추가해야 합니다.
@@ -69,6 +73,7 @@ ESXi 5.5부터 ESX iSCSI 및 FCoE 하드웨어를 사용하여 Microsoft 클러�
 
 
 
+[[requirements]]
 === 요구 사항
 
 Windows용 플러그인은 특정 구성 요구 사항을 충족하는 경우 두 개의 서로 다른 ESX 또는 ESXi 서버에 속하는 두 개의 서로 다른 가상 시스템에서 FC RDM LUN을 사용하는 Microsoft 클러스터를 지원합니다.
@@ -111,6 +116,7 @@ RDM LUN을 생성할 때 이니시에이터 그룹은 ALUA를 통해 생성됩�
 
 
 
+[[limitations]]
 === 제한 사항
 
 Windows용 플러그인은 서로 다른 ESX 또는 ESXi 서버에 속하는 서로 다른 가상 머신에서 FC/iSCSI RDM LUN을 사용하는 Microsoft 클러스터를 지원합니다.
@@ -130,6 +136,7 @@ NOTE: 이 기능은 ESX 5.5i 이전의 릴리즈에서는 지원되지 않습니
 
 
 
+[[create-a-shared-fc-rdm-lun]]
 === 공유 FC RDM LUN을 생성합니다
 
 FC RDM LUN을 사용하여 Microsoft 클러스터의 노드 간에 스토리지를 공유하려면 먼저 공유 쿼럼 디스크와 공유 스토리지 디스크를 생성한 다음 클러스터의 두 가상 머신에 추가해야 합니다.
@@ -138,6 +145,7 @@ FC RDM LUN을 사용하여 Microsoft 클러스터의 노드 간에 스토리지�
 
 
 
+[[related-information]]
 == 관련 정보
 
 link:https://techdocs.broadcom.com["Broadcom 기술 문서"^]을 참조하고 물리적 호스트에 걸쳐 가상 머신을 클러스터링하고 Microsoft 클러스터용 공유 FC RDM LUN을 생성하는 방법에 대한 문서를 검색하십시오.

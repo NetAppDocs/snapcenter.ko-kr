@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add, add SAP HANA database, manual discovery, automatic discovery 
 summary: SAP HANA 데이터베이스를 추가합니다. 
 ---
-= SAP HANA 데이터베이스를 추가합니다
+= SnapCenter에서 SAP HANA 데이터베이스 추가
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

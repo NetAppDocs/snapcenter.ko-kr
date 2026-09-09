@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade, snapcenter server, plug-ins, workflow, upgrade path 
 summary: 에서는 SnapCenter 서버 및 플러그인을 업그레이드하는 방법과 지원되는 업그레이드 경로를 설명합니다 
 ---
-= 워크플로우 업그레이드
+= SnapCenter 서버 업그레이드 워크플로
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -19,6 +19,7 @@ image::../media/upgrade_workflow.gif[워크플로우 업그레이드]
 
 
 
+[[supported-upgrade-paths]]
 == 지원되는 업그레이드 경로
 
 이 섹션에서는 업그레이드할 수 있는 SnapCenter 버전과 지원되는 플러그인 버전을 보여줍니다.

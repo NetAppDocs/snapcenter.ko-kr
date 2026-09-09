@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: environment variable, predefined, prescript, postscript, backup, policy 
 summary: SnapCenter를 사용하면 백업 정책을 생성하는 동안 처방과 PS를 실행할 때 미리 정의된 환경 변수를 사용할 수 있습니다. 
 ---
-= 백업 특정 처방과 PS에 대한 사전 정의된 환경 변수입니다
+= SnapCenter 백업용 사전 스크립트 및 사후 스크립트 환경 변수
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,6 +17,7 @@ SnapCenter는 셸 스크립트가 실행되는 환경에서 직접 액세스할 
 
 
 
+[[supported-predefined-environment-variables-for-creating-backup-policy]]
 == 백업 정책 생성을 위해 지원되는 사전 정의된 환경 변수입니다
 
 * * SC_JOB_ID * 는 작업의 작업 ID를 지정합니다.
@@ -232,6 +233,7 @@ RAC의 경우 호스트 이름은 백업이 수행되는 호스트의 이름입�
 
 
 
+[[supported-delimiters]]
 == 지원되는 구분 기호
 
 * *: * 은 SVM 이름과 볼륨 이름을 구분하는 데 사용됩니다

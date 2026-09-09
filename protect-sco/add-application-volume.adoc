@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: application volume, overview, add, modify, delete, Oracle database 
 summary: 애플리케이션 볼륨을 수동으로 추가해야 합니다. 
 ---
-= 애플리케이션 볼륨 추가
+= Oracle 데이터베이스의 애플리케이션 볼륨을 SnapCenter에 추가합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -42,6 +42,7 @@ NOTE: 애플리케이션 볼륨은 직접 NFS 및 직접 iSCSI 연결만 지원�
 
 
 
+[[modify-application-volume]]
 == 애플리케이션 볼륨을 수정합니다
 
 백업이 생성되지 않은 경우 애플리케이션 볼륨을 추가하는 동안 지정한 모든 값을 수정할 수 있습니다. 백업이 생성된 경우 스토리지 시스템 세부 정보만 수정할 수 있습니다.
@@ -56,6 +57,7 @@ NOTE: 애플리케이션 볼륨은 직접 NFS 및 직접 iSCSI 연결만 지원�
 
 
 
+[[delete-application-volume]]
 == 응용 프로그램 볼륨을 삭제합니다
 
 응용 프로그램 볼륨을 삭제할 때 응용 프로그램 볼륨과 연결된 백업이 있으면 응용 프로그램 볼륨은 유지 관리 모드로 전환되고 새 백업이 생성되지 않으며 이전 백업은 보존되지 않습니다. 연결된 백업이 없으면 모든 메타데이터가 삭제됩니다.

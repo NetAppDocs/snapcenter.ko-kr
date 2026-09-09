@@ -19,6 +19,7 @@ summary: 잘 설계된 스토리지 레이아웃을 통해 SnapCenter Server는 
 
 
 
+[[lun-and-vmdk-requirements]]
 == LUN 및 VMDK 요구 사항
 
 선택적으로 전용 LUN 또는 VMDK를 사용하여 다음 데이터베이스의 성능 및 관리를 최적화할 수 있습니다.
@@ -36,6 +37,7 @@ summary: 잘 설계된 스토리지 레이아웃을 통해 SnapCenter Server는 
 
 
 
+[[lun-and-vmdk-sample-layouts]]
 == LUN 및 VMDK 샘플 레이아웃
 
 다음 그림에서는 LUN의 대용량 데이터베이스에 대한 스토리지 레이아웃을 구성하는 방법을 보여 줍니다.

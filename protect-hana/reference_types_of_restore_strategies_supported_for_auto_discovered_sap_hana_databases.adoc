@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for SAP HANA Databases 
 summary: SnapCenter를 사용하여 복원 작업을 성공적으로 수행하려면 먼저 전략을 정의해야 합니다. 자동으로 검색된 SAP HANA 데이터베이스에는 두 가지 유형의 복원 전략이 있습니다. 
 ---
-= 자동으로 검색된 SAP HANA 데이터베이스에 대해 지원되는 복원 전략의 유형입니다
+= SnapCenter 자동으로 검색된 SAP HANA 데이터베이스를 위한 복원 전략
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ SnapCenter를 사용하여 복원 작업을 성공적으로 수행하려면 먼�
 
 
 
+[[complete-resource-restore]]
 == 리소스 복원을 완료합니다
 
 * 리소스의 모든 볼륨, qtree 및 LUN을 복원합니다
@@ -30,6 +31,7 @@ NOTE: 리소스에 볼륨 또는 qtree가 포함된 경우 해당 볼륨 또는 
 
 
 
+[[tenant-database]]
 == 테넌트 데이터베이스
 
 * 테넌트 데이터베이스를 복원합니다

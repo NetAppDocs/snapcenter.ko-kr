@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for IBM Db2 
 summary: SnapCenter를 사용하여 하나 이상의 백업에서 데이터를 복원 및 복구할 수 있습니다. 
 ---
-= 수동으로 추가한 리소스 백업을 복원합니다
+= 수동으로 추가된 리소스 백업을 SnapCenter로 복원합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

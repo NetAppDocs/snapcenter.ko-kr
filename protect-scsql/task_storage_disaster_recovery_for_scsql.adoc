@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: disaster recovery 
 summary: 글로벌 설정 페이지에서 스토리지용 DR 모드를 활성화하여 SQL Server용 SnapCenter 플러그인을 복구할 수 있습니다. 
 ---
-= SQL Server용 SnapCenter 플러그인을 위한 스토리지 재해 복구(DR
+= 재해 발생 후 SQL Server 스토리지용 SnapCenter 플러그인 복구
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

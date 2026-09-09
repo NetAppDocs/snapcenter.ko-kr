@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup 
 summary: 백업 워크플로우에는 계획, 백업용 리소스 식별, 백업 정책 관리, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다. 
 ---
-= NetApp에서 지원하는 플러그인 리소스를 백업합니다
+= NetApp 지원 플러그인 리소스용 SnapCenter 백업 워크플로
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -2,9 +2,9 @@
 section: tech-refresh
 title: 기술 업데이트
 entries:
-- title: SnapCenter 서버 호스트의 기술 업데이트
+- title: SnapCenter 서버 호스트의 기술 업데이트를 수행하십시오.
   url: "/tech-refresh/task_tech_refresh_server_host.html"
-- title: SnapCenter 플러그인 호스트의 기술 업데이트
+- title: SnapCenter 플러그인 호스트의 기술 업데이트를 수행합니다.
   url: "/tech-refresh/task_tech_refresh_plugin_host.html"
-- title: 스토리지 시스템의 기술 업데이트
+- title: SnapCenter에서 스토리지 시스템의 기술 업데이트를 수행합니다
   url: "/tech-refresh/task_tech_refresh_storage_system.html"

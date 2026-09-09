@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter Plug-in for Oracle Database, back up, databases, Azure NetApp Files 
 summary: 리소스 페이지에서 리소스를 백업합니다. 
 ---
-= Azure NetApp Files에서 실행 중인 Oracle 데이터베이스를 백업합니다
+= Azure NetApp Files의 Oracle 데이터베이스를 SnapCenter로 백업합니다
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

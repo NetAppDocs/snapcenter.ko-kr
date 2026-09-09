@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SnapCenter, certificate thumbprint 
 summary: 인증서 thumbprint는 인증서를 식별하는 16진수 문자열입니다. 썸프린트는 썸프린트 알고리즘을 사용하여 인증서 컨텐츠에서 계산됩니다. 
 ---
-= CA 인증서 지문을 받습니다
+= SnapCenter에서 CA 인증서 지문 가져오기
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

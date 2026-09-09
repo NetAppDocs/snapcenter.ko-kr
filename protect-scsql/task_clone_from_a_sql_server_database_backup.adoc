@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clone 
 summary: SnapCenter를 사용하여 SQL Server 데이터베이스 백업을 복제할 수 있습니다. 이전 버전의 데이터에 액세스하거나 복원하려는 경우 필요에 따라 데이터베이스 백업을 클론 복제할 수 있습니다. 
 ---
-= SQL Server 데이터베이스 백업에서 복제합니다
+= SnapCenter를 사용하여 SQL Server 데이터베이스 백업에서 클론 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -152,7 +152,7 @@ NOTE: 처방자 또는 사후 스크립트 경로에는 드라이브 또는 공�
 NOTE: 이메일 알림의 경우 GUI 또는 PowerShell 명령 Set-SmtpServer를 사용하여 SMTP 서버 세부 정보를 지정해야 합니다.
 
 +
-EMS의 경우 를 참조할 수 있습니다 https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html["EMS Data 수집 관리"]
+EMS의 경우 다음을 참조하십시오. https://docs.netapp.com/us-en/snapcenter/admin/concept_manage_ems_data_collection.html["SnapCenter에서 EMS 데이터 수집 관리"]
 
 . 요약을 검토한 후 * Finish * 를 선택합니다.
 . Monitor * > * Jobs * 를 선택하여 작업 진행 상황을 모니터링합니다.

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: tech refresh, storage system, 
 summary: 데이터를 이전 스토리지에서 새 스토리지로 이동하고 새 스토리지를 해당 호스트에 마운트한 다음 데이터베이스를 가져와 스토리지 시스템의 기술 업데이트를 수행합니다. 
 ---
-= 스토리지 시스템의 기술 업데이트
+= SnapCenter에서 스토리지 시스템의 기술 업데이트를 수행합니다
 :allow-uri-read: 
 
 
@@ -33,6 +33,7 @@ summary: 데이터를 이전 스토리지에서 새 스토리지로 이동하고
 
 
 
+[[update-the-backups-of-the-primary-storage]]
 == 운영 스토리지의 백업을 업데이트합니다
 
 스토리지가 기술 업데이트 되면 스토리지 기술 업데이트 API 또는 cmdlet을 실행하여 SnapCenter의 이전 백업을 새 스토리지 세부 정보로 업데이트해야 합니다.
@@ -104,6 +105,7 @@ NOTE: 클론 계층은 ONTAP에서 마이그레이션할 수 없습니다. 마�
 
 
 
+[[update-the-backups-of-the-secondary-storage]]
 == 보조 스토리지의 백업을 업데이트합니다
 
 스토리지가 기술 업데이트 되면 스토리지 기술 업데이트 API 또는 cmdlet을 실행하여 SnapCenter의 이전 백업을 새 스토리지 세부 정보로 업데이트해야 합니다.

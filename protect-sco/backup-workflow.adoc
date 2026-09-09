@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup, workflow 
 summary: '리소스(데이터베이스) 또는 리소스 그룹의 백업을 생성할 수 있습니다.' 
 ---
-= 백업 절차 개요
+= SnapCenter Oracle 데이터베이스 백업 워크플로
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

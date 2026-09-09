@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Manage storage system 
 summary: 스토리지 시스템을 추가한 후 스토리지 시스템 구성 및 접속을 수정하거나 스토리지 시스템을 삭제할 수 있습니다. 
 ---
-= 스토리지 시스템을 관리합니다
+= SnapCenter에서 스토리지 시스템 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ summary: 스토리지 시스템을 추가한 후 스토리지 시스템 구성 �
 
 
 
+[[modify-storage-system-configuration]]
 == 스토리지 시스템 구성을 수정합니다
 
 SnapCenter를 사용하여 사용자 이름, 암호, 플랫폼, 포트, 프로토콜 등을 변경하려는 경우 스토리지 시스템 구성을 수정할 수 있습니다. 제한 시간, 기본 IP 주소 또는 메시징 옵션.
@@ -72,6 +73,7 @@ ONTAP 클러스터
 
 
 
+[[delete-the-storage-system]]
 == 스토리지 시스템을 삭제합니다
 
 SnapCenter를 사용하여 사용하지 않는 스토리지 시스템을 삭제할 수 있습니다.
@@ -102,6 +104,7 @@ NOTE: ONTAP GUI를 사용하여 ONTAP 클러스터에서 SVM을 삭제한 경우
 
 
 
+[[rest-api-support]]
 == REST API 지원
 
 ONTAP에 대한 모든 ASA, AFF 또는 FAS 시스템 연결은 기본적으로 ZAPI를 통해 이루어집니다. REST API는 특정 ONTAP 버전에 대해 활성화할 수 있습니다.

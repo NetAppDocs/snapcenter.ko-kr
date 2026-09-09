@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: restore operation 
 summary: 운영 또는 보조 스토리지의 백업 복사본에서 SQL Server 데이터베이스를 복원할 수 있습니다. 또한 데이터베이스를 원래 위치 외에 다른 대상에 복원할 수 있으므로 요구 사항을 지원하는 대상을 선택할 수 있습니다. 
 ---
-= 복구 작업의 소스 및 대상
+= SnapCenter의 SQL Server 복원 작업을 위한 소스 및 대상
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,12 +15,14 @@ summary: 운영 또는 보조 스토리지의 백업 복사본에서 SQL Server 
 
 
 
+[[sources-for-a-restore-operation]]
 == 복구 작업의 소스
 
 운영 스토리지 또는 보조 스토리지에서 데이터베이스를 복원할 수 있습니다.
 
 
 
+[[destinations-for-a-restore-operation]]
 == 복원 작업의 대상
 
 데이터베이스를 다양한 대상으로 복원할 수 있습니다.

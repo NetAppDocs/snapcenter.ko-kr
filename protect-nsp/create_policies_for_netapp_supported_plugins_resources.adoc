@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create policies, NetApp supported plug-in 
 summary: SnapCenter를 사용하여 NetApp 지원 플러그인 특정 리소스를 백업하기 전에 백업하려는 리소스 또는 리소스 그룹에 대한 백업 정책을 생성해야 합니다. 
 ---
-= NetApp 지원 플러그인 리소스에 대한 정책을 생성합니다
+= NetApp 지원 플러그인 리소스용 SnapCenter 정책 생성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

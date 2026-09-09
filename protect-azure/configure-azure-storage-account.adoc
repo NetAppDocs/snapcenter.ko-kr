@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: snapcenter, azure, azure storage account, subscription ID, azure credential, azure netapp account 
 summary: SnapCenter에서 Azure 저장소 계정을 구성합니다. 
 ---
-= Azure 저장소 계정을 구성합니다
+= SnapCenter에서 Azure 스토리지 계정 구성
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

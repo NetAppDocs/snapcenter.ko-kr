@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NetApp supported plug-ins 
 summary: SnapCenter는 물리적 시스템과 가상 머신 모두에서 다양한 스토리지 유형을 지원합니다. NetApp 지원 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다. 
 ---
-= NetApp 지원 플러그인에서 지원되는 스토리지 유형
+= NetApp 지원 플러그인에서 지원하는 스토리지 유형(SnapCenter)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

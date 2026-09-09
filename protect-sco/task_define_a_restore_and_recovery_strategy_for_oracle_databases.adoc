@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: backup types, restore methods, connect-and-copy restore, full restore, partial restore, in-place restore, recovery type, limitations 
 summary: 복구 및 복구 작업을 성공적으로 수행하려면 데이터베이스를 복원 및 복구하기 전에 전략을 정의해야 합니다. 
 ---
-= Oracle 데이터베이스에 대한 복구 및 복구 전략 정의
+= SnapCenter에서 Oracle 데이터베이스의 복원 및 복구 전략에 대해 알아보십시오.
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ summary: 복구 및 복구 작업을 성공적으로 수행하려면 데이터�
 
 
 
+[[types-of-backups-supported-for-restore-and-recovery-operations]]
 == 복구 및 복구 작업에 지원되는 백업 유형입니다
 
 SnapCenter는 다양한 유형의 Oracle 데이터베이스 백업의 복원 및 복구를 지원합니다.
@@ -39,6 +40,7 @@ NOTE: Active Data Guard 대기 데이터베이스 복구는 수행할 수 없습
 
 
 
+[[types-of-restore-methods-supported-for-oracle-databases]]
 == Oracle 데이터베이스에 지원되는 복원 방법의 유형입니다
 
 SnapCenter는 Oracle 데이터베이스에 대한 연결 및 복사 또는 이동 없는 복원을 지원합니다. 복구 작업 중에 SnapCenter는 데이터 손실 없이 복구에 사용할 파일 시스템에 적합한 복구 방법을 결정합니다.
@@ -48,6 +50,7 @@ NOTE: SnapCenter는 볼륨 기반 SnapRestore를 지원하지 않습니다.
 
 
 
+[[connect-and-copy-restore]]
 === 연결 및 복사 복원
 
 데이터베이스 레이아웃이 백업과 다르거나 백업 생성 후 새 파일이 있는 경우 연결 및 복사 복원이 수행됩니다. 연결 및 복사 복원 방법에서는 다음 작업이 수행됩니다.
@@ -76,6 +79,7 @@ NOTE: Flex ASM 설정(카디널리티가 RAC 클러스터의 노드 수보다 �
 
 
 
+[[in-place-restore]]
 === 데이터 이동 없이 복원
 
 데이터베이스 레이아웃이 백업과 유사하고 스토리지 및 데이터베이스 스택에서 구성 변경을 수행하지 않은 경우, 데이터 이동 없이 복원이 수행되며, 이 경우 ONTAP에서 파일 또는 LUN 복원이 수행됩니다. SnapCenter는 현재 위치 복원 방법의 일부로 SFSR(Single File SnapRestore)만 지원합니다.
@@ -110,6 +114,7 @@ SAN 환경에서는 SnapCenter가 모든 피어 노드에서 디바이스를 제
 
 
 
+[[types-of-restore-operations-supported-for-oracle-databases]]
 == Oracle 데이터베이스에 지원되는 복원 작업의 유형입니다
 
 SnapCenter를 사용하면 Oracle 데이터베이스에 대해 다양한 유형의 복원 작업을 수행할 수 있습니다.
@@ -118,6 +123,7 @@ SnapCenter를 사용하면 Oracle 데이터베이스에 대해 다양한 유형�
 
 
 
+[[full-restore]]
 === 전체 복원
 
 * 데이터 파일만 복구합니다
@@ -128,6 +134,7 @@ SnapCenter를 사용하면 Oracle 데이터베이스에 대해 다양한 유형�
 
 
 
+[[partial-restore]]
 === 부분 복원
 
 * 선택한 테이블스페이서만 복구합니다
@@ -137,6 +144,7 @@ SnapCenter를 사용하면 Oracle 데이터베이스에 대해 다양한 유형�
 
 
 
+[[types-of-recovery-operations-supported-for-oracle-databases]]
 == Oracle 데이터베이스에 지원되는 복구 작업의 유형입니다
 
 SnapCenter를 사용하면 Oracle 데이터베이스에 대해 다양한 유형의 복구 작업을 수행할 수 있습니다.
@@ -157,6 +165,7 @@ NOTE: 데이터베이스 역할을 대기 상태로 사용하여 만든 백업�
 
 
 
+[[limitations-related-to-restore-and-recovery-of-oracle-databases]]
 == Oracle 데이터베이스 복원 및 복구와 관련된 제한 사항
 
 복구 및 복구 작업을 수행하기 전에 제한 사항을 숙지해야 합니다.
@@ -186,6 +195,7 @@ NOTE: 데이터베이스 역할을 대기 상태로 사용하여 만든 백업�
 
 
 
+[[limitations-related-to-point-in-time-recovery-of-tablespaces]]
 == 테이블스페이스의 시점 복구와 관련된 제한 사항
 
 * 시스템, SYSAUX 및 실행 취소 테이블스페이스의 PITR(시점 복구)은 지원되지 않습니다
@@ -212,18 +222,21 @@ NOTE: 데이터베이스 역할을 대기 상태로 사용하여 만든 백업�
 
 
 
+[[sources-and-destinations-for-restoring-oracle-databases]]
 == Oracle 데이터베이스 복원을 위한 소스 및 대상
 
 운영 스토리지 또는 보조 스토리지의 백업 복사본에서 Oracle 데이터베이스를 복원할 수 있습니다. 데이터베이스를 동일한 데이터베이스 인스턴스의 동일한 위치로만 복원할 수 있습니다. 그러나 RAC(Real Application Cluster) 설정에서는 데이터베이스를 다른 노드로 복원할 수 있습니다.
 
 
 
+[[sources-for-restore-operations]]
 === 복구 작업을 위한 소스
 
 운영 스토리지 또는 보조 스토리지의 백업에서 데이터베이스를 복원할 수 있습니다. 여러 미러 구성의 보조 스토리지에 있는 백업에서 복구하려면 보조 스토리지 미러를 소스로 선택할 수 있습니다.
 
 
 
+[[destinations-for-restore-operations]]
 === 복원 작업의 대상
 
 데이터베이스를 동일한 데이터베이스 인스턴스의 동일한 위치로만 복원할 수 있습니다.

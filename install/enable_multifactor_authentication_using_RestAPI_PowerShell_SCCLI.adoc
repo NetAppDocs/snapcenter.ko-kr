@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: mfa, authentication, multifactor authentication 
 summary: REST API, PowerShell 및 SCCLI 인터페이스를 사용하여 MFA를 관리할 수 있습니다. 
 ---
-= REST API, PowerShell 및 SCCLI를 사용하여 MFA(Multi-Factor Authentication)를 관리합니다
+= REST API, PowerShell 및 SCCLI를 사용하여 SnapCenter에서 MFA 관리
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -15,6 +15,7 @@ MFA 로그인은 브라우저, REST API, PowerShell 및 SCCLI에서 지원됩니
 
 
 
+[[setup-ad-fs-as-oauthoidc]]
 == AD FS를 OAuth/OIDC로 설정합니다
 
 * Windows GUI 마법사를 사용하여 AD FS 구성 *
@@ -95,6 +96,7 @@ OpenID Connect를 구성하여 사용자 이름을 클레임으로 제공합니�
 
 
 
+[[create-application-group-using-powershell-commands]]
 == PowerShell 명령을 사용하여 애플리케이션 그룹을 생성합니다
 
 PowerShell 명령을 사용하여 애플리케이션 그룹인 웹 API를 생성하고 범위와 청구서를 추가할 수 있습니다. 이러한 명령은 자동화된 스크립트 형식으로 사용할 수 있습니다. 자세한 내용은 <link to KB article> 를 참조하십시오.
@@ -174,6 +176,7 @@ PowerShell 명령을 사용하여 애플리케이션 그룹인 웹 API를 생성
 
 
 
+[[update-access-token-expiry-time]]
 == 액세스 토큰 만료 시간을 업데이트합니다
 
 PowerShell 명령을 사용하여 액세스 토큰 만료 시간을 업데이트할 수 있습니다.
@@ -193,6 +196,7 @@ PowerShell 명령을 사용하여 액세스 토큰 만료 시간을 업데이트
 
 
 
+[[get-the-bearer-token-from-ad-fs]]
 == AD FS에서 베어러 토큰을 가져옵니다
 
 REST 클라이언트(예: Postman)에서 아래에 언급된 매개 변수를 입력해야 하며 사용자 자격 증명을 입력하라는 메시지가 표시됩니다. 또한, 베어러 토큰을 얻으려면 2차 인증 요소(보유 중인 인증 및 대상 인증)를 입력해야 합니다.
