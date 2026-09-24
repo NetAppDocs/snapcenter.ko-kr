@@ -76,7 +76,7 @@ indexpage:
     - title: NetApp 블로그 - SnapCenter
       url: https://blog.netapp.com/tag/snapcenter/
     - title: NetApp 커뮤니티 - SnapCenter
-      url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
+      url: https://community.netapp.com/community/categories/solutions
   - title: 더 많은 리소스
     links:
     - title: cmdlet 참조 가이드
