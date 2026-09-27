@@ -2,7 +2,7 @@
 permalink: protect-sco/task_delete_clone_of_a_pluggable_database.html 
 sidebar: sidebar 
 keywords: delete, PDB, clone PDB 
-summary: '더 이상 필요하지 않은 경우 플러그형 데이터베이스\(PDB\)의 클론을 삭제할 수 있습니다.' 
+summary: '더 이상 필요하지 않은 경우 플러그형 데이터베이스(PDB)의 클론을 삭제할 수 있습니다.' 
 ---
 = SnapCenter에서 플러그형 데이터베이스의 복제본 삭제
 :allow-uri-read: 

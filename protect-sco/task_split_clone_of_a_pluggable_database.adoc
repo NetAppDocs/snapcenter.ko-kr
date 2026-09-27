@@ -2,7 +2,7 @@
 permalink: protect-sco/task_split_clone_of_a_pluggable_database.html 
 sidebar: sidebar 
 keywords: split, PDB, cloned PDB 
-summary: 'SnapCenter를 사용하여 복제된 플러그형 데이터베이스 \(PDB\)를 분할할 수 있습니다.' 
+summary: 'SnapCenter를 사용하여 복제된 PDB(플러그형 데이터베이스)를 분할할 수 있습니다.' 
 ---
 = SnapCenter에서 플러그형 데이터베이스 클론 분할
 :allow-uri-read: 

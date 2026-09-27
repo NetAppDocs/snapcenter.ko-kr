@@ -2,7 +2,7 @@
 permalink: protect-db2/types-of-restore-performed-for-auto-discovered-ibm-db2.html 
 sidebar: sidebar 
 keywords: SnapCenter Plug-in for IBM Db2 
-summary: 'SnapCenter는 자동으로 검색된 IBM DB2 데이터베이스에 대해 볼륨 기반 SnapRestore\(VBSR\), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.' 
+summary: 'SnapCenter 는 자동으로 검색된 IBM Db2 데이터베이스에 대해 볼륨 기반 SnapRestore (VBSR), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.' 
 ---
 = SnapCenter에서 자동 감지된 IBM Db2 데이터베이스의 복원 유형
 :allow-uri-read: 

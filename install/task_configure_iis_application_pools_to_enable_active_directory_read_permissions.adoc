@@ -2,7 +2,7 @@
 permalink: install/task_configure_iis_application_pools_to_enable_active_directory_read_permissions.html 
 sidebar: sidebar 
 keywords: IIS application pool, active directory, enable 
-summary: 'SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 인터넷 정보 서비스\(IIS\)를 구성할 수 있습니다.' 
+summary: 'SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 IIS(인터넷 정보 서비스)를 구성할 수 있습니다.' 
 ---
 = Active Directory를 위한 IIS 애플리케이션 풀을 SnapCenter에서 구성합니다
 :allow-uri-read: 

@@ -178,11 +178,9 @@
   <block id="dbef26874057ae0be535fee20766f8cb" category="list-text">SnapCenter에서 클러스터 노드를 관리하는 경우 클러스터의 모든 노드에 대한 관리 권한이 있는 사용자가 있어야 합니다.</block>
   <block id="cfe19b0ae08454358fbe515d88fd6095" category="section-title">Linux 호스트</block>
   <block id="92f854eabda8c2aa761e01fba1c6ffd4" category="list-text">루트 또는 루트 이외의 사용자에 대해 암호 기반 SSH 연결을 활성화해야 합니다.</block>
-  <block id="5e398ea531b7d56ad433ce2103049eab" category="summary">필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)\ 등이 있습니다.</block>
   <block id="fee335c3c26419e1b2971157844984a7" category="doc">필요한 백업 작업 수입니다</block>
   <block id="8b3a2edf035fc93730de54663ee89cc2" category="paragraph">필요한 백업 작업 수를 결정하는 요인에는 리소스 크기, 사용된 볼륨 수, 리소스 변경 속도 및 SLA(서비스 수준 계약)가 포함됩니다.</block>
   <block id="b55afd5b52f01e281bc890c6adab0b29" category="paragraph">일반적으로 선택한 백업 작업 수는 리소스를 배치한 볼륨의 수에 따라 달라집니다. 예를 들어, 한 볼륨에 작은 리소스 그룹을 배치하고 다른 볼륨에 큰 리소스를 배치한 경우 작은 리소스에 대해 하나의 백업 작업을 생성하고 큰 리소스에 대해 하나의 백업 작업을 만들 수 있습니다.</block>
-  <block id="6aba9ab9639862100a3f951f105883b5" category="summary">백업 작업을 생성하기 전에 백업 전략을 정의하면 리소스를 성공적으로 복원하거나 복제하는 데 필요한 백업을 확보할 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)\ 에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="24940fc9df90a646aba3659646256b87" category="doc">백업 전략 정의</block>
   <block id="aec3dc1357d1c4a5e8173a948d80fd3c" category="paragraph">백업 작업을 생성하기 전에 백업 전략을 정의하면 리소스를 성공적으로 복원하거나 복제하는 데 필요한 백업을 확보할 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="fa8467a355232709f9161185e426b477" category="paragraph">SLA는 예상되는 서비스 수준을 정의하고 서비스의 가용성 및 성능을 비롯한 다양한 서비스 관련 문제를 해결합니다. RTO는 서비스 중단 후 비즈니스 프로세스를 복원해야 하는 시간입니다. RPO는 장애 후 정상적인 작업을 재개하기 위해 백업 스토리지에서 복구해야 하는 파일의 사용 기간에 대한 전략을 정의합니다. SLA, RTO 및 RPO는 데이터 보호 전략에 기여합니다.</block>
@@ -786,7 +784,6 @@
   <block id="309792b343a6affaca1b564ebe6d92a5" category="summary">Microsoft Exchange Server용 SnapCenter 플러그인은 Exchange 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetAppSnapCenter 소프트웨어의 호스트 측 구성 요소입니다. Exchange용 플러그인은 SnapCenter 환경에서 Exchange 데이터베이스의 백업 및 복원을 자동화합니다.</block>
   <block id="e126a0dff251b10008436e2bf2a5dd06" category="paragraph">Microsoft Exchange Server용 SnapCenter 플러그인은 Exchange 데이터베이스의 애플리케이션 인식 데이터 보호 관리를 지원하는 NetApp SnapCenter 소프트웨어의 호스트 측 구성 요소입니다. Exchange용 플러그인은 SnapCenter 환경에서 Exchange 데이터베이스의 백업 및 복원을 자동화합니다.</block>
   <block id="94bf62b5661b3bf71e7b277fd3572bb1" category="paragraph">Exchange용 플러그인을 설치하면 SnapCenter와 NetApp SnapMirror 기술을 함께 사용하여 다른 볼륨에 백업 세트의 미러링 복사본을 만들고 NetApp SnapVault 기술을 사용하여 표준 준수 또는 아카이브용으로 D2D 백업 복제를 수행할 수 있습니다.</block>
-  <block id="9bcf17f4427582cfbb783f46971b1eb0" category="summary">백업 작업을 생성하기 전에 백업 전략을 정의하면 데이터베이스를 성공적으로 복원하는 데 필요한 백업이 있는지 확인하는 데 도움이 됩니다. 서비스 수준 계약(SLA), 복구 시간 목표(RTO) 및 복구 시점 목표\(RPO\)에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="7fc686e60d66e170f709548904c946f0" category="doc">Exchange Server 리소스에 대한 백업 전략 정의</block>
   <block id="a1232051e6c5e893c86adc35d8552a57" category="paragraph">백업 작업을 생성하기 전에 백업 전략을 정의하면 데이터베이스를 성공적으로 복원하는 데 필요한 백업이 있는지 확인하는 데 도움이 됩니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 크게 결정됩니다.</block>
   <block id="d30dabe55676a51374c03d57a495fc56" category="paragraph">SLA는 예상되는 서비스 수준을 정의하고 가용성 및 서비스 성능을 비롯한 다양한 서비스 관련 문제를 해결합니다. RTO는 서비스 중단 후 비즈니스 프로세스를 복원해야 하는 시간입니다. RPO는 장애 후 정상적인 작업을 재개하기 위해 백업 스토리지에서 복구해야 하는 파일의 사용 기간에 대한 전략을 정의합니다. SLA, RTO 및 RPO는 백업 전략에 기여합니다.</block>
@@ -1282,7 +1279,6 @@
   <block id="1e1ed4854c77f284f3e97b0843b6e570" category="doc">지원되는 스토리지 시스템 및 애플리케이션</block>
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">NetApp ONTAP용 Amazon FSx 문서</block>
   <block id="6ae4072dd3f83211384c8e5499a7935c" category="paragraph">NetApp ONTAP용 Amazon FSx에 대한 자세한 내용은 를 참조하십시오<block ref="6acd76e3ffef3be13d939109e0593e26" category="inline-link-rx"></block>.</block>
-  <block id="57cb4604cb5a08f7df53f4664acf802c" category="summary">SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 인터넷 정보 서비스\(IIS\)를 구성할 수 있습니다.</block>
   <block id="455df4e09a44d6f772e16ebd873a4ec2" category="paragraph">SnapCenter에 대해 Active Directory 읽기 권한을 설정해야 할 때 사용자 지정 응용 프로그램 풀 계정을 만들도록 Windows Server에서 IIS(인터넷 정보 서비스)를 구성할 수 있습니다.</block>
   <block id="016d07d9df92cf7d931e9cb5c6b411cc" category="list-text">SnapCenter가 설치된 Windows 서버에서 IIS 관리자를 엽니다.</block>
   <block id="dc5a0bd474b3e3add540897a1e445236" category="list-text">왼쪽 탐색 창에서 * 응용 프로그램 풀 * 을 클릭합니다.</block>
@@ -1573,7 +1569,6 @@
   <block id="d02cc6e54205ca08e9e82cac8e1eecfb" category="paragraph">MySQL Server 또는 SnapCenter Server가 다운되어 페일오버가 발생하면 실행 중인 작업이 실패할 수 있습니다. 두 번째 노드로 페일오버한 후 이후의 모든 작업이 성공적으로 실행됩니다.</block>
   <block id="50c8eedc062cfc2a0cdca0c70661c9ab" category="inline-link">SnapCenter를 사용하여 NLB 및 ARR을 구성하는 방법</block>
   <block id="ff8ebcd3db2a0433d94d5787e5eb9e10" category="paragraph">고가용성 구성에 대한 자세한 내용은 을 참조하십시오<block ref="e6066454f6b1da30f834e99c8ec9e27b" category="inline-link-rx"></block>.</block>
-  <block id="8871af3db2b33c68b1e7799897970dbb" category="summary">독립 실행형 구성 또는 NLB(네트워크 로드 밸런싱) 구성에서 SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려면 SSL(Secure Sockets Layer) 인증서 및 키 파일을 생성할 수 있습니다.</block>
   <block id="2c83e33769333482559e227de9729593" category="doc">SnapCenter 서버로 보안 MySQL 연결을 구성합니다</block>
   <block id="073e8e92522cf9a79fe89d146dc9c6e4" category="paragraph">독립 실행형 구성 또는 NLB(네트워크 로드 밸런싱) 구성에서 SnapCenter 서버와 MySQL 서버 간의 통신을 보호하려는 경우 SSL(Secure Sockets Layer) 인증서 및 키 파일을 생성할 수 있습니다.</block>
   <block id="1390fc0f7d66ff5e08d5a27c97798c11" category="section-title">독립 실행형 SnapCenter 서버 구성에 대해 보안 MySQL 연결을 구성합니다</block>
@@ -2394,7 +2389,6 @@
   <block id="5d365fedd8db2449d52b5be4a9205fb5" category="list-text">CleanupSecondaryBackups 매개 변수를 사용하여 보조 백업 수를 정리합니다.</block>
   <block id="0b42d90235dd8ef6ec97a9268c77b113" category="doc">SAP HANA 데이터베이스용 SnapCenter 플러그인이 지원하는 스토리지 유형입니다</block>
   <block id="478593976233dfc3e57256f78404f939" category="paragraph">SnapCenter는 물리적 시스템과 가상 머신(VM) 모두에서 다양한 스토리지 유형을 지원합니다. SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하기 전에 스토리지 유형에 대한 지원을 확인해야 합니다.</block>
-  <block id="d22047afaa5fcff0c93fc9cb30e1d95a" category="summary">리소스\(데이터베이스\) 또는 리소스 그룹의 백업을 생성할 수 있습니다. 백업 워크플로우에는 계획, 백업용 데이터베이스 식별, 백업 정책 관리, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다.</block>
   <block id="4716a9a8179e1e4a85b0d1c8b60a95fc" category="doc">SAP HANA 리소스 백업</block>
   <block id="15fda0d23b806181f091668c1c1e55bf" category="paragraph">리소스(데이터베이스) 또는 리소스 그룹의 백업을 생성할 수 있습니다. 백업 워크플로우에는 계획, 백업용 데이터베이스 식별, 백업 정책 관리, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다.</block>
   <block id="6a9192ab011aeeddc22793310691a1e4" category="image-alt">SAP_HANA 백업 워크플로우</block>
@@ -2513,7 +2507,6 @@
   <block id="349cd6d8e61213a447b8c5adb6059071" category="summary">귀사 환경에 SAP HANA 데이터베이스용 플러그인을 설치하면 SnapCenter를 사용하여 SAP HANA 데이터베이스와 관련 리소스를 백업, 복원 및 클론 복제할 수 있습니다. 이러한 작업을 지원하는 작업을 수행할 수도 있습니다.</block>
   <block id="d7e57286a93aa6e133dea4119815f1e5" category="doc">SAP HANA 데이터베이스용 SnapCenter 플러그인을 사용하여 수행할 수 있는 작업</block>
   <block id="753bcb78018d8547668b0dda3334e5a2" category="list-text">데이터베이스를 추가합니다.</block>
-  <block id="b3623fe28f77f962e4c4478a0a8d7f10" category="summary">백업 스케줄을 결정할 때 가장 중요한 요소는 리소스의 변경 속도입니다. 자주 사용하는 리소스를 매일 한 번씩 백업할 수도 있고, 자주 사용하지 않는 리소스를 하루에 한 번 백업할 수도 있습니다. 기타 요인으로는 조직에 리소스의 중요성, SLA(서비스 수준 계약) 및 RPO(복구 지점 목표)\ 등이 있습니다.</block>
   <block id="ad7dfe5b685c5bec1e4d33b3690802e3" category="doc">SAP HANA 데이터베이스의 백업 일정을 결정할 때 고려할 사항</block>
   <block id="1c5acb0c3b5af90c130534aa5e541208" category="paragraph">백업 스케줄을 결정할 때 가장 중요한 요소는 리소스의 변경 속도입니다. 자주 사용하는 리소스를 매일 한 번씩 백업할 수도 있고, 자주 사용하지 않는 리소스를 하루에 한 번 백업할 수도 있습니다. 기타 요인으로는 조직에 리소스의 중요성, SLA(서비스 수준 계약) 및 RPO(복구 지점 목표)가 있습니다.</block>
   <block id="ee5aad08262d029e0581b7fe9d3a47a4" category="list-text">백업 빈도(백업 수행 빈도)</block>
@@ -2539,7 +2532,6 @@
   <block id="ca008dbe9fac2013096d5e5cf923c44e" category="list-text">시스템 복제 모드의 다중 구간 복제 환경</block>
   <block id="6caa4afe72478c59bf8ac3860bb47274" category="doc">활동 창에서 SAP HANA 데이터베이스의 데이터 보호 작업을 모니터링합니다</block>
   <block id="f18910805a2fa2ea798a785953f19eaf" category="doc">Linux 호스트에서 SnapCenter SAP HANA 플러그인 서비스에 대한 CA 인증서를 구성합니다</block>
-  <block id="a30cbc0a03f03c5c43937ad1f7927038" category="summary">SnapCenter는 자동으로 검색된 SAP HANA 데이터베이스에 대해 볼륨 기반 SnapRestore\(VBSR\), 단일 파일 SnapRestore 및 연결/복사 복원 유형을 지원합니다.</block>
   <block id="956114026450e935573541a200bd51a7" category="doc">자동 검색된 SAP HANA 데이터베이스의 복원 작업 유형</block>
   <block id="cce48356cb2b15c37720771a9ef414c4" category="paragraph">SnapCenter는 자동으로 검색된 SAP HANA 데이터베이스에 대해 VBSR(볼륨 기반 SnapRestore), 단일 파일 SnapRestore 및 연결 및 복사본 복원 유형을 지원합니다.</block>
   <block id="75bb2846113f16e696f05fb74edd409b" category="section-title">VBSR(볼륨 기반 SnapRestore)은 NFS 환경에서 다음 시나리오에 대해 수행됩니다.</block>
@@ -2557,7 +2549,6 @@
   <block id="f808a90cfca6fba9b898b1538139e4db" category="list-text">MDC의 경우, 복원을 위해 선택된 백업이 SnapCenter 4.3에서 수행되고 * Tenant Database * 옵션이 선택된 경우</block>
   <block id="7b18e7982680756715913942984f5be2" category="admonition">복원 범위 페이지에서 * 전체 리소스 *, * 볼륨 복원 * 및 * 테넌트 데이터베이스 * 옵션을 사용할 수 있습니다.</block>
   <block id="515099a9db2d69620b1bbc080fe5200a" category="paragraph">PowerShell cmdlet을 수동으로 사용하거나 스크립트에서 사용하여 백업, 복원 및 클론 작업을 수행할 수도 있습니다. SnapCenter cmdlet 도움말 및 cmdlet 참조 정보에는 PowerShell cmdlet에 대한 자세한 정보가 포함되어 있습니다.</block>
-  <block id="3ae095e6e07d17e8918b6a67b8c784c9" category="summary">백업 작업을 생성하기 전에 백업 전략을 정의하면 리소스를 성공적으로 복원하거나 복제하는 데 필요한 백업을 만들 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)\ 에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="e905ed4042dd0ec46ff540a7c45c6f31" category="doc">SAP HANA 데이터베이스에 대한 백업 전략 정의</block>
   <block id="dae0c1941584d66ccde8deef4940141d" category="paragraph">백업 작업을 생성하기 전에 백업 전략을 정의하면 리소스를 성공적으로 복원하거나 복제하는 데 필요한 백업을 만들 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 주로 결정됩니다.</block>
   <block id="8122a0c069e9fbb65067d3355a80e0fb" category="list-text">데이터베이스의 무결성을 검증할지 여부를 결정합니다.</block>
@@ -2583,7 +2574,6 @@
   <block id="036fef469740fe0c7a8ae6e09ddcb791" category="paragraph">아카이브 로그 관리를 활성화하여 아카이브 로그를 삭제합니다.</block>
   <block id="39fba97fa35b3e2df0e6339cd21abe23" category="paragraph">선택한 정책에 대한 스케줄 구성 섹션에 정책이 나열됩니다.</block>
   <block id="7c221f1777123603eacf6f596630737a" category="paragraph">구성된 스케줄은 * Applied Schedules * 열에 나열됩니다.</block>
-  <block id="b77f43243ff7824de010f233cda7884a" category="summary">SnapCenter에 직접 등록된 SAP HANA 호스트의 경우 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치 또는 업그레이드하면 호스트에서 리소스를 자동으로 검색할 수 있습니다. 플러그인을 설치 또는 업그레이드한 후 플러그인 호스트에 있는 모든 다중 테넌트 데이터베이스 컨테이너 \(MDC\) 리소스에 대해 다른 GUID 형식으로 다른 MDC 리소스가 자동으로 검색되어 SnapCenter에 등록됩니다. 새 리소스가 "잠김" 상태가 됩니다.</block>
   <block id="2d31622eca840c7473dfc8841b0fcd75" category="doc">데이터 보호를 위한 멀티 테넌트 데이터베이스 컨테이너 준비</block>
   <block id="db9199418ff0f829220632ad691b417e" category="paragraph">SnapCenter에 직접 등록된 SAP HANA 호스트의 경우 SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치 또는 업그레이드하면 호스트에서 리소스를 자동으로 검색할 수 있습니다. 플러그인을 설치 또는 업그레이드한 후 플러그인 호스트에 있는 모든 MDC(멀티테넌트 데이터베이스 컨테이너) 리소스에 대해 다른 GUID 형식으로 다른 MDC 리소스가 자동으로 검색되어 SnapCenter에 등록됩니다. 새 자원은 "잠김" 상태가 됩니다.</block>
   <block id="d1cb961e923b4db159abec1766c6b4a9" category="admonition">SnapCenter 4.2 및 이전 버전의 리소스와 연결된 백업은 보존 기간이 만료될 때까지 보존되어야 합니다. 보존 기간이 만료된 후에는 이전 MDC 리소스를 삭제하고 자동으로 검색된 새 MDC 리소스를 계속 관리할 수 있습니다.</block>
@@ -2797,7 +2787,6 @@
   <block id="b22c2155de734c8f0352b9baa1c9d6c6" category="list-text">Monitor(모니터) 페이지 목록에서 특정 작업을 클릭하여 선택합니다.</block>
   <block id="b6c70cefc8ae641c443411b83f6bd49a" category="list-text">모니터 페이지 상단에서 * 보고서 * 를 클릭합니다.</block>
   <block id="faf9e714e1e52c762508824205a93a5a" category="paragraph">보고서에는 선택한 작업에 대한 정보만 표시됩니다. 보고서를 검토하거나 로컬 시스템에 다운로드할 수 있습니다.</block>
-  <block id="742a485520d4686910da365e393bff09" category="summary">호스트를 추가하고 SnapCenter 플러그인 패키지를 설치하고, 검증 서버를 추가하고, 호스트를 제거하고, 백업 작업을 마이그레이션하고, 호스트를 업데이트하여 플러그인 패키지를 업그레이드하거나 새 플러그인 패키지를 추가할 수 있습니다. 사용 중인 플러그인에 따라 디스크 프로비저닝, SMB 공유 관리, 이니시에이터 그룹 관리\(igroup\), iSCSI 세션 관리 및 데이터 마이그레이션도 가능합니다.</block>
   <block id="f4a4e1bbc870f6173a4c9f0b39e55876" category="paragraph">호스트를 추가하고 SnapCenter 플러그인 패키지를 설치하고, 검증 서버를 추가하고, 호스트를 제거하고, 백업 작업을 마이그레이션하고, 호스트를 업데이트하여 플러그인 패키지를 업그레이드하거나 새 플러그인 패키지를 추가할 수 있습니다. 사용 중인 플러그인에 따라 디스크 프로비저닝, SMB 공유 관리, 이니시에이터 그룹(igroup) 관리, iSCSI 세션 관리 및 데이터 마이그레이션도 가능합니다.</block>
   <block id="32fbba6dfc90536fe1616258f0747518" category="cell">이러한 작업을 수행할 수 있습니다...</block>
   <block id="6dd0426cb2899c2798c6a154f738fb9b" category="cell">Microsoft Exchange Server의 경우</block>
@@ -2957,7 +2946,6 @@
   <block id="8342d3d61ba26a5e7490f83cdeae3621" category="paragraph">실행 중인 호스트 및 플러그인의 수입니다. SCSQL 플러그인의 경우 로그 디렉토리와 하이퍼바이저가 구성됩니다.</block>
   <block id="3140e82a0842204045fc8e2f61857dbb" category="paragraph">플러그인 설치\ 제거 중</block>
   <block id="e447dfc12dc0465fe7abb875acc701ec" category="paragraph">플러그인 설치 또는 제거가 진행 중인 호스트의 수입니다.</block>
-  <block id="9bbbd908c36125f841bedc2e6a71693b" category="summary">AD(Active Directory) 신뢰할 수 있는 도메인의 호스트를 관리하는 것 외에도 SnapCenter는 신뢰할 수 없는 여러 AD 도메인의 호스트도 관리합니다. 신뢰할 수 없는 AD 도메인은 SnapCenter 서버에 등록되어 있어야 합니다. SnapCenter는 신뢰할 수 없는 여러 AD 도메인의 사용자 및 그룹을 지원합니다.</block>
   <block id="59d70ce40a9e697537123ee978630105" category="paragraph">AD(Active Directory) 신뢰할 수 있는 도메인의 호스트를 관리하는 것 외에도 SnapCenter는 신뢰할 수 없는 여러 AD 도메인의 호스트도 관리합니다. 신뢰할 수 없는 AD 도메인은 SnapCenter 서버에 등록되어 있어야 합니다. SnapCenter는 신뢰할 수 없는 여러 AD 도메인의 사용자 및 그룹을 지원합니다.</block>
   <block id="526aa9a917f9b353e8479368ebf3d9b1" category="paragraph">도메인 또는 작업 그룹에 있는 컴퓨터에 SnapCenter 서버를 설치할 수 있습니다. SnapCenter 서버를 설치하려면 시스템이 도메인에 있는 경우 도메인 자격 증명을 지정하거나, 컴퓨터가 작업 그룹에 있는 경우 로컬 관리자 자격 증명을 지정해야 합니다.</block>
   <block id="0f820fb58fcccabccee18d0a21cfa2af" category="paragraph">SnapCenter 서버에 등록되지 않은 도메인에 속하는 AD(Active Directory) 그룹은 지원되지 않습니다. 이러한 AD 그룹을 사용하여 SnapCenter 역할을 생성할 수 있지만 SnapCenter 서버에 로그인하는 데 실패하고 다음 오류 메시지가 표시됩니다. 로그인하려는 사용자가 역할에 속하지 않습니다. 관리자에게 문의하십시오.</block>
@@ -3119,7 +3107,6 @@
   <block id="a6a03f085aaa031834153004299da2fc" category="paragraph">백업을 마운트합니다</block>
   <block id="1da1857cca539dd747c6db31168b879b" category="paragraph">백업을 마운트 해제합니다</block>
   <block id="6e9783376d951cfd780e9fdb67a0f02c" category="paragraph">세부 정보 보기</block>
-  <block id="661deaa2ad79f76fbf57f1b17a36c702" category="summary">SnapCenter 왼쪽 탐색 창에서 다양한 대시보드 타일을 보거나 관련 시스템 세부 정보와 함께 표시할 수 있습니다. 대시보드에서 사용 가능한 디스플레이 수는 고정되어 있으며 변경할 수 없습니다. 각 디스플레이 내에서 제공되는 콘텐츠는 역할 기반 액세스 제어\(RBAC\)에 따라 달라집니다.</block>
   <block id="b18f22e2cd7840fe2cc2386acb9d3bf8" category="paragraph">SnapCenter 왼쪽 탐색 창에서 다양한 대시보드 타일을 보거나 관련 시스템 세부 정보와 함께 표시할 수 있습니다. 대시보드에서 사용 가능한 디스플레이 수는 고정되어 있으며 변경할 수 없습니다. 각 디스플레이 내에서 제공되는 콘텐츠는 역할 기반 액세스 제어(RBAC)에 따라 달라집니다.</block>
   <block id="018700eef5386a0cf792953b0d656365" category="list-text">추가 정보를 얻으려면 각 디스플레이의 활성 영역을 클릭합니다.</block>
   <block id="02014e1d58ea0ff61c8657ffa8e76bd7" category="paragraph">예를 들어, * 작업 * 에서 도넛형 차트를 클릭하면 선택에 대한 자세한 정보가 모니터 페이지로 리디렉션됩니다. 보호 요약 * 에서 도넛형 차트를 클릭하면 보고서 페이지로 리디렉션되어 선택 사항에 대한 자세한 정보를 볼 수 있습니다.</block>
@@ -3157,7 +3144,6 @@
   <block id="faa0310fc3df6f9869f6dc9e0bb9d44d" category="paragraph">MySQL 서버 리포지토리 데이터베이스 암호는 SnapCenter 4.2에서 SnapCenter 서버를 설치하는 동안 자동으로 생성됩니다. SnapCenter 사용자는 이 자동 생성된 암호를 언제든지 알 수 없습니다. 리포지토리 데이터베이스에 액세스하려면 암호를 재설정해야 합니다.</block>
   <block id="b34c04c23047012dce89ab9b0f667d6f" category="paragraph">비밀번호를 재설정하려면 SnapCenter 관리자 권한이 있어야 합니다.</block>
   <block id="e340c193c1f0abe76ae4f936229af71d" category="paragraph">다음 명령을 실행하면 리포지토리 암호가 재설정됩니다.</block>
-  <block id="3a3be0733cfa37aa5b2c3451b35cd9f3" category="summary">PowerShell cmdlet을 사용하여 EMS(Event Management System) 데이터 수집을 예약하고 관리할 수 있습니다. EMS 데이터 수집에는 SnapCenter 서버, 설치된 SnapCenter 플러그인 패키지, 호스트 및 이와 유사한 정보에 대한 세부 정보를 수집한 다음 지정된 ONTAP 스토리지 가상 시스템\(SVM\)으로 전송하는 작업이 포함됩니다.</block>
   <block id="f3d27d54305040136fecebe4c18cadc3" category="paragraph">PowerShell cmdlet을 사용하여 EMS(Event Management System) 데이터 수집을 예약하고 관리할 수 있습니다. EMS 데이터 수집에는 SnapCenter 서버, 설치된 SnapCenter 플러그인 패키지, 호스트 및 이와 유사한 정보에 대한 세부 정보를 수집한 다음 지정된 SVM(ONTAP Storage Virtual Machine)으로 전송하는 작업이 포함됩니다.</block>
   <block id="3c34d42e74b6213595e7d0230e7bb1dc" category="admonition">데이터 수집 작업이 진행 중인 경우 시스템 CPU 사용률이 높습니다. 데이터 크기와 관계없이 작업이 진행되는 동안에는 CPU 사용률이 계속 높습니다.</block>
   <block id="8d3511cf036c12acd5f18af37375b613" category="section-title">EMS 데이터 수집을 중지합니다</block>
@@ -3211,7 +3197,6 @@
   <block id="c48d82f0b1e5949ce3d34dc8ac74b4b5" category="paragraph">SQL Server 시스템 데이터베이스 확인은 지원되지 않습니다. SnapCenter는 데이터베이스를 복제하여 검증 작업을 수행합니다. SnapCenter는 SQL Server 시스템 데이터베이스를 복제할 수 없으므로 이러한 데이터베이스를 확인할 수 없습니다.</block>
   <block id="c27ceb4a4892c429a975a62841762540" category="list-text">백업 작업 및 클론 작업 예약</block>
   <block id="aa71cd3a5a90a32aafb3072b19a68b09" category="list-text">백업 작업, 복원 작업 및 클론 작업을 모니터링합니다</block>
-  <block id="f2b64e9f01b196d10f0f2aa40fc2203e" category="summary">필요한 백업 작업 수를 결정하는 요인에는 데이터베이스 크기, 사용된 볼륨 수, 데이터베이스 변경 속도 및 SLA(서비스 수준 계약)\ 등이 있습니다.</block>
   <block id="99fb5ff09a4f066b4ab553406e478671" category="paragraph">필요한 백업 작업 수를 결정하는 요인에는 데이터베이스 크기, 사용된 볼륨 수, 데이터베이스 변경 속도 및 SLA(서비스 수준 계약)가 포함됩니다.</block>
   <block id="44567489037e9457257d3790f8cb3ccd" category="paragraph">데이터베이스 백업의 경우 일반적으로 선택한 백업 작업 수는 데이터베이스를 배치한 볼륨의 수에 따라 달라집니다. 예를 들어, 한 볼륨에 작은 데이터베이스 그룹을 배치하고 다른 볼륨에 큰 데이터베이스를 배치한 경우 작은 데이터베이스에 대해 하나의 백업 작업을 생성하고 큰 데이터베이스에 대해 하나의 백업 작업을 만들 수 있습니다.</block>
   <block id="f74dbba68e937810c60f2ff30516a3c7" category="summary">SnapCenter를 사용하여 SQL Server 데이터베이스 백업을 복제할 수 있습니다. 이전 버전의 데이터에 액세스하거나 복원하려는 경우 필요에 따라 데이터베이스 백업을 클론 복제할 수 있습니다.</block>
@@ -3262,7 +3247,6 @@
   <block id="67b9087c700b41bfc960610e03f7b788" category="paragraph">SnapCenter 플러그인을 설치할 시스템에 도메인 관리자를 지정합니다. 사용자 이름 필드에 유효한 형식은 다음과 같습니다.</block>
   <block id="b69ed1001f49162c486a751163953a80" category="paragraph">사용할 인증 모드를 선택합니다. SQL 인증 모드를 선택하는 경우 SQL 서버 인스턴스와 SQL 인스턴스가 있는 호스트도 지정해야 합니다.</block>
   <block id="11dc6d5147b38aacb94d18c088856bed" category="doc">PowerShell cmdlet을 사용하여 보조 백업 수를 정리합니다</block>
-  <block id="5abc04a0058572b3476c739ab8f716ae" category="summary">Microsoft SQL Server용 SnapCenter 플러그인은 SQL Server 2012 이상에서 검색, 고가용성을 위한 Asymmetric LUN Mapping\(ALM\) 구성, 재해 복구를 위한 가용성 그룹을 지원합니다. 리소스를 검색할 때 SnapCenter는 로컬 호스트와 ALM 구성의 원격 호스트에서 데이터베이스를 검색합니다.</block>
   <block id="142782e834c9014d923c3a1905a8dcdc" category="doc">Windows 클러스터에서 비대칭 LUN 매핑 지원</block>
   <block id="2bf8e92ae2c79563e9a8c5f6c833c5a6" category="paragraph">Microsoft SQL Server용 SnapCenter 플러그인은 SQL Server 2012 이상에서 검색, 고가용성을 위한 Asymmetric LUN Mapping(ALM) 구성, 재해 복구를 위한 가용성 그룹을 지원합니다. 리소스를 검색할 때 SnapCenter는 로컬 호스트와 ALM 구성의 원격 호스트에서 데이터베이스를 검색합니다.</block>
   <block id="918162f12ad57f4382a7a53bb6d775b3" category="paragraph">ALM 구성은 운영 데이터 센터에 하나 이상의 노드와 재해 복구 센터에 하나 이상의 노드를 포함하는 단일 Windows 서버 장애 조치 클러스터입니다.</block>
@@ -3272,7 +3256,6 @@
   <block id="047292a89758275d763e235a846b8712" category="paragraph">운영 데이터 센터의 스토리지는 운영 데이터 센터에 있는 FCI 노드 간에 공유됩니다. 재해 복구 데이터 센터의 스토리지는 재해 복구 데이터 센터에 있는 FCI 노드 간에 공유됩니다.</block>
   <block id="7d6c564058645b974e7a066a328c9765" category="paragraph">운영 데이터 센터의 스토리지는 재해 복구 데이터 센터의 노드에 표시되지 않으며 그 반대의 경우도 마찬가지입니다.</block>
   <block id="19f41a1b89c8c0b2bc4c7041effadc74" category="paragraph">ALM 아키텍처는 FCI에서 사용하는 두 개의 공유 스토리지 솔루션과 SQL AG에서 사용하는 비공유 또는 전용 스토리지 솔루션을 결합합니다. AG 솔루션은 데이터 센터 전체에서 공유 디스크 리소스에 동일한 드라이브 문자를 사용합니다. WSFC 내의 노드 하위 집합 간에 클러스터 디스크를 공유하는 이러한 스토리지 배열을 ALM이라고 합니다.</block>
-  <block id="4311a9aa7335c4d3eaea1abc109915e9" category="summary">Microsoft Windows용 SnapCenter 플러그인을 사용하여 NetApp 스토리지 시스템을 프로비저닝한 후에는 SnapCenter 그래픽 사용자 인터페이스(GUI\) 또는 PowerShell cmdlet을 사용하여 리소스를 NetApp 스토리지 시스템이나 NetApp LUN 간에 마이그레이션할 수 있습니다.</block>
   <block id="1da241185bd7824666c55b0362d4f620" category="doc">리소스를 NetApp 스토리지 시스템으로 마이그레이션</block>
   <block id="7decf653e0973f5dd345fc4a5bb45ec4" category="paragraph">Microsoft Windows용 SnapCenter 플러그인을 사용하여 NetApp 스토리지 시스템을 프로비저닝한 후에는 SnapCenter 그래픽 사용자 인터페이스(GUI) 또는 PowerShell cmdlet을 사용하여 리소스를 NetApp 스토리지 시스템이나 NetApp LUN 간에 마이그레이션할 수 있습니다.</block>
   <block id="8de8d289eda0eddeff6c55dee5eaa498" category="list-text">SnapCenter 서버에 스토리지 시스템을 추가해야 합니다.</block>
@@ -3427,7 +3410,6 @@
   <block id="6924edabeae66398839af50da876447a" category="inline-link-macro">PowerShell cmdlet을 사용하여 리소스 복원 및 복구</block>
   <block id="86cc84259391356d6bc58883c4b14046" category="inline-link-macro">보조 스토리지에서 SQL Server 데이터베이스를 복구합니다</block>
   <block id="69bb12bd720ba41593c0fadfa768b82e" category="paragraph"><block ref="69bb12bd720ba41593c0fadfa768b82e" category="inline-link-macro-rx"></block></block>
-  <block id="9660edb91fac8702aaa8095506c95490" category="summary">백업 작업을 생성하기 전에 백업 전략을 정의하면 데이터베이스를 성공적으로 복원하거나 복제하는 데 필요한 백업이 있는지 확인할 수 있습니다. 서비스 수준 계약\(SLA\), 복구 시간 목표\(RTO\) 및 복구 시점 목표\(RPO\)에 따라 백업 전략이 크게 결정됩니다.</block>
   <block id="e5b60957c4b0bca31d0e2fd06deba46c" category="doc">SQL Server 리소스에 대한 백업 전략을 정의합니다</block>
   <block id="57fbd1379ab3804c06f6e72d479b21a7" category="paragraph">백업 작업을 생성하기 전에 백업 전략을 정의하면 데이터베이스를 성공적으로 복원하거나 복제하는 데 필요한 백업이 있는지 확인할 수 있습니다. SLA(서비스 수준 계약), RTO(복구 시간 목표) 및 RPO(복구 시점 목표)에 따라 백업 전략이 크게 결정됩니다.</block>
   <block id="973f2cfe0dd46d88f8d7508fa939a288" category="summary">SnapCenter를 사용하여 SQL Server 리소스를 백업하기 전에 리소스 또는 리소스 그룹에 대한 백업 정책을 만들거나 리소스 그룹을 만들거나 단일 리소스를 백업할 때 백업 정책을 만들 수 있습니다.</block>
@@ -3515,7 +3497,6 @@
   <block id="1d3ff9161bd935afda9c159ee83f701a" category="list-text">%temp% 디렉터리를 모니터링하여 msiexe.exe 설치 프로그램이 오류 없이 소프트웨어를 설치하고 있는지 확인합니다.</block>
   <block id="341266b7169d2c0293fcd15ceda7d923" category="admonition">SQL Server용 플러그인을 설치하면 SnapCenter 서버가 아닌 호스트에 플러그인이 등록됩니다. SnapCenter GUI 또는 PowerShell cmdlet을 사용하여 호스트를 추가하여 SnapCenter 서버에 플러그인을 등록할 수 있습니다. 호스트가 추가되면 플러그인이 자동으로 검색됩니다.</block>
   <block id="1f0f35e19b43f8181a2be6a16920577f" category="doc">SQL Server용 플러그인 설치 상태를 모니터링합니다</block>
-  <block id="0a5070b538c653ac59aaa80bcbf05055" category="summary">보조 스토리지 시스템의 물리적 LUN\(RDM, iSCSI 또는 FCP\)에서 백업된 SQL Server 데이터베이스를 복원할 수 있습니다. 복구 기능은 보조 스토리지 시스템에 상주하는 지정된 SQL Server 백업에서 지정된 데이터베이스로 모든 데이터와 로그 페이지를 복사하는 다중 위상 프로세스입니다.</block>
   <block id="322e2c0228e3fa3086aa2d2caa7e24ad" category="paragraph">보조 스토리지 시스템의 물리적 LUN(RDM, iSCSI 또는 FCP)에서 백업된 SQL Server 데이터베이스를 복원할 수 있습니다. 복구 기능은 보조 스토리지 시스템에 상주하는 지정된 SQL Server 백업에서 지정된 데이터베이스로 모든 데이터와 로그 페이지를 복사하는 다중 위상 프로세스입니다.</block>
   <block id="e1573e93dec4a09a53c7948b08bea942" category="list-text">SnapCenter 서버와 플러그인 호스트가 보조 스토리지 시스템에 접속할 수 있는지 확인해야 합니다.</block>
   <block id="48d655df40608a314f5332ec2869cbed" category="list-text">복원 마법사 페이지의 대부분의 필드는 기본 복원 프로세스에 설명되어 있습니다. 다음 정보는 지침이 필요한 일부 필드에 대해 설명합니다.</block>
@@ -3589,7 +3570,6 @@
   <block id="3886123ab212d4db926aac7f7fc924c0" category="doc">검증 작업을 예약하는 시기</block>
   <block id="697bc0ecd4b925fb05263cb0e73eb0c1" category="paragraph">이와 같은 이유로 백업을 수행할 때마다 백업 검증을 실행할 필요는 없습니다. 일반적으로 정기적인 확인 작업을 수행하지만 간격이 짧아 백업의 무결성을 보장할 수 있습니다. 단일 검증 작업으로 여러 백업을 동시에 확인할 수 있습니다.</block>
   <block id="962df1822db6404545e093c4f6870a0b" category="doc">작업 창에서 SQL 리소스에 대한 데이터 보호 작업을 모니터링합니다</block>
-  <block id="3f62b0eaf385764495dac5125b982527" category="summary">백업 빈도 \(스케줄 유형\)는 정책에 지정되고 백업 스케줄은 리소스 그룹 구성에 지정됩니다.</block>
   <block id="2e014a97aaa75a1779bc262286731365" category="summary">호스트를 추가하고 플러그인 패키지를 설치하기 전에 모든 요구 사항을 완료해야 합니다.</block>
   <block id="f9ba38b961aca7823da15b938828b64f" category="doc">사전 요구 사항 - 호스트를 추가하고 Microsoft SQL Server용 SnapCenter 플러그인을 설치합니다</block>
   <block id="061b9167e88f686d39fa02000809052c" category="list-text">원격 호스트에 대한 로컬 로그인 권한이 있는 로컬 관리자 권한이 있는 사용자가 있어야 합니다.</block>
@@ -3702,7 +3682,6 @@
   <block id="d687c5d710656984c3ed7b21d450d2bc" category="list-text">필요한 경우 하위 디렉토리를 선택합니다.</block>
   <block id="f12114bdb8ab18be62b5bcb364a98685" category="paragraph">사전 검사 건너뛰기 * 확인란을 선택하지 않은 경우 호스트가 플러그인 설치 요구사항을 충족하는지 여부를 확인합니다. 디스크 공간, RAM, PowerShell 버전, .NET 버전, 위치(Windows 플러그인의 경우) 및 Java 버전(Linux 플러그인의 경우)은 최소 요구 사항에 따라 검증됩니다. 최소 요구 사항이 충족되지 않으면 적절한 오류 또는 경고 메시지가 표시됩니다.</block>
   <block id="230797cd257f4279279a678587ed7d3e" category="summary">SQL Server 데이터베이스를 보호하려면 Microsoft SQL Server용 SnapCenter 플러그인을 설치하고 설정해야 합니다.</block>
-  <block id="51d95bab000b8bd5e8f9d83c3f25d453" category="summary">다시 시딩은 Availability Group\(AG\) 데이터베이스를 복원하는 옵션입니다. 보조 데이터베이스가 AG의 기본 데이터베이스와 동기화되지 않으면 보조 데이터베이스를 다시 시드할 수 있습니다.</block>
   <block id="951ead00aca07936d7cbe2d0eaf3bdde" category="doc">가용성 그룹 데이터베이스를 다시 시딩합니다</block>
   <block id="86c8bce86a1532578679c840db2996d0" category="paragraph">다시 시딩은 AG(Availability Group) 데이터베이스를 복원하는 옵션입니다. 보조 데이터베이스가 AG의 기본 데이터베이스와 동기화되지 않으면 보조 데이터베이스를 다시 시드할 수 있습니다.</block>
   <block id="a696411e9de03074c6ebc8b32b1cb1c3" category="list-text">복원할 보조 AG 데이터베이스의 백업을 만들어야 합니다.</block>
@@ -3712,7 +3691,6 @@
   <block id="d90bcf666eab98cd3ab6df5a371461d0" category="list-text">SQL 가용성 그룹 데이터베이스에서 다시 시딩된 작업을 실행하는 동안 해당 가용성 그룹 데이터베이스의 복제본 데이터베이스에서 로그 백업을 트리거하지 않아야 합니다. 다시 시딩된 작업 중에 로그 백업을 트리거하면 미러 데이터베이스, "database_name"에 트랜잭션 로그 데이터가 부족하여 기본 데이터베이스 오류 메시지의 로그 백업 체인을 보존할 수 없습니다.</block>
   <block id="2a469b63ef1458d6f0c779e8b21fb6d6" category="list-text">목록에서 Secondary AG 데이터베이스를 선택합니다.</block>
   <block id="a952ded3652ff67c9b0646a79093d02d" category="list-text">다시 시딩된 * 을 클릭합니다.</block>
-  <block id="bfa8c341f9069cab983b83a7b3d6e229" category="summary">백업 정책에 백업당 최대 데이터베이스 수 설정 옵션이 있기 때문에 모든 데이터베이스를 동일한 볼륨에 둘 수 있습니다\(기본값은 100\).</block>
   <block id="49d3d638c72a43de1071ccafc35ba79d" category="doc">동일한 볼륨에 여러 개의 데이터베이스가 있습니다</block>
   <block id="4e23a71c353d487c1b39814259994b97" category="paragraph">백업 정책에 백업당 최대 데이터베이스(기본값: 100)를 설정하는 옵션이 있으므로 모든 데이터베이스를 동일한 볼륨에 배치할 수 있습니다.</block>
   <block id="2e80c4cfa5c04ee6722df6b343b1b1df" category="summary">리소스는 설치한 플러그인에서 유지 관리하는 데이터베이스, 애플리케이션 인스턴스, 가용성 그룹 및 유사한 구성 요소입니다. 이러한 리소스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있지만 먼저 사용 가능한 리소스를 확인해야 합니다. 사용 가능한 리소스를 확인하면 플러그인 설치가 성공적으로 완료되었는지 확인할 수도 있습니다.</block>
@@ -3859,7 +3837,6 @@
   <block id="a73e123f3d1ee7d2db965a0784590cd9" category="list-text">SnapCenter 플러그인 로더 서비스를 다시 시작합니다.</block>
   <block id="720f2f026c6bddcf31ae0284bddbdc19" category="list-text">SnapCenter 플러그인 로더 서비스의 상태를 찾습니다.</block>
   <block id="8b0b2a1839f41290933219798e6b836c" category="list-text">SnapCenter 플러그인 로더 서비스에서 변경 사항을 찾습니다.</block>
-  <block id="bc9f89729bc570541b5b790a7dc8c706" category="summary">컨테이너 데이터베이스 \(CDB\)의 다른 PDB에 영향을 주지 않고 손상되거나 삭제된 플러그형 데이터베이스(PDB)를 복원 및 복구할 수 있습니다. SnapCenter는 RMAN을 사용하여 PDB의 시점 복구\(PITR\)를 수행합니다.</block>
   <block id="d1af1ec910f75c39d71a8c724311cf70" category="doc">시점 복구를 사용하여 플러그형 데이터베이스를 복원 및 복구합니다</block>
   <block id="67c0f00b8c6868021a12f861ec356775" category="paragraph">컨테이너 데이터베이스(CDB)의 다른 PDB에 영향을 주지 않고 손상되거나 삭제된 플러그형 데이터베이스(PDB)를 복원 및 복구할 수 있습니다. SnapCenter는 RMAN을 사용하여 PDB의 시점 복구(PITR)를 수행합니다.</block>
   <block id="cf87c94d6f7bf124321d0c9faae55611" category="paragraph">PDB의 PITR을 수행하는 데 필요한 백업은 카탈로그로 작성되어 마운트되어야 합니다.</block>
@@ -4263,7 +4240,6 @@
   <block id="9e2e9c4d3a7b699f2c9da7b1c1f252d5" category="list-text">*, * 는 동일한 DB에 대한 변수 세트를 구분하는 데 사용됩니다.</block>
   <block id="087342b75abe5b9e56fe1ef5c1366716" category="paragraph">예: -NFSB32@벅:/vol/scspr24178002_nfs_cdb_NFSB32_data/RG2_scsprspr2417819002_07_07-21-2021-2021_02.28.28.28.26.3973_0, duck: /vol/scsprec17819002_sprecdl_n22.1727.21_sprdl_sprdcdb_22.1722.1722.07_27.21_sCDB_ndl_s2021_sCDB_ndl_sprdl_22.1722.1722.1722.1722.1722.17228002_ndl_sCDB_sCDB_228002_sCDB_228228002_sCDB_sCDB_228002_228002_s20127.21_27.07_27.07_s</block>
   <block id="1050096e44a58e2821f26dd18bc8cb6a" category="doc">Oracle용 플러그인을 위한 SnapMirror 및 SnapVault 복제를 위한 스토리지 시스템을 준비합니다</block>
-  <block id="156cbb91cfb42345ea9b28c562e803a7" category="summary">SnapCenter를 사용하여 복제된 플러그형 데이터베이스 \(PDB\)를 분할할 수 있습니다.</block>
   <block id="b50ed45fe1d5aaeff11017e2203d685b" category="doc">플러그형 데이터베이스의 클론 분할</block>
   <block id="9a74e4c2ef4e109873578f5a78083805" category="paragraph">SnapCenter를 사용하여 복제된 PDB(플러그형 데이터베이스)를 분할할 수 있습니다.</block>
   <block id="0841514f865605a705539d269e140769" category="paragraph">PDB가 복제되는 대상 CDB의 백업을 생성한 경우 PDB 클론을 분할하면 복제된 PDB가 복제된 PDB가 포함된 대상 CDB의 모든 백업에서도 제거됩니다.</block>
@@ -4357,7 +4333,6 @@
   <block id="e95dac079d72024a03ab8fa0c2ea648e" category="list-text"><block ref="e95dac079d72024a03ab8fa0c2ea648e" category="inline-link-rx"></block></block>
   <block id="887a94b88296090c9ed503329c0a82e9" category="inline-link">AIX 시스템의 백업, 복원 및 클론 작업에 대한 사용자 정의 가능한 매개 변수</block>
   <block id="802c82c89baa4a09096a77864bb21fb2" category="list-text"><block ref="802c82c89baa4a09096a77864bb21fb2" category="inline-link-rx"></block></block>
-  <block id="5693ae4d41ff0830c7c00315e2ae426a" category="summary">동일한 호스트 또는 대체 호스트에서 플러깅 지원 데이터베이스\(PDB\)를 다른 또는 동일한 타겟 CDB에 복제할 수 있습니다. 복제된 PDB를 원하는 SCN 또는 날짜 및 시간으로 복구할 수도 있습니다.</block>
   <block id="af08b442b0b361aeb7e4883e0548f1ae" category="doc">플러그형 데이터베이스의 클론 복제</block>
   <block id="6e260ee0dad45211233ec0b4fb423c40" category="paragraph">PDB(Pluggable Database)를 동일한 호스트 또는 대체 호스트의 다른 또는 동일한 타겟 CDB에 복제할 수 있습니다. 복제된 PDB를 원하는 SCN 또는 날짜 및 시간으로 복구할 수도 있습니다.</block>
   <block id="7afa5f09a2ec0408c252721ee88ca240" category="list-text">데이터베이스 세부 정보 보기 또는 리소스 그룹 세부 정보 보기에서 단일 인스턴스 유형(멀티 테넌트) 데이터베이스를 선택합니다.</block>
@@ -5015,7 +4990,6 @@
   <block id="8aad6e1ddba0855250f3f027cd30ba41" category="list-text">확인 페이지에서 다음 단계를 수행하십시오.</block>
   <block id="2d0d1cdeb8c760b28d11615aff6003aa" category="list-text">검증 작업을 수행할 백업 스케줄을 선택합니다.</block>
   <block id="c39a298df9363c7b37b55cb7e69e08d6" category="list-text">검증 스크립트 명령 섹션에서 검증 작업 전후에 실행할 처방인 또는 PS의 경로와 인수를 각각 입력합니다.</block>
-  <block id="cad5c11b4fef48d75eb3db98fb343e1b" category="summary">데이터베이스의 다른 테이블스페이스에 영향을 주지 않고 손상되거나 삭제된 테이블스페이스의 하위 집합을 복원할 수 있습니다. SnapCenter는 RMAN을 사용하여 테이블스페이스의 시점 복구\(PITR\)를 수행합니다.</block>
   <block id="40114ba0156baf553fcde8f3a74bb20d" category="doc">시점 복구를 사용하여 테이블스페이스를 복구 및 복구합니다</block>
   <block id="4291e94658d31afa6cbfc0020f3c2c2f" category="paragraph">데이터베이스의 다른 테이블스페이스에 영향을 주지 않고 손상되거나 삭제된 테이블스페이스의 하위 집합을 복원할 수 있습니다. SnapCenter는 RMAN을 사용하여 테이블스페이스의 시점 복구(PITR)를 수행합니다.</block>
   <block id="aaa6df61815d51b26effc01d2a2c2ed9" category="paragraph">테이블스페이스의 PITR을 수행하는 데 필요한 백업은 카탈로그로 작성되어 마운트되어야 합니다.</block>
@@ -5023,7 +4997,6 @@
   <block id="d292260077ec308bc8846f15db8984aa" category="paragraph">ASM, NFS 및 SAN 환경에 상주하는 여러 테이블스페이스를 선택하고 복구할 수 있습니다. 예를 들어 테이블스페이스 TS2 및 TS3가 NFS에 상주하고 TS4가 SAN에 상주하는 경우 단일 PITR 작업을 수행하여 모든 테이블스페이스를 복원할 수 있습니다.</block>
   <block id="382cdda6e690bf1f356fe8262a77acad" category="list-text">Tablespaces * 를 선택한 다음 복원할 테이블스페이스를 지정합니다.</block>
   <block id="885cd4474b28773615b3d0698f1c9dc2" category="doc">Oracle 데이터베이스 복원 작업을 취소합니다</block>
-  <block id="8b6b14f8ee2bef8618a7a68823627672" category="summary">더 이상 필요하지 않은 경우 플러그형 데이터베이스\(PDB\)의 클론을 삭제할 수 있습니다.</block>
   <block id="91f3b991ab625c1db5dde23278dea1c2" category="doc">플러그형 데이터베이스의 클론을 삭제합니다</block>
   <block id="3883545e9f031c735dbdc8f40c3853a6" category="paragraph">더 이상 필요하지 않은 경우 플러그형 데이터베이스(PDB)의 클론을 삭제할 수 있습니다.</block>
   <block id="9b7e4959127de26d75609e3142e4d19c" category="paragraph">PDB가 복제되는 대상 CDB의 백업을 생성한 경우 PDB 클론을 삭제하면 복제된 PDB도 대상 CDB 백업에서 제거됩니다.</block>
@@ -6456,7 +6429,6 @@
   <block id="f5c37d824040662f50cbb8a32d77182d" category="list-text">ONTAP FAS, AFF 또는 ASA 기본 시스템에 있고 Cloud Volumes ONTAP에 복제된 데이터입니다</block>
   <block id="42324a0900df941e87541a0b972b834f" category="admonition">호스트가 이미 작업 그룹에 속해 있고 다른 도메인으로 변경되었거나 그 반대로 변경된 경우 SnapCenter는 동일한 호스트(플러그인 호스트)를 SnapCenter에 추가할 수 없습니다.
 동일한 호스트를 추가하려면 SnapCenter에서 호스트를 제거하고 다시 추가해야 합니다.</block>
-  <block id="be2aa64f1b64fb075f7467ccc849a45f" category="summary">SnapCenter의 왼쪽 탐색 창에서 대시보드에서 최근 작업 활동, 경고, 보호 요약, 스토리지 효율성 및 사용, SnapCenter 작업 상태\(백업, 클론, 복원\), 독립 실행형 및 Windows 클러스터 호스트의 구성 상태 등을 한눈에 파악할 수 있습니다. SnapCenter에서 관리하는 SVM(스토리지 가상 머신) 수 및 라이센스 용량</block>
   <block id="9e7f34933c1af065309071fd01a6cf3e" category="summary">CA 인증서를 UNIX 플러그인 호스트로 가져와야 합니다.</block>
   <block id="cd4c2aff8d03392b1feec1e4027d56c6" category="doc">CA 인증서를 UNIX 플러그인 호스트로 가져옵니다</block>
   <block id="4fb85b60b1716c8666aada43c544f696" category="list-text">SPL 키 저장소의 암호 및 사용 중인 CA 서명 키 쌍의 별칭을 관리할 수 있습니다.</block>
@@ -7401,7 +7373,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="ad040426d6a404a4c17cacc91a28049d" category="list-text">리소스 페이지에서 * 스냅샷 복사본의 사용자 지정 이름 형식 * 확인란을 선택한 다음 스냅샷 이름에 사용할 사용자 지정 이름 형식을 입력합니다.</block>
   <block id="99eb5243897677d4ecbe85a62d686e8c" category="paragraph">예를 들어 customtext_policy_hostname 또는 resource_hostname을 입력합니다. 기본적으로 타임스탬프는 스냅샷 이름에 추가됩니다.</block>
   <block id="1dc16d578df13bb68e843ba44a6ec58e" category="list-text">스냅샷을 미러 또는 볼트에 복제하는 경우, SnapCenter 관리자는 소스 볼륨과 타겟 볼륨 모두에 대해 SVM(스토리지 가상 머신)을 할당해야 합니다.</block>
-  <block id="0bfdfbd1ef58fc826a8deec759820453" category="summary">SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이터베이스를 백업하려면 데이터베이스, SQL Server 인스턴스 및 Availability Groups\(AG\)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 기술은 리소스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성하는 데 사용됩니다.</block>
   <block id="b4d3eba987f9528647b8ea2102ac055f" category="paragraph">SnapCenter를 사용하여 SQL Server 시스템 및 사용자 데이터베이스를 백업하려면 데이터베이스, SQL Server 인스턴스 및 AG(가용성 그룹)와 같은 리소스 유형을 선택해야 합니다. 스냅샷 기술은 리소스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성하는 데 사용됩니다.</block>
   <block id="37467ff0195d6765df22bdc34e035d04" category="list-text">미러 또는 소산 2차 스토리지에 스냅샷을 복제하는 경우, SnapCenter 관리자가 소스 볼륨과 타겟 볼륨 모두에 대해 SVM을 할당해야 합니다.</block>
   <block id="1635764350a12c1ff0349008881e57dd" category="paragraph">스냅샷 잠금 기간</block>
@@ -7773,7 +7744,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="a22f4a66e3c8c5cfcb28db540b3b53cd" category="list-text">소스 IBM DB2 서버에서 클론을 생성할 수 있습니다.</block>
   <block id="62efa2c3113bfa21f93723855cb62c9a" category="doc">Linux 호스트에서 SnapCenter IBM DB2 플러그인 서비스에 대한 CA 인증서를 구성합니다</block>
   <block id="a601121a2919d3d268279f81d4b8569b" category="doc">Windows 호스트에서 SnapCenter IBM DB2 플러그인 서비스에 대한 CA 인증서를 구성합니다</block>
-  <block id="257f5cefc00605ee767b1d8dcdf64b40" category="summary">Windows Server 2016 이상을 사용하면 관리되는 도메인 계정에서 자동화된 서비스 계정 암호 관리를 제공하는 그룹 GMSA\(Managed Service Account)를 만들 수 있습니다.</block>
   <block id="4f96a9b27e2a438e2024bd3f65ccc8ee" category="doc">Windows Server 2016 이상에서 GMSA를 구성합니다</block>
   <block id="938d7b512488434ede64cfdba5004463" category="doc">IBM DB2에 대한 백업 스케줄을 결정할 때 고려해야 할 사항</block>
   <block id="cbdb153ba57beb687294d7e8f31412e0" category="list-text">백업 일정(백업을 수행할 정확한 시기)</block>
@@ -7888,7 +7858,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="6426213ce16798143b0b51f16c7f4f53" category="doc">IBM DB2용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다</block>
   <block id="571cf05bca5a2c1b66a39de8869e3134" category="summary">백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 IBM DB2 데이터베이스에 대해 스냅샷 복제 기반 백업 유형을 지원합니다.</block>
   <block id="ecea86165f916243bd9672803822610e" category="paragraph">스냅샷 복사본 기반 백업은 NetApp 스냅샷 기술을 활용하여 IBM DB2 데이터베이스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 만듭니다.</block>
-  <block id="d817348208f0f5e278b5ac5470a4a74f" category="summary">SnapCenter는 자동으로 검색된 IBM DB2 데이터베이스에 대해 볼륨 기반 SnapRestore\(VBSR\), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.</block>
   <block id="ff70e08b6b702c923422d7ca798d9a2e" category="doc">자동 검색된 IBM DB2에 대한 복구 작업 유형</block>
   <block id="a9df86e6e8deee9da3968ec6a96fafbf" category="paragraph">IBM DB2용 SnapCenter 플러그인은 단일 파일 SnapRestore 및 자동으로 검색된 IBM DB2 데이터베이스에 대한 연결 및 복제 복구 유형을 지원합니다.</block>
   <block id="eae5ed0cbf5698a140c9fd9f085c45e1" category="list-text">Complete Resource * 옵션만 선택한 경우</block>
@@ -8015,7 +7984,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="a8e3ba965f3e160532b9d3ee582e1c53" category="doc">MySQL용 SnapCenter 플러그인에서 지원하는 스토리지 유형</block>
   <block id="b0690f2baf30cb16cc28a09328493965" category="summary">백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 MySQL 데이터베이스를 위해 스냅샷 복사본 기반 백업 유형을 지원합니다.</block>
   <block id="f0bd8176fa3b88ee04e0a3ecd7db9fb1" category="paragraph">스냅샷 복사본 기반 백업은 NetApp 스냅샷 기술을 활용하여 MySQL 데이터베이스가 상주하는 볼륨의 읽기 전용 온라인 복사본을 생성합니다.</block>
-  <block id="3c59e4c3c47881e0ac6d8dc552ae7982" category="summary">SnapCenter는 VBSR\(볼륨 기반 SnapRestore\), Single File SnapRestore, 자동으로 검색된 MySQL 데이터베이스에 대해 연결 및 복사 복원 유형을 지원합니다.</block>
   <block id="ada7dc28b5c70bef4ecf0c92798d1e43" category="doc">자동 검색된 MySQL의 복원 작업 유형</block>
   <block id="f3618459f99706822a34e8d3bb0c9b62" category="paragraph">MySQL용 SnapCenter 플러그인은 Single File SnapRestore 및 자동으로 검색된 MySQL 데이터베이스에 대한 연결 및 복사 복원 유형을 지원합니다.</block>
   <block id="d2b2218abe2cb24dc79aa582f2130db3" category="summary">SnapCenter를 사용하여 복원 작업을 성공적으로 수행하려면 먼저 전략을 정의해야 합니다. 자동으로 검색된 MySQL 데이터베이스에 대한 복원 전략에는 두 가지 유형이 있습니다.</block>
@@ -8146,7 +8114,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="8df8e33d8de2d6167669d469ccf7bacd" category="summary">리소스는 SnapCenter에서 관리하는 Linux 호스트의 PostgreSQL 클러스터와 인스턴스입니다. PostgreSQL용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 PostgreSQL 클러스터가 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
   <block id="b7010b9dd54942efc350213b545f8fcc" category="paragraph">리소스는 SnapCenter에서 관리하는 Linux 호스트의 PostgreSQL 클러스터와 인스턴스입니다. PostgreSQL용 SnapCenter 플러그인을 설치하면 해당 Linux 호스트의 모든 인스턴스에서 PostgreSQL 클러스터가 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
   <block id="82cdab2339b9d151736b53885e0ce102" category="paragraph">이 예제에서는 PostgreSQL 인스턴스를 추가하는 방법을 보여 줍니다.</block>
-  <block id="76c214e24b03aa4168d09074b6e14e3f" category="summary">리소스 \(클러스터\) 또는 리소스 그룹의 백업을 생성할 수 있습니다. 백업 워크플로우에는 백업 계획, 백업 클러스터 식별, 백업 정책 관리, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다.</block>
   <block id="530895ccaf7ffc619f25f8f9d8ec3597" category="doc">PostgreSQL 리소스를 백업합니다</block>
   <block id="7ac906e4114d3c1fc1afbc68526373d1" category="paragraph">리소스(클러스터) 또는 리소스 그룹의 백업을 생성할 수 있습니다. 백업 워크플로우에는 백업 계획, 백업 클러스터 식별, 백업 정책 관리, 리소스 그룹 생성 및 정책 연결, 백업 생성 및 작업 모니터링이 포함됩니다.</block>
   <block id="8dd18363015f7db73665c4d7f82edb52" category="image-alt">PostgreSQL 백업 워크플로우</block>
@@ -8241,7 +8208,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="1cba333f7c70ea15dd4dc4f2c3d76e77" category="doc">PostgreSQL용 SnapCenter 플러그인에서 지원하는 스토리지 유형입니다</block>
   <block id="b4988589f3a9e9f24d49ce750ee55e3e" category="summary">백업 유형은 생성할 백업 유형을 지정합니다. SnapCenter는 PostgreSQL 클러스터에 대한 스냅샷 복제 기반 백업 유형을 지원합니다.</block>
   <block id="fe86ef6be8f5bd76c7a72cc22e0e6676" category="paragraph">스냅샷 복제 기반 백업은 NetApp 스냅샷 기술을 활용하여 PostgreSQL 클러스터가 상주하는 볼륨의 읽기 전용 온라인 복제본을 생성합니다.</block>
-  <block id="2d08138fbe12d536cb5fbb3f0a742216" category="summary">SnapCenter는 자동으로 검색된 PostgreSQL 클러스터에 대해 볼륨 기반 SnapRestore\(VBSR\), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.</block>
   <block id="524739e7fb88e0bc47e353a9fdeb5623" category="doc">자동 검색된 PostgreSQL에 대한 복구 작업 유형입니다</block>
   <block id="dc586324be986bbebd1af0c02f240b75" category="paragraph">PostgreSQL용 SnapCenter 플러그인은 자동으로 검색된 PostgreSQL 클러스터에 대한 단일 파일 SnapRestore 및 연결 및 복제 복구 유형을 지원합니다.</block>
   <block id="82a4be7ef2e16581004c387094d5a5db" category="summary">SnapCenter를 사용하여 복원 작업을 성공적으로 수행하려면 먼저 전략을 정의해야 합니다. 자동으로 검색된 PostgreSQL 클러스터에 대한 복구 전략에는 두 가지 유형이 있습니다.</block>
@@ -10062,4 +10028,12 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="6bd3a7460654af7cf024fe83b4e8fc7b" category="doc">Windows 호스트에서 SnapCenter 서버 업그레이드</block>
   <block id="0dc14c8f6c7f2126879c6b73f1b5fe06" category="doc">Linux 호스트에서 SnapCenter 서버 업그레이드</block>
   <block id="47d2f91352de11d0050cd18c13e2719c" category="doc">SnapCenter 서버 업그레이드 워크플로</block>
+  <block id="e00b4e480331325a184fc4b9b2020101" category="summary">SnapCenter 는 자동으로 검색된 IBM Db2 데이터베이스에 대해 볼륨 기반 SnapRestore (VBSR), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.</block>
+  <block id="0f61644cb3e815722cfe8146700d8b98" category="summary">SnapCenter에 직접 등록된 SAP HANA 호스트의 경우, SAP HANA 데이터베이스용 SnapCenter 플러그인을 설치하거나 업그레이드하면 호스트의 리소스에 대한 자동 검색이 시작됩니다. 플러그인을 설치 또는 업그레이드한 후, 플러그인 호스트에 있던 모든 멀티테넌트 데이터베이스 컨테이너(MDC) 리소스에 대해 다른 GUID 형식의 새로운 MDC 리소스가 자동으로 검색되어 SnapCenter에 등록됩니다. 새 리소스는 "잠금" 상태로 표시됩니다.</block>
+  <block id="15f19acdf3142655bfcdf7741f87d804" category="summary">SnapCenter는 자동으로 검색된 MySQL 데이터베이스에 대해 볼륨 기반 SnapRestore(VBSR), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.</block>
+  <block id="22c80ec7d5f860d10bc482d806b0bd30" category="summary">SnapCenter는 자동으로 검색된 PostgreSQL 클러스터에 대해 볼륨 기반 SnapRestore(VBSR), 단일 파일 SnapRestore 및 연결 및 복사 복원 유형을 지원합니다.</block>
+  <block id="233fe91e73d223a1b1f6faf80dfe8e5e" category="summary">SnapCenter Plug-in for Microsoft Exchange Server는 백업 검증 기능을 제공하지 않습니다. Exchange 데이터베이스 및 백업을 검증하려면 Exchange와 함께 제공되는 Eseutil 툴을 사용할 수 있습니다.</block>
+  <block id="829690f9bb273b74b9b78d6c6f633563" category="summary">백업 빈도(일정 유형)는 정책에서 지정되며, 백업 일정은 리소스 그룹 구성에서 지정됩니다.</block>
+  <block id="7961a2a642f2ef14bcc3560c4533978b" category="summary">백업 작업 성능에 미치는 영향을 줄이려면 백업 생성 직후가 아닌 나중에 별도의 작업으로 백업 검증을 예약하십시오.</block>
+  <block id="2faaeb23f72a64bdbb16cfe932406ce8" category="summary">기본 스토리지 또는 2차 스토리지에서 파일 시스템 백업을 복제할 수 있습니다. 또한 원본 백업 위치 또는 동일 호스트나 다른 호스트의 다른 위치를 선택하여 요구 사항에 맞는 대상으로 지정할 수 있습니다. 대상 위치는 복제할 원본 백업과 동일한 볼륨이어야 합니다.</block>
 </blocks>

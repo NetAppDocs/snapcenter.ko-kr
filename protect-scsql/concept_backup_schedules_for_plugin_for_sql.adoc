@@ -2,7 +2,7 @@
 permalink: protect-scsql/concept_backup_schedules_for_plugin_for_sql.html 
 sidebar: sidebar 
 keywords: Backup schedules 
-summary: '백업 빈도 \(스케줄 유형\)는 정책에 지정되고 백업 스케줄은 리소스 그룹 구성에 지정됩니다.' 
+summary: '백업 빈도(일정 유형)는 정책에서 지정되며, 백업 일정은 리소스 그룹 구성에서 지정됩니다.' 
 ---
 = SQL Server용 SnapCenter 플러그인 백업 일정
 :allow-uri-read: 
