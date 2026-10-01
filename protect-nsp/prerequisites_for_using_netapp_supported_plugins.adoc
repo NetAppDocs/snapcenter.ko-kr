@@ -18,6 +18,10 @@ SnapCenter NetApp 지원 플러그인을 사용하려면 먼저 SnapCenter 관�
 * 스토리지 시스템 접속을 추가하고 해당하는 경우 자격 증명을 생성하여 SnapCenter 환경을 구성합니다.
 * 호스트를 추가하고 플러그인을 설치 및 업로드합니다.
 * 해당되는 경우, SnapCenter 6.2.1 이상 버전에는 Java 17(Oracle Java, OpenJDK 또는 SAP JDK)을, SnapCenter 6.2 이하 버전에는 Java 11을 플러그인 호스트에 설치하십시오.
++
+
+NOTE: 루트 사용자가 아닌 일반 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.
+
 * 여러 데이터 경로(LIF) 또는 dNFS 구성이 있는 경우 데이터베이스 호스트에서 SnapCenter CLI를 사용하여 다음을 수행할 수 있습니다.
 +
 ** 기본적으로 데이터베이스 호스트의 모든 IP 주소가 클론 복제된 볼륨에 대한 SVM(Storage Virtual Machine)의 NFS 스토리지 엑스포트 정책에 추가됩니다. 특정 IP 주소를 사용하거나 IP 주소의 하위 집합으로 제한하려면 Set-PreferredHostIPsInStorageExportPolicy CLI를 실행합니다.

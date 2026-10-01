@@ -49,6 +49,10 @@ link:https://www.oracle.com/java/technologies/downloads/#java17["모든 운영 �
 +
 link:https://www.oracle.com/java/technologies/downloads/#java17["모든 운영 체제용 Java 다운로드"]
 
++
+
+NOTE: 루트 사용자가 아닌 일반 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.
+
 * Linux 호스트에서 실행되는 MySQL 데이터베이스의 경우 MySQL용 플러그인을 설치하는 동안 UNIX용 SnapCenter 플러그인이 자동으로 설치됩니다.
 * 플러그인 설치를 위한 기본 셸은 * bash * 이어야 합니다.
 

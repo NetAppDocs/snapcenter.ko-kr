@@ -7790,7 +7790,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="84f9528e600ab53a4c808da98efb3668" category="summary">리소스는 SnapCenter에서 관리하는 Linux 호스트의 IBM DB2 데이터베이스입니다. 사용 가능한 IBM DB2 데이터베이스를 검색한 후 이러한 리소스를 리소스 그룹에 추가하여 데이터 보호 작업을 수행할 수 있습니다.</block>
   <block id="1613db1c8ee565787325feb95428e9ea" category="paragraph">리소스는 SnapCenter에서 관리하는 Linux 호스트의 IBM DB2 데이터베이스입니다. 사용 가능한 IBM DB2 데이터베이스를 검색한 후 리소스 그룹에 리소스를 추가하여 데이터 보호 작업을 수행할 수 있습니다.</block>
   <block id="c39495ad9bcb958b9080a36f441abbbe" category="list-text">SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 설정 등의 작업을 이미 완료해야 합니다.</block>
-  <block id="97a161d2a9a0ce59a5128905c924a379" category="list-text">IBM DB2용 SnapCenter 플러그인은 RDM/VMDK 가상 환경에 상주하는 리소스의 자동 검색을 지원하지 않습니다. 데이터베이스를 수동으로 추가하는 동시에 가상 환경에 대한 스토리지 정보를 제공해야 합니다.</block>
   <block id="2fc619a3874b3d7ee66dc2b056c19d58" category="list-text">플러그인을 설치하면 해당 Linux 호스트의 모든 데이터베이스가 자동으로 검색되어 리소스 페이지에 표시됩니다.</block>
   <block id="1c38e2d02d815dacbf8f55fddf8a55ef" category="list-text">데이터베이스만 자동으로 검색됩니다.</block>
   <block id="ad19113026dc77ce4d582f20058e7d2e" category="list-text">왼쪽 탐색 창에서 * 리소스 * 를 클릭한 다음 목록에서 IBM DB2용 플러그인을 선택합니다.</block>
@@ -10036,4 +10035,13 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="829690f9bb273b74b9b78d6c6f633563" category="summary">백업 빈도(일정 유형)는 정책에서 지정되며, 백업 일정은 리소스 그룹 구성에서 지정됩니다.</block>
   <block id="7961a2a642f2ef14bcc3560c4533978b" category="summary">백업 작업 성능에 미치는 영향을 줄이려면 백업 생성 직후가 아닌 나중에 별도의 작업으로 백업 검증을 예약하십시오.</block>
   <block id="2faaeb23f72a64bdbb16cfe932406ce8" category="summary">기본 스토리지 또는 2차 스토리지에서 파일 시스템 백업을 복제할 수 있습니다. 또한 원본 백업 위치 또는 동일 호스트나 다른 호스트의 다른 위치를 선택하여 요구 사항에 맞는 대상으로 지정할 수 있습니다. 대상 위치는 복제할 원본 백업과 동일한 볼륨이어야 합니다.</block>
+  <block id="f7182d7a35e19e73172617deaca2e396" category="admonition">Java를 실행하는 계정은 Java를 실행할 수 있는 권한이 있어야 합니다.</block>
+  <block id="baf777b8ad8fec11ce73312d60c6beec" category="paragraph">+ 참고: 루트 권한이 없는 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.</block>
+  <block id="af4f76638af48843fe26083b8647819a" category="admonition">루트 사용자가 아닌 일반 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.</block>
+  <block id="28476e82f924742dee48ae4d44d52558" category="inline-xref">RDM/VMDK 가상 환경에 있는 리소스</block>
+  <block id="211bef1be936b825b44ea7171f22e760" category="list-text">SnapCenter Plug-in for IBM Db2는 RDM/VMDK 가상 환경에 있는 리소스를 자동으로 검색하는 기능을 지원하지 않습니다. 데이터베이스를 수동으로 추가할 때 가상 환경에 대한 스토리지 정보를 제공해야 합니다. 자세한 내용은 <block ref="40c107052fc48aa77e5bdccb7af86d58" category="inline-xref-macro-rx"></block>을 참조하십시오.</block>
+  <block id="288d3dea029b52699e9d4a669729d1f7" category="paragraph">RDM/VMDK 가상 환경에 있는 리소스는 자동으로 검색되지 않습니다. 자동 검색을 비활성화하고 다음과 같이 IBM Db2용 SnapCenter 플러그인에 대한 인스턴스를 수동으로 추가해야 합니다.</block>
+  <block id="8f3b4f1a702849c5530b3620426cca19" category="inline-link-macro">IBM Db2 데이터베이스 백업, PowerShell cmdlet</block>
+  <block id="17a05e9785500431b7cdd6242282c8ed" category="paragraph">자세한 내용은 <block ref="636d9603a663670ca77c87610aa537ee" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
+  <block id="b9bcbcd68d11ccb28e0b885b2d2877cf" category="admonition">IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.</block>
 </blocks>

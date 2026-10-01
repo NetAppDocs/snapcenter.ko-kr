@@ -15,7 +15,7 @@ summary: 리소스는 SnapCenter에서 관리하는 Linux 호스트의 IBM DB2 �
 
 .시작하기 전에
 * SnapCenter 서버 설치, 호스트 추가, 스토리지 시스템 접속 설정 등의 작업을 이미 완료해야 합니다.
-* IBM DB2용 SnapCenter 플러그인은 RDM/VMDK 가상 환경에 상주하는 리소스의 자동 검색을 지원하지 않습니다. 데이터베이스를 수동으로 추가하는 동시에 가상 환경에 대한 스토리지 정보를 제공해야 합니다.
+* SnapCenter Plug-in for IBM Db2는 RDM/VMDK 가상 환경에 있는 리소스를 자동으로 검색하는 기능을 지원하지 않습니다. 데이터베이스를 수동으로 추가할 때 가상 환경에 대한 스토리지 정보를 제공해야 합니다. 자세한 내용은 <<resources_rdm_vmdk_virtual_environments,RDM/VMDK 가상 환경에 있는 리소스>>을 참조하십시오.
 
 
 .이 작업에 대해
@@ -45,3 +45,16 @@ summary: 리소스는 SnapCenter에서 관리하는 Linux 호스트의 IBM DB2 �
 
 
 IMPORTANT: 데이터베이스가 SnapCenter 외부에서 이름이 변경된 경우 리소스를 새로 고쳐야 합니다.
+
+[[resources_rdm_vmdk_virtual_environments]]
+.RDM/VMDK 가상 환경에 있는 리소스
+RDM/VMDK 가상 환경에 있는 리소스는 자동으로 검색되지 않습니다. 자동 검색을 비활성화하고 다음과 같이 IBM Db2용 SnapCenter 플러그인에 대한 인스턴스를 수동으로 추가해야 합니다.
+
+[listing]
+----
+Set-SmConfigSettings -Agent -Hostname <HOST_NAME> -configSettings @{"DISABLE_AUTO_DISCOVERY"="true"}
+
+PS C:\> Add-SmResource -HostName 10.32.212.13 -PluginCode DB2 -ResourceType Instance -ResourceName db2inst1 -StorageFootPrint
+(@{"VolumeName"="windb201_data01";"LUNName"="windb201_data01";"StorageSystem"="windb2svm"})
+----
+자세한 내용은 link:back-up-db2-databases.html["IBM Db2 데이터베이스 백업, PowerShell cmdlet"]을 참조하십시오.

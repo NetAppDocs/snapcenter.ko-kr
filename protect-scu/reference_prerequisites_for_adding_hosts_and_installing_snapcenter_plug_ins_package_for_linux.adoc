@@ -76,12 +76,18 @@ NOTE: 충분한 디스크 공간을 할당하고 로그 폴더의 스토리지 �
 필요한 소프트웨어 패키지
  a| 
 * SnapCenter 6.2.1 이상용 Java 17(Oracle Java, OpenJDK 또는 SAP JDK) 또는 SnapCenter 6.2 이하용 Java 11
-
-
++
 
 NOTE: Linux 호스트에 SnapCenter 6.2.1 이상 버전에는 인증된 Java 17만, SnapCenter 6.2 이하 버전에는 Java 11만 설치되어 있는지 확인하십시오.
 
++
 Java를 최신 버전으로 업그레이드한 경우 /var/opt/snapcenter/spl/etc/spl.properties에 있는 JAVA_HOME 옵션이 올바른 Java 버전 및 올바른 경로로 설정되어 있는지 확인해야 합니다.
+
++
+
+NOTE: 루트 사용자가 아닌 일반 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.
+
+
 
 |===
 지원되는 버전에 대한 최신 정보는 https://imt.netapp.com/imt/imt.jsp?components=180320;180338;&solution=1257&isHWU&src=IMT["NetApp 상호 운용성 매트릭스 툴"^]을 참조하십시오.

@@ -22,6 +22,10 @@ summary: 플러그인 패키지는 SnapCenter 업그레이드의 일부로 배�
 특정 SnapCenter 버전에 대해 검증된 최신 버전의 ASP.NET Core 및 PowerShell은 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP3359467["SnapCenter 소프트웨어 릴리스 노트"^]을 참조하십시오.
 
 * SnapCenter 6.2.1 이상 버전을 사용하려면 Java 17(Oracle Java, OpenJDK 또는 SAP JDK)이, SnapCenter 6.2 이하 버전을 사용하려면 Java 11이 Windows 및 Linux 플러그인 호스트에 설치되어 있는지 확인하십시오.
++
+
+NOTE: 루트 사용자가 아닌 일반 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.
+
 * 기본적으로 SnapCenter는 환경에서 java_home을 감지합니다. 고정 java_home을 사용하고 Linux 호스트에서 플러그인을 업그레이드하는 경우 _/var/opt/snapcenter/spl/etc/_에 있는 _spl.properties_ 파일에 skip_jAVAHOME_update 매개 변수를 수동으로 추가하고 값을 true 로 설정해야 합니다.
 +
 플러그인이 업그레이드되거나 SnapCenter 플러그인 로더(SPL) 서비스가 다시 시작되면 java_home의 값이 업데이트됩니다. SPL을 업그레이드하거나 다시 시작하기 전에 skip_jAVAHOME_update 매개 변수를 추가하고 값을 true 로 설정하면 java_home 값이 업데이트되지 않습니다.

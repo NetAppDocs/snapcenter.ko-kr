@@ -18,6 +18,10 @@ MySQL용 SnapCenter 플러그인을 사용하려면 먼저 SnapCenter 관리자�
 * 스토리지 시스템 접속을 추가하고 해당하는 경우 자격 증명을 생성하여 SnapCenter 환경을 구성합니다.
 * Linux 또는 Windows 호스트에 SnapCenter 6.2.1 이상 버전을 사용하려면 Java 17(Oracle Java, OpenJDK 또는 SAP JDK)을, SnapCenter 6.2 이하 버전을 사용하려면 Java 11을 설치하십시오.
 +
+
+NOTE: 루트 사용자가 아닌 일반 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.
+
++
 호스트 시스템의 환경 경로 변수에서 Java 경로를 설정해야 합니다.
 
 * 백업 복제를 원하는 경우 SnapMirror 및 SnapVault를 설정합니다.
