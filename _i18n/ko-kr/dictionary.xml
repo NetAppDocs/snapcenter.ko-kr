@@ -10036,7 +10036,6 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="7961a2a642f2ef14bcc3560c4533978b" category="summary">백업 작업 성능에 미치는 영향을 줄이려면 백업 생성 직후가 아닌 나중에 별도의 작업으로 백업 검증을 예약하십시오.</block>
   <block id="2faaeb23f72a64bdbb16cfe932406ce8" category="summary">기본 스토리지 또는 2차 스토리지에서 파일 시스템 백업을 복제할 수 있습니다. 또한 원본 백업 위치 또는 동일 호스트나 다른 호스트의 다른 위치를 선택하여 요구 사항에 맞는 대상으로 지정할 수 있습니다. 대상 위치는 복제할 원본 백업과 동일한 볼륨이어야 합니다.</block>
   <block id="f7182d7a35e19e73172617deaca2e396" category="admonition">Java를 실행하는 계정은 Java를 실행할 수 있는 권한이 있어야 합니다.</block>
-  <block id="baf777b8ad8fec11ce73312d60c6beec" category="paragraph">+ 참고: 루트 권한이 없는 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.</block>
   <block id="af4f76638af48843fe26083b8647819a" category="admonition">루트 사용자가 아닌 일반 사용자는 Java를 실행하려면 실행 권한이 있어야 합니다.</block>
   <block id="28476e82f924742dee48ae4d44d52558" category="inline-xref">RDM/VMDK 가상 환경에 있는 리소스</block>
   <block id="211bef1be936b825b44ea7171f22e760" category="list-text">SnapCenter Plug-in for IBM Db2는 RDM/VMDK 가상 환경에 있는 리소스를 자동으로 검색하는 기능을 지원하지 않습니다. 데이터베이스를 수동으로 추가할 때 가상 환경에 대한 스토리지 정보를 제공해야 합니다. 자세한 내용은 <block ref="40c107052fc48aa77e5bdccb7af86d58" category="inline-xref-macro-rx"></block>을 참조하십시오.</block>
@@ -10044,4 +10043,8 @@ NetApp ® Single Mailbox Recovery는 2023년 5월 12일 EOA(End of Availability)
   <block id="8f3b4f1a702849c5530b3620426cca19" category="inline-link-macro">IBM Db2 데이터베이스 백업, PowerShell cmdlet</block>
   <block id="17a05e9785500431b7cdd6242282c8ed" category="paragraph">자세한 내용은 <block ref="636d9603a663670ca77c87610aa537ee" category="inline-link-macro-rx"></block>을 참조하십시오.</block>
   <block id="b9bcbcd68d11ccb28e0b885b2d2877cf" category="admonition">IBM Java는 Windows 및 Linux 호스트에서 지원되지 않습니다.</block>
+  <block id="123edbe25c8249f99cd2533a36af7a0d" category="list-text">SnapCenter는 LUN 복원 또는 복제 작업을 수행할 때 igroup이 존재하지 않으면 자동으로 igroup을 생성합니다. igroup은 다음 이름 형식으로 생성됩니다:<block ref="bcd792dfc656b95e5dc2b984425fc0f5" prefix=" " category="inline-code"></block></block>
+  <block id="56612541ccd886dc39344f635827756c" category="list-text">SnapCenter는 클론 삭제 작업의 일부로 생성된 igroup을 삭제하지 않습니다. 해당 igroup은 향후 클론 또는 복원 작업을 위해 유지됩니다.</block>
+  <block id="3156e86fd2bdb0611b9b9c89c87999b7" category="list-text">NVMe over TCP 및 NVMe over FC 스토리지 레이아웃의 경우, SnapCenter는 LUN 복원 또는 복제 작업 중에 NVMe 서브시스템이 존재하지 않으면 자동으로 생성합니다.</block>
+  <block id="4426256068c2cde9d001eb996c0ed069" category="list-text">SnapCenter는 클론 삭제 작업의 일부로 생성된 서브시스템을 삭제하지 않습니다. 이는 향후 클론 또는 복원 작업을 위해 유지됩니다. 서브시스템을 삭제하는 경우, 다음 명령을 사용하여 ONTAP에서 삭제하고 호스트에서 연결을 해제하십시오.<block ref="49bebb92a89712c3abd8ca411ed2bb21" prefix=" " category="inline-code"></block> 여기서 <block ref="42f6268ffadaad1cb31f90aff2a0b50b" prefix=" " category="inline-code"></block>는 서브시스템의 실제 NQN으로 바꿉니다.</block>
 </blocks>

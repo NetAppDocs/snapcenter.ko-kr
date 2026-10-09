@@ -13,6 +13,13 @@ summary: '이니시에이터 그룹(igroup)을 생성하여 스토리지 시스�
 [role="lead"]
 이니시에이터 그룹(igroup)을 생성하여 스토리지 시스템에서 특정 LUN에 액세스할 수 있는 호스트를 지정합니다. SnapCenter를 사용하여 Windows 호스트에서 igroup을 생성, 이름 바꾸기, 수정 또는 삭제할 수 있습니다.
 
+[NOTE]
+====
+* SnapCenter는 LUN 복원 또는 복제 작업을 수행할 때 igroup이 존재하지 않으면 자동으로 igroup을 생성합니다. igroup은 다음 이름 형식으로 생성됩니다: `snapcenter_<id>_igroup`
+* SnapCenter는 클론 삭제 작업의 일부로 생성된 igroup을 삭제하지 않습니다. 해당 igroup은 향후 클론 또는 복원 작업을 위해 유지됩니다.
+
+
+====
 
 
 [[create-an-igroup]]
