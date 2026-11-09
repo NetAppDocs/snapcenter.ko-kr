@@ -11,9 +11,9 @@ summary: 해결된 문제, 알려진 문제, 주의 및 제한 사항을 포함�
 
 
 [role="lead"]
-SnapCenter 6.2, 6.2.1 및 6.2.2 버전에서 새롭게 추가된 기능과 향상된 기능에 대해 알아보십시오.
+SnapCenter 6.2, 6.2.1, 6.2.2 및 6.2.3에서 제공되는 새롭고 향상된 기능에 대해 알아보십시오.
 
-새로운 기능 및 개선 사항의 전체 목록은 link:what's-new-in-snapcenter622.html["SnapCenter 6.2.2의 새로운 기능"]을(를) 참조하십시오.
+새로운 기능 및 개선 사항의 전체 목록은 link:what's-new-in-snapcenter623.html["SnapCenter 6.2.3의 새로운 기능"]을(를) 참조하십시오. 새로운 기능 및 개선 사항의 전체 목록은 link:what's-new-in-snapcenter622.html["SnapCenter 6.2.2의 새로운 기능"]을(를) 참조하십시오.
 
 새로운 기능 및 개선 사항의 전체 목록은 link:what's-new-in-snapcenter621.html["SnapCenter 6.2.1의 새로운 기능"]을(를) 참조하십시오.
 
